@@ -15,6 +15,7 @@ This project holds the coaching material for our club's U14 age group: squad con
 - **`claude/activities.md`** — a bank of previously used games/drills (warm-up, game-zone, skill-zone), tagged by skill focus, to draw on when building new session plans.
 - **`plans/`** — detailed on-the-pitch session run-sheets, one file per session (see Session plan mechanics below).
 - **`ref/`** — reference material: `Lineout FAQ.pdf` (law/mechanics questions), plus `Autism in Rugby.pdf` and `ADHD in Rugby.pdf` (club guidance on coaching neurodiverse players).
+- **`tools/`** — `build_site.py`, which generates the whole HTML site from the markdown above, and `theme.css`, the shared design system it inlines (see Shared HTML reference below).
 
 ## Session plan mechanics
 
@@ -35,16 +36,18 @@ This project holds the coaching material for our club's U14 age group: squad con
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 
-- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. Rebuild it whenever the underlying plan changes, and save the standalone HTML file into the `docs/` folder (see Where these files live, below) so GitHub Pages picks it up, alongside publishing it as an Artifact.
+- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. **You don't write this page by hand:** add the run-sheet to `plans/` and an entry for it to `PLAN_META` in `tools/build_site.py` (page heading, subtitle, date, breadcrumb, index-card text), then push — the workflow builds the page and its index card automatically. See Shared HTML reference below.
 - A **PDF**, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.
 
-See `plans/block1-week1-thur.md` for a worked example of the markdown source, and `docs/block1-week1-sun.html` for a worked example of the responsive HTML output.
+See `plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](https://mcroker.github.io/rugby-u14-plans/block1-week1-sun.html) for a worked example of the responsive HTML output.
 
 ## Shared HTML reference
 
-Alongside the per-session HTML exports above, the **`docs/`** folder holds a small linked reference site, built from the same markdown sources — this is what actually gets shared outside the coaching group (players, parents), so nothing goes in it that isn't fit for that audience.
+Alongside the per-session pages above, the site is a small linked reference built from the same markdown sources — this is what actually gets shared outside the coaching group (players, parents), so nothing goes in it that isn't fit for that audience.
 
-**The site is published by GitHub Pages** from the `main` branch, `/docs` path, and is live at **[https://mcroker.github.io/rugby-u14-plans/](https://mcroker.github.io/rugby-u14-plans/)** — that URL is the link to hand out. Publishing is therefore just a matter of committing and pushing to `main`; there is no separate upload step and no Drive sharing setting to manage.
+**The HTML is generated, never hand-edited and never committed.** `tools/build_site.py` builds every page from `claude/` and `plans/`, and the `.github/workflows/pages.yml` workflow runs it on each push to `main` and deploys the result straight to GitHub Pages. The site is live at **[https://mcroker.github.io/rugby-u14-plans/](https://mcroker.github.io/rugby-u14-plans/)** — that URL is the link to hand out.
+
+So **publishing is just editing the markdown and pushing.** To preview locally first, run `python3 tools/build_site.py _site` and open the files in `_site/` (git-ignored). The script is standard-library only — no install step, and it works the same on your machine as in CI. It **exits non-zero on any warning** (a diagram it can't find, a session plan with no `PLAN_META` entry, a rewording that broke one of its substitutions), so a problem fails the build loudly instead of quietly publishing a broken page.
 
 Pages on the site:
 
@@ -55,19 +58,19 @@ Pages on the site:
 - **`activities.html`** — full HTML export of `claude/activities.md`.
 - **`calendar.html`** — full HTML export of `claude/calendar.md`.
 - **`laws.html`** — full HTML export of `claude/laws.md`.
-- Individual session pages (e.g. `block1-week1-sun.html`) as they're written, per the per-session convention above.
+- Individual session pages (e.g. `block1-week1-sun.html`) — one per file in `plans/` that has a `PLAN_META` entry, per the per-session convention above.
 
 **Build requirements — apply to every page above, no exceptions:**
 
 - **Responsive.** Every page must display well on both mobile (checking a plan pitch-side on a phone) and desktop/tablet (planning ahead) — this is the whole point of the HTML export over a flat document.
-- **Consistent style.** All pages share one design system — club blue/gold palette, Oswald (headings) + Public Sans (body), both sans-serif — generated from a single **`theme.css`** file. That file is saved as the template at `docs/theme.css` alongside the pages themselves (not just held locally by whichever tool builds the site) — pull tokens/rules from it rather than inventing a new look per page.
-- **Diagrams embedded, not linked.** Images are embedded directly into the HTML (as data URIs) rather than linked to an external Drive URL — external links break under viewers' content security policies and depend on Drive sharing settings staying put. Source images live in `claude/images/`; resize/compress before embedding (the source photos are typically several MB each — a diagram doesn't need to be).
+- **Consistent style.** All pages share one design system — club blue/gold palette, Oswald (headings) + Public Sans (body), both sans-serif — defined once in **`tools/theme.css`** and inlined into every page by the build script, so each page is standalone. Change the look there, not per page.
+- **Diagrams embedded, not linked.** Images are embedded directly into the HTML (as data URIs) rather than linked to an external Drive URL — external links break under viewers' content security policies and depend on Drive sharing settings staying put. Full-size originals live in `claude/images/` (several MB each); the build embeds the web-sized copies in **`claude/images/web/`** (~800–1100px, 35–50 KB). Adding a diagram means adding a web-sized copy there and an entry in the script's `DIAGRAMS` map — e.g. `sips -Z 900 claude/images/new.png --out claude/images/web/new.png`.
 - **Cross-references point to the site, not the source files.** Where the markdown source mentions another doc (e.g. `` `playbook.md` ``), the generated HTML should link to that doc's page on the site (`playbook.html`) — not show a `.md` filename, which isn't a real link anyone reading the site can follow.
 - **No academy-library or external play-name provenance notes.** Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source `.md` files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.
 
-**Keeping this in date:** whenever `playbook.md`, `blocks.md`, `age-group.md`, `coaching.md`, `activities.md`, `calendar.md`, `laws.md`, or a `plans/` file changes, rebuild the corresponding HTML page(s) — applying all the build requirements above — and re-save them into `docs/` (same filenames, so Pages URLs keep working), then commit and push to `main` to publish — index.html's links only need updating when a page is added or removed, not on every content edit.
+**Keeping this in date:** nothing to do — the workflow rebuilds every page from the markdown on each push to `main`, so the site cannot drift out of sync with the sources. The index's cards are generated too, so adding a session plan needs no separate index edit.
 
-**Also published as Artifacts** (private links, shareable from the artifact's own share menu) — update these in place with the same file path/URL rather than creating new ones each time a page is rebuilt, so the links stay stable:
+**Also published as Artifacts** (private links, shareable from the artifact's own share menu). These are *not* updated by the workflow — the Pages site above is the live channel, and these snapshots go stale unless deliberately republished. Update them in place with the same URL rather than creating new ones, so the links stay stable:
 
 - Index: https://claude.ai/code/artifact/17c5d121-13b2-48a5-8561-f3ab041a589f
 - Playbook: https://claude.ai/code/artifact/ab9707ba-7ecc-4ef5-8bd6-23244eb029e3
@@ -85,10 +88,10 @@ Pages on the site:
 - Folder: `U14 Rugby` — [https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU](https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU) (id `1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU`)
   - `claude/` subfolder (id `1Udsw9IVyvCi5I7XRl_AnOAHh7u8FXqem`) — `age-group.md`, `coaching.md`, `playbook.md`, `blocks.md`, `activities.md`, `laws.md`, `calendar.md`, and an `images/` subfolder of diagrams sourced from the club's TWRFC Academy library and embedded into `playbook.md`
   - `plans/` subfolder (id `1qtc7cyYEqEryu_masZQCQodltzKe5sZw`) — one markdown file per session, e.g. `block1-week1-sun.md`
-  - `docs/` subfolder (formerly `Public (HTML)`) — the responsive HTML export of every page on the site (see Shared HTML reference above), kept separate from the markdown so this one folder is what gets shared with players/parents/coaches. **This is the GitHub Pages publishing root** (`main` branch, `/docs` path → [https://mcroker.github.io/rugby-u14-plans/](https://mcroker.github.io/rugby-u14-plans/)), so the folder name and the filenames in it are load-bearing — renaming either breaks live links. Standalone full HTML documents (own `<!DOCTYPE>`/`<head>`/`<body>`, with the viewport meta tag needed for the responsive layout to work when opened directly rather than through an Artifact wrapper) — not the head-only fragment used when publishing via the Artifact tool. Also holds `theme.css` (the shared design-system template — see Shared HTML reference above) and `index.html` (the linking page for everything else, and the site's landing page).
+  - **No HTML folder.** The site used to live in a `Public (HTML)` subfolder, then in `docs/`; it is now generated by `tools/build_site.py` and deployed to GitHub Pages by the workflow, so no HTML is stored in Drive or committed to the repo at all. The generated pages are standalone full HTML documents (own `<!DOCTYPE>`/`<head>`/`<body>`, with the viewport meta tag the responsive layout needs) — not the head-only fragment used when publishing via the Artifact tool.
 
 **Drive is now the single source of truth — there are no parallel copies of these files as Claude Project docs any more.** Read and edit the Drive files directly; nothing needs mirroring back anywhere else. When a computer is linked and has this Drive folder synced locally, prefer editing the local synced copy (fast, no round-trip) — fall back to the connected Google Drive tool (trash + recreate, per the mechanical note below) when no linked computer/local sync is available.
 
 **Mechanical note:** the connected Google Drive tool has no in-place content-update call — only file metadata (title/parent) can be patched directly. To "edit" a file's content in Drive, the working approach is: trash the old file (`trash_file`) and create a replacement with the same title in the same parent folder (`create_file`, with `disableConversionToGoogleType: true` and `contentMimeType` set to `text/markdown` or `text/html` as appropriate, so it stays a plain file rather than converting to a Google Doc). This means a file's Drive file-ID (and therefore its direct `/file/d/...` link) changes every time it's edited — the folder links above stay stable, but don't rely on a bookmarked link to one specific file surviving an edit.
 
-**Sharing the site:** the HTML is now shared via GitHub Pages, not via Drive. Hand out [https://mcroker.github.io/rugby-u14-plans/](https://mcroker.github.io/rugby-u14-plans/) — it's public, needs no Drive permissions, and updates on every push to `main`. The old approach (sharing the Drive folder, which the connected Drive tool could only do per-named-person) is no longer needed.
+**Sharing the site:** hand out [https://mcroker.github.io/rugby-u14-plans/](https://mcroker.github.io/rugby-u14-plans/) — it's public, needs no Drive permissions, and rebuilds itself on every push to `main`. The old approach (sharing a Drive folder, which the connected Drive tool could only do per-named-person) is no longer needed.

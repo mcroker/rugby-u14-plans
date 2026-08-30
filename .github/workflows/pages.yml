@@ -1,7 +1,7 @@
 name: Build and deploy site
 
-# The site in docs/ used to be committed; it is now generated from the markdown
-# sources on every push by tools/build_site.py and deployed straight to Pages.
+# The site used to be committed as HTML; it is now generated from the markdown
+# sources on every push by tools/build_site.ts and deployed straight to Pages.
 on:
   push:
     branches: [main]
@@ -9,6 +9,9 @@ on:
       - 'claude/**'
       - 'plans/**'
       - 'tools/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -28,15 +31,24 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v7
+      # Node 24 runs TypeScript directly (type stripping), so the build itself
+      # needs no dependencies and no compile step.
+      - uses: actions/setup-node@v7
         with:
-          python-version: '3.12'
+          node-version: '24'
+          cache: npm
 
-      # build_site.py is standard-library only, so there is nothing to install.
-      # It exits non-zero on any warning (missing diagram, stale substitution),
-      # which fails the build rather than quietly publishing a broken page.
+      # TypeScript is a dev dependency for the type-check only — stripping types
+      # at runtime does not check them.
+      - run: npm ci
+
+      - name: Type-check
+        run: npm run typecheck
+
+      # build_site.ts exits non-zero on any warning (missing diagram, stale
+      # substitution), failing the build rather than publishing a broken page.
       - name: Build site
-        run: python3 tools/build_site.py _site
+        run: node tools/build_site.ts _site
 
       - uses: actions/configure-pages@v6
 

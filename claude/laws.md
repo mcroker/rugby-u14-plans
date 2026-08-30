@@ -1,6 +1,6 @@
 # U14 Rugby — Laws of the Game
 
-Reference for RFU age-grade law changes relevant to this squad. See `claude.md` for coaching context and `playbook.md` for our own calls and shapes built on top of these laws.
+Reference for RFU age-grade law changes relevant to this squad. See `age-group.md` for squad context, `coaching.md` for how we coach, and `playbook.md` for our own calls and shapes built on top of these laws.
 
 ## Law changes: U13 → U14 (RFU Regulation 15)
 
@@ -13,7 +13,7 @@ Our squad is moving up from U13 into U14. Per RFU Regulation 15 (Appendix 7 – 
 - **Kicking: drop goals now permitted.** Not permitted at U13; allowed at U14 (fly-hack ground kicks were already allowed at both ages). Low priority for us tactically given our playing style, but worth players knowing it exists as an option.
 - **Tackle height and technique: unchanged.** Same standard at both ages — tackler must grasp below the armpits (on shirt, shorts, or legs); contact above the armpits is penalised. Good news: our existing tackle-technique coaching carries over directly, nothing to relearn here.
 
-**Coaching implication:** two of these changes (contested 8-man scrum, and lineouts existing at all) are genuinely brand new to every player in the squad this year, not a step up from something they already do. Given our smaller players and the contact-load note in `claude.md`, it's worth treating **lineout fundamentals** and **scrum shape/safety in the bigger pack** as explicit early priorities in the first 6-week block, taught whole–part–whole like any other closed skill, rather than assuming they'll pick it up incidentally through games.
+**Coaching implication:** two of these changes (contested 8-man scrum, and lineouts existing at all) are genuinely brand new to every player in the squad this year, not a step up from something they already do. Given our smaller players and the contact-load note in `age-group.md`, it's worth treating **lineout fundamentals** and **scrum shape/safety in the bigger pack** as explicit early priorities in the first 6-week block, taught whole–part–whole like any other closed skill, rather than assuming they'll pick it up incidentally through games.
 
 *Sourced from RFU Regulation 15 Appendix 7 (U13) and Appendix 8 (U14). The englandrugby.com pages blocked direct automated fetching, so this was compiled from mirrored copies of the same regulation text (a club-hosted PDF of Appendix 8, and a club summary of Appendix 7) — worth a quick cross-check against the current englandrugby.com pages directly, since age-grade regulations are reviewed each season. One other secondary source (a "regulations grid" PDF) gave conflicting figures for U13/U14 pitch size and player numbers; the figures above are the two sources that agreed with each other and matched the actual regulation wording, so that grid was not used.*
 

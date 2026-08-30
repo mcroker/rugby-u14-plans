@@ -4,11 +4,11 @@ Non-PII summary of the season's fixtures and training dates, pulled from the clu
 
 Times are converted to Europe/London local time (BST until the clocks change on 25 Oct 2026, GMT after). Several entries are marked **TBC** in the source data — for those, the time shown is a placeholder from the calendar system, not a confirmed kick-off; check Spond nearer the date.
 
-See also: `claude.md` for squad/season context, `blocks.md` for how training blocks map onto these dates.
+See also: `age-group.md` for squad/season context, `blocks.md` for how training blocks map onto these dates.
 
 ## Recurring training
 
-- **Thursday evenings, 7–8pm, at TWGSB 4G** — weekly from September. Contact-suitable (see `claude.md` — Training & Fixtures for the 1/3-pitch space note).
+- **Thursday evenings, 7–8pm, at TWGSB 4G** — weekly from September. Contact-suitable (see `age-group.md` — Training & Fixtures for the 1/3-pitch space note).
 
 ## Fixtures & training dates
 
@@ -32,4 +32,4 @@ See also: `claude.md` for squad/season context, `blocks.md` for how training blo
 
 - "OOD" = Officer of the Day (club matchday duty rota).
 - Kent League Stage 1 opposition is not yet confirmed for any round — check Spond as fixtures are published.
-- Some Sundays only one of Blue/White has a fixture (see `claude.md` — Training & Fixtures); on those Sundays the other team trains.
+- Some Sundays only one of Blue/White has a fixture (see `age-group.md` — Training & Fixtures); on those Sundays the other team trains.

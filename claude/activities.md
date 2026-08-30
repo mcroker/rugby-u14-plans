@@ -2,13 +2,13 @@
 
 A catalog of previously used games and drills, extracted from past session notes and organised by zone type (Warm-up / Game-zone / Skill-zone). Each entry is tagged with the skill focus it was used for, so it's easy to search for e.g. a continuity game or a defence skill-zone.
 
-This is a reference bank, not a session plan on its own — pull individual activities into a `plans/` session file (see `claude.md`'s Session plan template) and adapt them to whatever the current block needs. Entries use the same fields as a session-plan Activities entry (Coaching Points, Setup, Description, Progressions, Adaptations, Video where available) so they can be copied straight in.
+This is a reference bank, not a session plan on its own — pull individual activities into a `plans/` session file (see `CLAUDE.md`'s Session plan template) and adapt them to whatever the current block needs. Entries use the same fields as a session-plan Activities entry (Coaching Points, Setup, Description, Progressions, Adaptations, Video where available) so they can be copied straight in.
 
 When building a new session, check here first for something reusable before inventing a new drill from scratch.
 
 ## Game adaptations for contact-level
 
-Quick reference for picking a game to match the session's contact-level target (see `claude.md` for the Thursday contact-light / Sunday guidance). Full detail for each is in Game-zone below.
+Quick reference for picking a game to match the session's contact-level target (see `coaching.md` for the Thursday contact-light / Sunday guidance). Full detail for each is in Game-zone below.
 
 **Contact-level ladder** (low to high):
 

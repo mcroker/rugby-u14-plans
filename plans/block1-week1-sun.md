@@ -53,7 +53,7 @@
 
 **Coaching Points:** line-speed (defence); handling and support lines (attack); using the lineout restart cleanly.
 
-**Setup:** small-sided, full pitch space (Sunday, so no need to compress into a third of a pitch as on Thursdays — see `claude.md`).
+**Setup:** small-sided, full pitch space (Sunday, so no need to compress into a third of a pitch as on Thursdays — see `claude/age-group.md`).
 
 **Description:** small-sided touch/tag game where every restart is a lineout throw-in (uncontested). Defence scores points for line-speed (getting up as a line quickly); attack scores a bonus for a clean lineout catch that leads to a try.
 

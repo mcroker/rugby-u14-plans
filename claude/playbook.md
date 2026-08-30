@@ -8,7 +8,7 @@ Intended playing style: **play like Japan, not South Africa** — i.e., quick re
 
 Calls are kept short, single-word, and used consistently in training so they become automatic in games — predictable, consistently-named calls beat ad-hoc instructions under pressure.
 
-See `laws.md` for the RFU laws these calls operate within (e.g. lineout laws, scrum laws) — this doc is our own calls and shapes built on top of them. Squad context and coaching considerations live in `claude.md`; coaching focus areas and how each block builds toward these calls live in `blocks.md` — this doc stays to calls, shapes, and moves only.
+See `laws.md` for the RFU laws these calls operate within (e.g. lineout laws, scrum laws) — this doc is our own calls and shapes built on top of them. Squad context and coaching considerations, plus coaching focus areas and how each block builds toward these calls, live in the coaching wiki's Coaching Notes and Session Plans pages — this doc stays to calls, shapes, and moves only.
 
 ## Scanning — CTC
 

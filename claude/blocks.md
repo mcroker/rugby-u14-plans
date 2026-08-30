@@ -1,6 +1,6 @@
 # U14 Rugby — Session Plans
 
-Session-by-session plans, organised by 6-week block (see `claude.md` for the block-based coaching model, training days/facilities, squad structure, and general session-planning mechanics — game/skill-zone shapes, forwards/backs splits, contested-scrum and match-day rules — that apply across all blocks). Calls and shapes used in drills should match `playbook.md`; any law-specific coaching points should match `laws.md`; actual dates are tracked in `calendar.md`.
+Session-by-session plans, organised by 6-week block (see `coaching.md` for the block-based coaching model and game/skill-zone shapes, `age-group.md` for training days/facilities, squad structure, forwards/backs splits and contested-scrum and match-day rules, and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks). Calls and shapes used in drills should match `playbook.md`; any law-specific coaching points should match `laws.md`; actual dates are tracked in `calendar.md`.
 
 ## Block 1 (Weeks 1–6)
 
@@ -10,9 +10,9 @@ Session-by-session plans, organised by 6-week block (see `claude.md` for the blo
 
 - **Defence:** builds toward our full defensive system — pillars, **Bang** blitz trigger, ruck-defence, lineout-defence (see `playbook.md`'s Defence section, which is the master reference for all of this). This block introduces the pieces individually before combining them: ruck-defence from Week 3, all four pillars together full-team from Week 5. Whether/when to introduce **drift vs. blitz** on top of our default blitz is under review — see `Saved for later blocks` below.
 - **Lineout:** positioning (where to stand), throw/catch/pass to 9, the **B/W/G** calls, and — once that's solid — the **5-man Rhino** strike move (2 spare forwards + 12 hit ruck 1, forwards fold for Rhino, backs play). An 8-man lineout is used specifically for catch-and-drive work in Week 5 — driving maul is attacking-22-only (see `playbook.md`).
-- **Scrum:** safe setting, tower of power/body position, the back row's role (control the ball at the base), 9–hooker communication on the feed, and **DSP** as the default move off the base. **Live, contested scrum starts from Week 2** — the first week scrum is introduced — since Sunday is when we can field two full packs; Thursday stays non-contested technique work (see `claude.md`).
+- **Scrum:** safe setting, tower of power/body position, the back row's role (control the ball at the base), 9–hooker communication on the feed, and **DSP** as the default move off the base. **Live, contested scrum starts from Week 2** — the first week scrum is introduced — since Sunday is when we can field two full packs; Thursday stays non-contested technique work (see `age-group.md`).
 
-(Full detail on all calls and moves above is in `playbook.md`.) Per the **skills pyramid** (see `claude.md`), Block 1 lives mostly at the individual- and small-group-skill layers, building toward team moves (5-man Rhino, DSP) by Weeks 5–6.
+(Full detail on all calls and moves above is in `playbook.md`.) Per the **skills pyramid** (see `coaching.md`), Block 1 lives mostly at the individual- and small-group-skill layers, building toward team moves (5-man Rhino, DSP) by Weeks 5–6.
 
 **Block 1 runs Sunday 6 September – Thursday 15 October.** Weeks are grouped **Sunday, then the following Thursday** — e.g. Week 1 is Sun 6 Sep + Thu 10 Sep. *This extends the block one session beyond the previous 11 Oct end date for this doc — flagging for confirmation.*
 
@@ -55,7 +55,7 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 
 **Defence:** blitz and line-org continued, main game scoring tightened so both line-speed and communication count.
 
-**Forwards-skill focus: scrum — the squad's very first exposure.** Sunday: 8-man setup, the engage sequence (crouch–bind–set), tower of power/body position — **contested from this first week**, since Sunday is when we can field two full packs. Thursday: individual position/technique work, non-contested (we won't reliably have two full 8-man packs on a Thursday — see `claude.md`). Both days: 9 and hooker practise the timing call for the feed, and back-row work on controlling the ball at the base so it doesn't spill loose.
+**Forwards-skill focus: scrum — the squad's very first exposure.** Sunday: 8-man setup, the engage sequence (crouch–bind–set), tower of power/body position — **contested from this first week**, since Sunday is when we can field two full packs. Thursday: individual position/technique work, non-contested (we won't reliably have two full 8-man packs on a Thursday — see `age-group.md`). Both days: 9 and hooker practise the timing call for the feed, and back-row work on controlling the ball at the base so it doesn't spill loose.
 
 **Backs-skill focus:** split across the two days to spread the load. **Sunday** ties straight into that day's live scrum work — **DSP** as the default attacking move off scrum, plus line-pressure defence from a scrum situation. **Thursday** introduces exit kicks (technique, then kick + chase/regather).
 

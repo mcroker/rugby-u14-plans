@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laws of the Game — U14 Rugby</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>/* U14 Rugby coaching reference — design tokens
+   Palette grounded in the club's own Blue/White/Gold lineout mnemonic (see playbook.md).
+   Display: Oswald (condensed, matchday-programme/scoreboard feel)
+   Body: Public Sans (clean, human, not a display face)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --ink: #1b2430;
+  --ink-soft: #3a4250;
+  --muted: #656c78;
+  --paper: #f6f4ec;
+  --surface: #ffffff;
+  --border: #ddd6c2;
+  --blue: #1d3f72;
+  --blue-tint: #e9eef7;
+  --gold: #a8791f;
+  --gold-tint: #f6ecd6;
+  --rule: #cdbf8f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #eceef2;
+    --ink-soft: #c7cbd6;
+    --muted: #9aa1b0;
+    --paper: #12151c;
+    --surface: #1a1e27;
+    --border: #333a48;
+    --blue: #7ea3e0;
+    --blue-tint: #1c2a42;
+    --gold: #e0b45c;
+    --gold-tint: #332a14;
+    --rule: #5a5030;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ink: #eceef2;
+  --ink-soft: #c7cbd6;
+  --muted: #9aa1b0;
+  --paper: #12151c;
+  --surface: #1a1e27;
+  --border: #333a48;
+  --blue: #7ea3e0;
+  --blue-tint: #1c2a42;
+  --gold: #e0b45c;
+  --gold-tint: #332a14;
+  --rule: #5a5030;
+}
+
+* { box-sizing: border-box; }
+html { text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  font-size: 16.5px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 90px; }
+
+header.page-head {
+  background: var(--blue);
+  border-bottom: 4px solid var(--gold);
+}
+header.page-head .inner { max-width: 720px; margin: 0 auto; padding: 30px 20px 22px; }
+header.page-head h1 {
+  margin: 0 0 6px;
+  font-family: "Oswald", "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.85rem;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+  color: #ffffff;
+}
+header.page-head .sub { color: var(--gold-tint); opacity: 0.92; font-size: 0.96rem; }
+header.page-head .sub2 { color: #ffffff; opacity: 0.72; font-size: 0.88rem; margin-top: 2px; }
+nav.crumb { font-size: 0.82rem; margin-top: 12px; }
+nav.crumb a { color: var(--gold-tint); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.35); }
+nav.crumb a:hover { border-color: var(--gold-tint); }
+
+h1 { font-family: "Oswald", sans-serif; font-weight: 600; color: var(--blue); text-wrap: balance; }
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.28rem;
+  letter-spacing: 0.01em;
+  color: var(--blue);
+  margin-top: 2.4em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px dashed var(--rule);
+  text-wrap: balance;
+}
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  margin-top: 1.8em;
+}
+h4 { font-weight: 600; font-size: 0.98rem; color: var(--ink-soft); margin-top: 1.4em; }
+p { margin: 0.85em 0; max-width: 68ch; }
+a { color: var(--blue); }
+strong { color: var(--ink); font-weight: 600; }
+em { color: var(--muted); }
+
+table { border-collapse: collapse; width: 100%; margin: 0; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.table-scroll { overflow-x: auto; margin: 1.1em 0; border: 1px solid var(--border); border-radius: 8px; }
+.table-scroll table { margin: 0; border: none; }
+th, td { border-bottom: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; }
+th {
+  background: var(--blue-tint);
+  color: var(--blue);
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 60%, var(--paper) 40%); }
+
+img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 0.7em 0; }
+blockquote { border-left: 3px solid var(--gold); margin: 1em 0; padding: 0.3em 1.1em; color: var(--muted); background: var(--gold-tint); border-radius: 0 6px 6px 0; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.4em 0; }
+code { background: var(--blue-tint); color: var(--blue); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.87em; }
+hr { border: none; border-top: 1px dashed var(--rule); margin: 2.2em 0; }
+
+footer.page-foot {
+  max-width: 720px; margin: 0 auto; padding: 22px 20px 60px;
+  color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border);
+}
+footer.page-foot a { color: var(--blue); }
+
+.badge {
+  display: inline-block; background: var(--gold); color: #2a2005;
+  font-family: "Oswald", sans-serif; font-weight: 500;
+  font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<header class="page-head">
+  <div class="inner">
+    <h1>Laws of the Game</h1>
+    <div class="sub">RFU age-grade law changes relevant to this squad, U13 → U14.</div>
+    <div class="sub2"></div>
+    <nav class="crumb"><a href="index.html">Index</a> &rsaquo; Laws</nav>
+  </div>
+</header>
+<div class="wrap">
+<h1>U14 Rugby — Laws of the Game</h1>
+<p>Reference for RFU age-grade law changes relevant to this squad. See <code><a href="claude.html">claude.html</a></code> for coaching context and <code><a href="playbook.html">playbook.html</a></code> for our own calls and shapes built on top of these laws.</p>
+<h2>Law changes: U13 → U14 (RFU Regulation 15)</h2>
+<p>Our squad is moving up from U13 into U14. Per RFU Regulation 15 (Appendix 7 – U13, Appendix 8 – U14), several things change at once this season, and most of them add contact/skill demands the players haven't faced before. These should shape early coaching priorities:</p>
+<ul>
+<li><strong>Team size: 13-a-side → 15-a-side.</strong> U13 is 6 forwards + 7 backs; U14 is 8 forwards + 7 backs. Two extra forward positions (effectively completing the back row) — forward pod/shape calls need revisiting for 8 forwards, not 6.</li>
+<li><strong>Pitch size: 90m × 60m → 100m × 70m</strong> (plus 5m in-goal each end). A meaningfully bigger pitch — more space to exploit with our continuity/offload game, but also more ground for smaller, less experienced players to cover defensively.</li>
+<li><strong>Scrum: 6 players → 8 players, and now fully contested.</strong> U13 scrums are 6-a-side (no No.8 pick-up from the base). At U14, scrums go to a full 8-player contested scrum (props, hooker, two locks, back row), and <strong>the No.8 is now permitted to pick up from the base</strong> — a genuine new attacking option that didn't exist for these players last year.</li>
+<li><strong>Lineout: introduced for the first time.</strong> U13 has no lineout at all (a free pass is taken instead when the ball goes into touch). At U14, lineouts appear for the first time in these players' rugby lives — see the dedicated Lineout Laws section below.</li>
+<li><strong>Kicking: drop goals now permitted.</strong> Not permitted at U13; allowed at U14 (fly-hack ground kicks were already allowed at both ages). Low priority for us tactically given our playing style, but worth players knowing it exists as an option.</li>
+<li><strong>Tackle height and technique: unchanged.</strong> Same standard at both ages — tackler must grasp below the armpits (on shirt, shorts, or legs); contact above the armpits is penalised. Good news: our existing tackle-technique coaching carries over directly, nothing to relearn here.</li>
+</ul>
+<p><strong>Coaching implication:</strong> two of these changes (contested 8-man scrum, and lineouts existing at all) are genuinely brand new to every player in the squad this year, not a step up from something they already do. Given our smaller players and the contact-load note in <code><a href="claude.html">claude.html</a></code>, it's worth treating <strong>lineout fundamentals</strong> and <strong>scrum shape/safety in the bigger pack</strong> as explicit early priorities in the first 6-week block, taught whole–part–whole like any other closed skill, rather than assuming they'll pick it up incidentally through games.</p>
+<p><em>Sourced from RFU Regulation 15 Appendix 7 (U13) and Appendix 8 (U14). The englandrugby.com pages blocked direct automated fetching, so this was compiled from mirrored copies of the same regulation text (a club-hosted PDF of Appendix 8, and a club summary of Appendix 7) — worth a quick cross-check against the current englandrugby.com pages directly, since age-grade regulations are reviewed each season. One other secondary source (a "regulations grid" PDF) gave conflicting figures for U13/U14 pitch size and player numbers; the figures above are the two sources that agreed with each other and matched the actual regulation wording, so that grid was not used.</em></p>
+<h2>Lineout laws (U14 — uncontested, no lift)</h2>
+<p>Lineouts don't exist below U14 (U13 and Boys/Girls U12-and-below play no lineout at all). This is the age-grade progression per the RFU's "Introduction of the Lineout to Age Grade Rugby" guidance (see <code>Lineout FAQ.pdf</code> in the club Drive):</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Age group</th>
+<th>Lineout format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U13 and below</td>
+<td>No lineout</td>
+</tr>
+<tr>
+<td><strong>U14 (us)</strong></td>
+<td><strong>Uncontested, no lift</strong> — focus is the throw, timing/positioning to receive, and catch/delivery. No jumping/lifting technique needed since nobody is lifted.</td>
+</tr>
+<tr>
+<td>U15 (boys)</td>
+<td>Uncontested, lift permitted</td>
+</tr>
+<tr>
+<td>U16+</td>
+<td>Fully contested</td>
+</tr>
+</tbody>
+</table></div>
+<p>So for our squad this year the lineout is a brand-new skill, and it stays non-contested and non-lifted all season — the coaching job is throw accuracy, timing/positioning to receive the ball, and clean catch-and-deliver, not competing for the ball and not jump/lift technique (that only comes in at U15+).</p>
+<p><strong>Key laws (U14, uncontested, no lift):</strong></p>
+<ul>
+<li>The throwing team decides how many players form the lineout — minimum 2, maximum 13 per side. The non-throwing team may field fewer players than the throwing team, but never more.</li>
+<li>The non-throwing team <strong>cannot contest possession while the ball is in the air.</strong> They may only start contesting once the catcher has safely returned to the ground.</li>
+<li>If the ball is thrown straight and a player from the throwing team catches it cleanly, the throwing team <strong>always</strong> wins the ball — even if the throw sails over the intended catcher (as long as it was straight, it's still their uncontested ball).</li>
+<li>If the throw is <strong>not straight</strong>: normal knock-on/not-straight laws apply. If the non-throwing team catches a crooked throw, they get the advantage. If nobody catches it, the non-throwing team gets a free kick (or a penalty if there was foul play) — and if it goes wrong a second time, a scrum is awarded to the original throwing team on the 15m line.</li>
+<li>If the ball hits the ground, the lineout is over and — provided the original throw was straight and there was no foul play — the ball becomes contestable on the deck.</li>
+<li>A maul can be formed from the lineout, but only once the catcher has been safely returned to the ground.</li>
+<li>The lineout ends when: the ball/ball-carrier leaves the lineout, or enters the 5m-to-touch area, or goes beyond the 15m line; or a ruck/maul forms and everyone's feet move beyond the mark of touch; or the ball becomes unplayable.</li>
+</ul>
+</div>
+<footer class="page-foot">Generated 30 August 2026 &middot; U14 Rugby coaching reference &middot; <a href="index.html">Back to index</a></footer>
+</body>
+</html>

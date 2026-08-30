@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activities Bank — U14 Rugby</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>/* U14 Rugby coaching reference — design tokens
+   Palette grounded in the club's own Blue/White/Gold lineout mnemonic (see playbook.md).
+   Display: Oswald (condensed, matchday-programme/scoreboard feel)
+   Body: Public Sans (clean, human, not a display face)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --ink: #1b2430;
+  --ink-soft: #3a4250;
+  --muted: #656c78;
+  --paper: #f6f4ec;
+  --surface: #ffffff;
+  --border: #ddd6c2;
+  --blue: #1d3f72;
+  --blue-tint: #e9eef7;
+  --gold: #a8791f;
+  --gold-tint: #f6ecd6;
+  --rule: #cdbf8f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #eceef2;
+    --ink-soft: #c7cbd6;
+    --muted: #9aa1b0;
+    --paper: #12151c;
+    --surface: #1a1e27;
+    --border: #333a48;
+    --blue: #7ea3e0;
+    --blue-tint: #1c2a42;
+    --gold: #e0b45c;
+    --gold-tint: #332a14;
+    --rule: #5a5030;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ink: #eceef2;
+  --ink-soft: #c7cbd6;
+  --muted: #9aa1b0;
+  --paper: #12151c;
+  --surface: #1a1e27;
+  --border: #333a48;
+  --blue: #7ea3e0;
+  --blue-tint: #1c2a42;
+  --gold: #e0b45c;
+  --gold-tint: #332a14;
+  --rule: #5a5030;
+}
+
+* { box-sizing: border-box; }
+html { text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  font-size: 16.5px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 90px; }
+
+header.page-head {
+  background: var(--blue);
+  border-bottom: 4px solid var(--gold);
+}
+header.page-head .inner { max-width: 720px; margin: 0 auto; padding: 30px 20px 22px; }
+header.page-head h1 {
+  margin: 0 0 6px;
+  font-family: "Oswald", "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.85rem;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+  color: #ffffff;
+}
+header.page-head .sub { color: var(--gold-tint); opacity: 0.92; font-size: 0.96rem; }
+header.page-head .sub2 { color: #ffffff; opacity: 0.72; font-size: 0.88rem; margin-top: 2px; }
+nav.crumb { font-size: 0.82rem; margin-top: 12px; }
+nav.crumb a { color: var(--gold-tint); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.35); }
+nav.crumb a:hover { border-color: var(--gold-tint); }
+
+h1 { font-family: "Oswald", sans-serif; font-weight: 600; color: var(--blue); text-wrap: balance; }
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.28rem;
+  letter-spacing: 0.01em;
+  color: var(--blue);
+  margin-top: 2.4em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px dashed var(--rule);
+  text-wrap: balance;
+}
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  margin-top: 1.8em;
+}
+h4 { font-weight: 600; font-size: 0.98rem; color: var(--ink-soft); margin-top: 1.4em; }
+p { margin: 0.85em 0; max-width: 68ch; }
+a { color: var(--blue); }
+strong { color: var(--ink); font-weight: 600; }
+em { color: var(--muted); }
+
+table { border-collapse: collapse; width: 100%; margin: 0; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.table-scroll { overflow-x: auto; margin: 1.1em 0; border: 1px solid var(--border); border-radius: 8px; }
+.table-scroll table { margin: 0; border: none; }
+th, td { border-bottom: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; }
+th {
+  background: var(--blue-tint);
+  color: var(--blue);
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 60%, var(--paper) 40%); }
+
+img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 0.7em 0; }
+blockquote { border-left: 3px solid var(--gold); margin: 1em 0; padding: 0.3em 1.1em; color: var(--muted); background: var(--gold-tint); border-radius: 0 6px 6px 0; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.4em 0; }
+code { background: var(--blue-tint); color: var(--blue); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.87em; }
+hr { border: none; border-top: 1px dashed var(--rule); margin: 2.2em 0; }
+
+footer.page-foot {
+  max-width: 720px; margin: 0 auto; padding: 22px 20px 60px;
+  color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border);
+}
+footer.page-foot a { color: var(--blue); }
+
+.badge {
+  display: inline-block; background: var(--gold); color: #2a2005;
+  font-family: "Oswald", sans-serif; font-weight: 500;
+  font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<header class="page-head">
+  <div class="inner">
+    <h1>Activities Bank</h1>
+    <div class="sub">Warm-up, game-zone and skill-zone games and drills, tagged by skill focus.</div>
+    <div class="sub2"></div>
+    <nav class="crumb"><a href="index.html">Index</a> &rsaquo; Activities</nav>
+  </div>
+</header>
+<div class="wrap">
+<h1>U14 Rugby — Activities Bank</h1>
+<p>A catalog of previously used games and drills, extracted from past session notes and organised by zone type (Warm-up / Game-zone / Skill-zone). Each entry is tagged with the skill focus it was used for, so it's easy to search for e.g. a continuity game or a defence skill-zone.</p>
+<p>This is a reference bank, not a session plan on its own — pull individual activities into a <code>plans/</code> session file (see <code><a href="claude.html">claude.html</a></code>'s Session plan template) and adapt them to whatever the current block needs. Entries use the same fields as a session-plan Activities entry (Coaching Points, Setup, Description, Progressions, Adaptations, Video where available) so they can be copied straight in.</p>
+<p>When building a new session, check here first for something reusable before inventing a new drill from scratch.</p>
+<h2>Game adaptations for contact-level</h2>
+<p>Quick reference for picking a game to match the session's contact-level target (see <code><a href="claude.html">claude.html</a></code> for the Thursday contact-light / Sunday guidance). Full detail for each is in Game-zone below.</p>
+<p><strong>Contact-level ladder</strong> (low to high):</p>
+<ol>
+<li><strong>Touch Rugby</strong> — standard touch, any touch ends the carry.</li>
+<li><strong>Pop-Up Touch</strong> — ball must be popped up to a support player on a touch, not passed.</li>
+<li><strong>Ruckly-Touch</strong> — as Pop-Up Touch, but the ruck area is actively contested (defence can compete for the ball, not just back off).</li>
+<li><strong>Full Contact</strong> — as per the laws of the game.</li>
+</ol>
+<p><strong>Other coaching variations</strong> (layered on top of whichever contact level is in use that day):</p>
+<ul>
+<li><strong>Fiji Touch</strong> — first touch play-on, second touch on the same carrier is a turnover.</li>
+<li><strong>N-tackle turnover</strong> ("Turnover Touch") — turnover after a set number of touches.</li>
+<li><strong>Line-break Touch</strong> — extra steps allowed on a "LINEBREAK" call.</li>
+<li><strong>Springbok Touch</strong> — turnover if the first receiver is caught in contact.</li>
+</ul>
+<h2>Warm-up</h2>
+<h3>Zoom-Cruise-Boom</h3>
+<p><strong>Focus:</strong> Defence (line-speed)</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup</td>
+<td>Ruck shields.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A line-speed movement warm-up in three parts: "zoom" (fast approach), "cruise" (settle, stay on toes), "boom" (contact/finish on the shield).</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Focus on the zoom (line-speed) and the cruise (staying on toes) — don't worry too much about the boom itself.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Run with whatever group split fits the numbers out that day (e.g. several teams rotating through, some in the game-zone / some in a skill-zone).</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Rainbow Passing</h3>
+<p><strong>Focus:</strong> Handling</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup</td>
+<td>Coloured cones set out in two parallel lines, matched colour opposite colour (e.g. a red cone on one side directly opposite a red cone on the other).</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Players pass across the gap between the two lines of cones. The coach calls a colour, and players move to (or pass across) that colour's pair of cones — varying the width of the passing gap on the call.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td><em>(not detailed in the source notes)</em></td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Vary which colour is called (and how far apart that pair of cones is) to control the passing distance/width on the fly.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Crazy Passing</h3>
+<p><strong>Focus:</strong> Handling</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup</td>
+<td>Players in three lines (A, B, C) spaced out for passing.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Ball zig-zags down the lines: A1 passes to B1, B1 to C1, C1 to B2, B2 to A2, A2 to B3, and so on — each player filling in at the back of the line they just passed to (or received into) once they've exited. For "crazy," add a second ball into the pattern at the same time.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>General handling cues — elbow up, hands out, catch early, etc. — plus communication and awareness (especially once a second ball is added).</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Good for warming hands up and waking players up early in a session; add the second ball once the basic pattern is running smoothly to raise the awareness demand.</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Game-zone</h2>
+<h3>Fiji Touch</h3>
+<p><strong>Focus:</strong> Continuity</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Touch rugby adaptation — the first time a ball-carrier is touched, play continues; a second touch on the same player before they've offloaded is a turnover.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Teaches players to support the ball-carrier and to look for support themselves, since a turnover only comes from being caught a second time. High-activity and well-liked — good return for the skill work involved.</td>
+</tr>
+<tr>
+<td>Progressions</td>
+<td>Add a distance-limit or a time-limit on how quickly the ball must be offloaded/moved after the first touch.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Pop-up Touch</h3>
+<p><strong>Focus:</strong> Continuity / Contact-offload</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Touch rugby adaptation — on a touch, the ball must be popped up off the floor to a supporting player (rather than just passed).</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Support — being there for the pop. Communication. Eye contact with the arriving support player before popping the ball — don't pop blind.</td>
+</tr>
+<tr>
+<td>Progressions</td>
+<td>- Add a time-limit to how quickly the ball must be popped.<br>- Introduce a turnover if the ball isn't moved on within a set time (e.g. ~1 second).<br>- Step up into the dedicated Offload Technique skill-zone (below) — treat this game as the live application of that skill-zone's work.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>A good interim step before introducing something more specialised (e.g. the Offload Technique skill-zone) — manage the contact level here rather than needing a separate skill zone first.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Ruckly-Touch</h3>
+<p><strong>Focus:</strong> Continuity / Contact-offload — the contested step up from Pop-up Touch</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>As Pop-up Touch, but the "ruck" area on the floor is actively contested by the defence rather than the ball being handed straight back — defence can compete for it.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Same as Pop-up Touch (support, communication, eye contact before the pop), plus urgency to secure and present the ball quickly now defence can contest it.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>The step between Pop-up Touch and Full Contact on the ladder above — use when the group's ready for contested-ball pressure but not full tackling yet.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Turnover Touch</h3>
+<p><strong>Focus:</strong> Continuity <strong>and</strong> Defence — the same base game, tuned two different ways (see Adaptations)</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Touch rugby with a turnover-after-N-touches rule.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>This game has been run two different ways for two different objectives — tune whichever fits the day's focus:<br>- <strong>Continuity version:</strong> reduce the turnover limit to a low number (e.g. 3 touches) — forces the attack to move the ball rather than get repeatedly caught in contact. Progression: run the same idea in (limited) contact.<br>- <strong>Defence / line-speed version ("Linespeed Turnover Touch"):</strong> condition that if the defence gets to the ball-carrier within a set time (e.g. 2 seconds) on a set touch count (e.g. the 3rd), the defence wins a turnover. Tune the touch-count and time-limit to the group. Progressions: penalise the defence for being offside; restrict who's allowed to talk (e.g. only the fullback) to make the value of communication obvious by taking it away.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Springbok Touch</h3>
+<p><strong>Focus:</strong> Defence (line-speed)</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Touch rugby with the condition that if the defence catches the first receiver still in contact (i.e. before they've passed the ball on), it's a turnover. Named for the Springboks' rush/blitz defence — see <code><a href="playbook.html">playbook.html</a></code>'s <strong>Bang</strong> call.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Rewards fast line-speed and pressure on the ball straight from source, rather than only rewarding tackles further out.</td>
+</tr>
+<tr>
+<td>Progressions</td>
+<td>Combine with the Blitz Defence (4v3 shape drill) below once the group has the idea.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Line-break Touch</h3>
+<p><strong>Focus:</strong> Continuity</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Touch, with the adaptation that when the coach/ref calls "LINEBREAK," the ball-carrier may take up to 3 steps before offloading; if there's no support available, they must go to the floor and recycle.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Support timing — being in the right place to receive the extra-steps offload. Communication.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Turnover Contact</h3>
+<p><strong>Focus:</strong> Continuity</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>The contact version of Turnover Touch (above) — same turnover-after-N-touches idea, played with (limited) tackling instead of touch.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Keep the tackle count/turnover trigger tight while introducing contact, rather than opening it up to a fully live contested game straight away.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Continuous Defence</h3>
+<p><strong>Focus:</strong> Defence</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>A team stands in the middle and repeatedly defends attacks coming from alternating directions, resetting each time.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Quick reorganisation and communication under repeated pressure from different angles.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Works well as a bookend either side of a skill-zone (e.g. run it, break off into a skill-zone, then come back to it to finish) rather than only once in the session.</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Skill-zone</h2>
+<h3>2 vs 1 (with offload)</h3>
+<p><strong>Focus:</strong> Continuity</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Standard 2-vs-1, with the condition that the ball must be moved via an offload rather than a standard pass.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Looking for support (communication). Timing and depth needed to receive an offload — players usually stand far too shallow.</td>
+</tr>
+<tr>
+<td>Progressions</td>
+<td>- Add contact (makes it more chaotic and demands even more depth from the support player).<br>- Add randomness (e.g. gates to run through) to vary the picture each rep.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Offload Technique (progressive skill-zone)</h3>
+<p><strong>Focus:</strong> Contact / offload</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup</td>
+<td>Ruck shield(s) / tackle pad(s) — a shield can make the kneeling stage more comfortable.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A staged progression for offload technique: start on knees (falling forward into the offload), progress to running at a tackle pad and offloading round the back of it, then progress further to running between a pair of pads while looking for the offload.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Eye contact and communication with the receiver. Hands free to give the offload (don't get caught one-armed). Lift the ball for your team-mate rather than leaving them to dig for it. If in doubt, keep the ball and stay active on the floor ("pencil") rather than forcing a risky offload. Avoid a double recycle.</td>
+</tr>
+<tr>
+<td>Progressions</td>
+<td>- Offload with both hands, not just the stronger side.<br>- Introduce other offload types — cat-flap, and round-the-body.</td>
+</tr>
+<tr>
+<td>Video example</td>
+<td><a href="https://www.rugbytoolbox.co.nz/training/technique/offload-on-knees-1">Offload on Knees – Rugby Toolbox</a></td>
+</tr>
+</tbody>
+</table></div>
+<h3>Tackle Diamond</h3>
+<p><strong>Focus:</strong> Defence</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>A tackle-technique skill-zone drill run in a diamond-shaped setup (exact grid dimensions weren't captured in the original notes — worth fleshing out next time this is run).</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Defence "wins" the rep if the tackle is completed over the halfway point of the diamond. Technique cues used alongside it: <strong>low — chop!</strong>, <strong>shoulder contact</strong>, <strong>squeeze</strong>.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Continuous Attack with Conditioned Defence</h3>
+<p><strong>Focus:</strong> Defence / Attack</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Continuous attacking phases against a defence operating under a set condition.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Toggle the defence's condition to dial the difficulty up or down — <strong>passive</strong> (defence gives token resistance, attack focuses on shape/execution) or <strong>pressure</strong> (defence competes properly, forcing quicker decisions).</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Combined game- and skill-zone</h2>
+<h3>Blitz Defence (4 v 3 shape drill)</h3>
+<p><strong>Focus:</strong> Defence</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup</td>
+<td>Big pitch / wide channel; 4 attackers vs 3 defenders.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Touch progressing to a "simulated-ruck" touch (a touch variant where a tackle is simulated and the ball recycled, rather than just popped). Within that, a skill-zone (max ~10 min) runs the 4v3, with defence coached to blitz up and cut off the wide options, before going back into the main touch game.</td>
+</tr>
+<tr>
+<td>Coaching Points</td>
+<td>Number up. Call your man. Outside shoulder.</td>
+</tr>
+<tr>
+<td>Progressions</td>
+<td>Award defence a turnover for getting off the line and to the ball fast. Overload the attack (add an extra attacker) to force the defence to communicate even more to cope.</td>
+</tr>
+<tr>
+<td>Adaptations</td>
+<td>Can finish the session with a version of this in (limited) contact once the shape is understood.</td>
+</tr>
+</tbody>
+</table></div>
+<h2>General structuring &amp; delivery ideas</h2>
+<p>Not standalone activities, but reusable ways of structuring a session that came out of the same notes:</p>
+<ul>
+<li><strong>Fixed rotation split:</strong> split the squad into groups (e.g. 3 groups of 10) — most stay in the game-zone while one group rotates into the skill-zone, swapping through so everyone gets both.</li>
+<li><strong>Keep the game-zone running, pull a small number out for a skill-zone:</strong> rather than stopping the whole session for a skill fix, keep the main game going continuously and pull a handful of players (e.g. 3) out for a skill-zone rep, then straight back in.</li>
+<li><strong>Scenario problems dropped into a live game:</strong> e.g. "defending your own 5m," "defensive scrum on the 22," "attacking scrum 10m out" — presented as a problem for the players to solve themselves rather than a lecture. Keep any coach intervention very short (~30 seconds) and from one voice, to avoid it becoming talky and dull.</li>
+</ul>
+</div>
+<footer class="page-foot">Generated 30 August 2026 &middot; U14 Rugby coaching reference &middot; <a href="index.html">Back to index</a></footer>
+</body>
+</html>

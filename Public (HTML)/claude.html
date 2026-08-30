@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coaching Notes — U14 Rugby</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>/* U14 Rugby coaching reference — design tokens
+   Palette grounded in the club's own Blue/White/Gold lineout mnemonic (see playbook.md).
+   Display: Oswald (condensed, matchday-programme/scoreboard feel)
+   Body: Public Sans (clean, human, not a display face)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --ink: #1b2430;
+  --ink-soft: #3a4250;
+  --muted: #656c78;
+  --paper: #f6f4ec;
+  --surface: #ffffff;
+  --border: #ddd6c2;
+  --blue: #1d3f72;
+  --blue-tint: #e9eef7;
+  --gold: #a8791f;
+  --gold-tint: #f6ecd6;
+  --rule: #cdbf8f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #eceef2;
+    --ink-soft: #c7cbd6;
+    --muted: #9aa1b0;
+    --paper: #12151c;
+    --surface: #1a1e27;
+    --border: #333a48;
+    --blue: #7ea3e0;
+    --blue-tint: #1c2a42;
+    --gold: #e0b45c;
+    --gold-tint: #332a14;
+    --rule: #5a5030;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ink: #eceef2;
+  --ink-soft: #c7cbd6;
+  --muted: #9aa1b0;
+  --paper: #12151c;
+  --surface: #1a1e27;
+  --border: #333a48;
+  --blue: #7ea3e0;
+  --blue-tint: #1c2a42;
+  --gold: #e0b45c;
+  --gold-tint: #332a14;
+  --rule: #5a5030;
+}
+
+* { box-sizing: border-box; }
+html { text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  font-size: 16.5px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 90px; }
+
+header.page-head {
+  background: var(--blue);
+  border-bottom: 4px solid var(--gold);
+}
+header.page-head .inner { max-width: 720px; margin: 0 auto; padding: 30px 20px 22px; }
+header.page-head h1 {
+  margin: 0 0 6px;
+  font-family: "Oswald", "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.85rem;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+  color: #ffffff;
+}
+header.page-head .sub { color: var(--gold-tint); opacity: 0.92; font-size: 0.96rem; }
+header.page-head .sub2 { color: #ffffff; opacity: 0.72; font-size: 0.88rem; margin-top: 2px; }
+nav.crumb { font-size: 0.82rem; margin-top: 12px; }
+nav.crumb a { color: var(--gold-tint); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.35); }
+nav.crumb a:hover { border-color: var(--gold-tint); }
+
+h1 { font-family: "Oswald", sans-serif; font-weight: 600; color: var(--blue); text-wrap: balance; }
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.28rem;
+  letter-spacing: 0.01em;
+  color: var(--blue);
+  margin-top: 2.4em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px dashed var(--rule);
+  text-wrap: balance;
+}
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  margin-top: 1.8em;
+}
+h4 { font-weight: 600; font-size: 0.98rem; color: var(--ink-soft); margin-top: 1.4em; }
+p { margin: 0.85em 0; max-width: 68ch; }
+a { color: var(--blue); }
+strong { color: var(--ink); font-weight: 600; }
+em { color: var(--muted); }
+
+table { border-collapse: collapse; width: 100%; margin: 0; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.table-scroll { overflow-x: auto; margin: 1.1em 0; border: 1px solid var(--border); border-radius: 8px; }
+.table-scroll table { margin: 0; border: none; }
+th, td { border-bottom: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; }
+th {
+  background: var(--blue-tint);
+  color: var(--blue);
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 60%, var(--paper) 40%); }
+
+img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 0.7em 0; }
+blockquote { border-left: 3px solid var(--gold); margin: 1em 0; padding: 0.3em 1.1em; color: var(--muted); background: var(--gold-tint); border-radius: 0 6px 6px 0; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.4em 0; }
+code { background: var(--blue-tint); color: var(--blue); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.87em; }
+hr { border: none; border-top: 1px dashed var(--rule); margin: 2.2em 0; }
+
+footer.page-foot {
+  max-width: 720px; margin: 0 auto; padding: 22px 20px 60px;
+  color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border);
+}
+footer.page-foot a { color: var(--blue); }
+
+.badge {
+  display: inline-block; background: var(--gold); color: #2a2005;
+  font-family: "Oswald", sans-serif; font-weight: 500;
+  font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<header class="page-head">
+  <div class="inner">
+    <h1>Coaching Notes</h1>
+    <div class="sub">Squad context, playing style, and how sessions are planned and run.</div>
+    <div class="sub2"></div>
+    <nav class="crumb"><a href="index.html">Index</a> &rsaquo; Coaching Notes</nav>
+  </div>
+</header>
+<div class="wrap">
+<h2>About the age group</h2>
+<p>This document is the standing reference for coaching this age group: squad context, playing style, and how sessions should be planned and run. Read this before producing session plans, playbooks, or drills for this team.</p>
+<p>See also: <strong><code><a href="playbook.html">playbook.html</a></code></strong> — our calls (open play, kicking, etc.) and shapes, kept as a clean, players-shareable reference (no squad/coaching context in it — that lives here). <strong><code><a href="laws.html">laws.html</a></code></strong> — RFU law changes as we move from U13 to U14, including the new lineout laws. <strong><code><a href="block1-overview.html">block1-overview.html</a></code></strong> — our block themes and session-by-session plans. <strong><code><a href="calendar.html">calendar.html</a></code></strong> — this season's fixtures and training dates (non-PII summary from the club calendar). <strong><code><a href="activities.html">activities.html</a></code></strong> — a bank of previously used games/drills (warm-up, game-zone, skill-zone), tagged by skill focus, to draw on when building new session plans. Session plans and drills should use the terminology defined in <code><a href="playbook.html">playbook.html</a></code>.</p>
+<p>We run two teams:</p>
+<ul>
+<li><strong>Blue</strong> — moderate skill level. Won Division 3 of the Kent U13s.</li>
+<li><strong>White</strong> — developmental skill level. Played Division 8 of the Kent U13s.</li>
+</ul>
+<p><strong>Squad physical &amp; skill profile:</strong> our players are generally on the smaller side physically. Both <strong>handling</strong> and <strong>tackling</strong> skills still need development across the squad — these are foundational areas, not yet strengths to build tactics on top of. This shapes the playing style in <code><a href="playbook.html">playbook.html</a></code> (quick recycle, continuity, offloads, avoiding unnecessary contact rather than seeking it out — "play like Japan, not South Africa").</p>
+<p><strong>Neurodiversity:</strong> we have several neuro-diverse children in the squad, including players with <strong>autism</strong> and <strong>ADHD</strong>. Session design and coaching delivery should take this into account (e.g. clarity of instructions, predictable structure, sensory considerations). See <code>ref/Autism in Rugby.pdf</code> and <code>ref/ADHD in Rugby.pdf</code> for club guidance on coaching neurodiverse players. This is also why <code><a href="playbook.html">playbook.html</a></code>'s calls are kept short, single-word, and used consistently in training so they become automatic — predictable, consistently-named calls reduce cognitive load in-game compared to ad-hoc instructions.</p>
+<p>During the first half of the season (September to December), around 50% of the children also play schools rugby. This rarely creates a direct fixture clash, but overall <strong>contact-load across club and school rugby is a real consideration</strong> when planning contact volume in sessions.</p>
+<p>This year's move from U13 to U14 also brings a set of RFU law changes — see <code><a href="laws.html">laws.html</a></code> — two of which (the fully contested 8-man scrum, and lineouts existing at all) are genuinely new skills for every player in the squad, not a step up from something they already do. Worth factoring into early-block contact-load planning alongside the schools-rugby overlap above.</p>
+<p>See <code><a href="playbook.html">playbook.html</a></code> for our playing philosophy and calls — kept as a clean reference (no squad/coaching context) that could be shared directly with the players themselves.</p>
+<h2>Training &amp; Fixtures</h2>
+<ul>
+<li><strong>Matches:</strong> Sundays. Some Sundays only one of the two teams (Blue/White) has a match. Matches carry <strong>no training session plan or coaching objectives of their own</strong> — <code><a href="block1-overview.html">block1-overview.html</a></code> lists them in its session list purely for the calendar picture (and as an informal read on how a block's content is landing), since we don't train on match days.</li>
+<li><strong>Sunday training:</strong> happens on Sundays without a match, with the fuller space of a full pitch.</li>
+<li><strong>Midweek training:</strong> Thursdays, 7-8pm, at <strong>TWGSB 4G</strong> — we have a third of a pitch to work with. That space suits contact-suitable skill-station work and tighter-space games; wide/full-width game patterns need the fuller Sunday space instead. See How sessions should be coached below for the contact-light approach we take to the Thursday slot specifically.</li>
+</ul>
+<p><strong>Thursday sessions always open the same way</strong>, before moving into that week's specific content (see <code><a href="block1-overview.html">block1-overview.html</a></code>):</p>
+<ol>
+<li><strong>Warm-up — led by one of the players</strong> (rotating who leads it), ~5 min.</li>
+<li><strong>Essential skills — handling or tackling</strong>, ~10 min. These are the foundational skills the squad is still developing (see About the age group above) and get dedicated time every Thursday regardless of the block's theme.</li>
+</ol>
+<p>See <code><a href="calendar.html">calendar.html</a></code> for the actual dates this season — match Sundays, training Sundays, and the mid-week Thursday slot.</p>
+<h2>Squad Structure &amp; Training Groups</h2>
+<p>Training is typically run as <strong>one squad together, from a single session plan</strong>, rather than Blue and White training as strictly separate teams:</p>
+<ul>
+<li>We don't expect full turnout on Thursdays, which makes proper team run-throughs difficult on that night.</li>
+<li>There's also fluidity between the two teams (players move between Blue and White).</li>
+<li>Within a session we split <strong>as needed</strong> — most commonly by forwards/backs, or into team run-throughs when numbers and the day allow (more of a Sunday thing) — but this comes from one session plan with built-in splits, not two separate team plans.</li>
+<li>Some Sundays only one team has a match, which affects who's available to train that day.</li>
+<li><strong>When a set-piece skill zone (scrum, lineout) ties up the forwards</strong> (and sometimes 9), give the backs their own parallel focus rather than leaving them idle — this needs a second coach free to run it. What the backs work on should tie back to whichever block is running (see <code><a href="block1-overview.html">block1-overview.html</a></code> for how a given block applies this — e.g. Block 1 keeps the backs' work in line with the defence theme).</li>
+<li><strong>We're unlikely to have enough forwards out on a Thursday to field two complete 8-man packs.</strong> Plan contested/live scrum work for Sundays only; Thursday scrum sessions stick to the engage sequence, body position/tower of power, and controlled (non-contested, single-pack) pushing.</li>
+</ul>
+<p>Session plans should therefore default to a single plan with clear forwards/backs (or skill-level) breakout options built in, rather than assuming a full Blue vs. White squad split every time.</p>
+<h2>How sessions should be coached</h2>
+<ul>
+<li>Sessions run in <strong>6-week themed blocks</strong>.</li>
+<li><strong>Whole–part–whole applies within every single session, not just across a block.</strong> Each session should bookend a short, focused skill fix with game-play. <strong>Game-zone and skill-zone can be structured in any of three ways, whichever suits that session's plan best:</strong> run them sequentially (game, then a short skill fix, then back into the game — or skill fix first, then game); run the skill zone <strong>in parallel</strong> as a pull-out from the game, with a coach rotating small groups out for their fix and straight back in while the game keeps going for everyone else (needs at least 2 coaches to split game/skill-zone duty — see Coaches below); or use a brief <strong>whole-group coach intervention</strong> — a coaching point delivered to everyone before the game starts, for something every player needs to hear once (e.g. lineout positioning), as distinct from a specialist-only skill zone (e.g. hookers on the throw) run separately. None of the three is the mandatory default; pick whichever fits the session's content and the group sizes involved. Don't front-load a block with pure skill work and save the games for later weeks — every session, from week 1 onwards, needs strong game-play, however the skill zone is structured around it.</li>
+<li><strong>Skill zones should be short and sharp, not long isolated drilling — remember these are 13-year-olds, and isolated skill blocks get dull fast.</strong> Keep skill-zone time tight (a matter of minutes, high-rep, clearly tied to a specific fix), whichever of the three shapes above is used.</li>
+<li><strong>Sessions should be very active and fun.</strong> No boring coach-talking time, no standing in queues, no long unbroken drilling — games and adaptive/conditioned play should be the majority of session time, with variety and a pace that keeps players moving and genuinely enjoying themselves, not just physically active. Use conditions and rule tweaks on the game to shape practice of the target skill (e.g. a scoring bonus for using it, a constraint that forces it) rather than relying on repetitive isolated drills to teach it.</li>
+<li><strong>Build week to week, with progression.</strong> Sessions within a block should reuse and build on the same activities rather than starting fresh each week — e.g. the same game returns with the constraint tightened, the space reduced, or the next layer of the skill added, so players get repetition without it feeling repetitive.</li>
+<li><strong>Less time explaining, more time doing.</strong> Coach explanations should be as short as possible; prioritise players getting reps in over coaches talking.</li>
+<li><strong>Thursdays follow a consistent opening format</strong> (player-led warm-up, then essential handling/tackling skills) before the rest of the session — see Training &amp; Fixtures above.</li>
+<li><strong>Thursdays are contact-light, not no-contact.</strong> Closed skills in the skill zone (e.g. tackle technique, scrum engage) are fine at full contact — that's small-group, controlled, coach-supervised work. But the main adaptive game on Thursdays should mostly be <strong>touch-only</strong>, either touch throughout or touch that progresses to full contact for roughly the last 10 minutes. Full-contact adaptive games are more of a Sunday thing, where there's more space and time to manage it properly.</li>
+</ul>
+<h2>Skills pyramid</h2>
+<p>Coaching builds up through four layers, each resting on the one below it — useful for placing any given piece of session content and for judging whether a block/week is weighted appropriately for where the squad is:</p>
+<ol>
+<li><strong>Individual skills</strong> — catch, pass, throw, tackle, etc. — the technical building blocks every player needs, regardless of position.</li>
+<li><strong>Small-group skills</strong> — miss-pass, switch, Hulk, etc. (see <code><a href="playbook.html">playbook.html</a></code>'s Backs Moves and Open Play calls) — 2–3 players combining individual skills into a coordinated action.</li>
+<li><strong>Team moves</strong> — coordinated moves involving most/all of the team, e.g. the 5-man Rhino lineout strike move, DSP off scrum (see <code><a href="playbook.html">playbook.html</a></code>).</li>
+<li><strong>Team strategy &amp; tactics</strong> — how those moves get selected and sequenced within a game plan, e.g. block themes (see <code><a href="block1-overview.html">block1-overview.html</a></code>), kicking strategy, defensive system.</li>
+</ol>
+<p>Early blocks/weeks weight toward the base of the pyramid (individual and small-group skills); later ones build upward toward team moves and tactics, once the layers below are solid enough to support them — this is the same whole–part–whole logic applied above within a single session, just at the scale of a block.</p>
+<h2>Resources</h2>
+<ul>
+<li><strong>therugbysite.com</strong> — subscription currently expired but will be reinstated; treat as an available source for drills/session material once active again.</li>
+<li><strong>Scrum machine</strong> — available at the club, but not at the 4G (TWGSB). Scrum body-position/engage work using the machine is a Sunday (home) session option, not a Thursday one — see <code><a href="block1-overview.html">block1-overview.html</a></code> for how scrum skill-zone work is planned around this.</li>
+<li><strong>Equipment available:</strong> balls, bibs, cones, poles, ruck shields, swiss balls, footballs.</li>
+<li><strong><code><a href="activities.html">activities.html</a></code></strong> — a bank of previously used games/drills, organised by zone type and tagged by skill focus. Check it before inventing a new drill for a session plan.</li>
+<li><strong><code>ref/</code></strong> — reference material: <code>Lineout FAQ.pdf</code> (law/mechanics questions), plus the neurodiversity guidance linked above (<code>Autism in Rugby.pdf</code>, <code>ADHD in Rugby.pdf</code>).</li>
+</ul>
+<h2>Coaches</h2>
+<ul>
+<li>8 coaches in total.</li>
+<li>At least 2 are present at every session, usually more — normally enough to run the main game plus one or two rotating skill zones alongside it, when that's the chosen structure (see How sessions should be coached above).</li>
+<li>We have specialist forwards coaches and specialist backs coaches.</li>
+</ul>
+<h2>Session plan mechanics</h2>
+<p><strong>Detailed, on-the-pitch session run-sheets</strong> (timings, drills, setup) live in the <strong><code>plans/</code></strong> folder, one file per session, expanding that session's entry in <code><a href="block1-overview.html">block1-overview.html</a></code>. Naming convention: <code>plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md</code> — e.g. <code>plans/block1-week1-thur.md</code> for Block 1, Week 1, Thursday. Use <code>thur</code> or <code>sun</code> for the day.</p>
+<p><strong>Session plan template.</strong> Every file in <code>plans/</code> follows this structure:</p>
+<ol>
+<li><strong>Session details</strong> — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.</li>
+<li><strong>Plan</strong> — a lightweight table, one row per activity, with just the key at-a-glance information: Start time + duration, Activity, and a one-line summary of what it is / its focus. This is the section to glance at while actually running the session on the night.</li>
+<li><strong>Activities</strong> — a more detailed breakdown, but <strong>only for activities that warrant it</strong> (introducing a new skill or system, or anything worth a diagram or video reference) — not every row from the Plan table needs an entry here. Check <strong><code><a href="activities.html">activities.html</a></code></strong> first for a reusable game/drill before inventing a new one. Each entry can include:
+   - Coaching Points (kept to a small number of focus areas)
+   - Setup
+   - Description
+   - <strong>Progressions</strong> — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many.
+   - <strong>Adaptations</strong> — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
+   - <strong>Diagram</strong> and/or <strong>Video example(s)</strong>, where useful — see below.</li>
+<li><strong>Notes</strong> — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.</li>
+</ol>
+<p><strong>Diagrams, video, and sharing.</strong> Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in <code>plans/</code> stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:</p>
+<ul>
+<li>A <strong>responsive HTML page</strong> — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. Rebuild it whenever the underlying plan changes, and save the standalone HTML file into the <code>Public (HTML)</code> Drive folder (see Where these files live, above) alongside publishing it as an Artifact.</li>
+<li>A <strong>PDF</strong>, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.</li>
+</ul>
+<p>See <code>plans/block1-week1-thur.md</code> for a worked example of the markdown source, and <code>block1-week1-sun.html</code> (in the <code>Public (HTML)</code> Drive folder) for a worked example of the responsive HTML output.</p>
+<h2>Shared HTML reference</h2>
+<p>Alongside the per-session HTML exports above, the <strong><code>Public (HTML)</code></strong> Drive folder holds a small linked reference site, built from the same markdown sources — this is what actually gets shared outside the coaching group (players, parents), so nothing goes in it that isn't fit for that audience:</p>
+<ul>
+<li><strong><code>index.html</code></strong> — the entry point, with cards linking to every page below. This is the one link to hand out for "a simple reference."</li>
+<li><strong><code>playbook.html</code></strong> — full HTML export of <code><a href="playbook.html">playbook.html</a></code>, including the diagrams. The master reference for how we play.</li>
+<li><strong><code>block1-overview.html</code></strong> — full HTML export of <code><a href="block1-overview.html">block1-overview.html</a></code>'s Block 1 section (session list, weekly outlines).</li>
+<li><strong><code>claude.html</code></strong> — full HTML export of this document.</li>
+<li><strong><code>activities.html</code></strong> — full HTML export of <code><a href="activities.html">activities.html</a></code>.</li>
+<li><strong><code>calendar.html</code></strong> — full HTML export of <code><a href="calendar.html">calendar.html</a></code>.</li>
+<li><strong><code>laws.html</code></strong> — full HTML export of <code><a href="laws.html">laws.html</a></code>.</li>
+<li>Individual session pages (e.g. <code>block1-week1-sun.html</code>) as they're written, per the per-session convention above.</li>
+</ul>
+<p><strong>Build requirements — apply to every page above, no exceptions:</strong></p>
+<ul>
+<li><strong>Responsive.</strong> Every page must display well on both mobile (checking a plan pitch-side on a phone) and desktop/tablet (planning ahead) — this is the whole point of the HTML export over a flat document.</li>
+<li><strong>Consistent style.</strong> All pages share one design system — club blue/gold palette, Oswald (headings) + Public Sans (body), both sans-serif — generated from a single <strong><code>theme.css</code></strong> file. That file is saved as the template in the <code>Public (HTML)</code> Drive folder alongside the pages themselves (not just held locally by whichever tool builds the site) — pull tokens/rules from it rather than inventing a new look per page.</li>
+<li><strong>Diagrams embedded, not linked.</strong> Images are embedded directly into the HTML (as data URIs) rather than linked to an external Drive URL — external links break under viewers' content security policies and depend on Drive sharing settings staying put. Source images live in <code>claude/images/</code>; resize/compress before embedding (the source photos are typically several MB each — a diagram doesn't need to be).</li>
+<li><strong>Cross-references point to the site, not the source files.</strong> Where the markdown source mentions another doc (e.g. <code>`playbook.md`</code>), the generated HTML should link to that doc's page on the site (<code>playbook.html</code>) — not show a <code>.md</code> filename, which isn't a real link anyone reading the site can follow.</li>
+<li><strong>No academy-library or external play-name provenance notes.</strong> Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source <code>.md</code> files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.</li>
+</ul>
+<p><strong>Keeping this in date:</strong> whenever <code><a href="playbook.html">playbook.html</a></code>, <code><a href="block1-overview.html">block1-overview.html</a></code>, <code>claude.md</code>, <code><a href="activities.html">activities.html</a></code>, <code><a href="calendar.html">calendar.html</a></code>, <code><a href="laws.html">laws.html</a></code>, or a <code>plans/</code> file changes, rebuild the corresponding HTML page(s) — applying all the build requirements above — and re-save them into <code>Public (HTML)</code> (same filenames, so links keep working) — index.html's links only need updating when a page is added or removed, not on every content edit.</p>
+<p><strong>Also published as Artifacts</strong> (private links, shareable from the artifact's own share menu) — update these in place with the same file path/URL rather than creating new ones each time a page is rebuilt, so the links stay stable:</p>
+<ul>
+<li>Index: https://claude.ai/code/artifact/17c5d121-13b2-48a5-8561-f3ab041a589f</li>
+<li>Playbook: https://claude.ai/code/artifact/ab9707ba-7ecc-4ef5-8bd6-23244eb029e3</li>
+<li>Block 1 overview: https://claude.ai/code/artifact/68dcb595-d202-4884-a2da-aaf15c94049b</li>
+<li>Week 1 (Sun) session: https://claude.ai/code/artifact/c7566936-e345-44e2-9e1e-ae4ab745f15f</li>
+<li>Coaching Notes (this document): https://claude.ai/code/artifact/7f598490-83c8-4222-ae75-84e212798639</li>
+<li>Activities Bank: https://claude.ai/code/artifact/42aa9cad-7cf9-48a4-b397-35d344d1809e</li>
+<li>Calendar: https://claude.ai/code/artifact/1b5b520d-ed4c-499c-ad29-a67d12c74e0b</li>
+<li>Laws of the Game: https://claude.ai/code/artifact/9bba79a3-d5c7-429e-a1f4-ccbe24ea18a1</li>
+</ul>
+<h2>Where these files live</h2>
+<p><strong>Google Drive is now the source of truth for the <code>claude/</code> and <code>plans/</code> markdown files.</strong> They're saved as plain <code>.md</code> files in a <strong>U14 Rugby</strong> folder in Drive (mcroker@gmail.com), mirroring this project's structure:</p>
+<ul>
+<li>Folder: <code>U14 Rugby</code> — <a href="https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU">https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU</a> (id <code>1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU</code>)</li>
+<li><code>claude/</code> subfolder (id <code>1Udsw9IVyvCi5I7XRl_AnOAHh7u8FXqem</code>) — <code>claude.md</code>, <code><a href="playbook.html">playbook.html</a></code>, <code><a href="block1-overview.html">block1-overview.html</a></code>, <code><a href="activities.html">activities.html</a></code>, <code><a href="laws.html">laws.html</a></code>, <code><a href="calendar.html">calendar.html</a></code>, and an <code>images/</code> subfolder of diagrams sourced from the club's TWRFC Academy library and embedded into <code><a href="playbook.html">playbook.html</a></code></li>
+<li><code>plans/</code> subfolder (id <code>1qtc7cyYEqEryu_masZQCQodltzKe5sZw</code>) — one markdown file per session, e.g. <code>block1-week1-sun.md</code></li>
+<li><code>Public (HTML)</code> subfolder (id <code>1qRpDZ6vgxaafSyEiwSyzlOPyQLe2lYpz</code>) — <a href="https://drive.google.com/drive/folders/1qRpDZ6vgxaafSyEiwSyzlOPyQLe2lYpz">https://drive.google.com/drive/folders/1qRpDZ6vgxaafSyEiwSyzlOPyQLe2lYpz</a> — the responsive HTML export of every page on the site (see Shared HTML reference above), kept separate from the markdown so this one folder is what gets shared with players/parents/coaches. Standalone full HTML documents (own <code>&lt;!DOCTYPE&gt;</code>/<code>&lt;head&gt;</code>/<code>&lt;body&gt;</code>, with the viewport meta tag needed for the responsive layout to work when opened directly rather than through an Artifact wrapper) — not the head-only fragment used when publishing via the Artifact tool. Also holds <code>theme.css</code> (the shared design-system template — see Shared HTML reference above) and <code>index.html</code> (the linking page for everything else).</li>
+</ul>
+<p><strong>Drive is now the single source of truth — there are no parallel copies of these files as Claude Project docs any more.</strong> Read and edit the Drive files directly; nothing needs mirroring back anywhere else. When a computer is linked and has this Drive folder synced locally, prefer editing the local synced copy (fast, no round-trip) — fall back to the connected Google Drive tool (trash + recreate, per the mechanical note below) when no linked computer/local sync is available.</p>
+<p><strong>Mechanical note:</strong> the connected Google Drive tool has no in-place content-update call — only file metadata (title/parent) can be patched directly. To "edit" a file's content in Drive, the working approach is: trash the old file (<code>trash_file</code>) and create a replacement with the same title in the same parent folder (<code>create_file</code>, with <code>disableConversionToGoogleType: true</code> and <code>contentMimeType</code> set to <code>text/markdown</code> or <code>text/html</code> as appropriate, so it stays a plain file rather than converting to a Google Doc). This means a file's Drive file-ID (and therefore its direct <code>/file/d/...</code> link) changes every time it's edited — the folder links above stay stable, but don't rely on a bookmarked link to one specific file surviving an edit.</p>
+<p><strong>Sharing the HTML folder:</strong> the connected Drive tool can only grant access to specific named people (<code>share_file</code>, by email address) — it has no "anyone with the link" / general-access control. To make the <code>Public (HTML)</code> folder open to the whole coaching group via a link, that general-access setting needs to be turned on from Drive's own UI (right-click the folder → Share → General access). If specific coaches' email addresses are provided instead, sharing can be done directly per-person from here.</p>
+</div>
+<footer class="page-foot">Generated 30 August 2026 &middot; U14 Rugby coaching reference &middot; <a href="index.html">Back to index</a></footer>
+</body>
+</html>

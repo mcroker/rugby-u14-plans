@@ -254,7 +254,6 @@ def load_diagrams():
 
 # ---------------------------------------------------------------- index cards
 INDEX_CSS = """
-.wrap { max-width: 760px; }
 h2.group {
   font-family: "Oswald", sans-serif; font-weight: 500; font-size: 0.82rem;
   text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);

@@ -17,6 +17,11 @@
   --gold: #a8791f;
   --gold-tint: #f6ecd6;
   --rule: #cdbf8f;
+
+  /* Layout. --page-width is the outer column (tables, diagrams and the index
+     cards use all of it); --prose caps body text at a readable line length. */
+  --page-width: 1080px;
+  --prose: 78ch;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,13 +64,13 @@ body {
   line-height: 1.6;
   font-size: 16.5px;
 }
-.wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 90px; }
+.wrap { max-width: var(--page-width); margin: 0 auto; padding: 28px 24px 90px; }
 
 header.page-head {
   background: var(--blue);
   border-bottom: 4px solid var(--gold);
 }
-header.page-head .inner { max-width: 720px; margin: 0 auto; padding: 30px 20px 22px; }
+header.page-head .inner { max-width: var(--page-width); margin: 0 auto; padding: 30px 24px 22px; }
 header.page-head h1 {
   margin: 0 0 6px;
   font-family: "Oswald", "Public Sans", sans-serif;
@@ -101,7 +106,7 @@ h3 {
   margin-top: 1.8em;
 }
 h4 { font-weight: 600; font-size: 0.98rem; color: var(--ink-soft); margin-top: 1.4em; }
-p { margin: 0.85em 0; max-width: 68ch; }
+p { margin: 0.85em 0; max-width: var(--prose); }
 a { color: var(--blue); }
 strong { color: var(--ink); font-weight: 600; }
 em { color: var(--muted); }
@@ -125,12 +130,13 @@ tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 60%, var(-
 img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 0.7em 0; }
 blockquote { border-left: 3px solid var(--gold); margin: 1em 0; padding: 0.3em 1.1em; color: var(--muted); background: var(--gold-tint); border-radius: 0 6px 6px 0; }
 ul, ol { padding-left: 1.4em; }
+ul, ol { max-width: var(--prose); }
 li { margin: 0.4em 0; }
 code { background: var(--blue-tint); color: var(--blue); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.87em; }
 hr { border: none; border-top: 1px dashed var(--rule); margin: 2.2em 0; }
 
 footer.page-foot {
-  max-width: 720px; margin: 0 auto; padding: 22px 20px 60px;
+  max-width: var(--page-width); margin: 0 auto; padding: 22px 24px 60px;
   color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border);
 }
 footer.page-foot a { color: var(--blue); }
@@ -140,4 +146,10 @@ footer.page-foot a { color: var(--blue); }
   font-family: "Oswald", sans-serif; font-weight: 500;
   font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
   padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+  .wrap { padding-left: 18px; padding-right: 18px; }
+  header.page-head .inner { padding-left: 18px; padding-right: 18px; }
+  footer.page-foot { padding-left: 18px; padding-right: 18px; }
 }

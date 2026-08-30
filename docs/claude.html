@@ -148,8 +148,7 @@ footer.page-foot a { color: var(--blue); }
   font-family: "Oswald", sans-serif; font-weight: 500;
   font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
   padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
-}
-</style>
+}</style>
 </head>
 <body>
 <header class="page-head">
@@ -161,9 +160,7 @@ footer.page-foot a { color: var(--blue); }
   </div>
 </header>
 <div class="wrap">
-<h2>About the age group</h2>
-<p>This document is the standing reference for coaching this age group: squad context, playing style, and how sessions should be planned and run. Read this before producing session plans, playbooks, or drills for this team.</p>
-<p>See also: <strong><code><a href="playbook.html">playbook.html</a></code></strong> — our calls (open play, kicking, etc.) and shapes, kept as a clean, players-shareable reference (no squad/coaching context in it — that lives here). <strong><code><a href="laws.html">laws.html</a></code></strong> — RFU law changes as we move from U13 to U14, including the new lineout laws. <strong><code><a href="block1-overview.html">block1-overview.html</a></code></strong> — our block themes and session-by-session plans. <strong><code><a href="calendar.html">calendar.html</a></code></strong> — this season's fixtures and training dates (non-PII summary from the club calendar). <strong><code><a href="activities.html">activities.html</a></code></strong> — a bank of previously used games/drills (warm-up, game-zone, skill-zone), tagged by skill focus, to draw on when building new session plans. Session plans and drills should use the terminology defined in <code><a href="playbook.html">playbook.html</a></code>.</p>
+<h2>Squad</h2>
 <p>We run two teams:</p>
 <ul>
 <li><strong>Blue</strong> — moderate skill level. Won Division 3 of the Kent U13s.</li>
@@ -183,7 +180,7 @@ footer.page-foot a { color: var(--blue); }
 <p><strong>Thursday sessions always open the same way</strong>, before moving into that week's specific content (see <code><a href="block1-overview.html">block1-overview.html</a></code>):</p>
 <ol>
 <li><strong>Warm-up — led by one of the players</strong> (rotating who leads it), ~5 min.</li>
-<li><strong>Essential skills — handling or tackling</strong>, ~10 min. These are the foundational skills the squad is still developing (see About the age group above) and get dedicated time every Thursday regardless of the block's theme.</li>
+<li><strong>Essential skills — handling or tackling</strong>, ~10 min. These are the foundational skills the squad is still developing (see Squad above) and get dedicated time every Thursday regardless of the block's theme.</li>
 </ol>
 <p>See <code><a href="calendar.html">calendar.html</a></code> for the actual dates this season — match Sundays, training Sundays, and the mid-week Thursday slot.</p>
 <h2>Squad Structure &amp; Training Groups</h2>
@@ -205,7 +202,7 @@ footer.page-foot a { color: var(--blue); }
 <li><strong>Sessions should be very active and fun.</strong> No boring coach-talking time, no standing in queues, no long unbroken drilling — games and adaptive/conditioned play should be the majority of session time, with variety and a pace that keeps players moving and genuinely enjoying themselves, not just physically active. Use conditions and rule tweaks on the game to shape practice of the target skill (e.g. a scoring bonus for using it, a constraint that forces it) rather than relying on repetitive isolated drills to teach it.</li>
 <li><strong>Build week to week, with progression.</strong> Sessions within a block should reuse and build on the same activities rather than starting fresh each week — e.g. the same game returns with the constraint tightened, the space reduced, or the next layer of the skill added, so players get repetition without it feeling repetitive.</li>
 <li><strong>Less time explaining, more time doing.</strong> Coach explanations should be as short as possible; prioritise players getting reps in over coaches talking.</li>
-<li><strong>Thursdays follow a consistent opening format</strong> (player-led warm-up, then essential handling/tackling skills) before the rest of the session — see Training &amp; Fixtures above.</li>
+<li><strong>Thursdays follow a consistent opening format</strong> (player-led warm-up, then essential handling/tackling skills) before the rest of the session — see Training &amp;amp; Fixtures above.</li>
 <li><strong>Thursdays are contact-light, not no-contact.</strong> Closed skills in the skill zone (e.g. tackle technique, scrum engage) are fine at full contact — that's small-group, controlled, coach-supervised work. But the main adaptive game on Thursdays should mostly be <strong>touch-only</strong>, either touch throughout or touch that progresses to full contact for roughly the last 10 minutes. Full-contact adaptive games are more of a Sunday thing, where there's more space and time to manage it properly.</li>
 </ul>
 <h2>Skills pyramid</h2>
@@ -231,70 +228,6 @@ footer.page-foot a { color: var(--blue); }
 <li>At least 2 are present at every session, usually more — normally enough to run the main game plus one or two rotating skill zones alongside it, when that's the chosen structure (see How sessions should be coached above).</li>
 <li>We have specialist forwards coaches and specialist backs coaches.</li>
 </ul>
-<h2>Session plan mechanics</h2>
-<p><strong>Detailed, on-the-pitch session run-sheets</strong> (timings, drills, setup) live in the <strong><code>plans/</code></strong> folder, one file per session, expanding that session's entry in <code><a href="block1-overview.html">block1-overview.html</a></code>. Naming convention: <code>plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md</code> — e.g. <code>plans/block1-week1-thur.md</code> for Block 1, Week 1, Thursday. Use <code>thur</code> or <code>sun</code> for the day.</p>
-<p><strong>Session plan template.</strong> Every file in <code>plans/</code> follows this structure:</p>
-<ol>
-<li><strong>Session details</strong> — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.</li>
-<li><strong>Plan</strong> — a lightweight table, one row per activity, with just the key at-a-glance information: Start time + duration, Activity, and a one-line summary of what it is / its focus. This is the section to glance at while actually running the session on the night.</li>
-<li><strong>Activities</strong> — a more detailed breakdown, but <strong>only for activities that warrant it</strong> (introducing a new skill or system, or anything worth a diagram or video reference) — not every row from the Plan table needs an entry here. Check <strong><code><a href="activities.html">activities.html</a></code></strong> first for a reusable game/drill before inventing a new one. Each entry can include:
-   - Coaching Points (kept to a small number of focus areas)
-   - Setup
-   - Description
-   - <strong>Progressions</strong> — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many.
-   - <strong>Adaptations</strong> — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
-   - <strong>Diagram</strong> and/or <strong>Video example(s)</strong>, where useful — see below.</li>
-<li><strong>Notes</strong> — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.</li>
-</ol>
-<p><strong>Diagrams, video, and sharing.</strong> Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in <code>plans/</code> stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:</p>
-<ul>
-<li>A <strong>responsive HTML page</strong> — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. Rebuild it whenever the underlying plan changes, and save the standalone HTML file into the <code>Public (HTML)</code> Drive folder (see Where these files live, above) alongside publishing it as an Artifact.</li>
-<li>A <strong>PDF</strong>, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.</li>
-</ul>
-<p>See <code>plans/block1-week1-thur.md</code> for a worked example of the markdown source, and <code>block1-week1-sun.html</code> (in the <code>Public (HTML)</code> Drive folder) for a worked example of the responsive HTML output.</p>
-<h2>Shared HTML reference</h2>
-<p>Alongside the per-session HTML exports above, the <strong><code>Public (HTML)</code></strong> Drive folder holds a small linked reference site, built from the same markdown sources — this is what actually gets shared outside the coaching group (players, parents), so nothing goes in it that isn't fit for that audience:</p>
-<ul>
-<li><strong><code>index.html</code></strong> — the entry point, with cards linking to every page below. This is the one link to hand out for "a simple reference."</li>
-<li><strong><code>playbook.html</code></strong> — full HTML export of <code><a href="playbook.html">playbook.html</a></code>, including the diagrams. The master reference for how we play.</li>
-<li><strong><code>block1-overview.html</code></strong> — full HTML export of <code><a href="block1-overview.html">block1-overview.html</a></code>'s Block 1 section (session list, weekly outlines).</li>
-<li><strong><code>claude.html</code></strong> — full HTML export of this document.</li>
-<li><strong><code>activities.html</code></strong> — full HTML export of <code><a href="activities.html">activities.html</a></code>.</li>
-<li><strong><code>calendar.html</code></strong> — full HTML export of <code><a href="calendar.html">calendar.html</a></code>.</li>
-<li><strong><code>laws.html</code></strong> — full HTML export of <code><a href="laws.html">laws.html</a></code>.</li>
-<li>Individual session pages (e.g. <code>block1-week1-sun.html</code>) as they're written, per the per-session convention above.</li>
-</ul>
-<p><strong>Build requirements — apply to every page above, no exceptions:</strong></p>
-<ul>
-<li><strong>Responsive.</strong> Every page must display well on both mobile (checking a plan pitch-side on a phone) and desktop/tablet (planning ahead) — this is the whole point of the HTML export over a flat document.</li>
-<li><strong>Consistent style.</strong> All pages share one design system — club blue/gold palette, Oswald (headings) + Public Sans (body), both sans-serif — generated from a single <strong><code>theme.css</code></strong> file. That file is saved as the template in the <code>Public (HTML)</code> Drive folder alongside the pages themselves (not just held locally by whichever tool builds the site) — pull tokens/rules from it rather than inventing a new look per page.</li>
-<li><strong>Diagrams embedded, not linked.</strong> Images are embedded directly into the HTML (as data URIs) rather than linked to an external Drive URL — external links break under viewers' content security policies and depend on Drive sharing settings staying put. Source images live in <code>claude/images/</code>; resize/compress before embedding (the source photos are typically several MB each — a diagram doesn't need to be).</li>
-<li><strong>Cross-references point to the site, not the source files.</strong> Where the markdown source mentions another doc (e.g. <code>`playbook.md`</code>), the generated HTML should link to that doc's page on the site (<code>playbook.html</code>) — not show a <code>.md</code> filename, which isn't a real link anyone reading the site can follow.</li>
-<li><strong>No academy-library or external play-name provenance notes.</strong> Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source <code>.md</code> files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.</li>
-</ul>
-<p><strong>Keeping this in date:</strong> whenever <code><a href="playbook.html">playbook.html</a></code>, <code><a href="block1-overview.html">block1-overview.html</a></code>, <code>claude.md</code>, <code><a href="activities.html">activities.html</a></code>, <code><a href="calendar.html">calendar.html</a></code>, <code><a href="laws.html">laws.html</a></code>, or a <code>plans/</code> file changes, rebuild the corresponding HTML page(s) — applying all the build requirements above — and re-save them into <code>Public (HTML)</code> (same filenames, so links keep working) — index.html's links only need updating when a page is added or removed, not on every content edit.</p>
-<p><strong>Also published as Artifacts</strong> (private links, shareable from the artifact's own share menu) — update these in place with the same file path/URL rather than creating new ones each time a page is rebuilt, so the links stay stable:</p>
-<ul>
-<li>Index: https://claude.ai/code/artifact/17c5d121-13b2-48a5-8561-f3ab041a589f</li>
-<li>Playbook: https://claude.ai/code/artifact/ab9707ba-7ecc-4ef5-8bd6-23244eb029e3</li>
-<li>Block 1 overview: https://claude.ai/code/artifact/68dcb595-d202-4884-a2da-aaf15c94049b</li>
-<li>Week 1 (Sun) session: https://claude.ai/code/artifact/c7566936-e345-44e2-9e1e-ae4ab745f15f</li>
-<li>Coaching Notes (this document): https://claude.ai/code/artifact/7f598490-83c8-4222-ae75-84e212798639</li>
-<li>Activities Bank: https://claude.ai/code/artifact/42aa9cad-7cf9-48a4-b397-35d344d1809e</li>
-<li>Calendar: https://claude.ai/code/artifact/1b5b520d-ed4c-499c-ad29-a67d12c74e0b</li>
-<li>Laws of the Game: https://claude.ai/code/artifact/9bba79a3-d5c7-429e-a1f4-ccbe24ea18a1</li>
-</ul>
-<h2>Where these files live</h2>
-<p><strong>Google Drive is now the source of truth for the <code>claude/</code> and <code>plans/</code> markdown files.</strong> They're saved as plain <code>.md</code> files in a <strong>U14 Rugby</strong> folder in Drive (mcroker@gmail.com), mirroring this project's structure:</p>
-<ul>
-<li>Folder: <code>U14 Rugby</code> — <a href="https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU">https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU</a> (id <code>1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU</code>)</li>
-<li><code>claude/</code> subfolder (id <code>1Udsw9IVyvCi5I7XRl_AnOAHh7u8FXqem</code>) — <code>claude.md</code>, <code><a href="playbook.html">playbook.html</a></code>, <code><a href="block1-overview.html">block1-overview.html</a></code>, <code><a href="activities.html">activities.html</a></code>, <code><a href="laws.html">laws.html</a></code>, <code><a href="calendar.html">calendar.html</a></code>, and an <code>images/</code> subfolder of diagrams sourced from the club's TWRFC Academy library and embedded into <code><a href="playbook.html">playbook.html</a></code></li>
-<li><code>plans/</code> subfolder (id <code>1qtc7cyYEqEryu_masZQCQodltzKe5sZw</code>) — one markdown file per session, e.g. <code>block1-week1-sun.md</code></li>
-<li><code>Public (HTML)</code> subfolder (id <code>1qRpDZ6vgxaafSyEiwSyzlOPyQLe2lYpz</code>) — <a href="https://drive.google.com/drive/folders/1qRpDZ6vgxaafSyEiwSyzlOPyQLe2lYpz">https://drive.google.com/drive/folders/1qRpDZ6vgxaafSyEiwSyzlOPyQLe2lYpz</a> — the responsive HTML export of every page on the site (see Shared HTML reference above), kept separate from the markdown so this one folder is what gets shared with players/parents/coaches. Standalone full HTML documents (own <code>&lt;!DOCTYPE&gt;</code>/<code>&lt;head&gt;</code>/<code>&lt;body&gt;</code>, with the viewport meta tag needed for the responsive layout to work when opened directly rather than through an Artifact wrapper) — not the head-only fragment used when publishing via the Artifact tool. Also holds <code>theme.css</code> (the shared design-system template — see Shared HTML reference above) and <code>index.html</code> (the linking page for everything else).</li>
-</ul>
-<p><strong>Drive is now the single source of truth — there are no parallel copies of these files as Claude Project docs any more.</strong> Read and edit the Drive files directly; nothing needs mirroring back anywhere else. When a computer is linked and has this Drive folder synced locally, prefer editing the local synced copy (fast, no round-trip) — fall back to the connected Google Drive tool (trash + recreate, per the mechanical note below) when no linked computer/local sync is available.</p>
-<p><strong>Mechanical note:</strong> the connected Google Drive tool has no in-place content-update call — only file metadata (title/parent) can be patched directly. To "edit" a file's content in Drive, the working approach is: trash the old file (<code>trash_file</code>) and create a replacement with the same title in the same parent folder (<code>create_file</code>, with <code>disableConversionToGoogleType: true</code> and <code>contentMimeType</code> set to <code>text/markdown</code> or <code>text/html</code> as appropriate, so it stays a plain file rather than converting to a Google Doc). This means a file's Drive file-ID (and therefore its direct <code>/file/d/...</code> link) changes every time it's edited — the folder links above stay stable, but don't rely on a bookmarked link to one specific file surviving an edit.</p>
-<p><strong>Sharing the HTML folder:</strong> the connected Drive tool can only grant access to specific named people (<code>share_file</code>, by email address) — it has no "anyone with the link" / general-access control. To make the <code>Public (HTML)</code> folder open to the whole coaching group via a link, that general-access setting needs to be turned on from Drive's own UI (right-click the folder → Share → General access). If specific coaches' email addresses are provided instead, sharing can be done directly per-person from here.</p>
 </div>
 <footer class="page-foot">Generated 30 August 2026 &middot; U14 Rugby coaching reference &middot; <a href="index.html">Back to index</a></footer>
 </body>

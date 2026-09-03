@@ -74,15 +74,17 @@ const DIAGRAMS: Record<string, string> = {
  * marks its pitch by writing `![caption](pitch:2b)`, and the build pins our
  * marker on that zone, so a new week only changes the zone code in the plan.
  */
-const PITCH_ZONES: Record<string, { left: number; top: number; pitch: string }> = {
-  "1a": { left: 14, top: 70, pitch: "Pitch 1" },
-  "1b": { left: 29, top: 69, pitch: "Pitch 1" },
-  "2a": { left: 45, top: 49, pitch: "Pitch 2" },
-  "2b": { left: 47, top: 65, pitch: "Pitch 2" },
-  "3a": { left: 65, top: 38, pitch: "Pitch 3" },
-  "3b": { left: 68, top: 53, pitch: "Pitch 3" },
-  "4a": { left: 9, top: 3, pitch: "Pitch 4" },
-  "4b": { left: 9, top: 17, pitch: "Pitch 4" },
+const PITCH_ZONES: Record<string, { left: number; top: number; pitch: string; half: string }> = {
+  // Halves are named as seen standing at the Club House looking out over the
+  // grounds: Pitches 1 and 4 divide near/far, Pitches 2 and 3 left/right.
+  "1a": { left: 14, top: 70, pitch: "Pitch 1", half: "near-end" },
+  "1b": { left: 29, top: 69, pitch: "Pitch 1", half: "far-end" },
+  "2a": { left: 45, top: 49, pitch: "Pitch 2", half: "left" },
+  "2b": { left: 47, top: 65, pitch: "Pitch 2", half: "right" },
+  "3a": { left: 65, top: 38, pitch: "Pitch 3", half: "left" },
+  "3b": { left: 68, top: 53, pitch: "Pitch 3", half: "right" },
+  "4a": { left: 9, top: 3, pitch: "Pitch 4", half: "far-end" },
+  "4b": { left: 9, top: 17, pitch: "Pitch 4", half: "near-end" },
 };
 
 /** Which age group the pin is labelled for — we are U14M. */
@@ -252,7 +254,7 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
           out.push(
             `<figure class="pitchmap">\n` +
               `<img alt="${escAttr(alt)}" src="${map}" />\n` +
-              `<span class="pitch-pin" style="left:${zone.left}%;top:${zone.top}%">${OUR_TEAM} &middot; ${zone.pitch}</span>\n` +
+              `<span class="pitch-pin" style="left:${zone.left}%;top:${zone.top}%">${OUR_TEAM} &middot; ${zone.pitch} (${zone.half})</span>\n` +
               `<figcaption>${inline(alt)}</figcaption>\n` +
               `</figure>`,
           );

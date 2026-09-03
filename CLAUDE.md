@@ -31,14 +31,23 @@ This project holds the coaching material for our club's U14 age group: squad con
 | **Training Area** | The square blue area just below Pitch 4. |
 | **Touch Pitch** | The blue rectangle above Pitch 1 — i.e. beyond it, away from the Club House. |
 
-**Naming half a pitch.** We are often allocated half a pitch, shared with another age group:
+**Naming half a pitch.** We are often allocated half a pitch, shared with another age group. Halves are named **as seen standing at the Club House looking out over the grounds**, which means the split runs differently depending on where the pitch is:
 
-- **Pitches 1, 2 and 3** — call the halves **left** and **right**, *as viewed from the Club House*.
-- **Pitch 4** — call the halves **far-end** and **near-end**, *as viewed from the Club House*.
+- **Pitches 2 and 3** — **left** and **right**.
+- **Pitches 1 and 4** — **near-end** and **far-end**.
 
 Always say which, in the plan's Location row and on the night — "half of Pitch 2" is not enough for thirty players to find.
 
-The club's allocation page labels the halves with its own codes (`1a`/`1b`, `2a`/`2b`, and so on), and those are the codes `PITCH_ZONES` in `tools/build_site.ts` uses for the map pin. **Which of each pair is the left/right (or far/near) half is not recorded anywhere yet** — confirm it at the ground and write it into `PITCH_ZONES` so the site can state it rather than just pin it.
+The club's allocation page labels the halves with its own codes, which map to ours as:
+
+| Code | Ours | | Code | Ours |
+|---|---|---|---|---|
+| `1a` | Pitch 1, near-end | | `3a` | Pitch 3, left |
+| `1b` | Pitch 1, far-end | | `3b` | Pitch 3, right |
+| `2a` | Pitch 2, left | | `4a` | Pitch 4, far-end |
+| `2b` | Pitch 2, right | | `4b` | Pitch 4, near-end |
+
+That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever writes the club's code — `![caption](pitch:2b)` — and the map pin states the pitch and half itself.
 
 ## Session plan mechanics
 

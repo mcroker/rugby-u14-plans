@@ -13,9 +13,10 @@ Quick reference for picking a game to match the session's contact-level target (
 **Contact-level ladder** (low to high):
 
 1. **Touch Rugby** — standard touch, any touch ends the carry.
-2. **Pop-Up Touch** — ball must be popped up to a support player on a touch, not passed.
-3. **Ruckly-Touch** — as Pop-Up Touch, but the ruck area is actively contested (defence can compete for the ball, not just back off).
-4. **Full Contact** — as per the laws of the game.
+2. **Pop-Up Touch** — on a touch the carrier goes to ground, and the ball must be popped up to a support player rather than passed.
+3. **Presentation Touch** — same contact level as Pop-Up Touch, different skill: on a touch the carrier goes to ground and **presents the ball back** for a support player to pick up, rather than popping it. Pick whichever of the two matches what you're coaching — the pop, or the placement and the speed of recycle.
+4. **Ruckly-Touch** — as Pop-Up or Presentation Touch, but the ruck area is actively contested (defence can compete for the ball, not just back off).
+5. **Full Contact** — as per the laws of the game.
 
 **Other coaching variations** (layered on top of whichever contact level is in use that day):
 
@@ -82,6 +83,17 @@ Quick reference for picking a game to match the session's contact-level target (
 | Coaching Points | Support — being there for the pop. Communication. Eye contact with the arriving support player before popping the ball — don't pop blind. |
 | Progressions | - Add a time-limit to how quickly the ball must be popped.<br>- Introduce a turnover if the ball isn't moved on within a set time (e.g. ~1 second).<br>- Step up into the dedicated Offload Technique skill-zone (below) — treat this game as the live application of that skill-zone's work. |
 | Adaptations | A good interim step before introducing something more specialised (e.g. the Offload Technique skill-zone) — manage the contact level here rather than needing a separate skill zone first. |
+
+### Presentation Touch
+
+**Focus:** Continuity / breakdown
+
+| | |
+|---|---|
+| Description | Touch rugby adaptation, at the same contact level as Pop-up Touch but coaching the other half of the breakdown — on a touch, the carrier goes to ground and **presents the ball back** towards their own side for a support player to pick up and play. The ball is not contested. |
+| Coaching Points | Go to ground **deliberately**, not as a fall — turn as you go down so your back is to the opposition. **Present long:** both arms extended back towards your own team, ball as far from the defence as you can reach. Body between the ball and the opposition. Support player calls early and picks with their eyes up. Speed of recycle is the whole point — it is our game (see `playbook.md`). |
+| Progressions | - Put a time limit on the recycle (e.g. ball away within two seconds) with a turnover if it is missed.<br>- Let one defender stand over the ball without competing for it, so the presentation has to be genuinely long.<br>- Nominate a 9 who has to clear every ball, so the pick is a pass rather than a pick-and-go.<br>- Step up into Ruckly-Touch, where that same ball becomes contestable. |
+| Adaptations | - Slow the whole game to a walk for a few phases if presentations are sloppy — placement is a technique, and it does not fix itself at speed.<br>- Alternate it with Pop-up Touch phase by phase ("pop" or "present" on the coach's call) once both are known, so players have to choose rather than run a routine. |
 
 ### Ruckly-Touch
 

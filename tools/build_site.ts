@@ -38,6 +38,7 @@ const PAGE_FOR: Record<string, string> = {
   "activities.md": "activities.html",
   "calendar.md": "calendar.html",
   "laws.md": "laws.html",
+  "warmup.md": "warmup.html",
   "age-group.md": "claude.html",
   "coaching.md": "claude.html",
   "claude/age-group.md": "claude.html",
@@ -514,6 +515,16 @@ function buildPages(): Record<string, string> {
     ),
   });
 
+  // ---- warm-up
+  add("warmup.html", {
+    title: "Warm-Up — U14 Rugby",
+    h1: "The Standard Warm-Up",
+    sub: "The five-minute player-led switch-on we open every session with.",
+    sub2: "",
+    crumb: "Warm-up",
+    body: mdToHtml(read("claude/warmup.md"), diagrams),
+  });
+
   // ---- calendar
   add("calendar.html", {
     title: "Calendar — U14 Rugby",
@@ -585,6 +596,11 @@ function buildPages(): Record<string, string> {
     "",
     '  <h2 class="group">Coaching reference</h2>',
     '  <div class="cards">',
+    card(
+      "warmup.html",
+      "The Standard Warm-Up",
+      "The five-minute player-led switch-on we open every session with — the four blocks, and what the leader actually says.",
+    ),
     card(
       "claude.html",
       "Coaching Notes",

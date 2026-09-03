@@ -11,7 +11,25 @@ Our coaching approach for this age group: how sessions are structured and run, t
 - **Build week to week, with progression.** Sessions within a block should reuse and build on the same activities rather than starting fresh each week — e.g. the same game returns with the constraint tightened, the space reduced, or the next layer of the skill added, so players get repetition without it feeling repetitive.
 - **Less time explaining, more time doing.** Coach explanations should be as short as possible; prioritise players getting reps in over coaches talking.
 - **Thursdays follow a consistent opening format** (player-led warm-up, then essential handling/tackling skills) before the rest of the session — see `age-group.md` — Training & Fixtures.
+- **Always run the two-minute contact warm-up before any contact.** See Contact warm-up below. It applies to every piece of contact work, closed skills included — tackle technique, scrum engage, contact games — on Sundays and Thursdays alike. The player-led warm-up (see `warmup.md`) is a *mental* switch-on and does not prepare anyone for contact; the two are not interchangeable.
 - **Thursdays are contact-light, not no-contact.** Closed skills in the skill zone (e.g. tackle technique, scrum engage) are fine at full contact — that's small-group, controlled, coach-supervised work. But the main adaptive game on Thursdays should mostly be **touch-only**, either touch throughout or touch that progresses to full contact for roughly the last 10 minutes. Full-contact adaptive games are more of a Sunday thing, where there's more space and time to manage it properly.
+
+## Contact warm-up
+
+**Two minutes, every time, before anyone makes contact.** Three stages of about forty seconds, always in this order, never skipping ahead. It doubles as a rehearsal of the tackle cues we use everywhere else — **low**, **shoulder contact**, **squeeze**.
+
+| Stage | Time | What |
+|---|---|---|
+| 1. **Get low** | ~40s | On the spot. Feet moving, then drop into the tackle-ready position — feet shoulder-width, knees bent, chest up, eyes up, hands ready. Five or six reps. Cue: **low**. |
+| 2. **Knees** | ~40s | In pairs, both on knees, chest to chest. Shoulder into the partner's chest, **head to the side**, arms wrap and squeeze. Start at about half effort and build. Cues: **shoulder contact**, **squeeze**. |
+| 3. **Walk** | ~40s | Same contact from a walk-in, partner braced or holding a shield. Complete the wrap and hold — still no speed. |
+
+Then, and only then, into the drill or game proper.
+
+- **Pair by size.** Not by friendship, and not whoever is standing nearest.
+- **Never skip to stage 3**, however short of time you are. If there isn't two minutes, there isn't contact — take it out of the session instead.
+- **Anyone returning from injury, or new to the group, starts at stage 1** and moves up only when a coach says so, regardless of what everyone else is doing.
+- **If contact groups rotate through a skill zone**, each group runs the two minutes as it arrives — the group that has been jogging in a handling game is no more contact-ready than the one that just walked off the touchline.
 
 ## Skills pyramid
 

@@ -7,7 +7,8 @@ This project holds the coaching material for our club's U14 age group: squad con
 ## Documents
 
 - **`claude/age-group.md`** — squad context: the two teams, physical and skill profile, neurodiversity, training days and facilities, and how the squad is split into training groups.
-- **`claude/coaching.md`** — how sessions should be coached: the 6-week block model, whole–part–whole, skill zones, the skills pyramid, coaching resources and equipment, and the coaching team.
+- **`claude/coaching.md`** — how sessions should be coached: the 6-week block model, whole–part–whole, skill zones, the mandatory two-minute contact warm-up, the skills pyramid, coaching resources and equipment, and the coaching team.
+- **`claude/warmup.md`** — the standard five-minute player-led warm-up we open every session with: the four fixed blocks and what the leader says. A mental switch-on; the separate two-minute **contact warm-up** (in `claude/coaching.md`) is what precedes any contact.
 - **`claude/playbook.md`** — our calls (open play, kicking, etc.) and shapes, kept as a clean, players-shareable reference (no squad/coaching context in it — that lives in the two files above).
 - **`claude/laws.md`** — RFU law changes as we move from U13 to U14, including the new lineout laws.
 - **`claude/blocks.md`** — our block themes and session-by-session plans.
@@ -77,6 +78,7 @@ Pages on the site:
 - **`activities.html`** — full HTML export of `claude/activities.md`.
 - **`calendar.html`** — full HTML export of `claude/calendar.md`.
 - **`laws.html`** — full HTML export of `claude/laws.md`.
+- **`warmup.html`** — full HTML export of `claude/warmup.md`.
 - Individual session pages (e.g. `block1-week1-sun.html`) — one per file in `plans/` that has a `PLAN_META` entry, per the per-session convention above.
 
 **Build requirements — apply to every page above, no exceptions:**

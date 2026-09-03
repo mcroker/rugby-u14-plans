@@ -27,7 +27,7 @@ See `playbook.md` for our playing philosophy and calls — kept as a clean refer
 
 **Thursday sessions always open the same way**, before moving into that week's specific content (see `blocks.md`):
 
-1. **Warm-up — led by one of the players** (rotating who leads it), ~5 min — the standard switch-on in `warmup.md`.
+1. **Warm-up — led by one of the players** (rotating who leads it), ~5 min — the standard four-phase warm-up in `warmup.md`.
 2. **Essential skills — handling or tackling**, ~10 min. These are the foundational skills the squad is still developing (see Squad above) and get dedicated time every Thursday regardless of the block's theme.
 
 See `calendar.md` for the actual dates this season — match Sundays, training Sundays, and the mid-week Thursday slot.

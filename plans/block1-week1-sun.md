@@ -17,7 +17,7 @@
 
 | Start + duration | Activity | Focus |
 |---|---|---|
-| +0, 5 min | Player-led warm-up | The standard five-minute switch-on (see `warmup.md`) |
+| +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines off the try-line, finishing on the pads (see `warmup.md`) |
 | +5, 2 min | **Contact warm-up** | Whole squad, before any contact — low / knees / walk (see `coaching.md`) |
 | +7, 13 min | Handling reps | Main group, while the two skill zones below run out of it |
 | +7, 13 min *(parallel pull-out)* | Hooker throw-in — Cross-Bar Challenge (hookers) | Throw technique against the crossbar — height, line, routine |

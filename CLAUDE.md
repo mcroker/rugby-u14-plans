@@ -8,7 +8,7 @@ This project holds the coaching material for our club's U14 age group: squad con
 
 - **`claude/age-group.md`** — squad context: the two teams, physical and skill profile, neurodiversity, training days and facilities, and how the squad is split into training groups.
 - **`claude/coaching.md`** — how sessions should be coached: the 6-week block model, whole–part–whole, skill zones, the mandatory two-minute contact warm-up, the skills pyramid, coaching resources and equipment, and the coaching team.
-- **`claude/warmup.md`** — the standard five-minute player-led warm-up we open every session with: the four fixed blocks and what the leader says. A mental switch-on; the separate two-minute **contact warm-up** (in `claude/coaching.md`) is what precedes any contact.
+- **`claude/warmup.md`** — the standard five-minute player-led warm-up we open every session with: four fixed phases in lines off the try-line, and what the leader says. The separate two-minute **contact warm-up** (in `claude/coaching.md`) still precedes any tackling.
 - **`claude/playbook.md`** — our calls (open play, kicking, etc.) and shapes, kept as a clean, players-shareable reference (no squad/coaching context in it — that lives in the two files above).
 - **`claude/laws.md`** — RFU law changes as we move from U13 to U14, including the new lineout laws.
 - **`claude/blocks.md`** — our block themes and session-by-session plans.

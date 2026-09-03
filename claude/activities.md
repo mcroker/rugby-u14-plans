@@ -35,6 +35,7 @@ Quick reference for picking a game to match the session's contact-level target (
 | Setup | Ruck shields. |
 | Description | A line-speed movement warm-up in three parts: "zoom" (fast approach), "cruise" (settle, stay on toes), "boom" (contact/finish on the shield). |
 | Coaching Points | Focus on the zoom (line-speed) and the cruise (staying on toes) — don't worry too much about the boom itself. |
+| Where it's used | The fourth and final phase of the standard warm-up (see `warmup.md`), run off the try-line onto shields at the cone line. |
 | Adaptations | Run with whatever group split fits the numbers out that day (e.g. several teams rotating through, some in the game-zone / some in a skill-zone). |
 
 ### Rainbow Passing

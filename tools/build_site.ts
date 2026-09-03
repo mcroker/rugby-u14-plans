@@ -538,7 +538,7 @@ function buildPages(): Record<string, string> {
   add("warmup.html", {
     title: "Warm-Up — U14 Rugby",
     h1: "The Standard Warm-Up",
-    sub: "The five-minute player-led switch-on we open every session with.",
+    sub: "The five-minute player-led warm-up we open every session with — four phases, in lines off the try-line.",
     sub2: "",
     crumb: "Warm-up",
     body: mdToHtml(read("claude/warmup.md"), diagrams),
@@ -655,7 +655,7 @@ function buildPages(): Record<string, string> {
     card(
       "warmup.html",
       "The Standard Warm-Up",
-      "The five-minute player-led switch-on we open every session with — the four blocks, and what the leader actually says.",
+      "The five-minute player-led warm-up we open every session with — four phases in lines off the try-line, and what the leader actually says.",
     ),
     card(
       "claude.html",

@@ -4,12 +4,14 @@
 
 | | |
 |---|---|
-| **Date/Time** | Sun 6 Sep 2026 — time **TBC** (check Spond nearer the date; see `calendar.md`) |
-| **Location** | Full pitch (home) |
+| **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm** (1h45). Home training — confirm against the [pitch allocation](https://pitch.twrfc.com/) and Spond on the day; see `calendar.md`. |
+| **Location** | Home — **U12M / U14M pitch** (see the allocation map below) |
 | **Coaches** | *(fill in on the night)* |
 | **Attendance** | **31 expected** — Spond: 31 attending, 6 unanswered, 6 declined (43 invited). *(Actual — fill in on the night.)* |
 | **Session objective** | Season opener. Introduce individual tackle skills + communication (defence base); introduce lineout positioning, laws, and the hooker throw-in (the squad's very first lineout exposure); introduce blitz defence line-speed reps for the backs. |
 | **Resources required** | Balls, bibs, cones, ruck shields. |
+
+![Our pitch this session — the U12M / U14M zone on the club allocation map. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
 
 ## Plan
 
@@ -23,7 +25,7 @@
 | +20, 60 min *(parallel, backs not in lineout work)* | Continuous Defence | Defensive alignment while the forwards are in lineout skill work |
 | +80, 5 min | Cool-down / close | Recap line-org cues, set up Thursday |
 
-*Timings are indicative — actual session length depends on the confirmed slot (see Date/Time above); scale each block proportionally if the slot is shorter or longer than ~85 minutes.*
+*The slot is 10:45–12:30 (105 min); the plan below runs ~85 min, leaving room for a late start and for the cool-down to overrun. Scale each block proportionally if the slot changes.*
 
 **The opening 15 minutes needs two coaches free** (one on the hookers, one on the tackle zone) while a player leads the warm-up for everyone else — see `coaching.md`. A third coach lets you run two tackle diamonds side by side, which halves the group size and roughly doubles the reps.
 

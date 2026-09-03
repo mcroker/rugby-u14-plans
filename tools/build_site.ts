@@ -58,6 +58,26 @@ const DIAGRAMS: Record<string, string> = {
   "5-man Rhino — Phase 3": "5man_rhino_phase3.png",
 };
 
+/**
+ * Club pitch-allocation zones, from the label positions used by
+ * https://pitch.twrfc.com/ — percentages of the base map image. A session plan
+ * marks its pitch by writing `![caption](pitch:2b)`, and the build pins our
+ * marker on that zone, so a new week only changes the zone code in the plan.
+ */
+const PITCH_ZONES: Record<string, { left: number; top: number }> = {
+  "1a": { left: 14, top: 70 },
+  "1b": { left: 29, top: 69 },
+  "2a": { left: 45, top: 49 },
+  "2b": { left: 47, top: 65 },
+  "3a": { left: 65, top: 38 },
+  "3b": { left: 68, top: 53 },
+  "4a": { left: 9, top: 3 },
+  "4b": { left: 9, top: 17 },
+};
+
+/** Which age group the pin is labelled for — we are U14M. */
+const OUR_TEAM = "U14M";
+
 /** Per-session page metadata. Adding a session means adding its run-sheet to
  *  plans/ and an entry here; the page and its index card follow automatically. */
 interface PlanMeta {
@@ -176,6 +196,30 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
     const image = /^!\[([^\]]*)\]\(([^)]+)\)$/.exec(s);
     if (image) {
       const alt = image[1]!;
+      const target = image[2]!;
+
+      // `![caption](pitch:2b)` — the club pitch map with our zone pinned
+      if (target.startsWith("pitch:")) {
+        const code = target.slice("pitch:".length);
+        const zone = PITCH_ZONES[code];
+        const map = images["__pitch_map__"];
+        if (!zone) {
+          warn(`unknown pitch zone '${code}' — known zones: ${Object.keys(PITCH_ZONES).join(", ")}`);
+        } else if (map === undefined) {
+          warn("pitch map image missing — skipped");
+        } else {
+          out.push(
+            `<figure class="pitchmap">\n` +
+              `<img alt="${escAttr(alt)}" src="${map}" />\n` +
+              `<span class="pitch-pin" style="left:${zone.left}%;top:${zone.top}%">${OUR_TEAM}</span>\n` +
+              `<figcaption>${inline(alt)}</figcaption>\n` +
+              `</figure>`,
+          );
+        }
+        i += 1;
+        continue;
+      }
+
       const src = images[alt];
       if (src === undefined) {
         warn(`no embedded diagram for image '${alt}' — skipped`);
@@ -340,6 +384,12 @@ function loadDiagrams(): Record<string, string> {
     }
     out[alt] = "data:image/png;base64," + fs.readFileSync(p).toString("base64");
   }
+  const mapPath = path.join(ROOT, "claude", "images", "web", "pitch-map.jpg");
+  if (fs.existsSync(mapPath)) {
+    out["__pitch_map__"] = "data:image/jpeg;base64," + fs.readFileSync(mapPath).toString("base64");
+  } else {
+    warn("missing claude/images/web/pitch-map.jpg");
+  }
   return out;
 }
 
@@ -499,7 +549,7 @@ function buildPages(): Record<string, string> {
       sub: meta.sub,
       sub2: meta.sub2,
       crumb: meta.crumb,
-      body: mdToHtml(read("plans/" + fname)),
+      body: mdToHtml(read("plans/" + fname), diagrams),
     });
   }
 

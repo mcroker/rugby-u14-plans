@@ -17,6 +17,8 @@ This project holds the coaching material for our club's U14 age group: squad con
 - **`ref/`** — reference material: `Lineout FAQ.pdf` (law/mechanics questions), plus `Autism in Rugby.pdf` and `ADHD in Rugby.pdf` (club guidance on coaching neurodiverse players).
 - **`tools/`** — `build_site.ts`, which generates the whole HTML site from the markdown above, and `theme.css`, the shared design system it inlines (see Shared HTML reference below).
 
+**Pitch allocation (external):** [https://pitch.twrfc.com/](https://pitch.twrfc.com/) — the club's allocation of pitches and times for each Sunday at home. **We are `U14M`.** This is the source of the start/end time and the pitch for every home session, so check it when writing or running a Sunday plan. It covers club sessions only — Thursdays at TWGSB 4G aren't on it.
+
 ## Session plan mechanics
 
 **Detailed, on-the-pitch session run-sheets** (timings, drills, setup) live in the **`plans/`** folder, one file per session, expanding that session's entry in `claude/blocks.md`. Naming convention: `plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md` — e.g. `plans/block1-week1-thur.md` for Block 1, Week 1, Thursday. Use `thur` or `sun` for the day.
@@ -24,6 +26,14 @@ This project holds the coaching material for our club's U14 age group: squad con
 **Session plan template.** Every file in `plans/` follows this structure:
 
 1. **Session details** — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.
+
+   For a home Sunday session, **Date/Time and Location come from the pitch allocation** (above) — find the `U14M` row for that date and use its **time** (e.g. `10:45am – 12:30pm`) and its **pitch zone**. Then, straight after the table, include the **allocation map with our pitch marked**, by writing an image whose target is the zone code:
+
+   ```
+   ![Our pitch this session — the U12M / U14M zone on the club allocation map.](pitch:2b)
+   ```
+
+   The build embeds the club map and pins a `U14M` marker on that zone, so a new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
 2. **Plan** — a lightweight table, one row per activity, with just the key at-a-glance information: Start time + duration, Activity, and a one-line summary of what it is / its focus. This is the section to glance at while actually running the session on the night.
 3. **Activities** — a more detailed breakdown, but **only for activities that warrant it** (introducing a new skill or system, or anything worth a diagram or video reference) — not every row from the Plan table needs an entry here. Check **`claude/activities.md`** first for a reusable game/drill before inventing a new one. Each entry can include:
    - Coaching Points (kept to a small number of focus areas)

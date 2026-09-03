@@ -148,6 +148,25 @@ footer.page-foot a { color: var(--blue); }
   padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
 }
 
+/* Pitch allocation map — base map from the club's allocation page with our
+   zone pinned (see build_site.ts PITCH_ZONES). */
+figure.pitchmap { position: relative; margin: 1.2em 0; max-width: 620px; }
+figure.pitchmap img { margin: 0; width: 100%; }
+figure.pitchmap .pitch-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: var(--gold); color: #2a2005;
+  font-family: "Oswald", sans-serif; font-weight: 600;
+  font-size: 0.78rem; letter-spacing: 0.04em;
+  padding: 4px 9px; border-radius: 4px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.45);
+  white-space: nowrap;
+}
+figure.pitchmap figcaption {
+  color: var(--muted); font-size: 0.85rem; margin-top: 0.6em;
+}
+
 @media (max-width: 640px) {
   .wrap { padding-left: 18px; padding-right: 18px; }
   header.page-head .inner { padding-left: 18px; padding-right: 18px; }

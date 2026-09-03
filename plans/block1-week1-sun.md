@@ -18,7 +18,7 @@
 | Start + duration | Activity | Focus |
 |---|---|---|
 | +0, 15 min | Player-led warm-up, then handling reps | Whole squad; the two skill zones below run out of this group |
-| +0, 15 min *(parallel pull-out)* | Hooker throw-in skill zone (hookers) | Throw technique — accuracy, grip, release |
+| +0, 15 min *(parallel pull-out)* | Hooker throw-in — Cross-Bar Challenge (hookers) | Throw technique against the crossbar — height, line, routine |
 | +0, 15 min *(parallel pull-out)* | Tackle-technique skill zone (Tackle Diamond, controlled) | Individual tackle technique, small-group, full contact; groups rotate |
 | +15, 5 min | Whole-group intervention: lineout positioning + laws | Where to stand; uncontested, no lift (see `laws.md`) |
 | +20, 60 min | Main game: touch/tag, lineout restarts | Line-speed scoreboard; bonus for a clean lineout catch leading to a try |
@@ -31,17 +31,24 @@
 
 ## Activities
 
-### Hooker throw-in (pull-out skill zone)
+### Hooker throw-in — the Cross-Bar Challenge (pull-out skill zone)
 
-**Coaching Points:** accuracy, grip, release.
+**Coaching Points:** consistent pre-throw routine (same feet, same grip, same ball position every time); ball back **behind the head**, both hands on it; **step into it** rather than throwing with the arms alone; follow through with the hands **pointing at the target**; eyes on the target, not the ball.
 
-**Setup:** hookers (~3) peel off with a coach at the start of the session; everyone else stays with the player-led warm-up and handling reps.
+**Setup:** hookers (~3) peel off with a coach at the start of the session and work at the posts; everyone else stays with the player-led warm-up and handling reps. Mark a throwing spot so the distance is the same every rep.
 
-**Description:** repeated throw-ins at increasing distance/accuracy targets (e.g. cones marking front/middle/back of a 5-man line). Runs for the whole opening window, then straight back into the main group for the lineout intervention.
+**Description:** the **Cross-Bar Challenge** (see `activities.md`) — throw at the crossbar rather than at a team-mate. Over the bar first, then progress to hitting it; score out of ten. The bar gives instant, unarguable feedback on height and line, which is exactly what a first-ever session needs — no jumper to catch it, no lineout to organise, just the throw. Runs for the whole opening window, then straight back into the main group for the lineout intervention.
 
 **Progressions:**
-- Increase throw distance/height.
-- Add a receiver catching at each target.
+- Increase the distance from the posts.
+- Move from "over the bar" to "hit the bar".
+- Swap the bar for a receiver at the front/middle/back of a 5-man line once the technique holds up — that's the Week 2 step, not necessarily today.
+
+**Adaptations:**
+- Shorten the distance if the ball isn't reaching cleanly — a throw that's a strain has no technique in it.
+- Give a couple of non-hookers some throws too; useful cover, and it keeps the group moving.
+
+**Video example:** [Learn the Hooker Throw from Jamie George — Rugby Lineout Masterclass](https://www.youtube.com/watch?v=yMP79gu3Vn0)
 
 ### Tackle Diamond
 

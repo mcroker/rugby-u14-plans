@@ -181,6 +181,19 @@ Quick reference for picking a game to match the session's contact-level target (
 | Description | Continuous attacking phases against a defence operating under a set condition. |
 | Adaptations | Toggle the defence's condition to dial the difficulty up or down — **passive** (defence gives token resistance, attack focuses on shape/execution) or **pressure** (defence competes properly, forcing quicker decisions). |
 
+### Cross-Bar Challenge (hooker throw)
+
+**Focus:** Lineout / hooker throw
+
+| | |
+|---|---|
+| Setup | A set of posts, and a ball each (or a feeder returning balls). Hookers work in a small group; mark a throwing spot on the ground so distance is consistent rep to rep. |
+| Description | An accuracy-and-height challenge for the throw, using the crossbar as the target instead of a team-mate: throw **over the bar** to start, then step it up to **hitting the bar**. Self-scoring — count out of ten, and hookers compete against their own best rather than each other. The bar gives instant, unarguable feedback on both height and line, which cones and a moving jumper don't. |
+| Coaching Points | Consistent pre-throw routine every time — same feet, same grip, same ball position. Ball back **behind the head**, both hands on it, thumbs driving through. Step and transfer weight into the throw rather than throwing with the arms alone. Follow through with the hands finishing **pointing at the target**. Eyes on the target, not on the ball. |
+| Progressions | - Increase the distance from the posts.<br>- Move from "over the bar" to "hit the bar".<br>- Call the target as the hooker starts their routine, so they can't pre-set.<br>- Swap the bar for a receiver at front/middle/back of a 5-man line once the technique holds up. |
+| Adaptations | - Shorten the distance if the ball isn't reaching cleanly — a throw that's a strain has no technique in it.<br>- Give a non-hooker a few throws too; useful cover, and it keeps the group moving. |
+| Video example | [Learn the Hooker Throw from Jamie George — Rugby Lineout Masterclass](https://www.youtube.com/watch?v=yMP79gu3Vn0) |
+
 ## Combined game- and skill-zone
 
 ### Blitz Defence (4 v 3 shape drill)

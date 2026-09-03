@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm** (1h45). Home training — confirm against the [pitch allocation](https://pitch.twrfc.com/) and Spond on the day; see `calendar.md`. |
-| **Location** | Home — **U12M / U14M pitch** (see the allocation map below) |
+| **Location** | Home — **Pitch 2**, shared with U12M (see the allocation map below). **Which half — left or right as viewed from the Club House — to confirm on the day.** |
 | **Coaches** | **5 — Steve, Tom, Matt, Bev, Jeff.** (Martin and Andy absent.) |
 | **Attendance** | **31 expected** — Spond: 31 attending, 6 unanswered, 6 declined (43 invited). *(Actual — fill in on the night.)* |
 | **Session objective** | Season opener. Introduce individual tackle skills + communication (defence base); introduce lineout positioning, laws, and the hooker throw-in (the squad's very first lineout exposure); introduce blitz defence line-speed reps for the backs. |
 | **Resources required** | Balls, bibs, cones, ruck shields. |
 
-![Our pitch this session — the U12M / U14M zone on the club allocation map. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
+![Our pitch this session — Pitch 2, the zone the allocation map labels U12M / U14M. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
 
 ## Plan
 

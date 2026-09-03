@@ -74,15 +74,15 @@ const DIAGRAMS: Record<string, string> = {
  * marks its pitch by writing `![caption](pitch:2b)`, and the build pins our
  * marker on that zone, so a new week only changes the zone code in the plan.
  */
-const PITCH_ZONES: Record<string, { left: number; top: number }> = {
-  "1a": { left: 14, top: 70 },
-  "1b": { left: 29, top: 69 },
-  "2a": { left: 45, top: 49 },
-  "2b": { left: 47, top: 65 },
-  "3a": { left: 65, top: 38 },
-  "3b": { left: 68, top: 53 },
-  "4a": { left: 9, top: 3 },
-  "4b": { left: 9, top: 17 },
+const PITCH_ZONES: Record<string, { left: number; top: number; pitch: string }> = {
+  "1a": { left: 14, top: 70, pitch: "Pitch 1" },
+  "1b": { left: 29, top: 69, pitch: "Pitch 1" },
+  "2a": { left: 45, top: 49, pitch: "Pitch 2" },
+  "2b": { left: 47, top: 65, pitch: "Pitch 2" },
+  "3a": { left: 65, top: 38, pitch: "Pitch 3" },
+  "3b": { left: 68, top: 53, pitch: "Pitch 3" },
+  "4a": { left: 9, top: 3, pitch: "Pitch 4" },
+  "4b": { left: 9, top: 17, pitch: "Pitch 4" },
 };
 
 /** Which age group the pin is labelled for — we are U14M. */
@@ -252,7 +252,7 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
           out.push(
             `<figure class="pitchmap">\n` +
               `<img alt="${escAttr(alt)}" src="${map}" />\n` +
-              `<span class="pitch-pin" style="left:${zone.left}%;top:${zone.top}%">${OUR_TEAM}</span>\n` +
+              `<span class="pitch-pin" style="left:${zone.left}%;top:${zone.top}%">${OUR_TEAM} &middot; ${zone.pitch}</span>\n` +
               `<figcaption>${inline(alt)}</figcaption>\n` +
               `</figure>`,
           );

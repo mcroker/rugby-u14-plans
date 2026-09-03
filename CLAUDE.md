@@ -20,6 +20,26 @@ This project holds the coaching material for our club's U14 age group: squad con
 
 **Pitch allocation (external):** [https://pitch.twrfc.com/](https://pitch.twrfc.com/) — the club's allocation of pitches and times for each Sunday at home. **We are `U14M`.** This is the source of the start/end time and the pitch for every home session, so check it when writing or running a Sunday plan. It covers club sessions only — Thursdays at TWGSB 4G aren't on it.
 
+**How the club's pitches are numbered.** The allocation map shows the grounds from above, with the **Club House** marked at the bottom-left. Our own names for what it shows:
+
+| | |
+|---|---|
+| **Pitch 1** | Nearest the Club House. |
+| **Pitch 2** | To the right of Pitch 1. |
+| **Pitch 3** | To the right of Pitch 2. |
+| **Pitch 4** | The pitch at the top of the map. |
+| **Training Area** | The square blue area just below Pitch 4. |
+| **Touch Pitch** | The blue rectangle above Pitch 1 — i.e. beyond it, away from the Club House. |
+
+**Naming half a pitch.** We are often allocated half a pitch, shared with another age group:
+
+- **Pitches 1, 2 and 3** — call the halves **left** and **right**, *as viewed from the Club House*.
+- **Pitch 4** — call the halves **far-end** and **near-end**, *as viewed from the Club House*.
+
+Always say which, in the plan's Location row and on the night — "half of Pitch 2" is not enough for thirty players to find.
+
+The club's allocation page labels the halves with its own codes (`1a`/`1b`, `2a`/`2b`, and so on), and those are the codes `PITCH_ZONES` in `tools/build_site.ts` uses for the map pin. **Which of each pair is the left/right (or far/near) half is not recorded anywhere yet** — confirm it at the ground and write it into `PITCH_ZONES` so the site can state it rather than just pin it.
+
 ## Session plan mechanics
 
 **Detailed, on-the-pitch session run-sheets** (timings, drills, setup) live in the **`plans/`** folder, one file per session, expanding that session's entry in `claude/blocks.md`. Naming convention: `plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md` — e.g. `plans/block1-week1-thur.md` for Block 1, Week 1, Thursday. Use `thur` or `sun` for the day.

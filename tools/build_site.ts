@@ -93,6 +93,15 @@ interface PlanMeta {
 }
 
 const PLAN_META: Record<string, PlanMeta> = {
+  "block1-week1-thur.md": {
+    date: "2026-09-10",
+    h1: "Week 1 — Thursday",
+    sub: "Passing, a lineout positioning recap, and Bang introduced in a tight-space game.",
+    sub2: "Thu 10 Sep 2026, 7–8pm",
+    crumb: "Week 1 (Thu)",
+    card: "Run-sheet for the midweek session at TWGSB: passing, lineout recap, and the first outing for Bang.",
+    badge: "10 Sep",
+  },
   "block1-week1-sun.md": {
     date: "2026-09-06",
     h1: "Week 1 — Sunday",

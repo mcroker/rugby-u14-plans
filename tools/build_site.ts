@@ -20,7 +20,16 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+/** Publish root — what gets deployed to Pages (the domain root). */
 const OUT = path.resolve(process.argv[2] ?? path.join(ROOT, "_site"));
+
+/**
+ * The site lives in a sub-directory of the domain, so this age group's pages
+ * are served from rugby-plans.com/u14/ and the root is free for other age
+ * groups later. Every link between pages is relative, so nothing else changes.
+ */
+const SITE_SUBDIR = "u14";
+const SITE_OUT = path.join(OUT, SITE_SUBDIR);
 const GENERATED = new Date().toLocaleDateString("en-GB", {
   day: "numeric",
   month: "long",
@@ -718,15 +727,34 @@ function buildPages(): Record<string, string> {
   return pages;
 }
 
+/** Stub at the domain root so rugby-plans.com/ does not 404. Replace this when
+ *  another age group joins and the root needs to be a real landing page. */
+const ROOT_REDIRECT = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="0; url=${SITE_SUBDIR}/">
+<link rel="canonical" href="/${SITE_SUBDIR}/">
+<title>U14 Rugby — Coaching Reference</title>
+</head>
+<body>
+<p>Redirecting to the <a href="${SITE_SUBDIR}/">U14 coaching reference</a>.</p>
+</body>
+</html>
+`;
+
 function main(): number {
   const pages = buildPages();
-  fs.mkdirSync(OUT, { recursive: true });
+  fs.mkdirSync(SITE_OUT, { recursive: true });
   for (const name of Object.keys(pages).sort()) {
     const content = pages[name]!;
-    fs.writeFileSync(path.join(OUT, name), content, "utf-8");
+    fs.writeFileSync(path.join(SITE_OUT, name), content, "utf-8");
     const kb = (Buffer.byteLength(content, "utf-8") / 1024).toFixed(1);
-    console.log(`wrote ${name.padEnd(24)} ${kb.padStart(7)} KB`);
+    console.log(`wrote ${(SITE_SUBDIR + "/" + name).padEnd(28)} ${kb.padStart(7)} KB`);
   }
+  fs.writeFileSync(path.join(OUT, "index.html"), ROOT_REDIRECT, "utf-8");
+  console.log(`wrote ${"index.html".padEnd(28)}         (root redirect to ${SITE_SUBDIR}/)`);
   if (warnings.length) {
     console.log(`\n${warnings.length} warning(s):`);
     for (const w of warnings) console.log("  - " + w);

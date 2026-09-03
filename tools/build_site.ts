@@ -633,16 +633,6 @@ function buildPages(): Record<string, string> {
     : [];
   const indexBody = [
     ...nextCard,
-    '  <h2 class="group">Playbook</h2>',
-    '  <div class="cards">',
-    card(
-      "playbook.html",
-      "Playbook &amp; Calls",
-      "Our calls and shapes — open play, backs moves, kicking, defence, lineout, scrum. " +
-        "The master reference for how we play; clean enough to share with the players themselves.",
-    ),
-    "  </div>",
-    "",
     '  <h2 class="group">Block 1 &middot; Weeks 1&ndash;6</h2>',
     '  <div class="cards">',
     card(
@@ -656,6 +646,12 @@ function buildPages(): Record<string, string> {
     "",
     '  <h2 class="group">Coaching reference</h2>',
     '  <div class="cards">',
+    card(
+      "playbook.html",
+      "Playbook &amp; Calls",
+      "Our calls and shapes — open play, backs moves, kicking, defence, lineout, scrum. " +
+        "The master reference for how we play; clean enough to share with the players themselves.",
+    ),
     card(
       "warmup.html",
       "The Standard Warm-Up",

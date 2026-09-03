@@ -82,6 +82,8 @@ const OUR_TEAM = "U14M";
 /** Per-session page metadata. Adding a session means adding its run-sheet to
  *  plans/ and an entry here; the page and its index card follow automatically. */
 interface PlanMeta {
+  /** ISO date (YYYY-MM-DD) of the session — drives which plan is "next". */
+  date: string;
   h1: string;
   sub: string;
   sub2: string;
@@ -92,6 +94,7 @@ interface PlanMeta {
 
 const PLAN_META: Record<string, PlanMeta> = {
   "block1-week1-sun.md": {
+    date: "2026-09-06",
     h1: "Week 1 — Sunday",
     sub: "Season opener — tackle base, first lineout exposure, blitz-defence intro.",
     sub2: "Sun 6 Sep 2026",
@@ -100,6 +103,22 @@ const PLAN_META: Record<string, PlanMeta> = {
     badge: "6 Sep",
   },
 };
+
+/**
+ * The plan shown at the stable next.html URL: the earliest session still to
+ * come (today counts). If every session is in the past, the most recent one is
+ * kept there rather than leaving the page broken.
+ */
+function pickNextPlan(plansDir: string): { file: string; upcoming: boolean } | null {
+  const today = new Date().toISOString().slice(0, 10);
+  const dated = Object.entries(PLAN_META)
+    .filter(([f]) => fs.existsSync(path.join(plansDir, f)))
+    .sort((a, b) => a[1].date.localeCompare(b[1].date));
+  if (!dated.length) return null;
+  const upcoming = dated.find(([, m]) => m.date >= today);
+  if (upcoming) return { file: upcoming[0], upcoming: true };
+  return { file: dated[dated.length - 1]![0], upcoming: false };
+}
 
 const warnings: string[] = [];
 
@@ -564,6 +583,30 @@ function buildPages(): Record<string, string> {
     });
   }
 
+  // ---- next.html: same content as the dated page, at a URL that never changes
+  const next = pickNextPlan(plansDir);
+  if (!next) {
+    warn("no dated session plans — next.html not built");
+  } else {
+    const meta = PLAN_META[next.file]!;
+    const permalink = next.file.slice(0, -3) + ".html";
+    const notice = next.upcoming
+      ? `<p class="next-note"><strong>This is the next session.</strong> ` +
+        `This page always shows whichever session is coming up, so the link is safe to keep. ` +
+        `The permanent link for this one is <a href="${permalink}">${permalink}</a>.</p>`
+      : `<p class="next-note"><strong>No session is scheduled after this one yet.</strong> ` +
+        `Showing the most recent plan (${meta.sub2}) until the next one is written. ` +
+        `Its permanent link is <a href="${permalink}">${permalink}</a>.</p>`;
+    add("next.html", {
+      title: "Next Session — U14 Rugby",
+      h1: meta.h1,
+      sub: meta.sub,
+      sub2: meta.sub2,
+      crumb: "Next session",
+      body: notice + "\n" + mdToHtml(read("plans/" + next.file), diagrams),
+    });
+  }
+
   // ---- index
   const planCards = Object.keys(PLAN_META)
     .sort()
@@ -572,7 +615,24 @@ function buildPages(): Record<string, string> {
       const m = PLAN_META[f]!;
       return card(f.slice(0, -3) + ".html", m.h1, m.card, m.badge);
     });
+  const nextCard = next
+    ? [
+        '  <h2 class="group">Next session</h2>',
+        '  <div class="cards">',
+        card(
+          "next.html",
+          PLAN_META[next.file]!.h1,
+          next.upcoming
+            ? "Whatever session is coming up next — this link always points at it, so it is the one to save or share."
+            : "The most recent run-sheet; no later session is written yet. This link always points at whatever is next.",
+          PLAN_META[next.file]!.badge,
+        ),
+        "  </div>",
+        "",
+      ]
+    : [];
   const indexBody = [
+    ...nextCard,
     '  <h2 class="group">Playbook</h2>',
     '  <div class="cards">',
     card(

@@ -148,6 +148,13 @@ footer.page-foot a { color: var(--blue); }
   padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
 }
 
+/* Banner on next.html explaining the stable-URL page. */
+.next-note {
+  background: var(--blue-tint); border-left: 3px solid var(--blue);
+  border-radius: 0 6px 6px 0; padding: 0.7em 1.1em;
+  font-size: 0.9rem; max-width: none; margin: 0 0 1.6em;
+}
+
 /* Pitch allocation map — base map from the club's allocation page with our
    zone pinned (see build_site.ts PITCH_ZONES). */
 figure.pitchmap { position: relative; margin: 1.2em 0; max-width: 620px; }

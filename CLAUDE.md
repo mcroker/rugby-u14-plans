@@ -47,7 +47,7 @@ This project holds the coaching material for our club's U14 age group: squad con
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 
-- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. **You don't write this page by hand:** add the run-sheet to `plans/` and an entry for it to `PLAN_META` in `tools/build_site.ts` (page heading, subtitle, date, breadcrumb, index-card text), then push — the workflow builds the page and its index card automatically. See Shared HTML reference below.
+- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. **You don't write this page by hand:** add the run-sheet to `plans/` and an entry for it to `PLAN_META` in `tools/build_site.ts` (the session's **ISO date**, page heading, subtitle, breadcrumb, index-card text), then push — the workflow builds the page and its index card automatically. The ISO `date` is what decides which plan is the next one, so it has to be right. See Shared HTML reference below.
 - A **PDF**, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.
 
 See `plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](https://mcroker.github.io/rugby-u14-plans/block1-week1-sun.html) for a worked example of the responsive HTML output.
@@ -79,7 +79,8 @@ Pages on the site:
 - **`calendar.html`** — full HTML export of `claude/calendar.md`.
 - **`laws.html`** — full HTML export of `claude/laws.md`.
 - **`warmup.html`** — full HTML export of `claude/warmup.md`.
-- Individual session pages (e.g. `block1-week1-sun.html`) — one per file in `plans/` that has a `PLAN_META` entry, per the per-session convention above.
+- **`next.html`** — **the stable link for the upcoming session.** It always carries whichever session is next (today counts as next all day), so it is the URL to save or hand to the coaching group rather than a dated one. If every session in `PLAN_META` is in the past it holds the most recent plan and says so, rather than breaking. Its content is a copy of that week's dated page, with a banner pointing at the permanent link.
+- Individual session pages (e.g. `block1-week1-sun.html`) — one per file in `plans/` that has a `PLAN_META` entry, per the per-session convention above. **These keep their dated names permanently and are the archive** — once a session has passed, its page stays exactly where it was, and only `next.html` moves on.
 
 **Build requirements — apply to every page above, no exceptions:**
 
@@ -90,6 +91,8 @@ Pages on the site:
 - **No academy-library or external play-name provenance notes.** Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source `.md` files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.
 
 **Keeping this in date:** nothing to do — the workflow rebuilds every page from the markdown on each push to `main`, so the site cannot drift out of sync with the sources. The index's cards are generated too, so adding a session plan needs no separate index edit.
+
+The workflow **also runs daily at 05:00 UTC**, because `next.html` depends on the date rather than on anything in the repo: without a scheduled rebuild it would still be advertising last week's session. (GitHub disables scheduled workflows after 60 days with no repo activity — if `next.html` ever goes stale, check the Actions tab first.)
 
 ## Where these files live
 

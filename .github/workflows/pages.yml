@@ -15,6 +15,13 @@ on:
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
+  # next.html always shows the upcoming session, so the site has to rebuild as
+  # time passes, not only when something is pushed. Daily at 05:00 UTC.
+  # Note: GitHub disables scheduled workflows after 60 days with no repo
+  # activity — re-enable from the Actions tab if that ever happens.
+  schedule:
+    - cron: '0 5 * * *'
+
 permissions:
   contents: read
   pages: write

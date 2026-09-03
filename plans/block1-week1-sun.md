@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm** (1h45). Home training — confirm against the [pitch allocation](https://pitch.twrfc.com/) and Spond on the day; see `calendar.md`. |
-| **Location** | Home — the **right half of Pitch 2** (as viewed from the Club House), shared with U12M. See the allocation map below. |
+| **Location** | Home — the **right half of Pitch 2** (as viewed from the Club House). **Ours alone for the slot** — U12M have it until 10:30, we are on from 10:45. See the allocation map below. |
 | **Coaches** | **5 — Steve, Tom, Matt, Bev, Jeff.** (Martin and Andy absent.) |
 | **Attendance** | **31 expected** — Spond: 31 attending, 6 unanswered, 6 declined (43 invited). *(Actual — fill in on the night.)* |
 | **Session objective** | Season opener. Introduce individual tackle skills + communication (defence base); introduce lineout positioning, laws, and the hooker throw-in (the squad's very first lineout exposure); introduce blitz defence line-speed reps for the backs. |
 | **Resources required** | Balls, bibs, cones, ruck shields. |
 
-![Our pitch this session — Pitch 2, the zone the allocation map labels U12M / U14M. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
+![Our pitch this session — Pitch 2, the zone the allocation map labels U12M / U14M, meaning U12M have it first and we follow. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
 
 ## Plan
 
@@ -27,7 +27,7 @@
 | +25, 60 min *(parallel, backs not in lineout work)* | Continuous Defence | Defensive alignment while the forwards are in lineout skill work |
 | +85, 5 min | Cool-down / close | Recap line-org cues, set up Thursday |
 
-*Runs to the standard **90-minute** Sunday session, warm-up and close included (see `age-group.md`). The allocated slot is 10:45–12:30 (105 min), so there's ~15 min of slack for arrival, kit and a late start — don't spend it by drifting; finish on time. Scale each block proportionally if the slot changes.*
+*Runs to the standard **90-minute** Sunday session, warm-up and close included (see `age-group.md`). The allocated slot is 10:45–12:30 (105 min), so there's ~15 min of slack for arrival and a late start — don't spend it by drifting; finish on time. **U12M are on the pitch until 10:30**, so nothing can be set out early: cones, shields and balls all go out in the changeover, which is the 15 minutes. Scale each block proportionally if the slot changes.*
 
 **With five coaches, the opening block runs at full width** — a player leads the warm-up, then:
 
@@ -125,6 +125,7 @@ Two diamonds rather than one is the whole benefit of the numbers: it halves the 
 
 - This is the squad's first session of the season and their first-ever lineout exposure — keep contact introductory even though it's a Sunday with more time/space than usual.
 - **The contact warm-up at +5 is not optional and covers the whole squad**, because the tackle rotations start straight after it (see `coaching.md`). If the session is running late, cut something else — a rotation, or time off the main game — not the two minutes.
+- **Get the kit out fast.** U12M are on our half until 10:30 and we start at 10:45, so the whole setup — cones for the warm-up lines, two tackle diamonds, shields, the hooker's target — happens in that fifteen-minute changeover. With five coaches it is a job for two of them while the rest greet players.
 - **31 expected is a big group** — 6 more are unanswered, so it could be up to 37. Plan for two games side by side in the main block, and be ready to add a fourth tackle rotation (or a second diamond) if the unanswered players turn up.
 - The **B/W/G** lineout calls aren't introduced until Week 2 — this week is positioning and the throw only.
 - Scrum's first exposure is Thursday 10 Sep, not this session.

@@ -20,6 +20,10 @@ This project holds the coaching material for our club's U14 age group: squad con
 
 **Pitch allocation (external):** [https://pitch.twrfc.com/](https://pitch.twrfc.com/) — the club's allocation of pitches and times for each Sunday at home. **We are `U14M`.** This is the source of the start/end time and the pitch for every home session, so check it when writing or running a Sunday plan. It covers club sessions only — Thursdays at TWGSB 4G aren't on it.
 
+**Reading the map's labels.** Where a zone is labelled with two age groups — `U12M / U14M`, `U11 / U15M`, and so on — that is **two consecutive slots on the same ground, not two groups sharing it**. The club runs the minis and younger juniors from **9:00–10:30**, then the older juniors, academy and ladies from **10:45–12:30**. We are always the second name, so **the zone is ours alone for our slot**; the group named before us is off it by 10:30.
+
+It does mean the ground is still in use right up to the changeover, so nothing can be set out early.
+
 **How the club's pitches are numbered.** The allocation map shows the grounds from above, with the **Club House** marked at the bottom-left. Our own names for what it shows:
 
 | | |

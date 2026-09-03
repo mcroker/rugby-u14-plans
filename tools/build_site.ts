@@ -354,6 +354,7 @@ function page(theme: string, o: PageOpts): string {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${o.title}</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 <style>${css}</style>
@@ -737,6 +738,7 @@ const ROOT_REDIRECT = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="refresh" content="0; url=${SITE_SUBDIR}/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="canonical" href="/${SITE_SUBDIR}/">
 <title>U14 Rugby — Coaching Reference</title>
 </head>
@@ -755,6 +757,11 @@ function main(): number {
     const kb = (Buffer.byteLength(content, "utf-8") / 1024).toFixed(1);
     console.log(`wrote ${(SITE_SUBDIR + "/" + name).padEnd(28)} ${kb.padStart(7)} KB`);
   }
+  const favicon = read("tools/favicon.svg");
+  fs.writeFileSync(path.join(SITE_OUT, "favicon.svg"), favicon, "utf-8");
+  fs.writeFileSync(path.join(OUT, "favicon.svg"), favicon, "utf-8");
+  console.log(`wrote ${(SITE_SUBDIR + "/favicon.svg").padEnd(28)}         (rugby ball)`);
+
   fs.writeFileSync(path.join(OUT, "index.html"), ROOT_REDIRECT, "utf-8");
   console.log(`wrote ${"index.html".padEnd(28)}         (root redirect to ${SITE_SUBDIR}/)`);
   if (warnings.length) {

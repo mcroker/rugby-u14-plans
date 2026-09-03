@@ -6,7 +6,7 @@
 |---|---|
 | **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm** (1h45). Home training — confirm against the [pitch allocation](https://pitch.twrfc.com/) and Spond on the day; see `calendar.md`. |
 | **Location** | Home — **U12M / U14M pitch** (see the allocation map below) |
-| **Coaches** | *(fill in on the night)* |
+| **Coaches** | **5 — Steve, Tom, Matt, Bev, Jeff.** (Martin and Andy absent.) |
 | **Attendance** | **31 expected** — Spond: 31 attending, 6 unanswered, 6 declined (43 invited). *(Actual — fill in on the night.)* |
 | **Session objective** | Season opener. Introduce individual tackle skills + communication (defence base); introduce lineout positioning, laws, and the hooker throw-in (the squad's very first lineout exposure); introduce blitz defence line-speed reps for the backs. |
 | **Resources required** | Balls, bibs, cones, ruck shields. |
@@ -29,7 +29,15 @@
 
 *Runs to the standard **90-minute** Sunday session, warm-up and close included (see `age-group.md`). The allocated slot is 10:45–12:30 (105 min), so there's ~15 min of slack for arrival, kit and a late start — don't spend it by drifting; finish on time. Scale each block proportionally if the slot changes.*
 
-**The opening block needs two coaches free** (one on the hookers, one on the tackle zone) while a player leads the warm-up for everyone else — see `coaching.md`. A third coach lets you run two tackle diamonds side by side, which halves the group size and roughly doubles the reps.
+**With five coaches, the opening block runs at full width** — a player leads the warm-up, then:
+
+| Coach | Opening block (+7 to +20) |
+|---|---|
+| 1 | Hookers — Cross-Bar Challenge |
+| 2 and 3 | **A tackle diamond each**, running side by side |
+| 4 and 5 | Handling reps with the main group, feeding players in and out of the diamonds |
+
+Two diamonds rather than one is the whole benefit of the numbers: it halves the group size and roughly doubles the reps each player gets in the same thirteen minutes. In the main game, five is enough to run **two games side by side** with a coach spare to float — see `coaching.md`.
 
 ## Activities
 
@@ -74,12 +82,12 @@
 
 **Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze** (see `activities.md`). Defence "wins" the rep if the tackle is completed over the halfway point of the diamond.
 
-**Setup:** see `activities.md`. Runs in the opening block once the whole squad has done the two-minute contact warm-up: with ~28 players left after the hookers peel off, rotate **three groups of ~9 through the diamond, ~4 min each**, each group coming straight out of the warm-up/handling work and going straight back to it.
+**Setup:** see `activities.md`. Runs in the opening block once the whole squad has done the two-minute contact warm-up. **Two diamonds side by side** (we have the coaches for it): with ~28 players left after the hookers peel off, rotate **three waves of ~9, ~4 min each**, each wave splitting four and five across the two diamonds. Each group comes straight out of the handling work and goes straight back to it.
 
 **Description:** controlled, small-group, full-contact tackle-technique reps — short and sharp. Front-loading it means the squad's first real coaching input of the season is the defence base the whole block is built on.
 
 **Adaptations:**
-- Two diamonds side by side if a third coach is free — smaller groups, more reps each.
+- Drop back to a single diamond if a coach gets pulled away — bigger groups and fewer reps, but it still works.
 - Drop to two rotations of ~6 min if the group is slow to settle on the first session back.
 
 ### Whole-group intervention — Lineout positioning + laws

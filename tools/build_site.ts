@@ -90,6 +90,8 @@ interface PlanMeta {
   crumb: string;
   card: string;
   badge: string;
+  /** Marks the plan as a work in progress — banners the page and the index card. */
+  draft?: boolean;
 }
 
 const PLAN_META: Record<string, PlanMeta> = {
@@ -101,6 +103,7 @@ const PLAN_META: Record<string, PlanMeta> = {
     crumb: "Week 1 (Thu)",
     card: "Run-sheet for the midweek session at TWGSB: passing, lineout recap, and the first outing for Bang.",
     badge: "10 Sep",
+    draft: true,
   },
   "block1-week1-sun.md": {
     date: "2026-09-06",
@@ -444,8 +447,15 @@ a.card .card-title {
 a.card .card-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.5; }
 `;
 
-function card(href: string, title: string, desc: string, badge?: string): string {
-  const b = badge ? ` <span class="badge">${badge}</span>` : "";
+const DRAFT_BADGE = ' <span class="badge badge-draft">Draft</span>';
+
+const DRAFT_NOTE =
+  '<p class="draft-note"><strong>Draft — work in progress.</strong> ' +
+  "This run-sheet is not finished and will change before the session. " +
+  "Don't print it or hand it round yet; check back for the final version.</p>";
+
+function card(href: string, title: string, desc: string, badge?: string, draft?: boolean): string {
+  const b = (badge ? ` <span class="badge">${badge}</span>` : "") + (draft ? DRAFT_BADGE : "");
   return (
     `    <a class="card" href="${href}">\n` +
     `      <div class="card-title">${title}${b}</div>\n` +
@@ -583,12 +593,12 @@ function buildPages(): Record<string, string> {
       continue;
     }
     add(fname.slice(0, -3) + ".html", {
-      title: `${meta.h1} — U14 Rugby`,
-      h1: meta.h1,
+      title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+      h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
       sub: meta.sub,
       sub2: meta.sub2,
       crumb: meta.crumb,
-      body: mdToHtml(read("plans/" + fname), diagrams),
+      body: (meta.draft ? DRAFT_NOTE + "\n" : "") + mdToHtml(read("plans/" + fname), diagrams),
     });
   }
 
@@ -607,12 +617,16 @@ function buildPages(): Record<string, string> {
         `Showing the most recent plan (${meta.sub2}) until the next one is written. ` +
         `Its permanent link is <a href="${permalink}">${permalink}</a>.</p>`;
     add("next.html", {
-      title: "Next Session — U14 Rugby",
-      h1: meta.h1,
+      title: `Next Session${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+      h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
       sub: meta.sub,
       sub2: meta.sub2,
       crumb: "Next session",
-      body: notice + "\n" + mdToHtml(read("plans/" + next.file), diagrams),
+      body:
+        (meta.draft ? DRAFT_NOTE + "\n" : "") +
+        notice +
+        "\n" +
+        mdToHtml(read("plans/" + next.file), diagrams),
     });
   }
 
@@ -622,7 +636,7 @@ function buildPages(): Record<string, string> {
     .filter((f) => fs.existsSync(path.join(plansDir, f)))
     .map((f) => {
       const m = PLAN_META[f]!;
-      return card(f.slice(0, -3) + ".html", m.h1, m.card, m.badge);
+      return card(f.slice(0, -3) + ".html", m.h1, m.card, m.badge, m.draft);
     });
   const nextCard = next
     ? [
@@ -635,6 +649,7 @@ function buildPages(): Record<string, string> {
             ? "Whatever session is coming up next — this link always points at it, so it is the one to save or share."
             : "The most recent run-sheet; no later session is written yet. This link always points at whatever is next.",
           PLAN_META[next.file]!.badge,
+          PLAN_META[next.file]!.draft,
         ),
         "  </div>",
         "",

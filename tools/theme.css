@@ -17,6 +17,8 @@
   --gold: #a8791f;
   --gold-tint: #f6ecd6;
   --rule: #cdbf8f;
+  --warn: #a33417;
+  --warn-tint: #fbe8e2;
 
   /* Layout. --page-width is the outer column (tables, diagrams and the index
      cards use all of it); --prose caps body text at a readable line length. */
@@ -37,6 +39,8 @@
     --gold: #e0b45c;
     --gold-tint: #332a14;
     --rule: #5a5030;
+    --warn: #f0906f;
+    --warn-tint: #3a1a11;
   }
 }
 
@@ -52,6 +56,8 @@
   --gold: #e0b45c;
   --gold-tint: #332a14;
   --rule: #5a5030;
+  --warn: #f0906f;
+  --warn-tint: #3a1a11;
 }
 
 * { box-sizing: border-box; }
@@ -147,6 +153,19 @@ footer.page-foot a { color: var(--blue); }
   font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
   padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
 }
+
+/* Draft / work-in-progress marking on a session plan. */
+.badge-draft {
+  background: var(--warn); color: #fff;
+}
+.draft-note {
+  background: var(--warn-tint); border: 1px solid var(--warn);
+  border-left-width: 4px; border-radius: 0 6px 6px 0;
+  padding: 0.8em 1.1em; margin: 0 0 1.6em; max-width: none;
+  font-size: 0.92rem;
+}
+.draft-note strong { color: var(--warn); }
+header.page-head .badge-draft { border: 1px solid rgba(255,255,255,0.5); }
 
 /* Banner on next.html explaining the stable-URL page. */
 .next-note {

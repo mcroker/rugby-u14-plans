@@ -33,6 +33,24 @@
 
 ## Activities
 
+### Contact warm-up (whole squad)
+
+**Coaching Points:** in the pummel — chest up, back flat, **head to the side**, hips low, arms working continuously. In Wrist Wrestle — stay low, feet moving, win it with body position rather than by yanking.
+
+**Setup:** everyone in pairs, **matched by size** — not by friendship, and not whoever is standing nearest. Whole squad together, no equipment.
+
+**Description:** the standard two-minute contact warm-up (see `coaching.md`), and the squad's **first time seeing either game**, so it will need a proper demo rather than a description:
+
+1. **Get low (~30s)** — on the spot, feet moving, drop into the tackle-ready position. Five or six reps.
+2. **Pummelling (~45s)** — pairs chest to chest **on knees**, one arm inside and one outside, both "swimming" the outside arm inside on the call and alternating.
+3. **Wrist Wrestle (~45s)** — standing, each grips the **same wrist** on the other (right hand to right wrist, both of them, so the grips lock), free hand behind the back, and each tries to slap their partner with the hand being held. A point per clean touch, then reset.
+
+**The rules are not negotiable, and are worth saying out loud on the first session:** pummelling is an arm battle — no lifting, no takedowns, no twisting anyone's neck. Wrist Wrestle targets the **shoulder or upper arm only**, never the head or face, and stops the moment either grip goes. **Anyone who would rather not play the slapping game pummels again instead — offer that to the whole squad up front, so nobody has to ask.**
+
+**Adaptations:**
+- Demo each game with a coach as the partner before letting the squad loose — quicker than explaining it twice.
+- If a pair is badly mismatched despite the pairing, break the three and rotate rather than leaving it.
+
 ### Hooker throw-in — the Cross-Bar Challenge (pull-out skill zone)
 
 **Coaching Points:** consistent pre-throw routine (same feet, same grip, same ball position every time); ball back **behind the head**, both hands on it; **step into it** rather than throwing with the arms alone; follow through with the hands **pointing at the target**; eyes on the target, not the ball.

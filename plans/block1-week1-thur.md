@@ -82,6 +82,16 @@
 - Call the target as the hooker starts their routine, so they cannot pre-set.
 - Add a defender's hands over the target to force height.
 
+### Contact warm-up (whole squad)
+
+**Coaching Points:** as Sunday — chest up, back flat, head to the side, hips low in the pummel; low base and moving feet in Wrist Wrestle.
+
+**Setup:** pairs, matched by size. No equipment. Runs on the spot wherever the game has ended up — no need to reset the pitch for it.
+
+**Description:** the standard two minutes (see `coaching.md`): **get low** (~30s), **pummelling** on knees (~45s), **Wrist Wrestle** standing (~45s). Second outing, so it should need a reminder rather than a demo — if it still needs a full demo, that is worth knowing before Week 2.
+
+**Same non-negotiable rules:** no lifting, takedowns or neck twisting in the pummel; shoulder or upper arm only in Wrist Wrestle, never the head; stop when a grip goes. Anyone who would rather not play the slapping game pummels again.
+
 ## Notes
 
 - **Everything has to be carried in.** Nothing lives at TWGSB — balls, bibs, cones, poles and shields all travel, and the shields are needed for the last phase of the warm-up, not just the game.

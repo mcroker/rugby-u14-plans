@@ -21,11 +21,11 @@
 | +0, 15 min *(parallel pull-out)* | Hooker throw-in — Cross-Bar Challenge (hookers) | Throw technique against the crossbar — height, line, routine |
 | +0, 15 min *(parallel pull-out)* | Tackle-technique skill zone (Tackle Diamond, controlled) | Individual tackle technique, small-group, full contact; groups rotate |
 | +15, 5 min | Whole-group intervention: lineout positioning + laws | Where to stand; uncontested, no lift (see `laws.md`) |
-| +20, 60 min | Main game: touch/tag, lineout restarts | Line-speed scoreboard; bonus for a clean lineout catch leading to a try |
-| +20, 60 min *(parallel, backs not in lineout work)* | Continuous Defence | Defensive alignment while the forwards are in lineout skill work |
-| +80, 5 min | Cool-down / close | Recap line-org cues, set up Thursday |
+| +20, 65 min | Main game: touch/tag, lineout restarts | Line-speed scoreboard; bonus for a clean lineout catch leading to a try |
+| +20, 65 min *(parallel, backs not in lineout work)* | Continuous Defence | Defensive alignment while the forwards are in lineout skill work |
+| +85, 5 min | Cool-down / close | Recap line-org cues, set up Thursday |
 
-*The slot is 10:45–12:30 (105 min); the plan below runs ~85 min, leaving room for a late start and for the cool-down to overrun. Scale each block proportionally if the slot changes.*
+*Runs to the standard **90-minute** Sunday session, warm-up and close included (see `age-group.md`). The allocated slot is 10:45–12:30 (105 min), so there's ~15 min of slack for arrival, kit and a late start — don't spend it by drifting; finish on time. Scale each block proportionally if the slot changes.*
 
 **The opening 15 minutes needs two coaches free** (one on the hookers, one on the tackle zone) while a player leads the warm-up for everyone else — see `coaching.md`. A third coach lets you run two tackle diamonds side by side, which halves the group size and roughly doubles the reps.
 

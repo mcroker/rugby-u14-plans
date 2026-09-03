@@ -22,7 +22,7 @@ See `playbook.md` for our playing philosophy and calls — kept as a clean refer
 ## Training & Fixtures
 
 - **Matches:** Sundays. Some Sundays only one of the two teams (Blue/White) has a match. Matches carry **no training session plan or coaching objectives of their own** — `blocks.md` lists them in its session list purely for the calendar picture (and as an informal read on how a block's content is landing), since we don't train on match days.
-- **Sunday training:** happens on Sundays without a match, with the fuller space of a full pitch.
+- **Sunday training:** happens on Sundays without a match, with the fuller space of a full pitch. **Typically 90 minutes in total, including the warm-up and the close** — plan to that, not to the length of the allocated slot, which is usually a little longer and absorbs arrival, kit and a late start. Time and pitch come from the club pitch allocation (we are `U14M`).
 - **Midweek training:** Thursdays, 7-8pm, at **TWGSB 4G** — we have a third of a pitch to work with. That space suits contact-suitable skill-station work and tighter-space games; wide/full-width game patterns need the fuller Sunday space instead. See `coaching.md` — How sessions should be coached for the contact-light approach we take to the Thursday slot specifically.
 
 **Thursday sessions always open the same way**, before moving into that week's specific content (see `blocks.md`):

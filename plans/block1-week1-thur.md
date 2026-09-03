@@ -20,7 +20,7 @@
 | +15, 5 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
 | +20, 22 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced as the trigger |
 | +20, 22 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the Week 2 step up from Sunday's crossbar work |
-| +42, 2 min | **Contact warm-up** | Whole squad, before the contact finish — low / knees / walk (see `coaching.md`) |
+| +42, 2 min | **Contact warm-up** | Whole squad, before the contact finish — get low, pummelling, Wrist Wrestle (see `coaching.md`) |
 | +44, 11 min | Main game continues — full contact | The last ~10 min at contact, per the Thursday rule (see `coaching.md`) |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 

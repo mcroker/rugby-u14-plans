@@ -16,19 +16,22 @@ Our coaching approach for this age group: how sessions are structured and run, t
 
 ## Contact warm-up
 
-**Two minutes, every time, before anyone makes contact.** Three stages of about forty seconds, always in this order, never skipping ahead. It doubles as a rehearsal of the tackle cues we use everywhere else — **low**, **shoulder contact**, **squeeze**.
+**Two minutes, every time, before anyone makes contact.** Three stages, always in this order, never skipping ahead: get the body into position, then two contact games that get hands on an opponent and the heart rate up. Games rather than drills — two minutes of queuing to hit a pad prepares nobody, and these get every player working for the whole two minutes.
 
 | Stage | Time | What |
 |---|---|---|
-| 1. **Get low** | ~40s | On the spot. Feet moving, then drop into the tackle-ready position — feet shoulder-width, knees bent, chest up, eyes up, hands ready. Five or six reps. Cue: **low**. |
-| 2. **Knees** | ~40s | In pairs, both on knees, chest to chest. Shoulder into the partner's chest, **head to the side**, arms wrap and squeeze. Start at about half effort and build. Cues: **shoulder contact**, **squeeze**. |
-| 3. **Walk** | ~40s | Same contact from a walk-in, partner braced or holding a shield. Complete the wrap and hold — still no speed. |
+| 1. **Get low** | ~30s | On the spot. Feet moving, then drop into the tackle-ready position — feet shoulder-width, knees bent, chest up, eyes up, hands ready. Five or six reps. Cue: **low**. |
+| 2. **Pummelling** | ~45s | Pairs, chest to chest, **on knees**. Each player has one arm inside (under the partner's armpit) and one outside. On the call, both "swim" the outside arm inside, and keep alternating. Chest up, back flat, **head to the side**, hips low, working continuously. |
+| 3. **Wrist Wrestle** | ~45s | Pairs stand and each grips the **same wrist** on the other — right hand to right wrist, both of them, so the grips lock into a loop. Free hand behind the back. Each then tries to slap their partner with the hand being held. A point for each clean touch; reset and go again. Low base, feet moving, all grip and body position. |
 
 Then, and only then, into the drill or game proper.
 
+**Both games have hard rules.** Pummelling: no lifting, no takedowns, no twisting anyone's neck — it is an arm battle, not a wrestle to the floor. Wrist Wrestle: **shoulder or upper arm only** as a target, never the head or face, and it stops the moment either player lets go. Anyone who would rather not play the slapping game does a second round of pummelling instead — offer that up front rather than making someone ask for it.
+
 - **Pair by size.** Not by friendship, and not whoever is standing nearest.
-- **Never skip to stage 3**, however short of time you are. If there isn't two minutes, there isn't contact — take it out of the session instead.
-- **Anyone returning from injury, or new to the group, starts at stage 1** and moves up only when a coach says so, regardless of what everyone else is doing.
+- **Never skip stages**, however short of time you are. If there isn't two minutes, there isn't contact — take it out of the session instead.
+- **Anyone returning from injury, or new to the group, starts at stage 1** and joins the games only when a coach says so, regardless of what everyone else is doing.
+- **The tackle cues aren't rehearsed here any more** — **low**, **shoulder contact**, **squeeze** get coached in the tackle work itself. These two minutes are about getting warm, getting hands on someone, and arriving at the drill already switched on.
 - **If contact groups rotate through a skill zone**, each group runs the two minutes as it arrives — the group that has been jogging in a handling game is no more contact-ready than the one that just walked off the touchline.
 
 ## Skills pyramid

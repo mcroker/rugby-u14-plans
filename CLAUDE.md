@@ -114,6 +114,7 @@ Pages on the site:
 - **`calendar.html`** — full HTML export of `claude/calendar.md`.
 - **`laws.html`** — full HTML export of `claude/laws.md`.
 - **`warmup.html`** — full HTML export of `claude/warmup.md`.
+- **`brief.html`** — the upcoming session **condensed for a phone at the ground**: when, where, coaches, kit, and the run sheet as a list rather than a table, so it reads down a screen instead of scrolling sideways. Roughly three iPhone screens. It is generated from the same plan as `next.html` and moves with it, and takes **only the first sentence of each Session details row** — so write those cells with the fact a coach needs in their hand first, and the planning caveats after it.
 - **`next.html`** — **the stable link for the upcoming session.** It always carries whichever session is next (today counts as next all day), so it is the URL to save or hand to the coaching group rather than a dated one. If every session in `PLAN_META` is in the past it holds the most recent plan and says so, rather than breaking. Its content is a copy of that week's dated page, with a banner pointing at the permanent link.
 - Individual session pages (e.g. `block1-week1-sun.html`) — one per file in `plans/` that has a `PLAN_META` entry, per the per-session convention above. **These keep their dated names permanently and are the archive** — once a session has passed, its page stays exactly where it was, and only `next.html` moves on.
 

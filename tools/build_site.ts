@@ -327,6 +327,79 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
   return out.join("\n");
 }
 
+
+// ------------------------------------------------------------------- brief
+/** Pull one "## Heading" section out of a plan's markdown. */
+function mdSection(md: string, heading: string): string {
+  const lines = md.split("\n");
+  const start = lines.findIndex((l) => l.trim() === `## ${heading}`);
+  if (start === -1) return "";
+  let end = start + 1;
+  while (end < lines.length && !lines[end]!.startsWith("## ")) end += 1;
+  return lines.slice(start + 1, end).join("\n").trim();
+}
+
+/** Table rows only — drops prose, notes and images around a markdown table. */
+function tableRows(section: string): string[] {
+  return section.split("\n").map((l) => l.trim()).filter((l) => l.startsWith("|"));
+}
+
+function splitCells(row: string): string[] {
+  return row.replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+}
+
+/**
+ * The condensed page: the few header facts worth having in your hand, and the
+ * run sheet as a list rather than a table, so it reads down a phone screen
+ * instead of scrolling sideways. Everything else is a tap away on the full plan.
+ */
+/**
+ * First sentence only. The brief carries the fact; the planning caveats that
+ * follow it stay on the full plan — so a Session details cell should lead with
+ * whatever a coach needs in their hand at the ground.
+ */
+function firstSentence(text: string): string {
+  // Allows the sentence to end inside bold, as "**...Jeff.** (rest)" does.
+  const m = /\.(\*\*)?\s+(?=[A-Z*(])/.exec(text);
+  if (!m) return text;
+  return text.slice(0, m.index + 1 + (m[1]?.length ?? 0));
+}
+
+function briefBody(md: string, permalink: string): string {
+  const keep = ["Date/Time", "Location", "Coaches", "Resources required"];
+  const details = tableRows(mdSection(md, "Session details"))
+    .filter((r) => keep.some((k) => r.includes(`**${k}**`)))
+    .map((r) => {
+      const c = splitCells(r);
+      return c.length >= 2 ? `| ${c[0]} | ${firstSentence(c[1]!)} |` : r;
+    });
+  const facts = details.length
+    ? mdToHtml(["| | |", "|---|---|", ...details].join("\n"))
+    : "";
+
+  const rows = tableRows(mdSection(md, "Plan"));
+  const body = rows.slice(2); // drop the header and separator rows
+  const items = body
+    .map((r) => splitCells(r))
+    .filter((c) => c.length >= 3)
+    .map(
+      (c) =>
+        `  <li><span class="t">${inline(c[0]!)}</span>` +
+        `<span class="a">${inline(c[1]!)}</span>` +
+        `<span class="f">${inline(c[2]!)}</span></li>`,
+    );
+
+  return [
+    facts,
+    '<h2>Run sheet</h2>',
+    '<ol class="runsheet">',
+    ...items,
+    "</ol>",
+    `<p class="brief-more">Detail, coaching points and diagrams are in the ` +
+      `<a href="${permalink}">full run-sheet</a>.</p>`,
+  ].join("\n");
+}
+
 // ----------------------------------------------------------------- page shell
 interface PageOpts {
   title: string;
@@ -624,7 +697,7 @@ function buildPages(): Record<string, string> {
     const notice = next.upcoming
       ? `<p class="next-note"><strong>This is the next session.</strong> ` +
         `This page always shows whichever session is coming up, so the link is safe to keep. ` +
-        `The permanent link for this one is <a href="${permalink}">${permalink}</a>.</p>`
+        `The permanent link for this one is <a href="${permalink}">${permalink}</a>. There is a <a href="brief.html">condensed version</a> for pitch-side.</p>`
       : `<p class="next-note"><strong>No session is scheduled after this one yet.</strong> ` +
         `Showing the most recent plan (${meta.sub2}) until the next one is written. ` +
         `Its permanent link is <a href="${permalink}">${permalink}</a>.</p>`;
@@ -639,6 +712,22 @@ function buildPages(): Record<string, string> {
         notice +
         "\n" +
         mdToHtml(read("plans/" + next.file), diagrams),
+    });
+  }
+
+  // ---- brief.html: the same session, condensed for a phone at the ground
+  if (next) {
+    const meta = PLAN_META[next.file]!;
+    const permalink = next.file.slice(0, -3) + ".html";
+    add("brief.html", {
+      title: `Brief${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+      h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
+      sub: "Condensed run sheet — the full plan is one tap away.",
+      sub2: meta.sub2,
+      crumb: "Brief",
+      body:
+        (meta.draft ? DRAFT_NOTE + "\n" : "") +
+        briefBody(read("plans/" + next.file), permalink),
     });
   }
 
@@ -661,6 +750,13 @@ function buildPages(): Record<string, string> {
             ? "Whatever session is coming up next — this link always points at it, so it is the one to save or share."
             : "The most recent run-sheet; no later session is written yet. This link always points at whatever is next.",
           PLAN_META[next.file]!.badge,
+          PLAN_META[next.file]!.draft,
+        ),
+        card(
+          "brief.html",
+          "Brief",
+          "The same session cut down to when, where, kit and the run sheet — for reading on a phone at the ground.",
+          undefined,
           PLAN_META[next.file]!.draft,
         ),
         "  </div>",

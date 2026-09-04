@@ -9,7 +9,7 @@
 | **Coaches** | *(fill in on the night)* |
 | **Attendance** | *(fill in on the night — expect fewer than Sunday; full turnout is not the norm on a Thursday)* |
 | **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning at a lighter, non-contested level, keep the hooker throw ticking over, and put line-org and the **Bang** blitz trigger into a tight-space game. |
-| **Resources required** | Balls, bibs, cones, poles, ruck shields. **All of it has to travel** — nothing lives at TWGSB. |
+| **Resources required** | Balls, bibs, cones, poles, ruck shields — **all of it has to travel**, nothing lives at TWGSB. |
 
 ## Plan
 

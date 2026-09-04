@@ -24,6 +24,17 @@ This project holds the coaching material for our club's U14 age group: squad con
 
 It does mean the ground is still in use right up to the changeover, so nothing can be set out early.
 
+**Fixtures, results and league tables (external):** the RFU's England Rugby site carries both teams' league fixtures. The base URL is the same for a team all season; only the `#` anchor changes between the fixtures list, the results and the table:
+
+| Team | Competition | Base URL |
+|---|---|---|
+| **Blue** — `team=23300`, `division=79245` | Kent Boys Youth Leagues, **U14 Boys Stage 1 Group 2** | `https://www.englandrugby.com/fixtures-and-results/search-results?team=23300&competition=2075&division=79245&season=2026-2027` |
+| **White** — `team=128902`, `division=79250` | Kent Boys Youth Leagues, **U14 Boys Stage 1 Group 7** | `https://www.englandrugby.com/fixtures-and-results/search-results?team=128902&competition=2075&division=79250&season=2026-2027` |
+
+Add **`#fixtures`**, **`#results`** or **`#tables`** to either. The two teams are in **different groups**, so they have different opponents and are not always both playing on the same Sunday — check each separately before assuming a fixture Sunday is a fixture for the whole squad.
+
+A note for anyone re-reading these pages: the fixture list is rendered client-side, and the site returns **403 to a plain fetch** — it needs a normal browser user-agent. The season's fixtures are in the page HTML once it loads.
+
 **How the club's pitches are numbered.** The allocation map shows the grounds from above, with the **Club House** marked at the bottom-left. Our own names for what it shows:
 
 | | |

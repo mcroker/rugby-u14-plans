@@ -176,9 +176,14 @@ function escAttr(t: string): string {
     .replaceAll("'", "&#x27;");
 }
 
-/** Inline code; if it names a source doc, link it to that doc's page. */
+/** Inline code; if it names a source doc — or a session plan that has a
+ *  PLAN_META entry — link it to that doc's page. */
 function codeSpan(inner: string): string {
-  const page = PAGE_FOR[inner];
+  const page =
+    PAGE_FOR[inner] ??
+    (inner.endsWith(".md") && PLAN_META[inner.replace(/^plans\//, "")]
+      ? inner.replace(/^plans\//, "").replace(/\.md$/, ".html")
+      : undefined);
   if (page) return `<code><a href="${page}">${page}</a></code>`;
   return `<code>${esc(inner)}</code>`;
 }

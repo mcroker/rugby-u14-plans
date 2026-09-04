@@ -23,23 +23,30 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 **Open items still to confirm:**
 
 - **Week 5 backs:** two specific approaches were discussed and both were liked, but the detail didn't survive a context reset on my end — the table below uses "receiving off the fold, playing width" as a placeholder pending the restatement.
+- **Sun 4 Oct:** this block schedules a full training session that day, but `calendar.md` has no entry for it at all. One of the two is wrong — confirm against Spond before a run-sheet is written for it.
 
 ### Session list
 
-| Week | Date | Session | Core | Defence | Set-piece (forwards) | Backs | Position skills |
-|---|---|---|---|---|---|---|---|
-| 1 | Sun 6 Sep | Training | Tackle | Blitz, line-org | Lineout — where to stand, laws | Defensive alignment (Continuous Defence) while forwards are in the lineout zone | Hooker lineout throw |
-| 1 | Thu 10 Sep | Training | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
-| 2 | Sun 13 Sep | Training | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
-| 2 | Thu 17 Sep | Training | Passing | Blitz, line-org | Scrum — position/technique, non-contested | Exit kicks — introduce (technique, then kick + chase/regather) | 9 + hooker scrum strike, back-row ball control |
-| 3 | Sun 20 Sep | Training | Tackle | Ruck-defence | Defending the lineout — pressure on 9 & 10 | Defending against kicks (system TBC) | — |
-| 3 | Thu 24 Sep | Pre-match (sharpen) | Passing — introduce pull-back pass (Hippo) | Ruck-defence | Set-piece, lightly (both areas) | Defending against kicks, lightly | — |
-| 4 | Sun 27 Sep | Match — Kent League R1 | — | — | — | — | — |
-| 4 | Thu 1 Oct | Training — work-ons from the fixture | Whatever the match showed needs work | ″ | ″ | ″ | ″ |
-| 5 | Sun 4 Oct | Training | Tackle — ruck (2v2) | All four pillars, full-team | Lineout — 8-man catch and drive | Receiving off the fold, playing width *(flagged above)* | — |
-| 5 | Thu 8 Oct | Training | Passing — pull-back pass | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
-| 6 | Sun 11 Oct | Match — Kent League R2 | — | — | — | — | — |
-| 6 | Thu 15 Oct | Training — block wrap-up | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
+| Week | Date | Session | Run-sheet | Core | Defence | Set-piece (forwards) | Backs | Position skills |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Sun 6 Sep | Training | `block1-week1-sun.md` | Tackle | Blitz, line-org | Lineout — where to stand, laws | Defensive alignment (Continuous Defence) while forwards are in the lineout zone | Hooker lineout throw |
+| 1 | Thu 10 Sep | Training | `block1-week1-thur.md` *(draft)* | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
+| 2 | Sun 13 Sep | Training | **Needed** | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
+| 2 | Thu 17 Sep | Training | **Needed** | Passing | Blitz, line-org | Scrum — position/technique, non-contested | Exit kicks — introduce (technique, then kick + chase/regather) | 9 + hooker scrum strike, back-row ball control |
+| 3 | Sun 20 Sep | Training | **Needed** | Tackle | Ruck-defence | Defending the lineout — pressure on 9 & 10 | Defending against kicks (system TBC) | — |
+| 3 | Thu 24 Sep | Pre-match (sharpen) | **Needed** | Passing — introduce pull-back pass (Hippo) | Ruck-defence | Set-piece, lightly (both areas) | Defending against kicks, lightly | — |
+| 4 | Sun 27 Sep | Match — Kent League R1 | — *(no plan; match day)* | — | — | — | — | — |
+| 4 | Thu 1 Oct | Training — work-ons from the fixture | **Needed** | Whatever the match showed needs work | ″ | ″ | ″ | ″ |
+| 5 | Sun 4 Oct | Training | **Needed** | Tackle — ruck (2v2) | All four pillars, full-team | Lineout — 8-man catch and drive | Receiving off the fold, playing width *(flagged above)* | — |
+| 5 | Thu 8 Oct | Training | **Needed** | Passing — pull-back pass | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
+| 6 | Sun 11 Oct | Match — Kent League R2 | — *(no plan; match day)* | — | — | — | — | — |
+| 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
+
+**Run-sheets still to write.** This block has **ten training sessions**. Two have a detailed run-sheet in `plans/`; the other **eight** do not, and are marked **Needed** in the table above. In date order:
+
+**Sun 13 Sep** · **Thu 17 Sep** · **Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Thu 15 Oct** *(block wrap-up)*
+
+The two match days (Sun 27 Sep, Sun 11 Oct) need no run-sheet — we don't train on match days (see `age-group.md`). The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/` and a `PLAN_META` entry, after which it appears on the site by itself.
 
 ### Outline session plans for each week
 

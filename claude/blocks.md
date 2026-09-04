@@ -108,4 +108,13 @@ Ideas and skills that came up while planning Block 1 but aren't part of it — k
 
 **Block 2 (intent):** focus on continuity.
 
+**Two extra training Sundays to plan for.** We had assumed both teams played every Kent League round, so no session was planned for those dates. The RFU fixture lists (linked from `calendar.md`) show the two teams are in different groups, which frees a **half-squad Sunday** in each case — highlighted in `calendar.md`:
+
+| Date | Who trains | Who is playing |
+|---|---|---|
+| **Sun 15 Nov** | **Blue** | White, home v Canterbury U14 Black (Round 3) |
+| **Sun 13 Dec** | **White** | Blue, away at Sevenoaks RFC U14M (Round 5) |
+
+Both are single-team sessions with roughly half the usual numbers and, if the coaches split with the travelling team, fewer coaches — so plan them as their own thing rather than a shrunken whole-squad session. **Three of Block 2's half-squad Sundays are White** (18 Oct and 8 Nov, when Blue have friendlies, plus 13 Dec) against **one for Blue** (15 Nov), which is worth using deliberately: White is the developmental side, and that is three sessions at a group size the full squad never allows.
+
 *(Further detail to be added as the block is planned.)*

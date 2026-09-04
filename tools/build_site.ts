@@ -143,6 +143,9 @@ function pickNextPlan(plansDir: string): { file: string; upcoming: boolean } | n
   return { file: dated[dated.length - 1]![0], upcoming: false };
 }
 
+/** Marker at the start of a table row's first cell that highlights the row. */
+const ROW_FLAG = "%%";
+
 const warnings: string[] = [];
 
 function warn(msg: string): void {
@@ -290,8 +293,14 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
       t.push(...head.map((c) => `<th>${inline(c)}</th>`));
       t.push("</tr>", "</thead>", "<tbody>");
       for (const row of body) {
-        t.push("<tr>");
-        t.push(...row.map((c) => `<td>${inline(c)}</td>`));
+        // A row whose first cell starts with %% is highlighted — used to pick
+        // out newly-available dates in the calendar.
+        const flagged = row[0]?.startsWith(ROW_FLAG) ?? false;
+        const cells = flagged
+          ? [row[0]!.slice(ROW_FLAG.length).trim(), ...row.slice(1)]
+          : row;
+        t.push(flagged ? '<tr class="row-new">' : "<tr>");
+        t.push(...cells.map((c) => `<td>${inline(c)}</td>`));
         t.push("</tr>");
       }
       t.push("</tbody>", "</table>", "</div>");

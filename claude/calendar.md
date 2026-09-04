@@ -32,16 +32,17 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 | Sun 1 Nov 2026 | TBC | TWRFC U14s – Canterbury | Friendly | Home | Whole squad | Canterbury |
 | Sun 8 Nov 2026 | TBC | Old Elthamians RFC – TWRFC U14s | Friendly | Away | Blue only | Old Elthamians RFC |
 | Sun 15 Nov 2026 | TBC | Kent League Stage 1, Round 3 | League fixture | Home | White | Canterbury U14 Black |
-| Sun 15 Nov 2026 | TBC | Training — **no Blue fixture this round** | Training | — | Blue | — |
+| %%Sun 15 Nov 2026 | TBC | **Training slot — no Blue fixture this round** | Training | — | Blue | — |
 | Sun 29 Nov 2026 | TBC | Kent League Stage 1, Round 4 | League fixture | Home | Blue | Old Elthamians U14 |
 | Sun 29 Nov 2026 | TBC | Kent League Stage 1, Round 4 | League fixture | Away | White | Sheppey U14 |
 | Sun 13 Dec 2026 | TBC | Kent League Stage 1, Round 5 + OOD | League fixture | Away | Blue | Sevenoaks RFC U14M — **club on Officer of the Day duty, needs parent helpers** |
-| Sun 13 Dec 2026 | TBC | Training — **no White fixture this round** | Training | — | White | — |
+| %%Sun 13 Dec 2026 | TBC | **Training slot — no White fixture this round** | Training | — | White | — |
 
 ## Notes
 
 - "OOD" = Officer of the Day (club matchday duty rota).
 - **Opposition and home/away for all five league rounds now come from the RFU's fixture listings** (linked above), not from Spond. **Kick-off times are still TBC** — the RFU listing gives dates only, so check Spond nearer each date.
+- **Highlighted rows are training slots we did not know we had.** We had assumed both teams played every league round, so no training was planned for those Sundays. The RFU fixture lists show otherwise: **Blue are free on 15 Nov** and **White are free on 13 Dec**, and each is a half-squad training session waiting to be planned (see `blocks.md`).
 - **The two teams are in different groups** — Blue in U14 Boys Stage 1 **Group 2**, White in **Group 7** — so they have different opponents, and a league Sunday is not automatically a fixture for both. Blue have no Round 3 fixture (15 Nov) and White have no Round 5 fixture (13 Dec); on each of those the other team trains.
 - **29 Nov is a split Sunday** — Blue at home, White away at Sheppey. Worth planning for early: the squad is in two places.
 - Some Sundays only one of Blue/White has a fixture (see `age-group.md` — Training & Fixtures); on those Sundays the other team trains.

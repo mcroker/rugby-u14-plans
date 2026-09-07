@@ -207,11 +207,32 @@ function inline(text: string): string {
   return out.replace(/\x00(\d+)\x00/g, (_m, i: string) => holes[Number(i)]!);
 }
 
+/** Heading -> anchor id, so other pages can deep-link to a section. */
+function slugify(text: string): string {
+  return text
+    .replace(/<[^>]+>/g, "")
+    .replace(/[*`_]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 60) || "section";
+}
+
+function uniqueSlug(text: string, seen: Set<string>): string {
+  const base = slugify(text);
+  let id = base;
+  let n = 2;
+  while (seen.has(id)) id = `${base}-${n++}`;
+  seen.add(id);
+  return id;
+}
+
 // ------------------------------------------------------------------- block md
 
 /** Convert the markdown subset used by these sources: h1-h4, tables, lists,
  *  images, paragraphs, rules, and inline bold/italic/code/links. */
 function mdToHtml(md: string, images: Record<string, string> = {}): string {
+  const seenIds = new Set<string>();
   const lines = md.split("\n");
   const out: string[] = [];
   const n = lines.length;
@@ -239,7 +260,8 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
     const heading = /^(#{1,4})\s+(.*)$/.exec(s);
     if (heading) {
       const lvl = heading[1]!.length;
-      out.push(`<h${lvl}>${inline(heading[2]!)}</h${lvl}>`);
+      const id = uniqueSlug(heading[2]!, seenIds);
+      out.push(`<h${lvl} id="${id}">${inline(heading[2]!)}</h${lvl}>`);
       i += 1;
       continue;
     }
@@ -383,11 +405,6 @@ function splitCells(row: string): string[] {
 }
 
 /**
- * The condensed page: the few header facts worth having in your hand, and the
- * run sheet as a list rather than a table, so it reads down a phone screen
- * instead of scrolling sideways. Everything else is a tap away on the full plan.
- */
-/**
  * First sentence only. The brief carries the fact; the planning caveats that
  * follow it stay on the full plan — so a Session details cell should lead with
  * whatever a coach needs in their hand at the ground.
@@ -399,26 +416,133 @@ function firstSentence(text: string): string {
   return text.slice(0, m.index + 1 + (m[1]?.length ?? 0));
 }
 
-function briefBody(md: string, permalink: string): string {
-  const keep = ["Date/Time", "Location", "Coaches", "Resources required"];
-  const details = tableRows(mdSection(md, "Session details"))
-    .filter((r) => keep.some((k) => r.includes(`**${k}**`)))
-    .map((r) => {
-      const c = splitCells(r);
-      return c.length >= 2 ? `| ${c[0]} | ${firstSentence(c[1]!)} |` : r;
-    });
-  const facts = details.length
-    ? mdToHtml(["| | |", "|---|---|", ...details].join("\n"))
-    : "";
 
+/**
+ * The player-led warm-up written into every plan page as a normal Activities
+ * entry, built from `warmup.md` so there is still one source for it. Without
+ * this, a plan's first block could only point off to another page.
+ */
+function warmupEntry(): string {
+  const wu = read("claude/warmup.md");
+  const kit = /^\*\*Kit:\*\*\s*(.*)$/m.exec(wu)?.[1] ?? "";
+  const quality = /^- \*\*Quality targets[^:]*:\*\*\s*(.*)$/m.exec(wu)?.[1] ?? "";
+  const phases = mdSection(wu, "The four phases");
+  if (!kit || !quality || !phases) {
+    warn("warm-up entry: warmup.md no longer has the Kit line, quality targets or phases table");
+  }
   return [
-    facts,
-    "<h2>Run sheet</h2>",
-    timeline(mdSection(md, "Plan")),
-    `<p class="brief-more">Detail, coaching points and diagrams are in the ` +
-      `<a href="${permalink}">full run-sheet</a>.</p>`,
+    "### Player-led warm-up",
+    "",
+    `**Coaching Points:** ${quality}`,
+    "",
+    `**Setup:** the squad in three or four lines on the try-line, working out and back. **Kit:** ${kit}`,
+    "",
+    "**Description:** the same four phases in the same order every session, led by one of the players — see the standard warm-up for why it never changes.",
+    "",
+    phases,
+    "",
   ].join("\n");
 }
+
+/** An Activities entry from a plan: its anchor, what you need to run it, and
+ *  the detail behind it. */
+interface Activity {
+  id: string;
+  title: string;
+  setup: string;
+  points: string;
+  description: string;
+  progressions: string;
+}
+
+/** Skip a leading bare cross-reference ("see `activities.md`.") — useless on
+ *  its own in a brief — and take the first real sentence after it. */
+function runInfo(text: string): string {
+  const t = text.replace(/^see\s+[^.]*\.\s*/i, "").trim();
+  return firstSentence(t || text);
+}
+
+/** Parse a plan's "## Activities" section into its "### " entries. */
+function planActivities(md: string): Activity[] {
+  const section = mdSection(md, "Activities");
+  const entries: Array<{ title: string; lines: string[] }> = [];
+  for (const raw of section.split("\n")) {
+    const h = /^###\s+(.*)$/.exec(raw.trim());
+    if (h) entries.push({ title: h[1]!, lines: [] });
+    else if (entries.length) entries[entries.length - 1]!.lines.push(raw);
+  }
+
+  const label = (lines: string[], name: string): string => {
+    const start = lines.findIndex((l) => l.trim().startsWith(`**${name}`));
+    if (start === -1) return "";
+    const head = lines[start]!.trim().replace(new RegExp(`^\\*\\*${name}:?\\*\\*:?\\s*`), "");
+    const rest: string[] = head ? [head] : [];
+    for (let i = start + 1; i < lines.length; i++) {
+      const l = lines[i]!.trim();
+      if (/^\*\*[A-Z]/.test(l) || l.startsWith("###")) break;
+      rest.push(lines[i]!);
+    }
+    return rest.join("\n").trim();
+  };
+
+  const acts: Activity[] = entries.map((e) => ({
+    id: "",
+    title: e.title,
+    setup: label(e.lines, "Setup"),
+    points: label(e.lines, "Coaching Points"),
+    description: label(e.lines, "Description"),
+    progressions: label(e.lines, "Progressions"),
+  }));
+
+  // ids must match the ones mdToHtml mints for the same page
+  const pageSeen = new Set<string>();
+  const used = new Set<string>();
+  for (const line of md.split("\n")) {
+    const h = /^(#{1,4})\s+(.*)$/.exec(line.trim());
+    if (!h) continue;
+    const id = uniqueSlug(h[2]!, pageSeen);
+    const hit = acts.find((a) => a.title === h[2]! && !used.has(a.title));
+    if (hit) {
+      hit.id = id;
+      used.add(hit.title);
+    }
+  }
+  return acts;
+}
+
+const STOP = new Set(["the", "a", "and", "of", "in", "for", "to", "on", "with", "at", "into"]);
+
+function words(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(" ")
+    .filter((w) => w.length > 2 && !STOP.has(w));
+}
+
+/** Best-matching Activities entry for a run-sheet row, or null if none is close. */
+function matchActivity(rowTitle: string, acts: Activity[]): Activity | null {
+  const rw = words(rowTitle);
+  if (!rw.length) return null;
+  let best: Activity | null = null;
+  let bestScore = 0;
+  for (const a of acts) {
+    if (!a.id) continue;
+    const aw = new Set(words(a.title));
+    const hits = rw.filter((w) => aw.has(w)).length;
+    const score = hits / rw.length;
+    if (score > bestScore) {
+      bestScore = score;
+      best = a;
+    }
+  }
+  return bestScore >= 0.4 ? best : null;
+}
+
+const LINK_ICON =
+  '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+  '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5" />' +
+  '<path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5" /></svg>';
 
 interface Slot {
   start: number;
@@ -431,9 +555,11 @@ interface Slot {
 /**
  * The run sheet as a timeline: time runs down the page, and a stretch of the
  * session where several things happen at once splits into that many columns.
- * One column means the whole squad is together.
+ * Each block carries what you need to run it — setup and cues, taken from the
+ * plan's own Activities entry — and a deep link into that entry.
  */
-function timeline(planSection: string): string {
+function timeline(planSection: string, acts: Activity[], permalink: string): string {
+  const dialogs: string[] = [];
   const rows = firstTableRows(planSection).slice(2); // drop header + separator
   const slots: Slot[] = [];
   let unparsed = 0;
@@ -441,7 +567,6 @@ function timeline(planSection: string): string {
   for (const r of rows) {
     const c = splitCells(r);
     if (c.length < 3) continue;
-    // "+7, 13 min *(parallel pull-out)*"
     const m = /^\+(\d+),\s*(\d+)\s*min\s*(?:\*\((.+?)\)\*)?/.exec(c[0]!);
     if (!m) {
       unparsed += 1;
@@ -464,7 +589,6 @@ function timeline(planSection: string): string {
     warn(`brief: ${unparsed} run-sheet row(s) did not start '+N, N min' and were dropped`);
   }
 
-  // Group by start time — activities sharing a start run in parallel.
   const starts = [...new Set(slots.map((s) => s.start))].sort((a, b) => a - b);
   const out: string[] = ['<div class="timeline">'];
 
@@ -479,19 +603,116 @@ function timeline(planSection: string): string {
     );
     out.push(`  <div class="seg-tracks" style="--n:${group.length};--mins:${mins}">`);
     for (const g of group) {
+      const act = matchActivity(g.title, acts);
+      const link = act
+        ? `<a class="track-link" href="${permalink}#${act.id}" ` +
+          `title="Open this in the full plan">${LINK_ICON}</a>`
+        : "";
       const tag = g.tag ? `<span class="track-tag">${inline(g.tag)}</span>` : "";
       const dur = g.mins !== mins ? `<span class="track-tag">${g.mins} min</span>` : "";
+      // What you need to run it, not what it is: setup first, then the cues.
+      const run: string[] = [];
+      if (act?.setup) run.push(`<div class="track-run"><b>Set up</b> ${inline(runInfo(act.setup))}</div>`);
+      if (act?.points) run.push(`<div class="track-run"><b>Call</b> ${inline(runInfo(act.points))}</div>`);
+      if (!run.length) run.push(`<div class="track-run">${inline(g.focus)}</div>`);
+
+      // Details modal — the explanation the block itself deliberately omits.
+      let details = "";
+      if (act && (act.description || act.points || act.progressions)) {
+        const dlgId = `d${dialogs.length + 1}`;
+        const parts: string[] = [];
+        if (act.description) parts.push("<h4>Description</h4>", mdToHtml(act.description));
+        if (act.points) parts.push("<h4>Coaching objectives</h4>", mdToHtml(act.points));
+        if (act.progressions) parts.push("<h4>Progressions</h4>", mdToHtml(act.progressions));
+        dialogs.push(
+          `<dialog id="${dlgId}" class="detail">\n` +
+            `<div class="detail-head"><strong>${inline(act.title)}</strong>` +
+            `<button class="detail-x" data-close aria-label="Close">&times;</button></div>\n` +
+            `<div class="detail-body">${parts.join("\n")}</div>\n` +
+            `<div class="detail-foot"><a href="${permalink}#${act.id}">Open in the full plan</a>` +
+            `<button class="detail-done" data-close>Close</button></div>\n</dialog>`,
+        );
+        details = `<button class="track-details" data-dialog="${dlgId}">Details</button>`;
+      }
+
       out.push(
-        `    <div class="track"><div class="track-title">${inline(g.title)}</div>` +
-          `${tag}${dur}<div class="track-note">${inline(g.focus)}</div></div>`,
+        `    <div class="track"><div class="track-head">` +
+          `<div class="track-title">${inline(g.title)}</div>${link}</div>` +
+          `${tag}${dur}${run.join("")}${details}</div>`,
       );
     }
     out.push("  </div>");
     out.push("</div>");
   }
   out.push("</div>");
+  out.push(...dialogs);
   return out.join("\n");
 }
+
+/**
+ * The condensed page: the few header facts worth having in your hand, and the
+ * run sheet as a timeline. Everything else is a tap away on the full plan.
+ */
+
+/**
+ * The brief carries the warm-up and the contact warm-up in full, so pointers to
+ * the pages they came from are noise on it. Cross-references to anything else
+ * (the laws, the playbook) are still useful and stay.
+ */
+function stripInlinedRefs(md: string): string {
+  return md
+    .replace(/\s*\((?:see|per)\s+`(?:age-group|coaching|warmup)\.md`[^)]*\)/g, "")
+    .replace(/\s*—?\s*see\s+`(?:age-group|coaching|warmup)\.md`\.?/g, "");
+}
+
+/** A plan's markdown with the standard warm-up spliced in as an Activities entry. */
+function planWithWarmup(md: string): string {
+  const entry = warmupEntry();
+  const at = md.indexOf("\n## Notes");
+  return at === -1 ? `${md}\n\n${entry}` : `${md.slice(0, at)}\n\n${entry}${md.slice(at)}`;
+}
+
+function briefBody(md: string, permalink: string): string {
+  const keep = ["Date/Time", "Location", "Coaches", "Resources required"];
+  const details = tableRows(mdSection(md, "Session details"))
+    .filter((r) => keep.some((k) => r.includes(`**${k}**`)))
+    .map((r) => {
+      const c = splitCells(r);
+      return c.length >= 2 ? `| ${c[0]} | ${firstSentence(c[1]!)} |` : r;
+    });
+  const facts = details.length
+    ? '<details class="logistics"><summary>Logistics — when, where, who, kit</summary>' +
+      mdToHtml(["| | |", "|---|---|", ...details].join("\n")) +
+      "</details>"
+    : "";
+
+  return [
+    facts,
+    "<h2>Run sheet</h2>",
+    timeline(mdSection(md, "Plan"), planActivities(md), permalink),
+    `<p class="brief-more">Every block links into the ` +
+      `<a href="${permalink}">full run-sheet</a>, which carries the detail.</p>`,
+  ].join("\n");
+}
+
+/** Opens the per-block Details modals, and closes them on the X, the Close
+ *  button, or a click on the backdrop. */
+const DIALOG_JS = `
+document.addEventListener("click", function (e) {
+  var open = e.target.closest("[data-dialog]");
+  if (open) {
+    var d = document.getElementById(open.getAttribute("data-dialog"));
+    if (d && d.showModal) d.showModal();
+    return;
+  }
+  if (e.target.closest("[data-close]")) {
+    var dlg = e.target.closest("dialog");
+    if (dlg) dlg.close();
+    return;
+  }
+  if (e.target.tagName === "DIALOG") e.target.close();
+});
+`;
 
 // ----------------------------------------------------------------- page shell
 interface PageOpts {
@@ -502,6 +723,7 @@ interface PageOpts {
   crumb: string | null;
   body: string;
   extraCss?: string;
+  extraJs?: string;
   footer?: string;
 }
 
@@ -536,7 +758,7 @@ ${nav}  </div>
 <div class="wrap">
 ${o.body}
 </div>
-<footer class="page-foot">${foot}</footer>
+<footer class="page-foot">${foot}</footer>${o.extraJs ? `\n<script>${o.extraJs}</script>` : ""}
 </body>
 </html>
 `;
@@ -601,6 +823,26 @@ function loadDiagrams(): Record<string, string> {
     warn("missing claude/images/web/pitch-map.jpg");
   }
   return out;
+}
+
+/** A stable URL that forwards to this week's page, so the link never changes
+ *  and the content is never duplicated. */
+function redirectPage(target: string, title: string, note: string): string {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="0; url=${target}">
+<link rel="canonical" href="${target}">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>${title} — U14 Rugby</title>
+</head>
+<body>
+<p>${note} Redirecting to <a href="${target}">${target}</a>.</p>
+</body>
+</html>
+`;
 }
 
 // ------------------------------------------------------------------ index cards
@@ -770,58 +1012,46 @@ function buildPages(): Record<string, string> {
       warn(`no page metadata for plans/${fname} — add it to PLAN_META`);
       continue;
     }
-    add(fname.slice(0, -3) + ".html", {
+    const stem = fname.slice(0, -3);
+    const planMd = planWithWarmup(read("plans/" + fname));
+    add(`${stem}.html`, {
       title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
       h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
       sub: meta.sub,
       sub2: meta.sub2,
-      crumb: meta.crumb,
-      body: (meta.draft ? DRAFT_NOTE + "\n" : "") + mdToHtml(read("plans/" + fname), diagrams),
+      crumb: `${meta.crumb} &middot; <a href="${stem}-brief.html">Brief</a>`,
+      body: (meta.draft ? DRAFT_NOTE + "\n" : "") + mdToHtml(planMd, diagrams),
     });
-  }
-
-  // ---- next.html: same content as the dated page, at a URL that never changes
-  const next = pickNextPlan(plansDir);
-  if (!next) {
-    warn("no dated session plans — next.html not built");
-  } else {
-    const meta = PLAN_META[next.file]!;
-    const permalink = next.file.slice(0, -3) + ".html";
-    const notice = next.upcoming
-      ? `<p class="next-note"><strong>This is the next session.</strong> ` +
-        `This page always shows whichever session is coming up, so the link is safe to keep. ` +
-        `The permanent link for this one is <a href="${permalink}">${permalink}</a>. There is a <a href="brief.html">condensed version</a> for pitch-side.</p>`
-      : `<p class="next-note"><strong>No session is scheduled after this one yet.</strong> ` +
-        `Showing the most recent plan (${meta.sub2}) until the next one is written. ` +
-        `Its permanent link is <a href="${permalink}">${permalink}</a>.</p>`;
-    add("next.html", {
-      title: `Next Session${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
-      h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
-      sub: meta.sub,
-      sub2: meta.sub2,
-      crumb: "Next session",
-      body:
-        (meta.draft ? DRAFT_NOTE + "\n" : "") +
-        notice +
-        "\n" +
-        mdToHtml(read("plans/" + next.file), diagrams),
-    });
-  }
-
-  // ---- brief.html: the same session, condensed for a phone at the ground
-  if (next) {
-    const meta = PLAN_META[next.file]!;
-    const permalink = next.file.slice(0, -3) + ".html";
-    add("brief.html", {
-      title: `Brief${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+    add(`${stem}-brief.html`, {
+      title: `${meta.h1} — Brief${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
       h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
       sub: "Condensed run sheet — the full plan is one tap away.",
       sub2: meta.sub2,
-      crumb: "Brief",
+      crumb: `${meta.crumb} &middot; <a href="${stem}.html">Full session plan</a>`,
+      extraJs: DIALOG_JS,
       body:
         (meta.draft ? DRAFT_NOTE + "\n" : "") +
-        briefBody(read("plans/" + next.file), permalink),
+        briefBody(stripInlinedRefs(planMd), `${stem}.html`),
     });
+  }
+
+  // ---- next.html / brief.html: stable URLs that redirect to this week's
+  //      pages, rather than second copies of them
+  const next = pickNextPlan(plansDir);
+  if (!next) {
+    warn("no dated session plans — next.html and brief.html not built");
+  } else {
+    const meta = PLAN_META[next.file]!;
+    const stem = next.file.slice(0, -3);
+    const why = next.upcoming
+      ? "the next session"
+      : `the most recent session (${meta.sub2}) — nothing later is written yet`;
+    pages["next.html"] = redirectPage(`${stem}.html`, "Next Session", `${meta.h1} — ${why}.`);
+    pages["brief.html"] = redirectPage(
+      `${stem}-brief.html`,
+      "Next Session — Brief",
+      `${meta.h1} — ${why}, condensed for pitch-side.`,
+    );
   }
 
   // ---- index

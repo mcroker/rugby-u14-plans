@@ -202,6 +202,83 @@ tr.row-new td:first-child { font-weight: 600; }
 }
 .brief-more { font-size: 0.9rem; margin-top: 1.6em; }
 
+/* Logistics accordion on the brief — collapsed by default; the run sheet is
+   what you open the page for. */
+details.logistics {
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); margin: 0 0 1.2em;
+}
+details.logistics > summary {
+  cursor: pointer; list-style: none; padding: 11px 14px;
+  font-family: "Oswald", sans-serif; font-weight: 500; font-size: 0.82rem;
+  letter-spacing: 0.05em; text-transform: uppercase; color: var(--blue);
+  display: flex; align-items: center; gap: 8px;
+}
+details.logistics > summary::-webkit-details-marker { display: none; }
+details.logistics > summary::after {
+  content: "+"; margin-left: auto; font-size: 1.1rem; line-height: 1; color: var(--muted);
+}
+details.logistics[open] > summary::after { content: "\2212"; }
+details.logistics[open] > summary { border-bottom: 1px solid var(--border); }
+details.logistics .table-scroll { border: none; border-radius: 0; margin: 0; }
+
+/* Track head: title plus a deep link into the full plan. */
+.track-head { display: flex; align-items: flex-start; gap: 8px; }
+.track-head .track-title { flex: 1; }
+.track-link { flex: 0 0 auto; line-height: 0; padding: 2px; border-radius: 4px; }
+.track-link svg {
+  width: 15px; height: 15px; fill: none; stroke: var(--muted);
+  stroke-width: 2; stroke-linecap: round;
+}
+.track-link:hover svg { stroke: var(--blue); }
+.track-run { color: var(--muted); font-size: 0.84rem; line-height: 1.4; margin-top: 5px; overflow-wrap: anywhere; }
+.track-run b { color: var(--ink-soft); font-weight: 600; }
+
+/* Details button + modal. */
+.track-details {
+  margin-top: 8px; font-family: "Oswald", sans-serif; font-size: 0.72rem;
+  letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer;
+  color: var(--blue); background: transparent;
+  border: 1px solid var(--rule); border-radius: 4px; padding: 4px 10px;
+}
+.track-details:hover { border-color: var(--blue); background: var(--blue-tint); }
+
+dialog.detail {
+  width: min(640px, calc(100vw - 32px)); max-height: 82vh; padding: 0;
+  border: 1px solid var(--border); border-radius: 10px;
+  background: var(--paper); color: var(--ink);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+dialog.detail::backdrop { background: rgba(12,16,24,0.55); }
+.detail-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; border-bottom: 1px solid var(--border);
+  background: var(--blue); color: #fff;
+  border-radius: 9px 9px 0 0;
+}
+.detail-head strong { flex: 1; color: #fff; font-family: "Oswald", sans-serif; font-weight: 600; }
+.detail-x {
+  background: transparent; border: none; color: #fff; opacity: 0.85;
+  font-size: 1.4rem; line-height: 1; cursor: pointer; padding: 0 4px;
+}
+.detail-body { padding: 4px 16px 8px; overflow-y: auto; max-height: 60vh; }
+.detail-body h4 {
+  font-family: "Oswald", sans-serif; text-transform: uppercase;
+  letter-spacing: 0.06em; font-size: 0.74rem; color: var(--gold);
+  margin: 1.2em 0 0.2em;
+}
+.detail-body p, .detail-body li { font-size: 0.9rem; max-width: none; }
+.detail-foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 16px; border-top: 1px solid var(--border);
+}
+.detail-foot a { font-size: 0.86rem; }
+.detail-done {
+  font-family: "Oswald", sans-serif; font-size: 0.74rem; letter-spacing: 0.05em;
+  text-transform: uppercase; cursor: pointer; color: #fff; background: var(--blue);
+  border: none; border-radius: 5px; padding: 7px 14px;
+}
+
 @media (max-width: 560px) {
   .seg { grid-template-columns: 3.4rem 1fr; gap: 8px; }
   .seg-time { padding-left: 10px; }

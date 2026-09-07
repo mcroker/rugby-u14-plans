@@ -17,9 +17,9 @@
 |---|---|---|
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
 | +5, 10 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
+| +5, 10 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
 | +15, 5 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
-| +20, 22 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced as the trigger |
-| +20, 22 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the Week 2 step up from Sunday's crossbar work |
+| +20, 22 min | Main game: narrow touch, lineout restarts | Whole squad in; line-speed and line-org in a tight channel, **Bang** introduced |
 | +42, 2 min | **Contact warm-up** | Whole squad, before the contact finish — get low, pummelling, Wrist Wrestle (see `coaching.md`) |
 | +44, 11 min | Main game continues — full contact | The last ~10 min at contact, per the Thursday rule (see `coaching.md`) |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
@@ -80,9 +80,9 @@
 
 **Coaching Points:** the same cues as Sunday — consistent routine, ball back **behind the head**, both hands, step into it, follow through **pointing at the target**.
 
-**Setup:** hookers peel off with a coach. Mark a 5-man line with cones and use a receiver at the front, middle and back.
+**Setup:** hookers peel off with a coach **during the passing block**, not during the game — ten minutes at the line, then back in for the lineout recap and the whole of the main game. Mark a 5-man line with cones and use a receiver at the front, middle and back.
 
-**Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
+**Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. Running it against the passing block rather than the game means the hookers miss handling reps, not twenty minutes of the game they need. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
 
 **Progressions:**
 - Call the target as the hooker starts their routine, so they cannot pre-set.

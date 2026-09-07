@@ -8,7 +8,7 @@
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | *(fill in on the night)* |
 | **Attendance** | *(fill in on the night)* |
-| **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning, keep the hooker throw ticking over, introduce the **Bang** blitz trigger, and get the squad running directly to where the breakdown will be off a lineout. Touch throughout — no contact this week. |
+| **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning, keep the hooker throw ticking over, introduce the **Bang** blitz trigger, and introduce the **lineout set piece** — the shape off the line, and running straight to two predictable rucks. Touch throughout — no contact this week. |
 | **Resources required** | Balls, bibs, cones, poles, ruck shields. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
@@ -21,12 +21,12 @@
 | +5, 10 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
 | +5, 10 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
 | +15, 5 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
-| +20, 15 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced |
-| +35, 8 min | Whole-group intervention: where the breakdowns will be | The first two breakdowns off a lineout land in predictable places — run straight to them |
-| +43, 12 min | Back into the game | Same game, now scoring arrival at the breakdown |
+| +20, 13 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced |
+| +33, 10 min | Whole-group intervention: the lineout set piece | Introduce the shape off a lineout — both rucks land in predictable places |
+| +43, 12 min | Back into the game | Same game, now running the shape off every lineout |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
-*If we start late, take it out of the first game block — not the breakdown intervention.*
+*If we start late, take it out of the first game block — not the set-piece intervention.*
 
 ## Activities
 
@@ -70,24 +70,34 @@
 **Progressions:**
 - Introduce **Bang** as the blitz trigger (see `playbook.md`) — this is its first outing, so expect to stop the game to reset it a few times.
 - Tighten the line-speed scoring window as the game goes on.
-- **Second half of the game: score the arrival.** A point for the first two support players who reach the breakdown before the ball is available.
+- **Second half of the game: run the shape off every lineout.** A point for the first two forwards who reach ruck 2 before the ball is available.
 
 **Adaptations:**
 - Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
 - If numbers are low, drop to smaller teams and run one game rather than two — a thin game teaches nothing about line-org.
 
-### Whole-group intervention — Where the breakdowns will be
+### Whole-group intervention — The lineout set piece
 
-**Coaching Points:** off a lineout the first two breakdowns land in predictable places. Don't watch the ball and react — run directly to where the breakdown is going to be, and arrive before the ball does.
+**Coaching Points:** **both rucks land in predictable places.** Nobody watches the ball and reacts — you already know where you are going, so go, and arrive before the ball does.
 
 **Setup:** whole squad, one lineout set on the 15m line. Walking pace, no opposition to start.
 
-**Description:** dry-run two or three lineouts. Set the line, throw, take the ball up, then freeze it: where is the first breakdown? Everyone points, then runs to it. Same again for the second phase. Repeat until they are moving before the ball arrives.
+**Description:** the shape off a lineout, walked through and then run:
+
+1. **Lineout** — the five forwards in the line. Hooker throws.
+2. **Ruck 1** — the spare forwards carry, with **12**, just off the line.
+3. **Ruck 2** — off **9**. The lineout forwards fold and race there.
+4. **Backs attack the open** off ruck 2.
+5. **Hooker and props stay behind** — width on the next phase, and they defend the blind.
+
+Walk it twice, then run it at pace. The two ruck positions are the whole point: point at them before the ball moves, then get there.
 
 **Progressions:**
-- Add a passive defender so the carrier is actually stopped.
-- Move the lineout to a different spot and ask where the breakdowns land now.
-- Straight back into the game, scoring arrival at the breakdown.
+- Add a passive defence so the carriers are actually stopped.
+- Move the lineout to a different spot and ask where the two rucks land now.
+- Straight back into the game, running the shape off every lineout restart.
+
+**Notes:** the **B/W/G** calls come in Week 2 — this is the shape, not the calls.
 
 ### Hooker throw-in (pull-out skill zone)
 

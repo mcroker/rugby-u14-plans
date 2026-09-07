@@ -479,7 +479,9 @@ function warmupEntry(): string {
   const wu = read("claude/warmup.md");
   const kit = /^\*\*Kit:\*\*\s*(.*)$/m.exec(wu)?.[1] ?? "";
   const quality = /^- \*\*Quality targets[^:]*:\*\*\s*(.*)$/m.exec(wu)?.[1] ?? "";
-  const phases = mdSection(wu, "The four phases");
+  // The table only — the prose around it on the warm-up page is context for
+  // that page, not instruction for a coach holding a run-sheet.
+  const phases = tableRows(mdSection(wu, "The four phases")).join("\n");
   if (!kit || !quality || !phases) {
     warn("warm-up entry: warmup.md no longer has the Kit line, quality targets or phases table");
   }

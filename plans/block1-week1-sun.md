@@ -57,7 +57,7 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 **The rules are not negotiable, and are worth saying out loud on the first session:** pummelling is an arm battle — no lifting, no takedowns, no twisting anyone's neck. Wrist Wrestle targets the **shoulder or upper arm only**, never the head or face, and stops the moment either grip goes. **Anyone who would rather not play the slapping game pummels again instead — offer that to the whole squad up front, so nobody has to ask.**
 
 **Adaptations:**
-- Demo each game with a coach as the partner before letting the squad loose — quicker than explaining it twice.
+- Demo each game with a **pair of players** before letting the squad loose — quicker than explaining it twice, and they watch a body their own size. Brief the pair first; a coach only steps in as a partner if no pair can show it safely.
 - If a pair is badly mismatched despite the pairing, break the three and rotate rather than leaving it.
 
 ### Hooker throw-in — the Cross-Bar Challenge (pull-out skill zone)

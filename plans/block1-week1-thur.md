@@ -88,7 +88,7 @@ This is **5-man Rhino** (see `playbook.md`), walked through and then run.
 
 **Coaching Points:** **both rucks land in predictable places.** Nobody watches the ball and reacts — you already know where you are going, so go, and arrive before the ball does.
 
-**Setup:** whole squad, one lineout set on the 15m line. **Five in the line** (props, locks, 7), **hooker throws**, and the **two spare forwards — typically 6 and 8** — stand in front of 10. Walking pace, no opposition to start.
+**Setup:** whole squad, one lineout set on the 15m line. **Five in the line** (props, locks, 7), **hooker throws**, and the **two spare forwards — typically 6 and 8** — stand in front of 10. Walking pace, no opposition to start. **The walk-through is the demo** — the players in the shape are showing everyone else, so let them do it rather than talking over it.
 
 **Description:**
 
@@ -123,7 +123,7 @@ Walk it twice, then run it at pace. Point at both ruck positions before the ball
 
 **Coaching Points:** **four jobs, one each — know yours before the throw.** Their maul set-up will be poor, so the two nearest go straight through it rather than holding on to it. Nothing starts until the catcher's feet are back on the ground.
 
-**Setup:** whole squad, straight on from the attacking shape — same lineout, coaches now standing in as the throwing team. Six minutes, walked then run. Keep the whistle in your hand: this is a picture, not a workshop.
+**Setup:** whole squad, straight on from the attacking shape — same lineout, with **a handful of players standing in as the throwing team** and the rest defending. Six minutes, walked then run. Keep the whistle in your hand: this is a picture, not a workshop.
 
 **Description:** we can't contest the catch (see `laws.md`), so it all happens after it. Walk the four jobs, then run it twice:
 
@@ -136,7 +136,7 @@ Walk it twice, then run it at pace. Point at both ruck positions before the ball
 
 **Progressions:**
 - Move the throw to a different spot and ask each group what their job is now.
-- Have the coaches deliberately set up a scruffy maul and let them find the seam.
+- Have the stand-in throwing team deliberately set up a scruffy maul and let the defence find the seam.
 - Straight into the game, live off every opposition lineout.
 
 **Notes:** the discipline line matters more than the aggression — a penalty for offside or obstruction hands back everything the pressure won.

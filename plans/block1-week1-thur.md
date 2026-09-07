@@ -4,14 +4,14 @@
 
 | | |
 |---|---|
-| **Date/Time** | **Thu 10 Sep 2026 — meet 18:35**, on the pitch for 18:45. Sixty minutes of session. |
-| **Location** | **The Training Area at the club** — the floodlit area, below Pitch 4 (Tunbridge Wells RFC). Thursdays are at the club until roughly the end of October (TBC), not TWGSB (see `age-group.md`). |
+| **Date/Time** | **Thu 10 Sep 2026.** Meet 18:35, on the pitch 18:45. 60 min. |
+| **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | *(fill in on the night)* |
-| **Attendance** | *(fill in on the night — expect fewer than Sunday; full turnout is not the norm on a Thursday)* |
+| **Attendance** | *(fill in on the night)* |
 | **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning at a lighter, non-contested level, keep the hooker throw ticking over, and put line-org and the **Bang** blitz trigger into a tight-space game. |
-| **Resources required** | Balls, bibs, cones, poles, ruck shields — **all at the club**, nothing needs carrying in now we are training there. |
+| **Resources required** | Balls, bibs, cones, poles, ruck shields. |
 
-![Where we are on a Thursday — the floodlit Training Area at the club, below Pitch 4. This is not the Sunday pitch allocation; Thursday evenings are always here while we are at the club.](pitch:training)
+![The Training Area, below Pitch 4.](pitch:training)
 
 ## Plan
 
@@ -26,7 +26,7 @@
 | +44, 11 min | Main game continues — full contact | The last ~10 min at contact, per the Thursday rule (see `coaching.md`) |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
-*Meet 18:35, on the pitch 18:45, sixty minutes of session from there. If we start late, take it out of the touch phase of the main game — not out of the contact warm-up, and not out of the contact finish, which is where the week's defence work actually gets tested. Sunset is in the logistics above: the back of the session is under floodlights.*
+*If we start late, take it out of the touch phase of the main game — not the contact warm-up, and not the contact finish.*
 
 ## Activities
 
@@ -51,21 +51,19 @@
 
 **Coaching Points:** the same content as Sunday, not new material: where each player stands, the 5m and 15m lines, **uncontested** — no jumping or lifting (see `laws.md`).
 
-**Setup:** whole squad, cones marking 5m and 15m. **Agree before the session who leads this segment; everyone else holds.** On Sunday four or five side-bar conversations started during this same slot — all constructive, but the objective is team positioning, not individual technique. Note the individual fixes and take them to those players in the skill zone (see `coaching.md`).
+**Setup:** whole squad, cones marking 5m and 15m. **Agree beforehand who leads this segment; everyone else holds.** Note individual fixes and take them to those players in the skill zone.
 
-**Description:** a short (3–4 min) recap. Sunday was the first exposure; this is the second look, and it should be visibly quicker than Sunday's. Get them setting up the line themselves rather than being placed — if they can form it without being told, the point has landed.
+**Description:** a short (3–4 min) recap, visibly quicker than Sunday's. Get them setting up the line themselves rather than being placed.
 
 **Progressions:**
-- **If they form the line cleanly straight away, don't fill the time — bank it and move on.** Sunday's lineout ran long because they were engaged; that is not a reason to run long twice.
+- **If they form the line cleanly straight away, bank the time and move on.**
 - If there is time and they are ahead of it, have the thrower call **front, middle or back** before the throw so the line starts thinking about a target. The **B/W/G** calls themselves are still Week 2 — this is the idea, not the vocabulary.
 
 ### Main game — Narrow touch, lineout restarts
 
-**Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday — that is the space doing the coaching.
+**Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday.
 
-**Why the defence work sits inside the game.** On Sunday the communication showed up in lineout touch and did not show up in Continuous Defence — the game pulled talk out of them that the drill did not. So this week the team-defence work is the game, not a drill beside it.
-
-**Setup:** small-sided, in a **narrow channel**. We now have the club's floodlight pitch rather than a third of the 4G, so the narrowness is a choice, not a constraint — keep it tight anyway: it suits line-speed and forces quick hands over long ones.
+**Setup:** small-sided, in a **narrow channel** — tight enough to favour line-speed and force quick hands.
 
 **Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. Defence scores for line-speed; attack scores a bonus for a clean lineout catch leading to a try.
 
@@ -82,9 +80,9 @@
 
 **Coaching Points:** the same cues as Sunday — consistent routine, ball back **behind the head**, both hands, step into it, follow through **pointing at the target**.
 
-**Setup:** hookers peel off with a coach **during the passing block**, not during the game — ten minutes at the line, then back in for the lineout recap and the whole of the main game. Mark a 5-man line with cones and use a receiver at the front, middle and back.
+**Setup:** hookers peel off with a coach during the passing block — ten minutes, then back in for the lineout recap and the whole main game. Mark a 5-man line with cones, receiver at front, middle and back.
 
-**Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. **We are at the club, so the posts are there:** open with a couple of minutes of the Cross-Bar Challenge to warm the arm up, then move to the marked line. Running it against the passing block rather than the game means the hookers miss handling reps, not twenty minutes of the game they need. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
+**Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. Open with two minutes of the Cross-Bar Challenge at the posts to warm the arm up, then move to the marked line. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
 
 **Progressions:**
 - Call the target as the hooker starts their routine, so they cannot pre-set.
@@ -96,14 +94,14 @@
 
 **Setup:** pairs, matched by size. No equipment. Runs on the spot wherever the game has ended up — no need to reset the pitch for it.
 
-**Description:** the standard two minutes (see `coaching.md`): **get low** (~30s), **pummelling** on knees (~45s), **Wrist Wrestle** standing (~45s). Second outing, so it should need a reminder rather than a demo — if it still needs a full demo, that is worth knowing before Week 2.
+**Description:** **get low** (~30s), **pummelling** on knees (~45s), **Wrist Wrestle** standing (~45s). Second outing — a reminder, not a demo.
 
 **Same non-negotiable rules:** no lifting, takedowns or neck twisting in the pummel; shoulder or upper arm only in Wrist Wrestle, never the head; stop when a grip goes. Anyone who would rather not play the slapping game pummels again.
 
 ## Notes
 
-- **We are at the club, not TWGSB**, until roughly the end of October (TBC). That changes three things from the old midweek plan: the kit is already there, the posts are there, and so is the scrum machine — worth remembering when Week 2's scrum work lands (see `coaching.md`).
-- **Meet 18:35 for an 18:45 start** — earlier than the old 7pm, so the message needs to be clear on Spond.
+- **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
+- **Meet 18:35 for an 18:45 start** — earlier than the old 7pm; make that clear on Spond.
 - **No scrum this week.** Scrum's first exposure is Sunday 13 Sep (Week 2), on a Sunday, because we cannot reliably field two full 8-man packs on a Thursday (see `age-group.md`).
 - **Contact is the last 11 minutes only**, and only after the two-minute contact warm-up. Everything before it is touch (see `coaching.md`). **Treat it as the first open-play contact of the season**, because Sunday's was pulled for the surface — see the main game entry.
 - **What is deliberately repeated from Sunday**, since the coaches asked for repetition across the weeks: the same warm-up, the same lineout-restart game with the constraints tightened and **Bang** added, and the hooker throw stepping up from the crossbar to a marked line. The new things this week are passing as the core skill and the **Bang** call itself.

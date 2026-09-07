@@ -4,14 +4,14 @@
 
 | | |
 |---|---|
-| **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm** (1h45). Home training — confirm against the [pitch allocation](https://pitch.twrfc.com/) and Spond on the day; see `calendar.md`. |
-| **Location** | Home — the **right half of Pitch 2**, as viewed from the Club House, ours alone from 10:45 (U12M are on it until 10:30). See the allocation map below, and note nothing can be set out before the changeover. |
-| **Coaches** | **6 — Steve, Tom, Matt, Bev, Jeff, Tiggy.** (Martin and Andy absent — that is the full coaching group of eight accounted for.) |
-| **Attendance** | **31 expected** — Spond: 31 attending, 6 unanswered, 6 declined (43 invited). *(Actual — fill in on the night.)* |
+| **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm.** |
+| **Location** | The right half of Pitch 2, St Marks. Free from 10:30. |
+| **Coaches** | Steve, Tom, Matt, Bev, Jeff, Tiggy. *(Martin, Andy absent.)* |
+| **Attendance** | 31 expected, 6 unanswered, 6 declined. *(Actual — fill in on the night.)* |
 | **Session objective** | Season opener. Introduce individual tackle skills + communication (defence base); introduce lineout positioning, laws, and the hooker throw-in (the squad's very first lineout exposure); introduce blitz defence line-speed reps for the backs. |
 | **Resources required** | Balls, bibs, cones, ruck shields. |
 
-![Our pitch this session — Pitch 2, the zone the allocation map labels U12M / U14M, meaning U12M have it first and we follow. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
+![Pitch 2, right half. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
 
 ## Plan
 
@@ -38,7 +38,7 @@
 | 4 and 5 | Handling reps with the main group, feeding players in and out of the diamonds |
 | 6 | Floating — keep the rotations moving, and pick up whatever the changeover left undone |
 
-Two diamonds rather than one is the whole benefit of the numbers: it halves the group size and roughly doubles the reps each player gets in the same thirteen minutes. In the main game, six is enough to run **two games side by side** with coaches to spare — see `coaching.md`. Remember one voice per segment: numbers this good are exactly when side-bar coaching creeps in.
+Two diamonds halves the group size and roughly doubles the reps. In the main game, six is enough for **two games side by side** with coaches to spare. One voice per segment.
 
 ## Activities
 
@@ -66,7 +66,7 @@ Two diamonds rather than one is the whole benefit of the numbers: it halves the 
 
 **Setup:** hookers (~3) peel off with a coach after the contact warm-up and work at the posts; everyone else stays with the player-led warm-up and handling reps. Mark a throwing spot so the distance is the same every rep.
 
-**Description:** the **Cross-Bar Challenge** (see `activities.md`) — throw at the crossbar rather than at a team-mate. Over the bar first, then progress to hitting it; score out of ten. The bar gives instant, unarguable feedback on height and line, which is exactly what a first-ever session needs — no jumper to catch it, no lineout to organise, just the throw. Runs for the whole opening window, then straight back into the main group for the lineout intervention.
+**Description:** the **Cross-Bar Challenge** — throw at the crossbar rather than at a team-mate. Over the bar first, then hitting it; score out of ten. Runs for the whole opening window, then back into the main group for the lineout intervention.
 
 **Progressions:**
 - Increase the distance from the posts.
@@ -83,9 +83,9 @@ Two diamonds rather than one is the whole benefit of the numbers: it halves the 
 
 **Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze** (see `activities.md`). Defence "wins" the rep if the tackle is completed over the halfway point of the diamond.
 
-**Setup:** see `activities.md`. Runs in the opening block once the whole squad has done the two-minute contact warm-up. **Two diamonds side by side** (we have the coaches for it): with ~28 players left after the hookers peel off, rotate **three waves of ~9, ~4 min each**, each wave splitting four and five across the two diamonds. Each group comes straight out of the handling work and goes straight back to it.
+**Setup:** **two diamonds side by side.** With ~28 players after the hookers peel off, rotate **three waves of ~9, ~4 min each**, each wave splitting four and five across the two diamonds. Straight out of the handling work and straight back.
 
-**Description:** controlled, small-group, full-contact tackle-technique reps — short and sharp. Front-loading it means the squad's first real coaching input of the season is the defence base the whole block is built on.
+**Description:** controlled, small-group, full-contact tackle-technique reps — short and sharp.
 
 **Adaptations:**
 - Drop back to a single diamond if a coach gets pulled away — bigger groups and fewer reps, but it still works.

@@ -68,6 +68,13 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
 **Detailed, on-the-pitch session run-sheets** (timings, drills, setup) live in the **`plans/`** folder, one file per session, expanding that session's entry in `claude/blocks.md`. Naming convention: `plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md` — e.g. `plans/block1-week1-thur.md` for Block 1, Week 1, Thursday. Use `thur` or `sun` for the day.
 
+**House style — say the thing, not why it was decided.** Plans are read while running a session. State the fact or the instruction and stop:
+
+- *"The Training Area, St Marks. Floodlit."* — not *"The Training Area at the club, the floodlit area below Pitch 4, because Thursdays are at the club until the end of October (see `age-group.md`)."*
+- **Don't explain a design decision in the plan.** Why the tackle zone is front-loaded, or why the game is narrow, belongs in `blocks.md` or a Review — not in the run-sheet a coach is holding.
+- **Don't cross-reference a page the plan already carries.** The warm-up and contact warm-up are on the page; pointing at `coaching.md` for them is noise. A reference to something genuinely elsewhere — the laws, the activities bank — is fine.
+- **Session details cells are one short fact each.** Caveats go in Notes.
+
 **Session plan template.** Every file in `plans/` follows this structure. **The build reads it structurally, not just as prose** — the headings and the shape of the two tables are a contract, and the notes below each part say what depends on them. Getting one wrong fails the build rather than quietly producing a broken page.
 
 | Markdown | Becomes, on the page |

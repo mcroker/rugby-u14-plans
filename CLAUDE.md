@@ -68,7 +68,16 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
 **Detailed, on-the-pitch session run-sheets** (timings, drills, setup) live in the **`plans/`** folder, one file per session, expanding that session's entry in `claude/blocks.md`. Naming convention: `plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md` — e.g. `plans/block1-week1-thur.md` for Block 1, Week 1, Thursday. Use `thur` or `sun` for the day.
 
-**Session plan template.** Every file in `plans/` follows this structure:
+**Session plan template.** Every file in `plans/` follows this structure. **The build reads it structurally, not just as prose** — the headings and the shape of the two tables are a contract, and the notes below each part say what depends on them. Getting one wrong fails the build rather than quietly producing a broken page.
+
+| Markdown | Becomes, on the page |
+|---|---|
+| `## Session details` table | the collapsed **Logistics** accordion, with the pitch map inside it |
+| `## Plan` — the **first** table | the **timeline**: one block per row, rows sharing a start time drawn side by side |
+| `## Plan` — anything after that table | kept, rendered below the timeline (this is where a coach allocation goes) |
+| `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's setup/cues and Details modal |
+| `## Notes`, `## Review` | rendered below, as written |
+
 
 1. **Session details** — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.
 
@@ -79,8 +88,20 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    ```
 
    The build embeds the club map and pins a `U14M` marker on that zone, so a new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
-2. **Plan** — a lightweight table, one row per activity, with just the key at-a-glance information: Start time + duration, Activity, and a one-line summary of what it is / its focus. This is the section to glance at while actually running the session on the night.
-3. **Activities** — a more detailed breakdown, but **only for activities that warrant it** (introducing a new skill or system, or anything worth a diagram or video reference) — not every row from the Plan table needs an entry here. Check **`claude/activities.md`** first for a reusable game/drill before inventing a new one. Each entry can include:
+2. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
+
+   - It **must** read `+<start>, <n> min` — e.g. `+7, 13 min`. A row that doesn't fails the build.
+   - **Rows sharing a start time are drawn side by side** as parallel blocks. That is how the page shows the squad splitting; nothing else marks it.
+   - An italic parenthetical after the time — `+7, 13 min *(parallel pull-out)*` — becomes a tag on the block.
+   - Only the **first** table in this section is read as the run sheet, so a coach allocation or any other table can follow it.
+3. **Activities** — a `### ` entry per activity. Each becomes a collapsed accordion **and** feeds its block on the timeline, so write them for a coach who is about to run the thing:
+
+   - **`**Setup:**`** and **`**Coaching Points:**`** are lifted onto the timeline block as *Set up* and *Call* — **first sentence only**, so lead with the instruction and put the caveats after it. A bare cross-reference (`see \`activities.md\`.`) is skipped, so don't make it the whole first sentence.
+   - **`**Description:**`**, **`**Coaching Points:**`** and **`**Progressions:**`** are what the block's **Details** modal shows.
+   - An entry is matched to its row by the words in the title, so keep the two recognisably the same. No match means no setup, cues, Details button or link for that block — it falls back to the Plan table's summary.
+   - The **player-led warm-up entry is generated automatically** from `claude/warmup.md` — don't write one.
+
+   Write an entry for anything that warrants it (a new skill or system, anything worth a diagram or video); a row like a cool-down needs none. Check **`claude/activities.md`** first for a reusable game/drill before inventing a new one. Each entry can include:
    - Coaching Points (kept to a small number of focus areas)
    - Setup
    - Description
@@ -92,7 +113,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 
-- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. Diagrams embedded as real images, video links as clickable references. **You don't write this page by hand:** add the run-sheet to `plans/` and an entry for it to `PLAN_META` in `tools/build_site.ts` (the session's **ISO date**, page heading, subtitle, breadcrumb, index-card text), then push — the workflow builds the page and its index card automatically. The ISO `date` is what decides which plan is the next one, so it has to be right. Set **`draft: true`** on the entry while a run-sheet is still being worked on: the page gets a *Draft — work in progress* banner and a badge beside its heading, and its index card is badged too, so nobody prints a half-finished plan. Remove the flag when it's ready. The marking follows the plan through `next.html` if a draft becomes the upcoming session. See Shared HTML reference below.
+- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. **You don't write this page by hand:** add the run-sheet to `plans/` and an entry for it to `PLAN_META` in `tools/build_site.ts` (the session's **ISO date**, page heading, subtitle, breadcrumb, index-card text), then push — the workflow builds the page and its index card automatically. The ISO `date` is what decides which plan is the next one, so it has to be right. Set **`draft: true`** on the entry while a run-sheet is still being worked on: the page gets a *Draft — work in progress* banner and a badge beside its heading, and its index card is badged too, so nobody prints a half-finished plan. Remove the flag when it's ready. The marking follows the plan through `next.html` if a draft becomes the upcoming session. See Shared HTML reference below.
 - A **PDF**, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.
 
 See `plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](http://rugby-plans.com/u14/block1-week1-sun.html) for a worked example of the responsive HTML output.

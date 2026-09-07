@@ -364,7 +364,7 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
 }
 
 
-// ------------------------------------------------------------------- brief
+// -------------------------------------------------------------- session page
 /** Pull one "## Heading" section out of a plan's markdown. */
 function mdSection(md: string, heading: string): string {
   const lines = md.split("\n");
@@ -405,9 +405,9 @@ function splitCells(row: string): string[] {
 }
 
 /**
- * First sentence only. The brief carries the fact; the planning caveats that
- * follow it stay on the full plan — so a Session details cell should lead with
- * whatever a coach needs in their hand at the ground.
+ * First sentence only. A timeline block carries the instruction; the caveats
+ * that follow it stay in the activity's own section below — so Setup and
+ * Coaching Points should lead with what a coach needs in their hand.
  */
 function firstSentence(text: string): string {
   // Allows the sentence to end inside bold, as "**...Jeff.** (rest)" does.
@@ -456,7 +456,7 @@ interface Activity {
 }
 
 /** Skip a leading bare cross-reference ("see `activities.md`.") — useless on
- *  its own in a brief — and take the first real sentence after it. */
+ *  its own on a timeline block — and take the first real sentence after it. */
 function runInfo(text: string): string {
   const t = text.replace(/^see\s+[^.]*\.\s*/i, "").trim();
   return firstSentence(t || text);
@@ -576,11 +576,11 @@ function timeline(planSection: string, acts: Activity[]): string {
   }
 
   if (!slots.length) {
-    warn("brief: no run-sheet rows could be read as '+start, N min'");
+    warn("run sheet: no rows could be read as '+start, N min'");
     return "";
   }
   if (unparsed) {
-    warn(`brief: ${unparsed} run-sheet row(s) did not start '+N, N min' and were dropped`);
+    warn(`run sheet: ${unparsed} row(s) did not start '+N, N min' and were dropped`);
   }
 
   const starts = [...new Set(slots.map((s) => s.start))].sort((a, b) => a - b);

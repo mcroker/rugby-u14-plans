@@ -21,12 +21,13 @@
 | +5, 10 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
 | +5, 10 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
 | +15, 5 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
-| +20, 22 min | Main game: narrow touch, lineout restarts | Whole squad in; line-speed and line-org in a tight channel, **Bang** introduced |
-| +42, 2 min | **Contact warm-up** | Whole squad, before the contact finish — get low, pummelling, Wrist Wrestle (see `coaching.md`) |
-| +44, 11 min | Main game continues — full contact | The last ~10 min at contact, per the Thursday rule (see `coaching.md`) |
+| +20, 2 min | **Contact warm-up** | Whole squad — get low, pummelling, Wrist Wrestle |
+| +22, 20 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced |
+| +22, 20 min *(parallel pull-out, numbers permitting)* | Tackle Diamond | Small groups out of the game for tackle technique, straight back in |
+| +42, 13 min | Main game continues — full contact | The last stretch at contact |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
-*If we start late, take it out of the touch phase of the main game — not the contact warm-up, and not the contact finish.*
+*If we start late, take it out of the touch phase — not the contact warm-up, and not the contact finish.*
 
 ## Activities
 
@@ -70,7 +71,7 @@
 **Progressions:**
 - Introduce **Bang** as the blitz trigger (see `playbook.md`) — this is its first outing, so expect to stop the game to reset it a few times.
 - Tighten the line-speed scoring window as the game goes on.
-- **Last ~11 minutes: full contact**, after the contact warm-up. **This is the squad's first open-play contact of the season** — Sunday's was pulled because of the surface, so only the closed tackle-diamond work has happened. Start it slower than you would otherwise, keep the numbers small, and have coaches watching tackle height from the first carry rather than settling in to watch the game.
+- **Last ~13 minutes: full contact.** **The squad's first open-play contact of the season** — Sunday's was pulled for the surface. Start slower than usual, small numbers, coaches watching tackle height from the first carry.
 
 **Adaptations:**
 - Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
@@ -88,13 +89,26 @@
 - Call the target as the hooker starts their routine, so they cannot pre-set.
 - Add a defender's hands over the target to force height.
 
+### Tackle Diamond (pull-out skill zone, numbers permitting)
+
+**Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze**. Defence wins the rep if the tackle is completed over the halfway point of the diamond.
+
+**Setup:** one diamond off to the side of the game (see `activities.md`). Pull **groups of 4–6** out of the game, ~4 min each, straight back in afterwards.
+
+**Description:** full-contact technique work running alongside the touch game. Everyone has done the contact warm-up at +20, so a group can go straight in.
+
+**Adaptations:**
+- **Only run it if the game still works without them.** Roughly 16 players on the pitch is the floor; below that, drop the diamond and keep everyone in the game.
+- Two diamonds if the coaches are there and the numbers are big.
+- If a group is struggling, keep them for a second rotation rather than pushing on.
+
 ### Contact warm-up (whole squad)
 
 **Coaching Points:** as Sunday — chest up, back flat, head to the side, hips low in the pummel; low base and moving feet in Wrist Wrestle.
 
-**Setup:** pairs, matched by size. No equipment. Runs on the spot wherever the game has ended up — no need to reset the pitch for it.
+**Setup:** pairs, matched by size. No equipment.
 
-**Description:** **get low** (~30s), **pummelling** on knees (~45s), **Wrist Wrestle** standing (~45s). Second outing — a reminder, not a demo.
+**Description:** **get low** (~30s), **pummelling** on knees (~45s), **Wrist Wrestle** standing (~45s). Second outing — a reminder, not a demo. It runs before the game so the Tackle Diamond can pull groups straight out of it.
 
 **Same non-negotiable rules:** no lifting, takedowns or neck twisting in the pummel; shoulder or upper arm only in Wrist Wrestle, never the head; stop when a grip goes. Anyone who would rather not play the slapping game pummels again.
 
@@ -103,7 +117,7 @@
 - **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
 - **Meet 18:35 for an 18:45 start** — earlier than the old 7pm; make that clear on Spond.
 - **No scrum this week.** Scrum's first exposure is Sunday 13 Sep (Week 2), on a Sunday, because we cannot reliably field two full 8-man packs on a Thursday (see `age-group.md`).
-- **Contact is the last 11 minutes only**, and only after the two-minute contact warm-up. Everything before it is touch (see `coaching.md`). **Treat it as the first open-play contact of the season**, because Sunday's was pulled for the surface — see the main game entry.
+- **Contact starts at +20**, after the whole-squad contact warm-up: the Tackle Diamond from then on, and the game for its last 13 minutes. Everything before +20 is touch.
 - **What is deliberately repeated from Sunday**, since the coaches asked for repetition across the weeks: the same warm-up, the same lineout-restart game with the constraints tightened and **Bang** added, and the hooker throw stepping up from the crossbar to a marked line. The new things this week are passing as the core skill and the **Bang** call itself.
 - **One voice per segment** (see `coaching.md`). With six coaches out on Sunday this was the one thing that slipped; the whole-group lineout slot is where it will slip again.
 - **Bang is new on Thursday.** Sunday's game ran the line-speed scoreboard without the call; this is the first time the trigger itself is used, so give it a proper introduction in the whole-group slot rather than springing it mid-game.

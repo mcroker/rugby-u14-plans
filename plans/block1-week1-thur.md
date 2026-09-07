@@ -8,7 +8,7 @@
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | *(fill in on the night)* — **needs 3 as a minimum**: the hooker pull-out during passing, forwards and backs in the split, and two or three spread around the pitch with bags for the scanning condition. |
 | **Attendance** | *(fill in on the night)* |
-| **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning, keep the hooker throw ticking over, introduce the **Bang** blitz trigger, and introduce **Attack off lineout** — forwards and backs working their half of the shape separately, then joining it up — and **defending the lineout**, coached inside the game rather than in a block of its own. The games are conditioned hard for **defence — connectedness, communication and line-speed** — and every defensive win restarts as a lineout. Touch throughout — no contact this week. |
+| **Session objective** | Passing as the week's core skill. **Both sides of the lineout** — the attacking shape and defending theirs — built on Sunday's positioning, with the hooker throw ticking over. **Bang** introduced, and the games conditioned hard for defence. Touch throughout. |
 | **Resources required** | Balls, bibs, cones, poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
@@ -38,7 +38,7 @@
 
 **Coaching Points:** elbow up, hands out, catch early; call for it before it comes. Once the second ball goes in, the demand is awareness — knowing where both balls are without stopping to look.
 
-**Setup:** see `activities.md`. Players in three lines (A, B, C), spaced for passing. In a third of a pitch, run two separate sets rather than one long one.
+**Setup:** players in three lines (A, B, C), spaced for passing. **Two separate sets, not one long one** — the Training Area is a square, so use its width and halve the queue. Full detail in `activities.md`.
 
 **Description:** the ball zig-zags down the lines, each player filling in behind the line they passed to. Add a second ball once the basic pattern is running cleanly — that is the point of the drill, not an optional extra.
 

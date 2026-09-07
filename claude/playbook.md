@@ -124,7 +124,16 @@ These sit inside the wider **line-org** system: spacing, numbering up, scanning 
 
 **Ruck-defence:** contest only when the ball is genuinely there to be won — an isolated carrier, or a ball left available. Otherwise don't commit: guard either side of the ruck, stay on your feet, and get back in the line.
 
-**Lineout defence:** simple, since lineouts are uncontested at U14 (see `laws.md`) — pressure goes on 9 and 10 rather than contesting the catch.
+**Lineout defence:** we can't contest the catch (uncontested at U14 — see `laws.md`), so everything goes on what happens *after* it. The opposition's maul set-up will almost certainly be poor at this age, so we attack it rather than wait for it.
+
+| Who | Job |
+|---|---|
+| **Nearest two in the line** | **Counter-maul.** Drive the receiver the moment it's legal — the catcher's feet back on the ground. Don't hold and wrestle: **burst through and attack the seams** of their maul to get at the ball. |
+| **Rest of the line** | Go through their line **just legally enough not to be pinged**, and put **9 under pressure** — no clean, unhurried delivery. |
+| **Hooker** | **Stays in the channel** — that's the front-peel covered. |
+| **9** | Sets up **at the back** of the line, and with the **tail-gunner shoots** for the nearest back — or the blind-side winger if he's the threat. |
+
+The counter-maul is only legal once the catcher has been returned to the ground, and the pressure on 9 has to stay the right side of offside and obstruction — a penalty hands back everything the pressure won.
 
 **Kick defence:** system (pendulum vs. two players dropping off the line) still TBC.
 

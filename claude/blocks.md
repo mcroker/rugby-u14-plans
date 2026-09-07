@@ -62,7 +62,7 @@ The two match days (Sun 27 Sep, Sun 11 Oct) need no run-sheet — we don't train
 
 **Defence:** individual tackle skills as the technical base (Sun) moving to passing (Thu), with line-org introduced alongside — main game a touch/tag game with a line-speed target; skill zone runs 1-on-1 tackle-technique fixes (controlled, small-group) plus the line-org cues (spacing, numbering up, CTC scanning, shuffling retreat, communication) and the **Bang** blitz-trigger call.
 
-**Forwards-skill focus: lineout — the squad's very first exposure.** Hookers peel off for a mini skill zone on the throw-in (accuracy, grip, release) while everyone else does handling work; a short whole-group intervention covers lineout positioning (where to stand) and the laws (uncontested, no lift — see `laws.md`) before the main game, which restarts each phase from a lineout throw-in. Thursday reinforces the same positioning content at a lighter/non-contested level.
+**Forwards-skill focus: lineout — the squad's very first exposure.** Hookers peel off for a mini skill zone on the throw-in (accuracy, grip, release) while everyone else does handling work; a short whole-group intervention covers lineout positioning (where to stand) and the laws (uncontested, no lift — see `laws.md`) before the main game, which restarts each phase from a lineout throw-in. Thursday reinforces the same positioning content at a lighter/non-contested level, then adds **both sides of the lineout together** — the attacking shape (5-man Rhino) and a short, sharp introduction to **defending the lineout** (see `playbook.md`), with a long game block afterwards to actually use them. Thursday also runs to 90 minutes (18:45–20:15), and the extra game time is spent on defence: **Springbok Touch** with the turnover taken as a lineout to the defending team, cumulative conditions for connectedness and communication, and the **Coach's Bag** scanning condition (see `activities.md`) as the first live outing for **CTC**.
 
 **Backs-skill focus:** defensive alignment while the forwards unit is tied up in its lineout skill zone — Continuous Defence (see `activities.md`) is a good vehicle for this.
 
@@ -78,7 +78,7 @@ The two match days (Sun 27 Sep, Sun 11 Oct) need no run-sheet — we don't train
 
 **Defence:** ruck-defence — guard either side of the ruck, and only compete for the ball when it can realistically be won, otherwise stay on your feet. Thursday also introduces the pull-back pass (**Hippo** — see `playbook.md`) as part of the passing core skill.
 
-**Forwards-skill focus: defending the lineout (Sun).** Since lineouts are uncontested at U14, defensive pressure is simple — it goes on 9 and 10, not on contesting the catch. Thursday is pre-match sharpen (see below) and touches both set-pieces lightly rather than introducing new lineout-defence content.
+**Forwards-skill focus: defending the lineout (Sun)** — now building on the Week 1 Thursday introduction rather than starting from scratch: the counter-maul and seam attack, pressure on 9, hooker in the channel, and 9 + tail-gunner shooting (see `playbook.md`). Thursday is pre-match sharpen (see below) and touches both set-pieces lightly rather than introducing new lineout-defence content.
 
 **Backs-skill focus:** defending against kicks — the system (pendulum vs. two players dropping) is still TBC; use this week to trial whichever is chosen.
 

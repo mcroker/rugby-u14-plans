@@ -24,6 +24,7 @@ Quick reference for picking a game to match the session's contact-level target (
 - **N-tackle turnover** ("Turnover Touch") — turnover after a set number of touches.
 - **Line-break Touch** — extra steps allowed on a "LINEBREAK" call.
 - **Springbok Touch** — turnover if the first receiver is caught in contact.
+- **Coach's Bag** — a try only counts if the scorer can name the last item a coach held up (scanning).
 
 ## Warm-up
 
@@ -123,6 +124,18 @@ Quick reference for picking a game to match the session's contact-level target (
 | Description | Touch rugby with the condition that if the defence catches the first receiver still in contact (i.e. before they've passed the ball on), it's a turnover. Named for the Springboks' rush/blitz defence — see `playbook.md`'s **Bang** call. |
 | Coaching Points | Rewards fast line-speed and pressure on the ball straight from source, rather than only rewarding tackles further out. |
 | Progressions | Combine with the Blitz Defence (4v3 shape drill) below once the group has the idea. |
+
+### Coach's Bag (CTC scanning)
+
+**Focus:** Scanning (**CTC** — see `playbook.md`) and awareness, in or out of possession
+
+| | |
+|---|---|
+| Description | Played as a condition on top of whatever game is running. Each coach carries a bag of random items (a cone, a glove, a water bottle, a tape roll — anything) and stands off the pitch at a different point around it. At intervals a coach holds one item up and holds it there for a few seconds, then puts it away. **A try only counts if the scorer can name the last item shown.** If they can't, no try — restart. |
+| Coaching Points | This is the **C**rossbar and **T**ouchline of CTC made to actually cost something: eyes up, head on a swivel, look away from the ball and back. **C**ommunicate is where the value multiplies — nothing stops a team-mate calling the item across, and a team that talks scores. |
+| Setup | One bag per coach, coaches spread around the pitch — not clustered, or there's only one place to look. Show an item roughly every 30–45 seconds and vary who shows it. |
+| Progressions | Show an item only while play is live and fast, never during a stoppage. Require the defence to name it too, to keep a turnover. Two coaches show different items at once and ask for both. |
+| Adaptations | If nobody is seeing them, hold the item up longer and stand closer before making it harder. If tries are being disallowed constantly and the game has stopped being a game, let a team-mate answer for the scorer — that turns it straight into a communication drill. |
 
 ### Line-break Touch
 

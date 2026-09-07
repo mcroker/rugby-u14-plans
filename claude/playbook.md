@@ -137,13 +137,13 @@ Lineouts are a brand-new skill for this squad this year — see `laws.md` for th
 
 Starter play from an attacking lineout.
 
-**Setup:** 5-man lineout; 2 "extra" forwards (not committed to the line) stand in front of 10.
+**Setup:** 5-man lineout — five in the line (props, locks, 7) and the hooker throwing, which leaves **2 spare forwards, typically 6 and 8**, standing in front of 10.
 
 | Phase | What happens |
 |---|---|
-| **1** | Lineout — ball off the top (OTT) to 9. 9 passes to the 2 extra forwards, who carry to set up a ruck. Ruck resourced by the extra forwards + 12. |
+| **1** | Lineout — ball off the top (OTT) to 9. 9 passes to the 2 spare forwards (6 and 8), who carry to set up a ruck. Ruck resourced by them + 12. |
 | **2** | Forwards race round the ruck for **Rhino** (keep it tight). Ruck resourced by forwards coming round from the lineout. |
-| **3** | Backs edge attack. |
+| **3** | Backs edge attack. Hooker and props stay behind for width on the next phase, and defend the blind. |
 
 *Coaching note: phases 1–2 are there to draw defenders in before releasing it wide in phase 3 — backs moves (see Backs Moves above) can be called into phase 3 once the shape is solid.*
 

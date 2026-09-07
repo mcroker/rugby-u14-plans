@@ -78,19 +78,33 @@
 
 ### Whole-group intervention — Attack off lineout
 
+This is **5-man Rhino** (see `playbook.md`), walked through and then run.
+
 **Coaching Points:** **both rucks land in predictable places.** Nobody watches the ball and reacts — you already know where you are going, so go, and arrive before the ball does.
 
-**Setup:** whole squad, one lineout set on the 15m line. Walking pace, no opposition to start.
+**Setup:** whole squad, one lineout set on the 15m line. **Five in the line** (props, locks, 7), **hooker throws**, and the **two spare forwards — typically 6 and 8** — stand in front of 10. Walking pace, no opposition to start.
 
-**Description:** the shape off a lineout, walked through and then run:
+**Description:**
 
-1. **Lineout** — the five forwards in the line. Hooker throws.
-2. **Ruck 1** — the spare forwards carry, with **12**, just off the line.
-3. **Ruck 2** — off **9**. The lineout forwards fold and race there.
+1. **Lineout** — ball off the top to **9**.
+2. **Ruck 1** — 9 to **6 and 8**, who carry. Resourced by them and **12**. Just off the line, every time.
+3. **Ruck 2** — locks and 7 fold round and race there. Keep it tight.
 4. **Backs attack the open** off ruck 2.
 5. **Hooker and props stay behind** — width on the next phase, and they defend the blind.
 
-Walk it twice, then run it at pace. The two ruck positions are the whole point: point at them before the ball moves, then get there.
+Walk it twice, then run it at pace. Point at both ruck positions before the ball moves, then get there.
+
+![5-man Rhino — Phase 1](claude/images/web/5man_rhino_phase1.png)
+
+*Phase 1 — off the top to 9, extras and 12 set ruck 1.*
+
+![5-man Rhino — Phase 2](claude/images/web/5man_rhino_phase2.png)
+
+*Phase 2 — forwards fold round for ruck 2.*
+
+![5-man Rhino — Phase 3](claude/images/web/5man_rhino_phase3.png)
+
+*Phase 3 — backs attack the open.*
 
 **Progressions:**
 - Add a passive defence so the carriers are actually stopped.

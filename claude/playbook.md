@@ -6,14 +6,15 @@ Our calls and shapes for the squad.
 
 Intended playing style: **play like Japan, not South Africa** — i.e., quick recycle (**2-second rucks** — that is the number we coach to), continuity, and offloads.
 
-### Guiding principles — *proposed, to confirm*
+### Guiding principles
 
-A first attempt at writing down what "play like Japan" actually commits us to, so that every session can be mapped back to something. **Raised after the 6 Sep session and not yet agreed** — settle these before they get treated as doctrine:
+What "play like Japan" commits us to. Every session should map back to at least one of these (see `coaching.md`).
 
-- **Very quick line speed in defence**, with **two players over the ball** at the ruck to slow their ball down.
-- **Move the ball wide more often than setting up pods** — attack the outside channels and make the opposition move.
+- **Very quick line speed in defence.**
+- **Two to the ruck in attack** — in fast, ball available, no turnover.
 - **Very fast ruck speed — target 2 seconds.**
-- **Be fitter than everyone else.**
+- **Be fitter than everyone else** — earned through how sessions are run, not through fitness work (see `coaching.md`).
+- **Move the ball wide more often than setting up pods** — attack the outside channels and make the opposition move. *(Still to settle: this sits against the default attacking pattern below, which is pod-first. Agree which leads.)*
 
 
 Calls are kept short, single-word, and used consistently in training so they become automatic in games — predictable, consistently-named calls beat ad-hoc instructions under pressure.
@@ -33,6 +34,8 @@ A visual-awareness routine, used both in and out of possession, to keep players'
 ## Open Play
 
 **Default attacking pattern:** zig-zag across the pitch, working 5m to 5m, built off a forward pod of 3 stood in front of 10 (12 joins the pod as well when numbers allow).
+
+**At the ruck in attack: two in, fast.** Enough to secure and clear so the ball is available and cannot be turned over — and no more. A third arriving late takes a player out of the next phase for nothing. The target is a 2-second ruck.
 
 Shape and calls used in open play phases:
 
@@ -119,7 +122,7 @@ These sit inside the wider **line-org** system: spacing, numbering up, scanning 
 |---|---|
 | **Bang** | Trigger for blitz defence — the line goes up hard on the call. |
 
-**Ruck-defence:** guard either side of the ruck; only compete for the ball when it can realistically be won — otherwise stay on your feet.
+**Ruck-defence:** contest only when the ball is genuinely there to be won — an isolated carrier, or a ball left available. Otherwise don't commit: guard either side of the ruck, stay on your feet, and get back in the line.
 
 **Lineout defence:** simple, since lineouts are uncontested at U14 (see `laws.md`) — pressure goes on 9 and 10 rather than contesting the catch.
 

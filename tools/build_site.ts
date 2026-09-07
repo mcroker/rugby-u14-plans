@@ -125,6 +125,7 @@ const PLAN_META: Record<string, PlanMeta> = {
     eveningAtClub: true,
     card: "Run-sheet for the midweek session: passing, lineout recap, and Attack off lineout.",
     badge: "10 Sep",
+    draft: true,
   },
   "block1-week1-sun.md": {
     date: "2026-09-06",

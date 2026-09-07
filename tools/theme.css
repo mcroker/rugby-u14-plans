@@ -202,6 +202,19 @@ tr.row-new td:first-child { font-weight: 600; }
 }
 .brief-more { font-size: 0.9rem; margin-top: 1.6em; }
 
+/* "Map" button in the Location row, opening the pitch map in the shared modal. */
+.map-btn {
+  margin-left: 8px; vertical-align: baseline; cursor: pointer;
+  font-family: "Oswald", sans-serif; font-size: 0.66rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--blue);
+  background: var(--surface); border: 1px solid var(--rule);
+  border-radius: 4px; padding: 2px 8px;
+}
+.map-btn:hover { border-color: var(--blue); background: var(--blue-tint); }
+/* The map itself lives here only so the modal has something to clone. */
+.offscreen { display: none !important; }
+dialog.detail figure.pitchmap { margin: 0.4em 0; max-width: 100%; }
+
 /* The objective leads the page, so it spans the column rather than stopping at
    the prose measure — which above a full-width accordion just looks like a bug.
    The tint gives the eye a line to track at that width. */

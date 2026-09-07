@@ -90,7 +90,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
    Set **`eveningAtClub: true`** in `PLAN_META` for an evening session at the club, and the build adds a **Sunset** row to the logistics — computed for the club's location on that date, in local time, so it follows the clocks changing. Leave it off for daytime or away-from-the-club sessions, where it is noise.
 
-   The build embeds the club map and pins a `U14M` marker on that zone, so a new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
+   The map does not sit open on the page: it becomes a **Map** button beside the Location row, opening the club map with a `U14M` marker pinned on that zone. A new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
 2. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
 
    - It **must** read `+<start>, <n> min` — e.g. `+7, 13 min`. A row that doesn't fails the build.

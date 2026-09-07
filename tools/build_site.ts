@@ -715,7 +715,14 @@ document.addEventListener("click", function (e) {
     for (var j = 0; j < sec.children.length; j++) {
       if (sec.children[j].tagName !== "SUMMARY") body.appendChild(sec.children[j].cloneNode(true));
     }
-    dlg.querySelector(".detail-jump").setAttribute("href", "#" + id);
+    // The map has no section to jump to — it exists only for this modal.
+    var jump = dlg.querySelector(".detail-jump");
+    if (sec.classList.contains("offscreen")) {
+      jump.hidden = true;
+    } else {
+      jump.hidden = false;
+      jump.setAttribute("href", "#" + id);
+    }
     body.scrollTop = 0;
     dlg.showModal();
     return;
@@ -815,10 +822,28 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
     if (sunset) detailsRows.push(`| **Sunset** | ${sunset} at the club |`);
     else warn(`no sunset could be computed for ${meta.date}`);
   }
+  // The map is a tap away from the Location row rather than sitting open in the
+  // logistics — it is the one thing you want once, on arrival.
   const pitch = /^!\[[^\]]*\]\(pitch:[^)]+\)$/m.exec(md)?.[0] ?? "";
+  const MAP_TOKEN = "@@MAPBUTTON@@";
+  const rowsWithMap = pitch
+    ? detailsRows.map((r) =>
+        r.includes("**Location**")
+          ? r.replace(/\s*\|\s*$/, ` ${MAP_TOKEN} |`)
+          : r,
+      )
+    : detailsRows;
   const logistics = detailsRows.length
     ? '<details class="logistics"><summary>Logistics — when, where, who, kit</summary>' +
-      mdToHtml([...detailsRows, "", pitch].join("\n"), images) +
+      mdToHtml(rowsWithMap.join("\n"), images).replace(
+        MAP_TOKEN,
+        '<button class="map-btn" type="button" data-target="pitch-map">Map</button>',
+      ) +
+      "</details>"
+    : "";
+  const mapSection = pitch
+    ? '<details id="pitch-map" class="offscreen" hidden><summary>Where we are</summary>' +
+      mdToHtml(pitch, images) +
       "</details>"
     : "";
 
@@ -842,6 +867,7 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
     "<h2>Run sheet</h2>",
     timeline(planSection, acts),
     detailAccordions(detailMd, images, acts),
+    mapSection,
     DETAIL_MODAL,
   ].join("\n");
 }

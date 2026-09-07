@@ -358,6 +358,26 @@ function tableRows(section: string): string[] {
   return section.split("\n").map((l) => l.trim()).filter((l) => l.startsWith("|"));
 }
 
+/**
+ * Rows of the FIRST table in a section only. A section can hold more than one
+ * table — the Plan section carries the run sheet and, below it, a coach
+ * allocation — and the run sheet is always the first.
+ */
+function firstTableRows(section: string): string[] {
+  const rows: string[] = [];
+  let started = false;
+  for (const raw of section.split("\n")) {
+    const l = raw.trim();
+    if (l.startsWith("|")) {
+      rows.push(l);
+      started = true;
+    } else if (started && l) {
+      break; // prose after the table — a later table is a different table
+    }
+  }
+  return rows;
+}
+
 function splitCells(row: string): string[] {
   return row.replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
 }
@@ -391,27 +411,86 @@ function briefBody(md: string, permalink: string): string {
     ? mdToHtml(["| | |", "|---|---|", ...details].join("\n"))
     : "";
 
-  const rows = tableRows(mdSection(md, "Plan"));
-  const body = rows.slice(2); // drop the header and separator rows
-  const items = body
-    .map((r) => splitCells(r))
-    .filter((c) => c.length >= 3)
-    .map(
-      (c) =>
-        `  <li><span class="t">${inline(c[0]!)}</span>` +
-        `<span class="a">${inline(c[1]!)}</span>` +
-        `<span class="f">${inline(c[2]!)}</span></li>`,
-    );
-
   return [
     facts,
-    '<h2>Run sheet</h2>',
-    '<ol class="runsheet">',
-    ...items,
-    "</ol>",
+    "<h2>Run sheet</h2>",
+    timeline(mdSection(md, "Plan")),
     `<p class="brief-more">Detail, coaching points and diagrams are in the ` +
       `<a href="${permalink}">full run-sheet</a>.</p>`,
   ].join("\n");
+}
+
+interface Slot {
+  start: number;
+  mins: number;
+  tag: string;
+  title: string;
+  focus: string;
+}
+
+/**
+ * The run sheet as a timeline: time runs down the page, and a stretch of the
+ * session where several things happen at once splits into that many columns.
+ * One column means the whole squad is together.
+ */
+function timeline(planSection: string): string {
+  const rows = firstTableRows(planSection).slice(2); // drop header + separator
+  const slots: Slot[] = [];
+  let unparsed = 0;
+
+  for (const r of rows) {
+    const c = splitCells(r);
+    if (c.length < 3) continue;
+    // "+7, 13 min *(parallel pull-out)*"
+    const m = /^\+(\d+),\s*(\d+)\s*min\s*(?:\*\((.+?)\)\*)?/.exec(c[0]!);
+    if (!m) {
+      unparsed += 1;
+      continue;
+    }
+    slots.push({
+      start: Number(m[1]),
+      mins: Number(m[2]),
+      tag: m[3] ?? "",
+      title: c[1]!,
+      focus: c[2]!,
+    });
+  }
+
+  if (!slots.length) {
+    warn("brief: no run-sheet rows could be read as '+start, N min'");
+    return "";
+  }
+  if (unparsed) {
+    warn(`brief: ${unparsed} run-sheet row(s) did not start '+N, N min' and were dropped`);
+  }
+
+  // Group by start time — activities sharing a start run in parallel.
+  const starts = [...new Set(slots.map((s) => s.start))].sort((a, b) => a - b);
+  const out: string[] = ['<div class="timeline">'];
+
+  for (const start of starts) {
+    const group = slots.filter((s) => s.start === start);
+    const mins = Math.max(...group.map((g) => g.mins));
+    const parallel = group.length > 1;
+    out.push(`<div class="seg${parallel ? " seg-split" : ""}">`);
+    out.push(
+      `  <div class="seg-time"><span class="at">+${start}</span>` +
+        `<span class="dur">${mins} min</span></div>`,
+    );
+    out.push(`  <div class="seg-tracks" style="--n:${group.length};--mins:${mins}">`);
+    for (const g of group) {
+      const tag = g.tag ? `<span class="track-tag">${inline(g.tag)}</span>` : "";
+      const dur = g.mins !== mins ? `<span class="track-tag">${g.mins} min</span>` : "";
+      out.push(
+        `    <div class="track"><div class="track-title">${inline(g.title)}</div>` +
+          `${tag}${dur}<div class="track-note">${inline(g.focus)}</div></div>`,
+      );
+    }
+    out.push("  </div>");
+    out.push("</div>");
+  }
+  out.push("</div>");
+  return out.join("\n");
 }
 
 // ----------------------------------------------------------------- page shell

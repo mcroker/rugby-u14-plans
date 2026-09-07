@@ -101,6 +101,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 2. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
 
    - It **must** read `+<start>, <n> min` — e.g. `+7, 13 min`. A row that doesn't fails the build.
+   - **The page shows real clock times**, not `+7`. Set **`start`** in `PLAN_META` to the time `+0` means (`"18:45"`). The markdown stays relative, so moving a session is one field, not a rewritten table. Without `start` the page falls back to showing `+7`.
    - **Rows sharing a start time are drawn side by side** as parallel blocks. That is how the page shows the squad splitting; nothing else marks it.
    - An italic parenthetical after the time — `+7, 13 min *(parallel pull-out)*` — becomes a tag on the block.
    - Only the **first** table in this section is read as the run sheet, so a coach allocation or any other table can follow it.

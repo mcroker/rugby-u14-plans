@@ -98,6 +98,10 @@ const OUR_TEAM = "U14M";
 interface PlanMeta {
   /** ISO date (YYYY-MM-DD) of the session — drives which plan is "next". */
   date: string;
+  /** Clock time that "+0" in the Plan table means, as HH:MM. The run sheet
+   *  shows real times; the markdown stays relative so the whole session can be
+   *  moved by changing this one field. */
+  start?: string;
   h1: string;
   sub: string;
   sub2: string;
@@ -113,6 +117,7 @@ interface PlanMeta {
 const PLAN_META: Record<string, PlanMeta> = {
   "block1-week1-thur.md": {
     date: "2026-09-10",
+    start: "18:45",
     h1: "Week 1 — Thursday",
     sub: "Passing, a lineout positioning recap, and Bang introduced in a tight-space game.",
     sub2: "Thu 10 Sep 2026, 7–8pm",
@@ -124,6 +129,7 @@ const PLAN_META: Record<string, PlanMeta> = {
   },
   "block1-week1-sun.md": {
     date: "2026-09-06",
+    start: "10:45",
     h1: "Week 1 — Sunday",
     sub: "Season opener — tackle base, first lineout exposure, blitz-defence intro.",
     sub2: "Sun 6 Sep 2026",
@@ -505,8 +511,12 @@ interface Activity {
 /** Skip a leading bare cross-reference ("see `activities.md`.") — useless on
  *  its own on a timeline block — and take the first real sentence after it. */
 function runInfo(text: string): string {
-  const t = text.replace(/^see\s+[^.]*\.\s*/i, "").trim();
-  return firstSentence(t || text);
+  // The sentence ends at a full stop followed by a capital or the end — not at
+  // the dot inside `activities.md`.
+  // A cross-reference on its own says nothing on a timeline block — drop it and
+  // let the block fall back to the cues.
+  const t = text.replace(/^see\b[\s\S]*?\.(?=\s+[A-Z*(]|\s*$)/i, "").trim();
+  return t ? firstSentence(t) : "";
 }
 
 /** Parse a plan's "## Activities" section into its "### " entries. */
@@ -600,7 +610,16 @@ interface Slot {
  * Each block carries what you need to run it — setup and cues, taken from the
  * plan's own Activities entry — and a deep link into that entry.
  */
-function timeline(planSection: string, acts: Activity[]): string {
+/** "18:45" + 22 -> "19:07". */
+function clockAt(start: string, plus: number): string | null {
+  const m = /^(\d{1,2}):(\d{2})$/.exec(start.trim());
+  if (!m) return null;
+  const total = Number(m[1]) * 60 + Number(m[2]) + plus;
+  const h = Math.floor(total / 60) % 24;
+  return `${String(h).padStart(2, "0")}:${String(total % 60).padStart(2, "0")}`;
+}
+
+function timeline(planSection: string, acts: Activity[], startClock?: string): string {
   const rows = firstTableRows(planSection).slice(2); // drop header + separator
   const slots: Slot[] = [];
   let unparsed = 0;
@@ -638,8 +657,9 @@ function timeline(planSection: string, acts: Activity[]): string {
     const mins = Math.max(...group.map((g) => g.mins));
     const parallel = group.length > 1;
     out.push(`<div class="seg${parallel ? " seg-split" : ""}">`);
+    const clock = startClock ? clockAt(startClock, start) : null;
     out.push(
-      `  <div class="seg-time"><span class="at">+${start}</span>` +
+      `  <div class="seg-time"><span class="at">${clock ?? `+${start}`}</span>` +
         `<span class="dur">${mins} min</span></div>`,
     );
     out.push(`  <div class="seg-tracks" style="--n:${group.length};--mins:${mins}">`);
@@ -865,7 +885,7 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
     objective,
     logistics,
     "<h2>Run sheet</h2>",
-    timeline(planSection, acts),
+    timeline(planSection, acts, meta.start),
     detailAccordions(detailMd, images, acts),
     mapSection,
     DETAIL_MODAL,

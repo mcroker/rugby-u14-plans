@@ -64,7 +64,7 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 **Coaching Points:** consistent pre-throw routine (same feet, same grip, same ball position every time); ball back **behind the head**, both hands on it; **step into it** rather than throwing with the arms alone; follow through with the hands **pointing at the target**; eyes on the target, not the ball.
 
-**Setup:** hookers (~3) peel off with a coach after the contact warm-up and work at the posts; everyone else stays with the player-led warm-up and handling reps. Mark a throwing spot so the distance is the same every rep.
+**Setup:** hookers (~3) peel off with a coach after the contact warm-up and work at the posts. Mark a throwing spot so the distance is the same every rep.
 
 **Description:** the **Cross-Bar Challenge** — throw at the crossbar rather than at a team-mate. Over the bar first, then hitting it; score out of ten. Runs for the whole opening window, then back into the main group for the lineout intervention.
 
@@ -103,7 +103,7 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 **Coaching Points:** line-speed (defence); handling and support lines (attack); using the lineout restart cleanly.
 
-**Setup:** small-sided, full pitch space (Sunday, so no need to compress into a third of a pitch as on Thursdays — see `claude/age-group.md`). With ~31 players, run **two games side by side** rather than one oversized game — nobody should be standing watching.
+**Setup:** small-sided, full pitch. With ~31 players run **two games side by side** — nobody standing watching.
 
 **Description:** small-sided touch/tag game where every restart is a lineout throw-in (uncontested). Defence scores points for line-speed (getting up as a line quickly); attack scores a bonus for a clean lineout catch that leads to a try.
 
@@ -118,9 +118,9 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 **Coaching Points:** quick reorganisation and communication under repeated pressure from alternating directions.
 
-**Setup:** see `activities.md`.
+**Setup:** the backs in the middle, attacks coming from alternating directions, resetting each time (see `activities.md`).
 
-**Description:** run as the backs' parallel focus while the forwards unit (plus hookers) is tied up in lineout work — this is the season's first blitz-defence exposure.
+**Description:** the backs' parallel focus while the forwards are in lineout work — the season's first blitz-defence exposure.
 
 ## Review — what actually happened
 

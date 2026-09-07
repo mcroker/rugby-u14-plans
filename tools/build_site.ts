@@ -123,9 +123,8 @@ const PLAN_META: Record<string, PlanMeta> = {
     sub2: "Thu 10 Sep 2026, 7–8pm",
     crumb: "Week 1 (Thu)",
     eveningAtClub: true,
-    card: "Run-sheet for the midweek session at TWGSB: passing, lineout recap, and the first outing for Bang.",
+    card: "Run-sheet for the midweek session: passing, lineout recap, and Attack off lineout.",
     badge: "10 Sep",
-    draft: true,
   },
   "block1-week1-sun.md": {
     date: "2026-09-06",

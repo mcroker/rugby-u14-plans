@@ -121,6 +121,30 @@ Two diamonds rather than one is the whole benefit of the numbers: it halves the 
 
 **Description:** run as the backs' parallel focus while the forwards unit (plus hookers) is tied up in lineout work — this is the season's first blitz-defence exposure.
 
+## Review — what actually happened
+
+*Coaches' feedback after the session, 6 Sep.*
+
+**Overall: a good first session back.** The group showed noticeably more maturity than last season — listening, asking questions, engaged with new material, and visibly aware there was a lot they didn't know. Both coaches who fed back said the same independently.
+
+**What worked**
+
+- **The players led their own warm-up fine.** No coach intervention needed — the format holds up.
+- **The tackle diamond went well.** Tackle technique is worth carrying forward and building on across the season rather than treating as a Week 1 item.
+- **The lineout landed.** We spent longer on lineouts and throws than planned and the players were *very* attentive — the new material held them. The skill zone went well.
+- **Communication was better in lineout touch than in Continuous Defence** — a live game context pulled more talk out of them than the drill did.
+
+**What to change**
+
+- **We pulled back from full contact because of the surface.** A few physical moments still came out of lineout touch. That makes Week 1 a lighter contact load than planned — worth accounting for in Week 2 rather than assuming the tackle base is bedded in.
+- **Team defence needs work.** Continuous Defence was a bit artificial without contact; the communication that appeared in the game did not appear in the drill.
+- **Too many voices in the whole-group lineout segment.** Four or five side-bar conversations started, all constructive, but the objective of that segment was *team positioning*, not individual technique. One voice in the middle — see `coaching.md`.
+- **Repetition across the weeks matters** — the coaches want the same material coming back, not a new set each session.
+
+**Open**
+
+- **Was the session HTML easy to follow?** The feedback was that it is currently a little hard to follow, and the layout of the session pages is worth revisiting.
+
 ## Notes
 
 - This is the squad's first session of the season and their first-ever lineout exposure — keep contact introductory even though it's a Sunday with more time/space than usual.

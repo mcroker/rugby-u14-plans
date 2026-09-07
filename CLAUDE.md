@@ -87,7 +87,8 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    - **Progressions** — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many.
    - **Adaptations** — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
    - **Diagram** and/or **Video example(s)**, where useful — see below.
-4. **Notes** — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
+4. **Review** — added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `claude/coaching.md`, a playing-style one in `claude/playbook.md`, a next-week consequence in `claude/blocks.md` — and leave the session-specific detail here.
+5. **Notes** — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 
@@ -137,6 +138,8 @@ Pages on the site:
 - **Highlighting a table row.** Start a row's **first cell with `%%`** and the whole row gets a highlighted background on the site (the marker itself is stripped). Used in `claude/calendar.md` to pick out dates worth noticing. Keep it rare — it stops working the moment several rows use it.
 - **Cross-references point to the site, not the source files.** Where the markdown source mentions another doc (e.g. `` `playbook.md` ``), the generated HTML should link to that doc's page on the site (`playbook.html`) — not show a `.md` filename, which isn't a real link anyone reading the site can follow.
 - **No academy-library or external play-name provenance notes.** Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source `.md` files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.
+
+**Open feedback on the site:** after the first session the coaches said the pages are *"a little hard to follow"* and that **the layout of the session pages is worth revisiting**. `brief.html` (added since) may cover some of it, but the full run-sheet layout has not been reworked — treat this as outstanding.
 
 **Keeping this in date:** nothing to do — the workflow rebuilds every page from the markdown on each push to `main`, so the site cannot drift out of sync with the sources. The index's cards are generated too, so adding a session plan needs no separate index edit.
 

@@ -24,7 +24,7 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 
 - **Week 5 backs:** two specific approaches were discussed and both were liked, but the detail didn't survive a context reset on my end — the table below uses "receiving off the fold, playing width" as a placeholder pending the restatement.
 - **Sun 4 Oct:** this block schedules a full training session that day, but `calendar.md` has no entry for it at all. One of the two is wrong — confirm against Spond before a run-sheet is written for it.
-- **Guiding principles:** a proposed set of playing principles was raised after the 6 Sep session and is written up in `playbook.md`, including a contradiction in the ruck-speed target (sub-2-second vs 4 seconds). Sessions are supposed to map back to these, so they are worth settling early in this block.
+- **Guiding principles:** a proposed set of playing principles was raised after the 6 Sep session and is written up in `playbook.md`. The ruck-speed target is settled at **2 seconds**; the rest are still proposed, and sessions are supposed to map back to them, so they are worth agreeing early in this block.
 
 **Carried forward from Week 1 (Sun 6 Sep)** — see the session's review in `block1-week1-sun.md`:
 

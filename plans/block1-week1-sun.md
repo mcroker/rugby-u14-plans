@@ -6,7 +6,7 @@
 |---|---|
 | **Date/Time** | **Sun 6 Sep 2026, 10:45am – 12:30pm** (1h45). Home training — confirm against the [pitch allocation](https://pitch.twrfc.com/) and Spond on the day; see `calendar.md`. |
 | **Location** | Home — the **right half of Pitch 2**, as viewed from the Club House, ours alone from 10:45 (U12M are on it until 10:30). See the allocation map below, and note nothing can be set out before the changeover. |
-| **Coaches** | **5 — Steve, Tom, Matt, Bev, Jeff.** (Martin and Andy absent.) |
+| **Coaches** | **6 — Steve, Tom, Matt, Bev, Jeff, Tiggy.** (Martin and Andy absent — that is the full coaching group of eight accounted for.) |
 | **Attendance** | **31 expected** — Spond: 31 attending, 6 unanswered, 6 declined (43 invited). *(Actual — fill in on the night.)* |
 | **Session objective** | Season opener. Introduce individual tackle skills + communication (defence base); introduce lineout positioning, laws, and the hooker throw-in (the squad's very first lineout exposure); introduce blitz defence line-speed reps for the backs. |
 | **Resources required** | Balls, bibs, cones, ruck shields. |
@@ -29,15 +29,16 @@
 
 *Runs to the standard **90-minute** Sunday session, warm-up and close included (see `age-group.md`). The allocated slot is 10:45–12:30 (105 min), so there's ~15 min of slack for arrival and a late start — don't spend it by drifting; finish on time. **U12M are on the pitch until 10:30**, so nothing can be set out early: cones, shields and balls all go out in the changeover, which is the 15 minutes. Scale each block proportionally if the slot changes.*
 
-**With five coaches, the opening block runs at full width** — a player leads the warm-up, then:
+**With six coaches, the opening block runs at full width** — a player leads the warm-up, then:
 
 | Coach | Opening block (+7 to +20) |
 |---|---|
 | 1 | Hookers — Cross-Bar Challenge |
 | 2 and 3 | **A tackle diamond each**, running side by side |
 | 4 and 5 | Handling reps with the main group, feeding players in and out of the diamonds |
+| 6 | Floating — keep the rotations moving, and pick up whatever the changeover left undone |
 
-Two diamonds rather than one is the whole benefit of the numbers: it halves the group size and roughly doubles the reps each player gets in the same thirteen minutes. In the main game, five is enough to run **two games side by side** with a coach spare to float — see `coaching.md`.
+Two diamonds rather than one is the whole benefit of the numbers: it halves the group size and roughly doubles the reps each player gets in the same thirteen minutes. In the main game, six is enough to run **two games side by side** with coaches to spare — see `coaching.md`. Remember one voice per segment: numbers this good are exactly when side-bar coaching creeps in.
 
 ## Activities
 
@@ -149,7 +150,7 @@ Two diamonds rather than one is the whole benefit of the numbers: it halves the 
 
 - This is the squad's first session of the season and their first-ever lineout exposure — keep contact introductory even though it's a Sunday with more time/space than usual.
 - **The contact warm-up at +5 is not optional and covers the whole squad**, because the tackle rotations start straight after it (see `coaching.md`). If the session is running late, cut something else — a rotation, or time off the main game — not the two minutes.
-- **Get the kit out fast.** U12M are on our half until 10:30 and we start at 10:45, so the whole setup — cones for the warm-up lines, two tackle diamonds, shields, the hooker's target — happens in that fifteen-minute changeover. With five coaches it is a job for two of them while the rest greet players.
+- **Get the kit out fast.** U12M are on our half until 10:30 and we start at 10:45, so the whole setup — cones for the warm-up lines, two tackle diamonds, shields, the hooker's target — happens in that fifteen-minute changeover. With six coaches it is a job for two or three of them while the rest greet players.
 - **31 expected is a big group** — 6 more are unanswered, so it could be up to 37. Plan for two games side by side in the main block, and be ready to add a fourth tackle rotation (or a second diamond) if the unanswered players turn up.
 - The **B/W/G** lineout calls aren't introduced until Week 2 — this week is positioning and the throw only.
 - Scrum's first exposure is Thursday 10 Sep, not this session.

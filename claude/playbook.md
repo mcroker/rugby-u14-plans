@@ -4,7 +4,7 @@ Our calls and shapes for the squad.
 
 ## Playing Philosophy
 
-Intended playing style: **play like Japan, not South Africa** — i.e., quick recycle (sub-2-second rucks), continuity, and offloads.
+Intended playing style: **play like Japan, not South Africa** — i.e., quick recycle (**2-second rucks** — that is the number we coach to), continuity, and offloads.
 
 ### Guiding principles — *proposed, to confirm*
 
@@ -12,10 +12,9 @@ A first attempt at writing down what "play like Japan" actually commits us to, s
 
 - **Very quick line speed in defence**, with **two players over the ball** at the ruck to slow their ball down.
 - **Move the ball wide more often than setting up pods** — attack the outside channels and make the opposition move.
-- **Very fast ruck speed.**
+- **Very fast ruck speed — target 2 seconds.**
 - **Be fitter than everyone else.**
 
-*Open question:* the ruck-speed target is stated two different ways — **sub-2-second** in the paragraph above, and **4 seconds** in the principles as proposed. They can't both be the target; pick one and make it the number we coach to.
 
 Calls are kept short, single-word, and used consistently in training so they become automatic in games — predictable, consistently-named calls beat ad-hoc instructions under pressure.
 

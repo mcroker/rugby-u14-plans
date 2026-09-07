@@ -21,11 +21,11 @@
 | +5, 12 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
 | +5, 12 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
 | +17, 6 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
-| +23, 14 min | Main game: narrow touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
+| +23, 14 min | Main game: **narrow** touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
 | +37, 7 min *(forwards)* | Lineout attack — forwards, 9 and 12: the two rucks | Both rucks land in predictable places, and the ball comes out of ruck 2 fast |
 | +37, 7 min *(backs)* | Lineout attack — backs: edge attack off a midfield run | The edge, practised off a ruck that has already happened |
 | +44, 5 min | Lineout attack — put it together | One lineout, both halves, at pace |
-| +49, 34 min | Back into the game | Both sides of the lineout live, with the defensive conditions layered on |
+| +49, 34 min | Back into the game — **wide pitch** | Both sides of the lineout live, on the width the edge attack needs |
 | +83, 7 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
 *If we start late, take it out of the first game block — not the intervention.*
@@ -69,7 +69,7 @@
 
 **Setup:** small-sided, in a **narrow channel** — tight enough to favour line-speed and force quick hands. **Coaches take their bags and spread out around the pitch** before this block — not clustered together, or there is only one direction to look. It is still daylight here, which is why the scanning condition lives in this block.
 
-**Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. **Springbok Touch is the line-speed scoreboard** — there is no separate line-speed scoring to run alongside it. Attack scores a bonus for a clean lineout catch leading to a try.
+**Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. **Narrow here on purpose** — this block is about line-speed winning; the pitch opens up after the lineout-attack split. **Springbok Touch is the line-speed scoreboard** — there is no separate line-speed scoring to run alongside it. Attack scores a bonus for a clean lineout catch leading to a try.
 
 **Progressions:** **add them one at a time and leave each one in.** All three carry through into the second game block.
 
@@ -161,9 +161,11 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 **Coaching Points:** **Both sides of the lineout are on, every time.** With the ball: **Attack off lineout** off every lineout in the opposition half — forwards know where both rucks are before the ball moves. Without it: the four jobs below, one each, known before the throw. **Springbok Touch stays on** — the turnover is a lineout to the defence.
 
-**Setup:** same game, same channel. Thirty-four minutes, so plan on two clear halves with a short reset between them — **put the reset in at about 19:50**, or it will not happen. **Bang, Springbok Touch and the bag all stay on** from the first game.
+**Setup:** **the pitch opens up — use the full width of the Training Area.** The narrow channel goes; the backs have just spent seven minutes on edge attack and need somewhere to put it. **If numbers force two games, split the square across its depth so both keep the full width** — depth is what to give up, never width. Thirty-four minutes, so plan on two halves with a **team swap at about 19:50**, which is the water break as well. **Bang, Springbok Touch and the bag all stay on** from the first game.
 
 **Description:** the lineout restarts now feed the shape on one side and the defensive picture on the other, rather than just restarting play.
+
+**The width is the point, and it cuts both ways.** Attack finally has room for the edge off ruck 2. Defence has ground to cover, which is where connectedness actually shows — dog-legs appear when there is space between people, not when they are packed into a channel. **Springbok Touch gets harder here**, and that is the escalation from the first game rather than a softening of it.
 
 **Lineout defence is coached here, inside the game — there is no block for it.** The four jobs off their throw:
 
@@ -217,6 +219,8 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 - **Every coach needs a bag of items** for the scanning condition — say so on the coaches' thread beforehand, because the condition doesn't work if only one coach has one. Nothing needs buying: whatever is in the boot.
 - **Two coaching stoppages all session** — the lineout positioning recap, and the lineout-attack block, which splits forwards and backs so nobody stands watching. Everything else is coached while the game is running.
 - **Sunset is 19:28.** The scanning condition is in the *first* game deliberately, while there is still light — naming a small item across the pitch under floodlights at 8pm is a different task. Big, high-contrast items in the bags.
+- **Cone both pitches before the session, or during the player-led warm-up** — the narrow channel inside the wide one, in two colours. Re-coning at 19:49 in the dark costs game time and it is the sort of thing that gets skipped.
+- **The two games are deliberately different shapes.** The first is narrow, so line-speed wins. The second is wide, because the backs have just been taught edge attack and because width is what exposes a disconnected defensive line. Don't run them both in the same channel to save re-coning it.
 - **Conditions are cumulative, not a menu.** They are listed in the order to add them, and each one stays in once added. Adding them all at once, or swapping between them, teaches nothing.
 - **Bang is new on Thursday**, and it is introduced *in* the first game, not in a slot of its own. Sunday's game ran the line-speed scoreboard without the call; this is the first time the trigger itself is used, so stop the game properly the first two or three times to reset it rather than letting a half-understood call run.
 - **Lineout defence is new here**, ahead of the Week 3 slot it was originally planned for — but **there is no block for it.** It is coached in the pause every lineout already gives you, inside the long game. Week 3 now builds on it rather than introducing it.

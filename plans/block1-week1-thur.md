@@ -8,7 +8,7 @@
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | *(fill in on the night)* |
 | **Attendance** | *(fill in on the night)* |
-| **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning, keep the hooker throw ticking over, introduce the **Bang** blitz trigger, and introduce the **lineout set piece** — the shape off the line, and running straight to two predictable rucks. Touch throughout — no contact this week. |
+| **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning, keep the hooker throw ticking over, introduce the **Bang** blitz trigger, and introduce **Attack off lineout** — the shape off the line, and running straight to two predictable rucks. Touch throughout — no contact this week. |
 | **Resources required** | Balls, bibs, cones, poles, ruck shields. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
@@ -22,11 +22,11 @@
 | +5, 10 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
 | +15, 5 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
 | +20, 13 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced |
-| +33, 10 min | Whole-group intervention: the lineout set piece | Introduce the shape off a lineout — both rucks land in predictable places |
+| +33, 10 min | Whole-group intervention: Attack off lineout | Introduce the shape — both rucks land in predictable places |
 | +43, 12 min | Back into the game | Same game, now running the shape off every lineout |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
-*If we start late, take it out of the first game block — not the set-piece intervention.*
+*If we start late, take it out of the first game block — not the intervention.*
 
 ## Activities
 
@@ -76,7 +76,7 @@
 - Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
 - If numbers are low, drop to smaller teams and run one game rather than two — a thin game teaches nothing about line-org.
 
-### Whole-group intervention — The lineout set piece
+### Whole-group intervention — Attack off lineout
 
 **Coaching Points:** **both rucks land in predictable places.** Nobody watches the ball and reacts — you already know where you are going, so go, and arrive before the ball does.
 

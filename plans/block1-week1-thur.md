@@ -23,7 +23,7 @@
 | +15, 5 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
 | +20, 13 min | Main game: narrow touch, lineout restarts | Line-speed and line-org in a tight channel; **Bang** introduced |
 | +33, 10 min | Whole-group intervention: Attack off lineout | Introduce the shape — both rucks land in predictable places |
-| +43, 12 min | Back into the game | Same game, now running the shape off every lineout |
+| +43, 12 min | Back into the game | **Attack off lineout** off every lineout in the opposition half |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
 *If we start late, take it out of the first game block — not the intervention.*
@@ -70,7 +70,7 @@
 **Progressions:**
 - Introduce **Bang** as the blitz trigger (see `playbook.md`) — this is its first outing, so expect to stop the game to reset it a few times.
 - Tighten the line-speed scoring window as the game goes on.
-- **Second half of the game: run the shape off every lineout.** A point for the first two forwards who reach ruck 2 before the ball is available.
+- **Second half of the game: Attack off lineout is on**, off every lineout in the opposition half. A point for the first two forwards who reach ruck 2 before the ball is available.
 
 **Adaptations:**
 - Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
@@ -95,9 +95,21 @@ Walk it twice, then run it at pace. The two ruck positions are the whole point: 
 **Progressions:**
 - Add a passive defence so the carriers are actually stopped.
 - Move the lineout to a different spot and ask where the two rucks land now.
-- Straight back into the game, running the shape off every lineout restart.
+- Straight back into the game, running it off every lineout in the opposition half.
 
 **Notes:** the **B/W/G** calls come in Week 2 — this is the shape, not the calls.
+
+### Back into the game
+
+**Coaching Points:** **Attack off lineout is on — off every lineout in the opposition half.** In our own half, play what is in front of you. Forwards: you know where both rucks are before the ball moves.
+
+**Setup:** same game, same channel.
+
+**Description:** the lineout restarts now feed the shape rather than just restarting play. Stop the game and reset it if the shape does not appear — the expectation is that it is used, not that it is available.
+
+**Progressions:**
+- Score it: a point for the first two forwards reaching ruck 2 before the ball is available.
+- Once it is running, stop calling it and see whether it happens anyway.
 
 ### Hooker throw-in (pull-out skill zone)
 

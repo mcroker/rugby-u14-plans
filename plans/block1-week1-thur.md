@@ -4,12 +4,12 @@
 
 | | |
 |---|---|
-| **Date/Time** | **Thu 10 Sep 2026, 7:00 – 8:00pm** (60 min) |
-| **Location** | TWGSB 4G — **a third of a pitch** (see `age-group.md`). Not a club pitch, so there is no pitch allocation for it. |
+| **Date/Time** | **Thu 10 Sep 2026 — meet 18:35**, on the pitch for 18:45. Sixty minutes of session. |
+| **Location** | **The floodlight pitch at the club** — Tunbridge Wells RFC. Thursdays are at the club until roughly the end of October (TBC), not TWGSB (see `age-group.md`). |
 | **Coaches** | *(fill in on the night)* |
 | **Attendance** | *(fill in on the night — expect fewer than Sunday; full turnout is not the norm on a Thursday)* |
 | **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning at a lighter, non-contested level, keep the hooker throw ticking over, and put line-org and the **Bang** blitz trigger into a tight-space game. |
-| **Resources required** | Balls, bibs, cones, poles, ruck shields — **all of it has to travel**, nothing lives at TWGSB. |
+| **Resources required** | Balls, bibs, cones, poles, ruck shields — **all at the club**, nothing needs carrying in now we are training there. |
 
 ## Plan
 
@@ -24,7 +24,7 @@
 | +44, 11 min | Main game continues — full contact | The last ~10 min at contact, per the Thursday rule (see `coaching.md`) |
 | +55, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
-*Sixty minutes is the whole slot, so it includes getting on and off the 4G. If the changeover eats into it, take it out of the touch phase of the main game — not out of the contact warm-up, and not out of the contact finish, which is where the week's defence work actually gets tested.*
+*Meet 18:35, on the pitch 18:45, sixty minutes of session from there. If we start late, take it out of the touch phase of the main game — not out of the contact warm-up, and not out of the contact finish, which is where the week's defence work actually gets tested. Sunset is in the logistics above: the back of the session is under floodlights.*
 
 ## Activities
 
@@ -63,7 +63,7 @@
 
 **Why the defence work sits inside the game.** On Sunday the communication showed up in lineout touch and did not show up in Continuous Defence — the game pulled talk out of them that the drill did not. So this week the team-defence work is the game, not a drill beside it.
 
-**Setup:** small-sided, in a **narrow channel** across the third of a pitch. Wide attacking patterns need Sunday's space; this is deliberately tight, which suits line-speed and forces quick hands over long ones.
+**Setup:** small-sided, in a **narrow channel**. We now have the club's floodlight pitch rather than a third of the 4G, so the narrowness is a choice, not a constraint — keep it tight anyway: it suits line-speed and forces quick hands over long ones.
 
 **Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. Defence scores for line-speed; attack scores a bonus for a clean lineout catch leading to a try.
 
@@ -82,7 +82,7 @@
 
 **Setup:** hookers peel off with a coach **during the passing block**, not during the game — ten minutes at the line, then back in for the lineout recap and the whole of the main game. Mark a 5-man line with cones and use a receiver at the front, middle and back.
 
-**Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. Running it against the passing block rather than the game means the hookers miss handling reps, not twenty minutes of the game they need. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
+**Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. **We are at the club, so the posts are there:** open with a couple of minutes of the Cross-Bar Challenge to warm the arm up, then move to the marked line. Running it against the passing block rather than the game means the hookers miss handling reps, not twenty minutes of the game they need. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
 
 **Progressions:**
 - Call the target as the hooker starts their routine, so they cannot pre-set.
@@ -100,8 +100,8 @@
 
 ## Notes
 
-- **Everything has to be carried in.** Nothing lives at TWGSB — balls, bibs, cones, poles and shields all travel, and the shields are needed for the last phase of the warm-up, not just the game.
-- **Posts may not be in our third of the pitch.** The hooker zone is written to work without them; the Cross-Bar Challenge is the bonus if we happen to have them.
+- **We are at the club, not TWGSB**, until roughly the end of October (TBC). That changes three things from the old midweek plan: the kit is already there, the posts are there, and so is the scrum machine — worth remembering when Week 2's scrum work lands (see `coaching.md`).
+- **Meet 18:35 for an 18:45 start** — earlier than the old 7pm, so the message needs to be clear on Spond.
 - **No scrum this week.** Scrum's first exposure is Sunday 13 Sep (Week 2), on a Sunday, because we cannot reliably field two full 8-man packs on a Thursday (see `age-group.md`).
 - **Contact is the last 11 minutes only**, and only after the two-minute contact warm-up. Everything before it is touch (see `coaching.md`). **Treat it as the first open-play contact of the season**, because Sunday's was pulled for the surface — see the main game entry.
 - **What is deliberately repeated from Sunday**, since the coaches asked for repetition across the weeks: the same warm-up, the same lineout-restart game with the constraints tightened and **Bang** added, and the hooker throw stepping up from the crossbar to a marked line. The new things this week are passing as the core skill and the **Bang** call itself.

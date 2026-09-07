@@ -52,7 +52,7 @@ Early blocks/weeks weight toward the base of the pyramid (individual and small-g
 ## Resources
 
 - **therugbysite.com** — subscription currently expired but will be reinstated; treat as an available source for drills/session material once active again.
-- **Scrum machine** — available at the club, but not at the 4G (TWGSB). Scrum body-position/engage work using the machine is a Sunday (home) session option, not a Thursday one — see `blocks.md` for how scrum skill-zone work is planned around this.
+- **Scrum machine** — at the club, not at the 4G (TWGSB). **While Thursdays are on the club's floodlight pitch (to roughly the end of October — see `age-group.md`), machine work is a Thursday option too**, which it is not once we move back to the 4G. It stays separate from *contested* scrum, which is still Sundays only, because we cannot reliably field two full packs on a Thursday. See `blocks.md`.
 - **Equipment available:** balls, bibs, cones, poles, ruck shields, swiss balls, footballs.
 - **`activities.md`** — a bank of previously used games/drills, organised by zone type and tagged by skill focus. Check it before inventing a new drill for a session plan.
 - **`ref/`** — reference material: `Lineout FAQ.pdf` (law/mechanics questions), plus the neurodiversity guidance linked from `age-group.md` (`Autism in Rugby.pdf`, `ADHD in Rugby.pdf`).

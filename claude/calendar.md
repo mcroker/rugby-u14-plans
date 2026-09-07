@@ -13,7 +13,7 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 
 ## Recurring training
 
-- **Thursday evenings, 7–8pm, at TWGSB 4G** — weekly from September. Contact-suitable (see `age-group.md` — Training & Fixtures for the 1/3-pitch space note).
+- **Thursday evenings** — weekly from September. **On the club's floodlight pitch from 10 Sep until roughly the end of October (TBC)**; TWGSB 4G before and after that, where it is a third of a pitch (see `age-group.md`).
 
 ## Fixtures & training dates
 

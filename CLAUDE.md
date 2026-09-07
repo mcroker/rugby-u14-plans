@@ -72,7 +72,8 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
 | Markdown | Becomes, on the page |
 |---|---|
-| `## Session details` table | the collapsed **Logistics** accordion, with the pitch map inside it |
+| `## Session details` — the **Session objective** row | an **Objective** heading at the top of the page, above everything else |
+| `## Session details` — the other rows | the collapsed **Logistics** accordion, with the pitch map inside it |
 | `## Plan` — the **first** table | the **timeline**: one block per row, rows sharing a start time drawn side by side |
 | `## Plan` — anything after that table | kept, rendered below the timeline (this is where a coach allocation goes) |
 | `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's setup/cues and Details modal |
@@ -86,6 +87,8 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    ```
    ![Our pitch this session — the U12M / U14M zone on the club allocation map.](pitch:2b)
    ```
+
+   Set **`eveningAtClub: true`** in `PLAN_META` for an evening session at the club, and the build adds a **Sunset** row to the logistics — computed for the club's location on that date, in local time, so it follows the clocks changing. Leave it off for daytime or away-from-the-club sessions, where it is noise.
 
    The build embeds the club map and pins a `U14M` marker on that zone, so a new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
 2. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
@@ -148,7 +151,7 @@ Pages on the site:
 - **`laws.html`** — full HTML export of `claude/laws.md`.
 - **`warmup.html`** — full HTML export of `claude/warmup.md`.
 - **`next.html`** — **the stable link.** A tiny redirect page, not a copy: it forwards to the upcoming session's page, so the URL you hand out never changes. Today counts as next all day; if every session is in the past it points at the most recent one.
-- **`<plan>.html`** — **one page per session**, built to be read top-down at the ground and in depth when planning. A collapsed **Logistics** accordion (session details and the pitch map), then the run sheet as a **timeline** — time down the page, and a stretch where several things happen at once splits into that many columns. Each block shows only what you need to *run* it (setup and cues, taken from the plan's own Activities entry) with a **Details** button opening a modal of that activity. The modal is filled at click time by cloning the activity's own section out of the page below, so the detail exists once in the HTML and the modal is only a view onto it — and it offers *Show it in the plan* to jump there instead. Below the timeline: the coach allocation, then the Activities as **accordions, collapsed by default** with Expand all / Collapse all, so the plan reads as a contents list rather than a wall; then Notes and Review. A link to `#<activity-id>` opens that accordion on arrival. Every heading carries an anchor id, which is what those jumps use.
+- **`<plan>.html`** — **one page per session**, built to be read top-down at the ground and in depth when planning. The session objective at the top under its own **Objective** heading, then a collapsed **Logistics** accordion (the rest of the session details, and the pitch map), then the run sheet as a **timeline** — time down the page, and a stretch where several things happen at once splits into that many columns. Each block shows only what you need to *run* it (setup and cues, taken from the plan's own Activities entry) with a **Details** button opening a modal of that activity. The modal is filled at click time by cloning the activity's own section out of the page below, so the detail exists once in the HTML and the modal is only a view onto it — and it offers *Show it in the plan* to jump there instead. Below the timeline: the coach allocation, then the Activities as **accordions, collapsed by default** with Expand all / Collapse all, so the plan reads as a contents list rather than a wall; then Notes and Review. A link to `#<activity-id>` opens that accordion on arrival. Every heading carries an anchor id, which is what those jumps use.
 - Session pages keep their dated names permanently and are **the archive** — once a session has passed, its page stays exactly where it was, and only `next.html` moves on.
 
 **Build requirements — apply to every page above, no exceptions:**

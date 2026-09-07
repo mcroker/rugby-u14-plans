@@ -103,6 +103,8 @@ interface PlanMeta {
   badge: string;
   /** Marks the plan as a work in progress — banners the page and the index card. */
   draft?: boolean;
+  /** Evening session at the club — adds sunset to the logistics. */
+  eveningAtClub?: boolean;
 }
 
 const PLAN_META: Record<string, PlanMeta> = {
@@ -112,6 +114,7 @@ const PLAN_META: Record<string, PlanMeta> = {
     sub: "Passing, a lineout positioning recap, and Bang introduced in a tight-space game.",
     sub2: "Thu 10 Sep 2026, 7–8pm",
     crumb: "Week 1 (Thu)",
+    eveningAtClub: true,
     card: "Run-sheet for the midweek session at TWGSB: passing, lineout recap, and the first outing for Bang.",
     badge: "10 Sep",
     draft: true,
@@ -363,6 +366,47 @@ function mdToHtml(md: string, images: Record<string, string> = {}): string {
   return out.join("\n");
 }
 
+
+
+// --------------------------------------------------------------------- sun
+/** Tunbridge Wells RFC, near enough for a sunset time. */
+const CLUB_LAT = 51.132;
+const CLUB_LON = 0.263;
+
+/**
+ * Sunset at the club on an ISO date, as Europe/London wall-clock time.
+ * The standard sunrise equation; the timezone (and therefore BST) is left to
+ * Intl rather than reimplemented. Returns null if the sun does not set, which
+ * cannot happen at this latitude but keeps the maths honest.
+ */
+function sunsetAtClub(isoDate: string): string | null {
+  const rad = Math.PI / 180;
+  const jDate = Date.parse(`${isoDate}T00:00:00Z`) / 86400000 + 2440587.5;
+  const n = Math.ceil(jDate - 2451545.0 + 0.0008);
+  const jStar = n + CLUB_LON / 360; // east longitude is positive here
+  const M = (357.5291 + 0.98560028 * jStar) % 360;
+  const C =
+    1.9148 * Math.sin(M * rad) +
+    0.02 * Math.sin(2 * M * rad) +
+    0.0003 * Math.sin(3 * M * rad);
+  const lambda = (M + C + 180 + 102.9372) % 360;
+  const jTransit =
+    2451545.0 + jStar + 0.0053 * Math.sin(M * rad) - 0.0069 * Math.sin(2 * lambda * rad);
+  const sinDec = Math.sin(lambda * rad) * Math.sin(23.44 * rad);
+  const cosDec = Math.cos(Math.asin(sinDec));
+  const cosOmega =
+    (Math.sin(-0.833 * rad) - Math.sin(CLUB_LAT * rad) * sinDec) /
+    (Math.cos(CLUB_LAT * rad) * cosDec);
+  if (cosOmega < -1 || cosOmega > 1) return null;
+  const omega = Math.acos(cosOmega) / rad;
+  const jSet = jTransit + omega / 360;
+  const when = new Date((jSet - 2440587.5) * 86400000);
+  return new Intl.DateTimeFormat("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Europe/London",
+  }).format(when);
+}
 
 // -------------------------------------------------------------- session page
 /** Pull one "## Heading" section out of a plan's markdown. */
@@ -752,8 +796,22 @@ function detailAccordions(
  * and the full detail below it — so the thing you need at the ground is at the
  * top and everything else is a jump down the same page, not another request.
  */
-function sessionBody(md: string, images: Record<string, string>): string {
-  const detailsRows = tableRows(mdSection(md, "Session details"));
+function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta): string {
+  const allRows = tableRows(mdSection(md, "Session details"));
+  // The objective leads the page in its own right — it is what the session is
+  // for, not a logistical detail to be folded away with the kit list.
+  const objectiveRow = allRows.find((r) => r.includes("**Session objective**"));
+  const objective = objectiveRow
+    ? `<h2>Objective</h2>\n<p>${inline(splitCells(objectiveRow)[1] ?? "")}</p>`
+    : "";
+  const detailsRows = allRows.filter((r) => r !== objectiveRow);
+  // Sunset only matters for an evening session at the club — it is the
+  // difference between finishing in the light and finishing under floodlights.
+  if (meta.eveningAtClub) {
+    const sunset = sunsetAtClub(meta.date);
+    if (sunset) detailsRows.push(`| **Sunset** | ${sunset} at the club |`);
+    else warn(`no sunset could be computed for ${meta.date}`);
+  }
   const pitch = /^!\[[^\]]*\]\(pitch:[^)]+\)$/m.exec(md)?.[0] ?? "";
   const logistics = detailsRows.length
     ? '<details class="logistics"><summary>Logistics — when, where, who, kit</summary>' +
@@ -776,6 +834,7 @@ function sessionBody(md: string, images: Record<string, string>): string {
   const acts = planActivities(detailMd);
 
   return [
+    objective,
     logistics,
     "<h2>Run sheet</h2>",
     timeline(planSection, acts),
@@ -986,9 +1045,9 @@ function buildPages(): Record<string, string> {
     [
       [
         "See `coaching.md` — How sessions should be coached for the contact-light " +
-          "approach we take to the Thursday slot specifically.",
+          "approach we take to the Thursday slot either way.",
         "See How sessions should be coached below for the contact-light approach " +
-          "we take to the Thursday slot specifically.",
+          "we take to the Thursday slot either way.",
       ],
     ],
     "age-group",
@@ -1098,7 +1157,7 @@ function buildPages(): Record<string, string> {
       sub2: meta.sub2,
       crumb: meta.crumb,
       extraJs: DETAIL_JS,
-      body: (meta.draft ? DRAFT_NOTE + "\n" : "") + sessionBody(planMd, diagrams),
+      body: (meta.draft ? DRAFT_NOTE + "\n" : "") + sessionBody(planMd, diagrams, meta),
     });
   }
 

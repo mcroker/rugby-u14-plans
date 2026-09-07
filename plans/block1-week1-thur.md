@@ -9,7 +9,7 @@
 | **Coaches** | *(fill in on the night)* — **needs 3 as a minimum**: the hooker pull-out during passing, forwards and backs in the split, and two or three spread around the pitch with bags for the scanning condition. |
 | **Attendance** | *(fill in on the night)* |
 | **Session objective** | Passing as the week's core skill. **Both sides of the lineout** — the attacking shape and defending theirs — built on Sunday's positioning, with the hooker throw ticking over. **Bang** introduced, and the games conditioned hard for defence. Touch throughout. |
-| **Resources required** | Balls, bibs, cones, poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
+| **Resources required** | Balls, bibs, **cones in two colours** (both pitches go out at once), poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
 
@@ -20,17 +20,16 @@
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
 | +5, 12 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
 | +5, 12 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
-| +17, 6 min | Whole-group intervention: lineout positioning recap | Where to stand, 5m/15m, uncontested — reinforcing Sunday (see `laws.md`) |
-| +23, 14 min | Main game: **narrow** touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
+| +17, 20 min | Main game: **narrow** touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
 | +37, 7 min *(forwards)* | Lineout attack — forwards, 9 and 12: the two rucks | Both rucks land in predictable places, and the ball comes out of ruck 2 fast |
 | +37, 7 min *(backs)* | Lineout attack — backs: edge attack off a midfield run | The edge, practised off a ruck that has already happened |
 | +44, 5 min | Lineout attack — put it together | One lineout, both halves, at pace |
 | +49, 34 min | Back into the game — **wide pitch** | Both sides of the lineout live, on the width the edge attack needs |
 | +83, 7 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
-*If we start late, take it out of the first game block — not the intervention.*
+*If we start late, take it out of the second game block — it has the slack. **Not** the first game: that is where all three conditions are introduced, and the scanning one has to happen before it gets dark.*
 
-*Two coaching stoppages all session, and the second one splits so nobody is watching. **Lineout defence is never taught standing still** — it is coached inside the game, in the pause every lineout gives you.*
+*One coaching stoppage all session, and it splits so nobody stands watching. **Lineout positioning and lineout defence are never taught standing still** — both are coached in the pause every lineout gives you.*
 
 ## Activities
 
@@ -51,23 +50,11 @@
 - If the pattern keeps breaking down, take the second ball out and rebuild rather than letting it stay scrappy.
 - Shorten the spacing if passes are dropping short — a pass at full stretch teaches nothing.
 
-### Whole-group intervention — Lineout positioning recap
-
-**Coaching Points:** the same content as Sunday, not new material: where each player stands, the 5m and 15m lines, **uncontested** — no jumping or lifting (see `laws.md`).
-
-**Setup:** whole squad, cones marking 5m and 15m. **Agree beforehand who leads this segment; everyone else holds.** Note individual fixes and take them to those players in the skill zone.
-
-**Description:** a short (3–4 min) recap, visibly quicker than Sunday's. Get them setting up the line themselves rather than being placed.
-
-**Progressions:**
-- **If they form the line cleanly straight away, bank the time and move on.**
-- If there is time and they are ahead of it, have the thrower call **front, middle or back** before the throw so the line starts thinking about a target. The **B/W/G** calls themselves are still Week 2 — this is the idea, not the vocabulary.
-
 ### Main game — Narrow touch, lineout restarts
 
-**Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday.
+**Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday. **Lineout positioning is coached here, at the restarts** — 5m and 15m, uncontested (see `laws.md`). Set the first two or three properly and let the rest run.
 
-**Setup:** small-sided, in a **narrow channel** — tight enough to favour line-speed and force quick hands. **Coaches take their bags and spread out around the pitch** before this block — not clustered together, or there is only one direction to look. It is still daylight here, which is why the scanning condition lives in this block.
+**Setup:** small-sided, in a **narrow channel** — tight enough to favour line-speed and force quick hands. Twenty minutes: three new conditions arrive in this block, so it needs the room. **Coaches take their bags and spread out around the pitch** before this block — not clustered together, or there is only one direction to look. It is still daylight here, which is why the scanning condition lives in this block.
 
 **Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. **Narrow here on purpose** — this block is about line-speed winning; the pitch opens up after the lineout-attack split. **Springbok Touch is the line-speed scoreboard** — there is no separate line-speed scoring to run alongside it. Attack scores a bonus for a clean lineout catch leading to a try.
 
@@ -200,7 +187,7 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 **Coaching Points:** the same cues as Sunday — consistent routine, ball back **behind the head**, both hands, step into it, follow through **pointing at the target**.
 
-**Setup:** hookers peel off with a coach during the passing block — twelve minutes, then back in for the lineout recap and the whole main game. Mark a 5-man line with cones, receiver at front, middle and back.
+**Setup:** hookers peel off with a coach during the passing block — twelve minutes, then back in for the whole main game. Mark a 5-man line with cones, receiver at front, middle and back.
 
 **Description:** the step up from Sunday's Cross-Bar Challenge (see `activities.md`) — a real target at a real position rather than the bar. Open with two minutes of the Cross-Bar Challenge at the posts to warm the arm up, then move to the marked line. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
 
@@ -211,17 +198,12 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 ## Notes
 
 - **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
-- **Meet 18:35 for an 18:45 start, finishing 20:15** — 90 minutes, and both ends of it differ from the old 7–8pm; make that clear on Spond.
-- **No scrum this week.** First exposure is Sunday 13 Sep.
-- **No contact this session — touch throughout.** The squad's first open-play contact of the season is now Sunday 13 Sep. That includes the counter-maul: at touch only. The drive itself waits for Sunday.
-- **What is deliberately repeated from Sunday**, since the coaches asked for repetition across the weeks: the same warm-up, the same lineout-restart game with the constraints tightened and **Bang** added, and the hooker throw stepping up from the crossbar to a marked line. The new things this week are passing as the core skill, the **Bang** call itself, and lineout defence.
-- **One voice per segment.** It slipped on Sunday; the whole-group slot is where it will slip again.
-- **Every coach needs a bag of items** for the scanning condition — say so on the coaches' thread beforehand, because the condition doesn't work if only one coach has one. Nothing needs buying: whatever is in the boot.
-- **Two coaching stoppages all session** — the lineout positioning recap, and the lineout-attack block, which splits forwards and backs so nobody stands watching. Everything else is coached while the game is running.
-- **Sunset is 19:28.** The scanning condition is in the *first* game deliberately, while there is still light — naming a small item across the pitch under floodlights at 8pm is a different task. Big, high-contrast items in the bags.
-- **Cone both pitches before the session, or during the player-led warm-up** — the narrow channel inside the wide one, in two colours. Re-coning at 19:49 in the dark costs game time and it is the sort of thing that gets skipped.
-- **The two games are deliberately different shapes.** The first is narrow, so line-speed wins. The second is wide, because the backs have just been taught edge attack and because width is what exposes a disconnected defensive line. Don't run them both in the same channel to save re-coning it.
-- **Conditions are cumulative, not a menu.** They are listed in the order to add them, and each one stays in once added. Adding them all at once, or swapping between them, teaches nothing.
-- **Bang is new on Thursday**, and it is introduced *in* the first game, not in a slot of its own. Sunday's game ran the line-speed scoreboard without the call; this is the first time the trigger itself is used, so stop the game properly the first two or three times to reset it rather than letting a half-understood call run.
-- **Lineout defence is new here**, ahead of the Week 3 slot it was originally planned for — but **there is no block for it.** It is coached in the pause every lineout already gives you, inside the long game. Week 3 now builds on it rather than introducing it.
-- The **B/W/G** lineout calls still aren't introduced until Week 2 — positioning and the throw only.
+- **Meet 18:35 for an 18:45 start, finishing 20:15** — both ends differ from the old 7–8pm; make that clear on Spond.
+- **No contact — touch throughout**, the counter-maul included. **No scrum.** Both come on Sunday 13 Sep.
+- **Cone both pitches during the warm-up** — the narrow channel inside the wide one, two colours. The first game is narrow, the second wide; don't run both in one channel.
+- **Every coach needs a bag of items** — say so on the coaches' thread beforehand. Whatever is in the boot, but **big and high-contrast**: sunset is 19:28.
+- **Conditions are cumulative, not a menu.** Add them in the order listed and leave each one in. Expect to get through two in the second game, not the list.
+- **Bang is new.** Stop the game properly the first two or three times to reset it rather than letting a half-understood call run.
+- **One voice per segment.** It slipped on Sunday, and the lineout-attack split is where it will slip again — one coach per group.
+- **Repeated from Sunday**, as the coaches asked: the same warm-up, the same lineout-restart game, and the hooker throw stepping up from the crossbar to a marked line.
+- The **B/W/G** lineout calls come in Week 2 — positioning and the throw only.

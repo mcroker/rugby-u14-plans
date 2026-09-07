@@ -49,13 +49,19 @@
 
 **Coaching Points:** the same content as Sunday, not new material: where each player stands, the 5m and 15m lines, **uncontested** — no jumping or lifting (see `laws.md`).
 
-**Setup:** whole squad, cones marking 5m and 15m.
+**Setup:** whole squad, cones marking 5m and 15m. **Agree before the session who leads this segment; everyone else holds.** On Sunday four or five side-bar conversations started during this same slot — all constructive, but the objective is team positioning, not individual technique. Note the individual fixes and take them to those players in the skill zone (see `coaching.md`).
 
 **Description:** a short (3–4 min) recap. Sunday was the first exposure; this is the second look, and it should be visibly quicker than Sunday's. Get them setting up the line themselves rather than being placed — if they can form it without being told, the point has landed.
+
+**Progressions:**
+- **If they form the line cleanly straight away, don't fill the time — bank it and move on.** Sunday's lineout ran long because they were engaged; that is not a reason to run long twice.
+- If there is time and they are ahead of it, have the thrower call **front, middle or back** before the throw so the line starts thinking about a target. The **B/W/G** calls themselves are still Week 2 — this is the idea, not the vocabulary.
 
 ### Main game — Narrow touch, lineout restarts
 
 **Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday — that is the space doing the coaching.
+
+**Why the defence work sits inside the game.** On Sunday the communication showed up in lineout touch and did not show up in Continuous Defence — the game pulled talk out of them that the drill did not. So this week the team-defence work is the game, not a drill beside it.
 
 **Setup:** small-sided, in a **narrow channel** across the third of a pitch. Wide attacking patterns need Sunday's space; this is deliberately tight, which suits line-speed and forces quick hands over long ones.
 
@@ -64,7 +70,7 @@
 **Progressions:**
 - Introduce **Bang** as the blitz trigger (see `playbook.md`) — this is its first outing, so expect to stop the game to reset it a few times.
 - Tighten the line-speed scoring window as the game goes on.
-- **Last ~11 minutes: full contact**, after the contact warm-up.
+- **Last ~11 minutes: full contact**, after the contact warm-up. **This is the squad's first open-play contact of the season** — Sunday's was pulled because of the surface, so only the closed tackle-diamond work has happened. Start it slower than you would otherwise, keep the numbers small, and have coaches watching tackle height from the first carry rather than settling in to watch the game.
 
 **Adaptations:**
 - Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
@@ -97,6 +103,8 @@
 - **Everything has to be carried in.** Nothing lives at TWGSB — balls, bibs, cones, poles and shields all travel, and the shields are needed for the last phase of the warm-up, not just the game.
 - **Posts may not be in our third of the pitch.** The hooker zone is written to work without them; the Cross-Bar Challenge is the bonus if we happen to have them.
 - **No scrum this week.** Scrum's first exposure is Sunday 13 Sep (Week 2), on a Sunday, because we cannot reliably field two full 8-man packs on a Thursday (see `age-group.md`).
-- **Contact is the last 11 minutes only**, and only after the two-minute contact warm-up. Everything before it is touch (see `coaching.md`).
+- **Contact is the last 11 minutes only**, and only after the two-minute contact warm-up. Everything before it is touch (see `coaching.md`). **Treat it as the first open-play contact of the season**, because Sunday's was pulled for the surface — see the main game entry.
+- **What is deliberately repeated from Sunday**, since the coaches asked for repetition across the weeks: the same warm-up, the same lineout-restart game with the constraints tightened and **Bang** added, and the hooker throw stepping up from the crossbar to a marked line. The new things this week are passing as the core skill and the **Bang** call itself.
+- **One voice per segment** (see `coaching.md`). With six coaches out on Sunday this was the one thing that slipped; the whole-group lineout slot is where it will slip again.
 - **Bang is new on Thursday.** Sunday's game ran the line-speed scoreboard without the call; this is the first time the trigger itself is used, so give it a proper introduction in the whole-group slot rather than springing it mid-game.
 - The **B/W/G** lineout calls still aren't introduced until Week 2 — positioning and the throw only.

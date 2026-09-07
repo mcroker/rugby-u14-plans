@@ -19,12 +19,12 @@
 |---|---|---|
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
 | +5, 12 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
-| +5, 12 min *(parallel pull-out)* | Hooker throw-in — Cross-Bar Challenge, then a marked 5-man line | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
-| +17, 20 min | Narrow touch, lineout restarts — **Bang**, **Springbok Touch**, **Coach's Bag** | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
-| +37, 7 min *(forwards)* | 5-man Rhino, phases 1–2 — forwards, 9 and 12: the two rucks | Both rucks land in predictable places, and the ball comes out of ruck 2 fast |
-| +37, 7 min *(backs)* | 5-man Rhino, phase 3 — backs: edge attack off a midfield ruck | The edge, practised off a ruck that has already happened |
-| +44, 5 min | 5-man Rhino — put it together | One lineout, both halves, at pace |
-| +49, 34 min | Wide game — both sides of the lineout, all conditions on | Both sides of the lineout live, on the width the edge attack needs |
+| +5, 12 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
+| +17, 20 min | Main game: **narrow** touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
+| +37, 7 min *(forwards)* | Lineout attack — forwards, 9 and 12: the two rucks | Both rucks land in predictable places, and the ball comes out of ruck 2 fast |
+| +37, 7 min *(backs)* | Lineout attack — backs: edge attack off a midfield run | The edge, practised off a ruck that has already happened |
+| +44, 5 min | Lineout attack — put it together | One lineout, both halves, at pace |
+| +49, 34 min | Back into the game — **wide pitch** | Both sides of the lineout live, on the width the edge attack needs |
 | +83, 7 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
 *If we start late, take it out of the second game block — it has the slack. **Not** the first game: that is where all three conditions are introduced, and the scanning one has to happen before it gets dark.*
@@ -50,7 +50,7 @@
 - If the pattern keeps breaking down, take the second ball out and rebuild rather than letting it stay scrappy.
 - Shorten the spacing if passes are dropping short — a pass at full stretch teaches nothing.
 
-### Narrow touch, lineout restarts — Bang, Springbok Touch, Coach's Bag
+### Main game — Narrow touch, lineout restarts
 
 **Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday. **Lineout positioning is coached here, at the restarts** — 5m and 15m, uncontested (see `laws.md`). Set the first two or three properly and let the rest run.
 
@@ -70,13 +70,13 @@
 - If **Springbok Touch** is producing a turnover every single play, the channel is too narrow or the attack is standing too flat — fix the game before softening the condition.
 - If tries keep being disallowed on the item and the game is dying, let any team-mate answer for the scorer — that turns it straight into a communication drill.
 
-### 5-man Rhino, phases 1–2 — forwards, 9 and 12: the two rucks
+### Lineout attack — forwards, 9 and 12: the two rucks
 
 Phases 1 and 2 of **5-man Rhino** (see `playbook.md`), on their own.
 
 **Coaching Points:** **both rucks land in predictable places.** Nobody watches the ball and reacts — you already know where you are going, so go, and arrive before the ball does. Then **ball out of ruck 2 fast**: the backs are stood waiting on it.
 
-**Setup:** forwards plus **9 and 12**, one lineout on the 15m line — **five in the line** (props, locks, 7), **hooker throwing**, and the **two spare forwards, typically 6 and 8**, in front of where 10 would stand. **Run two sets side by side if the numbers are there**, so nobody is watching. Walking pace to start.
+**Setup:** **5-man Rhino, phases 1–2** — forwards plus **9 and 12**, one lineout on the 15m line — **five in the line** (props, locks, 7), **hooker throwing**, and the **two spare forwards, typically 6 and 8**, in front of where 10 would stand. **Run two sets side by side if the numbers are there**, so nobody is watching. Walking pace to start.
 
 **Description:**
 
@@ -104,13 +104,13 @@ Walk it twice, then run it at pace. Point at both ruck positions before the ball
 **Adaptations:**
 - If there are too few forwards for two sets, keep one set and rotate who throws every rep rather than leaving anyone standing.
 
-### 5-man Rhino, phase 3 — backs: edge attack off a midfield ruck
+### Lineout attack — backs: edge attack off a midfield run
 
 Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for phases 1 and 2.
 
 **Coaching Points:** **depth and width before the ball, not after.** You are not starting from a lineout — you are starting from a ruck that has already happened, so be set on the edge before it comes.
 
-**Setup:** the backs minus 12 (he is with the forwards), a coach or spare player at **9** on a marked ruck in midfield, and cones for the edge. Nothing else — this is phase 3 on its own.
+**Setup:** **5-man Rhino, phase 3 on its own** — the backs minus 12 (he is with the forwards), a coach or spare player at **9** on a marked ruck in midfield, and cones for the edge. Nothing else — this is phase 3 on its own.
 
 **Description:** 9 delivers from the midfield ruck and the backs attack the open edge. Reset and go again straight away — this is a high-rep block, not a walk-through. Run it off both sides so the edge is not always the same one.
 
@@ -121,11 +121,11 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 **Adaptations:**
 - If numbers are thin, play the extra bodies as defenders rather than shrinking the attacking line.
 
-### 5-man Rhino — put it together
+### Lineout attack — put it together
 
 **Coaching Points:** the join is the point: **the backs are already set when the ball leaves ruck 2.** If they are still walking into place, the two halves have not joined up.
 
-**Setup:** whole squad, one lineout on the 15m line, everyone in their real positions. **12 comes across from ruck 1** — late, which is what will happen in a game.
+**Setup:** **5-man Rhino, the whole shape** — whole squad, one lineout on the 15m line, everyone in their real positions. **12 comes across from ruck 1** — late, which is what will happen in a game.
 
 **Description:** run the whole shape at pace, four or five times. No walking it — both halves have just done their part.
 
@@ -144,7 +144,7 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 **Notes:** the **B/W/G** calls come in Week 2 — this is the shape, not the calls.
 
-### Wide game — both sides of the lineout, all conditions on
+### Back into the game
 
 **Coaching Points:** both sides of the lineout are on every time — with the ball, **Attack off lineout** in the opposition half; off their throw, **the four jobs**: nearest two counter-maul and burst the seams, the rest pressure 9, hooker holds the channel, 9 and the tail-gunner shoot. Forwards know where both rucks are before the ball moves, and one job is one player's, known before the throw.
 
@@ -183,11 +183,11 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 - Move the throw around the channel so the jobs are worked out afresh rather than remembered by where they stood last time.
 - Rotate who is on the throw so both halves of the squad get repetitions of both sides.
 
-### Hooker throw-in — Cross-Bar Challenge, then a marked 5-man line
+### Hooker throw-in (pull-out skill zone)
 
 **Coaching Points:** the same cues as Sunday — consistent routine, ball back **behind the head**, both hands, step into it, follow through **pointing at the target**.
 
-**Setup:** mark a 5-man line with cones, receiver at front, middle and back. Hookers peel off with a coach during the passing block — twelve minutes, then back in for the whole main game.
+**Setup:** mark a 5-man line with cones, receiver at front, middle and back, plus the posts (or two poles at bar height) for the opening **Cross-Bar Challenge**. Hookers peel off with a coach during the passing block — twelve minutes, then back in for the whole main game.
 
 **Description:** **two minutes of the Cross-Bar Challenge at the posts** (see `activities.md`) to warm the arm up, then move to the marked line — the step up from Sunday, a real target at a real position rather than the bar. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
 

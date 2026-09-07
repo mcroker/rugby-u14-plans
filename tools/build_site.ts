@@ -1012,26 +1012,6 @@ function copyImages(): Record<string, string> {
   return out;
 }
 
-/** A stable URL that forwards to this week's page, so the link never changes
- *  and the content is never duplicated. */
-function redirectPage(target: string, title: string, note: string): string {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="0; url=${target}">
-<link rel="canonical" href="${target}">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>${title} — U14 Rugby</title>
-</head>
-<body>
-<p>${note} Redirecting to <a href="${target}">${target}</a>.</p>
-</body>
-</html>
-`;
-}
-
 // ------------------------------------------------------------------ index cards
 const INDEX_CSS = `
 h2.group {
@@ -1212,20 +1192,32 @@ function buildPages(): Record<string, string> {
     });
   }
 
-  // ---- next.html: the stable link, forwarding to this week's page
+  // ---- next.html: the session page itself, at a URL that never changes.
+  //      A copy rather than a redirect, so the link people hold stays next.html.
   const next = pickNextPlan(plansDir);
   if (!next) {
     warn("no dated session plans — next.html not built");
   } else {
     const meta = PLAN_META[next.file]!;
-    const why = next.upcoming
-      ? "the next session"
-      : `the most recent session (${meta.sub2}) — nothing later is written yet`;
-    pages["next.html"] = redirectPage(
-      `${next.file.slice(0, -3)}.html`,
-      "Next Session",
-      `${meta.h1} — ${why}.`,
-    );
+    const permalink = `${next.file.slice(0, -3)}.html`;
+    const note = next.upcoming
+      ? `<p class="next-note">The next session. This page always shows whichever session is coming up; ` +
+        `the permanent link for this one is <a href="${permalink}">${permalink}</a>.</p>`
+      : `<p class="next-note">The most recent session (${meta.sub2}) — nothing later is written yet. ` +
+        `Its permanent link is <a href="${permalink}">${permalink}</a>.</p>`;
+    add("next.html", {
+      title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+      h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
+      sub: meta.sub,
+      sub2: meta.sub2,
+      crumb: "Next session",
+      extraJs: DETAIL_JS,
+      body:
+        (meta.draft ? DRAFT_NOTE + "\n" : "") +
+        note +
+        "\n" +
+        sessionBody(planWithWarmup(read("plans/" + next.file)), diagrams, meta),
+    });
   }
 
   // ---- index

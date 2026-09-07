@@ -30,7 +30,7 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 
 - **Contact was lighter than planned.** Full contact was pulled because of the surface, so the tackle base is less bedded in than the plan assumes. Week 2's contact work should not treat it as revision.
 - **Team defence needs work**, and Continuous Defence was artificial without contact — communication appeared in the game (lineout touch) but not in the drill. Worth running the defensive work inside a game rather than beside it.
-- **Tackle technique carries through the season**, not just Week 1 — the diamond worked and should keep coming back.
+- **Tackle technique carries through the season**, not just Week 1 — the diamond worked and should keep coming back. Passing and tackling are now a standing per-session requirement (see `coaching.md`), and while the ground is hard the tackle work may need mats.
 - **Lineout held their attention** and overran its slot; the appetite is there for the B/W/G calls in Week 2.
 
 ### Session list

@@ -11,6 +11,8 @@ We run two teams:
 
 **Squad physical & skill profile:** our players are generally on the smaller side physically. Both **handling** and **tackling** skills still need development across the squad — these are foundational areas, not yet strengths to build tactics on top of. This shapes the playing style in `playbook.md` (quick recycle, continuity, offloads, avoiding unnecessary contact rather than seeking it out — "play like Japan, not South Africa").
 
+**Where the group is now (Sept 2026):** noticeably more mature than last season — listening, asking questions, and engaging with new material rather than needing to be entertained through it. Both coaches who fed back after the season opener said so independently. Plan on being able to ask rather than tell, and on the group taking more content than it would have last year.
+
 **Neurodiversity:** we have several neuro-diverse children in the squad, including players with **autism** and **ADHD**. Session design and coaching delivery should take this into account (e.g. clarity of instructions, predictable structure, sensory considerations). See `ref/Autism in Rugby.pdf` and `ref/ADHD in Rugby.pdf` for club guidance on coaching neurodiverse players. This is also why `playbook.md`'s calls are kept short, single-word, and used consistently in training so they become automatic — predictable, consistently-named calls reduce cognitive load in-game compared to ad-hoc instructions.
 
 During the first half of the season (September to December), around 50% of the children also play schools rugby. This rarely creates a direct fixture clash, but overall **contact-load across club and school rugby is a real consideration** when planning contact volume in sessions.

@@ -40,6 +40,16 @@ Quick reference for picking a game to match the session's contact-level target (
 | Where it's used | The fourth and final phase of the standard warm-up (see `warmup.md`), run off the try-line onto shields at the cone line. |
 | Adaptations | Run with whatever group split fits the numbers out that day (e.g. several teams rotating through, some in the game-zone / some in a skill-zone). |
 
+### Everyone Shouts (vocal warm-up)
+
+**Focus:** Communication — getting players comfortable using their voices
+
+| | |
+|---|---|
+| Description | Two minutes, whole squad in a circle, before a game that will ask them to talk. **1.** On three, everyone shouts something daft — a word, a noise, the club name; twice, second one louder. **2.** Split into the two game teams and let each try to out-shout the other; judge it badly and obviously. **3.** Round the circle, everyone shouts their own name in turn, fast, no gaps. Then stop and get on with the game. |
+| Coaching Points | Everyone goes at once and loudly — together is what makes it safe, so nobody is put on the spot alone. The point isn't the noise, it's that they have used their voices once already before anyone asks them to make a real call; the first call of a session is the hardest one. Don't explain why you did it. |
+| Adaptations | **Offer the opt-out to the whole squad up front** — anyone who would rather not shout claps or stamps instead, said out loud so nobody has to ask. If step 3 dies, go back to step 1 and finish there; ending loud matters more than finishing the sequence. Change what they shout week to week so it stays daft rather than becoming something they mumble. |
+
 ### Rainbow Passing
 
 **Focus:** Handling

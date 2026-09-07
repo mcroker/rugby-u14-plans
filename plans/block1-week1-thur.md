@@ -20,12 +20,13 @@
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
 | +5, 12 min | Essential skills — passing (Crazy Passing) | The week's core skill; handling under a rising awareness demand |
 | +5, 12 min *(parallel pull-out)* | Hooker throw-in (hookers) | Throw to a marked 5-man line — the step up from Sunday's crossbar work |
-| +17, 20 min | Main game: **narrow** touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
-| +37, 7 min *(forwards)* | Lineout attack — forwards, 9 and 12: the two rucks | Both rucks land in predictable places, and the ball comes out of ruck 2 fast |
-| +37, 7 min *(backs)* | Lineout attack — backs: edge attack off a midfield run | The edge, practised off a ruck that has already happened |
-| +44, 5 min | Lineout attack — put it together | One lineout, both halves, at pace |
-| +49, 34 min | Back into the game — **wide pitch** | Both sides of the lineout live, on the width the edge attack needs |
-| +83, 7 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
+| +17, 2 min | Vocal warm-up — everyone shouts | Voices switched on before the game starts asking for them |
+| +19, 20 min | Main game: **narrow** touch, lineout restarts | **Bang**, **Springbok Touch** and the **Coach's Bag** scanning condition all introduced here |
+| +39, 7 min *(forwards)* | Lineout attack — forwards, 9 and 12: the two rucks | Both rucks land in predictable places, and the ball comes out of ruck 2 fast |
+| +39, 7 min *(backs)* | Lineout attack — backs: edge attack off a midfield run | The edge, practised off a ruck that has already happened |
+| +46, 5 min | Lineout attack — put it together | One lineout, both halves, at pace |
+| +51, 34 min | Back into the game — **wide pitch** | Both sides of the lineout live, on the width the edge attack needs |
+| +85, 5 min | Cool-down / close | Recap the **Bang** call and line-org cues; set up Sunday |
 
 *If we start late, take it out of the second game block — it has the slack. **Not** the first game: that is where all three conditions are introduced, and the scanning one has to happen before it gets dark.*
 
@@ -49,6 +50,25 @@
 **Adaptations:**
 - If the pattern keeps breaking down, take the second ball out and rebuild rather than letting it stay scrappy.
 - Shorten the spacing if passes are dropping short — a pass at full stretch teaches nothing.
+
+### Vocal warm-up — everyone shouts
+
+**Coaching Points:** **everyone goes at once, and loudly** — together is what makes it safe, so nobody is put on the spot on their own. Two minutes, no more, then straight into the game.
+
+**Setup:** whole squad in one circle, no equipment, coach in the middle.
+
+**Description:** the point is not the noise — it is that they have already used their voices once tonight before anyone asks them to call **Bang** or shout an item across the pitch. The first call of a session is the hardest one, and this gets it out of the way while it costs nothing.
+
+1. **All together** — on three, everyone shouts something daft: a word, a noise, the club name. Twice, and the second one louder than the first.
+2. **Teams against each other** — split into the two game teams and let each try to out-shout the other. Judge it, badly and obviously.
+3. **Round the circle** — everyone shouts their own name in turn, fast, no gaps. This is the one that matters: it is each player's own voice on its own, but it lasts a second and the next one is already coming.
+
+Then stop, and don't explain why you did it.
+
+**Adaptations:**
+- **Offer the opt-out up front, to the whole squad, before you start** — anyone who would rather not shout claps or stamps instead. Say it out loud so nobody has to ask.
+- If step 3 dies, go back to step 1 and finish there. Ending loud matters more than getting through all three.
+- Change what they shout week to week so it stays daft rather than becoming a routine they mumble.
 
 ### Main game — Narrow touch, lineout restarts
 
@@ -148,7 +168,7 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 **Coaching Points:** both sides of the lineout are on every time — with the ball, **Attack off lineout** in the opposition half; off their throw, **the four jobs**: nearest two counter-maul and burst the seams, the rest pressure 9, hooker holds the channel, 9 and the tail-gunner shoot. Forwards know where both rucks are before the ball moves, and one job is one player's, known before the throw.
 
-**Setup:** **use the full width of the Training Area** — the narrow channel goes, because the backs have just spent seven minutes on edge attack and need somewhere to put it, and **Bang, Springbok Touch and the bag all stay on**. **If numbers force two games, split the square across its depth so both keep the full width** — depth is what to give up, never width. Thirty-four minutes, so plan on two halves with a **team swap at about 19:50**, which is the water break as well.
+**Setup:** **use the full width of the Training Area** — the narrow channel goes, because the backs have just spent seven minutes on edge attack and need somewhere to put it, and **Bang, Springbok Touch and the bag all stay on**. **If numbers force two games, split the square across its depth so both keep the full width** — depth is what to give up, never width. Thirty-four minutes, so plan on two halves with a **team swap at about 19:53**, which is the water break as well.
 
 **Description:** the lineout restarts now feed the shape on one side and the defensive picture on the other, rather than just restarting play.
 

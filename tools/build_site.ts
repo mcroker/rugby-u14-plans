@@ -606,7 +606,9 @@ function timeline(planSection: string, acts: Activity[]): string {
       if (act?.points) run.push(`<div class="track-run"><b>Call</b> ${inline(runInfo(act.points))}</div>`);
       if (!run.length) run.push(`<div class="track-run">${inline(g.focus)}</div>`);
       // The detail lives further down the same page.
-      const details = act ? `<a class="track-details" href="#${act.id}">Details</a>` : "";
+      const details = act
+        ? `<button class="track-details" type="button" data-target="${act.id}">Details</button>`
+        : "";
       out.push(
         `    <div class="track"><div class="track-title">${inline(g.title)}</div>` +
           `${tag}${dur}${run.join("")}${details}</div>`,
@@ -618,6 +620,51 @@ function timeline(planSection: string, acts: Activity[]): string {
   out.push("</div>");
   return out.join("\n");
 }
+
+
+/**
+ * One empty modal per session page, filled on click by cloning the activity's
+ * own section out of the page below. Nothing is duplicated in the HTML: the
+ * detail exists once, and the modal is a view onto it.
+ */
+const DETAIL_MODAL = `
+<dialog id="detail-modal" class="detail">
+  <div class="detail-head"><strong></strong>
+    <button class="detail-x" type="button" data-close aria-label="Close">&times;</button></div>
+  <div class="detail-body"></div>
+  <div class="detail-foot"><a class="detail-jump" href="#" data-close>Show it in the plan</a>
+    <button class="detail-done" type="button" data-close>Close</button></div>
+</dialog>`;
+
+const DETAIL_JS = `
+document.addEventListener("click", function (e) {
+  var btn = e.target.closest("[data-target]");
+  if (btn) {
+    var id = btn.getAttribute("data-target");
+    var head = document.getElementById(id);
+    var dlg = document.getElementById("detail-modal");
+    if (!head || !dlg || !dlg.showModal) return;
+    dlg.querySelector(".detail-head strong").textContent = head.textContent;
+    var body = dlg.querySelector(".detail-body");
+    body.innerHTML = "";
+    var n = head.nextElementSibling;
+    while (n && n.tagName !== "H2" && n.tagName !== "H3") {
+      body.appendChild(n.cloneNode(true));
+      n = n.nextElementSibling;
+    }
+    dlg.querySelector(".detail-jump").setAttribute("href", "#" + id);
+    body.scrollTop = 0;
+    dlg.showModal();
+    return;
+  }
+  if (e.target.closest("[data-close]")) {
+    var open = e.target.closest("dialog");
+    if (open) open.close();
+    return;
+  }
+  if (e.target.tagName === "DIALOG") e.target.close();
+});
+`;
 
 /** A plan's markdown with the standard warm-up spliced in as an Activities entry. */
 function planWithWarmup(md: string): string {
@@ -658,6 +705,7 @@ function sessionBody(md: string, images: Record<string, string>): string {
     "<h2>Run sheet</h2>",
     timeline(planSection, planActivities(detailMd)),
     mdToHtml(detailMd, images),
+    DETAIL_MODAL,
   ].join("\n");
 }
 
@@ -670,6 +718,7 @@ interface PageOpts {
   crumb: string | null;
   body: string;
   extraCss?: string;
+  extraJs?: string;
   footer?: string;
 }
 
@@ -704,7 +753,7 @@ ${nav}  </div>
 <div class="wrap">
 ${o.body}
 </div>
-<footer class="page-foot">${foot}</footer>
+<footer class="page-foot">${foot}</footer>${o.extraJs ? `\n<script>${o.extraJs}</script>` : ""}
 </body>
 </html>
 `;
@@ -973,6 +1022,7 @@ function buildPages(): Record<string, string> {
       sub: meta.sub,
       sub2: meta.sub2,
       crumb: meta.crumb,
+      extraJs: DETAIL_JS,
       body: (meta.draft ? DRAFT_NOTE + "\n" : "") + sessionBody(planMd, diagrams),
     });
   }

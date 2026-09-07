@@ -43,7 +43,7 @@ A note for anyone re-reading these pages: the fixture list is rendered client-si
 | **Pitch 2** | To the right of Pitch 1. |
 | **Pitch 3** | To the right of Pitch 2. |
 | **Pitch 4** | The pitch at the top of the map. |
-| **Training Area** | The square blue area just below Pitch 4. |
+| **Training Area** | The square blue area just below Pitch 4 — **the floodlit area**, and so where Thursday evening sessions are while we are at the club. Its zone code is `training`; it is not one of the club's Sunday allocation codes, and its pin position is estimated from the map rather than taken from the club's own data. |
 | **Touch Pitch** | The blue rectangle above Pitch 1 — i.e. beyond it, away from the Club House. |
 
 **Naming half a pitch.** We are often allocated half a pitch, shared with another age group. Halves are named **as seen standing at the Club House looking out over the grounds**, which means the split runs differently depending on where the pitch is:

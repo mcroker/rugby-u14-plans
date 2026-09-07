@@ -85,6 +85,9 @@ const PITCH_ZONES: Record<string, { left: number; top: number; pitch: string; ha
   "3b": { left: 68, top: 53, pitch: "Pitch 3", half: "right" },
   "4a": { left: 9, top: 3, pitch: "Pitch 4", half: "far-end" },
   "4b": { left: 9, top: 17, pitch: "Pitch 4", half: "near-end" },
+  // Not one of the club's Sunday allocation codes: the floodlit training area,
+  // the blue square below Pitch 4. Position estimated from the map itself.
+  training: { left: 13, top: 37, pitch: "Training Area", half: "floodlit" },
 };
 
 /** Which age group the pin is labelled for — we are U14M. */
@@ -802,7 +805,7 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
   // for, not a logistical detail to be folded away with the kit list.
   const objectiveRow = allRows.find((r) => r.includes("**Session objective**"));
   const objective = objectiveRow
-    ? `<h2>Objective</h2>\n<p>${inline(splitCells(objectiveRow)[1] ?? "")}</p>`
+    ? `<h2>Objective</h2>\n<p class="objective">${inline(splitCells(objectiveRow)[1] ?? "")}</p>`
     : "";
   const detailsRows = allRows.filter((r) => r !== objectiveRow);
   // Sunset only matters for an evening session at the club — it is the

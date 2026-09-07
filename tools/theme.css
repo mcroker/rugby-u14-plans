@@ -202,6 +202,20 @@ tr.row-new td:first-child { font-weight: 600; }
 }
 .brief-more { font-size: 0.9rem; margin-top: 1.6em; }
 
+/* The objective leads the page, so it spans the column rather than stopping at
+   the prose measure — which above a full-width accordion just looks like a bug.
+   The tint gives the eye a line to track at that width. */
+p.objective {
+  max-width: none;
+  background: var(--blue-tint);
+  border-left: 3px solid var(--blue);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 0.4em 0 1.3em;
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
 /* Logistics accordion on the brief — collapsed by default; the run sheet is
    what you open the page for. */
 details.logistics {

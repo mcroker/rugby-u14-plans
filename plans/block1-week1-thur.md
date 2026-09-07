@@ -5,11 +5,13 @@
 | | |
 |---|---|
 | **Date/Time** | **Thu 10 Sep 2026 — meet 18:35**, on the pitch for 18:45. Sixty minutes of session. |
-| **Location** | **The floodlight pitch at the club** — Tunbridge Wells RFC. Thursdays are at the club until roughly the end of October (TBC), not TWGSB (see `age-group.md`). |
+| **Location** | **The Training Area at the club** — the floodlit area, below Pitch 4 (Tunbridge Wells RFC). Thursdays are at the club until roughly the end of October (TBC), not TWGSB (see `age-group.md`). |
 | **Coaches** | *(fill in on the night)* |
 | **Attendance** | *(fill in on the night — expect fewer than Sunday; full turnout is not the norm on a Thursday)* |
 | **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning at a lighter, non-contested level, keep the hooker throw ticking over, and put line-org and the **Bang** blitz trigger into a tight-space game. |
 | **Resources required** | Balls, bibs, cones, poles, ruck shields — **all at the club**, nothing needs carrying in now we are training there. |
+
+![Where we are on a Thursday — the floodlit Training Area at the club, below Pitch 4. This is not the Sunday pitch allocation; Thursday evenings are always here while we are at the club.](pitch:training)
 
 ## Plan
 

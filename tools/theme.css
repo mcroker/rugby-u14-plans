@@ -222,6 +222,36 @@ details.logistics[open] > summary::after { content: "\2212"; }
 details.logistics[open] > summary { border-bottom: 1px solid var(--border); }
 details.logistics .table-scroll { border: none; border-radius: 0; margin: 0; }
 
+/* Activities as accordions — collapsed, so the plan reads as a contents list. */
+.acc-tools { display: flex; gap: 8px; margin: 1em 0 0.9em; }
+.acc-tools button {
+  font-family: "Oswald", sans-serif; font-size: 0.72rem; letter-spacing: 0.05em;
+  text-transform: uppercase; cursor: pointer; color: var(--blue);
+  background: transparent; border: 1px solid var(--rule);
+  border-radius: 4px; padding: 5px 11px;
+}
+.acc-tools button:hover { border-color: var(--blue); background: var(--blue-tint); }
+
+details.activity {
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); margin: 0 0 8px;
+}
+details.activity > summary {
+  cursor: pointer; list-style: none; padding: 11px 14px;
+  font-family: "Oswald", sans-serif; font-weight: 600; font-size: 0.98rem;
+  color: var(--blue); display: flex; align-items: center; gap: 10px;
+}
+details.activity > summary::-webkit-details-marker { display: none; }
+details.activity > summary::after {
+  content: "+"; margin-left: auto; font-size: 1.15rem; line-height: 1;
+  color: var(--muted); font-weight: 400;
+}
+details.activity[open] > summary::after { content: "\2212"; }
+details.activity[open] > summary { border-bottom: 1px solid var(--border); }
+details.activity > :not(summary) { margin-left: 14px; margin-right: 14px; }
+details.activity > :last-child { margin-bottom: 12px; }
+details.activity:target { border-color: var(--blue); box-shadow: 0 0 0 2px var(--blue-tint); }
+
 /* Track head: title plus a deep link into the full plan. */
 .track-head { display: flex; align-items: flex-start; gap: 8px; }
 .track-head .track-title { flex: 1; }

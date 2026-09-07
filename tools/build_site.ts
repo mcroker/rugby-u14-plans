@@ -637,29 +637,46 @@ const DETAIL_MODAL = `
 </dialog>`;
 
 const DETAIL_JS = `
+function openTarget() {
+  var id = location.hash.slice(1);
+  if (!id) return;
+  var el = document.getElementById(id);
+  if (el && el.tagName === "DETAILS") el.open = true;
+}
+window.addEventListener("hashchange", openTarget);
+openTarget();
+
 document.addEventListener("click", function (e) {
+  var acc = e.target.closest("[data-acc]");
+  if (acc) {
+    var open = acc.getAttribute("data-acc") === "open";
+    var all = document.querySelectorAll("details.activity");
+    for (var i = 0; i < all.length; i++) all[i].open = open;
+    return;
+  }
+
   var btn = e.target.closest("[data-target]");
   if (btn) {
     var id = btn.getAttribute("data-target");
-    var head = document.getElementById(id);
+    var sec = document.getElementById(id);
     var dlg = document.getElementById("detail-modal");
-    if (!head || !dlg || !dlg.showModal) return;
-    dlg.querySelector(".detail-head strong").textContent = head.textContent;
+    if (!sec || !dlg || !dlg.showModal) return;
+    var sum = sec.querySelector("summary");
+    dlg.querySelector(".detail-head strong").textContent = sum ? sum.textContent : id;
     var body = dlg.querySelector(".detail-body");
     body.innerHTML = "";
-    var n = head.nextElementSibling;
-    while (n && n.tagName !== "H2" && n.tagName !== "H3") {
-      body.appendChild(n.cloneNode(true));
-      n = n.nextElementSibling;
+    for (var j = 0; j < sec.children.length; j++) {
+      if (sec.children[j].tagName !== "SUMMARY") body.appendChild(sec.children[j].cloneNode(true));
     }
     dlg.querySelector(".detail-jump").setAttribute("href", "#" + id);
     body.scrollTop = 0;
     dlg.showModal();
     return;
   }
+
   if (e.target.closest("[data-close]")) {
-    var open = e.target.closest("dialog");
-    if (open) open.close();
+    var openDlg = e.target.closest("dialog");
+    if (openDlg) openDlg.close();
     return;
   }
   if (e.target.tagName === "DIALOG") e.target.close();
@@ -671,6 +688,63 @@ function planWithWarmup(md: string): string {
   const entry = warmupEntry();
   const at = md.indexOf("\n## Notes");
   return at === -1 ? `${md}\n\n${entry}` : `${md.slice(0, at)}\n\n${entry}${md.slice(at)}`;
+}
+
+/**
+ * Render the detail below the timeline, with each activity as its own collapsed
+ * accordion. Long run-sheets are unreadable as one wall; collapsed, the page is
+ * a contents list you open a piece at a time.
+ */
+function detailAccordions(
+  detailMd: string,
+  images: Record<string, string>,
+  acts: Activity[],
+): string {
+  const lines = detailMd.split("\n");
+  const out: string[] = [];
+  const buf: string[] = [];
+  let first = true;
+  const flush = () => {
+    if (buf.length) {
+      out.push(mdToHtml(buf.join("\n"), images));
+      buf.length = 0;
+    }
+  };
+
+  let i = 0;
+  while (i < lines.length) {
+    const h = /^###\s+(.*)$/.exec(lines[i]!.trim());
+    if (!h) {
+      buf.push(lines[i]!);
+      i += 1;
+      continue;
+    }
+    flush();
+    if (first) {
+      out.push(
+        '<div class="acc-tools">' +
+          '<button type="button" data-acc="open">Expand all</button>' +
+          '<button type="button" data-acc="close">Collapse all</button>' +
+          "</div>",
+      );
+      first = false;
+    }
+    const title = h[1]!;
+    i += 1;
+    const body: string[] = [];
+    while (i < lines.length && !/^#{2,3}\s/.test(lines[i]!.trim())) {
+      body.push(lines[i]!);
+      i += 1;
+    }
+    const id = acts.find((a) => a.title === title)?.id ?? slugify(title);
+    out.push(
+      `<details class="activity" id="${id}"><summary>${inline(title)}</summary>` +
+        mdToHtml(body.join("\n"), images) +
+        "</details>",
+    );
+  }
+  flush();
+  return out.join("\n");
 }
 
 /**
@@ -699,12 +773,13 @@ function sessionBody(md: string, images: Record<string, string>): string {
   const from = md.indexOf("\n## Activities");
   const rest = from === -1 ? "" : md.slice(from);
   const detailMd = [planExtra, rest].filter(Boolean).join("\n\n");
+  const acts = planActivities(detailMd);
 
   return [
     logistics,
     "<h2>Run sheet</h2>",
-    timeline(planSection, planActivities(detailMd)),
-    mdToHtml(detailMd, images),
+    timeline(planSection, acts),
+    detailAccordions(detailMd, images, acts),
     DETAIL_MODAL,
   ].join("\n");
 }

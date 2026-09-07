@@ -6,7 +6,7 @@
 |---|---|
 | **Date/Time** | **Thu 10 Sep 2026.** Meet 18:35, on the pitch 18:45. Finish 20:15. 90 min. |
 | **Location** | The Training Area, St Marks. Floodlit. |
-| **Coaches** | *(fill in on the night)* |
+| **Coaches** | *(fill in on the night)* — **needs 3 as a minimum**: the hooker pull-out during passing, forwards and backs in the split, and two or three spread around the pitch with bags for the scanning condition. |
 | **Attendance** | *(fill in on the night)* |
 | **Session objective** | Passing as the week's core skill. Reinforce Sunday's lineout positioning, keep the hooker throw ticking over, introduce the **Bang** blitz trigger, and introduce **Attack off lineout** — forwards and backs working their half of the shape separately, then joining it up — and **defending the lineout**, coached inside the game rather than in a block of its own. The games are conditioned hard for **defence — connectedness, communication and line-speed** — and every defensive win restarts as a lineout. Touch throughout — no contact this week. |
 | **Resources required** | Balls, bibs, cones, poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
@@ -161,7 +161,7 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 **Coaching Points:** **Both sides of the lineout are on, every time.** With the ball: **Attack off lineout** off every lineout in the opposition half — forwards know where both rucks are before the ball moves. Without it: the four jobs below, one each, known before the throw. **Springbok Touch stays on** — the turnover is a lineout to the defence.
 
-**Setup:** same game, same channel. Thirty-four minutes, so plan on two clear halves with a short reset between them — **put the reset in at about 20 past**, or it will not happen. **Bang, Springbok Touch and the bag all stay on** from the first game.
+**Setup:** same game, same channel. Thirty-four minutes, so plan on two clear halves with a short reset between them — **put the reset in at about 19:50**, or it will not happen. **Bang, Springbok Touch and the bag all stay on** from the first game.
 
 **Description:** the lineout restarts now feed the shape on one side and the defensive picture on the other, rather than just restarting play.
 
@@ -218,6 +218,6 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 - **Two coaching stoppages all session** — the lineout positioning recap, and the lineout-attack block, which splits forwards and backs so nobody stands watching. Everything else is coached while the game is running.
 - **Sunset is 19:28.** The scanning condition is in the *first* game deliberately, while there is still light — naming a small item across the pitch under floodlights at 8pm is a different task. Big, high-contrast items in the bags.
 - **Conditions are cumulative, not a menu.** They are listed in the order to add them, and each one stays in once added. Adding them all at once, or swapping between them, teaches nothing.
-- **Bang is new on Thursday.** Sunday's game ran the line-speed scoreboard without the call; this is the first time the trigger itself is used, so give it a proper introduction in the whole-group slot rather than springing it mid-game.
+- **Bang is new on Thursday**, and it is introduced *in* the first game, not in a slot of its own. Sunday's game ran the line-speed scoreboard without the call; this is the first time the trigger itself is used, so stop the game properly the first two or three times to reset it rather than letting a half-understood call run.
 - **Lineout defence is new here**, ahead of the Week 3 slot it was originally planned for — but **there is no block for it.** It is coached in the pause every lineout already gives you, inside the long game. Week 3 now builds on it rather than introducing it.
 - The **B/W/G** lineout calls still aren't introduced until Week 2 — positioning and the throw only.

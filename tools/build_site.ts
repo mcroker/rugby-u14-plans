@@ -416,6 +416,129 @@ function sunsetAtClub(isoDate: string): string | null {
   }).format(when);
 }
 
+// ----------------------------------------------------------------- weather
+/**
+ * Forecast for a session, fetched once at build time from Open-Meteo (no key,
+ * no dependency) and keyed by the session's ISO date. Every plan gets one, the
+ * way every evening-at-the-club plan gets a sunset: what a coach checks the
+ * night before is the weather, and the daily rebuild keeps it current.
+ *
+ * Only sessions inside the forecast horizon are fetched — a past session's page
+ * is an archive and should not claim to know what the weather will be.
+ */
+const forecasts = new Map<string, string>();
+
+/** WMO weather codes, in the words a coach would use. */
+const WMO: Record<number, string> = {
+  0: "Clear",
+  1: "Mostly clear",
+  2: "Partly cloudy",
+  3: "Overcast",
+  45: "Fog",
+  48: "Freezing fog",
+  51: "Light drizzle",
+  53: "Drizzle",
+  55: "Heavy drizzle",
+  56: "Freezing drizzle",
+  57: "Freezing drizzle",
+  61: "Light rain",
+  63: "Rain",
+  65: "Heavy rain",
+  66: "Freezing rain",
+  67: "Freezing rain",
+  71: "Light snow",
+  73: "Snow",
+  75: "Heavy snow",
+  77: "Snow grains",
+  80: "Showers",
+  81: "Showers",
+  82: "Heavy showers",
+  85: "Snow showers",
+  86: "Snow showers",
+  95: "Thunderstorms",
+  96: "Thunderstorms, hail",
+  99: "Thunderstorms, hail",
+};
+
+/** Days ahead Open-Meteo will forecast. */
+const FORECAST_DAYS = 15;
+
+/** The session hours a forecast should describe: the start hour and the two
+ *  after it, which covers a 90-minute session whichever end it runs over. */
+function sessionHours(start: string | undefined): number[] {
+  const h = Number((start ?? "18:00").slice(0, 2));
+  return [h, h + 1, h + 2].filter((n) => n >= 0 && n <= 23);
+}
+
+/**
+ * Fetch the forecast for every planned session inside the horizon, in one
+ * request. Never fails the build: no network (a local preview on a train, say)
+ * simply means no Weather row, which is better than a broken build or a stale
+ * number baked into the markdown.
+ */
+async function loadForecasts(): Promise<void> {
+  const today = new Date().toISOString().slice(0, 10);
+  const horizon = new Date(Date.now() + FORECAST_DAYS * 86400000)
+    .toISOString()
+    .slice(0, 10);
+  const wanted = Object.values(PLAN_META)
+    .filter((m) => m.date >= today && m.date <= horizon)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  if (!wanted.length) return;
+
+  const url =
+    "https://api.open-meteo.com/v1/forecast" +
+    `?latitude=${CLUB_LAT}&longitude=${CLUB_LON}` +
+    "&hourly=temperature_2m,precipitation_probability,weather_code,wind_speed_10m" +
+    "&wind_speed_unit=mph&timezone=Europe%2FLondon" +
+    `&start_date=${wanted[0]!.date}&end_date=${wanted[wanted.length - 1]!.date}`;
+
+  let hourly: {
+    time: string[];
+    temperature_2m: number[];
+    precipitation_probability: number[];
+    weather_code: number[];
+    wind_speed_10m: number[];
+  };
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    hourly = ((await res.json()) as { hourly: typeof hourly }).hourly;
+    if (!hourly?.time?.length) throw new Error("no hourly data");
+  } catch (err) {
+    console.log(`no weather forecast (${(err as Error).message}) — Weather rows omitted`);
+    return;
+  }
+
+  const at = new Map(hourly.time.map((t, i) => [t, i]));
+  for (const meta of wanted) {
+    const idx = sessionHours(meta.start)
+      .map((h) => at.get(`${meta.date}T${String(h).padStart(2, "0")}:00`))
+      .filter((i): i is number => i !== undefined);
+    if (!idx.length) continue;
+    const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
+    const temp = Math.round(mean(idx.map((i) => hourly.temperature_2m[i]!)));
+    const wind = Math.round(mean(idx.map((i) => hourly.wind_speed_10m[i]!)));
+    const rain = Math.max(...idx.map((i) => hourly.precipitation_probability[i]!));
+    // The most common condition across the session, not the worst hour of it —
+    // one drizzly hour at the end should not be reported as a wet session; the
+    // rain chance beside it is what carries that risk.
+    const counts = new Map<number, number>();
+    for (const i of idx) {
+      const c = hourly.weather_code[i]!;
+      counts.set(c, (counts.get(c) ?? 0) + 1);
+    }
+    const code = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]![0];
+    const cond = WMO[code] ?? "Mixed";
+    const window = `${String(sessionHours(meta.start)[0]).padStart(2, "0")}:00`;
+    forecasts.set(
+      meta.date,
+      `${cond}, ${temp}°C, wind ${wind} mph, ${rain}% chance of rain. ` +
+        `*(From ${window}; forecast as of ${GENERATED}.)*`,
+    );
+  }
+}
+
 // -------------------------------------------------------------- session page
 /** Pull one "## Heading" section out of a plan's markdown. */
 function mdSection(md: string, heading: string): string {
@@ -487,6 +610,8 @@ function warmupEntry(): string {
   return [
     "### Player-led warm-up",
     "",
+    "**Groups:** whole squad together.",
+    "",
     `**Coaching Points:** ${quality}`,
     "",
     `**Setup:** the squad in three or four lines on the try-line, working out and back. **Kit:** ${kit}`,
@@ -503,6 +628,8 @@ function warmupEntry(): string {
 interface Activity {
   id: string;
   title: string;
+  /** How the squad is split for this activity — a few words, no more. */
+  groups: string;
   setup: string;
   points: string;
   description: string;
@@ -546,6 +673,7 @@ function planActivities(md: string): Activity[] {
   const acts: Activity[] = entries.map((e) => ({
     id: "",
     title: e.title,
+    groups: label(e.lines, "Groups"),
     setup: label(e.lines, "Setup"),
     points: label(e.lines, "Coaching Points"),
     description: label(e.lines, "Description"),
@@ -668,8 +796,11 @@ function timeline(planSection: string, acts: Activity[], startClock?: string): s
       const act = matchActivity(g.title, acts);
       const tag = g.tag ? `<span class="track-tag">${inline(g.tag)}</span>` : "";
       const dur = g.mins !== mins ? `<span class="track-tag">${g.mins} min</span>` : "";
-      // What you need to run it, not what it is: setup first, then the cues.
+      // What you need to run it, not what it is: who is in it, how it is set
+      // up, then the cues. Groups leads because splitting the squad is the
+      // first thing that has to happen and the slowest to fix if it is wrong.
       const run: string[] = [];
+      if (act?.groups) run.push(`<div class="track-run"><b>Groups</b> ${inline(act.groups)}</div>`);
       if (act?.setup) run.push(`<div class="track-run"><b>Set up</b> ${inline(runInfo(act.setup))}</div>`);
       if (act?.points) run.push(`<div class="track-run"><b>Call</b> ${inline(runInfo(act.points))}</div>`);
       if (!run.length) run.push(`<div class="track-run">${inline(g.focus)}</div>`);
@@ -843,6 +974,11 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
     if (sunset) detailsRows.push(`| **Sunset** | ${sunset} at the club |`);
     else warn(`no sunset could be computed for ${meta.date}`);
   }
+  // Weather sits beside it: the other thing about the evening that the plan
+  // cannot state for itself. Only for a session still ahead of us — see
+  // loadForecasts.
+  const forecast = forecasts.get(meta.date);
+  if (forecast) detailsRows.push(`| **Weather** | ${forecast} |`);
   // The map is a tap away from the Location row rather than sitting open in the
   // logistics — it is the one thing you want once, on arrival.
   const pitch = /^!\[[^\]]*\]\(pitch:[^)]+\)$/m.exec(md)?.[0] ?? "";
@@ -1349,4 +1485,5 @@ function main(): number {
   return 0;
 }
 
+await loadForecasts();
 process.exit(main());

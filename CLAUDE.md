@@ -80,7 +80,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 | Markdown | Becomes, on the page |
 |---|---|
 | `## Session details` — the **Session objective** row | an **Objective** heading at the top of the page, above everything else |
-| `## Session details` — the other rows | the collapsed **Logistics** accordion, with the pitch map inside it |
+| `## Session details` — the other rows | the collapsed **Logistics** accordion, with the pitch map inside it, plus the generated **Weather** and **Sunset** rows |
 | `## Plan` — the **first** table | the **timeline**: one block per row, rows sharing a start time drawn side by side |
 | `## Plan` — anything after that table | kept, rendered below the timeline (this is where a coach allocation goes) |
 | `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's setup/cues and Details modal |
@@ -97,6 +97,11 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
    Set **`eveningAtClub: true`** in `PLAN_META` for an evening session at the club, and the build adds a **Sunset** row to the logistics — computed for the club's location on that date, in local time, so it follows the clocks changing. Leave it off for daytime or away-from-the-club sessions, where it is noise.
 
+   **Two logistics rows are generated, not written — don't type either into the markdown.**
+
+   - **Weather** — the forecast for the club over the session's hours (condition, temperature, wind, chance of rain), fetched at build time from Open-Meteo. It appears on **every** plan whose date is still ahead, and disappears once the session has passed, so an archived page never claims to know what the weather was going to be. The daily 05:00 rebuild refreshes it; the row says how old the forecast is. No network (an offline local preview) simply means no row — it never fails the build.
+   - **Sunset** — see above, gated on `eveningAtClub`.
+
    The map does not sit open on the page: it becomes a **Map** button beside the Location row, opening the club map with a `U14M` marker pinned on that zone. A new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
 2. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
 
@@ -107,12 +112,14 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    - Only the **first** table in this section is read as the run sheet, so a coach allocation or any other table can follow it.
 3. **Activities** — a `### ` entry per activity. Each becomes a collapsed accordion **and** feeds its block on the timeline, so write them for a coach who is about to run the thing:
 
+   - **`**Groups:**`** comes **first, directly under the `### ` heading**, and says how many children and how they are split — and nothing else. **A few words: "Groups of five", "All forwards", "Two pitches — 7 v 7 on each", "Whole squad, one circle".** It is lifted onto the timeline block as *Groups*, ahead of the setup, because splitting the squad is the first thing that has to happen and the slowest to fix once it is wrong. Unlike Setup and Coaching Points it is used **whole**, not first-sentence-only, so keep it to one short phrase. Every entry gets one; the generated warm-up entry has its own.
    - **`**Setup:**`** and **`**Coaching Points:**`** are lifted onto the timeline block as *Set up* and *Call* — **first sentence only**, so lead with the instruction and put the caveats after it. A bare cross-reference (`see \`activities.md\`.`) is skipped, so don't make it the whole first sentence.
    - **`**Description:**`**, **`**Coaching Points:**`** and **`**Progressions:**`** are what the block's **Details** modal shows.
    - An entry is matched to its row by the words in the title, so keep the two recognisably the same. No match means no setup, cues, Details button or link for that block — it falls back to the Plan table's summary.
    - The **player-led warm-up entry is generated automatically** from `claude/warmup.md` — don't write one.
 
    Write an entry for anything that warrants it (a new skill or system, anything worth a diagram or video); a row like a cool-down needs none. Check **`claude/activities.md`** first for a reusable game/drill before inventing a new one. Each entry can include:
+   - **Groups** — the numbers/split line above; on every entry, and always first
    - Coaching Points (kept to a small number of focus areas)
    - Setup
    - Description

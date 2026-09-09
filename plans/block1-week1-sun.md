@@ -44,6 +44,8 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 ### Contact warm-up (whole squad)
 
+**Groups:** whole squad, in pairs matched by size.
+
 **Coaching Points:** in the pummel — chest up, back flat, **head to the side**, hips low, arms working continuously. In Wrist Wrestle — stay low, feet moving, win it with body position rather than by yanking.
 
 **Setup:** everyone in pairs, **matched by size** — not by friendship, and not whoever is standing nearest. Whole squad together, no equipment.
@@ -61,6 +63,8 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 - If a pair is badly mismatched despite the pairing, break the three and rotate rather than leaving it.
 
 ### Hooker throw-in — the Cross-Bar Challenge (pull-out skill zone)
+
+**Groups:** hookers only — about three, with one coach.
 
 **Coaching Points:** consistent pre-throw routine (same feet, same grip, same ball position every time); ball back **behind the head**, both hands on it; **step into it** rather than throwing with the arms alone; follow through with the hands **pointing at the target**; eyes on the target, not the ball.
 
@@ -81,6 +85,8 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 ### Tackle Diamond
 
+**Groups:** two diamonds — three waves of about nine.
+
 **Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze** (see `activities.md`). Defence "wins" the rep if the tackle is completed over the halfway point of the diamond.
 
 **Setup:** **two diamonds side by side.** With ~28 players after the hookers peel off, rotate **three waves of ~9, ~4 min each**, each wave splitting four and five across the two diamonds. Straight out of the handling work and straight back.
@@ -93,6 +99,8 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 ### Whole-group intervention — Lineout positioning + laws
 
+**Groups:** whole squad together.
+
 **Coaching Points:** where each player stands in the line; lineouts are **uncontested** at U14 — no jumping/lifting, min 2 / max 13 players (see `laws.md`).
 
 **Setup:** whole squad, cones marking the 5m and 15m lines.
@@ -100,6 +108,8 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 **Description:** a short (2–3 min), single-voice coaching point delivered to everyone once the skill zones have folded back in — not a specialist skill zone, everyone needs to hear this once.
 
 ### Main game — Touch/tag, lineout restarts
+
+**Groups:** two games side by side — roughly 8 v 8.
 
 **Coaching Points:** line-speed (defence); handling and support lines (attack); using the lineout restart cleanly.
 
@@ -115,6 +125,8 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 - Reduce grid width if line-speed is too easy to beat; widen it if defence is dominating.
 
 ### Continuous Defence (backs, parallel to forwards' lineout work)
+
+**Groups:** the backs, while the forwards are in the lineout zone.
 
 **Coaching Points:** quick reorganisation and communication under repeated pressure from alternating directions.
 

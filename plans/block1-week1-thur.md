@@ -32,17 +32,6 @@
 
 *One coaching stoppage all session, and it splits so nobody stands watching. **Lineout positioning and lineout defence are never taught standing still** — both are coached in the pause every lineout gives you.*
 
-**Seven coaches on 27 players, so every group has its own voice** — which is what the drill splits need:
-
-| Coach | Passing (+5) | Two games (+19) | Lineout split (+39) and the join (+46) | One game (+51) |
-|---|---|---|---|---|
-| 1 | Hookers — pull-out at the posts | Refs channel A | Forwards set A | Refs |
-| 2 | Passing set A | Refs channel B | Forwards set B | Bag, one touchline |
-| 3 | Passing set B | Bag, between the channels | Backs — edge attack | Bag, the other touchline |
-| 4–7 | Cone both channels and the wide pitch, then feed players in and out | Bags, spread around both channels — **not clustered**, or there is only one direction to look | One to each shape at the join; the rest keep the bags going | Bags, spread right round |
-
-**Two of nearly everything, then one game to finish** — two passing sets, two channels, two forwards sets, two shapes at the join, and then the whole squad in one game. **One voice per group** — it slipped on Sunday in exactly this kind of segment.
-
 ## Activities
 
 ### Essential skills — passing (Crazy Passing)

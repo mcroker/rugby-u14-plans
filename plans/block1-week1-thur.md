@@ -9,7 +9,7 @@
 | **Coaches** | Steve, Tom, Bev, Tiggy, Andy, Jeff, Martin. *(Matt absent.)* |
 | **Attendance** | 27 expected, 9 unanswered, 6 declined. *(Actual — fill in on the night.)* |
 | **Session objective** | Passing as the week's core skill. **Both sides of the lineout** — the attacking shape and defending theirs — built on Sunday's positioning, with the hooker throw ticking over. **Bang** introduced, and the games conditioned hard for defence. Touch throughout. |
-| **Resources required** | Balls, **bibs in two colours** (one game, two teams), **cones in two colours** (the narrow channel inside the wide pitch, both go out at once), poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
+| **Resources required** | Balls, **bibs or headbands for one team**, **cones in two colours** (the narrow channel inside the wide pitch, both go out at once), poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
 
@@ -47,11 +47,11 @@
 
 ### Essential skills — passing (Crazy Passing)
 
-**Groups:** two sets of twelve — three lines of four in each.
+**Groups:** the two teams, one set each — three lines of four, hookers out.
 
 **Coaching Points:** elbow up, hands out, catch early; call for it before it comes. Once the second ball goes in, the demand is awareness — knowing where both balls are without stopping to look.
 
-**Setup:** players in three lines (A, B, C), spaced for passing. **Two separate sets, not one long one** — the Training Area is a square, so use its width and halve the queue. With the hookers pulled out that is about **twelve a set, four to a line**. Full detail in `activities.md`.
+**Setup:** players in three lines (A, B, C), spaced for passing. **Two separate sets, not one long one** — the Training Area is a square, so use its width and halve the queue. **One set per team**, so the sets are the teams picked in the warm-up; with the hookers pulled out that is about **twelve a set, four to a line**. Full detail in `activities.md`.
 
 **Description:** the ball zig-zags down the lines, each player filling in behind the line they passed to. Add a second ball once the basic pattern is running cleanly — that is the point of the drill, not an optional extra.
 
@@ -245,6 +245,7 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 ## Notes
 
+- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, each with a sensible number of forwards and backs. **Everything splits along that line all night** — the two passing sets, the two packs at +39, the two shapes at +46, and the game itself. Nothing after the warm-up should start with picking sides.
 - **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
 - **Meet 18:35 for an 18:45 start, finishing 20:15** — both ends differ from the old 7–8pm; make that clear on Spond.
 - **No contact — touch throughout**, the counter-maul included. **No scrum.** Both come on Sunday 13 Sep.

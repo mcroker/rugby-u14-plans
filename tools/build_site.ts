@@ -610,7 +610,7 @@ function warmupEntry(): string {
   return [
     "### Player-led warm-up",
     "",
-    "**Groups:** whole squad together.",
+    "**Groups:** the session's two teams, in lines — one side bibbed.",
     "",
     `**Coaching Points:** ${quality}`,
     "",

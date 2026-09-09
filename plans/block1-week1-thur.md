@@ -38,84 +38,90 @@
 
 **Groups:** two sets of twelve — three lines of four in each.
 
-**Coaching Points:** elbow up, hands out, catch early; call for it before it comes. Once the second ball goes in, the demand is awareness — knowing where both balls are without stopping to look.
+**Coaching Points:** elbow up, hands out, catch early. Call for it before it comes. With two balls, know where both are without looking.
 
-**Setup:** players in three lines (A, B, C), spaced for passing. **Two separate sets, not one long one** — the Training Area is a square, so use its width and halve the queue. With the hookers pulled out that is about **twelve a set, four to a line**. **Split it however you like** — the two sets need equal numbers, not the night's two teams. Full detail in `activities.md`.
+**Setup:** three lines (A, B, C), spaced for passing. Two sets, not one long one — use the square's width. Twelve a set, four to a line, split however you like. Full detail in `activities.md`.
 
-**Description:** the ball zig-zags down the lines, each player filling in behind the line they passed to. Add a second ball once the basic pattern is running cleanly — that is the point of the drill, not an optional extra.
+**Description:** the ball zig-zags down the lines, each player following their pass to the back of the line they passed to. Second ball in once the pattern is clean.
 
 **Progressions:**
 - Second ball in.
-- Widen the spacing between lines so the pass has to travel.
-- Put a time limit on a full circuit and try to beat it.
+- Widen the spacing.
+- Time a full circuit, then beat it.
 
 **Adaptations:**
-- If the pattern keeps breaking down, take the second ball out and rebuild rather than letting it stay scrappy.
-- Shorten the spacing if passes are dropping short — a pass at full stretch teaches nothing.
+- Pattern breaking down: take the second ball out and rebuild.
+- Passes dropping short: shorten the spacing.
 
 ### Vocal warm-up — everyone shouts
 
 **Groups:** whole squad, one circle.
 
-**Coaching Points:** **everyone goes at once, and loudly** — together is what makes it safe, so nobody is put on the spot on their own. Two minutes, no more, then straight into the game.
+**Coaching Points:** everyone at once, loudly. Two minutes, no more, then straight into the game.
 
-**Setup:** no equipment — the coach stands in the middle.
+**Setup:** one circle, no equipment, coach in the middle.
 
-**Description:** the point is not the noise — it is that they have already used their voices once tonight before anyone asks them to call **Bang** or shout an item across the pitch. The first call of a session is the hardest one, and this gets it out of the way while it costs nothing.
+**Description:** three steps, two minutes.
 
-1. **All together** — on three, everyone shouts something daft: a word, a noise, the club name. Twice, and the second one louder than the first.
-2. **Teams against each other** — split into the two game teams and let each try to out-shout the other. Judge it, badly and obviously.
-3. **Round the circle** — everyone shouts their own name in turn, fast, no gaps. This is the one that matters: it is each player's own voice on its own, but it lasts a second and the next one is already coming.
+1. **All together** — on three, everyone shouts something daft. Twice, second one louder.
+2. **Teams against each other** — the two teams out-shout each other. Judge it badly and obviously.
+3. **Round the circle** — own name in turn, fast, no gaps.
 
-Then stop, and don't explain why you did it.
+Then stop, and don't explain it.
 
 **Adaptations:**
-- **Offer the opt-out up front, to the whole squad, before you start** — anyone who would rather not shout claps or stamps instead. Say it out loud so nobody has to ask.
-- If step 3 dies, go back to step 1 and finish there. Ending loud matters more than getting through all three.
-- Change what they shout week to week so it stays daft rather than becoming a routine they mumble.
+- **Offer the opt-out to the whole squad before you start** — clap or stamp instead of shouting.
+- Step 3 dying: back to step 1 and finish there.
+- Change what they shout week to week.
 
 ### Main game — Narrow touch, lineout restarts
 
 **Groups:** two games, 7 v 7 — each team halved, bibs against non-bibs in both.
 
-**Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday. **Lineout positioning is coached here, at the restarts** — 5m and 15m, uncontested (see `laws.md`). Set the first two or three properly and let the rest run.
+**Coaching Points:** line-speed off **Bang**; spacing and numbering up; the shuffling retreat; talk. Lineout positioning is coached at the restarts — 5m and 15m, uncontested (see `laws.md`). Set the first two or three, then let it run.
 
-**Setup:** **two games, 7 v 7**, in the two **narrow channels** side by side down the square, restarting every phase from an uncontested lineout throw — **three in the line, not five** (the minimum is two, see `laws.md`), so a small-sided team still has a backline to attack with. **Halve each of the night's two teams and cross them over**, so both games are bibs against non-bibs. Mark the throw on one touchline of each channel, with 5m and 15m scaled down to it. Three conditions on: **Bang** as the blitz trigger, **Springbok Touch** — first receiver caught holding the ball is a turnover, taken as a **lineout to the defence** — and the **Coach's Bag**, an item held up every half-minute or so, a try only counting if the scorer can name the last one. Twenty minutes, because all three arrive here. **Coaches take their bags and spread out around both channels** before this block — not clustered together, or there is only one direction to look. It is still daylight here, which is why the scanning condition lives in this block.
+**Setup:** two games, 7 v 7, in the two narrow channels side by side down the square. Every phase restarts from an uncontested lineout throw, **three in the line, not five** (minimum is two — see `laws.md`). Halve each of the night's two teams and cross them over. Mark the throw on one touchline of each channel, 5m and 15m scaled down to it. Twenty minutes. Coaches spread around both channels with their bags before the block starts — not clustered.
 
-**Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. **Two small games here on purpose** — this block is conditions and touches, not the shape, which is what the whole-team game after the split is for. **Narrow here on purpose** — this block is about line-speed winning; the pitch opens up after the lineout-attack split. **Springbok Touch is the line-speed scoreboard** — there is no separate line-speed scoring to run alongside it. Attack scores a bonus for a clean lineout catch leading to a try.
+**Description:** Sunday's game again, with three conditions:
 
-**Progressions:** **add them one at a time and leave each one in.** All three carry through into the second game block.
+- **Bang** — the blitz trigger (see `playbook.md`).
+- **Springbok Touch** — first receiver caught holding the ball is a turnover, taken as a lineout to the defence (see `activities.md`).
+- **Coach's Bag** — an item held up every half-minute or so; a try only counts if the scorer can name the last one (see `activities.md`).
 
-- **Bang** as the blitz trigger (see `playbook.md`) — this is its first outing, so expect to stop the game to reset it a few times.
-- **Springbok Touch** (see `activities.md`): **if the first receiver is caught with the ball still in hand, it's a turnover** — and the turnover is taken as a **lineout to the defending team**, not just handed over. That is how line-speed is rewarded tonight, and every defensive win manufactures another lineout.
-- **Scanning — the Coach's Bag** (see `activities.md`). Each coach has a bag and holds an item up for a few seconds every half-minute or so. **A try only counts if the scorer can name the last item shown.** This is **CTC** made to cost something (see `playbook.md`) — eyes up, and talk, because nothing stops a team-mate calling it across.
+Bonus to attack for a clean lineout catch leading to a try. Springbok Touch is the line-speed scoreboard — no separate line-speed scoring alongside it.
+
+**Progressions:** add one at a time and leave each in. All three carry into the second game.
+
+- **Bang** first — expect to stop and reset it two or three times.
+- **Springbok Touch** second.
+- **Coach's Bag** third.
 
 **Adaptations:**
-- Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
-- **Shorten the line before you shorten the team.** If a game is short of bodies, go to two in the line rather than pulling a back out of it.
-- If one game is running away with it, swap a pair of players between the channels rather than stopping both.
-- If **Springbok Touch** is producing a turnover every single play, the channel is too narrow or the attack is standing too flat — fix the game before softening the condition.
-- If tries keep being disallowed on the item and the game is dying, let any team-mate answer for the scorer — that turns it straight into a communication drill.
+- Attack getting out too easily: narrow the channel. Defence smothering everything: widen it.
+- Short of bodies: two in the line, not one fewer back.
+- One game running away with it: swap a pair between the channels.
+- A turnover every play: channel too narrow, or the attack standing too flat.
+- Tries repeatedly disallowed on the item: let any team-mate answer.
 
 ### Lineout attack — forwards, 9 and 12: the two rucks
 
-Phases 1 and 2 of **5-man Rhino** (see `playbook.md`), on their own.
+**5-man Rhino**, phases 1–2 (see `playbook.md`).
 
 **Groups:** all forwards, plus both 9s and 12s — two sets of eight, one per game team.
 
-**Coaching Points:** **both rucks land in predictable places.** Nobody watches the ball and reacts — you already know where you are going, so go, and arrive before the ball does. Then **ball out of ruck 2 fast**: the backs are stood waiting on it.
+**Coaching Points:** both rucks land in predictable places — know where you are going before the ball moves. Ball out of ruck 2 fast.
 
-**Setup:** **5-man Rhino, phases 1–2** — forwards plus **9 and 12**, one lineout on the 15m line — **five in the line** (props, locks, 7), **hooker throwing**, and the **two spare forwards, typically 6 and 8**, in front of where 10 would stand. **Two sets side by side** — there are the forwards for it, so nobody is watching. **Make them the two game teams' packs**, so the join at +46 is only a matter of adding the backs. Walking pace to start.
+**Setup:** one lineout on the 15m line — five in the line (props, locks, 7), hooker throwing, two spare forwards (typically 6 and 8) in front of where 10 would stand. Two sets side by side, each one a game team's pack. Walking pace to start.
 
 **Description:**
 
-1. **Lineout** — ball off the top to **9**.
-2. **Ruck 1** — 9 to **6 and 8**, who carry. Resourced by them and **12**. Just off the line, every time.
+1. **Lineout** — off the top to 9.
+2. **Ruck 1** — 9 to 6 and 8, who carry. Resourced by them and 12. Just off the line, every time.
 3. **Ruck 2** — locks and 7 fold round and race there. Keep it tight.
-4. **Ball away from ruck 2** — 9 clears it to a cone, a coach, or nobody. There are no backs here; the job is that the ball is there, fast, when they are.
+4. **Ball away from ruck 2** — 9 clears it to a cone or a coach.
 5. **Hooker and props stay behind** — width on the next phase, and they defend the blind.
 
-Walk it twice, then run it at pace. Point at both ruck positions before the ball moves, then get there.
+Walk it twice, then at pace. Point at both ruck positions before the ball moves.
 
 ![5-man Rhino — Phase 1](claude/images/web/5man_rhino_phase1.png)
 
@@ -126,41 +132,41 @@ Walk it twice, then run it at pace. Point at both ruck positions before the ball
 *Phase 2 — forwards fold round for ruck 2.*
 
 **Progressions:**
-- Add a passive defence so the carriers are actually stopped.
-- Move the lineout to a different spot and ask where the two rucks land now.
-- Time it from throw to ball available at ruck 2, and try to beat it.
+- Passive defence, so the carriers are stopped.
+- Move the lineout, and ask where the two rucks land now.
+- Time throw to ball-available at ruck 2, then beat it.
 
 **Adaptations:**
-- If there are too few forwards for two sets, keep one set and rotate who throws every rep rather than leaving anyone standing.
+- Too few forwards for two sets: one set, rotating the thrower every rep.
 
 ### Lineout attack — backs: edge attack off a midfield run
 
-Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for phases 1 and 2.
+**5-man Rhino**, phase 3 on its own (see `playbook.md`).
 
 **Groups:** the remaining backs — one group of seven or eight, splitting to their teams at +46.
 
-**Coaching Points:** **depth and width before the ball, not after.** You are not starting from a lineout — you are starting from a ruck that has already happened, so be set on the edge before it comes.
+**Coaching Points:** depth and width set before the ball, not after.
 
-**Setup:** **5-man Rhino, phase 3 on its own** — the backs minus the two 12s and two 9s who are with the forwards sets, leaving **seven or eight**: a line of five or six, the rest as defenders. A coach or spare player at **9** on a marked ruck in midfield, and cones for the edge. Nothing else — this is phase 3 on its own.
+**Setup:** a coach or spare player at 9 on a marked ruck in midfield, cones for the edge. A line of five or six; the rest as defenders.
 
-**Description:** 9 delivers from the midfield ruck and the backs attack the open edge. Reset and go again straight away — this is a high-rep block, not a walk-through. Run it off both sides so the edge is not always the same one.
+**Description:** 9 delivers from the midfield ruck, backs attack the open edge. Reset and go again straight away — high-rep, not a walk-through. Run it off both sides.
 
 **Progressions:**
-- Passive defenders first, then a drifting defence that actually has to be beaten.
-- Call a backs move (see `playbook.md`) into it once the plain version is running.
+- Passive defenders first, then a drift that has to be beaten.
+- Add a backs move (see `playbook.md`).
 
 **Adaptations:**
-- If numbers are thin, play the extra bodies as defenders rather than shrinking the attacking line.
+- Thin numbers: extra bodies play as defenders rather than shrinking the attacking line.
 
 ### Lineout attack — put it together
 
 **Groups:** the two game teams — a couple of unopposed run-throughs each.
 
-**Coaching Points:** the join is the point: **the backs are already set when the ball leaves ruck 2.** If they are still walking into place, the two halves have not joined up.
+**Coaching Points:** the backs are set before the ball leaves ruck 2. Still walking into place means the two halves have not joined.
 
-**Setup:** **5-man Rhino, the whole shape** — **the two game teams, one shape each, side by side and unopposed**, everyone in their real positions. Each pack has just done phases 1–2 together, so this is only adding their backs. One coach on each. **12 comes across from ruck 1** — late, which is what will happen in a game.
+**Setup:** the whole shape, one per game team, side by side, unopposed. Each pack has just done phases 1–2, so this only adds their backs. 12 comes across from ruck 1, late.
 
-**Description:** **two or three run-throughs each, unopposed** — no defence at all. The join is the only thing being tested, and a defence would just obscure it. At pace, though: no walking it, both halves have just done their part.
+**Description:** two or three run-throughs each, no defence. At pace — no walking it.
 
 1. **Lineout** — off the top to 9.
 2. **Ruck 1** — 6 and 8 carry, resourced by them and 12.
@@ -173,64 +179,62 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 *Phase 3 — backs attack the open.*
 
 **Progressions:**
-- Straight back into the game — the teams are already made up, so the shape goes live off every lineout in the opposition half.
+- Straight into the game — the teams are already made up, so the shape goes live off every lineout in the opposition half.
 
-**Notes:** the **B/W/G** calls come in Week 2 — this is the shape, not the calls.
+**Notes:** the **B/W/G** calls come in Week 2 — the shape only.
 
 ### Back into the game
 
 **Groups:** one game, 13 v 14 — the two halves of each team back together.
 
-**Coaching Points:** both sides of the lineout are on every time — with the ball, **Attack off lineout** in the opposition half; off their throw, **the four jobs**: nearest two counter-maul and burst the seams, the rest pressure 9, hooker holds the channel, 9 and the tail-gunner shoot. Forwards know where both rucks are before the ball moves, and one job is one player's, known before the throw.
+**Coaching Points:** with the ball, **Attack off lineout** in the opposition half. Off their throw, the four jobs below — one job is one player's, known before the throw.
 
-**Setup:** **one game across the full width of the Training Area** — the two channels go, because the backs have just spent seven minutes on edge attack and need somewhere to put it, and **Bang, Springbok Touch and the bag all stay on**. **The four small teams rejoin into the night's two, 13 v 14**, and the line goes back to **five** — this is where the shape needs a full team behind it. Thirty-four minutes, so plan on two halves with a **team swap at about 19:53**, which is the water break as well.
+**Setup:** one game across the full width of the Training Area. The four small teams rejoin into the night's two, and the line goes back to five. **Bang, Springbok Touch and the bag all stay on.** Thirty-four minutes — two halves, with a **team swap at about 19:53**, which is the water break.
 
-**Description:** the lineout restarts now feed the shape on one side and the defensive picture on the other, rather than just restarting play.
+**Description:** the lineout restarts now feed the shape one way and the defensive jobs the other. Springbok Touch is harder on the wider pitch.
 
-**The width is the point, and it cuts both ways.** Attack finally has room for the edge off ruck 2. Defence has ground to cover, which is where connectedness actually shows — dog-legs appear when there is space between people, not when they are packed into a channel. **Springbok Touch gets harder here**, and that is the escalation from the first game rather than a softening of it.
+**Lineout defence — the four jobs off their throw.** Coached in the lineout pauses; there is no block for it.
 
-**Lineout defence is coached here, inside the game — there is no block for it.** The four jobs off their throw:
+1. **Nearest two — counter-maul.** Go the moment it's legal and burst through the seams. Don't settle in and push.
+2. **Rest of the line — pressure 9.** Through their line, legally enough not to be pinged.
+3. **Hooker — hold the channel.** Front peel covered.
+4. **9 and the tail-gunner — shoot** for the nearest back, or the blind-side winger if he is the threat.
 
-1. **Nearest two in the line — counter-maul.** Go the moment it's legal, and **burst through to attack the seams**. Don't settle in and push. Their maul set-up will be poor, so it is there to be gone through.
-2. **Rest of the line — pressure 9.** Through their line, just legally enough not to be pinged. No clean, unhurried delivery.
-3. **Hooker — stay in the channel.** That's the front-peel covered.
-4. **9 — at the back**, and with the **tail-gunner, shoot** for the nearest back — or the blind-side winger if he's the threat.
+How to coach it:
 
-**Every lineout is already a stoppage — that is the window, and it costs nothing.** The defending team is standing still waiting for a throw, over and over:
+- One job, one player, one lineout.
+- Coach the team that isn't throwing, while the other sets up. Ten seconds, then let it run.
+- Ask, don't tell — *"Whose is the front peel?"*
+- Let a wrong one play out and pick it up at the next lineout.
 
-- **One job, one player, one lineout.** Not four jobs to fifteen players.
-- **Coach the team that isn't throwing** while the other team sets up. Ten seconds in their ear, then let it run.
-- **Ask, don't tell.** *"Whose is the front peel?"* as they line up takes the same time as saying it, and is worth more.
-- **Let a wrong one play out** and pick it up at the next lineout rather than freezing the game. There will be another along in a minute — that's what the turnover-lineout condition is for.
+**No contact**, so the counter-maul is at touch: the nearest two touch the receiver the instant it's legal and step through the seam, everyone else at full speed. Discipline over aggression — an offside or obstruction penalty hands back what the pressure won.
 
-**No contact tonight**, so the counter-maul is at touch: the two nearest touch the receiver the instant it's legal and step through the seam, everyone else does their job at full speed. The drive itself waits for Sunday. **The discipline line matters more than the aggression** — a penalty for offside or obstruction hands back everything the pressure won.
+**Progressions:** one at a time, left in. Expect two, not the list.
 
-**Progressions:** two new ones, added one at a time and left in. **Expect to get through two, not the list** — the defence is already holding Bang, Springbok, the bag and four lineout jobs.
-
-- **Connected touch.** A touch only counts if a second defender is within a step of the man who made it. A dog-leg in the line means the touch doesn't count and the attack plays on — nobody defends on their own.
-- **One voice on Bang.** A nominated caller per phase, rotating, so the trigger comes from a person rather than from everyone at once. If a coach hears no call, the attack gets a free play.
-- Score it: a point for the first two forwards reaching ruck 2 before the ball is available.
-- *Optional, if the talk has gone flat:* **silence** — two minutes with no defensive talk at all, then take it off. They will feel the difference far better than they will be told it. Skip it if communication is already good; it is a fix, not a fixture.
+- **Connected touch** — a touch only counts if a second defender is within a step of it.
+- **One voice on Bang** — a nominated caller per phase, rotating. No call heard, and the attack gets a free play.
+- A point for the first two forwards reaching ruck 2 before the ball is available.
+- *If the talk has gone flat:* **silence** — two minutes with no defensive talk, then take it off. Skip it if communication is already good.
 
 **Adaptations:**
-- **The bag condition is the first thing to drop** if the game has stopped flowing, and it will get harder as the light goes. Everything else here is defence; that one is awareness, and it's the cheapest to lose.
-- If the defensive jobs are collapsing into everyone chasing the ball, take one lineout to reset them in the pause — **freezing a moving game is the last resort, not the first**.
-- Move the throw around the channel so the jobs are worked out afresh rather than remembered by where they stood last time.
-- Rotate who is on the throw so both halves of the squad get repetitions of both sides.
+- Game not flowing, or the light going: drop the bag condition first.
+- Jobs collapsing into ball-chasing: reset them in one lineout pause, not by stopping the game.
+- Move the throw around, so the jobs are worked out afresh each time.
+- Rotate who is on the throw.
 
 ### Hooker throw-in (pull-out skill zone)
 
 **Groups:** hookers only — three or four, with one coach.
 
-**Coaching Points:** the same cues as Sunday — consistent routine, ball back **behind the head**, both hands, step into it, follow through **pointing at the target**.
+**Coaching Points:** consistent routine, ball back **behind the head**, both hands, step into it, follow through **pointing at the target**.
 
-**Setup:** mark a 5-man line with cones, receiver at front, middle and back, plus the posts (or two poles at bar height) for the opening **Cross-Bar Challenge**. Hookers peel off with a coach during the passing block — twelve minutes, then back in for the whole main game.
+**Setup:** a 5-man line marked with cones, receivers at front, middle and back. Posts, or two poles at bar height, for the Cross-Bar Challenge. Hookers peel off during the passing block — twelve minutes, then back in for the whole main game.
 
-**Description:** **two minutes of the Cross-Bar Challenge at the posts** (see `activities.md`) to warm the arm up, then move to the marked line — the step up from Sunday, a real target at a real position rather than the bar. If our third of the 4G happens to include the posts, run the Cross-Bar Challenge again first as the warm-up for it; if not, two poles at bar height make a serviceable substitute.
+**Description:** two minutes of the Cross-Bar Challenge (see `activities.md`) to warm the arm up, then the marked line.
 
 **Progressions:**
-- Call the target as the hooker starts their routine, so they cannot pre-set.
-- Add a defender's hands over the target to force height.
+- Call the target as the hooker starts their routine.
+- A defender's hands over the target, to force height.
 
 ## Notes
 

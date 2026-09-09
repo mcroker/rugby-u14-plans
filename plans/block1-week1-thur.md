@@ -9,7 +9,7 @@
 | **Coaches** | Steve, Tom, Bev, Tiggy, Andy, Jeff, Martin. *(Matt absent.)* |
 | **Attendance** | 27 expected, 9 unanswered, 6 declined. *(Actual — fill in on the night.)* |
 | **Session objective** | Passing as the week's core skill. **Both sides of the lineout** — the attacking shape and defending theirs — built on Sunday's positioning, with the hooker throw ticking over. **Bang** introduced, and the games conditioned hard for defence. Touch throughout. |
-| **Resources required** | Balls, **bibs or headbands for one team**, **cones in two colours** (the narrow channel inside the wide pitch, both go out at once), poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
+| **Resources required** | Balls, **bibs or headbands for one team**, **cones in two colours** (two narrow channels inside the wide pitch, all of it goes out at once), poles, ruck shields. **Each coach brings a bag of random items** for the scanning condition — a cone, a glove, a bottle, a tape roll; anything, as long as it's nameable. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
 
@@ -34,14 +34,14 @@
 
 **Seven coaches on 27 players, so every group has its own voice** — which is what the drill splits need:
 
-| Coach | Passing (+5) | Both games | Lineout split (+39) and the join (+46) |
-|---|---|---|---|
-| 1 | Hookers — pull-out at the posts | Refs the game | Forwards set A |
-| 2 | Passing set A | Bag, one touchline | Forwards set B |
-| 3 | Passing set B | Bag, the other touchline | Backs — edge attack |
-| 4–7 | Cone the channel and the wide pitch, then feed players in and out | Bags, spread right round — **not clustered**, or there is only one direction to look | One to each shape at the join; the rest keep the bags going |
+| Coach | Passing (+5) | Two games (+19) | Lineout split (+39) and the join (+46) | One game (+51) |
+|---|---|---|---|---|
+| 1 | Hookers — pull-out at the posts | Refs channel A | Forwards set A | Refs |
+| 2 | Passing set A | Refs channel B | Forwards set B | Bag, one touchline |
+| 3 | Passing set B | Bag, between the channels | Backs — edge attack | Bag, the other touchline |
+| 4–7 | Cone both channels and the wide pitch, then feed players in and out | Bags, spread around both channels — **not clustered**, or there is only one direction to look | One to each shape at the join; the rest keep the bags going | Bags, spread right round |
 
-**The game stays whole; the drills split in two** — two passing sets, two forwards sets, two shapes at the join. Six coaches with bags round one pitch is what the scanning condition wants anyway. **One voice per group** — it slipped on Sunday in exactly this kind of segment.
+**Two of nearly everything, then one game to finish** — two passing sets, two channels, two forwards sets, two shapes at the join, and then the whole squad in one game. **One voice per group** — it slipped on Sunday in exactly this kind of segment.
 
 ## Activities
 
@@ -87,13 +87,13 @@ Then stop, and don't explain why you did it.
 
 ### Main game — Narrow touch, lineout restarts
 
-**Groups:** one game, 13 v 14.
+**Groups:** two games, 7 v 7 — each team halved, bibs against non-bibs in both.
 
 **Coaching Points:** line-speed off the **Bang** call; spacing and numbering up; the shuffling retreat; talk. In a narrow channel, defence should be winning more than it did on Sunday. **Lineout positioning is coached here, at the restarts** — 5m and 15m, uncontested (see `laws.md`). Set the first two or three properly and let the rest run.
 
-**Setup:** **one game, 13 v 14**, in a **narrow channel** down the square, restarting every phase from an uncontested lineout throw. **Don't split it into two** — a five-man lineout, a hooker and a 9 is seven players already, so a small-sided team is all lineout and no backline. Mark the throw on one touchline of the channel, with 5m and 15m scaled down to it. Three conditions on: **Bang** as the blitz trigger, **Springbok Touch** — first receiver caught holding the ball is a turnover, taken as a **lineout to the defence** — and the **Coach's Bag**, an item held up every half-minute or so, a try only counting if the scorer can name the last one. Twenty minutes, because all three arrive here. **Coaches take their bags and spread out right round the pitch** before this block — not clustered together, or there is only one direction to look. It is still daylight here, which is why the scanning condition lives in this block.
+**Setup:** **two games, 7 v 7**, in the two **narrow channels** side by side down the square, restarting every phase from an uncontested lineout throw — **three in the line, not five** (the minimum is two, see `laws.md`), so a small-sided team still has a backline to attack with. **Halve each of the night's two teams and cross them over**, so both games are bibs against non-bibs. Mark the throw on one touchline of each channel, with 5m and 15m scaled down to it. Three conditions on: **Bang** as the blitz trigger, **Springbok Touch** — first receiver caught holding the ball is a turnover, taken as a **lineout to the defence** — and the **Coach's Bag**, an item held up every half-minute or so, a try only counting if the scorer can name the last one. Twenty minutes, because all three arrive here. **Coaches take their bags and spread out around both channels** before this block — not clustered together, or there is only one direction to look. It is still daylight here, which is why the scanning condition lives in this block.
 
-**Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. **Narrow here on purpose** — this block is about line-speed winning; the pitch opens up after the lineout-attack split. **Springbok Touch is the line-speed scoreboard** — there is no separate line-speed scoring to run alongside it. Attack scores a bonus for a clean lineout catch leading to a try.
+**Description:** the same game as Sunday, restarting each phase from an uncontested lineout throw — returning to it a second time is the point, with the constraints tightened rather than the game replaced. **Two small games here on purpose** — this block is conditions and touches, not the shape, which is what the whole-team game after the split is for. **Narrow here on purpose** — this block is about line-speed winning; the pitch opens up after the lineout-attack split. **Springbok Touch is the line-speed scoreboard** — there is no separate line-speed scoring to run alongside it. Attack scores a bonus for a clean lineout catch leading to a try.
 
 **Progressions:** **add them one at a time and leave each one in.** All three carry through into the second game block.
 
@@ -103,8 +103,8 @@ Then stop, and don't explain why you did it.
 
 **Adaptations:**
 - Narrow the channel further if attack is getting out too easily; widen it a little if defence is smothering everything and the game has stopped flowing.
-- **The channel is narrow relative to a full team, not to a small-sided game** — start it wider than it looks like it should be and squeeze it once you see the line-speed working.
-- If turnout collapses on the night, keep one game and shorten the lineout to four rather than splitting into two games — the teams are what matter here, not the pitch count.
+- **Shorten the line before you shorten the team.** If a game is short of bodies, go to two in the line rather than pulling a back out of it.
+- If one game is running away with it, swap a pair of players between the channels rather than stopping both.
 - If **Springbok Touch** is producing a turnover every single play, the channel is too narrow or the attack is standing too flat — fix the game before softening the condition.
 - If tries keep being disallowed on the item and the game is dying, let any team-mate answer for the scorer — that turns it straight into a communication drill.
 
@@ -190,11 +190,11 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 ### Back into the game
 
-**Groups:** the same one game, 13 v 14.
+**Groups:** one game, 13 v 14 — the two halves of each team back together.
 
 **Coaching Points:** both sides of the lineout are on every time — with the ball, **Attack off lineout** in the opposition half; off their throw, **the four jobs**: nearest two counter-maul and burst the seams, the rest pressure 9, hooker holds the channel, 9 and the tail-gunner shoot. Forwards know where both rucks are before the ball moves, and one job is one player's, known before the throw.
 
-**Setup:** **the same game, opened out to the full width of the Training Area** — the narrow channel goes, because the backs have just spent seven minutes on edge attack and need somewhere to put it, and **Bang, Springbok Touch and the bag all stay on**. **Still one game, 13 v 14** — same teams as the first block. Thirty-four minutes, so plan on two halves with a **team swap at about 19:53**, which is the water break as well.
+**Setup:** **one game across the full width of the Training Area** — the two channels go, because the backs have just spent seven minutes on edge attack and need somewhere to put it, and **Bang, Springbok Touch and the bag all stay on**. **The four small teams rejoin into the night's two, 13 v 14**, and the line goes back to **five** — this is where the shape needs a full team behind it. Thirty-four minutes, so plan on two halves with a **team swap at about 19:53**, which is the water break as well.
 
 **Description:** the lineout restarts now feed the shape on one side and the defensive picture on the other, rather than just restarting play.
 
@@ -245,11 +245,11 @@ Phase 3 of **5-man Rhino** (see `playbook.md`), practised without waiting for ph
 
 ## Notes
 
-- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, each with a sensible number of forwards and backs. **Everything from +39 splits along that line** — the two packs, the two shapes at +46, and the game itself. Nothing there should start with picking sides. Crazy Passing is the exception: two equal sets, split however you like.
+- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, each with a sensible number of forwards and backs. **Everything from +19 splits along that line** — at +19 halve each team and cross them over so both small games are bibs against non-bibs, then rejoin for the packs at +39, the shapes at +46, and the one game at +51. Nothing there should start with picking sides. Crazy Passing is the exception: two equal sets, split however you like.
 - **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
 - **Meet 18:35 for an 18:45 start, finishing 20:15** — both ends differ from the old 7–8pm; make that clear on Spond.
 - **No contact — touch throughout**, the counter-maul included. **No scrum.** Both come on Sunday 13 Sep.
-- **Cone both pitches during the warm-up** — the narrow channel inside the wide one, two colours. The first game is narrow, the second wide; don't run both in one channel.
+- **Cone all of it during the warm-up** — two narrow channels side by side down the square, in one colour, and the full square in the other. The first block is two narrow games, the second one wide game; don't try to run either in the other's markings.
 - **Every coach needs a bag of items** — say so on the coaches' thread beforehand. Whatever is in the boot, but **big and high-contrast**: sunset is 19:28.
 - **Conditions are cumulative, not a menu.** Add them in the order listed and leave each one in. Expect to get through two in the second game, not the list.
 - **Bang is new.** Stop the game properly the first two or three times to reset it rather than letting a half-understood call run.

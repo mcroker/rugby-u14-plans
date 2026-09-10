@@ -18,7 +18,7 @@ Session-by-session plans, organised by 6-week block (see `coaching.md` for the b
 
 Every training session carries the **defence** thread plus a forwards-skill focus (lineout or scrum, alternating by week rather than day). Where the forwards are tied up in a set-piece skill zone, the backs get their own parallel focus, kept in line with the block's theme rather than a separate attacking agenda.
 
-Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, not training — listed below for the calendar picture only, since we don't run training on match days.
+Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, not training — listed below for the calendar picture only, since we don't run training on match days. **Both are split Sundays, and 11 Oct is only half a match day:** on 27 Sep Blue are home and White away at Sheppey, and on 11 Oct Blue are away at Vigo while **White have no fixture and train** (see `calendar.md`).
 
 **Open items still to confirm:**
 
@@ -47,14 +47,15 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 | 4 | Thu 1 Oct | Training — work-ons from the fixture | **Needed** | Whatever the match showed needs work | ″ | ″ | ″ | ″ |
 | 5 | Sun 4 Oct | Training | **Needed** | Tackle — ruck (2v2) | All four pillars, full-team | Lineout — 8-man catch and drive | Receiving off the fold, playing width *(flagged above)* | — |
 | 5 | Thu 8 Oct | Training | **Needed** | Passing — pull-back pass | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
-| 6 | Sun 11 Oct | Match — Kent League R2 | — *(no plan; match day)* | — | — | — | — | — |
+| 6 | Sun 11 Oct | Match — Kent League R2 *(Blue, away)* | — *(no plan; match day)* | — | — | — | — | — |
+| 6 | Sun 11 Oct | Training — **White only**, half squad | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 | 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 
-**Run-sheets still to write.** This block has **ten training sessions**. Two have a detailed run-sheet in `plans/`; the other **eight** do not, and are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **eleven training sessions**. Two have a detailed run-sheet in `plans/`; the other **nine** do not, and are marked **Needed** in the table above. In date order:
 
-**Sun 13 Sep** · **Thu 17 Sep** · **Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Thu 15 Oct** *(block wrap-up)*
+**Sun 13 Sep** · **Thu 17 Sep** · **Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
 
-The two match days (Sun 27 Sep, Sun 11 Oct) need no run-sheet — we don't train on match days (see `age-group.md`). The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/` and a `PLAN_META` entry, after which it appears on the site by itself.
+Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/` and a `PLAN_META` entry, after which it appears on the site by itself.
 
 ### Outline session plans for each week
 
@@ -98,9 +99,11 @@ The two match days (Sun 27 Sep, Sun 11 Oct) need no run-sheet — we don't train
 
 **Backs-skill focus:** receiving cleanly off the lineout fold and playing with width. *(Two specific approaches to this were discussed and agreed — see the open item above; this is a placeholder pending that detail.)*
 
-#### Week 6 — Sun 11 Oct (Match — Kent League R2) & Thu 15 Oct (block wrap-up)
+#### Week 6 — Sun 11 Oct (Blue: Kent League R2 away; White: training) & Thu 15 Oct (block wrap-up)
 
-**Sunday — match day, no session plan.** The last fixture of the block — a live look at pressure defence, lineout, and scrum together, which should inform Block 2's planning (see `Future blocks` below — Block 2's intent is continuity).
+**Sunday — a match day for Blue only, away at Vigo.** No session plan for them. The last fixture of the block — a live look at pressure defence, lineout, and scrum together, which should inform Block 2's planning (see `Future blocks` below — Block 2's intent is continuity).
+
+**Sunday — White train, half squad, fewer coaches.** With Blue travelling to Vigo, White are the only team on the ground. Plan it as its own session rather than a shrunken whole-squad one: the block's material combined — passing, defence, set-piece, backs — and, with the block wrap-up four days later, a place to consolidate rather than introduce. White are the developmental side, so the extra room per player is the point of the session, not a constraint on it.
 
 **Thursday — block wrap-up.** Passing as the core skill, with defence, set-piece, and backs all touched lightly in combination rather than introducing anything new — closing out the block before Block 2 begins.
 
@@ -120,9 +123,10 @@ Ideas and skills that came up while planning Block 1 but aren't part of it — k
 
 | Date | Who trains | Who is playing |
 |---|---|---|
-| **Sun 15 Nov** | **Blue** | White, home v Canterbury U14 Black (Round 3) |
-| **Sun 13 Dec** | **White** | Blue, away at Sevenoaks RFC U14M (Round 5) |
+| **Sun 15 Nov** | **Blue** | White, home v Beccehamian Gladiators (Round 3) |
 
-Both are single-team sessions with roughly half the usual numbers and, if the coaches split with the travelling team, fewer coaches — so plan them as their own thing rather than a shrunken whole-squad session. **Three of Block 2's half-squad Sundays are White** (18 Oct and 8 Nov, when Blue have friendlies, plus 13 Dec) against **one for Blue** (15 Nov), which is worth using deliberately: White is the developmental side, and that is three sessions at a group size the full squad never allows.
+A single-team session with roughly half the usual numbers and, if the coaches split with the travelling team, fewer coaches — so plan it as its own thing rather than a shrunken whole-squad session.
+
+**The updated fixture list moved the other one out of Block 2 and into Block 1.** White's free round is now **11 Oct**, not 13 Dec; on 13 Dec White are at home to Canterbury and both teams are out. Block 2's half-squad Sundays are therefore **two White** (18 Oct and 8 Nov, when Blue have friendlies) and **one Blue** (15 Nov). White is the developmental side, and those two — plus 11 Oct at the end of Block 1 — are sessions at a group size the full squad never allows.
 
 *(Further detail to be added as the block is planned.)*

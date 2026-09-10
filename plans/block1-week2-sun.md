@@ -8,7 +8,7 @@
 | **Location** | The right half of Pitch 2, St Marks. Free from 10:30. |
 | **Coaches** | *(Fill in on the night.)* |
 | **Attendance** | 30 attending, 6 unanswered, 6 declined. *(Actual — fill in on the night.)* |
-| **Session objective** | **Scrum — the squad's first exposure, contested.** 8-man setup, crouch–bind–set, tower of power, the 9–hooker feed and 8 controlling the base, then **DSP** off it. Tackle as the core skill, the diamond returning. **B/W/G** lineout calls introduced. One 15-a-side game, scored so line-speed **and** communication both count. |
+| **Session objective** | **Scrum — the squad's first exposure, contested.** 8-man setup, crouch–bind–set, tower of power, the 9–hooker feed and 8 controlling the base, then **DSP** off it. Tackle as the core skill, the diamond returning. One 15-a-side game, scored so line-speed **and** communication both count. |
 | **Resources required** | Balls, **bibs or headbands for one team**, cones, ruck shields, **mats for the tackle diamonds** — check they can be got hold of. Scrum machine only if we are short of a second pack. |
 
 ![Pitch 2, right half. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
@@ -21,12 +21,11 @@
 | +5, 2 min | **Contact warm-up** | Whole squad, before any contact — get low, pummelling, Wrist Wrestle |
 | +7, 14 min | Essential skills — passing (Crazy Passing) | Main group, while the tackle diamonds run out of it |
 | +7, 14 min *(parallel pull-out)* | Tackle Diamond | Tackle technique, two diamonds on mats, three waves |
-| +21, 4 min | Whole-group intervention: the **B/W/G** lineout calls | Front, middle, back — the letter carries the call |
-| +25, 25 min *(forwards)* | Scrum — 8-man setup to contested | Body position, crouch–bind–set, the feed, ball controlled at the base |
-| +25, 25 min *(backs)* | **DSP** + line-pressure defence off scrum | Set before the ball leaves the base — both sides of it |
-| +50, 5 min | Scrum to **DSP** — put it together | One scrum, both halves, unopposed |
-| +55, 30 min | Main game: 15-a-side, scrum and lineout restarts | Everything live — **Bang**, the scoreboard, B/W/G at the restarts |
-| +85, 5 min | Cool-down / close | Recap the scrum sequence and B/W/G; pick next week's warm-up leader |
+| +21, 27 min *(forwards)* | Scrum — 8-man setup to contested | Body position, crouch–bind–set, the feed, ball controlled at the base |
+| +21, 27 min *(backs)* | **DSP** + line-pressure defence off scrum | Set before the ball leaves the base — both sides of it |
+| +48, 5 min | Scrum to **DSP** — put it together | One scrum, both halves, unopposed |
+| +53, 32 min | Main game: 15-a-side, scrum restarts | Everything live — **Bang**, the scoreboard, the scrum as the only set piece |
+| +85, 5 min | Cool-down / close | Recap the scrum sequence; pick next week's warm-up leader |
 
 *The allocated slot is 10:45–12:30 (105 min). **U12M are on our half until 10:30**, so the whole setup — warm-up cones, two diamonds, mats, the scrum marks, the game — goes out in that fifteen-minute changeover. If we start late, take it out of the game block; not out of the scrum block, which is the session.*
 
@@ -91,38 +90,13 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - A coach pulled away: one diamond, bigger waves.
 - Ground too hard even with mats: cut it to technique on knees and put the time into the game.
 
-### Whole-group intervention — the B/W/G lineout calls
-
-**Groups:** whole squad together, one voice.
-
-**Coaching Points:** the **letter** carries the call, not the word — any B word is front, any W word is middle, any G word is back. Mnemonic is the club colours (see `playbook.md`). Watch the clash with **Bull** in open play.
-
-**Setup:** whole squad, cones marking the 5m and 15m lines, a 5-man line stood up to point at.
-
-**Description:** three or four minutes, no more.
-
-| First letter | Colour | Target |
-|---|---|---|
-| **B...** | Blue | Front |
-| **W...** | White | Middle |
-| **G...** | Gold | Back |
-
-1. Name the three targets on a line stood up in front of the group.
-2. Give this week's three words — one per letter, and the same three all session.
-3. Two dry runs: call it, the line moves, hooker throws.
-
-Everything else about the lineout is coached at the game's restarts, not here.
-
-**Adaptations:**
-- Group not holding three: run B and G only, and add W in the game.
-
 ### Scrum — 8-man setup to contested (forwards)
 
 **Groups:** all forwards — two packs of eight, one per game team. Both 9s and both hookers with them.
 
 **Coaching Points:** **shoulders above hips, always.** Straight back, chin off the chest, eyes up, neck strong. Bind before anyone pushes. Nobody moves until **set**. Front rows matched for size. A scrum going down means everybody stops — say that once, out loud, before the first engage.
 
-**Setup:** two marked scrums on the flattest ground we have, packs facing off. Front rows picked for size, not for who wants to be there. Twenty-five minutes, built in the order below — do not skip ahead to the contest.
+**Setup:** two marked scrums on the flattest ground we have, packs facing off. Front rows picked for size, not for who wants to be there. Twenty-seven minutes, built in the order below — do not skip ahead to the contest.
 
 **Description:**
 
@@ -130,8 +104,8 @@ Everything else about the lineout is coached at the game's restarts, not here.
 2. **Front row binds (~4 min)** — three together, hooker gripping both props. Walk forward five steps holding the shape.
 3. **Add the locks, then the back row (~4 min)** — locks bind onto the props and put their heads in the gaps, 6 and 7 onto the locks, 8 between the locks. Eight as one unit, walking five steps.
 4. **Crouch–bind–set, unopposed (~4 min)** — the coach calls the cadence, the pack answers it. Five or six times, no opposition.
-5. **Pack v pack (~7 min)** — set on the cadence at **half pressure** for the first three, then full. **Count the engages: eight to ten, then stop.**
-6. **The feed and the base (~4 min)** — 9 calls the timing to the hooker, hooker strikes, **8 controls the ball at the base with his feet** and keeps it there. Ball back to 9 — **DSP**, not a pick-and-go (see `playbook.md`).
+5. **Pack v pack (~8 min)** — set on the cadence at **half pressure** for the first three, then full. **Count the engages: eight to ten, then stop.**
+6. **The feed and the base (~5 min)** — 9 calls the timing to the hooker, hooker strikes, **8 controls the ball at the base with his feet** and keeps it there. Ball back to 9 — **DSP**, not a pick-and-go (see `playbook.md`).
 
 **Progressions:**
 - Wheel it a few degrees and ask the pack to square up.
@@ -153,7 +127,7 @@ Everything else about the lineout is coached at the game's restarts, not here.
 
 **Coaching Points:** **attack — depth and width set before the ball leaves the base**, not after. **Defence — the trigger is the ball leaving the base**, not the ball reaching 10; number up outside the scrum, blindside winger owns the short side, and the line goes together on **Bang**.
 
-**Setup:** a marked scrum in midfield with a coach or spare player at 9 — the real 9s are in the scrum zone until +50. Cones for the edge. Run it off both sides of the field.
+**Setup:** a marked scrum in midfield with a coach or spare player at 9 — the real 9s are in the scrum zone until +48. Cones for the edge. Run it off both sides of the field.
 
 **Description:** 9 clears from the base, backs play **DSP** — ball to 10, then what's in front (see `playbook.md`). Defence pressures off the same picture. Two unopposed run-throughs, then live, and reset fast — high-rep, not a walk-through.
 
@@ -186,13 +160,13 @@ Everything else about the lineout is coached at the game's restarts, not here.
 **Progressions:**
 - Straight into the game — the teams are already made up, so the shape goes live off every scrum.
 
-### Main game — 15-a-side, scrum and lineout restarts
+### Main game — 15-a-side, scrum restarts
 
 **Groups:** one game, 15 a side — the night's two teams, whole. Not two small games.
 
-**Coaching Points:** **Bang** off the scrum and in open play. Spacing, numbering up, the shuffling retreat, talk. B/W/G called at every lineout. Two seconds at the ruck.
+**Coaching Points:** **Bang** off the scrum and in open play. Spacing, numbering up, the shuffling retreat, talk. Two seconds at the ruck.
 
-**Setup:** one game across the full half-pitch. Every restart is a set piece: **a scrum** after a knock-on, a turnover or a try, **a lineout** when the ball goes to touch, five in the line. In the game the scrums are **set properly but pushed passively** — the contest happened in the scrum block. Thirty minutes, with a **team swap and water at about 12:00**.
+**Setup:** one game across the full half-pitch. **Every restart is a scrum** — knock-on, turnover or try. Ball into touch is a quick tap on the 5m, not a lineout. In the game the scrums are **set properly but pushed passively** — the contest happened in the scrum block. Thirty-two minutes, with a **team swap and water at about 11:55**.
 
 **Description:** starts at **Presentation Touch** — on a touch the carrier goes down, turns, and presents long for the support player to pick (see `activities.md`). **Step up to full contact for the last ten minutes if the ground allows it**; that is a call on the day, not a plan.
 
@@ -205,19 +179,18 @@ Conditions, cumulative, added in this order and left in:
 **Progressions:**
 - Rotate the nominated caller every few phases.
 - A point for the pack whose scrum delivers a clean ball to 9 first time.
-- A point for the team that wins a lineout on a called target.
 - *If the talk has gone flat:* two minutes of **silence** — no defensive talk at all — then take it off.
 
 **Adaptations:**
 - Too many scrums: turnovers restart with a tap, and keep the scrum for knock-ons only.
-- Ground hard, or the tackle count climbing: stay at Presentation Touch for the full thirty.
+- Ground hard, or the tackle count climbing: stay at Presentation Touch throughout.
 - One team running away with it: swap a pair over at the water break.
 - Line-speed beating the attack every play: widen the pitch. Attack getting out too easily: narrow it.
 - Numbers up to 36 if the unanswered arrive: rolling subs off the touchline, still one game.
 
 ## Notes
 
-- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, and **each needs eight forwards** — the packs at +25, the shapes at +50 and the game at +55 all split along that line. Crazy Passing is the exception: two equal sets, split however you like.
+- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, and **each needs eight forwards** — the packs at +21, the shapes at +48 and the game at +53 all split along that line. Crazy Passing is the exception: two equal sets, split however you like.
 - **Contested scrum is the session.** It only happens on a Sunday, when we can field two full packs. If the forwards are short, fix it with a back in the second row or the machine — don't move the block.
 - **The engages are counted, not open-ended.** Eight to ten in the block, and the game's scrums are passive on top of that. First contested scrums of these players' lives, half of them also playing schools rugby (see `age-group.md`).
 - **The tackle base is not revision.** Week 1 pulled back from full contact because of the surface, so the diamond is building it, not reviewing it. **Mats** — check before the day; without them, cut the volume rather than tackle onto bare ground.
@@ -227,7 +200,7 @@ Conditions, cumulative, added in this order and left in:
 - **Get the kit out fast.** U12M are on our half until 10:30 for a 10:45 start: cones, two diamonds, mats, the scrum marks. Two or three coaches on setup while the rest greet players.
 - **Repeated from last week**, as the coaches asked: the same warm-up, the same diamond, the same passing game, **Bang** and Springbok Touch again from Thursday.
 - **Pick next week's warm-up leader at the close**, not on the day (see `warmup.md`).
-- The **5-man Rhino** strike move off the lineout is Thursday's and Week 5's work; today the lineout is the B/W/G calls at the restarts only.
+- **No lineout in this session.** Ball into touch is a tap, and the **B/W/G** calls are not introduced today — the whole set-piece slot is the scrum. They still need a week (see `blocks.md`).
 
 ## Review — what actually happened
 

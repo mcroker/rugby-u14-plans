@@ -123,7 +123,7 @@ const PLAN_META: Record<string, PlanMeta> = {
     sub2: "Sun 13 Sep 2026, 10.45am–12.30pm",
     crumb: "Week 2 (Sun)",
     draft: true,
-    card: "Run-sheet for the squad's first scrum session: contested 8-man scrum, DSP, tackle diamond, and the B/W/G lineout calls.",
+    card: "Run-sheet for the squad's first scrum session: contested 8-man scrum, DSP, and the tackle diamond.",
     badge: "13 Sep",
   },
   "block1-week1-thur.md": {

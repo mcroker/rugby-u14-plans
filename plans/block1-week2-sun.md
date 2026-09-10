@@ -6,7 +6,7 @@
 |---|---|
 | **Date/Time** | **Sun 13 Sep 2026, 10:45am – 12:30pm.** 90 min on the pitch. |
 | **Location** | The right half of Pitch 2, St Marks. Free from 10:30. |
-| **Coaches** | *(Fill in on the night.)* |
+| **Coaches** | Steve, Tom, Matt, Bev, Jeff, Tiggy, Andy, Martin — **all eight out.** |
 | **Attendance** | 30 attending, 6 unanswered, 6 declined. *(Actual — fill in on the night.)* |
 | **Session objective** | **Scrum — the squad's first exposure, contested.** 8-man setup, crouch–bind–set, tower of power, the 9–hooker feed and 8 controlling the base, then **DSP** off it. Tackle as the core skill, the diamond returning. One 15-a-side game, scored so line-speed **and** communication both count. |
 | **Resources required** | Balls, **bibs or headbands for one team**, cones, ruck shields, **mats for the tackle diamonds** — check they can be got hold of. Scrum machine only if we are short of a second pack. |
@@ -86,6 +86,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - Two defenders, one carrier — first man low, second man on the ball.
 
 **Adaptations:**
+- Mats for a third diamond: run three, waves of ten split across them — there are the coaches for it.
 - No mats available: drop to two waves and take the pace out of the carrier.
 - A coach pulled away: one diamond, bigger waves.
 - Ground too hard even with mats: cut it to technique on knees and put the time into the game.
@@ -196,7 +197,7 @@ Conditions, cumulative, added in this order and left in:
 - **The tackle base is not revision.** Week 1 pulled back from full contact because of the surface, so the diamond is building it, not reviewing it. **Mats** — check before the day; without them, cut the volume rather than tackle onto bare ground.
 - **Defence lives in the game this week, not beside it.** No standalone defensive drill; the 15-a-side game and its scoreboard are where line-speed and communication get worked.
 - **One game, not two.** A contested scrum plus a 9 is nine players, so a small-sided game can't carry one (see `activities.md`).
-- **One voice per segment**, and the scrum block is where it will slip — one coach per pack, and the safety call comes from one of them.
+- **One voice per segment.** All eight coaches are out, which is how it slipped in Week 1. The scrum block is where it will slip again — **one coach per pack**, and the safety call comes from that coach only. Agree the segments during the warm-up.
 - **Get the kit out fast.** U12M are on our half until 10:30 for a 10:45 start: cones, two diamonds, mats, the scrum marks. Two or three coaches on setup while the rest greet players.
 - **Repeated from last week**, as the coaches asked: the same warm-up, the same diamond, the same passing game, **Bang** and Springbok Touch again from Thursday.
 - **Pick next week's warm-up leader at the close**, not on the day (see `warmup.md`).

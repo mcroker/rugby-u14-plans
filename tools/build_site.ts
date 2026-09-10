@@ -115,6 +115,17 @@ interface PlanMeta {
 }
 
 const PLAN_META: Record<string, PlanMeta> = {
+  "block1-week2-sun.md": {
+    date: "2026-09-13",
+    start: "10:45",
+    h1: "Week 2 — Sunday",
+    sub: "First contested scrum — 8-man setup, the feed, and DSP off the base.",
+    sub2: "Sun 13 Sep 2026, 10.45am–12.30pm",
+    crumb: "Week 2 (Sun)",
+    draft: true,
+    card: "Run-sheet for the squad's first scrum session: contested 8-man scrum, DSP, tackle diamond, and the B/W/G lineout calls.",
+    badge: "13 Sep",
+  },
   "block1-week1-thur.md": {
     date: "2026-09-10",
     start: "18:45",

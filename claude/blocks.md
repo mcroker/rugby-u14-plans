@@ -39,7 +39,7 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 |---|---|---|---|---|---|---|---|---|
 | 1 | Sun 6 Sep | Training | `block1-week1-sun.md` | Tackle | Blitz, line-org | Lineout — where to stand, laws | Defensive alignment (Continuous Defence) while forwards are in the lineout zone | Hooker lineout throw |
 | 1 | Thu 10 Sep | Training | `block1-week1-thur.md` *(draft)* | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
-| 2 | Sun 13 Sep | Training | **Needed** | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
+| 2 | Sun 13 Sep | Training | `block1-week2-sun.md` | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
 | 2 | Thu 17 Sep | Training | **Needed** | Passing | Blitz, line-org | Scrum — position/technique, non-contested | Exit kicks — introduce (technique, then kick + chase/regather) | 9 + hooker scrum strike, back-row ball control |
 | 3 | Sun 20 Sep | Training | **Needed** | Tackle | Ruck-defence | Defending the lineout — pressure on 9 & 10 | Defending against kicks (system TBC) | — |
 | 3 | Thu 24 Sep | Pre-match (sharpen) | **Needed** | Passing — introduce pull-back pass (Hippo) | Ruck-defence | Set-piece, lightly (both areas) | Defending against kicks, lightly | — |
@@ -51,9 +51,9 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 | 6 | Sun 11 Oct | Training — **White only**, half squad | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 | 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 
-**Run-sheets still to write.** This block has **eleven training sessions**. Two have a detailed run-sheet in `plans/`; the other **nine** do not, and are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **eleven training sessions**. Three have a detailed run-sheet in `plans/`; the other **eight** do not, and are marked **Needed** in the table above. In date order:
 
-**Sun 13 Sep** · **Thu 17 Sep** · **Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
+**Thu 17 Sep** · **Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
 
 Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/` and a `PLAN_META` entry, after which it appears on the site by itself.
 

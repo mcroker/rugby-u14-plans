@@ -163,23 +163,21 @@ Starter play from an attacking lineout.
 
 *Saved for later: **10 as first receiver off the lineout**, with the pod moved out one channel. Agreed as a progression, not for now — the first ball stays with the forwards in front of 10 until the base shape is automatic.*
 
-**Diagrams:**
+**Diagrams** (sourced from the club's TWRFC Academy diagram library — matched to their "5-man race" lineout move):
 
-![5-man Rhino — Phase 1](5man_rhino_phase1.png)
+![5-man Rhino — Phase 1](https://drive.google.com/uc?export=view&id=19PoCkqD3QsZttJnw9ii6dDjA4N6NG-c8)
 
-*Phase 1 — OTT to 9. 9 passes past 10 to the pod (6 and 8) standing in front of him; the pod carries and 12 joins to set ruck 1.*
+*Phase 1 — OTT to 9, extras + 12 set ruck 1.*
 
-![5-man Rhino — Phase 2](5man_rhino_phase2.png)
+![5-man Rhino — Phase 2](https://drive.google.com/uc?export=view&id=1UoSB5MU2si5_7QGvKPHdwe8-Po0FVq8r)
 
-*Phase 2 — the pod races round ruck 1, reloads in front of 10, and carries into ruck 2. Rhino: keep it tight.*
+*Phase 2 — forwards fold round for Rhino.*
 
-![5-man Rhino — Phase 2, Hippo option](5man_rhino_phase2_hippo.png)
+![5-man Rhino — Phase 3](https://drive.google.com/uc?export=view&id=1I0zU5qY432Btfu5Tauho7w1IhzC7WWpe)
 
-*Phase 2, Hippo option — the pod runs the same line as a dummy and the ball goes behind them to 10, a phase early.*
+*Phase 3 — backs edge attack.*
 
-![5-man Rhino — Phase 3](5man_rhino_phase3.png)
-
-*Phase 3 — backs edge attack off 10.*
+*(These diagrams are not drawn to our shape — they do not show 10 at first receiver with the pod in front of him, and there is none for the Hippo option. The phase table above is the definition; redrawing them is outstanding.)*
 
 **Calls:** kept deliberately simple — the call is disguised by which letter it starts with, not by the word itself. Mnemonic is the club colours — **Blue, White, Gold**:
 
@@ -191,7 +189,7 @@ Starter play from an attacking lineout.
 
 Any word starting with the right letter works as the actual call (e.g. a "B" word for front, a "W" word for middle, a "G" word for back) — the letter is what carries the meaning, so it stays flexible in the moment while being easy for players to remember via the club colours. *(Watch for a clash if a "B..." lineout call is ever picked that overlaps with the "Bull" call already defined in Open Play above — worth flagging to players so context makes clear which is meant.)*
 
-*(Note: the `lineout_5man`/`lineout_6man`/`lineout_moses`/`lineout_5man_race` folders in the club Drive are for older age groups and not relevant to U14 in terms of their exact systems — our lineout calls are built from scratch, as above. The phase diagrams just above are our own, drawn to our shape.)*
+*(Note: the `lineout_5man`/`lineout_6man`/`lineout_moses`/`lineout_5man_race` folders in the club Drive are for older age groups and not relevant to U14 in terms of their exact systems — our lineout calls are built from scratch, as above. The phase diagrams just above are reused because the underlying shape (OTT to 9, forwards pod, Rhino fold) happens to match, not because we've adopted their lineout system.)*
 
 ## Scrum (8-man, contested, new at U14)
 
@@ -213,7 +211,7 @@ Sections still to fill in as we build this out:
 - Scrum calls / options (see above — default is **DSP**, ball to 9; No.8 pick-and-go call still TBC)
 - Lineout calls (defined above — B/W/G (Blue/White/Gold) front/middle/back system)
 - Lineout numbers (defined above — default 5-man, more for a driving maul)
-- Lineout default move (defined above — **5-man Rhino**: OTT to 9 → first ball to the forwards in front of 10, they + 12 set ruck 1 → pod races round and carries into ruck 2 for Rhino, or runs as a dummy for **Hippo** if 10 wants it early → backs edge attack; diagrams redrawn. Progression saved for later: 10 as first receiver, pod out one)
+- Lineout default move (defined above — **5-man Rhino**: OTT to 9 → first ball to the forwards in front of 10, they + 12 set ruck 1 → pod races round and carries into ruck 2 for Rhino, or runs as a dummy for **Hippo** if 10 wants it early → backs edge attack; diagrams not yet redrawn to this shape. Progression saved for later: 10 as first receiver, pod out one)
 - Backs moves (defined above — S1, DS Pop, Batman, Superman, Smash 1, Hulk; more to be added)
 - Kicking calls (defined above — Eagle, Hawk; kicking strategy beyond exit kicks still TBC)
 - Attacking shape outside the 22 (default pattern now defined above — zig-zag, 5m to 5m, forward pod of 3 in front of 10 (+12 when numbers allow); further phase-by-phase detail still TBC)

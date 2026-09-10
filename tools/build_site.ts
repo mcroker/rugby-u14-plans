@@ -65,6 +65,7 @@ const DIAGRAMS: Record<string, string> = {
   "Hawk — box kick": "hawk_box_kick.png",
   "5-man Rhino — Phase 1": "5man_rhino_phase1.png",
   "5-man Rhino — Phase 2": "5man_rhino_phase2.png",
+  "5-man Rhino — Phase 2, Hippo option": "5man_rhino_phase2_hippo.png",
   "5-man Rhino — Phase 3": "5man_rhino_phase3.png",
 };
 

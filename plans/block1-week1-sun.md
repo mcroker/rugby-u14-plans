@@ -1,3 +1,12 @@
+---
+date: 2026-09-06
+start: "10:45"
+h1: Week 1 — Sunday
+sub: Season opener — tackle base, first lineout exposure, blitz-defence intro.
+sub2: Sun 6 Sep 2026
+crumb: Week 1 (Sun)
+card: Detailed run-sheet for the season-opening session: timings, drills, and setup.
+---
 # Block 1, Week 1 — Sunday session
 
 ## Session details

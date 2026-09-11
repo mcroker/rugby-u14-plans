@@ -1,3 +1,13 @@
+---
+date: 2026-09-13
+start: "10:45"
+h1: Week 2 — Sunday
+sub: First contested scrum — 8-man setup, the feed, and DSP off the base.
+sub2: Sun 13 Sep 2026, 10.45am–12.30pm
+crumb: Week 2 (Sun)
+draft: true
+card: "Run-sheet for the squad's first scrum session: contested 8-man scrum, DSP, and the tackle diamond."
+---
 # Block 1, Week 2 — Sunday session
 
 ## Session details

@@ -1,3 +1,12 @@
+---
+date: 2026-09-10
+start: "18:45"
+h1: Week 1 — Thursday
+sub: Passing, Bang, and both sides of the lineout — the attacking shape and defending theirs.
+sub2: Thu 10 Sep 2026, 6.45–8.15pm
+crumb: Week 1 (Thu)
+card: "Run-sheet for the midweek session: passing, lineout recap, and attacking and defending the lineout."
+---
 # Block 1, Week 1 — Thursday session
 
 ## Session details

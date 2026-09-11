@@ -22,6 +22,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { bool, optStr, parseFrontMatter, str } from "./lib/frontmatter.ts";
 import { mdToHtml, type PitchZone, type RenderCtx } from "./lib/md.ts";
 import {
   card,
@@ -122,9 +123,14 @@ const PITCH_ZONES: Record<string, PitchZone> = {
 /** Which age group the pin is labelled for — we are U14M. */
 const OUR_TEAM = "U14M";
 
-/** Per-session page metadata. Adding a session means adding its run-sheet to
- *  plans/ and an entry here; the page and its index card follow automatically. */
+/**
+ * Per-session page metadata, read from the frontmatter of the run-sheet itself.
+ * Adding a session is adding a file to plans/ — there is no second list to keep
+ * in step with it.
+ */
 interface PlanMeta {
+  /** The run-sheet's filename, e.g. `block1-week2-thur.md`. */
+  file: string;
   /** ISO date (YYYY-MM-DD) of the session — drives which plan is "next". */
   date: string;
   /** Clock time that "+0" in the Plan table means, as HH:MM. The run sheet
@@ -138,72 +144,76 @@ interface PlanMeta {
   card: string;
   badge: string;
   /** Marks the plan as a work in progress — banners the page and the index card. */
-  draft?: boolean;
-  /** Evening session at the club — adds sunset to the logistics. */
-  eveningAtClub?: boolean;
+  draft: boolean;
+  /** Whether to show sunset in the logistics. */
+  sunset: boolean;
+  /** The run-sheet's markdown, frontmatter removed. */
+  body: string;
 }
 
-const PLAN_META: Record<string, PlanMeta> = {
-  "block1-week2-thur.md": {
-    date: "2026-09-17",
-    start: "18:45",
-    h1: "Week 2 — Thursday",
-    sub: "Scrum on the machine, non-contested, and exit kicks introduced for the backs.",
-    sub2: "Thu 17 Sep 2026, 6.45–8.15pm",
-    crumb: "Week 2 (Thu)",
-    draft: true,
-    eveningAtClub: true,
-    card: "Run-sheet for the midweek session: scrum technique on the machine, exit kicks, and one game either side of the split.",
-    badge: "17 Sep",
-  },
-  "block1-week2-sun.md": {
-    date: "2026-09-13",
-    start: "10:45",
-    h1: "Week 2 — Sunday",
-    sub: "First contested scrum — 8-man setup, the feed, and DSP off the base.",
-    sub2: "Sun 13 Sep 2026, 10.45am–12.30pm",
-    crumb: "Week 2 (Sun)",
-    draft: true,
-    card: "Run-sheet for the squad's first scrum session: contested 8-man scrum, DSP, and the tackle diamond.",
-    badge: "13 Sep",
-  },
-  "block1-week1-thur.md": {
-    date: "2026-09-10",
-    start: "18:45",
-    h1: "Week 1 — Thursday",
-    sub: "Passing, Bang, and both sides of the lineout — the attacking shape and defending theirs.",
-    sub2: "Thu 10 Sep 2026, 6.45–8.15pm",
-    crumb: "Week 1 (Thu)",
-    eveningAtClub: true,
-    card: "Run-sheet for the midweek session: passing, lineout recap, and attacking and defending the lineout.",
-    badge: "10 Sep",
-  },
-  "block1-week1-sun.md": {
-    date: "2026-09-06",
-    start: "10:45",
-    h1: "Week 1 — Sunday",
-    sub: "Season opener — tackle base, first lineout exposure, blitz-defence intro.",
-    sub2: "Sun 6 Sep 2026",
-    crumb: "Week 1 (Sun)",
-    card: "Detailed run-sheet for the season-opening session: timings, drills, and setup.",
-    badge: "6 Sep",
-  },
-};
+/**
+ * The date as a short badge — "17 Sep". The month is cut to three letters
+ * rather than taken as-is: en-GB's short September is "Sept", and a badge is a
+ * narrow thing that wants every month the same width.
+ */
+function badgeFor(date: string): string {
+  const d = new Date(`${date}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return date;
+  const part = (opts: Intl.DateTimeFormatOptions) =>
+    new Intl.DateTimeFormat(CLUB.locale, { ...opts, timeZone: CLUB.timezone }).format(d);
+  return `${part({ day: "numeric" })} ${part({ month: "short" }).slice(0, 3)}`;
+}
+
+/**
+ * Read every run-sheet in plans/, newest last. A plan with no frontmatter is
+ * reported rather than skipped silently — it would otherwise vanish from the
+ * site with no explanation.
+ */
+function loadPlans(plansDir: string): PlanMeta[] {
+  const out: PlanMeta[] = [];
+  for (const file of fs.readdirSync(plansDir).sort()) {
+    if (!file.endsWith(".md")) continue;
+    const label = `plans/${file}`;
+    const { data, body } = parseFrontMatter(read(label), label);
+    if (!Object.keys(data).length) {
+      warn(`${label} has no frontmatter — it needs at least date, h1, sub, crumb and card`);
+      continue;
+    }
+    const date = str(data, "date", label);
+    const start = optStr(data, "start");
+    // Sunset is what tells a coach whether the session finishes in the light,
+    // so it belongs on an evening session and is noise on a morning one.
+    const evening = Number((start ?? "").slice(0, 2)) >= 16;
+    out.push({
+      file,
+      date,
+      start,
+      h1: str(data, "h1", label),
+      sub: str(data, "sub", label),
+      sub2: str(data, "sub2", label, ""),
+      crumb: str(data, "crumb", label),
+      card: str(data, "card", label),
+      badge: str(data, "badge", label, badgeFor(date)),
+      draft: bool(data, "draft", false),
+      sunset: bool(data, "sunset", evening),
+      body,
+    });
+  }
+  return out;
+}
 
 /**
  * The plan shown at the stable next.html URL: the earliest session still to
  * come (today counts). If every session is in the past, the most recent one is
  * kept there rather than leaving the page broken.
  */
-function pickNextPlan(plansDir: string): { file: string; upcoming: boolean } | null {
+function pickNextPlan(plans: PlanMeta[]): { plan: PlanMeta; upcoming: boolean } | null {
   const today = new Date().toISOString().slice(0, 10);
-  const dated = Object.entries(PLAN_META)
-    .filter(([f]) => fs.existsSync(path.join(plansDir, f)))
-    .sort((a, b) => a[1].date.localeCompare(b[1].date));
+  const dated = [...plans].sort((a, b) => a.date.localeCompare(b.date));
   if (!dated.length) return null;
-  const upcoming = dated.find(([, m]) => m.date >= today);
-  if (upcoming) return { file: upcoming[0], upcoming: true };
-  return { file: dated[dated.length - 1]![0], upcoming: false };
+  const upcoming = dated.find((m) => m.date >= today);
+  if (upcoming) return { plan: upcoming, upcoming: true };
+  return { plan: dated[dated.length - 1]!, upcoming: false };
 }
 
 function read(rel: string): string {
@@ -213,11 +223,15 @@ function read(rel: string): string {
 /** Live forecasts by ISO date, filled in before the pages are built. */
 let forecasts = new Map<string, string>();
 
+/** The run-sheets, read once from plans/. */
+const PLANS = loadPlans(path.join(ROOT, "plans"));
+const PLAN_FILES = new Set(PLANS.map((p) => p.file));
+
 /** A `foo.md` in a code span -> the page it links to, if any. */
 function linkFor(ref: string): string | undefined {
   const plan = ref.replace(/^plans\//, "");
   if (PAGE_FOR[ref]) return PAGE_FOR[ref];
-  if (ref.endsWith(".md") && PLAN_META[plan]) return plan.replace(/\.md$/, ".html");
+  if (ref.endsWith(".md") && PLAN_FILES.has(plan)) return plan.replace(/\.md$/, ".html");
   return undefined;
 }
 
@@ -297,9 +311,9 @@ function copyImages(): Record<string, string> {
  *  state for itself. Order matters — sunset, then weather. */
 function generatedRows(meta: PlanMeta): string[] {
   const rows: string[] = [];
-  // Sunset only matters for an evening session at the club — it is the
-  // difference between finishing in the light and finishing under floodlights.
-  if (meta.eveningAtClub) {
+  // Sunset only matters for an evening session — it is the difference between
+  // finishing in the light and finishing under floodlights.
+  if (meta.sunset) {
     const sunset = sunsetAt(meta.date, CLUB);
     if (sunset) rows.push(`| **Sunset** | ${sunset} at the club |`);
     else warn(`no sunset could be computed for ${meta.date}`);
@@ -440,16 +454,9 @@ function buildPages(): Record<string, string> {
 
   // ---- session run-sheets: one page per file in plans/
   const warmupMd = read("claude/warmup.md");
-  const plansDir = path.join(ROOT, "plans");
-  for (const fname of fs.readdirSync(plansDir).sort()) {
-    if (!fname.endsWith(".md")) continue;
-    const meta = PLAN_META[fname];
-    if (!meta) {
-      warn(`no page metadata for plans/${fname} — add it to PLAN_META`);
-      continue;
-    }
-    const stem = fname.slice(0, -3);
-    const planMd = planWithWarmup(read("plans/" + fname), warmupMd);
+  for (const meta of PLANS) {
+    const stem = meta.file.slice(0, -3);
+    const planMd = planWithWarmup(meta.body, warmupMd);
     add(`${stem}.html`, {
       title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
       h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
@@ -465,12 +472,12 @@ function buildPages(): Record<string, string> {
 
   // ---- next.html: the session page itself, at a URL that never changes.
   //      A copy rather than a redirect, so the link people hold stays next.html.
-  const next = pickNextPlan(plansDir);
+  const next = pickNextPlan(PLANS);
   if (!next) {
     warn("no dated session plans — next.html not built");
   } else {
-    const meta = PLAN_META[next.file]!;
-    const permalink = `${next.file.slice(0, -3)}.html`;
+    const meta = next.plan;
+    const permalink = `${meta.file.slice(0, -3)}.html`;
     const note = next.upcoming
       ? `<p class="next-note">The next session. This page always shows whichever session is coming up; ` +
         `the permanent link for this one is <a href="${permalink}">${permalink}</a>.</p>`
@@ -487,7 +494,7 @@ function buildPages(): Record<string, string> {
         (meta.draft ? DRAFT_NOTE + "\n" : "") +
         note +
         "\n" +
-        sessionBody(planWithWarmup(read("plans/" + next.file), warmupMd), ctx, {
+        sessionBody(planWithWarmup(meta.body, warmupMd), ctx, {
           start: meta.start,
           extraRows: generatedRows(meta),
         }),
@@ -495,25 +502,21 @@ function buildPages(): Record<string, string> {
   }
 
   // ---- index
-  const planCards = Object.keys(PLAN_META)
-    .sort()
-    .filter((f) => fs.existsSync(path.join(plansDir, f)))
-    .map((f) => {
-      const m = PLAN_META[f]!;
-      return card(f.slice(0, -3) + ".html", m.h1, m.card, m.badge, m.draft);
-    });
+  const planCards = [...PLANS]
+    .sort((a, b) => a.file.localeCompare(b.file))
+    .map((m) => card(m.file.slice(0, -3) + ".html", m.h1, m.card, m.badge, m.draft));
   const nextCard = next
     ? [
         '  <h2 class="group">Next session</h2>',
         '  <div class="cards">',
         card(
           "next.html",
-          PLAN_META[next.file]!.h1,
+          next.plan.h1,
           next.upcoming
             ? "Whatever session is coming up next — this link always points at it, so it is the one to save or share."
             : "The most recent run-sheet; no later session is written yet. This link always points at whatever is next.",
-          PLAN_META[next.file]!.badge,
-          PLAN_META[next.file]!.draft,
+          next.plan.badge,
+          next.plan.draft,
         ),
         "  </div>",
         "",
@@ -625,5 +628,5 @@ function main(): number {
   return 0;
 }
 
-forecasts = await loadForecasts(Object.values(PLAN_META), CLUB, GENERATED);
+forecasts = await loadForecasts(PLANS, CLUB, GENERATED);
 process.exit(main());

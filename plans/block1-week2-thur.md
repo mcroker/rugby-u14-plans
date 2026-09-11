@@ -1,3 +1,13 @@
+---
+date: 2026-09-17
+start: "18:45"
+h1: Week 2 — Thursday
+sub: Scrum on the machine, non-contested, and exit kicks introduced for the backs.
+sub2: Thu 17 Sep 2026, 6.45–8.15pm
+crumb: Week 2 (Thu)
+draft: true
+card: "Run-sheet for the midweek session: scrum technique on the machine, exit kicks, and one game either side of the split."
+---
 # Block 1, Week 2 — Thursday session
 
 ## Session details

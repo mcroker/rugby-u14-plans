@@ -70,20 +70,6 @@ const CLUB: Place = {
 const SITE_NAME = "U14 Rugby";
 
 /**
- * Diagram alt text in playbook.md -> web-sized file in claude/images/web/.
- * Adding a diagram means adding its web-sized copy and an entry here.
- */
-const DIAGRAMS: Record<string, string> = {
-  "Rhino": "rhino.png",
-  "Hulk": "hulk.png",
-  "Eagle": "eagle_kick.png",
-  "Hawk — box kick": "hawk_box_kick.png",
-  "5-man Rhino — Phase 1": "5man_rhino_phase1.jpg",
-  "5-man Rhino — Phase 2": "5man_rhino_phase2.jpg",
-  "5-man Rhino — Phase 3": "5man_rhino_phase3.jpg",
-};
-
-/**
  * Club pitch-allocation zones, from the label positions used by
  * https://pitch.twrfc.com/ — percentages of the base map image. A session plan
  * marks its pitch by writing `![caption](pitch:2b)`, and the build pins our
@@ -382,27 +368,36 @@ function subAll(md: string, pairs: Array<[string, string]>, label: string): stri
 // -------------------------------------------------------------------- diagrams
 const IMG_DIR = "img";
 
+/** The club's allocation map, pinned by `![caption](pitch:2b)`. */
+const PITCH_MAP = "pitch-map.jpg";
+
 /**
  * Diagrams are copied into the site as ordinary files and referenced, not
  * inlined as data URIs. They were inlined when pages were standalone files
  * shared through Drive; on a hosted site a same-origin image is cacheable,
  * lazily loadable, and keeps the HTML small enough to render at the ground.
+ *
+ * Everything in the web-sized images folder is copied and keyed by its
+ * filename, which is what the markdown writes — `![Rhino](rhino.png)`. Adding a
+ * diagram is adding the file; there is no list to keep in step with it.
  */
 function copyImages(): Record<string, string> {
   const out: Record<string, string> = {};
+  const from = path.join(ROOT, "claude", "images", "web");
   const dir = path.join(SITE_OUT, IMG_DIR);
   fs.mkdirSync(dir, { recursive: true });
-  const put = (key: string, fname: string) => {
-    const src = path.join(ROOT, "claude", "images", "web", fname);
-    if (!fs.existsSync(src)) {
-      warn(`missing web-sized image ${fname}`);
-      return;
-    }
-    fs.copyFileSync(src, path.join(dir, fname));
-    out[key] = `${IMG_DIR}/${fname}`;
-  };
-  for (const [alt, fname] of Object.entries(DIAGRAMS)) put(alt, fname);
-  put("__pitch_map__", "pitch-map.jpg");
+  if (!fs.existsSync(from)) {
+    warn(`no web-sized images folder at ${path.relative(ROOT, from)}`);
+    return out;
+  }
+  for (const fname of fs.readdirSync(from).sort()) {
+    if (fname.startsWith(".")) continue;
+    if (!fs.statSync(path.join(from, fname)).isFile()) continue;
+    fs.copyFileSync(path.join(from, fname), path.join(dir, fname));
+    out[fname] = `${IMG_DIR}/${fname}`;
+  }
+  const map = out[PITCH_MAP];
+  if (map) out["__pitch_map__"] = map;
   return out;
 }
 

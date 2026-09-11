@@ -165,9 +165,17 @@ export function mdToHtml(md: string, ctx: RenderCtx): string {
         continue;
       }
 
-      const src = ctx.images[alt];
+      // Matched on the filename, so a plan may write the path it sees in the
+      // repo (`claude/images/web/rhino.png`) or just the name (`rhino.png`).
+      const src = ctx.images[target.split("/").pop() ?? target];
       if (src === undefined) {
-        warn(`no embedded diagram for image '${alt}' — skipped`);
+        // Never link an image to an external host: a hosted page has to keep
+        // working on a bad signal at the ground, and off a phone with no
+        // access to whatever Drive or CDN the link points at.
+        const why = /^[a-z]+:\/\//i.test(target)
+          ? "an external URL — copy the image into the site's images folder instead"
+          : "not found in the site's images folder";
+        warn(`image '${target}' (${alt}) is ${why} — skipped`);
       } else {
         out.push(`<img alt="${escAttr(alt)}" src="${src}" loading="lazy" />`);
       }

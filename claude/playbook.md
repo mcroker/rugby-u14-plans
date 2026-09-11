@@ -64,7 +64,7 @@ Shape and calls used in open play phases:
 
 **Diagrams:**
 
-![Rhino](https://drive.google.com/uc?export=view&id=1cGcWFr1-meZhlx8mTtoVrnzn_i4HFfkV)
+![Rhino](rhino.png)
 
 *Rhino — forwards pod off 9. (Sourced from the club's TWRFC Academy diagram library — matched to our "race" call, which is the same shape as our Rhino.)*
 
@@ -85,7 +85,7 @@ Structured backs strike moves, introduced across last season. Run from 10 unless
 
 **Diagrams:**
 
-![Hulk](https://drive.google.com/uc?export=view&id=1nKyO2rzZ5Npu9dxXtCO6zeKV-ZgQzKvl)
+![Hulk](hulk.png)
 
 *Hulk — hard line + trail option. (Sourced from the club's TWRFC Academy diagram library — matched to their "Fiji" call.)*
 
@@ -100,11 +100,11 @@ Calls that trigger a kick in open play (see Kicking Strategy below for the tacti
 
 **Diagrams:**
 
-![Eagle](https://drive.google.com/uc?export=view&id=1eg9PW-aHBfroZ1ml8TDu3Nz4A8FQTAIx)
+![Eagle](eagle_kick.png)
 
 *Eagle — kick. (Sourced from the club's TWRFC Academy diagram library — matched to their "kick_eagle" image.)*
 
-![Hawk — box kick](https://drive.google.com/uc?export=view&id=16LgVIAxQus7iwFmp9ly-iYz1Ije7xQWs)
+![Hawk — box kick](hawk_box_kick.png)
 
 *Hawk — box kick. (Sourced from the club's TWRFC Academy diagram library — matched to their "kick_robin" image.)*
 
@@ -223,15 +223,15 @@ Starter play from an attacking lineout.
 
 **Diagrams** (sourced from the club's TWRFC Academy diagram library — matched to their "5-man race" lineout move):
 
-![5-man Rhino — Phase 1](https://drive.google.com/uc?export=view&id=19PoCkqD3QsZttJnw9ii6dDjA4N6NG-c8)
+![5-man Rhino — Phase 1](5man_rhino_phase1.jpg)
 
 *Phase 1 — OTT to 9, extras + 12 set ruck 1.*
 
-![5-man Rhino — Phase 2](https://drive.google.com/uc?export=view&id=1UoSB5MU2si5_7QGvKPHdwe8-Po0FVq8r)
+![5-man Rhino — Phase 2](5man_rhino_phase2.jpg)
 
 *Phase 2 — forwards fold round for Rhino.*
 
-![5-man Rhino — Phase 3](https://drive.google.com/uc?export=view&id=1I0zU5qY432Btfu5Tauho7w1IhzC7WWpe)
+![5-man Rhino — Phase 3](5man_rhino_phase3.jpg)
 
 *Phase 3 — backs edge attack.*
 

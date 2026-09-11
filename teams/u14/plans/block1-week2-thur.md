@@ -50,19 +50,6 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 
 *If we start late, take it out of Game 1. Not out of the split — that is the session.*
 
-**Coach allocation — agree it before 18:45, names in the right-hand column.**
-
-| Job | Who |
-|---|---|
-| **Coordinator** — runs nothing, starts nothing, watches the clock | |
-| Passing, Games 1 and 2 — lead voice | |
-| Passing — spot-coaching pull-out (pairs, off the side) | |
-| Forwards — front row + both 9s | |
-| Forwards — back row | |
-| Forwards — locks, and the machine | |
-| Backs — exit kicks, lead voice | |
-| Backs — exit kicks, second group | |
-
 ## Activities
 
 ### Essential skills — passing (Crazy Passing)
@@ -262,7 +249,7 @@ Reset fast and rotate the kicker every rep — high-rep, not a walk-through.
 
 ## Notes
 
-- **Martin is away.** Agree the coordinator and the coach allocation on the thread before the night, not on the grass — the coordinator runs nothing and starts nothing.
+- **Martin is away.** Agree the coordinator and who is running what on the thread before the night, not on the grass — the coordinator runs nothing and starts nothing.
 - **Pick the two teams during the warm-up and bib one of them.** Roughly equal, **each with enough forwards to make a pack** for the split at +42. Both games and the split all run off that one line. Crazy Passing is the exception — split it however you like.
 - **One cone layout, out before they arrive, down all session.** Nothing is re-coned between blocks.
 - **No contact — touch throughout. No contested scrum**, no pack against pack, no lineout.

@@ -9,7 +9,7 @@
 | **Coaches** | Steve, Matt, Bev, Jeff, Tiggy, Andy, Martin — seven out. *(Tom absent.)* |
 | **Attendance** | 30 attending, 6 unanswered, 6 declined. *(Actual — fill in on the night.)* |
 | **Session objective** | **Scrum — the squad's first exposure, contested.** 8-man setup, crouch–bind–set, tower of power, the 9–hooker feed and 8 controlling the base, then **DSP** off it. Tackle as the core skill, the diamond returning. One 15-a-side game, scored so line-speed **and** communication both count. |
-| **Resources required** | Balls, **bibs or headbands for one team**, cones, ruck shields, **mats for the tackle diamonds** — check they can be got hold of. **Scrum machine** — for the shove timing; someone brings it over in the changeover. |
+| **Resources required** | Balls, **bibs or headbands for one team**, cones, ruck shields, **mats for the tackle diamonds** — check they can be got hold of. **Scrum machine** — for the shove timing; **the forwards walk to it, it does not come to us.** |
 
 ![Pitch 2, right half. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
 
@@ -88,7 +88,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze**. Defence wins the rep if the tackle is completed over the halfway point of the diamond. Contact below the armpits (see `laws.md`).
 
-**Setup:** **two diamonds side by side, on mats.** Straight out of the passing and straight back. Each wave runs its own two minutes of contact warm-up if it has been in the passing lines for a while.
+**Setup:** **two diamonds side by side, on mats.** **Check the mats can be got hold of before the day** — without them, cut the volume rather than tackle onto bare ground. Straight out of the passing and straight back. Each wave runs its own two minutes of contact warm-up if it has been in the passing lines for a while.
 
 **Description:** controlled, small-group, full-contact tackle reps — short and sharp. Second week of the diamond, so build on Week 1's technique rather than re-teaching it.
 
@@ -107,9 +107,9 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Groups:** all forwards — two packs of eight. Both 9s with them. Three positional groups in the middle third.
 
-**Coaching Points:** **shoulders above hips, always.** Straight back, chin off the chest, eyes up, neck strong. Bind before anyone pushes. Nobody moves until **set**. Front rows matched for size. A scrum going down means everybody stops — say that once, out loud, before the first engage.
+**Coaching Points:** **shoulders above hips, always.** Straight back, chin off the chest, eyes up, neck strong. Bind before anyone pushes. Nobody moves until **set**. Front rows matched for size. A scrum going down means everybody stops — say that once, out loud, before the first engage. **One coach per pack, and the safety call comes from that coach only.**
 
-**Setup:** two scrum marks 15m apart on the flattest ground we have, a cone on each, put down as the block starts. Scrum machine to one of them. Front rows picked for size, not for who wants to be there. Twenty-seven minutes in three parts, in this order — the shape before the positions, the positions before the scrum.
+**Setup:** two scrum marks 15m apart on the flattest ground we have, a cone on each, put down as the block starts. **The machine stays where it lives — the forwards walk over for part 3 and walk back**; send a coach ahead to check it is free. Front rows picked for size, not for who wants to be there. Twenty-seven minutes in three parts, in this order — the shape before the positions, the positions before the scrum.
 
 **Description:**
 
@@ -132,8 +132,8 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 1. **Build the bind, standing** — front row, then locks in, then back row. Walk five steps as one unit.
 2. **Crouch–bind–set, unopposed** — the coach calls the cadence, the pack answers it. Five or six times.
-3. **On the machine** — the same cadence, then **the timing of the shove**: everyone goes on one word, together, or nobody moves it. Both packs get a turn.
-4. **Pack v pack** — half pressure for the first three, then full, with 9 feeding and 8 controlling. **Count the engages: six to eight, then stop.**
+3. **On the machine** — walk the forwards over, both packs together. The same cadence, then **the timing of the shove**: everyone goes on one word, together, or nobody moves it. Both packs get a turn, then walk back. **The walk is inside the ten minutes — move them over at a jog.**
+4. **Pack v pack** — half pressure for the first three, then full, with 9 feeding and 8 controlling. **Count the engages: six to eight, then stop** — the game's scrums are passive on top of that.
 
 **Progressions:**
 - Wheel it a few degrees and ask the pack to square up.
@@ -143,11 +143,12 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Adaptations:**
 - **Locks needing something else in group c:** the lineout **pass off the top** — they are the receivers in a 5-man line. Second choice this week; the bind is what the next ten minutes depends on.
+- Forwards short: a back in the second row, or machine work — the block stays where it is.
 - Not two full packs out: both packs work the machine in turn and skip pack v pack.
 - A pack short a lock or a flanker: put a back in the second row rather than scrummaging seven.
 - Anyone uncomfortable in the front row: move them, no discussion.
 - Running long: cut the engage count in part 3, not parts 1 and 2.
-- Machine can't be got to the pitch: part 3 step 3 goes unopposed against a coach-held shield wall.
+- Machine in use by another group, or the walk won't fit: part 3 step 3 goes unopposed against a coach-held shield wall.
 
 **Video example:** [The Scrum — Teenage Skills, Rugby Toolbox](https://www.rugbytoolbox.co.nz/training/technique/the-scrum-3)
 
@@ -196,7 +197,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Coaching Points:** **Bang** off the scrum and in open play. Spacing, numbering up, the shuffling retreat, talk. Two seconds at the ruck.
 
-**Setup:** one game across the full half-pitch. **Every restart is a scrum** — knock-on, turnover or try. Ball into touch is a quick tap on the 5m, not a lineout. In the game the scrums are **set properly but pushed passively** — the contest happened in the scrum block. Two halves of fifteen minutes, with the **team swap and water between them**.
+**Setup:** one game across the full half-pitch. **Every restart is a scrum** — knock-on, turnover or try. Ball into touch is a quick tap on the 5m, **not a lineout — no lineout anywhere in this session.** In the game the scrums are **set properly but pushed passively** — the contest happened in the scrum block. Two halves of fifteen minutes, with the **team swap and water between them**.
 
 **Description:** starts at **Presentation Touch** — on a touch the carrier goes down, turns, and presents long for the support player to pick (see `activities.md`). **Step up to full contact for the last ten minutes if the ground allows it**; that is a call on the day, not a plan.
 
@@ -221,19 +222,10 @@ Conditions, cumulative, added in this order and left in:
 ## Notes
 
 - **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, and **each needs eight forwards** — the packs at +21, the shapes at +48 and the game at +53 all split along that line. Crazy Passing is the exception: two equal sets, split however you like.
-- **The machine comes to us.** It lives at the club, so someone walks it over to Pitch 2 in the changeover — it is part 3 of the scrum block, not a spare.
-- **Contested scrum is the session.** It only happens on a Sunday, when we can field two full packs. If the forwards are short, fix it with a back in the second row or the machine — don't move the block.
-- **The engages are counted, not open-ended.** Six to eight in the block, and the game's scrums are passive on top of that. First contested scrums of these players' lives, half of them also playing schools rugby (see `age-group.md`).
-- **The tackle base is not revision.** Week 1 pulled back from full contact because of the surface, so the diamond is building it, not reviewing it. **Mats** — check before the day; without them, cut the volume rather than tackle onto bare ground.
-- **Defence lives in the game this week, not beside it.** No standalone defensive drill; the 15-a-side game and its scoreboard are where line-speed and communication get worked.
-- **One game, not two.** A contested scrum plus a 9 is nine players, so a small-sided game can't carry one (see `activities.md`).
-- **One voice per segment.** Seven coaches are out, which is how it slipped in Week 1. The scrum block is where it will slip again — **one coach per pack**, and the safety call comes from that coach only. Agree the segments during the warm-up.
-- **Share the starting setup on the coaches' thread beforehand** — what goes where in the changeover, and who is on what. Everyone arrives hot on a Sunday; the prep that hasn't been shared doesn't happen.
-- **Call out anything debatable before the day.** If a shape or a call is going to start a coaching discussion, have it on the thread, not with thirty players standing waiting.
-- **Get the kit out fast.** U12M are on our half until 10:30 for a 10:45 start: cones, two diamonds, mats. Two or three coaches on setup while the rest greet players.
-- **Repeated from last week**, as the coaches asked: the same warm-up, the same diamond, the same passing game, **Bang** and Springbok Touch again from Thursday.
-- **Pick next week's warm-up leader at the close**, not on the day (see `warmup.md`).
-- **No lineout in this session.** Ball into touch is a tap, and the **B/W/G** calls are not introduced today — the whole set-piece slot is the scrum. They still need a week (see `blocks.md`).
+- **One voice per segment.** Seven coaches are out, which is how it slipped in Week 1. Agree the segments during the warm-up.
+- **Share the starting setup on the coaches' thread beforehand**, and call out anything debatable on it — who is on what, and any shape or call that will start a discussion. Everyone arrives hot on a Sunday, and a thirty-player audience is the wrong place for the conversation.
+- **Setup happens in the changeover.** U12M are on our half until 10:30 for a 10:45 start: two or three coaches on cones, diamonds and mats while the rest greet players.
+- **The B/W/G lineout calls are not introduced today** — the whole set-piece slot is the scrum. They still need a week (see `blocks.md`).
 
 ## Review — what actually happened
 

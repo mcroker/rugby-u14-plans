@@ -9,8 +9,10 @@
     "",
     "'rewrite' fixes prose that reads correctly in the source file but not on the",
     "site — mostly a reference to another document that ends up on the same page,",
-    "or one to a file that has no page at all. Keyed by source path; each entry is",
-    "[find, replace], matched literally.",
+    "or one to a file that has no page at all. Keyed by the doc's filename, so a",
+    "rule keeps working wherever the doc lives; each entry is [find, replace],",
+    "matched literally. Write the replacement as plain text, not HTML — it is",
+    "escaped on the way out like everything else.",
     "",
     "A rule that no longer matches is reported as a note, not an error: a reworded",
     "sentence should never stop the site from publishing."
@@ -26,26 +28,26 @@
   "redactCheck": "[Aa]cademy",
 
   "rewrite": {
-    "claude/age-group.md": [
+    "age-group.md": [
       [
         "See `coaching.md` — How sessions should be coached for the contact-light approach we take to the Thursday slot either way.",
         "See How sessions should be coached below for the contact-light approach we take to the Thursday slot either way."
       ]
     ],
-    "claude/coaching.md": [
-      ["see `age-group.md` — Training & Fixtures.", "see Training &amp; Fixtures above."],
+    "coaching.md": [
+      ["see `age-group.md` — Training & Fixtures.", "see Training & Fixtures above."],
       [
         "plus the neurodiversity guidance linked from `age-group.md`",
         "plus the neurodiversity guidance linked above"
       ]
     ],
-    "claude/blocks.md": [
+    "blocks.md": [
       [
         ", and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks",
         " — all of which apply across all blocks"
       ]
     ],
-    "claude/activities.md": [
+    "activities.md": [
       ["(see `CLAUDE.md`'s Session plan template)", "(see the session-plan template)"]
     ]
   }

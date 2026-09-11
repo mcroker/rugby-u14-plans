@@ -1,0 +1,21 @@
+{
+  "name": "Tunbridge Wells RFC",
+  "shortName": "TWRFC",
+
+  "_location": "Used for the sunset time and the weather forecast on each session page. Near enough is near enough — a few miles moves sunset by seconds.",
+  "latitude": 51.132,
+  "longitude": 0.263,
+  "timezone": "Europe/London",
+  "locale": "en-GB",
+
+  "_allocation": "Where the club publishes which pitch each age group has on a Sunday.",
+  "allocationUrl": "https://pitch.twrfc.com/",
+  "pitchMap": "pitch-map.jpg",
+
+  "_site": "The landing page at the root of the domain, above the per-team sites.",
+  "site": {
+    "title": "TWRFC Age-Grade Coaching",
+    "sub": "Session plans, playbooks and coaching reference, one site per age group.",
+    "sub2": "Built from the coaching notes in this repository and rebuilt on every change."
+  }
+}

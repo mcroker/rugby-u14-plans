@@ -1,0 +1,18 @@
+{
+  "_comment": "One folder per team, one team.json in each. The folder name is the URL: this team publishes to /u14/.",
+
+  "name": "U14 Rugby",
+  "title": "U14 Rugby — Coaching Reference",
+  "sub": "A simple, shareable index of the squad's playbook and coaching reference.",
+  "sub2": "All pages responsive — built for pitch-side phone use and desktop planning alike.",
+
+  "_ageGroup": "Picks which laws doc this team gets from the shared defaults.",
+  "ageGroup": "u14",
+
+  "_pinLabel": "What this team is called on the club's allocation map — the label on the map pin.",
+  "pinLabel": "U14M",
+
+  "_order": "Position on the club landing page.",
+  "order": 1,
+  "card": "Session plans, playbook, activities bank and coaching notes for the U14 squad."
+}

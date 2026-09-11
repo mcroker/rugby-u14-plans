@@ -1,19 +1,18 @@
 #!/usr/bin/env node
 /**
- * Build the U14 Rugby reference site from the markdown sources.
+ * Build the club's coaching sites from the markdown sources.
  *
  *   node tools/build_site.ts [output-dir]        # Node >= 23.6
  *   node --experimental-strip-types tools/build_site.ts [output-dir]   # Node 22.6+
  *
  * Default output dir: _site
  *
- * Sources are the markdown files in claude/ and plans/; the shared design system
- * is tools/theme.css, inlined into every page so each one is standalone.
- * Diagrams are copied into the site from claude/images/web/ (web-sized copies of
- * the originals in claude/images/ — see CLAUDE.md).
+ * One site per folder in teams/, published to its own sub-directory, plus a
+ * landing page at the root listing them. Each team's content is resolved
+ * through three layers — teams/<slug>/, then club/, then content/ — so a team
+ * writes only what differs from the defaults. See tools/lib/config.ts.
  *
- * The rendering machinery lives in tools/lib/; this file is the configuration
- * and the orchestration.
+ * The rendering machinery lives in tools/lib/; this file is the orchestration.
  *
  * No dependencies: Node's own APIs only, so CI needs no install step to build.
  */
@@ -22,8 +21,16 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import {
+  loadClub,
+  loadPitchZones,
+  loadTeams,
+  overlay,
+  type Club,
+  type Team,
+} from "./lib/config.ts";
 import { bool, num, optStr, parseFrontMatter, str } from "./lib/frontmatter.ts";
-import { inline, mdToHtml, plainCtx, type PitchZone, type RenderCtx } from "./lib/md.ts";
+import { inline, mdToHtml, plainCtx, type RenderCtx } from "./lib/md.ts";
 import {
   card,
   DRAFT_BADGE,
@@ -33,261 +40,28 @@ import {
   type PageOpts,
   type Shell,
 } from "./lib/pages.ts";
-import {
-  DETAIL_JS,
-  planWithWarmup,
-  sessionBody,
-} from "./lib/session.ts";
+import { DETAIL_JS, planWithWarmup, sessionBody } from "./lib/session.ts";
 import { allWarnings, note, warn } from "./lib/warn.ts";
-import { loadForecasts, sunsetAt, type Place } from "./lib/weather.ts";
+import { loadForecasts, sunsetAt } from "./lib/weather.ts";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 /** Publish root — what gets deployed to Pages (the domain root). */
 const OUT = path.resolve(process.argv[2] ?? path.join(ROOT, "_site"));
 
-/**
- * The site lives in a sub-directory of the domain, so this age group's pages
- * are served from rugby-plans.com/u14/ and the root is free for other age
- * groups later. Every link between pages is relative, so nothing else changes.
- */
-const SITE_SUBDIR = "u14";
-const SITE_OUT = path.join(OUT, SITE_SUBDIR);
-const GENERATED = new Date().toLocaleDateString("en-GB", {
+const CLUB: Club = loadClub(ROOT);
+const PITCH_ZONES = loadPitchZones(ROOT);
+const TEAMS = loadTeams(ROOT);
+
+const GENERATED = new Date().toLocaleDateString(CLUB.locale, {
   day: "numeric",
   month: "long",
   year: "numeric",
 });
 
-/** Tunbridge Wells RFC, near enough for a sunset time and a forecast. */
-const CLUB: Place = {
-  latitude: 51.132,
-  longitude: 0.263,
-  timezone: "Europe/London",
-  locale: "en-GB",
-};
+/** Where a team's diagrams are copied to inside its own site. */
+const IMG_DIR = "img";
 
-/** The site's own name, used to suffix every page title. */
-const SITE_NAME = "U14 Rugby";
-
-/**
- * Club pitch-allocation zones, from the label positions used by
- * https://pitch.twrfc.com/ — percentages of the base map image. A session plan
- * marks its pitch by writing `![caption](pitch:2b)`, and the build pins our
- * marker on that zone, so a new week only changes the zone code in the plan.
- */
-const PITCH_ZONES: Record<string, PitchZone> = {
-  // Halves are named as seen standing at the Club House looking out over the
-  // grounds: Pitches 1 and 4 divide near/far, Pitches 2 and 3 left/right.
-  "1a": { left: 14, top: 70, pitch: "Pitch 1", half: "near-end" },
-  "1b": { left: 29, top: 69, pitch: "Pitch 1", half: "far-end" },
-  "2a": { left: 45, top: 49, pitch: "Pitch 2", half: "left" },
-  "2b": { left: 47, top: 65, pitch: "Pitch 2", half: "right" },
-  "3a": { left: 65, top: 38, pitch: "Pitch 3", half: "left" },
-  "3b": { left: 68, top: 53, pitch: "Pitch 3", half: "right" },
-  "4a": { left: 9, top: 3, pitch: "Pitch 4", half: "far-end" },
-  "4b": { left: 9, top: 17, pitch: "Pitch 4", half: "near-end" },
-  // Not one of the club's Sunday allocation codes: the floodlit training area,
-  // the blue square below Pitch 4. Position estimated from the map itself.
-  training: { left: 13, top: 37, pitch: "Training Area", half: "floodlit" },
-};
-
-/** Which age group the pin is labelled for — we are U14M. */
-const OUR_TEAM = "U14M";
-
-/**
- * A content doc and the page it becomes, read from the doc's own frontmatter.
- * Several docs can name the same `page`, in which case they are concatenated in
- * `order` and the lowest-ordered one supplies the page's heading and crumb.
- */
-interface DocMeta {
-  /** Path under the repo root, e.g. `claude/playbook.md`. */
-  file: string;
-  /** Output filename, e.g. `playbook.html`. */
-  page: string;
-  h1: string;
-  sub: string;
-  sub2: string;
-  crumb: string;
-  order: number;
-  /** Index group this doc's card belongs to; empty means no card. */
-  group: string;
-  /** Card title, when it should differ from the page heading. */
-  cardTitle: string;
-  card: string;
-  badge: string;
-  /** Whether the session-plan cards are listed under this doc's group. */
-  withPlans: boolean;
-  /** Drop the source H1 and the lead paragraph above the first section —
-   *  what a doc needs when it is one of several combined onto one page. */
-  stripLead: boolean;
-  body: string;
-}
-
-/** Read every content doc that declares a `page` in its frontmatter. */
-function loadDocs(dir: string): DocMeta[] {
-  const out: DocMeta[] = [];
-  for (const name of fs.readdirSync(path.join(ROOT, dir)).sort()) {
-    if (!name.endsWith(".md")) continue;
-    const label = `${dir}/${name}`;
-    const { data, body } = parseFrontMatter(read(label), label);
-    const pageName = optStr(data, "page");
-    if (!pageName) {
-      warn(`${label} has no 'page' in its frontmatter — it would not appear on the site`);
-      continue;
-    }
-    out.push({
-      file: label,
-      page: pageName,
-      h1: str(data, "h1", label, ""),
-      sub: str(data, "sub", label, ""),
-      sub2: str(data, "sub2", label, ""),
-      crumb: str(data, "crumb", label, ""),
-      order: num(data, "order", 99),
-      group: str(data, "group", label, ""),
-      cardTitle: str(data, "cardTitle", label, ""),
-      card: str(data, "card", label, ""),
-      badge: str(data, "badge", label, ""),
-      withPlans: bool(data, "withPlans", false),
-      stripLead: bool(data, "stripLead", false),
-      body,
-    });
-  }
-  return out.sort((a, b) => a.order - b.order);
-}
-
-/**
- * Per-session page metadata, read from the frontmatter of the run-sheet itself.
- * Adding a session is adding a file to plans/ — there is no second list to keep
- * in step with it.
- */
-interface PlanMeta {
-  /** The run-sheet's filename, e.g. `block1-week2-thur.md`. */
-  file: string;
-  /** ISO date (YYYY-MM-DD) of the session — drives which plan is "next". */
-  date: string;
-  /** Clock time that "+0" in the Plan table means, as HH:MM. The run sheet
-   *  shows real times; the markdown stays relative so the whole session can be
-   *  moved by changing this one field. */
-  start?: string;
-  h1: string;
-  sub: string;
-  sub2: string;
-  crumb: string;
-  card: string;
-  badge: string;
-  /** Marks the plan as a work in progress — banners the page and the index card. */
-  draft: boolean;
-  /** Whether to show sunset in the logistics. */
-  sunset: boolean;
-  /** The run-sheet's markdown, frontmatter removed. */
-  body: string;
-}
-
-/**
- * The date as a short badge — "17 Sep". The month is cut to three letters
- * rather than taken as-is: en-GB's short September is "Sept", and a badge is a
- * narrow thing that wants every month the same width.
- */
-function badgeFor(date: string): string {
-  const d = new Date(`${date}T12:00:00Z`);
-  if (Number.isNaN(d.getTime())) return date;
-  const part = (opts: Intl.DateTimeFormatOptions) =>
-    new Intl.DateTimeFormat(CLUB.locale, { ...opts, timeZone: CLUB.timezone }).format(d);
-  return `${part({ day: "numeric" })} ${part({ month: "short" }).slice(0, 3)}`;
-}
-
-/**
- * Read every run-sheet in plans/, newest last. A plan with no frontmatter is
- * reported rather than skipped silently — it would otherwise vanish from the
- * site with no explanation.
- */
-function loadPlans(plansDir: string): PlanMeta[] {
-  const out: PlanMeta[] = [];
-  for (const file of fs.readdirSync(plansDir).sort()) {
-    if (!file.endsWith(".md")) continue;
-    const label = `plans/${file}`;
-    const { data, body } = parseFrontMatter(read(label), label);
-    if (!Object.keys(data).length) {
-      warn(`${label} has no frontmatter — it needs at least date, h1, sub, crumb and card`);
-      continue;
-    }
-    const date = str(data, "date", label);
-    const start = optStr(data, "start");
-    // Sunset is what tells a coach whether the session finishes in the light,
-    // so it belongs on an evening session and is noise on a morning one.
-    const evening = Number((start ?? "").slice(0, 2)) >= 16;
-    out.push({
-      file,
-      date,
-      start,
-      h1: str(data, "h1", label),
-      sub: str(data, "sub", label),
-      sub2: str(data, "sub2", label, ""),
-      crumb: str(data, "crumb", label),
-      card: str(data, "card", label),
-      badge: str(data, "badge", label, badgeFor(date)),
-      draft: bool(data, "draft", false),
-      sunset: bool(data, "sunset", evening),
-      body,
-    });
-  }
-  return out;
-}
-
-/**
- * The plan shown at the stable next.html URL: the earliest session still to
- * come (today counts). If every session is in the past, the most recent one is
- * kept there rather than leaving the page broken.
- */
-function pickNextPlan(plans: PlanMeta[]): { plan: PlanMeta; upcoming: boolean } | null {
-  const today = new Date().toISOString().slice(0, 10);
-  const dated = [...plans].sort((a, b) => a.date.localeCompare(b.date));
-  if (!dated.length) return null;
-  const upcoming = dated.find((m) => m.date >= today);
-  if (upcoming) return { plan: upcoming, upcoming: true };
-  return { plan: dated[dated.length - 1]!, upcoming: false };
-}
-
-function read(rel: string): string {
-  return fs.readFileSync(path.join(ROOT, rel), "utf-8");
-}
-
-/** Live forecasts by ISO date, filled in before the pages are built. */
-let forecasts = new Map<string, string>();
-
-/** The run-sheets and the content docs, each read once from disk. */
-const PLANS = loadPlans(path.join(ROOT, "plans"));
-const PLAN_FILES = new Set(PLANS.map((p) => p.file));
-const DOCS = loadDocs("claude");
-
-/**
- * A source .md filename mentioned in the markdown becomes a link to its page on
- * the site — written either bare (`playbook.md`) or with its folder. A doc with
- * no page on the site is simply absent, and renders as plain text.
- */
-const PAGE_FOR: Record<string, string> = Object.fromEntries(
-  DOCS.flatMap((d) => {
-    const bare = path.basename(d.file);
-    return [
-      [bare, d.page],
-      [d.file, d.page],
-    ];
-  }),
-);
-
-/** A `foo.md` in a code span -> the page it links to, if any. */
-function linkFor(ref: string): string | undefined {
-  const plan = ref.replace(/^plans\//, "");
-  if (PAGE_FOR[ref]) return PAGE_FOR[ref];
-  if (ref.endsWith(".md") && PLAN_FILES.has(plan)) return plan.replace(/\.md$/, ".html");
-  return undefined;
-}
-
-function renderCtx(images: Record<string, string>): RenderCtx {
-  return { images, linkFor, pitchZones: PITCH_ZONES, pinLabel: OUR_TEAM };
-}
-
-// ------------------------------------------------------------ source cleanup
+// ------------------------------------------------------------------- rewrites
 
 /**
  * What the build rewrites or removes on the way to the public site — kept as
@@ -337,15 +111,6 @@ function redact(md: string, label: string): string {
   return s;
 }
 
-/** For the combined Coaching Notes page: drop a file's H1 and the
- *  Claude-facing lead paragraph above its first section. */
-function dropH1AndLead(md: string): string {
-  const lines = md.split("\n");
-  let k = 0;
-  while (k < lines.length && !lines[k]!.startsWith("## ")) k += 1;
-  return lines.slice(k).join("\n");
-}
-
 /**
  * Apply the club's rewrites for one source file. A rule that no longer matches
  * is a note rather than a warning — a reworded sentence leaves a slightly awkward
@@ -353,7 +118,8 @@ function dropH1AndLead(md: string): string {
  */
 function rewrite(md: string, label: string): string {
   let s = md;
-  for (const [old, replacement] of REWRITES.rewrite[label] ?? []) {
+  // Keyed by filename, so a rule survives the doc moving between layers.
+  for (const [old, replacement] of REWRITES.rewrite[path.basename(label)] ?? []) {
     if (!s.includes(old)) {
       note(`[${label}] rewrite no longer matches: '${old.slice(0, 60)}…'`);
     }
@@ -362,38 +128,203 @@ function rewrite(md: string, label: string): string {
   return s;
 }
 
-// -------------------------------------------------------------------- diagrams
-const IMG_DIR = "img";
+/** For a page built from several docs: drop a file's H1 and the lead paragraph
+ *  above its first section. */
+function dropH1AndLead(md: string): string {
+  const lines = md.split("\n");
+  let k = 0;
+  while (k < lines.length && !lines[k]!.startsWith("## ")) k += 1;
+  return lines.slice(k).join("\n");
+}
 
-/** The club's allocation map, pinned by `![caption](pitch:2b)`. */
-const PITCH_MAP = "pitch-map.jpg";
+// ----------------------------------------------------------------- doc + plan
 
 /**
- * Diagrams are copied into the site as ordinary files and referenced, not
- * inlined as data URIs. They were inlined when pages were standalone files
- * shared through Drive; on a hosted site a same-origin image is cacheable,
+ * A content doc and the page it becomes, read from the doc's own frontmatter.
+ * Several docs can name the same `page`, in which case they are concatenated in
+ * `order` and the lowest-ordered one supplies the page's heading and crumb.
+ */
+interface DocMeta {
+  /** Path relative to the repo root, used for labels and rewrite lookups. */
+  file: string;
+  /** Output filename, e.g. `playbook.html`. */
+  page: string;
+  h1: string;
+  sub: string;
+  sub2: string;
+  crumb: string;
+  order: number;
+  /** Index group this doc's card belongs to; empty means no card. */
+  group: string;
+  /** Card title, when it should differ from the page heading. */
+  cardTitle: string;
+  card: string;
+  badge: string;
+  /** Whether the session-plan cards are listed under this doc's group. */
+  withPlans: boolean;
+  /** Drop the source H1 and the lead paragraph above the first section. */
+  stripLead: boolean;
+  body: string;
+}
+
+/**
+ * Every content doc visible to a team — its own, plus anything it has not
+ * overridden from club/ and content/.
+ */
+function loadDocs(team: Team): DocMeta[] {
+  const out: DocMeta[] = [];
+  for (const [name, file] of overlay(ROOT, team.slug, ".")) {
+    if (!name.endsWith(".md")) continue;
+    const label = path.relative(ROOT, file);
+    const { data, body } = parseFrontMatter(fs.readFileSync(file, "utf-8"), label);
+    const pageName = optStr(data, "page");
+    if (!pageName) {
+      warn(`${label} has no 'page' in its frontmatter — it would not appear on the site`);
+      continue;
+    }
+    out.push({
+      file: label,
+      page: pageName,
+      h1: str(data, "h1", label, ""),
+      sub: str(data, "sub", label, ""),
+      sub2: str(data, "sub2", label, ""),
+      crumb: str(data, "crumb", label, ""),
+      order: num(data, "order", 99),
+      group: str(data, "group", label, ""),
+      cardTitle: str(data, "cardTitle", label, ""),
+      card: str(data, "card", label, ""),
+      badge: str(data, "badge", label, ""),
+      withPlans: bool(data, "withPlans", false),
+      stripLead: bool(data, "stripLead", false),
+      body,
+    });
+  }
+  return out.sort((a, b) => a.order - b.order);
+}
+
+/**
+ * Per-session page metadata, read from the frontmatter of the run-sheet itself.
+ * Adding a session is adding a file to the team's plans/ — there is no second
+ * list to keep in step with it.
+ */
+interface PlanMeta {
+  /** The run-sheet's filename, e.g. `block1-week2-thur.md`. */
+  file: string;
+  /** ISO date (YYYY-MM-DD) of the session — drives which plan is "next". */
+  date: string;
+  /** Clock time that "+0" in the Plan table means, as HH:MM. */
+  start?: string;
+  h1: string;
+  sub: string;
+  sub2: string;
+  crumb: string;
+  card: string;
+  badge: string;
+  /** Marks the plan as a work in progress — banners the page and the index card. */
+  draft: boolean;
+  /** Whether to show sunset in the logistics. */
+  sunset: boolean;
+  /** The run-sheet's markdown, frontmatter removed. */
+  body: string;
+}
+
+/**
+ * The date as a short badge — "17 Sep". The month is cut to three letters
+ * rather than taken as-is: en-GB's short September is "Sept", and a badge is a
+ * narrow thing that wants every month the same width.
+ */
+function badgeFor(date: string): string {
+  const d = new Date(`${date}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return date;
+  const part = (opts: Intl.DateTimeFormatOptions) =>
+    new Intl.DateTimeFormat(CLUB.locale, { ...opts, timeZone: CLUB.timezone }).format(d);
+  return `${part({ day: "numeric" })} ${part({ month: "short" }).slice(0, 3)}`;
+}
+
+/**
+ * Read every run-sheet in a team's plans/. Run-sheets are always the team's own
+ * — a default session plan would mean nothing to anyone — so no layering here.
+ * A plan with no frontmatter is reported rather than skipped silently.
+ */
+function loadPlans(team: Team): PlanMeta[] {
+  const dir = path.join(ROOT, "teams", team.slug, "plans");
+  if (!fs.existsSync(dir)) return [];
+  const out: PlanMeta[] = [];
+  for (const file of fs.readdirSync(dir).sort()) {
+    if (!file.endsWith(".md")) continue;
+    const label = `teams/${team.slug}/plans/${file}`;
+    const { data, body } = parseFrontMatter(fs.readFileSync(path.join(dir, file), "utf-8"), label);
+    if (!Object.keys(data).length) {
+      warn(`${label} has no frontmatter — it needs at least date, h1, sub, crumb and card`);
+      continue;
+    }
+    const date = str(data, "date", label);
+    const start = optStr(data, "start");
+    // Sunset is what tells a coach whether the session finishes in the light,
+    // so it belongs on an evening session and is noise on a morning one.
+    const evening = Number((start ?? "").slice(0, 2)) >= 16;
+    out.push({
+      file,
+      date,
+      start,
+      h1: str(data, "h1", label),
+      sub: str(data, "sub", label),
+      sub2: str(data, "sub2", label, ""),
+      crumb: str(data, "crumb", label),
+      card: str(data, "card", label),
+      badge: str(data, "badge", label, badgeFor(date)),
+      draft: bool(data, "draft", false),
+      sunset: bool(data, "sunset", evening),
+      body,
+    });
+  }
+  return out;
+}
+
+/**
+ * The plan shown at the stable next.html URL: the earliest session still to
+ * come (today counts). If every session is in the past, the most recent one is
+ * kept there rather than leaving the page broken.
+ */
+function pickNextPlan(plans: PlanMeta[]): { plan: PlanMeta; upcoming: boolean } | null {
+  const today = new Date().toISOString().slice(0, 10);
+  const dated = [...plans].sort((a, b) => a.date.localeCompare(b.date));
+  if (!dated.length) return null;
+  const upcoming = dated.find((m) => m.date >= today);
+  if (upcoming) return { plan: upcoming, upcoming: true };
+  return { plan: dated[dated.length - 1]!, upcoming: false };
+}
+
+// ---------------------------------------------------------------------- build
+
+/** Everything one team's pages are built from, gathered once. */
+interface TeamBuild {
+  team: Team;
+  docs: DocMeta[];
+  plans: PlanMeta[];
+}
+
+/** Live forecasts by ISO date, filled in before the pages are built. */
+let forecasts = new Map<string, string>();
+
+/**
+ * Diagrams are copied into each team's site as ordinary files and referenced,
+ * not inlined as data URIs: on a hosted site a same-origin image is cacheable,
  * lazily loadable, and keeps the HTML small enough to render at the ground.
  *
- * Everything in the web-sized images folder is copied and keyed by its
- * filename, which is what the markdown writes — `![Rhino](rhino.png)`. Adding a
- * diagram is adding the file; there is no list to keep in step with it.
+ * Everything in the layered images/web folders is copied and keyed by filename,
+ * which is what the markdown writes — `![Rhino](rhino.png)`. The club's map
+ * comes through the same way, so a team can supply its own.
  */
-function copyImages(): Record<string, string> {
+function copyImages(team: Team, siteOut: string): Record<string, string> {
   const out: Record<string, string> = {};
-  const from = path.join(ROOT, "claude", "images", "web");
-  const dir = path.join(SITE_OUT, IMG_DIR);
+  const dir = path.join(siteOut, IMG_DIR);
   fs.mkdirSync(dir, { recursive: true });
-  if (!fs.existsSync(from)) {
-    warn(`no web-sized images folder at ${path.relative(ROOT, from)}`);
-    return out;
+  for (const [name, src] of overlay(ROOT, team.slug, path.join("images", "web"))) {
+    fs.copyFileSync(src, path.join(dir, name));
+    out[name] = `${IMG_DIR}/${name}`;
   }
-  for (const fname of fs.readdirSync(from).sort()) {
-    if (fname.startsWith(".")) continue;
-    if (!fs.statSync(path.join(from, fname)).isFile()) continue;
-    fs.copyFileSync(path.join(from, fname), path.join(dir, fname));
-    out[fname] = `${IMG_DIR}/${fname}`;
-  }
-  const map = out[PITCH_MAP];
+  const map = out[CLUB.pitchMap];
   if (map) out["__pitch_map__"] = map;
   return out;
 }
@@ -402,67 +333,88 @@ function copyImages(): Record<string, string> {
  *  state for itself. Order matters — sunset, then weather. */
 function generatedRows(meta: PlanMeta): string[] {
   const rows: string[] = [];
-  // Sunset only matters for an evening session — it is the difference between
-  // finishing in the light and finishing under floodlights.
   if (meta.sunset) {
     const sunset = sunsetAt(meta.date, CLUB);
     if (sunset) rows.push(`| **Sunset** | ${sunset} at the club |`);
     else warn(`no sunset could be computed for ${meta.date}`);
   }
-  // Weather sits beside it: the other thing about the evening that the plan
-  // cannot state for itself. Only for a session still ahead of us.
   const forecast = forecasts.get(meta.date);
   if (forecast) rows.push(`| **Weather** | ${forecast} |`);
   return rows;
 }
 
-// ---------------------------------------------------------------------- build
-function buildPages(): Record<string, string> {
+function buildTeam(b: TeamBuild, siteOut: string): Record<string, string> {
+  const { team, docs, plans } = b;
   const shell: Shell = {
-    theme: read("tools/theme.css").trim(),
+    theme: fs.readFileSync(path.join(ROOT, "tools", "theme.css"), "utf-8").trim(),
     footer:
-      `Generated ${GENERATED} &middot; U14 Rugby coaching reference &middot; ` +
+      `Generated ${GENERATED} &middot; ${team.name} coaching reference &middot; ` +
       `<a href="index.html">Back to index</a>`,
   };
-  const diagrams = copyImages();
-  const ctx = renderCtx(diagrams);
+  const images = copyImages(team, siteOut);
+
+  const planFiles = new Set(plans.map((p) => p.file));
+  /**
+   * A source .md filename mentioned in the markdown becomes a link to its page
+   * on the site — written either bare (`playbook.md`) or with its folder. A doc
+   * with no page on the site is simply absent, and renders as plain text.
+   */
+  const pageFor: Record<string, string> = {};
+  for (const d of docs) {
+    pageFor[path.basename(d.file)] = d.page;
+    pageFor[d.file] = d.page;
+  }
+  const linkFor = (ref: string): string | undefined => {
+    const plan = ref.replace(/^plans\//, "");
+    if (pageFor[ref]) return pageFor[ref];
+    if (ref.endsWith(".md") && planFiles.has(plan)) return plan.replace(/\.md$/, ".html");
+    return undefined;
+  };
+  const ctx: RenderCtx = {
+    images,
+    linkFor,
+    pitchZones: PITCH_ZONES,
+    pinLabel: team.pinLabel,
+  };
+
   const pages: Record<string, string> = {};
   const add = (name: string, o: PageOpts): void => {
     pages[name] = page(shell, o);
   };
+  const txt = (s: string) => inline(s, plainCtx());
 
-  // ---- one page per `page:` declared in claude/, docs concatenated in order
+  // ---- one page per `page:` a doc declares, docs concatenated in order
   const byPage = new Map<string, DocMeta[]>();
-  for (const d of DOCS) {
+  for (const d of docs) {
     const list = byPage.get(d.page) ?? [];
     list.push(d);
     byPage.set(d.page, list);
   }
-  for (const [name, docs] of byPage) {
-    const lead = docs[0]!;
-    const md = docs
+  for (const [name, group] of byPage) {
+    const lead = group[0]!;
+    const md = group
       .map((d) => {
         const s = d.stripLead ? dropH1AndLead(d.body) : d.body;
         return rewrite(redact(s, d.file), d.file);
       })
       .join("\n\n");
     add(name, {
-      title: `${inline(lead.h1, plainCtx())} — ${SITE_NAME}`,
-      h1: inline(lead.h1, plainCtx()),
-      sub: inline(lead.sub, plainCtx()),
-      sub2: inline(lead.sub2, plainCtx()),
-      crumb: inline(lead.crumb, plainCtx()),
+      title: `${txt(lead.h1)} — ${txt(team.name)}`,
+      h1: txt(lead.h1),
+      sub: txt(lead.sub),
+      sub2: txt(lead.sub2),
+      crumb: txt(lead.crumb),
       body: mdToHtml(md, ctx),
     });
   }
 
-  // ---- session run-sheets: one page per file in plans/
-  const warmupMd = read("claude/warmup.md");
-  for (const meta of PLANS) {
-    const stem = meta.file.slice(0, -3);
-    const planMd = planWithWarmup(meta.body, warmupMd);
-    add(`${stem}.html`, {
-      title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+  // ---- session run-sheets: one page per file in the team's plans/
+  const warmupDoc = docs.find((d) => path.basename(d.file) === "warmup.md");
+  const warmupMd = warmupDoc?.body ?? "";
+  if (!warmupDoc) warn(`${team.slug}: no warmup.md — session pages will have no warm-up entry`);
+  for (const meta of plans) {
+    add(`${meta.file.slice(0, -3)}.html`, {
+      title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — ${txt(team.name)}`,
       h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
       sub: meta.sub,
       sub2: meta.sub2,
@@ -470,25 +422,28 @@ function buildPages(): Record<string, string> {
       extraJs: DETAIL_JS,
       body:
         (meta.draft ? DRAFT_NOTE + "\n" : "") +
-        sessionBody(planMd, ctx, { start: meta.start, extraRows: generatedRows(meta) }),
+        sessionBody(planWithWarmup(meta.body, warmupMd), ctx, {
+          start: meta.start,
+          extraRows: generatedRows(meta),
+        }),
     });
   }
 
   // ---- next.html: the session page itself, at a URL that never changes.
   //      A copy rather than a redirect, so the link people hold stays next.html.
-  const next = pickNextPlan(PLANS);
+  const next = pickNextPlan(plans);
   if (!next) {
-    warn("no dated session plans — next.html not built");
+    if (plans.length) warn(`${team.slug}: no dated session plans — next.html not built`);
   } else {
     const meta = next.plan;
     const permalink = `${meta.file.slice(0, -3)}.html`;
-    const note = next.upcoming
+    const noteHtml = next.upcoming
       ? `<p class="next-note">The next session. This page always shows whichever session is coming up; ` +
         `the permanent link for this one is <a href="${permalink}">${permalink}</a>.</p>`
       : `<p class="next-note">The most recent session (${meta.sub2}) — nothing later is written yet. ` +
         `Its permanent link is <a href="${permalink}">${permalink}</a>.</p>`;
     add("next.html", {
-      title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — U14 Rugby`,
+      title: `${meta.h1}${meta.draft ? " (Draft)" : ""} — ${txt(team.name)}`,
       h1: meta.h1 + (meta.draft ? DRAFT_BADGE : ""),
       sub: meta.sub,
       sub2: meta.sub2,
@@ -496,7 +451,7 @@ function buildPages(): Record<string, string> {
       extraJs: DETAIL_JS,
       body:
         (meta.draft ? DRAFT_NOTE + "\n" : "") +
-        note +
+        noteHtml +
         "\n" +
         sessionBody(planWithWarmup(meta.body, warmupMd), ctx, {
           start: meta.start,
@@ -506,7 +461,7 @@ function buildPages(): Record<string, string> {
   }
 
   // ---- index
-  const planCards = [...PLANS]
+  const planCards = [...plans]
     .sort((a, b) => a.file.localeCompare(b.file))
     .map((m) => card(m.file.slice(0, -3) + ".html", m.h1, m.card, m.badge, m.draft));
   const nextCard = next
@@ -528,79 +483,94 @@ function buildPages(): Record<string, string> {
     : [];
   // Card groups come from the docs themselves: each names its group, and the
   // group holding the block overview also lists that block's run-sheets.
-  const groups: string[] = [];
-  for (const d of DOCS) if (d.group && !groups.includes(d.group)) groups.push(d.group);
-  const groupCards = groups.flatMap((g) => {
-    const docs = DOCS.filter((d) => d.group === g);
-    const cards = docs.map((d) =>
-      card(
-        d.page,
-        inline(d.cardTitle || d.h1, plainCtx()),
-        inline(d.card, plainCtx()),
-        d.badge ? inline(d.badge, plainCtx()) : undefined,
-      ),
-    );
+  const groupNames: string[] = [];
+  for (const d of docs) if (d.group && !groupNames.includes(d.group)) groupNames.push(d.group);
+  const groupCards = groupNames.flatMap((g) => {
+    const inGroup = docs.filter((d) => d.group === g);
     return [
-      `  <h2 class="group">${inline(g, plainCtx())}</h2>`,
+      `  <h2 class="group">${txt(g)}</h2>`,
       '  <div class="cards">',
-      ...cards,
-      ...(docs.some((d) => d.withPlans) ? planCards : []),
+      ...inGroup.map((d) =>
+        card(d.page, txt(d.cardTitle || d.h1), txt(d.card), d.badge ? txt(d.badge) : undefined),
+      ),
+      ...(inGroup.some((d) => d.withPlans) ? planCards : []),
       "  </div>",
       "",
     ];
   });
-  const indexBody = [...nextCard, ...groupCards].join("\n").replace(/\n+$/, "");
 
   add("index.html", {
-    title: "U14 Rugby — Coaching Reference",
-    h1: "U14 Rugby — Coaching Reference",
-    sub: "A simple, shareable index of the squad's playbook and coaching reference.",
-    sub2: "All pages responsive — built for pitch-side phone use and desktop planning alike.",
+    title: txt(team.title),
+    h1: txt(team.title),
+    sub: txt(team.sub),
+    sub2: txt(team.sub2),
     crumb: null,
-    body: indexBody,
+    body: [...nextCard, ...groupCards].join("\n").replace(/\n+$/, ""),
     extraCss: INDEX_CSS,
     footer:
-      "U14 Rugby coaching reference &middot; pages rebuilt from <code>claude/</code> " +
-      "and <code>plans/</code> whenever the underlying plan changes.",
+      `${txt(team.name)} coaching reference &middot; rebuilt from the markdown ` +
+      `in <code>teams/${team.slug}/</code> whenever it changes &middot; ` +
+      `<a href="../index.html">All age groups</a>`,
   });
 
   return pages;
 }
 
-/** Stub at the domain root so rugby-plans.com/ does not 404. Replace this when
- *  another age group joins and the root needs to be a real landing page. */
-const ROOT_REDIRECT = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="0; url=${SITE_SUBDIR}/">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="canonical" href="/${SITE_SUBDIR}/">
-<title>U14 Rugby — Coaching Reference</title>
-</head>
-<body>
-<p>Redirecting to the <a href="${SITE_SUBDIR}/">U14 coaching reference</a>.</p>
-</body>
-</html>
-`;
+// ------------------------------------------------------------- landing page
 
-function main(): number {
-  const pages = buildPages();
-  fs.mkdirSync(SITE_OUT, { recursive: true });
-  for (const name of Object.keys(pages).sort()) {
-    const content = pages[name]!;
-    fs.writeFileSync(path.join(SITE_OUT, name), content, "utf-8");
-    const kb = (Buffer.byteLength(content, "utf-8") / 1024).toFixed(1);
-    console.log(`wrote ${(SITE_SUBDIR + "/" + name).padEnd(28)} ${kb.padStart(7)} KB`);
+/** The page at the root of the domain: one card per team. */
+function buildLanding(builds: TeamBuild[]): string {
+  const shell: Shell = {
+    theme: fs.readFileSync(path.join(ROOT, "tools", "theme.css"), "utf-8").trim(),
+    footer: `Generated ${GENERATED} &middot; ${CLUB.name}`,
+  };
+  const txt = (s: string) => inline(s, plainCtx());
+  const cards = builds.map(({ team, plans }) => {
+    const next = pickNextPlan(plans);
+    const desc = team.card || `Coaching reference for the ${team.name} squad.`;
+    return card(
+      `${team.slug}/index.html`,
+      txt(team.name),
+      txt(desc),
+      next ? next.plan.badge : undefined,
+    );
+  });
+  return page(shell, {
+    title: txt(CLUB.site.title),
+    h1: txt(CLUB.site.title),
+    sub: txt(CLUB.site.sub),
+    sub2: txt(CLUB.site.sub2),
+    crumb: null,
+    extraCss: INDEX_CSS,
+    body: ['  <h2 class="group">Age groups</h2>', '  <div class="cards">', ...cards, "  </div>"].join(
+      "\n",
+    ),
+    footer: `${txt(CLUB.name)} &middot; coaching reference, rebuilt on every change`,
+  });
+}
+
+function main(builds: TeamBuild[]): number {
+  const favicon = fs.readFileSync(path.join(ROOT, "tools", "favicon.svg"), "utf-8");
+
+  for (const b of builds) {
+    const siteOut = path.join(OUT, b.team.slug);
+    fs.mkdirSync(siteOut, { recursive: true });
+    const pages = buildTeam(b, siteOut);
+    for (const name of Object.keys(pages).sort()) {
+      const content = pages[name]!;
+      fs.writeFileSync(path.join(siteOut, name), content, "utf-8");
+      const kb = (Buffer.byteLength(content, "utf-8") / 1024).toFixed(1);
+      console.log(`wrote ${(b.team.slug + "/" + name).padEnd(28)} ${kb.padStart(7)} KB`);
+    }
+    fs.writeFileSync(path.join(siteOut, "favicon.svg"), favicon, "utf-8");
+    console.log(`wrote ${(b.team.slug + "/favicon.svg").padEnd(28)}         (rugby ball)`);
   }
-  const favicon = read("tools/favicon.svg");
-  fs.writeFileSync(path.join(SITE_OUT, "favicon.svg"), favicon, "utf-8");
-  fs.writeFileSync(path.join(OUT, "favicon.svg"), favicon, "utf-8");
-  console.log(`wrote ${(SITE_SUBDIR + "/favicon.svg").padEnd(28)}         (rugby ball)`);
 
-  fs.writeFileSync(path.join(OUT, "index.html"), ROOT_REDIRECT, "utf-8");
-  console.log(`wrote ${"index.html".padEnd(28)}         (root redirect to ${SITE_SUBDIR}/)`);
+  fs.mkdirSync(OUT, { recursive: true });
+  fs.writeFileSync(path.join(OUT, "favicon.svg"), favicon, "utf-8");
+  fs.writeFileSync(path.join(OUT, "index.html"), buildLanding(builds), "utf-8");
+  console.log(`wrote ${"index.html".padEnd(28)}         (${builds.length} age group(s))`);
+
   const warnings = allWarnings();
   if (warnings.length) {
     console.log(`\n${warnings.length} warning(s):`);
@@ -610,5 +580,14 @@ function main(): number {
   return 0;
 }
 
-forecasts = await loadForecasts(PLANS, CLUB, GENERATED);
-process.exit(main());
+const BUILDS: TeamBuild[] = TEAMS.map((team) => ({
+  team,
+  docs: loadDocs(team),
+  plans: loadPlans(team),
+}));
+forecasts = await loadForecasts(
+  BUILDS.flatMap((b) => b.plans),
+  CLUB,
+  GENERATED,
+);
+process.exit(main(BUILDS));

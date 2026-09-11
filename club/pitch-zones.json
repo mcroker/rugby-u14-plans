@@ -1,0 +1,26 @@
+{
+  "_comment": [
+    "Where each pitch sits on the club's allocation map, as percentages of",
+    "club/images/web/pitch-map.jpg. A session plan writes the club's own zone code",
+    "— ![caption](pitch:2b) — and the build pins that team's marker on the spot.",
+    "",
+    "Halves are named as seen standing at the Club House looking out over the",
+    "grounds, which is why pitches 1 and 4 divide near/far while 2 and 3 divide",
+    "left/right. An unknown code fails the build.",
+    "",
+    "To add a zone: open the map, estimate left/top as percentages from the",
+    "top-left corner, and name the pitch and half the way people say them."
+  ],
+
+  "1a": { "left": 14, "top": 70, "pitch": "Pitch 1", "half": "near-end" },
+  "1b": { "left": 29, "top": 69, "pitch": "Pitch 1", "half": "far-end" },
+  "2a": { "left": 45, "top": 49, "pitch": "Pitch 2", "half": "left" },
+  "2b": { "left": 47, "top": 65, "pitch": "Pitch 2", "half": "right" },
+  "3a": { "left": 65, "top": 38, "pitch": "Pitch 3", "half": "left" },
+  "3b": { "left": 68, "top": 53, "pitch": "Pitch 3", "half": "right" },
+  "4a": { "left": 9, "top": 3, "pitch": "Pitch 4", "half": "far-end" },
+  "4b": { "left": 9, "top": 17, "pitch": "Pitch 4", "half": "near-end" },
+
+  "_training": "Not one of the club's Sunday allocation codes: the floodlit training area, the blue square below Pitch 4. Position estimated from the map itself.",
+  "training": { "left": 13, "top": 37, "pitch": "Training Area", "half": "floodlit" }
+}

@@ -26,6 +26,7 @@ import {
   loadPitchZones,
   loadTeams,
   overlay,
+  resolve,
   type Club,
   type Team,
 } from "./lib/config.ts";
@@ -167,14 +168,30 @@ interface DocMeta {
   body: string;
 }
 
+/** Markdown that is never a page: instructions for whoever works on the repo.
+ *  Build requirement — the CLAUDE.md files stay off the shared site. */
+const NOT_PAGES = new Set(["CLAUDE.MD", "README.MD", "AGENTS.MD", "CONTRIBUTING.MD"]);
+
 /**
  * Every content doc visible to a team — its own, plus anything it has not
  * overridden from club/ and content/.
  */
 function loadDocs(team: Team): DocMeta[] {
+  const found = overlay(ROOT, team.slug, ".");
+  // The age-grade laws are the same for every club, so they are kept as one
+  // file per age group and picked by the team's own `ageGroup`. A team that
+  // writes its own laws.md overrides this like any other default.
+  if (!found.has("laws.md")) {
+    const laws = resolve(ROOT, team.slug, path.join("laws", `${team.ageGroup}.md`));
+    if (laws) found.set("laws.md", laws);
+    else note(`${team.slug}: no laws doc for age group '${team.ageGroup}'`);
+  }
+
   const out: DocMeta[] = [];
-  for (const [name, file] of overlay(ROOT, team.slug, ".")) {
+  for (const [name, file] of found) {
     if (!name.endsWith(".md")) continue;
+    // Instructions for whoever works on the repo, never pages on the site.
+    if (NOT_PAGES.has(name.toUpperCase())) continue;
     const label = path.relative(ROOT, file);
     const { data, body } = parseFrontMatter(fs.readFileSync(file, "utf-8"), label);
     const pageName = optStr(data, "page");

@@ -1,68 +1,31 @@
-# U14 Rugby — project instructions
+# Rugby session plans — a coaching site framework
 
-This project holds the coaching material for our club's U14 age group: squad context, playing style, session plans, and the shared HTML reference site built from them.
+Coaching material for a rugby club's age groups — squad context, playing style, session plans — and the linked HTML site built from them. **One site per team**, published to its own sub-directory, from one repository.
 
-**Read `teams/u14/age-group.md` and `teams/u14/coaching.md` before producing session plans, playbooks, or drills for this team.** Session plans and drills should use the terminology defined in `teams/u14/playbook.md`.
+This file is the **framework**: how the repo fits together, the session-plan contract the build reads, and the house style. It ships upstream and is improved upstream, so **nothing club- or team-specific belongs here**:
 
-## Documents
+- **Club facts** — the grounds, the pitch allocation, how halves are named — live in **`club/CLAUDE.md`**.
+- **Team facts** — the squad, its fixtures, where its files live — live in **`teams/<slug>/CLAUDE.md`**.
 
-- **`teams/u14/age-group.md`** — squad context: the two teams, physical and skill profile, neurodiversity, training days and facilities, and how the squad is split into training groups.
-- **`teams/u14/coaching.md`** — how sessions should be coached: the 6-week block model, whole–part–whole, skill zones, the mandatory two-minute contact warm-up, the skills pyramid, coaching resources and equipment, and the coaching team.
-- **`teams/u14/warmup.md`** — the standard five-minute player-led warm-up we open every session with: four fixed phases in lines off the try-line, and what the leader says. The separate two-minute **contact warm-up** (in `teams/u14/coaching.md`) still precedes any tackling.
-- **`teams/u14/playbook.md`** — our calls (open play, kicking, etc.) and shapes, kept as a clean, players-shareable reference (no squad/coaching context in it — that lives in the two files above).
-- **`teams/u14/laws.md`** — RFU law changes as we move from U13 to U14, including the new lineout laws.
-- **`teams/u14/blocks.md`** — our block themes and session-by-session plans.
-- **`teams/u14/calendar.md`** — this season's fixtures and training dates (non-PII summary from the club calendar).
-- **`teams/u14/activities.md`** — a bank of previously used games/drills (warm-up, game-zone, skill-zone), tagged by skill focus, to draw on when building new session plans.
-- **`teams/u14/plans/`** — detailed on-the-pitch session run-sheets, one file per session (see Session plan mechanics below).
-- **`ref/`** — reference material: `Lineout FAQ.pdf` (law/mechanics questions), plus `Autism in Rugby.pdf` and `ADHD in Rugby.pdf` (club guidance on coaching neurodiverse players).
-- **`tools/`** — `build_site.ts`, which generates the whole HTML site from the markdown above, and `theme.css`, the shared design system it inlines (see Shared HTML reference below).
+Before writing session plans, playbooks or drills for a team, read that team's **`age-group.md`** and **`coaching.md`**, and use the terminology in its **`playbook.md`**.
 
-**Pitch allocation (external):** [https://pitch.twrfc.com/](https://pitch.twrfc.com/) — the club's allocation of pitches and times for each Sunday at home. **We are `U14M`.** This is the source of the start/end time and the pitch for every home session, so check it when writing or running a Sunday plan. It covers club sessions only — Thursdays at TWGSB 4G aren't on it.
+## The documents a team has
 
-**Reading the map's labels.** Where a zone is labelled with two age groups — `U12M / U14M`, `U11 / U15M`, and so on — that is **two consecutive slots on the same ground, not two groups sharing it**. The club runs the minis and younger juniors from **9:00–10:30**, then the older juniors, academy and ladies from **10:45–12:30**. We are always the second name, so **the zone is ours alone for our slot**; the group named before us is off it by 10:30.
+Each is resolved through the three layers below, so a team has all of these whether it wrote them or not.
 
-It does mean the ground is still in use right up to the changeover, so nothing can be set out early.
-
-**Fixtures, results and league tables (external):** the RFU's England Rugby site carries both teams' league fixtures. The base URL is the same for a team all season; only the `#` anchor changes between the fixtures list, the results and the table:
-
-| Team | Competition | Base URL |
+| Doc | What it holds | Usually |
 |---|---|---|
-| **Blue** — `team=23300`, `division=79245` | Kent Boys Youth Leagues, **U14 Boys Stage 1 Group 2** | `https://www.englandrugby.com/fixtures-and-results/search-results?team=23300&competition=2075&division=79245&season=2026-2027` |
-| **White** — `team=128902`, `division=79250` | Kent Boys Youth Leagues, **U14 Boys Stage 1 Group 7** | `https://www.englandrugby.com/fixtures-and-results/search-results?team=128902&competition=2075&division=79250&season=2026-2027` |
+| **`age-group.md`** | Squad context: who the players are, physical and skill profile, neurodiversity, training days and facilities, how the squad splits into groups. | Team's own |
+| **`coaching.md`** | How sessions are coached: the 6-week block model, whole–part–whole, skill zones, the mandatory two-minute contact warm-up, the skills pyramid, resources, the coaching team. | Shared default |
+| **`warmup.md`** | The five-minute player-led warm-up every session opens with. The separate two-minute **contact warm-up** (in `coaching.md`) still precedes any tackling. | Shared default |
+| **`activities.md`** | A bank of games and drills, tagged by skill focus, to draw on when building sessions. | Shared default |
+| **`playbook.md`** | The team's calls and shapes — a clean, players-shareable reference. No squad or coaching context in it. | Team's own, from a skeleton |
+| **`laws.md`** | RFU age-grade laws for that age group. Picked automatically from `content/laws/<ageGroup>.md` by the team's `ageGroup`. | Shared default |
+| **`blocks.md`** | Block themes and session-by-session plans. | Team's own |
+| **`calendar.md`** | The season's fixtures and training dates. Keep it non-PII — no player, parent or guardian names, contacts or attendance data. | Team's own |
+| **`plans/`** | On-the-pitch run-sheets, one file per session (see Session plan mechanics). | Team's own |
 
-Add **`#fixtures`**, **`#results`** or **`#tables`** to either. The two teams are in **different groups**, so they have different opponents and are not always both playing on the same Sunday — check each separately before assuming a fixture Sunday is a fixture for the whole squad.
-
-A note for anyone re-reading these pages: the fixture list is rendered client-side, and the site returns **403 to a plain fetch** — it needs a normal browser user-agent. The season's fixtures are in the page HTML once it loads.
-
-**How the club's pitches are numbered.** The allocation map shows the grounds from above, with the **Club House** marked at the bottom-left. Our own names for what it shows:
-
-| | |
-|---|---|
-| **Pitch 1** | Nearest the Club House. |
-| **Pitch 2** | To the right of Pitch 1. |
-| **Pitch 3** | To the right of Pitch 2. |
-| **Pitch 4** | The pitch at the top of the map. |
-| **Training Area** | The square blue area just below Pitch 4 — **the floodlit area**, and so where Thursday evening sessions are while we are at the club. Its zone code is `training`; it is not one of the club's Sunday allocation codes, and its pin position is estimated from the map rather than taken from the club's own data. |
-| **Touch Pitch** | The blue rectangle above Pitch 1 — i.e. beyond it, away from the Club House. |
-
-**Naming half a pitch.** We are often allocated half a pitch, shared with another age group. Halves are named **as seen standing at the Club House looking out over the grounds**, which means the split runs differently depending on where the pitch is:
-
-- **Pitches 2 and 3** — **left** and **right**.
-- **Pitches 1 and 4** — **near-end** and **far-end**.
-
-Always say which, in the plan's Location row and on the night — "half of Pitch 2" is not enough for thirty players to find.
-
-The club's allocation page labels the halves with its own codes, which map to ours as:
-
-| Code | Ours | | Code | Ours |
-|---|---|---|---|---|
-| `1a` | Pitch 1, near-end | | `3a` | Pitch 3, left |
-| `1b` | Pitch 1, far-end | | `3b` | Pitch 3, right |
-| `2a` | Pitch 2, left | | `4a` | Pitch 4, far-end |
-| `2b` | Pitch 2, right | | `4b` | Pitch 4, near-end |
-
-That table lives in `club/pitch-zones.json`, so a plan only ever writes the club's code — `![caption](pitch:2b)` — and the map pin states the pitch and half itself.
+**`tools/`** holds `build_site.ts`, which generates every site, `lib/` the rendering machinery, and `theme.css` the shared design system it inlines.
 
 ## How the repo is laid out
 
@@ -82,7 +45,7 @@ The landing page at the root of the domain lists the teams, and each team's own 
 
 ## Session plan mechanics
 
-**Detailed, on-the-pitch session run-sheets** (timings, drills, setup) live in the **`teams/u14/plans/`** folder, one file per session, expanding that session's entry in `teams/u14/blocks.md`. Naming convention: `teams/u14/plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md` — e.g. `teams/u14/plans/block1-week1-thur.md` for Block 1, Week 1, Thursday. Use `thur` or `sun` for the day.
+**Detailed, on-the-pitch session run-sheets** (timings, drills, setup) live in the **`teams/<slug>/plans/`** folder, one file per session, expanding that session's entry in `blocks.md`. Naming convention: `teams/<slug>/plans/block{block number}-week{week number within the block, i.e. restarts at 1 for each new block}-{thur|sun}.md` — e.g. `teams/<slug>/plans/block1-week1-thur.md` for Block 1, Week 1, Thursday. Use `thur` or `sun` for the day.
 
 **House style — say the thing, not why it was decided.** Plans are read while running a session. State the fact or the instruction and stop:
 
@@ -90,11 +53,11 @@ The landing page at the root of the domain lists the teams, and each team's own 
 - **Don't explain a design decision in the plan.** Why the tackle zone is front-loaded, or why the game is narrow, belongs in `blocks.md` or a Review — not in the run-sheet a coach is holding.
 - **Don't cross-reference a page the plan already carries.** The warm-up and contact warm-up are on the page; pointing at `coaching.md` for them is noise. A reference to something genuinely elsewhere — the laws, the activities bank — is fine.
 - **Session details cells are one short fact each.** Caveats go in Notes.
-- **Activities entries are notes, not prose.** They are read seconds before running the thing, and Description, Coaching Points and Progressions are what the Details modal shows. Give the facts — the numbers, the sequence, the conditions, the cues — and stop. **Cut every clause that explains why:** no *"the point is…"*, no *"…here on purpose"*, no *"that is what X is for"*, no restating the session's intent. Prefer a numbered sequence or a bulleted list to a paragraph. Write each Progression and Adaptation as one line, condition then response — *"Attack getting out too easily: narrow the channel."* If a rationale genuinely needs recording, it belongs in `teams/u14/blocks.md` or the session's Review, not here.
+- **Activities entries are notes, not prose.** They are read seconds before running the thing, and Description, Coaching Points and Progressions are what the Details modal shows. Give the facts — the numbers, the sequence, the conditions, the cues — and stop. **Cut every clause that explains why:** no *"the point is…"*, no *"…here on purpose"*, no *"that is what X is for"*, no restating the session's intent. Prefer a numbered sequence or a bulleted list to a paragraph. Write each Progression and Adaptation as one line, condition then response — *"Attack getting out too easily: narrow the channel."* If a rationale genuinely needs recording, it belongs in `blocks.md` or the session's Review, not here.
 
-**A session that has happened is a record — don't edit it.** Once a session has run, its file in `teams/u14/plans/` stays as it was, plus its Review. **Improvements to the way we plan and run sessions go into the next plan forward, never back into completed ones**: a new template section, a better way of writing a block, a format that worked — apply them from the next session on. The archive is what we actually did on the day, and it stops being that the moment it gets tidied up. The Review is the one thing added after the fact.
+**A session that has happened is a record — don't edit it.** Once a session has run, its file in `teams/<slug>/plans/` stays as it was, plus its Review. **Improvements to the way we plan and run sessions go into the next plan forward, never back into completed ones**: a new template section, a better way of writing a block, a format that worked — apply them from the next session on. The archive is what we actually did on the day, and it stops being that the moment it gets tidied up. The Review is the one thing added after the fact.
 
-**Session plan template.** Every file in `teams/u14/plans/` follows this structure. **The build reads it structurally, not just as prose** — the headings and the shape of the two tables are a contract, and the notes below each part say what depends on them. Getting one wrong fails the build rather than quietly producing a broken page.
+**Session plan template.** Every file in `teams/<slug>/plans/` follows this structure. **The build reads it structurally, not just as prose** — the headings and the shape of the two tables are a contract, and the notes below each part say what depends on them. Getting one wrong fails the build rather than quietly producing a broken page.
 
 | Markdown | Becomes, on the page |
 |---|---|
@@ -165,9 +128,9 @@ The landing page at the root of the domain lists the teams, and each team's own 
    - **`**Setup:**`** and **`**Coaching Points:**`** are lifted onto the timeline block as *Set up* and *Call* — **first sentence only**, so lead with the instruction and put the caveats after it. A bare cross-reference (`see \`activities.md\`.`) is skipped, so don't make it the whole first sentence.
    - **`**Description:**`**, **`**Coaching Points:**`** and **`**Progressions:**`** are what the block's **Details** modal shows.
    - An entry is matched to its row by the words in the title, so keep the two recognisably the same. No match means no setup, cues, Details button or link for that block — it falls back to the Plan table's summary.
-   - The **player-led warm-up entry is generated automatically** from `teams/u14/warmup.md` — don't write one.
+   - The **player-led warm-up entry is generated automatically** from the team's `warmup.md` — don't write one.
 
-   Write an entry for anything that warrants it (a new skill or system, anything worth a diagram or video); a row like a cool-down needs none. Check **`teams/u14/activities.md`** first for a reusable game/drill before inventing a new one. Each entry can include:
+   Write an entry for anything that warrants it (a new skill or system, anything worth a diagram or video); a row like a cool-down needs none. Check **`activities.md`** first for a reusable game/drill before inventing a new one. Each entry can include:
    - **Groups** — the numbers/split line above; on every entry, and always first
    - Coaching Points (kept to a small number of focus areas)
    - Setup
@@ -176,22 +139,22 @@ The landing page at the root of the domain lists the teams, and each team's own 
    - **Adaptations** — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
    - **Diagram** and/or **Video example(s)**, where useful — see below.
 5. **Notes** — a free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
-6. **Review** — **last on the page, after Notes**, and added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `teams/u14/coaching.md`, a playing-style one in `teams/u14/playbook.md`, a next-week consequence in `teams/u14/blocks.md` — and leave the session-specific detail here.
+6. **Review** — **last on the page, after Notes**, and added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `coaching.md`, a playing-style one in `playbook.md`, a next-week consequence in `blocks.md` — and leave the session-specific detail here.
 
-**Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `teams/u14/plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
+**Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `teams/<slug>/plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 
-- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. **You don't write this page by hand, and you don't register it anywhere:** add the run-sheet to `teams/u14/plans/` with its frontmatter filled in (see the template above) and push — the workflow builds the page and its index card automatically. See Shared HTML reference below.
+- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. **You don't write this page by hand, and you don't register it anywhere:** add the run-sheet to `teams/<slug>/plans/` with its frontmatter filled in (see the template above) and push — the workflow builds the page and its index card automatically. See Shared HTML reference below.
 - A **PDF**, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.
 
-See `teams/u14/plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](http://rugby-plans.com/u14/block1-week1-sun.html) for a worked example of the responsive HTML output.
+See `teams/<slug>/plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](http://rugby-plans.com/u14/block1-week1-sun.html) for a worked example of the responsive HTML output.
 
 ## Shared HTML reference
 
 Alongside the per-session pages above, the site is a small linked reference built from the same markdown sources — this is what actually gets shared outside the coaching group (players, parents), so nothing goes in it that isn't fit for that audience.
 
-**The HTML is generated, never hand-edited and never committed.** `tools/build_site.ts` builds every page from `teams/`, `club/` and `content/`, and the `.github/workflows/pages.yml` workflow runs it on each push to `main` and deploys the result straight to GitHub Pages. The site is live at **[http://rugby-plans.com/u14/](http://rugby-plans.com/u14/)** — and the link to hand out is the stable next-session one, **[http://rugby-plans.com/u14/next.html](http://rugby-plans.com/u14/next.html)**.
+**The HTML is generated, never hand-edited and never committed.** `tools/build_site.ts` builds every page from `teams/`, `club/` and `content/`, and the `.github/workflows/pages.yml` workflow runs it on each push to `main` and deploys the result straight to GitHub Pages. The site is live at **[rugby-plans.com](http://rugby-plans.com/)** — and the link to hand out for a team is its stable next-session one, e.g. **[rugby-plans.com/u14/next.html](http://rugby-plans.com/u14/next.html)**.
 
-**The pages are published into a `u14/` sub-directory** of the domain, not at its root, so the root stays free for other age groups later. The build writes them to `<output>/u14/` and leaves a small redirect stub at `<output>/index.html` so the bare domain doesn't 404 — replace that stub with a real landing page if another age group ever joins. Every link between pages is relative, so the sub-directory needs no other change.
+**Each team's pages are published into its own sub-directory** of the domain — `/u14/`, `/u15/` — with a landing page at the root listing them. Every link within a team's site is relative, and each team's footer links back up to the landing page.
 
 So **publishing is just editing the markdown and pushing.** To preview locally first:
 
@@ -207,13 +170,13 @@ The script **exits non-zero on any warning** (a diagram it can't find, a plan wi
 Pages on the site:
 
 - **`index.html`** — the entry point, with cards linking to every page below. This is the one link to hand out for "a simple reference."
-- **`playbook.html`** — full HTML export of `teams/u14/playbook.md`, including the diagrams. The master reference for how we play.
-- **`block1-overview.html`** — full HTML export of `teams/u14/blocks.md`'s Block 1 section (session list, weekly outlines).
-- **`claude.html`** ("Coaching Notes") — full HTML export of `teams/u14/age-group.md` and `teams/u14/coaching.md`, combined into the one page. The project/build instructions in this file (`CLAUDE.md`) are **not** part of the shared site.
-- **`activities.html`** — full HTML export of `teams/u14/activities.md`.
-- **`calendar.html`** — full HTML export of `teams/u14/calendar.md`.
-- **`laws.html`** — full HTML export of `teams/u14/laws.md`.
-- **`warmup.html`** — full HTML export of `teams/u14/warmup.md`.
+- **`playbook.html`** — full HTML export of the team\'s `playbook.md`, including the diagrams. The master reference for how we play.
+- **`block1-overview.html`** — full HTML export of the team\'s `blocks.md`'s Block 1 section (session list, weekly outlines).
+- **the Coaching Notes page** — `age-group.md` and `coaching.md` combined onto one page (two docs naming the same `page:` are concatenated in `order`). The instructions in the `CLAUDE.md` files are **not** part of the shared site.
+- **`activities.html`** — full HTML export of the team\'s `activities.md`.
+- **`calendar.html`** — full HTML export of the team\'s `calendar.md`.
+- **`laws.html`** — full HTML export of the team\'s `laws.md`.
+- **`warmup.html`** — full HTML export of the team's `warmup.md`.
 - **`next.html`** — **the stable link.** It carries the upcoming session's page itself, so the URL you hand out never changes and stays `next.html` in the address bar. Today counts as next all day; if every session is in the past it shows the most recent one. The same page also lives at its dated URL, and `next.html` links to that as the permanent one.
 - **`<plan>.html`** — **one page per session**, built to be read top-down at the ground and in depth when planning. The session objective at the top under its own **Objective** heading, then a collapsed **Logistics** accordion (the rest of the session details, and the pitch map), then the run sheet as a **timeline** — time down the page, and a stretch where several things happen at once splits into that many columns. Each block shows only what you need to *run* it (setup and cues, taken from the plan's own Activities entry) with a **Details** button opening a modal of that activity. The modal is filled at click time by cloning the activity's own section out of the page below, so the detail exists once in the HTML and the modal is only a view onto it — and it offers *Show it in the plan* to jump there instead. Below the timeline: the coach allocation, then the Activities as **accordions, collapsed by default** with Expand all / Collapse all, so the plan reads as a contents list rather than a wall; then Notes and Review. A link to `#<activity-id>` opens that accordion on arrival. Every heading carries an anchor id, which is what those jumps use.
 - Session pages keep their dated names permanently and are **the archive** — once a session has passed, its page stays exactly where it was, and only `next.html` moves on.
@@ -222,8 +185,8 @@ Pages on the site:
 
 - **Responsive.** Every page must display well on both mobile (checking a plan pitch-side on a phone) and desktop/tablet (planning ahead) — this is the whole point of the HTML export over a flat document.
 - **Consistent style.** All pages share one design system — club blue/gold palette, Oswald (headings) + Public Sans (body), both sans-serif — defined once in **`tools/theme.css`** and inlined into every page by the build script, so each page is standalone. Change the look there, not per page.
-- **Diagrams are same-origin files, lazily loaded.** They used to be inlined as data URIs, because pages were standalone files shared through Drive and an external Drive URL broke under content-security policies. On a hosted site that reasoning no longer applies: the build copies the web-sized images into **`u14/img/`** and references them with `loading="lazy"`, so they are cached between pages and sessions and the HTML stays small enough to render on a bad signal at the ground. (This took the playbook from 418 KB to 27 KB and the Sunday plan from 172 KB to 36 KB.) **Never link an image to an external host** — that part of the old rule stands. Full-size originals live in `teams/u14/images/originals/` (several MB each); the copies that ship are in **`teams/u14/images/web/`** (~800–1100px, 35–50 KB). **Adding a diagram is adding the web-sized copy** — e.g. `sips -Z 900 teams/u14/images/originals/new.png --out teams/u14/images/web/new.png` — and then referencing it by filename: `![A caption](new.png)`. Everything in that folder is copied into the site; there is no list to keep in step with it. An image the markdown asks for and the folder doesn't have fails the build.
-- **Highlighting a table row.** Start a row's **first cell with `%%`** and the whole row gets a highlighted background on the site (the marker itself is stripped). Used in `teams/u14/calendar.md` to pick out dates worth noticing. Keep it rare — it stops working the moment several rows use it.
+- **Diagrams are same-origin files, lazily loaded.** They used to be inlined as data URIs, because pages were standalone files shared through Drive and an external Drive URL broke under content-security policies. On a hosted site that reasoning no longer applies: the build copies the web-sized images into **each team's `img/`** and references them with `loading="lazy"`, so they are cached between pages and sessions and the HTML stays small enough to render on a bad signal at the ground. (This took the playbook from 418 KB to 27 KB and the Sunday plan from 172 KB to 36 KB.) **Never link an image to an external host** — that part of the old rule stands. Full-size originals live in the team's `images/originals/` (several MB each); the copies that ship are in **the team's `images/web/`** (~800–1100px, 35–50 KB). **Adding a diagram is adding the web-sized copy** — e.g. `sips -Z 900 teams/<slug>/images/originals/new.png --out teams/<slug>/images/web/new.png` — and then referencing it by filename: `![A caption](new.png)`. Everything in that folder is copied into the site; there is no list to keep in step with it. An image the markdown asks for and the folder doesn't have fails the build.
+- **Highlighting a table row.** Start a row's **first cell with `%%`** and the whole row gets a highlighted background on the site (the marker itself is stripped). Used in `calendar.md` to pick out dates worth noticing. Keep it rare — it stops working the moment several rows use it.
 - **Cross-references point to the site, not the source files.** Where the markdown source mentions another doc (e.g. `` `playbook.md` ``), the generated HTML should link to that doc's page on the site (`playbook.html`) — not show a `.md` filename, which isn't a real link anyone reading the site can follow.
 - **No academy-library or external play-name provenance notes.** Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source `.md` files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.
 
@@ -232,21 +195,3 @@ Pages on the site:
 **Keeping this in date:** nothing to do — the workflow rebuilds every page from the markdown on each push to `main`, so the site cannot drift out of sync with the sources. The index's cards are generated too, so adding a session plan needs no separate index edit.
 
 The workflow **also runs daily at 05:00 UTC**, because `next.html` depends on the date rather than on anything in the repo: without a scheduled rebuild it would still be advertising last week's session. (GitHub disables scheduled workflows after 60 days with no repo activity — if `next.html` ever goes stale, check the Actions tab first.)
-
-## Where these files live
-
-**Google Drive is now the source of truth for the markdown under `teams/` and `club/`.** They're saved as plain `.md` files in a **U14 Rugby** folder in Drive (mcroker@gmail.com), mirroring this project's structure:
-
-- Folder: `U14 Rugby` — [https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU](https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU) (id `1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU`)
-  - `teams/u14/` — `age-group.md`, `coaching.md`, `playbook.md`, `blocks.md`, `activities.md`, `laws.md`, `calendar.md`, `warmup.md`, a `plans/` subfolder of run-sheets (one file per session, e.g. `block1-week1-sun.md`), and an `images/` subfolder of diagrams sourced from the club's TWRFC Academy library and embedded into `playbook.md`
-  - `club/` — `club.json`, `pitch-zones.json`, `rewrites.json` and the allocation map
-  - `content/` — the shared defaults every team inherits unless it writes its own copy
-
-  **The per-subfolder Drive IDs previously recorded here are stale.** The move to `teams/`, `club/` and `content/` renamed those folders in Drive as well as on disk, so the old `claude/` and `plans/` IDs no longer resolve. The top-level folder link above is unchanged; re-read the subfolder IDs from Drive if a tool ever needs them directly.
-  - **No HTML folder.** The site used to live in a `Public (HTML)` subfolder, then in `docs/`; it is now generated by `tools/build_site.ts` and deployed to GitHub Pages by the workflow, so no HTML is stored in Drive or committed to the repo at all. The generated pages are standalone full HTML documents (own `<!DOCTYPE>`/`<head>`/`<body>`, with the viewport meta tag the responsive layout needs).
-
-**Drive is now the single source of truth — there are no parallel copies of these files as Claude Project docs any more.** Read and edit the Drive files directly; nothing needs mirroring back anywhere else. When a computer is linked and has this Drive folder synced locally, prefer editing the local synced copy (fast, no round-trip) — fall back to the connected Google Drive tool (trash + recreate, per the mechanical note below) when no linked computer/local sync is available.
-
-**Mechanical note:** the connected Google Drive tool has no in-place content-update call — only file metadata (title/parent) can be patched directly. To "edit" a file's content in Drive, the working approach is: trash the old file (`trash_file`) and create a replacement with the same title in the same parent folder (`create_file`, with `disableConversionToGoogleType: true` and `contentMimeType` set to `text/markdown` or `text/html` as appropriate, so it stays a plain file rather than converting to a Google Doc). This means a file's Drive file-ID (and therefore its direct `/file/d/...` link) changes every time it's edited — the folder links above stay stable, but don't rely on a bookmarked link to one specific file surviving an edit.
-
-**Sharing the site:** hand out [http://rugby-plans.com/u14/next.html](http://rugby-plans.com/u14/next.html) for the upcoming session, or [http://rugby-plans.com/u14/](http://rugby-plans.com/u14/) for the index — it's public, needs no Drive permissions, and rebuilds itself on every push to `main`. The old approach (sharing a Drive folder, which the connected Drive tool could only do per-named-person) is no longer needed.

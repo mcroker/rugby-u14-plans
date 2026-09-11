@@ -135,9 +135,58 @@ These sit inside the wider **line-org** system: spacing, numbering up, scanning 
 
 The counter-maul is only legal once the catcher has been returned to the ground, and the pressure on 9 has to stay the right side of offside and obstruction — a penalty hands back everything the pressure won.
 
-**Kick defence:** system (pendulum vs. two players dropping off the line) still TBC.
+**Kick defence:** the **pendulum** — see Defending Kicks below.
 
 *(Whether/when to introduce **drift vs. blitz** as an explicit defensive-system choice, on top of our default blitz, is under review — see `blocks.md`'s Saved for later blocks.)*
+
+## Defending Kicks
+
+**Our system is the pendulum.** Three players cover the field behind the defensive line — normally **15, 11 and 14** — and they swing across together as the ball moves, rather than standing in a flat line.
+
+### The pendulum
+
+Three points are always covered, whatever the ball is doing:
+
+| Position | Who | Job |
+|---|---|---|
+| **Front** | The winger on the ball's side | Up on the end of the defensive line. Takes the short kick in behind and the chip over the top. |
+| **Mid** | 15 | Ten to fifteen metres behind the line, roughly in line with the ball. Takes the box kick and anything down the middle. |
+| **Back** | The far winger | Deepest and infield, on the far side. Takes the long diagonal into the far corner. |
+
+Rules:
+
+- **The unit swings on the ball, not on the kick.** Be in position before it leaves the boot — once it's in the air it's too late to travel.
+- **15 is the pivot; the wings do the travelling.** When the ball crosses the pitch, the front winger drops and goes back, the back winger comes up: the pendulum swings the other way.
+- **Each of the three calls their own position every phase** — "front", "mid", "back". If two players call the same one, the far one drops.
+- **Never two players in the same place, and never all three deep.** Losing the front point is how we concede the chip-and-chase.
+- **Facing on retreat** — shuffle back, eyes on the ball, exactly as in the defensive line (see Defence above).
+
+### Collecting it
+
+- **Call it early and loudly — "Mine!"** The moment it's called, everyone else becomes support.
+- **Side-on, eyes up, body between the ball and the chase.** Take it above the head or into the chest, and land balanced.
+- **Two support players, one on each shoulder, arriving before the ball does** — ready for an offload, or to clear out if the catcher is hit.
+- **In our own 22, never let it bounce.** Catch it, or put it into touch.
+
+### The three zones
+
+Where we collect it decides what we do with it. Call the zone out loud as the ball goes up.
+
+| Zone | Mindset | What we do |
+|---|---|---|
+| **Our 22** | **Low risk** | Get out. Catch and exit kick to the 15m channel (see Kicking Strategy), or find touch. If we're under no pressure, carry up to the 15m, set the ruck, and go **Hawk** off 9. **No counter-attack from inside our 22** unless 15 calls it because the chase is broken. |
+| **Mid pitch** | **Play what's in front** | **CTC while the ball is in the air** — the catcher's support tells them what they've got. Chase broken or we have the overlap: counter — **Chilli** to attack wide, **Magic** through the gap. Chase up and organised: take contact, two to the ruck, and play our normal zig-zag from there. Kicking it straight back is the last option, not the first. |
+| **Their 22** | **Rapid attack** | Fastest ball wins — their line is unset and facing the wrong way. Attack off the catch before they turn: run straight at the chasers, and go wide the moment the support arrives. Two to the ruck, 2-second ball, keep the phases coming. Don't kick it back and give them the field. |
+
+### Working with the forwards
+
+Our back three field the ball; the forwards decide whether we keep it.
+
+- **As the kick goes up, the forwards stop pushing forward and turn.** The nearest three run to the catcher — that's the ruck, if one is needed.
+- **The pack folds back across the pitch with the pendulum**, not up the touchline they were defending. Whoever is closest to the landing point is the first support player, whatever their number.
+- **First man to the catcher is the shoulder, not a cleaner** — get there before the ball lands, take the offload if it's on.
+- **Two in, fast**, exactly as in open play. A counter-attack dies in the first ruck if five forwards arrive late.
+- **If we're exiting, the forwards get in front of the kicker** — a chase line, not a wall behind them.
 
 ## Lineout — new at U14
 
@@ -207,13 +256,14 @@ Scrum moves from 6 players (U13) to a full 8-player contested scrum, and the No.
 
 Sections still to fill in as we build this out:
 
-- Defensive shape (defined above — pressure defence, the four pillars, **Bang** as the blitz trigger call, ruck-defence and lineout-defence rules; kick-defence system and drift-vs-blitz still TBC)
+- Defensive shape (defined above — pressure defence, the four pillars, **Bang** as the blitz trigger call, ruck-defence and lineout-defence rules; drift-vs-blitz still TBC)
 - Scrum calls / options (see above — default is **DSP**, ball to 9; No.8 pick-and-go call still TBC)
 - Lineout calls (defined above — B/W/G (Blue/White/Gold) front/middle/back system)
 - Lineout numbers (defined above — default 5-man, more for a driving maul)
 - Lineout default move (defined above — **5-man Rhino**: OTT to 9 → first ball to the forwards in front of 10, they + 12 set ruck 1 → pod races round and carries into ruck 2 for Rhino, or runs as a dummy for **Hippo** if 10 wants it early → backs edge attack; diagrams not yet redrawn to this shape. Progression saved for later: 10 as first receiver, pod out one)
 - Backs moves (defined above — S1, DS Pop, Batman, Superman, Smash 1, Hulk; more to be added)
 - Kicking calls (defined above — Eagle, Hawk; kicking strategy beyond exit kicks still TBC)
+- Defending kicks (defined above — the pendulum, the three zones, and the forwards' part; still to add: a call for the counter-attack itself, and a diagram of the pendulum swinging)
 - Attacking shape outside the 22 (default pattern now defined above — zig-zag, 5m to 5m, forward pod of 3 in front of 10 (+12 when numbers allow); further phase-by-phase detail still TBC)
 - Set-piece to open-play transitions
 - More diagrams to source from the club's Academy image library as remaining calls are matched up (Bull, Hippo, Tip, Fox, Piggy, Magic, Bang, DSP, B/W/G lineout calls still without a diagram)

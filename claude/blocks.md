@@ -88,7 +88,7 @@ Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.m
 
 **Forwards-skill focus: defending the lineout (Sun)** — now building on the Week 1 Thursday introduction rather than starting from scratch: the counter-maul and seam attack, pressure on 9, hooker in the channel, and 9 + tail-gunner shooting (see `playbook.md`). Thursday is pre-match sharpen (see below) and touches both set-pieces lightly rather than introducing new lineout-defence content.
 
-**Backs-skill focus:** defending against kicks — the system (pendulum vs. two players dropping) is still TBC; use this week to trial whichever is chosen.
+**Backs-skill focus:** defending against kicks — the **pendulum**, now defined in `playbook.md`. Start with the back three catching under a kick (call, side-on, support on both shoulders), then the pendulum swinging as the ball moves, then the zone decision on what to do with it.
 
 *Thursday 24 Sep is also pre-match sharpen, not load* — a shortened version of the week's content across all areas lightly, whole squad together, no separate backs split needed, since Sunday 27 Sep is the first fixture.
 
@@ -121,6 +121,9 @@ Ideas and skills that came up while planning Block 1 but aren't part of it — k
 - **Weak-shoulder identification (tackle cue)** — players identify their weak tackling shoulder, then wear a headband on that side as a visual cue. Doesn't fit alongside Block 1's tackle-diamond work — parked.
 - **Drift vs blitz defence** — originally pencilled in for Block 1 Weeks 5–6; under review, not confirmed as part of this block.
 - **Switch (S1)** — the 10/12 switch (see `playbook.md`'s Backs Moves) isn't being actively coached in Block 1; save its introduction for a later block.
+- **Kick-defence scenarios, zone by zone** — the pendulum and the three zones are defined in `playbook.md`, but the set-ups to train them aren't. Build one scenario per zone (exit from our 22, counter from mid-pitch, attack off the catch in their 22), each starting with a kick and run live to a conclusion. Needs a kicker feeding it, so it wants a coach or 10/15 kicking accurately to order.
+- **Back three, catching volume** — the back three need repetitions on collecting kicks (high ball, rolling ball, diagonal into the corner) before the scenarios are worth running. A standing pull-out group, not a one-off session item.
+- **Forwards folding back onto the counter** — the pack's part in kick defence (turning as the kick goes up, folding across with the pendulum, first man as the shoulder). Train it with the backs, not separately; whole-squad scenario work is the only place it shows up.
 
 ## Future blocks
 

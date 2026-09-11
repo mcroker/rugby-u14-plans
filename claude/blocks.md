@@ -75,7 +75,7 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 
 **Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
 
-Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/` and a `PLAN_META` entry, after which it appears on the site by itself.
+Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
 
 ### Outline session plans for each week
 

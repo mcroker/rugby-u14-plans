@@ -82,6 +82,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
 | Markdown | Becomes, on the page |
 |---|---|
+| the `---` **frontmatter** block at the very top | the page's date, heading, subtitle, breadcrumb and index card |
 | `## Session details` — the **Session objective** row | an **Objective** heading at the top of the page, above everything else |
 | `## Session details` — the other rows | the collapsed **Logistics** accordion, with the pitch map inside it, plus the generated **Weather** and **Sunset** rows |
 | `## Initial setup` | a second collapsed accordion directly below Logistics — the cone layout, for the first coach on the ground |
@@ -91,6 +92,35 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 | `## Notes`, then `## Review` | rendered below, as written, in that order — the generated warm-up entry is spliced in at the end of `## Activities`, so anything after it stays where it is written |
 
 
+0. **Frontmatter** — a `---` block at the very top of the file, before the H1. This is what puts the session on the site; **there is no second list to update anywhere else.**
+
+   ```
+   ---
+   date: 2026-09-17
+   start: "18:45"
+   h1: Week 2 — Thursday
+   sub: Scrum on the machine, non-contested, and exit kicks introduced for the backs.
+   sub2: Thu 17 Sep 2026, 6.45–8.15pm
+   crumb: Week 2 (Thu)
+   draft: true
+   card: "Run-sheet for the midweek session: scrum technique, exit kicks, and one game."
+   ---
+   ```
+
+   | Field | What it does |
+   |---|---|
+   | **`date`** | ISO `YYYY-MM-DD`. Decides which plan is **next** — it has to be right. |
+   | **`start`** | Clock time that `+0` in the Plan table means. Also decides whether a Sunset row appears (16:00 or later). |
+   | **`h1`** | Page heading, and the title in the browser tab. |
+   | **`sub`** / **`sub2`** | The two lines under the heading. `sub2` is where the human date-and-time range goes. |
+   | **`crumb`** | Breadcrumb text. |
+   | **`card`** | The index card's description. |
+   | **`draft: true`** | Banners the page and badges its card *Draft — work in progress*, so nobody prints a half-finished plan. Remove it when ready; the marking follows the plan through `next.html`. |
+   | **`badge`** | Optional. Defaults to the date, short — "17 Sep". |
+   | **`sunset`** | Optional. Overrides the 16:00 rule either way. |
+
+   A value with a colon in it (`"18:45"`) or a leading quote needs quoting; everything else can be written bare.
+
 1. **Session details** — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.
 
    For a home Sunday session, **Date/Time and Location come from the pitch allocation** (above) — find the `U14M` row for that date and use its **time** (e.g. `10:45am – 12:30pm`) and its **pitch zone**. Then, straight after the table, include the **allocation map with our pitch marked**, by writing an image whose target is the zone code:
@@ -99,19 +129,17 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    ![Our pitch this session — the U12M / U14M zone on the club allocation map.](pitch:2b)
    ```
 
-   Set **`eveningAtClub: true`** in `PLAN_META` for an evening session at the club, and the build adds a **Sunset** row to the logistics — computed for the club's location on that date, in local time, so it follows the clocks changing. Leave it off for daytime or away-from-the-club sessions, where it is noise.
-
    **Two logistics rows are generated, not written — don't type either into the markdown.**
 
    - **Weather** — the forecast for the club over the session's hours (condition, temperature, wind, chance of rain), fetched at build time from Open-Meteo. It appears on **every** plan whose date is still ahead, and disappears once the session has passed, so an archived page never claims to know what the weather was going to be. The daily 05:00 rebuild refreshes it; the row says how old the forecast is. No network (an offline local preview) simply means no row — it never fails the build.
-   - **Sunset** — see above, gated on `eveningAtClub`.
+   - **Sunset** — added automatically to any session starting at 16:00 or later, computed for the club's location on that date, in local time, so it follows the clocks changing. It is what tells a coach whether the session finishes in the light. Override with `sunset: false` (or `sunset: true`) in the plan's frontmatter on the rare session where the default is wrong.
 
    The map does not sit open on the page: it becomes a **Map** button beside the Location row, opening the club map with a `U14M` marker pinned on that zone. A new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
 2. **Initial setup** — **the cone layout, and nothing else.** A short bulleted list of what goes out before the players arrive: which cones, how many, where, what spacing, and where the shields/mats/machine sit if they define a position. **No drills, no explanation, no reasons** — the coach reading it is on an empty pitch with a bag of cones and fifteen minutes. Optional: a plan without the section simply doesn't get the accordion.
 3. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
 
    - It **must** read `+<start>, <n> min` — e.g. `+7, 13 min`. A row that doesn't fails the build.
-   - **The page shows real clock times**, not `+7`. Set **`start`** in `PLAN_META` to the time `+0` means (`"18:45"`). The markdown stays relative, so moving a session is one field, not a rewritten table. Without `start` the page falls back to showing `+7`.
+   - **The page shows real clock times**, not `+7`. Set **`start`** in the plan's frontmatter to the time `+0` means (`"18:45"`). The markdown stays relative, so moving a session is one field, not a rewritten table. Without `start` the page falls back to showing `+7`.
    - **Rows sharing a start time are drawn side by side** as parallel blocks. That is how the page shows the squad splitting; nothing else marks it.
    - An italic parenthetical after the time — `+7, 13 min *(parallel pull-out)*` — becomes a tag on the block.
    - Only the **first** table in this section is read as the run sheet, so a coach allocation or any other table can follow it.
@@ -136,7 +164,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 
-- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. **You don't write this page by hand:** add the run-sheet to `plans/` and an entry for it to `PLAN_META` in `tools/build_site.ts` (the session's **ISO date**, page heading, subtitle, breadcrumb, index-card text), then push — the workflow builds the page and its index card automatically. The ISO `date` is what decides which plan is the next one, so it has to be right. Set **`draft: true`** on the entry while a run-sheet is still being worked on: the page gets a *Draft — work in progress* banner and a badge beside its heading, and its index card is badged too, so nobody prints a half-finished plan. Remove the flag when it's ready. The marking follows the plan through `next.html` if a draft becomes the upcoming session. See Shared HTML reference below.
+- A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. **You don't write this page by hand, and you don't register it anywhere:** add the run-sheet to `plans/` with its frontmatter filled in (see the template above) and push — the workflow builds the page and its index card automatically. See Shared HTML reference below.
 - A **PDF**, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.
 
 See `plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](http://rugby-plans.com/u14/block1-week1-sun.html) for a worked example of the responsive HTML output.
@@ -158,7 +186,7 @@ node --experimental-strip-types tools/build_site.ts _site   # Node 22.6–23.5
 
 Then open the files in `_site/` (git-ignored). Node runs the TypeScript directly by stripping types, so **the build itself needs no dependencies and no compile step** — nothing to install before previewing. TypeScript is a dev dependency for `npm run typecheck` (`tsc --noEmit`) only, which CI runs before every build, because stripping types does not check them. Run `npm ci` first if you want to type-check locally.
 
-The script **exits non-zero on any warning** (a diagram it can't find, a session plan with no `PLAN_META` entry, a rewording that broke one of its substitutions), so a problem fails the build loudly instead of quietly publishing a broken page.
+The script **exits non-zero on any warning** (a diagram it can't find, a plan with no frontmatter, a run-sheet row it can't read as `+N, N min`), so a problem fails the build loudly instead of quietly publishing a broken page. A stale rewrite rule in `club/rewrites.json` is the one thing reported as a **note** rather than a warning — a reworded sentence leaves one slightly awkward cross-reference, which is not worth refusing to publish over.
 
 Pages on the site:
 
@@ -178,7 +206,7 @@ Pages on the site:
 
 - **Responsive.** Every page must display well on both mobile (checking a plan pitch-side on a phone) and desktop/tablet (planning ahead) — this is the whole point of the HTML export over a flat document.
 - **Consistent style.** All pages share one design system — club blue/gold palette, Oswald (headings) + Public Sans (body), both sans-serif — defined once in **`tools/theme.css`** and inlined into every page by the build script, so each page is standalone. Change the look there, not per page.
-- **Diagrams are same-origin files, lazily loaded.** They used to be inlined as data URIs, because pages were standalone files shared through Drive and an external Drive URL broke under content-security policies. On a hosted site that reasoning no longer applies: the build copies the web-sized images into **`u14/img/`** and references them with `loading="lazy"`, so they are cached between pages and sessions and the HTML stays small enough to render on a bad signal at the ground. (This took the playbook from 418 KB to 27 KB and the Sunday plan from 172 KB to 36 KB.) **Never link an image to an external host** — that part of the old rule stands. Full-size originals live in `claude/images/` (several MB each); the copies that ship are in **`claude/images/web/`** (~800–1100px, 35–50 KB). Adding a diagram means adding a web-sized copy there and an entry in the script's `DIAGRAMS` map — e.g. `sips -Z 900 claude/images/new.png --out claude/images/web/new.png`.
+- **Diagrams are same-origin files, lazily loaded.** They used to be inlined as data URIs, because pages were standalone files shared through Drive and an external Drive URL broke under content-security policies. On a hosted site that reasoning no longer applies: the build copies the web-sized images into **`u14/img/`** and references them with `loading="lazy"`, so they are cached between pages and sessions and the HTML stays small enough to render on a bad signal at the ground. (This took the playbook from 418 KB to 27 KB and the Sunday plan from 172 KB to 36 KB.) **Never link an image to an external host** — that part of the old rule stands. Full-size originals live in `claude/images/` (several MB each); the copies that ship are in **`claude/images/web/`** (~800–1100px, 35–50 KB). **Adding a diagram is adding the web-sized copy** — e.g. `sips -Z 900 claude/images/new.png --out claude/images/web/new.png` — and then referencing it by filename: `![A caption](new.png)`. Everything in that folder is copied into the site; there is no list to keep in step with it. An image the markdown asks for and the folder doesn't have fails the build.
 - **Highlighting a table row.** Start a row's **first cell with `%%`** and the whole row gets a highlighted background on the site (the marker itself is stripped). Used in `claude/calendar.md` to pick out dates worth noticing. Keep it rare — it stops working the moment several rows use it.
 - **Cross-references point to the site, not the source files.** Where the markdown source mentions another doc (e.g. `` `playbook.md` ``), the generated HTML should link to that doc's page on the site (`playbook.html`) — not show a `.md` filename, which isn't a real link anyone reading the site can follow.
 - **No academy-library or external play-name provenance notes.** Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source `.md` files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.

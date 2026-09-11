@@ -20,11 +20,30 @@ export interface Shell {
   theme: string;
   /** Footer line under each page — "Generated <date> · <team> · Back to index". */
   footer: string;
+  /** Optional strip above the page header, crediting the source repository.
+   *  Empty for most sites; see `source` in club.json. */
+  banner?: string;
 }
+
+/** Styles for the source strip — added only to pages that carry one, the way
+ *  INDEX_CSS is, so a site without a banner ships none of this. */
+const BANNER_CSS = `
+.site-banner { background: var(--ink); color: #ffffff; font-size: 0.78rem; line-height: 1.4; }
+.site-banner .inner {
+  max-width: var(--page-width); margin: 0 auto; padding: 6px 24px;
+  display: flex; gap: 6px 10px; flex-wrap: wrap; align-items: baseline;
+}
+.site-banner span { opacity: 0.72; }
+.site-banner a { color: #ffffff; text-decoration: underline; text-underline-offset: 2px; }
+.site-banner a:hover { color: var(--gold-tint); }
+`;
 
 export function page(shell: Shell, o: PageOpts): string {
   const foot = o.footer ?? shell.footer;
-  const css = shell.theme + (o.extraCss?.trim() ? "\n" + o.extraCss.trim() : "");
+  const css =
+    shell.theme +
+    (shell.banner ? "\n" + BANNER_CSS.trim() : "") +
+    (o.extraCss?.trim() ? "\n" + o.extraCss.trim() : "");
   const nav = o.crumb
     ? `    <nav class="crumb"><a href="index.html">Index</a> &rsaquo; ${o.crumb}</nav>\n`
     : "";
@@ -40,7 +59,7 @@ export function page(shell: Shell, o: PageOpts): string {
 <style>${css}</style>
 </head>
 <body>
-<header class="page-head">
+${shell.banner ?? ""}<header class="page-head">
   <div class="inner">
     <h1>${o.h1}</h1>
     <div class="sub">${o.sub}</div>

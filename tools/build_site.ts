@@ -31,7 +31,7 @@ import {
   type Team,
 } from "./lib/config.ts";
 import { bool, num, optStr, parseFrontMatter, str } from "./lib/frontmatter.ts";
-import { inline, mdToHtml, plainCtx, type RenderCtx } from "./lib/md.ts";
+import { escAttr, inline, mdToHtml, plainCtx, type RenderCtx } from "./lib/md.ts";
 import {
   card,
   DRAFT_BADGE,
@@ -61,6 +61,18 @@ const GENERATED = new Date().toLocaleDateString(CLUB.locale, {
 
 /** Where a team's diagrams are copied to inside its own site. */
 const IMG_DIR = "img";
+
+/**
+ * The strip above every page header, crediting the repository the site is
+ * built from. Absent unless `source` is set in club.json — a fork publishes
+ * nothing about anyone else's repository until it decides to.
+ */
+const BANNER = CLUB.source?.url
+  ? '<div class="site-banner"><div class="inner">' +
+    `<span>${escAttr(CLUB.source.text)}</span>` +
+    `<a href="${escAttr(CLUB.source.url)}">${escAttr(CLUB.source.url.replace(/^https?:\/\//, ""))}</a>` +
+    "</div></div>\n"
+  : "";
 
 // ------------------------------------------------------------------- rewrites
 
@@ -369,6 +381,7 @@ function buildTeam(b: TeamBuild, siteOut: string): Record<string, string> {
     footer:
       `Generated ${GENERATED} &middot; ${team.name} coaching reference &middot; ` +
       `<a href="index.html">Back to index</a>`,
+    banner: BANNER,
   };
   const images = copyImages(team, siteOut);
 
@@ -553,6 +566,7 @@ function buildLanding(builds: TeamBuild[]): string {
   const shell: Shell = {
     theme: fs.readFileSync(path.join(ROOT, "tools", "theme.css"), "utf-8").trim(),
     footer: `Generated ${GENERATED} &middot; ${CLUB.name}`,
+    banner: BANNER,
   };
   const txt = (s: string) => inline(s, plainCtx());
   const cards = builds.map(({ team, plans }) => {

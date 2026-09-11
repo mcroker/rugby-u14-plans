@@ -36,6 +36,8 @@ The fork arrives with the previous club's content. Delete it:
 
 **`site`** is the wording on the landing page at the root of the domain, above the per-team sites.
 
+**`source`** is optional, and the fork arrives with the upstream repository's. It puts a one-line strip above every page header crediting where the site is built from. **Delete it**, or repoint it at your own fork — publishing a link to someone else's repository on your club's pages is not what you want. Nothing else depends on it.
+
 ## 3. The pitch map — optional
 
 Only needed if your club publishes a pitch allocation and you want the Map button on session pages.

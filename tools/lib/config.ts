@@ -24,6 +24,12 @@ export interface Club extends Place {
   allocationUrl: string;
   pitchMap: string;
   site: { title: string; sub: string; sub2: string };
+  /**
+   * An optional strip above every page, crediting where the site is built
+   * from. Absent unless a club sets it, so a fork publishes nothing about
+   * anyone else's repository until it chooses to.
+   */
+  source: { url: string; text: string } | null;
 }
 
 export interface Team {
@@ -49,6 +55,7 @@ const CLUB_DEFAULTS: Club = {
   allocationUrl: "",
   pitchMap: "pitch-map.jpg",
   site: { title: "Coaching Reference", sub: "", sub2: "" },
+  source: null,
 };
 
 function readJson<T>(file: string, fallback: T, label: string): T {

@@ -1,3 +1,9 @@
 .DS_Store
 _site/
 node_modules/
+
+# Office lock files
+~$*
+
+# Diagram source — lives in Drive, which versions it; too big for git
+Playbook Images.pptx

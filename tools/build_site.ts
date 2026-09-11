@@ -332,7 +332,7 @@ let forecasts = new Map<string, string>();
  * lazily loadable, and keeps the HTML small enough to render at the ground.
  *
  * Everything in the layered images/web folders is copied and keyed by filename,
- * which is what the markdown writes — `![Rhino](rhino.png)`. The club's map
+ * which is what the markdown writes — `![A shape](shape.png)`. The club's map
  * comes through the same way, so a team can supply its own.
  */
 function copyImages(team: Team, siteOut: string): Record<string, string> {

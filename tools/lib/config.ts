@@ -127,7 +127,7 @@ export function layers(root: string, slug: string): string[] {
 
 /**
  * The first layer that has this file, or null. `rel` is a path within a layer,
- * e.g. `coaching.md` or `images/web/rhino.png`.
+ * e.g. `coaching.md` or `images/web/scrum-shape.png`.
  */
 export function resolve(root: string, slug: string, rel: string): string | null {
   for (const base of layers(root, slug)) {

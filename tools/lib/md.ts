@@ -166,7 +166,7 @@ export function mdToHtml(md: string, ctx: RenderCtx): string {
       }
 
       // Matched on the filename, so a plan may write the path it sees in the
-      // repo (`claude/images/web/rhino.png`) or just the name (`rhino.png`).
+      // repo (`teams/u14/images/web/shape.png`) or just the name (`shape.png`).
       const src = ctx.images[target.split("/").pop() ?? target];
       if (src === undefined) {
         // Never link an image to an external host: a hosted page has to keep

@@ -33,7 +33,7 @@ The build serves **one site per team**, from three layers. When it looks for a f
 
 | Layer | Holds | Published to |
 |---|---|---|
-| **`teams/<slug>/`** | What that team wrote — its playbook, blocks, calendar, squad notes, `plans/`, `images/`, and a `team.json` | `rugby-plans.com/<slug>/` |
+| **`teams/<slug>/`** | What that team wrote — its playbook, blocks, calendar, squad notes, `plans/`, `images/`, and a `team.json` | `<your-domain>/<slug>/` |
 | **`club/`** | What the whole club shares — `club.json` (name, location, allocation URL), `pitch-zones.json`, `rewrites.json`, the allocation map | — |
 | **`content/`** | The defaults every team inherits | — |
 
@@ -102,10 +102,10 @@ The landing page at the root of the domain lists the teams, and each team's own 
 
 1. **Session details** — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.
 
-   For a home Sunday session, **Date/Time and Location come from the pitch allocation** (above) — find the `U14M` row for that date and use its **time** (e.g. `10:45am – 12:30pm`) and its **pitch zone**. Then, straight after the table, include the **allocation map with our pitch marked**, by writing an image whose target is the zone code:
+   For a home session, **Date/Time and Location come from the club's pitch allocation** (see `club/CLAUDE.md`) — find this team's row for that date and use its **time** and its **pitch zone**. Then, straight after the table, include the **allocation map with our pitch marked**, by writing an image whose target is the zone code:
 
    ```
-   ![Our pitch this session — the U12M / U14M zone on the club allocation map.](pitch:2b)
+   ![Our pitch this session, on the club allocation map.](pitch:2b)
    ```
 
    **Two logistics rows are generated, not written — don't type either into the markdown.**
@@ -113,7 +113,7 @@ The landing page at the root of the domain lists the teams, and each team's own 
    - **Weather** — the forecast for the club over the session's hours (condition, temperature, wind, chance of rain), fetched at build time from Open-Meteo. It appears on **every** plan whose date is still ahead, and disappears once the session has passed, so an archived page never claims to know what the weather was going to be. The daily 05:00 rebuild refreshes it; the row says how old the forecast is. No network (an offline local preview) simply means no row — it never fails the build.
    - **Sunset** — added automatically to any session starting at 16:00 or later, computed for the club's location on that date, in local time, so it follows the clocks changing. It is what tells a coach whether the session finishes in the light. Override with `sunset: false` (or `sunset: true`) in the plan's frontmatter on the rare session where the default is wrong.
 
-   The map does not sit open on the page: it becomes a **Map** button beside the Location row, opening the club map with a `U14M` marker pinned on that zone. A new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `club/pitch-zones.json`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
+   The map does not sit open on the page: it becomes a **Map** button beside the Location row, opening the club map with this team's marker pinned on that zone (the label is `pinLabel` in `team.json`). A new week only means changing the zone code. Zone codes are the club's own and are listed in `club/pitch-zones.json`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
 2. **Initial setup** — **the cone layout, and nothing else.** A short bulleted list of what goes out before the players arrive: which cones, how many, where, what spacing, and where the shields/mats/machine sit if they define a position. **No drills, no explanation, no reasons** — the coach reading it is on an empty pitch with a bag of cones and fifteen minutes. Optional: a plan without the section simply doesn't get the accordion.
 3. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
 
@@ -146,13 +146,13 @@ The landing page at the root of the domain lists the teams, and each team's own 
 - A **responsive HTML page** — one page per session, built to read well on both a phone (checking the plan pitch-side on the day) and a desktop/tablet (planning ahead). This is the default share format going forward. **You don't write this page by hand, and you don't register it anywhere:** add the run-sheet to `teams/<slug>/plans/` with its frontmatter filled in (see the template above) and push — the workflow builds the page and its index card automatically. See Shared HTML reference below.
 - A **PDF**, when a flat file that travels well over WhatsApp is specifically wanted instead of (or alongside) the HTML version.
 
-See `teams/<slug>/plans/block1-week1-thur.md` for a worked example of the markdown source, and [the Week 1 (Sun) page](http://rugby-plans.com/u14/block1-week1-sun.html) for a worked example of the responsive HTML output.
+See `teams/example-u14/plans/block1-week1-sun.md` for a worked example of the markdown source, and the page it builds for the responsive HTML output — build the site locally and open `_site/example-u14/block1-week1-sun.html` side by side with the markdown.
 
 ## Shared HTML reference
 
 Alongside the per-session pages above, the site is a small linked reference built from the same markdown sources — this is what actually gets shared outside the coaching group (players, parents), so nothing goes in it that isn't fit for that audience.
 
-**The HTML is generated, never hand-edited and never committed.** `tools/build_site.ts` builds every page from `teams/`, `club/` and `content/`, and the `.github/workflows/pages.yml` workflow runs it on each push to `main` and deploys the result straight to GitHub Pages. The site is live at **[rugby-plans.com](http://rugby-plans.com/)** — and the link to hand out for a team is its stable next-session one, e.g. **[rugby-plans.com/u14/next.html](http://rugby-plans.com/u14/next.html)**.
+**The HTML is generated, never hand-edited and never committed.** `tools/build_site.ts` builds every page from `teams/`, `club/` and `content/`, and the `.github/workflows/pages.yml` workflow runs it on each push to `main` and deploys the result straight to GitHub Pages. The link to hand out for a team is its stable next-session one — `<your-domain>/<slug>/next.html`, which always shows whatever session is coming up.
 
 **Each team's pages are published into its own sub-directory** of the domain — `/u14/`, `/u15/` — with a landing page at the root listing them. Every link within a team's site is relative, and each team's footer links back up to the landing page.
 
@@ -188,7 +188,7 @@ Pages on the site:
 - **Diagrams are same-origin files, lazily loaded.** They used to be inlined as data URIs, because pages were standalone files shared through Drive and an external Drive URL broke under content-security policies. On a hosted site that reasoning no longer applies: the build copies the web-sized images into **each team's `img/`** and references them with `loading="lazy"`, so they are cached between pages and sessions and the HTML stays small enough to render on a bad signal at the ground. (This took the playbook from 418 KB to 27 KB and the Sunday plan from 172 KB to 36 KB.) **Never link an image to an external host** — that part of the old rule stands. Full-size originals live in the team's `images/originals/` (several MB each); the copies that ship are in **the team's `images/web/`** (~800–1100px, 35–50 KB). **Adding a diagram is adding the web-sized copy** — e.g. `sips -Z 900 teams/<slug>/images/originals/new.png --out teams/<slug>/images/web/new.png` — and then referencing it by filename: `![A caption](new.png)`. Everything in that folder is copied into the site; there is no list to keep in step with it. An image the markdown asks for and the folder doesn't have fails the build.
 - **Highlighting a table row.** Start a row's **first cell with `%%`** and the whole row gets a highlighted background on the site (the marker itself is stripped). Used in `calendar.md` to pick out dates worth noticing. Keep it rare — it stops working the moment several rows use it.
 - **Cross-references point to the site, not the source files.** Where the markdown source mentions another doc (e.g. `` `playbook.md` ``), the generated HTML should link to that doc's page on the site (`playbook.html`) — not show a `.md` filename, which isn't a real link anyone reading the site can follow.
-- **No academy-library or external play-name provenance notes.** Several of our diagrams and a couple of calls (Tip/Fox) were originally cross-referenced against the club's TWRFC Academy diagram library and its own call names, to help while building this out. Keep that cross-referencing in the Drive source `.md` files (useful context for coaches), but strip it out of the generated public HTML — players/parents don't need or want another team's internal naming.
+- **Keep working-notes provenance off the public pages.** Source notes, cross-references to another club's diagram library, internal naming — useful in the markdown, noise or worse on a page players and parents read. Configure what gets stripped in `club/rewrites.json` rather than maintaining two copies of a document.
 
 **Open feedback on the site:** after the first session the coaches said the pages are *"a little hard to follow"*. The session pages have since been rebuilt around the timeline described above, with the detail below it — worth checking that this actually answers the feedback before assuming it does.
 

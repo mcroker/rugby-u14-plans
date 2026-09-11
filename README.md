@@ -82,7 +82,7 @@ Context lives in three `CLAUDE.md` files, matching the three layers: the root on
 ## Staying up to date
 
 ```
-git remote add upstream https://github.com/<upstream>/rugby-plans
+git remote add upstream https://github.com/mcroker/claude-rugby-plans.git
 git merge upstream/main
 ```
 

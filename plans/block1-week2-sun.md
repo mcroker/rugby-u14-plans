@@ -17,10 +17,9 @@
 
 Working from the try-line end of the half, out:
 
-- **Warm-up line** — a line of cones across the full width, 20m out from the try-line. Ruck shields stacked at the middle of it.
-- **Passing lines** — second cone colour, between the try-line and the warm-up line: two sets of three lines (A, B, C), 5m between lines, 10m between the sets.
+- **Ruck shields** — stacked in midfield on the 22. The warm-up runs try-line to 22 off the pitch markings; no cone line.
+- **Passing lines** — between the try-line and the 22: two sets of three lines (A, B, C), 5m between lines, 10m between the sets.
 - **Tackle diamonds** — two diamonds side by side on the flattest ground clear of the passing lines, four cones each, 5m sides. Mats inside them.
-- **Scrum marks** — two, 15m apart, on the flattest ground on the half. A cone on each mark and one 5m behind it. A third mark in midfield, with a line of four cones running from it to the touchline, 5m apart.
 - **Game pitch** — the full half: a cone in each corner, one on each 5m line, one either side at halfway.
 
 
@@ -40,7 +39,7 @@ Working from the try-line end of the half, out:
 | +70, 15 min | Main game: 15-a-side, second half | Straight back on; conditions stay as they were |
 | +85, 5 min | Cool-down / close | Recap the scrum sequence; pick next week's warm-up leader |
 
-*The allocated slot is 10:45–12:30 (105 min). **U12M are on our half until 10:30**, so the whole setup — warm-up cones, two diamonds, mats, the scrum marks, the game — goes out in that fifteen-minute changeover. If we start late, take it out of the game block; not out of the scrum block, which is the session.*
+*The allocated slot is 10:45–12:30 (105 min). **U12M are on our half until 10:30**, so the whole setup — two diamonds, mats, passing lines, the game — goes out in that fifteen-minute changeover. If we start late, take it out of the game block; not out of the scrum block, which is the session.*
 
 ## Activities
 
@@ -110,7 +109,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Coaching Points:** **shoulders above hips, always.** Straight back, chin off the chest, eyes up, neck strong. Bind before anyone pushes. Nobody moves until **set**. Front rows matched for size. A scrum going down means everybody stops — say that once, out loud, before the first engage.
 
-**Setup:** two marked scrums on the flattest ground we have, and the scrum machine. Front rows picked for size, not for who wants to be there. Twenty-seven minutes in three parts, in this order — the shape before the positions, the positions before the scrum.
+**Setup:** two scrum marks 15m apart on the flattest ground we have, a cone on each, put down as the block starts. Scrum machine to one of them. Front rows picked for size, not for who wants to be there. Twenty-seven minutes in three parts, in this order — the shape before the positions, the positions before the scrum.
 
 **Description:**
 
@@ -158,7 +157,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Coaching Points:** **attack — depth and width set before the ball leaves the base**, not after. **Defence — the trigger is the ball leaving the base**, not the ball reaching 10; number up outside the scrum, blindside winger owns the short side, and the line goes together on **Bang**.
 
-**Setup:** a marked scrum in midfield with a coach or spare player at 9 — the real 9s are in the scrum zone until +48. Cones for the edge. Run it off both sides of the field.
+**Setup:** a scrum mark in midfield with a coach or spare player at 9 — the real 9s are in the scrum zone until +48. Cones for the edge. Run it off both sides of the field.
 
 **Description:** 9 clears from the base, backs play **DSP** — ball to 10, then what's in front (see `playbook.md`). Defence pressures off the same picture. Two unopposed run-throughs, then live, and reset fast — high-rep, not a walk-through.
 
@@ -231,7 +230,7 @@ Conditions, cumulative, added in this order and left in:
 - **One voice per segment.** Seven coaches are out, which is how it slipped in Week 1. The scrum block is where it will slip again — **one coach per pack**, and the safety call comes from that coach only. Agree the segments during the warm-up.
 - **Share the starting setup on the coaches' thread beforehand** — what goes where in the changeover, and who is on what. Everyone arrives hot on a Sunday; the prep that hasn't been shared doesn't happen.
 - **Call out anything debatable before the day.** If a shape or a call is going to start a coaching discussion, have it on the thread, not with thirty players standing waiting.
-- **Get the kit out fast.** U12M are on our half until 10:30 for a 10:45 start: cones, two diamonds, mats, the scrum marks. Two or three coaches on setup while the rest greet players.
+- **Get the kit out fast.** U12M are on our half until 10:30 for a 10:45 start: cones, two diamonds, mats. Two or three coaches on setup while the rest greet players.
 - **Repeated from last week**, as the coaches asked: the same warm-up, the same diamond, the same passing game, **Bang** and Springbok Touch again from Thursday.
 - **Pick next week's warm-up leader at the close**, not on the day (see `warmup.md`).
 - **No lineout in this session.** Ball into touch is a tap, and the **B/W/G** calls are not introduced today — the whole set-piece slot is the scrum. They still need a week (see `blocks.md`).

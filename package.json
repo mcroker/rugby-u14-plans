@@ -1,9 +1,9 @@
 {
-  "name": "u14-rugby-site",
+  "name": "rugby-plans",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Static site generator for the U14 Rugby coaching reference",
+  "description": "Static-site generator for a rugby club age-group coaching reference",
   "scripts": {
     "build": "node tools/build_site.ts",
     "typecheck": "tsc --noEmit"

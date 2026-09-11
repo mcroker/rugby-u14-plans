@@ -1,3 +1,13 @@
+---
+page: claude.html
+h1: Coaching Notes
+sub: Squad context, playing style, and how sessions are planned and run.
+crumb: Coaching Notes
+group: Coaching reference
+order: 3
+stripLead: true
+card: Squad context, playing style, training structure, and how sessions are planned and run.
+---
 # About the age group
 
 Squad context for this age group: who the players are, when and where we train, and how we split them into training groups. Read this alongside `coaching.md` (how sessions should be coached) before producing session plans, playbooks, or drills for this team. See `CLAUDE.md` for the full document map and session-plan mechanics.

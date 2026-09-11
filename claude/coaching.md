@@ -1,3 +1,8 @@
+---
+page: claude.html
+order: 4
+stripLead: true
+---
 # How we coach
 
 Our coaching approach for this age group: how sessions are structured and run, the skills pyramid we build through, the resources we have, and the coaching team. Read this alongside `age-group.md` (squad context, training days and facilities) before producing session plans, playbooks, or drills for this team. See `CLAUDE.md` for the full document map and session-plan mechanics.

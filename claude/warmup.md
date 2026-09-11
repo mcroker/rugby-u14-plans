@@ -1,3 +1,12 @@
+---
+page: warmup.html
+h1: The Standard Warm-Up
+sub: The five-minute player-led warm-up we open every session with — four phases, in lines off the try-line.
+crumb: Warm-up
+group: Coaching reference
+order: 2
+card: The five-minute player-led warm-up we open every session with — four phases in lines off the try-line, and what the leader actually says.
+---
 # The standard warm-up
 
 Every session opens with the same **five-minute warm-up, led by one of the players** (see `coaching.md` and `age-group.md`). This page is the model: the same four phases, in the same order, every single time.

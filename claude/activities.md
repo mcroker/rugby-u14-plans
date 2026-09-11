@@ -1,3 +1,12 @@
+---
+page: activities.html
+h1: Activities Bank
+sub: Warm-up, game-zone and skill-zone games and drills, tagged by skill focus.
+crumb: Activities
+group: Coaching reference
+order: 5
+card: Warm-up, game-zone and skill-zone games and drills, tagged by skill focus — check here before inventing a new drill.
+---
 # U14 Rugby — Activities Bank
 
 A catalog of previously used games and drills, extracted from past session notes and organised by zone type (Warm-up / Game-zone / Skill-zone). Each entry is tagged with the skill focus it was used for, so it's easy to search for e.g. a continuity game or a defence skill-zone.

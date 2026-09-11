@@ -1,3 +1,16 @@
+---
+page: block1-overview.html
+h1: Block 1 — Session Plans
+sub: Weeks 1–6 — defence, plus introducing lineout and scrum.
+sub2: Sun 6 Sep – Thu 15 Oct 2026
+crumb: Block 1 overview
+group: Block 1 · Weeks 1–6
+order: 0
+withPlans: true
+cardTitle: Block 1 — Overview
+badge: Sep–Oct
+card: Theme, the full week-by-week session list, and outline plans for all six weeks.
+---
 # U14 Rugby — Session Plans
 
 Session-by-session plans, organised by 6-week block (see `coaching.md` for the block-based coaching model and game/skill-zone shapes, `age-group.md` for training days/facilities, squad structure, forwards/backs splits and contested-scrum and match-day rules, and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks). Calls and shapes used in drills should match `playbook.md`; any law-specific coaching points should match `laws.md`; actual dates are tracked in `calendar.md`.

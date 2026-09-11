@@ -22,8 +22,8 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { bool, optStr, parseFrontMatter, str } from "./lib/frontmatter.ts";
-import { mdToHtml, type PitchZone, type RenderCtx } from "./lib/md.ts";
+import { bool, num, optStr, parseFrontMatter, str } from "./lib/frontmatter.ts";
+import { inline, mdToHtml, plainCtx, type PitchZone, type RenderCtx } from "./lib/md.ts";
 import {
   card,
   DRAFT_BADGE,
@@ -66,23 +66,8 @@ const CLUB: Place = {
   locale: "en-GB",
 };
 
-/**
- * A source .md filename mentioned in the markdown becomes a link to its page on
- * the site. Docs with no public page are left as plain text by the substitutions
- * in buildPages() rather than appearing here.
- */
-const PAGE_FOR: Record<string, string> = {
-  "playbook.md": "playbook.html",
-  "blocks.md": "block1-overview.html",
-  "activities.md": "activities.html",
-  "calendar.md": "calendar.html",
-  "laws.md": "laws.html",
-  "warmup.md": "warmup.html",
-  "age-group.md": "claude.html",
-  "coaching.md": "claude.html",
-  "claude/age-group.md": "claude.html",
-  "claude/coaching.md": "claude.html",
-};
+/** The site's own name, used to suffix every page title. */
+const SITE_NAME = "U14 Rugby";
 
 /**
  * Diagram alt text in playbook.md -> web-sized file in claude/images/web/.
@@ -122,6 +107,67 @@ const PITCH_ZONES: Record<string, PitchZone> = {
 
 /** Which age group the pin is labelled for — we are U14M. */
 const OUR_TEAM = "U14M";
+
+/**
+ * A content doc and the page it becomes, read from the doc's own frontmatter.
+ * Several docs can name the same `page`, in which case they are concatenated in
+ * `order` and the lowest-ordered one supplies the page's heading and crumb.
+ */
+interface DocMeta {
+  /** Path under the repo root, e.g. `claude/playbook.md`. */
+  file: string;
+  /** Output filename, e.g. `playbook.html`. */
+  page: string;
+  h1: string;
+  sub: string;
+  sub2: string;
+  crumb: string;
+  order: number;
+  /** Index group this doc's card belongs to; empty means no card. */
+  group: string;
+  /** Card title, when it should differ from the page heading. */
+  cardTitle: string;
+  card: string;
+  badge: string;
+  /** Whether the session-plan cards are listed under this doc's group. */
+  withPlans: boolean;
+  /** Drop the source H1 and the lead paragraph above the first section —
+   *  what a doc needs when it is one of several combined onto one page. */
+  stripLead: boolean;
+  body: string;
+}
+
+/** Read every content doc that declares a `page` in its frontmatter. */
+function loadDocs(dir: string): DocMeta[] {
+  const out: DocMeta[] = [];
+  for (const name of fs.readdirSync(path.join(ROOT, dir)).sort()) {
+    if (!name.endsWith(".md")) continue;
+    const label = `${dir}/${name}`;
+    const { data, body } = parseFrontMatter(read(label), label);
+    const pageName = optStr(data, "page");
+    if (!pageName) {
+      warn(`${label} has no 'page' in its frontmatter — it would not appear on the site`);
+      continue;
+    }
+    out.push({
+      file: label,
+      page: pageName,
+      h1: str(data, "h1", label, ""),
+      sub: str(data, "sub", label, ""),
+      sub2: str(data, "sub2", label, ""),
+      crumb: str(data, "crumb", label, ""),
+      order: num(data, "order", 99),
+      group: str(data, "group", label, ""),
+      cardTitle: str(data, "cardTitle", label, ""),
+      card: str(data, "card", label, ""),
+      badge: str(data, "badge", label, ""),
+      withPlans: bool(data, "withPlans", false),
+      stripLead: bool(data, "stripLead", false),
+      body,
+    });
+  }
+  return out.sort((a, b) => a.order - b.order);
+}
 
 /**
  * Per-session page metadata, read from the frontmatter of the run-sheet itself.
@@ -223,9 +269,25 @@ function read(rel: string): string {
 /** Live forecasts by ISO date, filled in before the pages are built. */
 let forecasts = new Map<string, string>();
 
-/** The run-sheets, read once from plans/. */
+/** The run-sheets and the content docs, each read once from disk. */
 const PLANS = loadPlans(path.join(ROOT, "plans"));
 const PLAN_FILES = new Set(PLANS.map((p) => p.file));
+const DOCS = loadDocs("claude");
+
+/**
+ * A source .md filename mentioned in the markdown becomes a link to its page on
+ * the site — written either bare (`playbook.md`) or with its folder. A doc with
+ * no page on the site is simply absent, and renders as plain text.
+ */
+const PAGE_FOR: Record<string, string> = Object.fromEntries(
+  DOCS.flatMap((d) => {
+    const bare = path.basename(d.file);
+    return [
+      [bare, d.page],
+      [d.file, d.page],
+    ];
+  }),
+);
 
 /** A `foo.md` in a code span -> the page it links to, if any. */
 function linkFor(ref: string): string | undefined {
@@ -241,9 +303,46 @@ function renderCtx(images: Record<string, string>): RenderCtx {
 
 // ------------------------------------------------------------ source cleanup
 
+/** Docs the provenance strip runs over — the ones that carry cross-references
+ *  to the club's Academy diagram library. */
+const REDACT = new Set(["claude/playbook.md"]);
+
+/**
+ * Per-doc rewrites of cross-references the generic `foo.md` -> page linking
+ * cannot handle — mostly references to a section that ends up on the same page.
+ * Each is checked, so a reworded source fails the build rather than silently
+ * leaving a dangling reference on the site.
+ */
+const SUBS: Record<string, Array<[string, string]>> = {
+  "claude/age-group.md": [
+    [
+      "See `coaching.md` — How sessions should be coached for the contact-light " +
+        "approach we take to the Thursday slot either way.",
+      "See How sessions should be coached below for the contact-light approach " +
+        "we take to the Thursday slot either way.",
+    ],
+  ],
+  "claude/coaching.md": [
+    ["see `age-group.md` — Training & Fixtures.", "see Training &amp; Fixtures above."],
+    [
+      "plus the neurodiversity guidance linked from `age-group.md`",
+      "plus the neurodiversity guidance linked above",
+    ],
+  ],
+  "claude/blocks.md": [
+    [
+      ", and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks",
+      " — all of which apply across all blocks",
+    ],
+  ],
+  "claude/activities.md": [
+    ["(see `CLAUDE.md`'s Session plan template)", "(see the session-plan template)"],
+  ],
+};
+
 /** Build requirement: no academy-library or external play-name provenance,
  *  and no club-Drive internals, on the public site. */
-function stripProvenance(md: string): string {
+function stripProvenance(md: string, label: string): string {
   let s = md.replace(/\s*\((?:[Ss]ourced from|[Mm]atched to)[^()]*[Aa]cademy[^()]*\)/g, "");
   s = s.replace(/\s*Matches the club Academy's own "[^"]+" call\./g, "");
   s = s.replace(/\s*Academy equivalent: "[^"]+"\./g, "");
@@ -256,7 +355,7 @@ function stripProvenance(md: string): string {
     )
     .join("\n");
   s = s.replace(/\s*\(sourced from[^()]*\)/gi, "");
-  if (/[Aa]cademy/.test(s)) warn("academy reference survived stripping — check playbook.md");
+  if (/[Aa]cademy/.test(s)) warn(`academy reference survived stripping — check ${label}`);
   return s;
 }
 
@@ -340,117 +439,31 @@ function buildPages(): Record<string, string> {
     pages[name] = page(shell, o);
   };
 
-  // ---- playbook
-  add("playbook.html", {
-    title: "Playbook &amp; Calls — U14 Rugby",
-    h1: "Playbook &amp; Calls",
-    sub: "Our calls and shapes — open play, backs moves, kicking, defence, lineout, scrum.",
-    sub2: "",
-    crumb: "Playbook",
-    body: mdToHtml(stripProvenance(read("claude/playbook.md")), ctx),
-  });
-
-  // ---- coaching notes = age-group.md + coaching.md
-  const ag = subAll(
-    dropH1AndLead(read("claude/age-group.md")),
-    [
-      [
-        "See `coaching.md` — How sessions should be coached for the contact-light " +
-          "approach we take to the Thursday slot either way.",
-        "See How sessions should be coached below for the contact-light approach " +
-          "we take to the Thursday slot either way.",
-      ],
-    ],
-    "age-group",
-  );
-  const co = subAll(
-    dropH1AndLead(read("claude/coaching.md")),
-    [
-      ["see `age-group.md` — Training & Fixtures.", "see Training &amp; Fixtures above."],
-      [
-        "plus the neurodiversity guidance linked from `age-group.md`",
-        "plus the neurodiversity guidance linked above",
-      ],
-    ],
-    "coaching",
-  );
-  add("claude.html", {
-    title: "Coaching Notes — U14 Rugby",
-    h1: "Coaching Notes",
-    sub: "Squad context, playing style, and how sessions are planned and run.",
-    sub2: "",
-    crumb: "Coaching Notes",
-    body: mdToHtml(ag + "\n\n" + co, renderCtx({})),
-  });
-
-  // ---- block 1 overview
-  add("block1-overview.html", {
-    title: "Block 1 — Session Plans — U14 Rugby",
-    h1: "Block 1 — Session Plans",
-    sub: "Weeks 1–6 — defence, plus introducing lineout and scrum.",
-    sub2: "Sun 6 Sep – Thu 15 Oct 2026",
-    crumb: "Block 1 overview",
-    body: mdToHtml(
-      subAll(
-        read("claude/blocks.md"),
-        [
-          [
-            ", and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks",
-            " — all of which apply across all blocks",
-          ],
-        ],
-        "blocks",
-      ),
-      renderCtx({}),
-    ),
-  });
-
-  // ---- activities
-  add("activities.html", {
-    title: "Activities Bank — U14 Rugby",
-    h1: "Activities Bank",
-    sub: "Warm-up, game-zone and skill-zone games and drills, tagged by skill focus.",
-    sub2: "",
-    crumb: "Activities",
-    body: mdToHtml(
-      subAll(
-        read("claude/activities.md"),
-        [["(see `CLAUDE.md`'s Session plan template)", "(see the session-plan template)"]],
-        "activities",
-      ),
-      renderCtx({}),
-    ),
-  });
-
-  // ---- warm-up
-  add("warmup.html", {
-    title: "Warm-Up — U14 Rugby",
-    h1: "The Standard Warm-Up",
-    sub: "The five-minute player-led warm-up we open every session with — four phases, in lines off the try-line.",
-    sub2: "",
-    crumb: "Warm-up",
-    body: mdToHtml(read("claude/warmup.md"), ctx),
-  });
-
-  // ---- calendar
-  add("calendar.html", {
-    title: "Calendar — U14 Rugby",
-    h1: "Calendar",
-    sub: "2026/27 season — fixtures and training dates.",
-    sub2: "",
-    crumb: "Calendar",
-    body: mdToHtml(read("claude/calendar.md"), renderCtx({})),
-  });
-
-  // ---- laws
-  add("laws.html", {
-    title: "Laws of the Game — U14 Rugby",
-    h1: "Laws of the Game",
-    sub: "RFU age-grade law changes relevant to this squad, U13 → U14.",
-    sub2: "",
-    crumb: "Laws",
-    body: mdToHtml(read("claude/laws.md"), renderCtx({})),
-  });
+  // ---- one page per `page:` declared in claude/, docs concatenated in order
+  const byPage = new Map<string, DocMeta[]>();
+  for (const d of DOCS) {
+    const list = byPage.get(d.page) ?? [];
+    list.push(d);
+    byPage.set(d.page, list);
+  }
+  for (const [name, docs] of byPage) {
+    const lead = docs[0]!;
+    const md = docs
+      .map((d) => {
+        let s = d.stripLead ? dropH1AndLead(d.body) : d.body;
+        if (REDACT.has(d.file)) s = stripProvenance(s, d.file);
+        return subAll(s, SUBS[d.file] ?? [], d.file);
+      })
+      .join("\n\n");
+    add(name, {
+      title: `${inline(lead.h1, plainCtx())} — ${SITE_NAME}`,
+      h1: inline(lead.h1, plainCtx()),
+      sub: inline(lead.sub, plainCtx()),
+      sub2: inline(lead.sub2, plainCtx()),
+      crumb: inline(lead.crumb, plainCtx()),
+      body: mdToHtml(md, ctx),
+    });
+  }
 
   // ---- session run-sheets: one page per file in plans/
   const warmupMd = read("claude/warmup.md");
@@ -522,52 +535,30 @@ function buildPages(): Record<string, string> {
         "",
       ]
     : [];
-  const indexBody = [
-    ...nextCard,
-    '  <h2 class="group">Block 1 &middot; Weeks 1&ndash;6</h2>',
-    '  <div class="cards">',
-    card(
-      "block1-overview.html",
-      "Block 1 — Overview",
-      "Theme, the full week-by-week session list, and outline plans for all six weeks.",
-      "Sep&ndash;Oct",
-    ),
-    ...planCards,
-    "  </div>",
-    "",
-    '  <h2 class="group">Coaching reference</h2>',
-    '  <div class="cards">',
-    card(
-      "playbook.html",
-      "Playbook &amp; Calls",
-      "Our calls and shapes — open play, backs moves, kicking, defence, lineout, scrum. " +
-        "The master reference for how we play; clean enough to share with the players themselves.",
-    ),
-    card(
-      "warmup.html",
-      "The Standard Warm-Up",
-      "The five-minute player-led warm-up we open every session with — four phases in lines off the try-line, and what the leader actually says.",
-    ),
-    card(
-      "claude.html",
-      "Coaching Notes",
-      "Squad context, playing style, training structure, and how sessions are planned and run.",
-    ),
-    card(
-      "activities.html",
-      "Activities Bank",
-      "Warm-up, game-zone and skill-zone games and drills, tagged by skill focus — " +
-        "check here before inventing a new drill.",
-    ),
-    card(
-      "laws.html",
-      "Laws of the Game",
-      "RFU age-grade law changes relevant to this squad as we move from U13 to U14 — " +
-        "lineout, scrum, pitch and team size.",
-    ),
-    card("calendar.html", "Calendar", "This season's fixtures and training dates."),
-    "  </div>",
-  ].join("\n");
+  // Card groups come from the docs themselves: each names its group, and the
+  // group holding the block overview also lists that block's run-sheets.
+  const groups: string[] = [];
+  for (const d of DOCS) if (d.group && !groups.includes(d.group)) groups.push(d.group);
+  const groupCards = groups.flatMap((g) => {
+    const docs = DOCS.filter((d) => d.group === g);
+    const cards = docs.map((d) =>
+      card(
+        d.page,
+        inline(d.cardTitle || d.h1, plainCtx()),
+        inline(d.card, plainCtx()),
+        d.badge ? inline(d.badge, plainCtx()) : undefined,
+      ),
+    );
+    return [
+      `  <h2 class="group">${inline(g, plainCtx())}</h2>`,
+      '  <div class="cards">',
+      ...cards,
+      ...(docs.some((d) => d.withPlans) ? planCards : []),
+      "  </div>",
+      "",
+    ];
+  });
+  const indexBody = [...nextCard, ...groupCards].join("\n").replace(/\n+$/, "");
 
   add("index.html", {
     title: "U14 Rugby — Coaching Reference",

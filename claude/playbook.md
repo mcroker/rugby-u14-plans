@@ -1,3 +1,12 @@
+---
+page: playbook.html
+h1: Playbook & Calls
+sub: Our calls and shapes — open play, backs moves, kicking, defence, lineout, scrum.
+crumb: Playbook
+group: Coaching reference
+order: 1
+card: Our calls and shapes — open play, backs moves, kicking, defence, lineout, scrum. The master reference for how we play; clean enough to share with the players themselves.
+---
 # U14 Rugby — Playbook & Calls
 
 Our calls and shapes for the squad.

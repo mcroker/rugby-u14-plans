@@ -1,3 +1,12 @@
+---
+page: calendar.html
+h1: Calendar
+sub: 2026/27 season — fixtures and training dates.
+crumb: Calendar
+group: Coaching reference
+order: 7
+card: This season's fixtures and training dates.
+---
 # U14 Rugby — Calendar (2026/27 Season)
 
 Non-PII summary of the season's fixtures and training dates, pulled from the club's Spond calendar. Only logistical fields are kept here — event title, date/time, type, location/home-away, team(s) involved, and opposition. No player, parent, or guardian names, contact details, RSVP/attendance data, or other personal information is stored in this doc or anywhere else in this project.

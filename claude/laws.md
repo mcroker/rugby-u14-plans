@@ -1,3 +1,12 @@
+---
+page: laws.html
+h1: Laws of the Game
+sub: RFU age-grade law changes relevant to this squad, U13 → U14.
+crumb: Laws
+group: Coaching reference
+order: 6
+card: RFU age-grade law changes relevant to this squad as we move from U13 to U14 — lineout, scrum, pitch and team size.
+---
 # U14 Rugby — Laws of the Game
 
 Reference for RFU age-grade law changes relevant to this squad. See `age-group.md` for squad context, `coaching.md` for how we coach, and `playbook.md` for our own calls and shapes built on top of these laws.

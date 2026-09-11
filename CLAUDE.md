@@ -76,12 +76,15 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 - **Session details cells are one short fact each.** Caveats go in Notes.
 - **Activities entries are notes, not prose.** They are read seconds before running the thing, and Description, Coaching Points and Progressions are what the Details modal shows. Give the facts — the numbers, the sequence, the conditions, the cues — and stop. **Cut every clause that explains why:** no *"the point is…"*, no *"…here on purpose"*, no *"that is what X is for"*, no restating the session's intent. Prefer a numbered sequence or a bulleted list to a paragraph. Write each Progression and Adaptation as one line, condition then response — *"Attack getting out too easily: narrow the channel."* If a rationale genuinely needs recording, it belongs in `claude/blocks.md` or the session's Review, not here.
 
+**A session that has happened is a record — don't edit it.** Once a session has run, its file in `plans/` stays as it was, plus its Review. **Improvements to the way we plan and run sessions go into the next plan forward, never back into completed ones**: a new template section, a better way of writing a block, a format that worked — apply them from the next session on. The archive is what we actually did on the day, and it stops being that the moment it gets tidied up. The Review is the one thing added after the fact.
+
 **Session plan template.** Every file in `plans/` follows this structure. **The build reads it structurally, not just as prose** — the headings and the shape of the two tables are a contract, and the notes below each part say what depends on them. Getting one wrong fails the build rather than quietly producing a broken page.
 
 | Markdown | Becomes, on the page |
 |---|---|
 | `## Session details` — the **Session objective** row | an **Objective** heading at the top of the page, above everything else |
 | `## Session details` — the other rows | the collapsed **Logistics** accordion, with the pitch map inside it, plus the generated **Weather** and **Sunset** rows |
+| `## Initial setup` | a second collapsed accordion directly below Logistics — the cone layout, for the first coach on the ground |
 | `## Plan` — the **first** table | the **timeline**: one block per row, rows sharing a start time drawn side by side |
 | `## Plan` — anything after that table | kept, rendered below the timeline (this is where a coach allocation goes) |
 | `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's setup/cues and Details modal |
@@ -104,14 +107,15 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    - **Sunset** — see above, gated on `eveningAtClub`.
 
    The map does not sit open on the page: it becomes a **Map** button beside the Location row, opening the club map with a `U14M` marker pinned on that zone. A new week only means changing the zone code. Zone codes are the club's own — `1a`, `1b`, `2a`, `2b`, `3a`, `3b`, `4a`, `4b` — and are listed in `PITCH_ZONES` in `tools/build_site.ts`; an unknown code fails the build. Keep the caption free of markdown links (square brackets in the caption break the image match).
-2. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
+2. **Initial setup** — **the cone layout, and nothing else.** A short bulleted list of what goes out before the players arrive: which cones, how many, where, what spacing, and where the shields/mats/machine sit if they define a position. **No drills, no explanation, no reasons** — the coach reading it is on an empty pitch with a bag of cones and fifteen minutes. Optional: a plan without the section simply doesn't get the accordion.
+3. **Plan** — a three-column table, one row per activity: start time + duration, Activity, and a one-line summary. This becomes the timeline, so the first cell is load-bearing:
 
    - It **must** read `+<start>, <n> min` — e.g. `+7, 13 min`. A row that doesn't fails the build.
    - **The page shows real clock times**, not `+7`. Set **`start`** in `PLAN_META` to the time `+0` means (`"18:45"`). The markdown stays relative, so moving a session is one field, not a rewritten table. Without `start` the page falls back to showing `+7`.
    - **Rows sharing a start time are drawn side by side** as parallel blocks. That is how the page shows the squad splitting; nothing else marks it.
    - An italic parenthetical after the time — `+7, 13 min *(parallel pull-out)*` — becomes a tag on the block.
    - Only the **first** table in this section is read as the run sheet, so a coach allocation or any other table can follow it.
-3. **Activities** — a `### ` entry per activity. Each becomes a collapsed accordion **and** feeds its block on the timeline, so write them for a coach who is about to run the thing:
+4. **Activities** — a `### ` entry per activity. Each becomes a collapsed accordion **and** feeds its block on the timeline, so write them for a coach who is about to run the thing:
 
    - **`**Groups:**`** comes **first, directly under the `### ` heading**, and says how many children and how they are split — and nothing else. **A few words: "Groups of five", "All forwards", "Two pitches — 7 v 7 on each", "Whole squad, one circle".** It is lifted onto the timeline block as *Groups*, ahead of the setup, because splitting the squad is the first thing that has to happen and the slowest to fix once it is wrong. Unlike Setup and Coaching Points it is used **whole**, not first-sentence-only, so keep it to one short phrase. Every entry gets one; the generated warm-up entry has its own.
    - **`**Setup:**`** and **`**Coaching Points:**`** are lifted onto the timeline block as *Set up* and *Call* — **first sentence only**, so lead with the instruction and put the caveats after it. A bare cross-reference (`see \`activities.md\`.`) is skipped, so don't make it the whole first sentence.
@@ -127,8 +131,8 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    - **Progressions** — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many.
    - **Adaptations** — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
    - **Diagram** and/or **Video example(s)**, where useful — see below.
-4. **Review** — added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `claude/coaching.md`, a playing-style one in `claude/playbook.md`, a next-week consequence in `claude/blocks.md` — and leave the session-specific detail here.
-5. **Notes** — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
+5. **Review** — added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `claude/coaching.md`, a playing-style one in `claude/playbook.md`, a next-week consequence in `claude/blocks.md` — and leave the session-specific detail here.
+6. **Notes** — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 

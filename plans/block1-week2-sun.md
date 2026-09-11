@@ -13,6 +13,17 @@
 
 ![Pitch 2, right half. Check pitch.twrfc.com on the day in case it moves.](pitch:2b)
 
+## Initial setup
+
+Working from the try-line end of the half, out:
+
+- **Warm-up line** — a line of cones across the full width, 20m out from the try-line. Ruck shields stacked at the middle of it.
+- **Passing lines** — second cone colour, between the try-line and the warm-up line: two sets of three lines (A, B, C), 5m between lines, 10m between the sets.
+- **Tackle diamonds** — two diamonds side by side on the flattest ground clear of the passing lines, four cones each, 5m sides. Mats inside them.
+- **Scrum marks** — two, 15m apart, on the flattest ground on the half. A cone on each mark and one 5m behind it. A third mark in midfield, with a line of four cones running from it to the touchline, 5m apart.
+- **Game pitch** — the full half: a cone in each corner, one on each 5m line, one either side at halfway.
+
+
 ## Plan
 
 | Start + duration | Activity | Focus |
@@ -24,7 +35,9 @@
 | +21, 27 min *(forwards)* | Scrum — shape, then positions, then the whole scrum | Tower of power, positional jobs in three groups, then forming it and the shove |
 | +21, 27 min *(backs)* | **DSP** + line-pressure defence off scrum | Set before the ball leaves the base — both sides of it |
 | +48, 5 min | Scrum to **DSP** — join it up | One scrum, both halves, unopposed |
-| +53, 32 min | Main game: 15-a-side, scrum restarts | Everything live — **Bang**, the scoreboard, the scrum as the only set piece |
+| +53, 15 min | Main game: 15-a-side, scrum restarts | Everything live — **Bang**, the scoreboard, the scrum as the only set piece |
+| +68, 2 min | Water and team swap | The session's one break — taken on the whistle, not when it drifts |
+| +70, 15 min | Main game: 15-a-side, second half | Straight back on; conditions stay as they were |
 | +85, 5 min | Cool-down / close | Recap the scrum sequence; pick next week's warm-up leader |
 
 *The allocated slot is 10:45–12:30 (105 min). **U12M are on our half until 10:30**, so the whole setup — warm-up cones, two diamonds, mats, the scrum marks, the game — goes out in that fifteen-minute changeover. If we start late, take it out of the game block; not out of the scrum block, which is the session.*
@@ -184,7 +197,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Coaching Points:** **Bang** off the scrum and in open play. Spacing, numbering up, the shuffling retreat, talk. Two seconds at the ruck.
 
-**Setup:** one game across the full half-pitch. **Every restart is a scrum** — knock-on, turnover or try. Ball into touch is a quick tap on the 5m, not a lineout. In the game the scrums are **set properly but pushed passively** — the contest happened in the scrum block. Thirty-two minutes, with a **team swap and water at about 11:55**.
+**Setup:** one game across the full half-pitch. **Every restart is a scrum** — knock-on, turnover or try. Ball into touch is a quick tap on the 5m, not a lineout. In the game the scrums are **set properly but pushed passively** — the contest happened in the scrum block. Two halves of fifteen minutes, with the **team swap and water between them**.
 
 **Description:** starts at **Presentation Touch** — on a touch the carrier goes down, turns, and presents long for the support player to pick (see `activities.md`). **Step up to full contact for the last ten minutes if the ground allows it**; that is a call on the day, not a plan.
 
@@ -216,6 +229,8 @@ Conditions, cumulative, added in this order and left in:
 - **Defence lives in the game this week, not beside it.** No standalone defensive drill; the 15-a-side game and its scoreboard are where line-speed and communication get worked.
 - **One game, not two.** A contested scrum plus a 9 is nine players, so a small-sided game can't carry one (see `activities.md`).
 - **One voice per segment.** Seven coaches are out, which is how it slipped in Week 1. The scrum block is where it will slip again — **one coach per pack**, and the safety call comes from that coach only. Agree the segments during the warm-up.
+- **Share the starting setup on the coaches' thread beforehand** — what goes where in the changeover, and who is on what. Everyone arrives hot on a Sunday; the prep that hasn't been shared doesn't happen.
+- **Call out anything debatable before the day.** If a shape or a call is going to start a coaching discussion, have it on the thread, not with thirty players standing waiting.
 - **Get the kit out fast.** U12M are on our half until 10:30 for a 10:45 start: cones, two diamonds, mats, the scrum marks. Two or three coaches on setup while the rest greet players.
 - **Repeated from last week**, as the coaches asked: the same warm-up, the same diamond, the same passing game, **Bang** and Springbok Touch again from Thursday.
 - **Pick next week's warm-up leader at the close**, not on the day (see `warmup.md`).

@@ -71,6 +71,7 @@ Quick reference for picking a game to match the session's contact-level target (
 | Description | Ball zig-zags down the lines: A1 passes to B1, B1 to C1, C1 to B2, B2 to A2, A2 to B3, and so on — each player filling in at the back of the line they just passed to (or received into) once they've exited. For "crazy," add a second ball into the pattern at the same time. |
 | Coaching Points | General handling cues — elbow up, hands out, catch early, etc. — plus communication and awareness (especially once a second ball is added). |
 | Adaptations | Good for warming hands up and waking players up early in a session; add the second ball once the basic pattern is running smoothly to raise the awareness demand. |
+| Coaching it | Watch for poor passing form and hand the worst two or three to a spare coach for a couple of minutes off to the side, in pairs rather than one at a time, while the drill keeps running. Spare coaches coach on the run through the rest. |
 
 ## Game-zone
 
@@ -254,4 +255,6 @@ Not standalone activities, but reusable ways of structuring a session that came 
   - **If the game is rehearsing the shape off the set piece**, run **one game at as close to 15 a side as the numbers allow**, even where the numbers would comfortably make two.
   - **If the set piece is only the restart mechanism** — a clean start to every phase, or the way a turnover is cashed in — small-sided games are fine, but **shorten the line to three, or two** (the law minimum is two a side, see `laws.md`) so there is still a backline outside it.
   What never works is a full-size line on a small-sided team.
+- **Pull-outs in five-minute stints, not one long block:** a specialist group (e.g. the hookers) comes out of the main activity for five minutes, goes back in, and comes out again later. They keep their game time and the fix gets revisited rather than front-loaded.
+- **Pull-out off the side of a running drill:** in a whole-group handling drill, a spare coach takes the two or three with the worst form for a couple of minutes while the drill carries on for everyone else. **In pairs where the numbers allow**, so nobody feels singled out. Fixes the individual without stopping the group.
 - **Scenario problems dropped into a live game:** e.g. "defending your own 5m," "defensive scrum on the 22," "attacking scrum 10m out" — presented as a problem for the players to solve themselves rather than a lecture. Keep any coach intervention very short (~30 seconds) and from one voice, to avoid it becoming talky and dull.

@@ -33,12 +33,19 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 - **Tackle technique carries through the season**, not just Week 1 — the diamond worked and should keep coming back. Passing and tackling are now a standing per-session requirement (see `coaching.md`), and while the ground is hard the tackle work may need mats.
 - **Lineout held their attention** and overran its slot, so there is appetite for the **B/W/G** calls. They are **not** in Week 2's Sunday, which is given over to the scrum — they still need a week.
 
+**Carried forward from Week 1 (Thu 10 Sep)** — see the session's review in `block1-week1-thur.md`:
+
+- **They took the lineout material faster than expected.** Pitch the next layer accordingly rather than re-teaching the shape from the bottom.
+- **The delivery formats that worked are now standing practice** (see `coaching.md`): split the two teams into small groups and rejoin, pull specialists out in five-minute stints, and spot-coach the worst two or three off the side of a running drill — in pairs, so nobody feels singled out. A spare coach standing back to observe is a job in its own right.
+- **Run-sheets carry their water breaks**, and transitions get started fast — the session was still more stop/start than it should be.
+- **The pre-session thread does the setup and the arguments.** Share the starting setup, and call out anything likely to generate coaching discussion — the off-9 vs off-10 question came up on the pitch and was better had beforehand.
+
 ### Session list
 
 | Week | Date | Session | Run-sheet | Core | Defence | Set-piece (forwards) | Backs | Position skills |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Sun 6 Sep | Training | `block1-week1-sun.md` | Tackle | Blitz, line-org | Lineout — where to stand, laws | Defensive alignment (Continuous Defence) while forwards are in the lineout zone | Hooker lineout throw |
-| 1 | Thu 10 Sep | Training | `block1-week1-thur.md` *(draft)* | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
+| 1 | Thu 10 Sep | Training | `block1-week1-thur.md` | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
 | 2 | Sun 13 Sep | Training | `block1-week2-sun.md` | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
 | 2 | Thu 17 Sep | Training | **Needed** | Passing | Blitz, line-org | Scrum — position/technique, non-contested | Exit kicks — introduce (technique, then kick + chase/regather) | 9 + hooker scrum strike, back-row ball control |
 | 3 | Sun 20 Sep | Training | **Needed** | Tackle | Ruck-defence | Defending the lineout — pressure on 9 & 10 | Defending against kicks (system TBC) | — |

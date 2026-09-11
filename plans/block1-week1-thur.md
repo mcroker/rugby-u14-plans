@@ -123,11 +123,11 @@ Bonus to attack for a clean lineout catch leading to a try. Springbok Touch is t
 
 Walk it twice, then at pace. Point at both ruck positions before the ball moves.
 
-![5-man Rhino — Phase 1](claude/images/web/5man_rhino_phase1.png)
+![5-man Rhino — Phase 1](claude/images/web/5man_rhino_phase1.jpg)
 
 *Phase 1 — off the top to 9, extras and 12 set ruck 1.*
 
-![5-man Rhino — Phase 2](claude/images/web/5man_rhino_phase2.png)
+![5-man Rhino — Phase 2](claude/images/web/5man_rhino_phase2.jpg)
 
 *Phase 2 — forwards fold round for ruck 2.*
 
@@ -174,7 +174,7 @@ Walk it twice, then at pace. Point at both ruck positions before the ball moves.
 4. **Backs attack the open** off ruck 2.
 5. **Hooker and props stay behind** for width and the blind.
 
-![5-man Rhino — Phase 3](claude/images/web/5man_rhino_phase3.png)
+![5-man Rhino — Phase 3](claude/images/web/5man_rhino_phase3.jpg)
 
 *Phase 3 — backs attack the open.*
 
@@ -235,6 +235,38 @@ How to coach it:
 **Progressions:**
 - Call the target as the hooker starts their routine.
 - A defender's hands over the target, to force height.
+
+## Review — what actually happened
+
+*Coaches' feedback after the session, 10 Sep.*
+
+**What worked**
+
+- **They got it better than expected.** The material landed ahead of where we pitched it.
+- **Splitting and coming back together worked.** Four small groups out of the two teams, then back into one game, with no time lost picking sides.
+- **Pulling the hookers out five minutes at a pop** worked — use that format again rather than one long block away from the game.
+- **Spot-coaching the worst passers 1-on-1 during Crazy Passing.** Bev took a couple of minutes with them while the drill ran; do it again.
+- **Fewer side-bar conversations, and the coaches' voices were more focused.** Clarity on who was doing what, and small groups, both helped.
+
+**Work-ins**
+
+- **We all arrived hot**, so pre-session prep was compressed. Little we can do about the arrival — share the starting setup more clearly beforehand instead.
+- **Still too stop/start on transitions and water breaks.** Put the water breaks in the plan, and start new activities fast.
+- **The off-9 vs off-10 discussion was good, but belonged before the session.** Anything likely to generate discussion gets called out on the coaches' thread first.
+- **Crazy Passing can carry more coaching.** Spare coaches coaching on the run through it. Whoever is coordinating the session shouldn't also be the one getting it started.
+- **Defence is hard to keep in focus while an attacking lineout move is running.** Keep reminding ourselves what the session's focus is.
+
+**From Bev**
+
+- **A spare coach standing back and observing earns its place** — things get spotted that nobody running an activity can see.
+- **Pull players out in pairs, not singly**, where the numbers and the drill allow, so nobody feels singled out.
+
+**From Steve**
+
+- **Principles of play alongside the session objective.** The session had its own objectives — defensive line speed, then structure in attack and defence off the lineout — and we should also take the chance to re-emphasise our principles of play.
+- **Go forward stopped the moment contact came in.** Hesitancy crept in. Excusable at re-introduction, but it needs coaching out of them.
+- **The main game is where go forward is paramount**, in attack and in defence, and it is the moment to draw their attention back to the principles they have been taught in the preceding 60 minutes.
+- **Kit — Jeff:** at least 15 actual bibs, so the teams contrast and we can follow them.
 
 ## Notes
 

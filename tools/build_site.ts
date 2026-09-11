@@ -63,9 +63,9 @@ const DIAGRAMS: Record<string, string> = {
   "Hulk": "hulk.png",
   "Eagle": "eagle_kick.png",
   "Hawk — box kick": "hawk_box_kick.png",
-  "5-man Rhino — Phase 1": "5man_rhino_phase1.png",
-  "5-man Rhino — Phase 2": "5man_rhino_phase2.png",
-  "5-man Rhino — Phase 3": "5man_rhino_phase3.png",
+  "5-man Rhino — Phase 1": "5man_rhino_phase1.jpg",
+  "5-man Rhino — Phase 2": "5man_rhino_phase2.jpg",
+  "5-man Rhino — Phase 3": "5man_rhino_phase3.jpg",
 };
 
 /**
@@ -1009,6 +1009,15 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
       ) +
       "</details>"
     : "";
+  // The cone layout, for whoever gets to the ground first. Optional — a plan
+  // without the section simply doesn't get the accordion.
+  const setupMd = mdSection(md, "Initial setup") || mdSection(md, "Initial Setup");
+  const setup = setupMd
+    ? '<details class="logistics"><summary>Initial setup — cones, for the first coach there</summary>' +
+      '<div class="pad-body">' +
+      mdToHtml(setupMd, images) +
+      "</div></details>"
+    : "";
   const mapSection = pitch
     ? '<details id="pitch-map" class="offscreen" hidden><summary>Where we are</summary>' +
       mdToHtml(pitch, images) +
@@ -1032,6 +1041,7 @@ function sessionBody(md: string, images: Record<string, string>, meta: PlanMeta)
   return [
     objective,
     logistics,
+    setup,
     "<h2>Run sheet</h2>",
     timeline(planSection, acts, meta.start),
     detailAccordions(detailMd, images, acts),

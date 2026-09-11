@@ -216,7 +216,9 @@ function loadDocs(team: Team): DocMeta[] {
       body,
     });
   }
-  return out.sort((a, b) => a.order - b.order);
+  // Ties break on filename so a page's composition never depends on the order
+  // the layers happened to be walked in.
+  return out.sort((a, b) => a.order - b.order || a.file.localeCompare(b.file));
 }
 
 /**
@@ -500,10 +502,21 @@ function buildTeam(b: TeamBuild, siteOut: string): Record<string, string> {
     : [];
   // Card groups come from the docs themselves: each names its group, and the
   // group holding the block overview also lists that block's run-sheets.
+  //
+  // One card per page, not per doc. Several docs can build one page — a team's
+  // age-group.md and the shared coaching.md both land on Coaching Notes — and
+  // each may declare a group, since either could be the one a given team has.
+  // The first by `order` wins; without this the page gets a card twice.
+  const cardDocs: DocMeta[] = [];
+  for (const d of docs) {
+    if (!d.group) continue;
+    if (cardDocs.some((c) => c.page === d.page)) continue;
+    cardDocs.push(d);
+  }
   const groupNames: string[] = [];
-  for (const d of docs) if (d.group && !groupNames.includes(d.group)) groupNames.push(d.group);
+  for (const d of cardDocs) if (!groupNames.includes(d.group)) groupNames.push(d.group);
   const groupCards = groupNames.flatMap((g) => {
-    const inGroup = docs.filter((d) => d.group === g);
+    const inGroup = cardDocs.filter((d) => d.group === g);
     return [
       `  <h2 class="group">${txt(g)}</h2>`,
       '  <div class="cards">',

@@ -4,7 +4,7 @@ h1: Coaching Notes
 sub: How sessions are structured and run, and the principles behind them.
 crumb: Coaching Notes
 group: Coaching reference
-order: 3
+order: 4
 stripLead: true
 card: How sessions are planned and run — the block model, skill zones, the contact warm-up, and the skills pyramid.
 ---

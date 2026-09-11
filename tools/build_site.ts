@@ -888,6 +888,16 @@ document.addEventListener("click", function (e) {
     }
     body.scrollTop = 0;
     dlg.showModal();
+    // Freeze the page behind it: the modal scrolls if it has anywhere to go,
+    // and the page never scrolls underneath. Escape and the backdrop both
+    // fire "close", so the lock is lifted there rather than per close button.
+    document.documentElement.classList.add("modal-open");
+    if (!dlg.dataset.lock) {
+      dlg.dataset.lock = "1";
+      dlg.addEventListener("close", function () {
+        document.documentElement.classList.remove("modal-open");
+      });
+    }
     return;
   }
 

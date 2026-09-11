@@ -61,7 +61,10 @@
 }
 
 * { box-sizing: border-box; }
-html { text-size-adjust: 100%; }
+html { text-size-adjust: 100%; scrollbar-gutter: stable; }
+/* Page scroll is frozen while a modal is open, so a wheel or a swipe over a
+   modal with nothing to scroll does nothing at all. */
+html.modal-open, html.modal-open body { overflow: hidden; }
 body {
   margin: 0;
   background: var(--paper);
@@ -305,6 +308,7 @@ details.activity:target { border-color: var(--blue); box-shadow: 0 0 0 2px var(-
 
 dialog.detail {
   width: min(640px, calc(100vw - 32px)); max-height: 82vh; padding: 0;
+  overflow: hidden; overscroll-behavior: contain;
   border: 1px solid var(--border); border-radius: 10px;
   background: var(--paper); color: var(--ink);
   box-shadow: 0 12px 40px rgba(0,0,0,0.3);
@@ -321,7 +325,7 @@ dialog.detail::backdrop { background: rgba(12,16,24,0.55); }
   background: transparent; border: none; color: #fff; opacity: 0.85;
   font-size: 1.4rem; line-height: 1; cursor: pointer; padding: 0 4px;
 }
-.detail-body { padding: 4px 16px 8px; overflow-y: auto; max-height: 60vh; }
+.detail-body { padding: 4px 16px 8px; overflow-y: auto; overscroll-behavior: contain; max-height: 60vh; }
 .detail-body h4 {
   font-family: "Oswald", sans-serif; text-transform: uppercase;
   letter-spacing: 0.06em; font-size: 0.74rem; color: var(--gold);

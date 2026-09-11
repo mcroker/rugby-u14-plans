@@ -903,8 +903,15 @@ document.addEventListener("click", function (e) {
 /** A plan's markdown with the standard warm-up spliced in as an Activities entry. */
 function planWithWarmup(md: string): string {
   const entry = warmupEntry();
-  const at = md.indexOf("\n## Notes");
-  return at === -1 ? `${md}\n\n${entry}` : `${md.slice(0, at)}\n\n${entry}${md.slice(at)}`;
+  // End of the Activities section — i.e. the next `## ` heading after it,
+  // whatever that happens to be. Anchoring on `## Notes` put the warm-up after
+  // the Review on any plan that ordered the two the other way round.
+  const acts = md.indexOf("\n## Activities");
+  if (acts === -1) return `${md}\n\n${entry}`;
+  const next = md.indexOf("\n## ", acts + 1);
+  return next === -1
+    ? `${md}\n\n${entry}`
+    : `${md.slice(0, next)}\n\n${entry}${md.slice(next)}`;
 }
 
 /**

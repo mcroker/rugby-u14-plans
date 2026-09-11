@@ -134,6 +134,16 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 
 **Description:** the backs' parallel focus while the forwards are in lineout work — the season's first blitz-defence exposure.
 
+## Notes
+
+- This is the squad's first session of the season and their first-ever lineout exposure — keep contact introductory even though it's a Sunday with more time/space than usual.
+- **The contact warm-up at +5 is not optional and covers the whole squad**, because the tackle rotations start straight after it (see `coaching.md`). If the session is running late, cut something else — a rotation, or time off the main game — not the two minutes.
+- **Get the kit out fast.** U12M are on our half until 10:30 and we start at 10:45, so the whole setup — cones for the warm-up lines, two tackle diamonds, shields, the hooker's target — happens in that fifteen-minute changeover. With six coaches it is a job for two or three of them while the rest greet players.
+- **31 expected is a big group** — 6 more are unanswered, so it could be up to 37. Plan for two games side by side in the main block, and be ready to add a fourth tackle rotation (or a second diamond) if the unanswered players turn up.
+- The **B/W/G** lineout calls aren't introduced until Week 2 — this week is positioning and the throw only.
+- Scrum's first exposure is Thursday 10 Sep, not this session.
+- See `blocks.md` for the one remaining Block 1 open item — Week 5 backs detail.
+
 ## Review — what actually happened
 
 *Coaches' feedback after the session, 6 Sep.*
@@ -157,13 +167,3 @@ Two diamonds halves the group size and roughly doubles the reps. In the main gam
 **Open**
 
 - **Was the session HTML easy to follow?** The feedback was that it is currently a little hard to follow, and the layout of the session pages is worth revisiting.
-
-## Notes
-
-- This is the squad's first session of the season and their first-ever lineout exposure — keep contact introductory even though it's a Sunday with more time/space than usual.
-- **The contact warm-up at +5 is not optional and covers the whole squad**, because the tackle rotations start straight after it (see `coaching.md`). If the session is running late, cut something else — a rotation, or time off the main game — not the two minutes.
-- **Get the kit out fast.** U12M are on our half until 10:30 and we start at 10:45, so the whole setup — cones for the warm-up lines, two tackle diamonds, shields, the hooker's target — happens in that fifteen-minute changeover. With six coaches it is a job for two or three of them while the rest greet players.
-- **31 expected is a big group** — 6 more are unanswered, so it could be up to 37. Plan for two games side by side in the main block, and be ready to add a fourth tackle rotation (or a second diamond) if the unanswered players turn up.
-- The **B/W/G** lineout calls aren't introduced until Week 2 — this week is positioning and the throw only.
-- Scrum's first exposure is Thursday 10 Sep, not this session.
-- See `blocks.md` for the one remaining Block 1 open item — Week 5 backs detail.

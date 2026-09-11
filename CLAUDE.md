@@ -88,7 +88,7 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
 | `## Plan` — the **first** table | the **timeline**: one block per row, rows sharing a start time drawn side by side |
 | `## Plan` — anything after that table | kept, rendered below the timeline (this is where a coach allocation goes) |
 | `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's setup/cues and Details modal |
-| `## Notes`, `## Review` | rendered below, as written |
+| `## Notes`, then `## Review` | rendered below, as written, in that order — the generated warm-up entry is spliced in at the end of `## Activities`, so anything after it stays where it is written |
 
 
 1. **Session details** — a header table with: Date/Time, Location, Coaches (names of coaches in attendance — fill in on the night if not yet known), Attendance (number of children present — fill in on the night), Session objective, and Resources required.
@@ -131,8 +131,8 @@ That table lives in `PITCH_ZONES` in `tools/build_site.ts`, so a plan only ever 
    - **Progressions** — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many.
    - **Adaptations** — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
    - **Diagram** and/or **Video example(s)**, where useful — see below.
-5. **Review** — added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `claude/coaching.md`, a playing-style one in `claude/playbook.md`, a next-week consequence in `claude/blocks.md` — and leave the session-specific detail here.
-6. **Notes** — a closing free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
+5. **Notes** — a free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.
+6. **Review** — **last on the page, after Notes**, and added *after* the session: what actually happened, from the coaches' feedback. What worked, what to change, and anything carried forward into the next weeks. Keep the durable lessons out of here and in the right doc — a coaching-delivery lesson belongs in `claude/coaching.md`, a playing-style one in `claude/playbook.md`, a next-week consequence in `claude/blocks.md` — and leave the session-specific detail here.
 
 **Diagrams, video, and sharing.** Diagrams should be produced as actual images (e.g. a simple PNG sketch), not plain-text/ASCII art — text diagrams don't render usefully once the plan is shared outside the project. The markdown file in `plans/` stays the authoritative working source (image referenced by filename). When a plan is ready to hand to the coaching group, export it as:
 

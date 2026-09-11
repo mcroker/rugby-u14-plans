@@ -236,6 +236,20 @@ How to coach it:
 - Call the target as the hooker starts their routine.
 - A defender's hands over the target, to force height.
 
+## Notes
+
+- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, each with a sensible number of forwards and backs. **Everything from +19 splits along that line** — at +19 halve each team and cross them over so both small games are bibs against non-bibs, then rejoin for the packs at +39, the shapes at +46, and the one game at +51. Nothing there should start with picking sides. Crazy Passing is the exception: two equal sets, split however you like.
+- **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
+- **Meet 18:35 for an 18:45 start, finishing 20:15** — both ends differ from the old 7–8pm; make that clear on Spond.
+- **No contact — touch throughout**, the counter-maul included. **No scrum.** Both come on Sunday 13 Sep.
+- **Cone all of it during the warm-up** — two narrow channels side by side down the square, in one colour, and the full square in the other. The first block is two narrow games, the second one wide game; don't try to run either in the other's markings.
+- **Every coach needs a bag of items** — say so on the coaches' thread beforehand. Whatever is in the boot, but **big and high-contrast**: sunset is 19:28.
+- **Conditions are cumulative, not a menu.** Add them in the order listed and leave each one in. Expect to get through two in the second game, not the list.
+- **Bang is new.** Stop the game properly the first two or three times to reset it rather than letting a half-understood call run.
+- **One voice per segment.** It slipped on Sunday, and the lineout-attack split is where it will slip again — one coach per group.
+- **Repeated from Sunday**, as the coaches asked: the same warm-up, the same lineout-restart game, and the hooker throw stepping up from the crossbar to a marked line.
+- The **B/W/G** lineout calls come in Week 2 — positioning and the throw only.
+
 ## Review — what actually happened
 
 *Coaches' feedback after the session, 10 Sep.*
@@ -267,17 +281,3 @@ How to coach it:
 - **Go forward stopped the moment contact came in.** Hesitancy crept in. Excusable at re-introduction, but it needs coaching out of them.
 - **The main game is where go forward is paramount**, in attack and in defence, and it is the moment to draw their attention back to the principles they have been taught in the preceding 60 minutes.
 - **Kit — Jeff:** at least 15 actual bibs, so the teams contrast and we can follow them.
-
-## Notes
-
-- **Pick the two teams during the warm-up, and put one of them in bibs or headbands.** Roughly equal, each with a sensible number of forwards and backs. **Everything from +19 splits along that line** — at +19 halve each team and cross them over so both small games are bibs against non-bibs, then rejoin for the packs at +39, the shapes at +46, and the one game at +51. Nothing there should start with picking sides. Crazy Passing is the exception: two equal sets, split however you like.
-- **At the club, not TWGSB**, to roughly the end of October. Kit, posts and the scrum machine are all on site.
-- **Meet 18:35 for an 18:45 start, finishing 20:15** — both ends differ from the old 7–8pm; make that clear on Spond.
-- **No contact — touch throughout**, the counter-maul included. **No scrum.** Both come on Sunday 13 Sep.
-- **Cone all of it during the warm-up** — two narrow channels side by side down the square, in one colour, and the full square in the other. The first block is two narrow games, the second one wide game; don't try to run either in the other's markings.
-- **Every coach needs a bag of items** — say so on the coaches' thread beforehand. Whatever is in the boot, but **big and high-contrast**: sunset is 19:28.
-- **Conditions are cumulative, not a menu.** Add them in the order listed and leave each one in. Expect to get through two in the second game, not the list.
-- **Bang is new.** Stop the game properly the first two or three times to reset it rather than letting a half-understood call run.
-- **One voice per segment.** It slipped on Sunday, and the lineout-attack split is where it will slip again — one coach per group.
-- **Repeated from Sunday**, as the coaches asked: the same warm-up, the same lineout-restart game, and the hooker throw stepping up from the crossbar to a marked line.
-- The **B/W/G** lineout calls come in Week 2 — positioning and the throw only.

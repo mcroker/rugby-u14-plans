@@ -1,0 +1,52 @@
+{
+  "_comment": [
+    "Text the build rewrites or removes on its way to the public site.",
+    "",
+    "'redact' drops matter that belongs in the working sources but not on a page",
+    "players and parents read — here, the cross-references to the club Academy's",
+    "own diagram library and call names. Each entry is a regular expression,",
+    "applied to every doc.",
+    "",
+    "'rewrite' fixes prose that reads correctly in the source file but not on the",
+    "site — mostly a reference to another document that ends up on the same page,",
+    "or one to a file that has no page at all. Keyed by source path; each entry is",
+    "[find, replace], matched literally.",
+    "",
+    "A rule that no longer matches is reported as a note, not an error: a reworded",
+    "sentence should never stop the site from publishing."
+  ],
+
+  "redact": [
+    "\\s*\\((?:[Ss]ourced from|[Mm]atched to)[^()]*[Aa]cademy[^()]*\\)",
+    "\\s*Matches the club Academy's own \"[^\"]+\" call\\.",
+    "\\s*Academy equivalent: \"[^\"]+\"\\.",
+    "\\s*\\(sourced from[^()]*\\)"
+  ],
+  "redactLines": ["diagrams to source", "folders in the club Drive"],
+  "redactCheck": "[Aa]cademy",
+
+  "rewrite": {
+    "claude/age-group.md": [
+      [
+        "See `coaching.md` — How sessions should be coached for the contact-light approach we take to the Thursday slot either way.",
+        "See How sessions should be coached below for the contact-light approach we take to the Thursday slot either way."
+      ]
+    ],
+    "claude/coaching.md": [
+      ["see `age-group.md` — Training & Fixtures.", "see Training &amp; Fixtures above."],
+      [
+        "plus the neurodiversity guidance linked from `age-group.md`",
+        "plus the neurodiversity guidance linked above"
+      ]
+    ],
+    "claude/blocks.md": [
+      [
+        ", and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks",
+        " — all of which apply across all blocks"
+      ]
+    ],
+    "claude/activities.md": [
+      ["(see `CLAUDE.md`'s Session plan template)", "(see the session-plan template)"]
+    ]
+  }
+}

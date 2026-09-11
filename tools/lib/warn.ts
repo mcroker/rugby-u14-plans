@@ -13,3 +13,13 @@ export function warn(msg: string): void {
 export function allWarnings(): readonly string[] {
   return warnings;
 }
+
+/**
+ * Something worth saying but not worth failing over — a rewrite rule that no
+ * longer matches, say. A broken page must fail the build; a stale line in
+ * someone's config must not, or the first reworded sentence in a fork stops
+ * the site from publishing at all.
+ */
+export function note(msg: string): void {
+  console.log(`note: ${msg}`);
+}

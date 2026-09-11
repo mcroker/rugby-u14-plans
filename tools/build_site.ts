@@ -38,7 +38,7 @@ import {
   planWithWarmup,
   sessionBody,
 } from "./lib/session.ts";
-import { allWarnings, warn } from "./lib/warn.ts";
+import { allWarnings, note, warn } from "./lib/warn.ts";
 import { loadForecasts, sunsetAt, type Place } from "./lib/weather.ts";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -289,59 +289,51 @@ function renderCtx(images: Record<string, string>): RenderCtx {
 
 // ------------------------------------------------------------ source cleanup
 
-/** Docs the provenance strip runs over — the ones that carry cross-references
- *  to the club's Academy diagram library. */
-const REDACT = new Set(["claude/playbook.md"]);
-
 /**
- * Per-doc rewrites of cross-references the generic `foo.md` -> page linking
- * cannot handle — mostly references to a section that ends up on the same page.
- * Each is checked, so a reworded source fails the build rather than silently
- * leaving a dangling reference on the site.
+ * What the build rewrites or removes on the way to the public site — kept as
+ * club config rather than in the engine, because what a club must keep off a
+ * page players and parents read is the club's own business.
  */
-const SUBS: Record<string, Array<[string, string]>> = {
-  "claude/age-group.md": [
-    [
-      "See `coaching.md` — How sessions should be coached for the contact-light " +
-        "approach we take to the Thursday slot either way.",
-      "See How sessions should be coached below for the contact-light approach " +
-        "we take to the Thursday slot either way.",
-    ],
-  ],
-  "claude/coaching.md": [
-    ["see `age-group.md` — Training & Fixtures.", "see Training &amp; Fixtures above."],
-    [
-      "plus the neurodiversity guidance linked from `age-group.md`",
-      "plus the neurodiversity guidance linked above",
-    ],
-  ],
-  "claude/blocks.md": [
-    [
-      ", and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks",
-      " — all of which apply across all blocks",
-    ],
-  ],
-  "claude/activities.md": [
-    ["(see `CLAUDE.md`'s Session plan template)", "(see the session-plan template)"],
-  ],
-};
+interface Rewrites {
+  /** Regular expressions removed from every doc. */
+  redact: string[];
+  /** Lines dropped entirely if they contain any of these. */
+  redactLines: string[];
+  /** If this still matches after redacting, something was missed — warn. */
+  redactCheck: string;
+  /** Per-source literal [find, replace] pairs. */
+  rewrite: Record<string, Array<[string, string]>>;
+}
+
+function loadRewrites(): Rewrites {
+  const file = path.join(ROOT, "club", "rewrites.json");
+  const empty: Rewrites = { redact: [], redactLines: [], redactCheck: "", rewrite: {} };
+  if (!fs.existsSync(file)) return empty;
+  try {
+    const j = JSON.parse(fs.readFileSync(file, "utf-8")) as Partial<Rewrites>;
+    return { ...empty, ...j };
+  } catch (err) {
+    warn(`club/rewrites.json could not be read: ${(err as Error).message}`);
+    return empty;
+  }
+}
+
+const REWRITES = loadRewrites();
 
 /** Build requirement: no academy-library or external play-name provenance,
  *  and no club-Drive internals, on the public site. */
-function stripProvenance(md: string, label: string): string {
-  let s = md.replace(/\s*\((?:[Ss]ourced from|[Mm]atched to)[^()]*[Aa]cademy[^()]*\)/g, "");
-  s = s.replace(/\s*Matches the club Academy's own "[^"]+" call\./g, "");
-  s = s.replace(/\s*Academy equivalent: "[^"]+"\./g, "");
-  s = s
-    .split("\n")
-    .filter(
-      (l) =>
-        !l.toLowerCase().includes("diagrams to source") &&
-        !l.includes("folders in the club Drive"),
-    )
-    .join("\n");
-  s = s.replace(/\s*\(sourced from[^()]*\)/gi, "");
-  if (/[Aa]cademy/.test(s)) warn(`academy reference survived stripping — check ${label}`);
+function redact(md: string, label: string): string {
+  let s = md;
+  for (const pattern of REWRITES.redact) s = s.replace(new RegExp(pattern, "g"), "");
+  if (REWRITES.redactLines.length) {
+    s = s
+      .split("\n")
+      .filter((l) => !REWRITES.redactLines.some((needle) => l.includes(needle)))
+      .join("\n");
+  }
+  if (REWRITES.redactCheck && new RegExp(REWRITES.redactCheck).test(s)) {
+    warn(`redaction left a match for /${REWRITES.redactCheck}/ in ${label}`);
+  }
   return s;
 }
 
@@ -354,11 +346,16 @@ function dropH1AndLead(md: string): string {
   return lines.slice(k).join("\n");
 }
 
-function subAll(md: string, pairs: Array<[string, string]>, label: string): string {
+/**
+ * Apply the club's rewrites for one source file. A rule that no longer matches
+ * is a note rather than a warning — a reworded sentence leaves a slightly awkward
+ * cross-reference on one page, which is not a reason to stop publishing the site.
+ */
+function rewrite(md: string, label: string): string {
   let s = md;
-  for (const [old, replacement] of pairs) {
+  for (const [old, replacement] of REWRITES.rewrite[label] ?? []) {
     if (!s.includes(old)) {
-      warn(`[${label}] substitution no longer matches: '${old.slice(0, 60)}'`);
+      note(`[${label}] rewrite no longer matches: '${old.slice(0, 60)}…'`);
     }
     s = s.replaceAll(old, replacement);
   }
@@ -445,9 +442,8 @@ function buildPages(): Record<string, string> {
     const lead = docs[0]!;
     const md = docs
       .map((d) => {
-        let s = d.stripLead ? dropH1AndLead(d.body) : d.body;
-        if (REDACT.has(d.file)) s = stripProvenance(s, d.file);
-        return subAll(s, SUBS[d.file] ?? [], d.file);
+        const s = d.stripLead ? dropH1AndLead(d.body) : d.body;
+        return rewrite(redact(s, d.file), d.file);
       })
       .join("\n\n");
     add(name, {

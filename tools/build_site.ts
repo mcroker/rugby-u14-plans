@@ -141,6 +141,25 @@ function rewrite(md: string, label: string): string {
   return s;
 }
 
+/**
+ * Drop a doc's own H1. The page shell already prints a heading, so rendering
+ * the source title again gives every page two <h1>s saying the same thing —
+ * untidy to read and wrong for anyone navigating by headings.
+ *
+ * Only a title is removed: an H1 on the first line, and the blank lines after
+ * it. The lead paragraph below stays, because on a single-doc page it is the
+ * doc's opening sentence and worth keeping.
+ */
+function dropH1(md: string): string {
+  const lines = md.split("\n");
+  let i = 0;
+  while (i < lines.length && !lines[i]!.trim()) i += 1;
+  if (i >= lines.length || !lines[i]!.startsWith("# ")) return md;
+  lines.splice(i, 1);
+  while (i < lines.length && !lines[i]!.trim()) lines.splice(i, 1);
+  return lines.join("\n");
+}
+
 /** For a page built from several docs: drop a file's H1 and the lead paragraph
  *  above its first section. */
 function dropH1AndLead(md: string): string {
@@ -426,7 +445,7 @@ function buildTeam(b: TeamBuild, siteOut: string): Record<string, string> {
     const lead = group[0]!;
     const md = group
       .map((d) => {
-        const s = d.stripLead ? dropH1AndLead(d.body) : d.body;
+        const s = d.stripLead ? dropH1AndLead(d.body) : dropH1(d.body);
         return rewrite(redact(s, d.file), d.file);
       })
       .join("\n\n");

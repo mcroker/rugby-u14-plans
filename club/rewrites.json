@@ -1,0 +1,29 @@
+{
+  "_comment": [
+    "Text the build rewrites or removes on its way to the public site.",
+    "",
+    "Most clubs need nothing here — empty lists are a perfectly good answer, and",
+    "this file can be deleted entirely.",
+    "",
+    "'redact' drops matter that belongs in your working sources but not on a page",
+    "players and parents read. Each entry is a regular expression, applied to",
+    "every doc. 'redactLines' drops whole lines containing any of its strings.",
+    "'redactCheck' is a last look: if it still matches after redacting, the build",
+    "warns that something was missed.",
+    "",
+    "'rewrite' fixes prose that reads correctly in the source file but not on the",
+    "site — mostly a reference to another document that ends up on the same page,",
+    "or one to a file that has no page at all. Keyed by the doc's filename, so a",
+    "rule keeps working wherever the doc lives; each entry is [find, replace],",
+    "matched literally. Write the replacement as plain text, not HTML — it is",
+    "escaped on the way out like everything else.",
+    "",
+    "A rule that no longer matches is reported as a note, not an error: a reworded",
+    "sentence should never stop the site from publishing."
+  ],
+
+  "redact": [],
+  "redactLines": [],
+  "redactCheck": "",
+  "rewrite": {}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "claude-rugby-plans",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static-site generator for a rugby club age-group coaching reference",
+  "scripts": {
+    "build": "node tools/build_site.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcroker/claude-rugby-plans.git"
+  }
+}

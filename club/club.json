@@ -1,0 +1,23 @@
+{
+  "_comment": "EXAMPLE DATA. Riverside RFC is invented — replace every value here with your own club's. See .claude/skills/setup-club/SKILL.md.",
+
+  "name": "Riverside RFC",
+  "shortName": "Riverside",
+
+  "_location": "Used for the sunset time and the weather forecast on each session page. The clubhouse to within a mile is plenty.",
+  "latitude": 51.45,
+  "longitude": -2.6,
+  "timezone": "Europe/London",
+  "locale": "en-GB",
+
+  "_allocation": "Where your club publishes which pitch each age group has. Leave empty if it doesn't.",
+  "allocationUrl": "",
+  "pitchMap": "pitch-map.svg",
+
+  "_site": "The landing page at the root of the domain, above the per-team sites.",
+  "site": {
+    "title": "Riverside RFC Age-Grade Coaching",
+    "sub": "Session plans, playbooks and coaching reference, one site per age group.",
+    "sub2": "Built from the markdown in this repository and rebuilt on every change."
+  }
+}

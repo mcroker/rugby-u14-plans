@@ -1,0 +1,20 @@
+{
+  "_comment": [
+    "EXAMPLE DATA — these zones describe an invented ground. Replace them with",
+    "your own, or delete this file if your club has no pitch map.",
+    "",
+    "Where each pitch sits on club/images/web/pitch-map.jpg, as percentages of",
+    "that image from its top-left corner. A session plan writes the code —",
+    "![caption](pitch:2b) — and the build pins the team's marker on the spot.",
+    "",
+    "Name the halves the way people at your club actually say them. An unknown",
+    "code fails the build, which is what stops a plan sending thirty players to",
+    "the wrong end of the ground."
+  ],
+
+  "1a": { "left": 14, "top": 70, "pitch": "Pitch 1", "half": "near-end" },
+  "1b": { "left": 29, "top": 69, "pitch": "Pitch 1", "half": "far-end" },
+  "2a": { "left": 45, "top": 49, "pitch": "Pitch 2", "half": "left" },
+  "2b": { "left": 47, "top": 65, "pitch": "Pitch 2", "half": "right" },
+  "training": { "left": 13, "top": 37, "pitch": "Training Area", "half": "floodlit" }
+}

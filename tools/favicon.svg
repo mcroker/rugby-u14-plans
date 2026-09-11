@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rugby ball">
+  <!-- Club blue ball with a gold outline, so it reads on both a light and a dark
+       browser tab. Tilted the way a ball sits in the hand. -->
+  <g transform="rotate(-28 32 32)">
+    <path d="M6 32 C14 10 50 10 58 32 C50 54 14 54 6 32 Z"
+          fill="#1d3f72" stroke="#e0b45c" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M20 32 H44" stroke="#e0b45c" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M25 25.5 V38.5 M32 24.5 V39.5 M39 25.5 V38.5"
+          stroke="#e0b45c" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</svg>

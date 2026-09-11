@@ -1,0 +1,18 @@
+{
+  "_comment": "EXAMPLE TEAM. Everything here is invented, and it exists to show the shape a real team folder takes. Delete this folder once you have your own.",
+
+  "name": "U14 Rugby",
+  "title": "U14 Rugby — Coaching Reference",
+  "sub": "A worked example of what a team folder produces.",
+  "sub2": "All pages responsive — built for pitch-side phone use and desktop planning alike.",
+
+  "_ageGroup": "Picks which laws doc this team gets from content/laws/.",
+  "ageGroup": "u14",
+
+  "_pinLabel": "What this team is called on the club's allocation map — the label on the map pin.",
+  "pinLabel": "U14",
+
+  "_order": "Position on the club landing page.",
+  "order": 1,
+  "card": "Worked example: session plans, playbook, activities bank and coaching notes."
+}

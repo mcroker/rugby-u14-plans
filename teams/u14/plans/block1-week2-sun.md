@@ -5,7 +5,6 @@ h1: Week 2 — Sunday
 sub: First contested scrum — 8-man setup, the feed, and DSP off the base.
 sub2: Sun 13 Sep 2026, 10.45am–12.30pm
 crumb: Week 2 (Sun)
-draft: true
 card: "Run-sheet for the squad's first scrum session: contested 8-man scrum, DSP, and the tackle diamond."
 ---
 # Block 1, Week 2 — Sunday session
@@ -239,4 +238,25 @@ Conditions, cumulative, added in this order and left in:
 
 ## Review — what actually happened
 
-*To be filled in after the session.*
+*Coaches' feedback after the session, 13 Sep — Bev and Martin.*
+
+**What didn't work**
+
+- **Line-speed went out of the window in the game.** Whatever the drills built didn't survive into live play.
+- **Splitting the pack for the scrum block didn't work.** One machine for the groups, and they still needed a lot of basic body-position work — **the props in particular, moving their feet back after set**.
+- **The backs had a similar problem: DSP didn't engage the back three.**
+- **Setup was hurried again** — kit arrived late.
+
+**Changed on the day**
+
+- **Game scrums went uncontested.** The contact and scrum load looked like too much, so the game's restarts were set but not pushed at all.
+
+**To work on** (Bev)
+
+- **Kick-off setup.**
+- **Defensive clearance kicking.**
+- **Live scrummaging.**
+- **Outside shoulder defence.**
+- **Communication and reset in defence.**
+
+**Carried to:** `blocks.md` ("Carried forward from Week 2 (Sun 13 Sep)") for everything the coming weeks should pick up — the block plan itself is unchanged; `coaching.md` for the scrum-machine split and extra balls at setup.

@@ -32,7 +32,7 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 | Tue 1 Sep 2026 | 18:30–19:30 | 2026/27 U14s Player & Parents meeting | Meeting | Club | Whole squad | — |
 | Sun 6 Sep 2026 | TBC | Training *(Sevenoaks training fixture cancelled)* | Training | — | Whole squad | — |
 | Sun 13 Sep 2026 | TBC | Training *(Crowborough away match replaced with training)* | Training | — | Whole squad | — |
-| Sun 20 Sep 2026 | TBC | Home Training + OOD | Training | Home | Whole squad | — |
+| Sun 20 Sep 2026 | TBC | TWRFC U14s – Crowborough *(replaces Home Training + OOD)* | Friendly | TBC | Whole squad (Blue and White) | Crowborough |
 | Sun 27 Sep 2026 | TBC | Kent League Stage 1, Round 1 | League fixture | Home | Blue | Old Alleynian U14s (Lions) |
 | Sun 27 Sep 2026 | TBC | Kent League Stage 1, Round 1 | League fixture | Away | White | Sheppey RFC U14 |
 | Sun 11 Oct 2026 | TBC | Kent League Stage 1, Round 2 | League fixture | Away | Blue | Vigo U14 |

@@ -127,6 +127,8 @@ Built on four pillars:
 
 These sit inside the wider **line-org** system: spacing, numbering up, scanning (**CTC** — see above), the shuffling retreat, and communication.
 
+**Outside shoulder.** Every defender lines up on the **outside shoulder of his man** — the shoulder nearer the touchline — and goes up on **Bang** from there. The carrier is shown back inside, towards the cover.
+
 | Call | Meaning |
 |---|---|
 | **Bang** | Trigger for blitz defence — the line goes up hard on the call. |

@@ -31,7 +31,9 @@ Session-by-session plans, organised by 6-week block (see `coaching.md` for the b
 
 Every training session carries the **defence** thread plus a forwards-skill focus (lineout or scrum, alternating by week rather than day). Where the forwards are tied up in a set-piece skill zone, the backs get their own parallel focus, kept in line with the block's theme rather than a separate attacking agenda.
 
-Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, not training — listed below for the calendar picture only, since we don't run training on match days. **Both are split Sundays, and 11 Oct is only half a match day:** on 27 Sep Blue are home and White away at Sheppey, and on 11 Oct Blue are away at Vigo while **White have no fixture and train** (see `calendar.md`).
+**Pace — slowed down after Week 2.** We were going a bit fast. **Blitz and line-speed are the main thread**: they come first in every session, and new material waits until they hold up in a game.
+
+Note: three Sundays in this block are matches, not training — the **friendly against Crowborough on 20 Sep (both teams)** and the two Kent League fixtures (27 Sep, 11 Oct) — listed below for the calendar picture only, since we don't run training on match days. **Both league Sundays are split, and 11 Oct is only half a match day:** on 27 Sep Blue are home and White away at Sheppey, and on 11 Oct Blue are away at Vigo while **White have no fixture and train** (see `calendar.md`).
 
 **Open items still to confirm:**
 
@@ -53,6 +55,19 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 - **Run-sheets carry their water breaks**, and transitions get started fast — the session was still more stop/start than it should be.
 - **The pre-session thread does the setup and the arguments.** Share the starting setup, and call out anything likely to generate coaching discussion — the off-9 vs off-10 question came up on the pitch and was better had beforehand.
 
+**Carried forward from Week 2 (Sun 13 Sep)** — Bev's work-ons and Martin's observations, see the session's review in `block1-week2-sun.md`. None of these changes the session list below; each is noted against the slot it already fits, or flagged where there isn't one:
+
+- **Line-speed didn't survive into the game.** Keep it as the defence thread's first priority, and coach it **inside the game** — a drill that builds it is not enough on its own.
+- **Scrum body position is not bedded in.** The props especially: **feet moving back after set**. Thu 17 Sep is on the machine, non-contested — the right session to fix it before anything is added. Keep the pack together rather than splitting into groups while there is one machine (see `coaching.md`).
+- **The scrum and contact load was too much for the game.** The game's scrums went uncontested on the day. Plan Sunday's live scrum volume **inside** the session's total contact, not on top of it.
+- **DSP didn't engage the back three.** Any backs block off a set piece needs a job for 11, 14 and 15 — a kick to field, a line to run, a pendulum to hold — not just 9, 10 and the centres. The back-three-led kick-defence work has moved out with Sun 20 Sep, so it has to come from the backs blocks that remain.
+
+- **Kick-off setup.** Not in Block 1 and not in `playbook.md` — there is no restart shape defined yet. The first match is now the **Crowborough friendly on Sun 20 Sep**, so **Thu 17 Sep** is the only session before it, and **Thu 24 Sep** the last before the league.
+- **Defensive clearance kicking.** Already on the way: exit kicks are introduced **Thu 17 Sep** (to the 15m channel, kick and chase). Defending against kicks was Sun 20 Sep, now the friendly — see Saved for later blocks.
+- **Live scrummaging.** Contested scrum is Sunday-only (see `age-group.md`), and with Sun 20 Sep a friendly the next whole-squad training Sunday is **Sun 4 Oct**. It also pulls against the load point above — the game's scrums went uncontested on 13 Sep because it was too much. More live scrum therefore means a short, counted contested block on a Sunday, with the rest of the session's contact trimmed to fit, rather than contested game restarts — **agree where it goes**.
+- **Outside shoulder defence.** Thu 17 Sep's defence focus — a drill, then a small-sided game. Now defined in `playbook.md`'s Defence section.
+- **Communication and reset in defence.** The same gap Week 1 Sunday found ("team defence needs work"), still open. **Reset** — back in the line, onside, facing — sits naturally in **Week 3's ruck-defence** ("guard either side, stay on your feet, get back in the line").
+
 ### Session list
 
 | Week | Date | Session | Run-sheet | Core | Defence | Set-piece (forwards) | Backs | Position skills |
@@ -60,22 +75,22 @@ Note: the two Kent League fixtures in this block (27 Sep, 11 Oct) are matches, n
 | 1 | Sun 6 Sep | Training | `block1-week1-sun.md` | Tackle | Blitz, line-org | Lineout — where to stand, laws | Defensive alignment (Continuous Defence) while forwards are in the lineout zone | Hooker lineout throw |
 | 1 | Thu 10 Sep | Training | `block1-week1-thur.md` | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
 | 2 | Sun 13 Sep | Training | `block1-week2-sun.md` | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
-| 2 | Thu 17 Sep | Training | `block1-week2-thur.md` | Passing | Blitz, line-org | Scrum — position/technique, non-contested | Exit kicks — introduce (technique, then kick + chase/regather) | 9 + hooker scrum strike, back-row ball control |
-| 3 | Sun 20 Sep | Training | **Needed** | Tackle | Ruck-defence | Defending the lineout — pressure on 9 & 10 | Defending against kicks (system TBC) | — |
-| 3 | Thu 24 Sep | Pre-match (sharpen) | **Needed** | Passing — introduce pull-back pass (Hippo) | Ruck-defence | Set-piece, lightly (both areas) | Defending against kicks, lightly | — |
+| 2 | Thu 17 Sep | Training — **low contact** | `block1-week2-thur.md` | Passing | **Blitz — positioning on the attacker's outside shoulder** (drill, then small-sided game) | Scrum — body position and the feed, no machine | Exit kicks — introduce, shortened | Hooker lineout throw; 9 + hooker feed |
+| 3 | Sun 20 Sep | Match — friendly v Crowborough *(both teams)* | — *(no plan; match day)* | — | — | — | — | — |
+| 3 | Thu 24 Sep | Work-ons from the friendly + pre-match sharpen | **Needed** | Passing | **Blitz and line-speed**; ruck-defence introduced | Set-piece, lightly (both areas) | Blitz and line-speed off a set piece, lightly | — |
 | 4 | Sun 27 Sep | Match — Kent League R1 | — *(no plan; match day)* | — | — | — | — | — |
 | 4 | Thu 1 Oct | Training — work-ons from the fixture | **Needed** | Whatever the match showed needs work | ″ | ″ | ″ | ″ |
 | 5 | Sun 4 Oct | Training | **Needed** | Tackle — ruck (2v2) | All four pillars, full-team | Lineout — 8-man catch and drive | Receiving off the fold, playing width *(flagged above)* | — |
-| 5 | Thu 8 Oct | Training | **Needed** | Passing — pull-back pass | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
+| 5 | Thu 8 Oct | Training | **Needed** | Passing — introduce pull-back pass (Hippo) | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
 | 6 | Sun 11 Oct | Match — Kent League R2 *(Blue, away)* | — *(no plan; match day)* | — | — | — | — | — |
 | 6 | Sun 11 Oct | Training — **White only**, half squad | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 | 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 
-**Run-sheets still to write.** This block has **eleven training sessions**. Four have a detailed run-sheet in `plans/`; the other **seven** do not, and are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **ten training sessions**. Four have a detailed run-sheet in `plans/`; the other **six** do not, and are marked **Needed** in the table above. In date order:
 
-**Sun 20 Sep** · **Thu 24 Sep** *(pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
+**Thu 24 Sep** *(friendly work-ons + pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
 
-Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
+Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
 
 ### Outline session plans for each week
 
@@ -91,19 +106,25 @@ Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.m
 
 **Defence:** blitz and line-org continued, main game scoring tightened so both line-speed and communication count.
 
+**Thursday 17 Sep is low contact** — some players will have played that day — and defence leads it: blitz, and positioning on the attacker's outside shoulder, as a drill and then a small-sided game fed from either side. The scrum work (no machine) and exit kicks are shortened to fit.
+
 **Forwards-skill focus: scrum — the squad's very first exposure.** Sunday: 8-man setup, the engage sequence (crouch–bind–set), tower of power/body position — **contested from this first week**, since Sunday is when we can field two full packs. Thursday: individual position/technique work, non-contested (we won't reliably have two full 8-man packs on a Thursday — see `age-group.md`). Both days: 9 and hooker practise the timing call for the feed, and back-row work on controlling the ball at the base so it doesn't spill loose.
 
 **Backs-skill focus:** split across the two days to spread the load. **Sunday** ties straight into that day's live scrum work — **DSP** as the default attacking move off scrum, plus line-pressure defence from a scrum situation. **Thursday** introduces exit kicks (technique, then kick + chase/regather).
 
-#### Week 3 — Sun 20 Sep & Thu 24 Sep
+#### Week 3 — Sun 20 Sep (friendly v Crowborough) & Thu 24 Sep (work-ons + sharpen)
 
-**Defence:** ruck-defence — guard either side of the ruck, and only compete for the ball when it can realistically be won, otherwise stay on your feet. Thursday also introduces the pull-back pass (**Hippo** — see `playbook.md`) as part of the passing core skill.
+**Sunday — friendly against Crowborough, both teams. No session plan.** The squad's first match of the season. Watch the line-speed off **Bang** above all — Week 2's game lost it — and note what else looked shaky, as input to Thursday.
 
-**Forwards-skill focus: defending the lineout (Sun)** — now building on the Week 1 Thursday introduction rather than starting from scratch: the counter-maul and seam attack, pressure on 9, hooker in the channel, and 9 + tail-gunner shooting (see `playbook.md`). Thursday is pre-match sharpen (see below) and touches both set-pieces lightly rather than introducing new lineout-defence content.
+**Thursday — work-ons from the friendly, and pre-match sharpen** for Kent League Round 1 on Sun 27 Sep. Sharpen, not load: whole squad together, no separate backs split needed.
 
-**Backs-skill focus:** defending against kicks — the **pendulum**, now defined in `playbook.md`. Start with the back three catching under a kick (call, side-on, support on both shoulders), then the pendulum swinging as the ball moves, then the zone decision on what to do with it.
+**Defence:** **blitz and line-speed first**, taking the cue from what the friendly showed. **Ruck-defence** introduced alongside — guard either side of the ruck, only compete for the ball when it can realistically be won, otherwise stay on your feet and get back in the line.
 
-*Thursday 24 Sep is also pre-match sharpen, not load* — a shortened version of the week's content across all areas lightly, whole squad together, no separate backs split needed, since Sunday 27 Sep is the first fixture.
+**Set-piece:** both areas lightly — no new lineout or scrum content.
+
+**Backs:** blitz and line-speed off a set-piece picture, lightly.
+
+**Moved out of Week 3 when Sunday became a friendly:** defending the lineout and defending against kicks (both now in Saved for later blocks), and the pull-back pass (**Hippo**), which moves to Week 5 Thursday.
 
 #### Week 4 — Sun 27 Sep (Match — Kent League R1) & Thu 1 Oct (work-ons)
 
@@ -113,7 +134,7 @@ Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.m
 
 #### Week 5 — Sun 4 Oct & Thu 8 Oct
 
-**Defence:** full-team, all four pillars combined — conditioned around whatever Round 1 exposed as needing work. Core progresses tackle work into 2v2 ruck (building on the tackle-diamond progression), and Thursday reinforces the pull-back pass.
+**Defence:** full-team, all four pillars combined — conditioned around whatever Round 1 exposed as needing work. Core progresses tackle work into 2v2 ruck (building on the tackle-diamond progression), and Thursday introduces the pull-back pass (**Hippo** — see `playbook.md`), moved from Week 3.
 
 **Forwards-skill focus: lineout — 8-man catch and drive, both days.** This is a bigger lineout than the 5-man default specifically to build a driving maul — remember the maul is attacking-22-only, aiming to score, with break-away or presenting to 9 as the alternatives if it stalls (see `playbook.md`).
 
@@ -131,6 +152,8 @@ Sun 27 Sep needs no run-sheet — we don't train on match days (see `age-group.m
 
 Ideas and skills that came up while planning Block 1 but aren't part of it — kept here so they aren't lost, to be picked up in a later block:
 
+- **Defending the lineout — the next layer.** The counter-maul and seam attack, pressure on 9, hooker in the channel, 9 + tail-gunner shooting (see `playbook.md`). Was Sun 20 Sep; moved out when that became the Crowborough friendly. Builds on the Week 1 Thursday introduction. Back into Block 1 if a session has room once line-speed holds, otherwise Block 2.
+- **Defending against kicks — the pendulum.** The back three catching under a kick (call, side-on, support on both shoulders), then the pendulum swinging as the ball moves, then the zone decision (see `playbook.md`). Was Sun 20 Sep; moved out with it. The kick-defence scenarios and back-three catching volume below come after it.
 - **Weak-shoulder identification (tackle cue)** — players identify their weak tackling shoulder, then wear a headband on that side as a visual cue. Doesn't fit alongside Block 1's tackle-diamond work — parked.
 - **Drift vs blitz defence** — originally pencilled in for Block 1 Weeks 5–6; under review, not confirmed as part of this block.
 - **Switch (S1)** — the 10/12 switch (see `playbook.md`'s Backs Moves) isn't being actively coached in Block 1; save its introduction for a later block.

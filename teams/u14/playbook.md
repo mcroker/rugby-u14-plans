@@ -184,7 +184,7 @@ Rules:
 - **The receiver works back towards the middle of the pitch** — infield, not down the touchline he caught it on.
 - **Lightning-fast ruck.** Two in, ball back — the 2-second target, and faster if we can, because their chase is still turning.
 - **10 plays what he sees** off that ball.
-- **In doubt, kick — to the 5m channel.**
+- **In doubt, kick — to the 15m channel** (see Kicking Strategy above).
 
 ### The three zones
 

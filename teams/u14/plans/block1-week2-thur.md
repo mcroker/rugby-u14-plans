@@ -300,7 +300,7 @@ Rotate the kicker every rep.
 2. **The catch.** Call it, side-on, two support players arriving on the shoulders.
 3. **Straight afterwards — the receiver works back to the middle of the pitch.** Not down the touchline.
 4. **Lightning-fast ruck.** Two in, ball back.
-5. **10 plays what he sees.** **In doubt, kick — to the 5m channel.**
+5. **10 plays what he sees.** **In doubt, kick — to the 15m channel**, the same target as the exit kicks just practised.
 
 Walk it once, then twice at pace off a coach's kick.
 

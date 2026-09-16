@@ -2,11 +2,11 @@
 date: 2026-09-17
 start: "18:45"
 h1: Week 2 — Thursday
-sub: Low contact. Blitz and the outside shoulder, two small-sided games, a set-piece run-through, and a scenarios game to close.
+sub: Low contact. Blitz and the outside shoulder, two small-sided games, and a scenarios game to close.
 sub2: Thu 17 Sep 2026, 6.45–8.15pm
 crumb: Week 2 (Thu)
 draft: true
-card: "Run-sheet for the midweek session: low contact, blitz on the outside shoulder, two small-sided games, a quick Rhino and DSP run-through, and closing scenarios from the kick-off, lineout and scrum."
+card: "Run-sheet for the midweek session: low contact, blitz on the outside shoulder, two small-sided games, and closing scenarios from the kick-off, the lineout (Rhino) and the scrum (DSP)."
 ---
 # Block 1, Week 2 — Thursday session
 
@@ -18,7 +18,7 @@ card: "Run-sheet for the midweek session: low contact, blitz on the outside shou
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | **Jeff and Bev.** *(Martin, Tiggy and Matt out; Steve, Tom and Andy to confirm.)* |
 | **Attendance** | 24 attending, 12 unanswered, 6 declined. *(Actual — fill in on the night.)* |
-| **Session objective** | **Defence: blitz, and positioning on the attacker's outside shoulder** — a 3 v 3 opposite the **Tackle Diamond**, then two small-sided games of Presentation Touch. A quick whole-squad run-through of **5-man Rhino** and **DSP**, and a **scenarios game** to close — the kick-off first, then the lineout, then the scrum. **Touch throughout, apart from the diamond.** |
+| **Session objective** | **Defence: blitz, and positioning on the attacker's outside shoulder** — a 3 v 3 opposite the **Tackle Diamond**, then two small-sided games of Presentation Touch. A **scenarios game** to close — the kick-off first, then **5-man Rhino** from a lineout and **DSP** from a scrum, each walked through before it runs. **Touch throughout, apart from the diamond.** |
 | **Resources required** | Balls — a dozen if we have them. **Bibs or headbands for one team.** **Cones**, including four in two colours for the 3 v 3 chaos progression. **The club's score-card numbers**, if Coach's Bag gets used. Ruck shields. **Poles**, if the posts are too far for the hookers. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
@@ -46,13 +46,12 @@ card: "Run-sheet for the midweek session: low contact, blitz on the outside shou
 | +7, 12 min | Essential skills — passing (Crazy Passing) | The week's core skill, whole squad in two sets |
 | +7, 12 min *(parallel pull-out)* | Hooker throw-in — five minutes at a pop (hookers) | Out for five, back into the passing, out for five more |
 | +19, 2 min | **Contact warm-up** | Whole squad, straight before the diamond — get low, pummelling, Wrist Wrestle |
-| +21, 16 min | Tackle Diamond | One team, two diamonds; the teams swap at +29 |
+| +21, 16 min | Tackle Diamond | One team, two or three diamonds; the teams swap at +29 |
 | +21, 16 min | Outside shoulder — 3 v 3 | The other team, two channels; swap at +29 |
 | +37, 3 min | Water | Halve each team and cross them over |
 | +40, 13 min | Two small-sided games — Presentation Touch | **Bang** encouraged; conditions only if it flows |
-| +53, 8 min | Set-piece run-through — 5-man Rhino and DSP | Whole squad, quick, unopposed |
-| +61, 2 min | Water | Re-split — 15 and the rest |
-| +63, 22 min | Scenarios game — 15 v the rest, semi-opposed | Receive the kick-off first, then the lineout, then the scrum |
+| +53, 2 min | Water | Re-split — 15 and the rest |
+| +55, 30 min | Scenarios game — 15 v the rest, semi-opposed | Receive the kick-off, then 5-man Rhino from a lineout, then DSP from a scrum |
 | +85, 5 min | Cool-down / close | Recap the outside shoulder and **Bang**; pick the next warm-up leader |
 
 *If we start late, take it out of the small-sided games. Not out of the diamond or the 3 v 3 — they are the session.*
@@ -215,68 +214,46 @@ Walk the first reps, then jog, then full pace.
 - One game a mismatch: swap a pair across between pitches.
 - Numbers uneven: the extra player goes to whichever side is defending.
 
-### Set-piece run-through — 5-man Rhino and DSP
-
-**Groups:** whole squad together — forwards in the lineout and the scrum, backs outside them. Spare forwards rotate through.
-
-**Coaching Points:** shape, not contest — everyone knows where to stand before the ball moves. **No lift, no push** (see `laws.md`). Walk the first one, run the second.
-
-**Setup:** the whole pitch — a lineout mark on one touchline and a scrum mark in midfield. Unopposed. Four minutes each, two or three run-throughs apiece.
-
-**Description:**
-
-**1. 5-man Rhino (~4 min)** — see `playbook.md`.
-
-1. Five in the line (props, locks, 7), hooker throwing, **6 and 8 in front of 10**.
-2. Ball off the top to 9, **past 10 to the two spare forwards** — they carry, ruck 1 with 12.
-3. **Pod races round ruck 1** and carries into ruck 2 — **Rhino**.
-4. **Backs edge attack.**
-
-**2. Scrum DSP (~4 min)** — see `playbook.md`.
-
-1. Pack set unopposed — **no push**, props' feet planted after set.
-2. **Hooker taps when he is ready, 9 feeds on the tap.**
-3. **8 controls it at the base**, 9 clears — **DSP**.
-4. **Backs play what's in front**, one phase, then stop.
-
-**Progressions:**
-- Call **Hippo** off the pod at ruck 2, so the pod runs as a dummy (see `playbook.md`).
-- Second run-through at full pace.
-
-**Adaptations:**
-- Forwards short: three in the lineout, backs fill in.
-- Running long: Rhino only, and DSP goes straight into the scenarios.
-- Shape falling apart: walk it once more rather than adding the backs.
-
 ### Scenarios game — 15 v the rest, semi-opposed
 
 **Groups:** 15 against the rest (about nine), semi-opposed. **Rotate players through every scenario**, so everyone gets a go in the 15.
 
-**Coaching Points:** know the shape before the ball moves. Two seconds at the ruck. Talk. Defence gives pressure, not a contest. On the kick-off: **call it early**, **first man to the catcher is the shoulder**, then **back towards the middle**.
+**Coaching Points:** know the shape before the ball moves. Two seconds at the ruck. Talk. Defence gives pressure, not a contest. **No lift, no push** (see `laws.md`). On the kick-off: **call it early**, **first man to the catcher is the shoulder**, then **back towards the middle**.
 
-**Setup:** the whole pitch, touch. The defending group is **semi-opposed** — up and in the way, no jackal, full line-speed only when a coach calls it. Each scenario: set it, **play two phases**, whistle, reset, rotate. A named kicker for the kick-offs. Twenty-two minutes, in this order.
+**Setup:** the whole pitch, touch — a lineout mark on one touchline and a scrum mark in midfield. The defending group is **semi-opposed**: up and in the way, no jackal, full line-speed only when a coach calls it. Each scenario: set it, **play two phases**, whistle, reset, rotate. A named kicker for the kick-offs. Thirty minutes, in this order.
 
 **Description:**
 
-**1. Receive the kick-off (~8 min).** **Bev introduces the shape** — where the catchers and the front line stand — then it runs live.
+**1. Receive the kick-off (~10 min).** **Bev introduces the shape** — where the catchers and the front line stand — then it runs live.
 
 1. **Kick off.** The receiving 15 take it: call it early, catch, support on both shoulders.
 2. **First man to the catcher is the shoulder**, not a cleaner.
 3. **Back towards the middle**, two in, **fast ruck**.
 4. **10 plays what he sees** — in doubt, the **15m channel**. Two phases, then reset.
 
-**2. Attack from a lineout (~8 min).** **5-man Rhino** (see `playbook.md`) — off the top to 9, the two spare forwards carry for ruck 1, pod round for ruck 2, backs edge attack. Two phases, then reset.
+**2. Attack from a lineout — 5-man Rhino (~10 min).** Walk it once unopposed, then live (see `playbook.md`).
 
-**3. Attack from a scrum (~6 min).** **DSP** (see `playbook.md`) — set unopposed, hooker taps, 9 feeds, 8 controls, 9 clears, backs play what's in front.
+1. Five in the line (props, locks, 7), hooker throwing, **6 and 8 in front of 10**.
+2. Off the top to 9, **past 10 to the two spare forwards** — they carry, ruck 1 with 12.
+3. **Pod races round ruck 1** and carries into ruck 2 — **Rhino**.
+4. **Backs edge attack.** Two phases from the throw, then reset.
+
+**3. Attack from a scrum — DSP (~10 min).** Walk it once, then live (see `playbook.md`).
+
+1. Pack set unopposed — **no push**, props' feet planted after set.
+2. **Hooker taps when he is ready, 9 feeds on the tap.**
+3. **8 controls it at the base**, 9 clears — **DSP**.
+4. **Backs play what's in front.** Two phases, then reset.
 
 **Progressions:**
 - Defence goes fully live for the last few of each.
 - Three phases instead of two.
+- In the lineout, call **Hippo** off the pod at ruck 2, so the pod runs as a dummy (see `playbook.md`).
 - Score it: a point for any scenario that reaches phase two still holding the ball.
 
 **Adaptations:**
-- Numbers not making 15: play 12 against the rest, same scenarios.
-- A shape falling apart: walk that one through once, then run it again.
+- Numbers not making 15: 12 against the rest, same scenarios — three in the lineout, backs filling in.
+- A shape falling apart: walk that one through once more, then run it again.
 - **Short of time: the kick-off and the lineout are the ones Sunday needs** — let the scrum go.
 - Kicks going nowhere in the dark: kick lower and flatter, and put a retriever behind.
 - Catch breaking down: the chase holds for two seconds off the kick.
@@ -288,15 +265,15 @@ Walk the first reps, then jog, then full pace.
 - **Sunday is the friendly against Crowborough, both teams** — this is the only session before it.
 - **Martin and Tiggy are out, and only Jeff and Bev are confirmed.** Agree on the thread who else is coming, and who runs what.
 - **At two coaches:** one takes the passing and one the hookers at +7; at +21 one takes the diamond and one the 3 v 3, **one diamond and two channels**, with players feeding. Everything from +53 is whole-squad and runs on two.
-- **Pick the two teams beforehand, on the thread, and bib one of them.** Roughly equal. **Bibs start in the Tackle Diamond, non-bibs in the 3 v 3; swap at +29.** At +40, halve each team and cross them over for the two games. At +61, re-split **15 and the rest** for the scenarios. Crazy Passing is the exception — split it however you like.
+- **Pick the two teams beforehand, on the thread, and bib one of them.** Roughly equal. **Bibs start in the Tackle Diamond, non-bibs in the 3 v 3; swap at +29.** At +40, halve each team and cross them over for the two games. At +53, re-split **15 and the rest** for the scenarios. Crazy Passing is the exception — split it however you like.
 - **Name the kicker on the thread** — Jeff or Bev unless someone else is out. The kick-off scenario depends on someone putting a kick where it needs to go, under lights.
 - **Coaches for +21:** two on the diamonds and two on the channels if there are four; one each if there are two (see above).
 - **One coach with the hookers during Crazy Passing.**
 - **Cones out before they arrive:** the passing lines, the hooker line, and the pitch. **The diamonds go out at +19**, while the contact warm-up runs. Nothing else is re-coned.
-- **No contested scrum and no push** — the DSP run-through is unopposed. **The lineout is uncontested and nobody is lifted** (see `laws.md`).
+- **No contested scrum and no push** — the DSP scenario sets the scrum unopposed. **The lineout is uncontested and nobody is lifted** (see `laws.md`).
 - **There is no kick-off shape in `playbook.md` yet** — **Bev introduces one in the kick-off scenario.** Whoever is coordinating: write down what he coaches, so it can go into the playbook afterwards.
-- **The B/W/G lineout calls still have not been covered** — the Rhino run-through uses a called man, not a coded call (see `blocks.md`).
-- **Water is at +37 and +61.** Both are in the run sheet; don't call extra ones ad hoc.
+- **The B/W/G lineout calls still have not been covered** — the Rhino scenario uses a called man, not a coded call (see `blocks.md`).
+- **Water is at +37 and +53.** Both are in the run sheet; don't call extra ones ad hoc.
 - **One voice per segment.**
 
 ## Review — what actually happened

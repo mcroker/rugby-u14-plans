@@ -107,7 +107,7 @@ Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (se
 
 **Defence:** blitz and line-org continued, main game scoring tightened so both line-speed and communication count.
 
-**Thursday 17 Sep is low contact** — some players will have played that day — and defence leads it: blitz, and positioning on the attacker's outside shoulder, as a drill and then a small-sided game fed from either side. The scrum work (no machine) and exit kicks are shortened to fit. A controlled Tackle Diamond runs alongside the passing — the one piece of contact.
+**Thursday 17 Sep is low contact** — some players will have played that day — and defence leads it: blitz, and positioning on the attacker's outside shoulder, as a drill and then a small-sided game fed from either side. The scrum work (no machine) and exit kicks are shortened to fit. A controlled Tackle Diamond runs opposite the outside-shoulder drill, the teams swapping halfway — the one piece of contact.
 
 **Forwards-skill focus: scrum — the squad's very first exposure.** Sunday: 8-man setup, the engage sequence (crouch–bind–set), tower of power/body position — **contested from this first week**, since Sunday is when we can field two full packs. Thursday: individual position/technique work, non-contested (we won't reliably have two full 8-man packs on a Thursday — see `age-group.md`). Both days: 9 and hooker practise the timing call for the feed, and back-row work on controlling the ball at the base so it doesn't spill loose.
 

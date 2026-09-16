@@ -30,7 +30,7 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 - **Full square** — **colour A**: a cone in each corner and one either side at halfway.
 - **Thirds** — a line of three cones across the square at each third, **colour B**.
 - **Two small pitches** — the far end of the square, split lengthways down the middle with **colour B**. The far end is the try line; a **start line** of colour B 20m out from it.
-- **Behind each small pitch's try line** — a **gate** of two colour A cones 2m apart, 5m back, and **four cones either side of it, two of each colour**, scattered.
+- **Along each small pitch's try line** — four cones spread across it, **two of each colour**, for the chaos progression in the 3 v 3.
 - **Passing lines** — in the near end, short of the start lines: two sets of three lines (A, B, C), 5m between lines, 10m between the sets.
 - **Tackle diamonds** — two side by side next to the passing lines, four cones each, 5m sides.
 - **Ruck shields** — at the near end, for the warm-up.
@@ -171,26 +171,24 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Groups:** one team at a time — 3 v 3 in two channels, six to a channel. Swap with the Tackle Diamond at +29.
 
-**Coaching Points:** **nose on his outside shoulder** — the one nearer the touchline. Square, inside foot forward, short steps. Close the space, then match his speed. Call your man.
+**Coaching Points:** **back, back, up** — retreat together, touch the line together, come up together. Nobody leaves early. **Nose on his outside shoulder** — the one nearer the touchline. Square, inside foot forward, short steps. Close the space, then match his speed. Call your man.
 
-**Setup:** two channels — one small pitch split in half, start line to try line, no extra cones. A feeder at each channel — a waiting player, or a coach if one is spare. Touch only — a touch ends the rep. Eight minutes a team.
+**Setup:** two channels — one small pitch split in half, start line to try line. **The feed comes from the left every rep**, from a waiting player or a coach if one is spare. Touch only — a touch ends the rep. Eight minutes a team.
 
 **Description:**
 
-1. **Feeder passes to either attacker.**
-2. **Defence calls Bang** and goes up together, each on the outside shoulder of his man.
-3. **Attack goes for the try line.**
-4. **Swap attack and defence every four reps.**
+1. **Defence starts ahead of its try line**, facing the attack.
+2. **Feeder passes in from the left.**
+3. **Back, back, up** — the defence retreats and **every defender touches the try line** before the line comes up. **Bang** on the way up.
+4. **Each defender takes the outside shoulder of his man.** Attack goes for the try line.
+5. **Swap attack and defence every four reps.**
 
 Walk the first reps, then jog, then full pace.
 
 **Progressions:**
-- Walk, jog, full pace.
-- 4 v 3 (see Blitz Defence 4 v 3 in `activities.md`).
-- Feed from the same side twice, then switch.
-- **Gate** — defenders start behind the try line and come through the gate on the feed, so the line forms on the move.
-- **Colour cone** — the coach calls a colour as he feeds; each defender touches a cone of that colour before joining the line.
-- Defence starts facing its own try line and turns on the feed.
+- **Feed from either side**, not just the left.
+- **4 v 3** (see Blitz Defence 4 v 3 in `activities.md`).
+- *If the defence is winning everything:* **chaos — the coach shouts a cone colour as he feeds**, and every defender touches a cone of that colour on the try line before coming up.
 
 **Adaptations:**
 - Defenders overrunning their man: back to walking pace.

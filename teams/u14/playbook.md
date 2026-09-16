@@ -179,6 +179,13 @@ Rules:
 - **Two support players, one on each shoulder, arriving before the ball does** — ready for an offload, or to clear out if the catcher is hit.
 - **In our own 22, never let it bounce.** Catch it, or put it into touch.
 
+### Straight after the catch
+
+- **The receiver works back towards the middle of the pitch** — infield, not down the touchline he caught it on.
+- **Lightning-fast ruck.** Two in, ball back — the 2-second target, and faster if we can, because their chase is still turning.
+- **10 plays what he sees** off that ball.
+- **In doubt, kick — to the 5m channel.**
+
 ### The three zones
 
 Where we collect it decides what we do with it. Call the zone out loud as the ball goes up.
@@ -260,6 +267,8 @@ Scrum moves from 6 players (U13) to a full 8-player contested scrum, and the No.
 | Call | Meaning |
 |---|---|
 | **DSP** | Default Scrum Play. Ball won at the base and played back to 9 as normal (not a No.8 pick-and-go). From there, play what's in front / call the next phase (e.g. Rhino, Bull) as normal. |
+
+**The feed is on the hooker's tap.** The hooker taps when he is ready, and 9 feeds on the tap — no call. The hooker strikes on the feed.
 
 *(No.8 pick-and-go as an alternative to DSP is still to be defined as its own call, once the pack is comfortable with the bigger 8-man scrum shape.)*
 

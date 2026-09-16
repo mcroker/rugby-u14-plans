@@ -2,7 +2,7 @@
 date: 2026-09-17
 start: "18:45"
 h1: Week 2 — Thursday
-sub: Low contact. Blitz, and defending on the attacker's outside shoulder — a drill, then a small-sided game.
+sub: Low contact. Blitz, and defending on the attacker's outside shoulder — a drill, then straight into the games.
 sub2: Thu 17 Sep 2026, 6.45–8.15pm
 crumb: Week 2 (Thu)
 draft: true
@@ -17,9 +17,9 @@ card: "Run-sheet for the midweek session: low contact, blitz on the outside shou
 | **Date/Time** | **Thu 17 Sep 2026.** Meet 18:35, on the pitch 18:45. Finish 20:15. 90 min. |
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | *(To confirm — fill in on the night.)* **Martin away.** |
-| **Attendance** | *(Fill in on the night.)* |
-| **Session objective** | **Defence: blitz, and positioning on the attacker's outside shoulder** — a 3 v 3 opposite the **Tackle Diamond**, the two teams swapping halfway, then a small-sided game fed from either side. Passing as the core skill, with the **hookers pulled out for the lineout throw**. Scrum body position and the feed, **no machine**, and exit kicks for the backs — both short. **Touch throughout, apart from the diamond.** |
-| **Resources required** | Balls — **a ball between two for the kicking, a dozen if we have them**. **Bibs or headbands for one team.** **Cones in two colours**, plus flat discs. Ruck shields. **Poles**, if the posts are too far for the hookers. |
+| **Attendance** | 24 attending, 12 unanswered, 6 declined. *(Actual — fill in on the night.)* |
+| **Session objective** | **Defence: blitz, and positioning on the attacker's outside shoulder** — a 3 v 3 opposite the **Tackle Diamond**, the two teams swapping halfway, then straight into the games. Passing as the core skill, with the **hookers pulled out for the lineout throw**. Scrum body position and the feed, **no machine**, and exit kicks for the backs — both short. **Touch throughout, apart from the diamond.** |
+| **Resources required** | Balls — **a ball between two for the kicking, a dozen if we have them**. **Bibs or headbands for one team.** **Cones in two colours**, plus flat discs. **The club's score-card numbers** — a card or two per coach, for the Coach's Bag. Ruck shields. **Poles**, if the posts are too far for the hookers. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
 
@@ -48,15 +48,16 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 | +19, 2 min | **Contact warm-up** | Whole squad, straight before the diamond — get low, pummelling, Wrist Wrestle |
 | +21, 16 min | Tackle Diamond | One team, two diamonds; the teams swap at +29 |
 | +21, 16 min | Outside shoulder — 3 v 3 | The other team, two channels; swap at +29 |
-| +37, 3 min | Water | Into the two teams, halved for the small pitches |
-| +40, 15 min | Outside-shoulder game — fed from either side | Blitz on the feed, every defender on his man's outside shoulder |
+| +37, 3 min | Water | Into the two teams, whole |
+| +40, 15 min | Game 1 — touch, **Bang** and the outside shoulder | Straight into it, **Coach's Bag** on for the first part |
 | +55, 13 min *(forwards)* | Scrum — body position and the feed, no machine | Props' feet stay put after set. No push, no engage |
 | +55, 13 min *(backs)* | Exit kicks — technique, the channel, kick and chase | New this week — kick to the 15m channel, then chase it |
-| +68, 2 min | Water | Back into the two teams, whole |
-| +70, 15 min | Game — touch, **Bang** and the outside shoulder | Everything from the small-sided game, on the full square |
+| +68, 2 min | Water | Same teams, straight back on |
+| +70, 5 min | Kick receipt — where to stand, what to do next | Whole-group intervention, then straight into the game |
+| +75, 10 min | Game 2 — same game, exit kicks live | The kick condition added; receipts played as just walked through |
 | +85, 5 min | Cool-down / close | Recap the outside shoulder and **Bang**; pick the next warm-up leader |
 
-*If we start late, take it out of the last game. Not out of the 3 v 3 or the small-sided game — they are the session.*
+*If we start late, take it out of Game 2. Not out of the diamond or the 3 v 3 — they are the session.*
 
 ## Activities
 
@@ -83,7 +84,7 @@ Then stop, and don't explain it.
 
 ### Essential skills — passing (Crazy Passing)
 
-**Groups:** two sets — three lines of four or five in each.
+**Groups:** two sets — three lines of four in each.
 
 **Coaching Points:** elbow up, hands out, catch early. Call for it before it comes. With two balls, know where both are without looking.
 
@@ -148,7 +149,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Tackle Diamond
 
-**Groups:** one team at a time — two diamonds, seven to each. Swap with the 3 v 3 at +29.
+**Groups:** one team at a time — two diamonds, six to each. Swap with the 3 v 3 at +29.
 
 **Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze**. **Head to the side, behind the carrier.** **Feet keep driving — don't plant them.** Contact below the armpits (see `laws.md`).
 
@@ -170,18 +171,18 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Outside shoulder — 3 v 3
 
-**Groups:** one team at a time — 3 v 3 in two channels, spares feeding. Swap with the Tackle Diamond at +29.
+**Groups:** one team at a time — 3 v 3 in two channels, six to a channel. Swap with the Tackle Diamond at +29.
 
 **Coaching Points:** **nose on his outside shoulder** — the one nearer the touchline. Square, inside foot forward, short steps. Close the space, then match his speed. Call your man.
 
-**Setup:** two channels — one small pitch split in half, start line to try line, no extra cones. A feeder at each start line. Touch only — a touch ends the rep. Eight minutes a team.
+**Setup:** two channels — one small pitch split in half, start line to try line, no extra cones. A coach feeding each channel. Touch only — a touch ends the rep. Eight minutes a team.
 
 **Description:**
 
 1. **Feeder passes to either attacker.**
 2. **Defence calls Bang** and goes up together, each on the outside shoulder of his man.
 3. **Attack goes for the try line.**
-4. **Swap attack and defence every four reps**; spares rotate in.
+4. **Swap attack and defence every four reps.**
 
 Walk the first reps, then jog, then full pace.
 
@@ -189,43 +190,18 @@ Walk the first reps, then jog, then full pace.
 - Walk, jog, full pace.
 - 4 v 3 (see Blitz Defence 4 v 3 in `activities.md`).
 - Feed from the same side twice, then switch.
+- **Gate** — defenders start behind the try line and come through the gate on the feed, so the line forms on the move.
+- **Colour cone** — the coach calls a colour as he feeds; each defender touches a cone of that colour before joining the line.
+- Defence starts facing its own try line and turns on the feed.
 
 **Adaptations:**
 - Defenders overrunning their man: back to walking pace.
 - Attack scoring every rep: narrow the channel.
 - Defence ball-watching: attackers call a number, defenders shout it back.
 
-### Outside-shoulder game — fed from either side
-
-**Groups:** two pitches — 7 v 7 on each, the defence playing six and rotating one out every rep.
-
-**Coaching Points:** **Bang** on the feed, and the line goes together. **Nose on his outside shoulder**, working in from the side the ball came. Call your man before you move. Show him back inside.
-
-**Setup:** one small pitch each. Attack on the start line; defence 10m in front of it. **A coach or spare player on each touchline at the start line, with balls.** Touch only — a touch ends the rep. Fifteen minutes; swap attack and defence every three.
-
-**Description:**
-
-1. **A feeder passes to the nearest attacker** — either side, no pattern.
-2. **Defence calls Bang and goes up**, each defender picking up the outside shoulder of his man.
-3. **Attack has one go at the try line.** Try — a point to attack. Touch — a point to defence.
-4. **Reset fast** — defence back to 10m, one defender rotates out, next feed.
-
-**Progressions:**
-- **Gate** — the defence starts behind its try line and comes through the gate on the feed, so the line has to form on the move.
-- **Colour cone** — the feeder calls a colour as he feeds; every defender touches a cone of that colour before joining the line.
-- Defence starts facing its own try line and turns on the feed.
-- The feeder shows the ball one side and feeds from the other.
-- Two touches: on the first, the carrier goes down and presents, and the attack plays on.
-
-**Adaptations:**
-- Attack scoring every rep: shorten the pitch, or give the defence its seventh man back.
-- Defence winning every rep: widen the pitch, or play 7 v 5.
-- Defence all drifting to the ball: feed from the same side twice, then switch.
-- Resets too slow: a second ball ready with each feeder.
-
 ### Scrum — body position and the feed, no machine (forwards)
 
-**Groups:** all forwards plus both 9s — ~14. Front row and 9s in one group, the back five in the other.
+**Groups:** all forwards plus both 9s — about a dozen. Front row and 9s in one group, the back five in the other.
 
 **Coaching Points:** **shoulders above hips, always.** Straight back, chin off the chest, eyes up. **Props — once you're set, your feet stay where they are.** Hooker strikes **on the feed**. No push tonight.
 
@@ -242,12 +218,12 @@ Walk the first reps, then jog, then full pace.
 
 | Group | Who | The job |
 |---|---|---|
-| **a** | **Front row + both 9s** | Bind standing, then crouch and hold the **set** position — **props' feet planted, nobody stepping back**. Coach checks feet on every set. Then 9 feeds on the one timing word, hooker strikes. Both 9s rotate through. |
+| **a** | **Front row + both 9s** | Bind standing, then crouch and hold the **set** position — **props' feet planted, nobody stepping back**. Coach checks feet on every set. Then the feed: **the hooker taps when he is ready, and 9 feeds on the tap** — no call. Hooker strikes on the feed. Both 9s rotate through. |
 | **b** | **Back five — locks, 6, 7, 8** | The binds, standing: locks' head into the gap, inside arm through onto the shorts; 6 and 7 onto the locks; 8 between the locks. Crouch and hold the shape, no push. Then 8 controlling a rolled ball at his feet. |
 
 **Progressions:**
 - Front row holds the set for longer, feet still planted.
-- 9 varies the timing so the hooker has to listen for it.
+- 9 varies the pause after the tap, so the hooker holds his strike until the ball moves.
 
 **Adaptations:**
 - Only one coach spare: part 2 as one group, front row working and the back five binding behind them.
@@ -256,7 +232,7 @@ Walk the first reps, then jog, then full pace.
 
 ### Exit kicks — technique, the channel, kick and chase (backs)
 
-**Groups:** all backs — ~14. Pairs, then two groups of seven.
+**Groups:** all backs — about a dozen. Pairs, then two groups of six.
 
 **Coaching Points:** ball at arm's length, point down and slightly in. **Drop it, don't throw it.** Strike with the laces, leg through the ball, follow through at the target. Eyes on the ball at the strike. **End over end is fine — distance and direction beat style.** Target is the **15m channel**, never the touchline.
 
@@ -266,7 +242,7 @@ Walk the first reps, then jog, then full pace.
 
 **1. Everyone kicks (~4 min).** Pairs, 15m apart, punt and catch. Step back 5m each time three in a row are caught clean.
 
-**2. Into the channel (~4 min).** Two groups of seven, two kicking spots on the third line, the rest of each group in the channel as targets and retrievers. Three kicks each, count how many land in the channel. Call your score out.
+**2. Into the channel (~4 min).** Two groups of six, two kicking spots on the third line, the rest of each group in the channel as targets and retrievers. Three kicks each, count how many land in the channel. Call your score out.
 
 **3. Kick and chase (~5 min).**
 
@@ -286,11 +262,11 @@ Rotate the kicker every rep.
 - Ball unfindable in the dark: bring the kicking spot in, two retrievers in the channel.
 - Coach short: parts 1 and 2 only.
 
-### Game — touch, Bang and the outside shoulder
+### Game 1 — touch, Bang and the outside shoulder
 
 **Groups:** one game, the night's two teams whole.
 
-**Coaching Points:** **Bang**, and the line goes together. **Nose on his outside shoulder.** Call your man. The shuffling retreat. Coach it in the stoppages, one or two players at a time.
+**Coaching Points:** **Bang**, and the line goes together. **Nose on his outside shoulder.** Call your man. The shuffling retreat. Eyes up — **CTC** (see `playbook.md`). Coach it in the stoppages, one or two players at a time.
 
 **Setup:** the full square. **Presentation Touch** — on a touch the carrier goes down, turns, and presents long (see `activities.md`). Every restart is a **tap** on the spot. Fifteen minutes, straight through.
 
@@ -298,10 +274,11 @@ Rotate the kicker every rep.
 
 1. **Bang** — the blitz trigger (see `playbook.md`).
 2. **Springbok Touch** — first receiver caught still holding the ball is a turnover, taken as a tap to the defence (see `activities.md`).
+3. **Coach's Bag, on the score-card numbers — the first eight minutes only.** Coaches stand off the pitch at different points, each with a card or two. A coach holds a number up for a few seconds, then drops it. **A try only counts if the scorer can call the last number shown** (see `activities.md`). Take it off after eight minutes and play the rest without it.
 
 **Progressions:**
-- **Heard it** — the turnover only counts if **Bang** came from the line's nominated caller and the line went together.
-- **Exit kicks live** — kicking allowed from inside your own third only; a point for a kick landing beyond the far third line.
+- **Heard it** — the turnover only counts if **Bang** came from the line's nominated caller and the line went together. Leave it on into Game 2.
+- Rotate the nominated caller every few phases.
 - *If the talk has gone flat:* two minutes of **silence** — no defensive talk — then take it off.
 
 **Adaptations:**
@@ -309,15 +286,65 @@ Rotate the kicker every rep.
 - One team running away with it: swap a pair over.
 - Numbers low: one team of whoever is there against the rest, still one game.
 
+### Kick receipt — where to stand, what to do next (whole-group intervention)
+
+**Groups:** whole squad, one group, on the pitch.
+
+**Coaching Points:** set before the ball leaves the boot. **Call it early — "Mine!"** Then **back towards the middle**, ruck fast, 10 plays what he sees.
+
+**Setup:** whole squad where Game 1 finished, a coach with a ball to kick. Five minutes, walked then at pace, and straight into Game 2.
+
+**Description:**
+
+1. **Where to stand — the pendulum** (see `playbook.md`). Three points, always covered: the near winger up as **front**, 15 as **mid**, the far winger deep and infield as **back**. Each calls his own position every phase.
+2. **The catch.** Call it, side-on, two support players arriving on the shoulders.
+3. **Straight afterwards — the receiver works back to the middle of the pitch.** Not down the touchline.
+4. **Lightning-fast ruck.** Two in, ball back.
+5. **10 plays what he sees.** **In doubt, kick — to the 5m channel.**
+
+Walk it once, then twice at pace off a coach's kick.
+
+**Adaptations:**
+- Back three not set in time: kick from further out, and make them call their position out loud.
+- Running long: cut to steps 3–5 and let the pendulum come back in Game 2.
+
+### Game 2 — same game, exit kicks live
+
+**Groups:** one game, the same two teams as Game 1.
+
+**Coaching Points:** **Bang** and the outside shoulder stay the first job. With the ball in your own third, the exit is on. Chase together or don't chase. **Every kick received is played the way it was just walked through** — back to the middle, fast ruck, 10 plays what he sees. Coach it in the stoppages.
+
+**Setup:** the same square, the same teams, the same conditions still on — **nothing gets re-coned or re-picked.** Ten minutes.
+
+**Description:** everything from Game 1, plus the kick.
+
+**The exit condition:**
+
+- **Kicking is allowed from inside your own third only.** Nowhere else on the pitch.
+- **One point** for a kick that lands or is fielded beyond the far third line.
+- **A second point** if the chase touches the receiver before he gets back into the middle third.
+- **Play carries on from the catch** — no restart.
+
+**Progressions:**
+- **Heard it** stays on from Game 1 if it went on there.
+- A point for a chase line with nobody offside across a whole phase.
+
+**Adaptations:**
+- Nobody kicking: take the condition off for two phases and hand them a free exit from a tap.
+- Everybody kicking, and the game has stopped: one exit per team per two minutes.
+- Ball lost in the dark repeatedly: drop the kick condition and finish on Game 1's rules.
+- Game flat: swap a pair over.
+
 ## Notes
 
 - **Low contact: some players will have played that day.** Touch throughout, **apart from the Tackle Diamond** — controlled, carrier at a jog. The contact warm-up at +19 is the whole squad.
+- **24 attending, 12 unanswered.** The numbers through the plan assume 24 — two teams of twelve. If the unanswered turn up it is nearer 36: a third diamond, a third channel, and keep the small pitches even.
 - **Sunday is the friendly against Crowborough, both teams** — this is the only session before it.
 - **Martin is away.** Agree the coordinator and who is running what on the thread before the night, not on the grass.
-- **Pick the two teams beforehand, on the thread, and bib one of them.** Roughly equal, **each with enough forwards for the split at +55**. **Bibs start in the Tackle Diamond, non-bibs in the 3 v 3; swap at +29.** At +40, halve each team and cross them over, so both small pitches are bibs against non-bibs. Crazy Passing is the exception — split it however you like.
+- **Pick the two teams beforehand, on the thread, and bib one of them.** Roughly equal, **each with enough forwards for the split at +55**. **Bibs start in the Tackle Diamond, non-bibs in the 3 v 3; swap at +29.** Both games are the same two teams, whole. Crazy Passing is the exception — split it however you like.
 - **Coaches for +21:** two on the diamonds, two on the 3 v 3 channels. Agree who on the thread.
-- **Four feeders at +40** — a coach or spare player on each touchline of both small pitches.
 - **One coach with the hookers during Crazy Passing** — agree who on the thread.
+- **Pick up the score-card numbers from the clubhouse before the session** — a card or two per coach for Game 1, and coaches spread around the pitch with them, not clustered.
 - **One cone layout, out before they arrive, down all session.** Nothing is re-coned between blocks.
 - **No machine, no contested scrum**, no pack against pack, no lineout in the games.
 - **Water is at +37 and +68.** Both are in the run sheet; don't call extra ones ad hoc.

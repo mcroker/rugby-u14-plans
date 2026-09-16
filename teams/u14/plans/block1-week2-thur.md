@@ -6,7 +6,7 @@ sub: Low contact. Blitz, and defending on the attacker's outside shoulder — a 
 sub2: Thu 17 Sep 2026, 6.45–8.15pm
 crumb: Week 2 (Thu)
 draft: true
-card: "Run-sheet for the midweek session: low contact, blitz on the outside shoulder, hooker throws, scrum body position and exit kicks."
+card: "Run-sheet for the midweek session: low contact, blitz on the outside shoulder, the Tackle Diamond, hooker throws, scrum body position and exit kicks."
 ---
 # Block 1, Week 2 — Thursday session
 
@@ -18,7 +18,7 @@ card: "Run-sheet for the midweek session: low contact, blitz on the outside shou
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | *(To confirm — fill in on the night.)* **Martin away.** |
 | **Attendance** | *(Fill in on the night.)* |
-| **Session objective** | **Defence: blitz, and positioning on the attacker's outside shoulder** — a drill, then a small-sided game fed from either side. Passing as the core skill, with the **hookers pulled out for the lineout throw**. Scrum body position and the feed, **no machine**, and exit kicks for the backs — both short. **Touch throughout.** |
+| **Session objective** | **Defence: blitz, and positioning on the attacker's outside shoulder** — a 3 v 3, then a small-sided game fed from either side. **Tackle Diamond** alongside Crazy Passing, the two teams swapping halfway, with the **hookers pulled out for the lineout throw**. Scrum body position and the feed, **no machine**, and exit kicks for the backs — both short. **Touch throughout, apart from the diamond.** |
 | **Resources required** | Balls — **a ball between two for the kicking, a dozen if we have them**. **Bibs or headbands for one team.** **Cones in two colours**, plus flat discs. Ruck shields. **Poles**, if the posts are too far for the hookers. |
 
 ![The Training Area, below Pitch 4.](pitch:training)
@@ -32,7 +32,8 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 - **Two small pitches** — the far end of the square, split lengthways down the middle with **colour B**. The far end is the try line; a **start line** of colour B 20m out from it.
 - **Behind each small pitch's try line** — a **gate** of two colour A cones 2m apart, 5m back, and **four cones either side of it, two of each colour**, scattered.
 - **Kicking channel** — **flat discs**, 15m in from one touchline, running the length of the square.
-- **Passing lines** — in the near end, short of the start lines: two sets of three lines (A, B, C), 5m between lines, 10m between the sets.
+- **Passing lines** — in the near end, short of the start lines: one set of three lines (A, B, C), 5m between lines.
+- **Tackle diamonds** — two side by side next to the passing lines, four cones each, 5m sides.
 - **Ruck shields** — at the near end, for the warm-up.
 - **Hooker throwing line** — at the posts, or two poles at bar height, clear of the square: a marked throwing spot, and cones at 5m, 10m and 15m out from it for front, middle and back.
 
@@ -41,29 +42,51 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 | Start + duration | Activity | Focus |
 |---|---|---|
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
-| +5, 13 min | Essential skills — passing (Crazy Passing) | The week's core skill, whole squad in two sets |
-| +5, 13 min *(parallel pull-out)* | Hooker throw-in — five minutes at a pop (hookers) | Out for five, back into the passing, out for five more |
-| +18, 2 min | Vocal warm-up — everyone shouts | Voices on before the defence asks for them |
-| +20, 12 min | Outside shoulder — mirror, 2 v 2, 3 v 3 | Where to stand, walked, then jogged, then run |
-| +32, 3 min | Water | Into the two teams, halved for the small pitches |
-| +35, 20 min | Outside-shoulder game — fed from either side | Blitz on the feed, every defender on his man's outside shoulder |
+| +5, 2 min | **Contact warm-up** | Whole squad, before the diamond — get low, pummelling, Wrist Wrestle |
+| +7, 16 min | Essential skills — passing (Crazy Passing) | One team; the teams swap with the diamond at +15 |
+| +7, 16 min | Tackle Diamond | The other team, two diamonds; swap at +15 |
+| +7, 16 min *(parallel pull-out)* | Hooker throw-in — five minutes at a pop (hookers) | Each team's hookers come out of the passing for five minutes |
+| +23, 2 min | Vocal warm-up — everyone shouts | Voices on before the defence asks for them |
+| +25, 10 min | Outside shoulder — 3 v 3 | Where to stand, walked, then jogged, then run |
+| +35, 3 min | Water | Into the two teams, halved for the small pitches |
+| +38, 17 min | Outside-shoulder game — fed from either side | Blitz on the feed, every defender on his man's outside shoulder |
 | +55, 13 min *(forwards)* | Scrum — body position and the feed, no machine | Props' feet stay put after set. No push, no engage |
 | +55, 13 min *(backs)* | Exit kicks — technique, the channel, kick and chase | New this week — kick to the 15m channel, then chase it |
 | +68, 2 min | Water | Back into the two teams, whole |
 | +70, 15 min | Game — touch, **Bang** and the outside shoulder | Everything from the small-sided game, on the full square |
 | +85, 5 min | Cool-down / close | Recap the outside shoulder and **Bang**; pick the next warm-up leader |
 
-*If we start late, take it out of the last game. Not out of the drill or the small-sided game — they are the session.*
+*If we start late, take it out of the last game. Not out of the 3 v 3 or the small-sided game — they are the session.*
 
 ## Activities
 
+### Contact warm-up (whole squad)
+
+**Groups:** whole squad, in pairs matched by size.
+
+**Coaching Points:** in the pummel — chest up, back flat, **head to the side**, hips low, arms working continuously. In Wrist Wrestle — stay low, feet moving, win it with body position.
+
+**Setup:** everyone in pairs, **matched by size**. No equipment.
+
+**Description:** the standard two minutes — demo not needed.
+
+1. **Get low (~30s)** — on the spot, feet moving, drop into the tackle-ready position. Five or six reps.
+2. **Pummelling (~45s)** — pairs chest to chest **on knees**, one arm inside and one outside, both swimming the outside arm inside on the call.
+3. **Wrist Wrestle (~45s)** — standing, same-wrist grips locked, free hand behind the back, slap with the held hand. A point per clean touch, then reset.
+
+Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no twisting a neck. Wrist Wrestle targets **shoulder or upper arm only**, and stops the moment a grip goes. **Anyone who would rather not play the slapping game pummels again instead — offer it to the whole squad up front.**
+
+**Adaptations:**
+- Anyone new or back from injury: start at stage 1, join the diamond when a coach says so.
+- Badly mismatched pair: break the three and rotate.
+
 ### Essential skills — passing (Crazy Passing)
 
-**Groups:** two sets — three lines of four or five in each.
+**Groups:** one team at a time — three lines of four or five. Swap with the Tackle Diamond at +15.
 
 **Coaching Points:** elbow up, hands out, catch early. Call for it before it comes. With two balls, know where both are without looking.
 
-**Setup:** three lines (A, B, C) spaced for passing, two sets side by side in the near end. Split the squad however you like — this one does not use the night's teams. Full detail in `activities.md`.
+**Setup:** three lines (A, B, C) spaced for passing, in the near end. The passing team's hookers come out for the throw and go back in. Full detail in `activities.md`.
 
 **Description:** the ball zig-zags down the lines, each player following their pass to the back of the line they passed to. Second ball in once the pattern is clean.
 
@@ -75,21 +98,42 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 **Adaptations:**
 - Pattern breaking down: take the second ball out and rebuild.
 - Passes dropping short: shorten the spacing.
-- Poor form in two or three: a spare coach takes them off the side, in pairs, while the drill runs.
+- Lines thin with the hookers out: shorten the spacing and keep it moving.
+
+### Tackle Diamond
+
+**Groups:** one team at a time — two diamonds, seven to each. Swap with Crazy Passing at +15.
+
+**Coaching Points:** **low — chop!**, **shoulder contact**, **squeeze**. **Head to the side, behind the carrier.** **Feet keep driving — don't plant them.** Contact below the armpits (see `laws.md`).
+
+**Setup:** two diamonds side by side. **Carrier at a jog.** Eight minutes a team. Defence wins the rep if the tackle is completed over the halfway point of the diamond.
+
+**Description:** controlled tackle reps, short and sharp. Watch for two things above all: **the head on the wrong side**, and **feet planted before contact**.
+
+**Progressions:**
+- Carrier from a jog to three-quarter pace.
+- Live carrier choosing his side, not a set line.
+- Narrow the diamond, so the tackle has to be made earlier.
+
+**Adaptations:**
+- Anyone sore from playing that day: carrier only, or tackle from the knees.
+- Ground gone hard: technique from the knees only.
+- Head still on the wrong side: walk it, carrier stopping at contact.
+- Feet planting: tackler starts on the move, feet going before the carrier arrives.
+- A coach short: one diamond, fewer reps each.
 
 ### Hooker throw-in — five minutes at a pop (hookers)
 
-**Groups:** hookers only — in twos or threes, one coach.
+**Groups:** the passing team's hookers — twos or threes, one coach.
 
 **Coaching Points:** same routine every throw. Ball back **behind the head**, both hands, step into it, follow through **pointing at the target**. Eyes on the target.
 
-**Setup:** the throwing spot and the coned line at the posts. Out of Crazy Passing for five minutes, back in, out for five more.
+**Setup:** the throwing spot and the coned line at the posts.
 
 **Description:**
 
-1. **Out (~5 min)** — two minutes of the Cross-Bar Challenge (see `activities.md`), then throw to the coned line. One throws, one receives at the called cone, one returns balls. Rotate every throw.
-2. **Back into the passing (~3 min).**
-3. **Out again (~5 min)** — the coned line only. Score out of ten each; beat the first stint.
+1. **+7 — the passing team's hookers**, out for five minutes: two minutes of the Cross-Bar Challenge (see `activities.md`), then throw to the coned line. One throws, one receives at the called cone, one returns balls. Rotate every throw. Then back into the passing.
+2. **+15 — after the swap, the other team's hookers**, the same five minutes.
 
 **Progressions:**
 - Receiver calls front, middle or back as the hooker starts the routine.
@@ -97,7 +141,7 @@ One layout, out before the players arrive, and nothing gets re-coned all session
 - Call it with a **B/W/G** word (see `playbook.md`) instead of front, middle, back.
 
 **Adaptations:**
-- Only two hookers: one throws, one receives, the coach returns balls.
+- Only two hookers on a team: one throws, one receives, the coach returns balls.
 - Throws falling short: move the spot in.
 - Throws landing clean every time: back to the 15m cone only.
 - A non-hooker keen: a few throws each, as cover.
@@ -123,29 +167,32 @@ Then stop, and don't explain it.
 - Step 3 dying: back to step 1 and finish there.
 - Something different to shout from last week.
 
-### Outside shoulder — mirror, 2 v 2, 3 v 3
+### Outside shoulder — 3 v 3
 
-**Groups:** pairs, then fours, then sixes — spread across both small pitches.
+**Groups:** sixes — one 3 v 3 in each half of the two small pitches. Spares feed.
 
 **Coaching Points:** **nose on his outside shoulder** — the one nearer the touchline. Square, inside foot forward, short steps. Close the space, then match his speed. Call your man.
 
-**Setup:** the two small pitches, no extra cones. Walk it, then jog, then run. Touch only.
+**Setup:** four channels — each small pitch split in half, start line to try line, no extra cones. A feeder at the start line. Touch only — a touch ends the rep.
 
 **Description:**
 
-1. **Mirror (~3 min).** Pairs, 5m apart, a ball with the attacker. Coach names the touchline. Attacker steps side to side across a 5m strip; defender keeps his nose on the attacker's outside shoulder. Swap every 30 seconds.
-2. **2 v 2 (~4 min).** Half a small pitch's width, from the start line. Coach rolls the ball to either attacker. Both defenders go up together, each on the outside shoulder of his man. Attack goes for the try line; a touch ends it. Swap after four.
-3. **3 v 3 (~5 min).** The same, three a side, feed from either side. Defence calls **Bang** on the feed.
+1. **Feeder passes to either attacker.**
+2. **Defence calls Bang** and goes up together, each on the outside shoulder of his man.
+3. **Attack goes for the try line.**
+4. **Swap attack and defence every four reps**; spares rotate in.
+
+Walk the first reps, then jog, then full pace.
 
 **Progressions:**
-- Walk, jog, run.
-- In the mirror, the attacker may step inside once — the defender stays outside.
-- 3 v 3 becomes 4 v 3 (see Blitz Defence 4 v 3 in `activities.md`).
+- Walk, jog, full pace.
+- 4 v 3 (see Blitz Defence 4 v 3 in `activities.md`).
+- Feed from the same side twice, then switch.
 
 **Adaptations:**
 - Defenders overrunning their man: back to walking pace.
-- Pairs badly mismatched for pace: swap partners.
-- Defence ball-watching: the attacker calls a number, the defender shouts it back.
+- Attack scoring every rep: narrow the channel.
+- Defence ball-watching: attackers call a number, defenders shout it back.
 
 ### Outside-shoulder game — fed from either side
 
@@ -153,7 +200,7 @@ Then stop, and don't explain it.
 
 **Coaching Points:** **Bang** on the feed, and the line goes together. **Nose on his outside shoulder**, working in from the side the ball came. Call your man before you move. Show him back inside.
 
-**Setup:** one small pitch each. Attack on the start line; defence 10m in front of it. **A coach or spare player on each touchline at the start line, with balls.** Touch only — a touch ends the rep. Twenty minutes; swap attack and defence every three.
+**Setup:** one small pitch each. Attack on the start line; defence 10m in front of it. **A coach or spare player on each touchline at the start line, with balls.** Touch only — a touch ends the rep. Seventeen minutes; swap attack and defence every three.
 
 **Description:**
 
@@ -263,15 +310,15 @@ Rotate the kicker every rep.
 
 ## Notes
 
-- **Low contact: some players will have played that day.** Touch throughout. Nothing tonight is contact, so there is no contact warm-up — if anything contact gets added, the two minutes go first.
+- **Low contact: some players will have played that day.** Touch throughout, **apart from the Tackle Diamond** — controlled, carrier at a jog. The contact warm-up at +5 is the whole squad.
 - **Sunday is the friendly against Crowborough, both teams** — this is the only session before it.
 - **Martin is away.** Agree the coordinator and who is running what on the thread before the night, not on the grass.
-- **Pick the two teams during the warm-up and bib one of them.** Roughly equal, **each with enough forwards for the split at +55**. At +35, halve each team and cross them over, so both small pitches are bibs against non-bibs. Crazy Passing is the exception — split it however you like.
-- **Four feeders at +35** — a coach or spare player on each touchline of both small pitches. Agree who during the warm-up.
-- **One coach with the hookers during Crazy Passing** — agree who on the thread.
+- **Pick the two teams beforehand, on the thread, and bib one of them.** Roughly equal, **each with enough forwards for the split at +55**. **Bibs start in the Tackle Diamond, non-bibs in Crazy Passing; swap at +15.** At +38, halve each team and cross them over, so both small pitches are bibs against non-bibs.
+- **Coaches for +7:** two on the diamonds, one with the hookers, one on the passing. Agree who on the thread.
+- **Four feeders at +38** — a coach or spare player on each touchline of both small pitches.
 - **One cone layout, out before they arrive, down all session.** Nothing is re-coned between blocks.
 - **No machine, no contested scrum**, no pack against pack, no lineout in the games.
-- **Water is at +32 and +68.** Both are in the run sheet; don't call extra ones ad hoc.
+- **Water is at +35 and +68.** Both are in the run sheet; don't call extra ones ad hoc.
 - **One voice per segment.**
 - **The B/W/G lineout calls still have not been covered** — not tonight either (see `blocks.md`).
 

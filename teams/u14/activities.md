@@ -216,7 +216,7 @@ Quick reference for picking a game to match the session's contact-level target (
 | | |
 |---|---|
 | Description | A tackle-technique skill-zone drill run in a diamond-shaped setup (exact grid dimensions weren't captured in the original notes — worth fleshing out next time this is run). |
-| Coaching Points | Defence "wins" the rep if the tackle is completed over the halfway point of the diamond. Technique cues used alongside it: **low — chop!**, **shoulder contact**, **squeeze**. |
+| Coaching Points | Defence "wins" the rep if the tackle is completed over the halfway point of the diamond. Technique cues used alongside it: **low — chop!**, **shoulder contact**, **squeeze**. **Head to the side, behind the carrier** — the two most common faults are the head on the wrong side and **planting the feet**: **feet keep driving through contact**. |
 
 ### Continuous Attack with Conditioned Defence
 

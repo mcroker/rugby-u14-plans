@@ -238,10 +238,17 @@ Conditions, cumulative, added in this order and left in:
 
 ## Review — what actually happened
 
-*Coaches' feedback after the session, 13 Sep — Bev and Martin.*
+*Coaches' feedback after the session, 13 Sep — Bev, Martin and Tiggy.*
+
+**What worked**
+
+- **The Tackle Diamond went better than Week 1.**
 
 **What didn't work**
 
+- **Some players still getting their head on the wrong side in the tackle.**
+- **A lot of planting the feet** in the diamond — and it showed up a few times in the game at the end.
+- **Players not knowing when to concede in the tackle** — forwards especially, fighting on their feet for too long. Slower ball, and a risk of the rip. Seen in the diamond and the games.
 - **Line-speed went out of the window in the game.** Whatever the drills built didn't survive into live play.
 - **Splitting the pack for the scrum block didn't work.** One machine for the groups, and they still needed a lot of basic body-position work — **the props in particular, moving their feet back after set**.
 - **The backs had a similar problem: DSP didn't engage the back three.**
@@ -259,4 +266,4 @@ Conditions, cumulative, added in this order and left in:
 - **Outside shoulder defence.**
 - **Communication and reset in defence.**
 
-**Carried to:** `blocks.md` ("Carried forward from Week 2 (Sun 13 Sep)") for everything the coming weeks should pick up — the block plan itself is unchanged; `coaching.md` for the scrum-machine split and extra balls at setup.
+**Carried to:** `blocks.md` ("Carried forward from Week 2 (Sun 13 Sep)") for everything the coming weeks should pick up; `coaching.md` for the scrum-machine split and extra balls at setup; `activities.md` (Tackle Diamond) for the head and feet cues. Knowing when to concede in the tackle goes to Block 2 (continuity), under Future blocks in `blocks.md`.

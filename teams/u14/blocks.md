@@ -58,6 +58,7 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 **Carried forward from Week 2 (Sun 13 Sep)** — Bev's work-ons and Martin's observations, see the session's review in `block1-week2-sun.md`. None of these changes the session list below; each is noted against the slot it already fits, or flagged where there isn't one:
 
 - **Line-speed didn't survive into the game.** Keep it as the defence thread's first priority, and coach it **inside the game** — a drill that builds it is not enough on its own.
+- **Tackle Diamond: better than Week 1, not there yet.** Two work-ons — **head on the wrong side**, and **planting the feet** into contact, which showed up in the game as well. Both are the cues for **Thu 17 Sep**'s diamond; watch them in the friendly too.
 - **Scrum body position is not bedded in.** The props especially: **feet moving back after set**. Thu 17 Sep is on the machine, non-contested — the right session to fix it before anything is added. Keep the pack together rather than splitting into groups while there is one machine (see `coaching.md`).
 - **The scrum and contact load was too much for the game.** The game's scrums went uncontested on the day. Plan Sunday's live scrum volume **inside** the session's total contact, not on top of it.
 - **DSP didn't engage the back three.** Any backs block off a set piece needs a job for 11, 14 and 15 — a kick to field, a line to run, a pendulum to hold — not just 9, 10 and the centres. The back-three-led kick-defence work has moved out with Sun 20 Sep, so it has to come from the backs blocks that remain.
@@ -75,7 +76,7 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 | 1 | Sun 6 Sep | Training | `block1-week1-sun.md` | Tackle | Blitz, line-org | Lineout — where to stand, laws | Defensive alignment (Continuous Defence) while forwards are in the lineout zone | Hooker lineout throw |
 | 1 | Thu 10 Sep | Training | `block1-week1-thur.md` | Passing | Blitz, line-org | Lineout — where to stand (reinforced) | Defensive alignment, continued | Hooker lineout throw |
 | 2 | Sun 13 Sep | Training | `block1-week2-sun.md` | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
-| 2 | Thu 17 Sep | Training — **low contact** | `block1-week2-thur.md` | Passing | **Blitz — positioning on the attacker's outside shoulder** (drill, then small-sided game) | Scrum — body position and the feed, no machine | Exit kicks — introduce, shortened | Hooker lineout throw; 9 + hooker feed |
+| 2 | Thu 17 Sep | Training — **low contact** | `block1-week2-thur.md` | Passing; Tackle Diamond alongside, controlled | **Blitz — positioning on the attacker's outside shoulder** (drill, then small-sided game) | Scrum — body position and the feed, no machine | Exit kicks — introduce, shortened | Hooker lineout throw; 9 + hooker feed |
 | 3 | Sun 20 Sep | Match — friendly v Crowborough *(both teams)* | — *(no plan; match day)* | — | — | — | — | — |
 | 3 | Thu 24 Sep | Work-ons from the friendly + pre-match sharpen | **Needed** | Passing | **Blitz and line-speed**; ruck-defence introduced | Set-piece, lightly (both areas) | Blitz and line-speed off a set piece, lightly | — |
 | 4 | Sun 27 Sep | Match — Kent League R1 | — *(no plan; match day)* | — | — | — | — | — |
@@ -106,7 +107,7 @@ Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (se
 
 **Defence:** blitz and line-org continued, main game scoring tightened so both line-speed and communication count.
 
-**Thursday 17 Sep is low contact** — some players will have played that day — and defence leads it: blitz, and positioning on the attacker's outside shoulder, as a drill and then a small-sided game fed from either side. The scrum work (no machine) and exit kicks are shortened to fit.
+**Thursday 17 Sep is low contact** — some players will have played that day — and defence leads it: blitz, and positioning on the attacker's outside shoulder, as a drill and then a small-sided game fed from either side. The scrum work (no machine) and exit kicks are shortened to fit. A controlled Tackle Diamond runs alongside the passing — the one piece of contact.
 
 **Forwards-skill focus: scrum — the squad's very first exposure.** Sunday: 8-man setup, the engage sequence (crouch–bind–set), tower of power/body position — **contested from this first week**, since Sunday is when we can field two full packs. Thursday: individual position/technique work, non-contested (we won't reliably have two full 8-man packs on a Thursday — see `age-group.md`). Both days: 9 and hooker practise the timing call for the feed, and back-row work on controlling the ball at the base so it doesn't spill loose.
 
@@ -164,6 +165,8 @@ Ideas and skills that came up while planning Block 1 but aren't part of it — k
 ## Future blocks
 
 **Block 2 (intent):** focus on continuity.
+
+- **Knowing when to concede in the tackle.** Players — forwards especially — fight on their feet for too long: slower ball, and a risk of the rip. Seen in the Week 2 Sunday diamond and games. Part of continuity — going to ground at the right moment is what keeps the ruck to two seconds.
 
 **Two extra training Sundays to plan for.** We had assumed both teams played every Kent League round, so no session was planned for those dates. The RFU fixture lists (linked from `calendar.md`) show the two teams are in different groups, which frees a **half-squad Sunday** in each case — highlighted in `calendar.md`:
 

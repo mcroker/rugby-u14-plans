@@ -67,7 +67,7 @@ The landing page at the root of the domain lists the teams, and each team's own 
 | `## Initial setup` | a second collapsed accordion directly below Logistics — the cone layout, for the first coach on the ground |
 | `## Plan` — the **first** table | the **timeline**: one block per row, rows sharing a start time drawn side by side |
 | `## Plan` — anything after that table | kept, rendered below the timeline (this is where a coach allocation goes) |
-| `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's setup/cues and Details modal |
+| `## Activities` — each `### ` entry | a **collapsed accordion**, and the source of its timeline block's groups/setup/cues/next and Details modal |
 | `## Notes`, then `## Review` | rendered below, as written, in that order — the generated warm-up entry is spliced in at the end of `## Activities`, so anything after it stays where it is written |
 
 
@@ -126,6 +126,7 @@ The landing page at the root of the domain lists the teams, and each team's own 
 
    - **`**Groups:**`** comes **first, directly under the `### ` heading**, and says how many children and how they are split — and nothing else. **A few words: "Groups of five", "All forwards", "Two pitches — 7 v 7 on each", "Whole squad, one circle".** It is lifted onto the timeline block as *Groups*, ahead of the setup, because splitting the squad is the first thing that has to happen and the slowest to fix once it is wrong. Unlike Setup and Coaching Points it is used **whole**, not first-sentence-only, so keep it to one short phrase. Every entry gets one; the generated warm-up entry has its own.
    - **`**Setup:**`** and **`**Coaching Points:**`** are lifted onto the timeline block as *Set up* and *Call* — **first sentence only**, so lead with the instruction and put the caveats after it. A bare cross-reference (`see \`activities.md\`.`) is skipped, so don't make it the whole first sentence.
+   - **`**Progressions:**`** has its **first bullet** lifted onto the timeline block as *Next* — first sentence only, like Setup and Coaching Points. **Ordering is the contract:** put the progression you actually expect to reach for at the top, because that is the one the coach sees without opening anything. The rest stay in the Details modal.
    - **`**Description:**`**, **`**Coaching Points:**`** and **`**Progressions:**`** are what the block's **Details** modal shows.
    - An entry is matched to its row by the words in the title, so keep the two recognisably the same. No match means no setup, cues, Details button or link for that block — it falls back to the Plan table's summary.
    - The **player-led warm-up entry is generated automatically** from the team's `warmup.md` — don't write one.
@@ -135,7 +136,7 @@ The landing page at the root of the domain lists the teams, and each team's own 
    - Coaching Points (kept to a small number of focus areas)
    - Setup
    - Description
-   - **Progressions** — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many.
+   - **Progressions** — a bulleted list of ways the activity could be advanced, this week or in later weeks. List the options; it's the coach's call on the night which of them (if any) to apply, and how many. **The first one is the one that reaches the timeline block**, so lead with the progression the session is actually aiming at rather than the smallest one.
    - **Adaptations** — a bulleted list of ways to vary the drill on the fly to get a different outcome — space, group size/numbers, player pairing, speed/tempo, etc. Unlike Progressions (which build the skill forward over time), Adaptations are about tuning today's version of the drill to the group actually in front of the coach.
    - **Diagram** and/or **Video example(s)**, where useful — see below.
 5. **Notes** — a free-text section for caveats, placeholders (e.g. a call or system not yet finalised), and anything else worth flagging to whoever runs the session.

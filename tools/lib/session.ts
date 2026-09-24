@@ -120,6 +120,19 @@ export interface Activity {
   progressions: string;
 }
 
+/** The first bullet of a Progressions list — the one the author put first, and
+ *  the only one that fits on a timeline block. The rest stay in the Details
+ *  modal. First sentence only, as Set up and Call are, so one long bullet
+ *  cannot run away with the block. Ordering is the contract: put the
+ *  progression you actually expect to reach for at the top. */
+function firstProgression(text: string): string {
+  for (const line of text.split("\n")) {
+    const m = /^\s*[-*]\s+(.*)$/.exec(line);
+    if (m && m[1]!.trim()) return firstSentence(m[1]!.trim());
+  }
+  return firstSentence(text.trim());
+}
+
 /** Skip a leading bare cross-reference ("see `activities.md`.") — useless on
  *  its own on a timeline block — and take the first real sentence after it. */
 function runInfo(text: string): string {
@@ -294,6 +307,10 @@ function timeline(
       if (act?.groups) run.push(`<div class="track-run"><b>Groups</b> ${inline(act.groups, ctx)}</div>`);
       if (act?.setup) run.push(`<div class="track-run"><b>Set up</b> ${inline(runInfo(act.setup), ctx)}</div>`);
       if (act?.points) run.push(`<div class="track-run"><b>Call</b> ${inline(runInfo(act.points), ctx)}</div>`);
+      // One progression only — the first one written. A coach mid-session wants
+      // the next thing to reach for, not the whole list; the list is in Details.
+      if (act?.progressions)
+        run.push(`<div class="track-run"><b>Next</b> ${inline(firstProgression(act.progressions), ctx)}</div>`);
       if (!run.length) run.push(`<div class="track-run">${inline(g.focus, ctx)}</div>`);
       // The detail lives further down the same page.
       const details = act

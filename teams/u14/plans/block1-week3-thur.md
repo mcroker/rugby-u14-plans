@@ -40,7 +40,7 @@ card: "Run-sheet for the short midweek session: passing, Four Corners 2 v 2, and
 | +13, 2 min | **Contact warm-up** | Whole squad, straight before the tackling |
 | +15, 13 min | Four Corners — 2 v 2 | Live tackle and ruck contest. Ball away on two, or the defence wins it |
 | +28, 2 min | Water | Into the two teams for the game |
-| +30, 13 min | Springbok Presentation Touch — 9 v 9 | First receiver caught in contact is a turnover; **any ruck over two seconds is a turnover** |
+| +30, 13 min | Springbok Presentation Touch — 9 v 9 | First receiver caught in contact is a turnover. Then **the two-second ruck** on top |
 | +43, 2 min | Close — into the video session | Two things to watch for on the video; pick the next warm-up leader |
 
 **Coach allocation — two out, three if Martin makes it:**
@@ -130,23 +130,21 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Coaching Points:** **Bang** — up together, nobody early. **Nose on his outside shoulder.** Get off the line and onto the first receiver. In attack: two in at the ruck, no more, and present long. At the ruck in defence: guard either side, stay on your feet, back in the line.
 
-**Setup:** one game, **9 v 9**, on the 40m pitch. Touch. On a touch the carrier goes to ground and presents long; support picks and plays (**Presentation Touch** — see `activities.md`). **Two conditions, both on from the first whistle.** Every restart is a tap on the spot. Thirteen minutes, straight through.
+**Setup:** one game, **9 v 9**, on the 40m pitch. Touch. On a touch the carrier goes to ground and presents long; support picks and plays (**Presentation Touch** — see `activities.md`). **Springbok on from the first whistle:** the first receiver caught still holding the ball is a turnover. Every restart is a tap on the spot. Thirteen minutes, straight through.
 
-**Description:** the two conditions are the session:
+**Description:** Springbok only to start — get the line going up together and onto the first receiver. Coach into the taps and the turnovers, one or two players at a time, and let it run otherwise.
 
-1. **Springbok** — the **first receiver caught still holding the ball** is a turnover, taken as a tap to the defence (see `activities.md`).
-2. **Two seconds** — **any ruck that takes more than two seconds is a turnover.** A coach counts it out loud, same count as the boxes.
-
-Coach into the taps and the turnovers, one or two players at a time. Let it run otherwise.
+**Add the two-second count once Springbok is landing** — it is the first progression below, and it is the one to reach for.
 
 **Progressions:**
+- **Two seconds — any ruck that takes more than two seconds is a turnover.** A coach counts it out loud, same count as the boxes. **This is the one to get to.**
 - Defence offside at the ruck: tap back to the attack, count reset.
 - **Heard it** — a turnover only counts if **Bang** came from the line's nominated caller and the line went together.
 - Count every ruck down to one and a half.
 
 **Adaptations:**
 - Defence not getting off the line: shorten the pitch so there is less to cover.
-- Turnovers so constant it has stopped being a game: **drop the Springbok condition first**, keep the count.
+- Turnovers so constant it has stopped being a game: **take the count back off** and rebuild with Springbok alone.
 - Attack getting out too easily: bring the touchlines in.
 - Numbers under 16: narrow the pitch again. One game either way — do not split.
 
@@ -160,7 +158,7 @@ Coach into the taps and the turnovers, one or two players at a time. Let it run 
 - **Sunday is Kent League Round 1** — Blue at home to Old Alleynian, White away at Sheppey. This is a sharpener, not a load.
 - **Pick two teams of nine at the warm-up and bib one of them.** Roughly equal, sensible numbers of forwards and backs in each. **The teams are also the boxes** — split once, at the warm-up, and don't pick again. Inside a box, pair by size.
 - **Water is at +28.** It is the only one — don't call extras.
-- **One count, all night.** The same "one, two" runs in the boxes and in the game, so the message arrives twice in the same words.
+- **One count, all night.** The same "one, two" runs in Four Corners and then in the game. **It is a progression in the game, not a condition from the whistle** — get Springbok landing first, then put the count on. If it never goes on, the session has still done its job.
 - **Ruck-defence is new tonight** — it is the second defender's job in Four Corners and the guards' job in the game. Three cues only: **go for the ball only if it is genuinely there, stay on your feet, get back in the line.**
 - **One voice per segment.**
 - **Pick next week's warm-up leader before they go in for the video.**

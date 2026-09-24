@@ -15,7 +15,7 @@ card: "Run-sheet for the short midweek session: passing, Four Corners 2 v 2, and
 |---|---|
 | **Date/Time** | **Thu 24 Sep 2026.** Meet 18:20, on the pitch 18:30. Off the pitch 19:15. **45 min.** Video upstairs from 19:30. |
 | **Location** | The Training Area, St Marks. Floodlit. |
-| **Coaches** | **Bev and Tiggy** — two out. **Martin to confirm.** *(Steve and Tom absent; Matt, Jeff and Andy unconfirmed.)* |
+| **Coaches** | **Bev, Tiggy and Jeff** — three out. **Martin to confirm** (four). *(Steve and Tom absent; Matt and Andy unconfirmed.)* |
 | **Attendance** | 24 attending, 6 unanswered, 13 declined. **Plan for 18** — some are coming for the video only. *(Actual — fill in on the night.)* |
 | **Session objective** | **Line-speed and two-second rucks** — the two work-ons from the Crowborough friendly. **Four Corners 2 v 2** for the ruck, then a game for the line-speed. **Ruck-defence introduced** inside Four Corners. |
 | **Resources required** | Balls. **Bibs or headbands for nine.** **Plenty of cones** — twelve for the boxes alone. **Ruck shields** for the warm-up.  |
@@ -28,7 +28,7 @@ card: "Run-sheet for the short midweek session: passing, Four Corners 2 v 2, and
 
 - **One pitch** — **about 40m wide**, a cone in each corner. Nine a side, so do not use the full width. Its near try-line is the warm-up start; a **cone line at ~20m** for the warm-up to work out to.
 - **Crazy Passing** — **three cones in a line per group**, 5m apart. Two groups, so six cones, in the near end.
-- **Four Corners boxes** — **three**, side by side in the far half, **four cones each, 10m square**. Side by side so both coaches can see across them.
+- **Four Corners boxes** — **three**, side by side in the far half, **four cones each, 10m square**. One per coach, side by side.
 - **Ruck shields** — at the warm-up cone line. Nothing else needs them.
 
 ## Plan
@@ -43,11 +43,11 @@ card: "Run-sheet for the short midweek session: passing, Four Corners 2 v 2, and
 | +30, 13 min | Springbok Presentation Touch — 9 v 9 | First receiver caught in contact is a turnover. Then **the two-second ruck** on top |
 | +43, 2 min | Close — into the video session | Two things to watch for on the video; pick the next warm-up leader |
 
-**Coach allocation — two out, three if Martin makes it:**
+**Coach allocation — three out, four if Martin makes it:**
 
-- **+5:** one on each passing set. A third floats and spot-coaches in pairs.
-- **+15:** **one coach per box — a box without a coach does not run.** Two out means two boxes; three means three. Each coach counts his own.
-- **+30:** **one referees and coaches into the stoppages, the other stands back and watches** the line. A third counts the rucks.
+- **+5:** one on each passing set, one spot-coaching in pairs off the side.
+- **+15:** **one coach per box — a box without a coach does not run.** Three out means three boxes of six. Each coach counts his own.
+- **+30:** one referees and coaches into the stoppages, **one stands back and watches the line**, one counts the rucks. **Whoever is coordinating does not referee.**
 
 *If we start late, take it out of the ruck block. Not out of the game.*
 
@@ -95,11 +95,11 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Four Corners — 2 v 2 tackle and ruck
 
-**Groups:** one box per coach — six or nine in each.
+**Groups:** three boxes of six — one coach each.
 
 **Coaching Points:** **support arrives before the second defender does** — one carries, one stays close. Carrier goes **forward**, presents long, back to the defence. Cleaner **low and through, past the ball**. Tackler **low, shoulder contact, squeeze**, head to the side, feet driving. Second defender: **only go for the ball if it is genuinely there** — otherwise stay on your feet and get back in the line.
 
-**Setup:** **a box per coach — a box without a coach does not run.** 10m square, four cones, three boxes coned side by side. **Attack takes the two near cones, defence the two far cones**, and the line between the far pair is the **try line**. Everyone else waits outside the box. **A coach counts "one, two" out loud** from the tackle. Contact below the armpits, nobody plays the ball off their feet (see `laws.md`).
+**Setup:** **a box per coach — a box without a coach does not run.** 10m square, four cones, three boxes side by side. **Attack takes the two near cones, defence the two far cones**, and the line between the far pair is the **try line**. Everyone else waits outside the box. **A coach counts "one, two" out loud** from the tackle. Contact below the armpits, nobody plays the ball off their feet (see `laws.md`).
 
 **Description:**
 
@@ -120,7 +120,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - Attack scoring every rep: shorten the box. Defence winning everything: lengthen it.
 - **Ground hard:** make it a hold rather than a tackle.
 - **Pair by size**, box by box — a 2 v 2 has nowhere to hide a mismatch.
-- **Two coaches: two boxes of nine**, and rotate every rep so nobody stands long.
+- **Down to two coaches: two boxes of nine**, and rotate every rep so nobody stands long.
 - Anyone not tackling tonight: outside the box as the caller.
 - **The caller is a job** — a different player each rotation, varying the delay.
 
@@ -151,12 +151,12 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 ## Notes
 
 - **On the pitch 18:30, off at 19:15, video upstairs from 19:30.** The count on the rucks is what keeps the session moving, so don't let it drift.
-- **Two coaches confirmed — Bev and Tiggy**, Martin to confirm. The plan runs **one activity at a time, whole squad**, so two is enough. Agree the allocation above on the thread, not on the grass.
+- **Three coaches — Bev, Tiggy and Jeff**, Martin to confirm. Three is what makes **three boxes of six** work at +15; it is the one slot in the session where the coach count decides the shape. Agree the allocation above on the thread, not on the grass.
 - **Four Corners is live tackling** — small-group, coach-supervised, one box per coach. Everything else is touch. The contact warm-up at +13 runs whole squad before it, no exceptions.
 - **Three days to Round 1.** Four Corners is thirteen minutes of short reps, not a contact session — keep the rotation fast and don't let a box turn into a wrestle.
-- **Eighteen is the planning number, not the promise.** 24 said yes and 6 haven't answered, but some are coming for the video only. **More than 20 turn up: widen the pitch, and only add a third box if there is a third coach for it.** Fewer than 16: narrow the pitch.
+- **Eighteen is the planning number, not the promise.** 24 said yes and 6 haven't answered, but some are coming for the video only. **More than 20 turn up: widen the pitch and put the extras into the three boxes** — seven or eight to a box is fine. Fewer than 16: narrow the pitch, and drop to two boxes.
 - **Sunday is Kent League Round 1** — Blue at home to Old Alleynian, White away at Sheppey. This is a sharpener, not a load.
-- **Pick two teams of nine at the warm-up and bib one of them.** Roughly equal, sensible numbers of forwards and backs in each. **The teams are also the boxes** — split once, at the warm-up, and don't pick again. Inside a box, pair by size.
+- **Pick two teams of nine at the warm-up and bib one of them.** Roughly equal, sensible numbers of forwards and backs in each. **That is for the game at +30.** The three boxes at +15 are their own split — **six to a box, paired by size inside it**, which is what a 2 v 2 needs and what the teams would not give you. Both splits are done at the warm-up; neither is picked again.
 - **Water is at +28.** It is the only one — don't call extras.
 - **One count, all night.** The same "one, two" runs in Four Corners and then in the game. **It is a progression in the game, not a condition from the whistle** — get Springbok landing first, then put the count on. If it never goes on, the session has still done its job.
 - **Ruck-defence is new tonight** — it is the second defender's job in Four Corners and the guards' job in the game. Three cues only: **go for the ball only if it is genuinely there, stay on your feet, get back in the line.**

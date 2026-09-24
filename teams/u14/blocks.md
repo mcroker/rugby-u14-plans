@@ -78,7 +78,7 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 | 2 | Sun 13 Sep | Training | `block1-week2-sun.md` | Tackle | Blitz, line-org | Scrum — 8-man setup, contested from the start | DSP + line-pressure defence off scrum | 9 + hooker scrum strike, back-row ball control |
 | 2 | Thu 17 Sep | Training — **low contact** | `block1-week2-thur.md` | Passing; Tackle Diamond alongside, controlled | **Blitz — positioning on the attacker's outside shoulder** (drill, then live in the games) | Inside the scenarios — 5-man Rhino and DSP, walked then semi-opposed | Scenarios to close — receive the kick-off, then Rhino, then DSP | Hooker lineout throw; 9 + hooker feed |
 | 3 | Sun 20 Sep | Match — friendly v Crowborough *(both teams)* | — *(no plan; match day)* | — | — | — | — | — |
-| 3 | Thu 24 Sep | Work-ons from the friendly + pre-match sharpen | **Needed** | Passing | **Blitz and line-speed**; ruck-defence introduced | Set-piece, lightly (both areas) | Blitz and line-speed off a set piece, lightly | — |
+| 3 | Thu 24 Sep | Work-ons from the friendly + pre-match sharpen — **45 min only**, video session after | `block1-week3-thur.md` | Passing | **Blitz and line-speed**; ruck-defence introduced | *Dropped — no time in 45 min* | Line-speed in the game, whole squad — no separate split | — |
 | 4 | Sun 27 Sep | Match — Kent League R1 | — *(no plan; match day)* | — | — | — | — | — |
 | 4 | Thu 1 Oct | Training — work-ons from the fixture | **Needed** | Whatever the match showed needs work | ″ | ″ | ″ | ″ |
 | 5 | Sun 4 Oct | Training | **Needed** | Tackle — ruck (2v2) | All four pillars, full-team | Lineout — 8-man catch and drive | Receiving off the fold, playing width *(flagged above)* | — |
@@ -87,9 +87,9 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 | 6 | Sun 11 Oct | Training — **White only**, half squad | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 | 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 
-**Run-sheets still to write.** This block has **ten training sessions**. Four have a detailed run-sheet in `plans/`; the other **six** do not, and are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **ten training sessions**. Five have a detailed run-sheet in `plans/`; the other **five** do not, and are marked **Needed** in the table above. In date order:
 
-**Thu 24 Sep** *(friendly work-ons + pre-match sharpener)* · **Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
+**Thu 1 Oct** · **Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
 
 Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
 
@@ -117,7 +117,7 @@ Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (se
 
 **Sunday — friendly against Crowborough, both teams. No session plan.** The squad's first match of the season. Watch the line-speed off **Bang** above all — Week 2's game lost it — and note what else looked shaky, as input to Thursday.
 
-**Thursday — work-ons from the friendly, and pre-match sharpen** for Kent League Round 1 on Sun 27 Sep. Sharpen, not load: whole squad together, no separate backs split needed.
+**Thursday — work-ons from the friendly, and pre-match sharpen** for Kent League Round 1 on Sun 27 Sep. Sharpen, not load: whole squad together, no separate backs split needed. **Cut to 45 minutes on the pitch**, with a video session after it, and only two coaches confirmed — so it runs one activity at a time and carries two messages only: **line-speed** and **two-second rucks**. Set-piece is dropped entirely. The shape is passing, then **Four Corners** (a 2 v 2 tackle-and-ruck box, new to `activities.md`), then **Springbok Presentation Touch** with any ruck over two seconds a turnover — the same two-second count running in both. Ruck-defence is introduced as the second defender's job in the box. See `block1-week3-thur.md`.
 
 **Defence:** **blitz and line-speed first**, taking the cue from what the friendly showed. **Ruck-defence** introduced alongside — guard either side of the ruck, only compete for the ball when it can realistically be won, otherwise stay on your feet and get back in the line.
 

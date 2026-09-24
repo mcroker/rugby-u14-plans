@@ -218,6 +218,18 @@ Quick reference for picking a game to match the session's contact-level target (
 | Description | A tackle-technique skill-zone drill run in a diamond-shaped setup (exact grid dimensions weren't captured in the original notes — worth fleshing out next time this is run). |
 | Coaching Points | Defence "wins" the rep if the tackle is completed over the halfway point of the diamond. Technique cues used alongside it: **low — chop!**, **shoulder contact**, **squeeze**. **Head to the side, behind the carrier** — the two most common faults are the head on the wrong side and **planting the feet**: **feet keep driving through contact**. |
 
+### Four Corners (2 v 2 tackle and ruck)
+
+**Focus:** Contact — tackle, breakdown contest and support. The contested step up from the Tackle Diamond.
+
+| | |
+|---|---|
+| Setup | A square of four cones, **~10m a side**. **Four players, one standing on each cone.** The **two attackers take the near pair**; the **two defenders take the far pair**, and the line between those two far cones is the **try line**. Everyone else waits outside the box. |
+| Description | **1.** The two attackers pass the ball between each other, **feet staying on their cones**.<br>**2.** Someone **outside the box shouts "Go"** — no warning, no countdown.<br>**3.** Everyone is live from the call. The attack runs at the far line; the defence comes off its cones.<br>**4.** The ball carrier is tackled. **The other two join the breakdown** — the second attacker to clear, the second defender to contest.<br>**5.** **Attack wins by scoring. Defence wins by winning the turnover.** One rep, then rotate: attack becomes defence, and two from outside come in.<br>Reps last seconds, so keep the rotation moving rather than resetting between each one. |
+| Coaching Points | **Attack:** one carries, one stays close — the support player has to arrive before the second defender does. Carrier goes **forward**, presents long, back to the defence. Cleaner **low and through, past the ball**, not standing over it.<br>**Defence:** front-on tackle — **low, shoulder contact, squeeze**, head to the side, feet driving. The second defender **only goes for the ball if it is genuinely there** — an isolated carrier or a ball left available; otherwise stay on his feet (see `playbook.md`'s ruck-defence).<br>Contact below the armpits, and nobody plays the ball off their feet (see `laws.md`). |
+| Progressions | - **Ball away on two** — a coach counts from the tackle; missing it is a defensive win.<br>- **Mixed corners** — one attacker and one defender on each cone, so the picture is diagonal and the read is harder.<br>- **Call a name instead of "Go"** — that player has to be the one carrying into contact.<br>- Attack must make **one pass after the call** before contact.<br>- **3 v 3** in a bigger box. |
+| Adaptations | - Attack scoring every rep: shorten the box. Defence winning everything: lengthen it.<br>- **Ground hard:** make it a hold rather than a tackle, or tackle from the knees.<br>- **Pair by size**, box by box — a 2 v 2 has nowhere to hide a mismatch.<br>- **Short of coaches:** fewer boxes with bigger groups waiting, rather than a box nobody is watching. Live tackling wants eyes on every box.<br>- Anyone not tackling that night: stand him outside the box as the caller.<br>- **The caller is a job.** Give it to a different player each rotation, and let him vary the delay — the unpredictable start is half the drill. |
+
 ### Continuous Attack with Conditioned Defence
 
 **Focus:** Defence / Attack

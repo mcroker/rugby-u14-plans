@@ -38,11 +38,13 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
 | +5, 10 min | Essential skills — passing (Crazy Passing) | Pass in front, hands up. Football in for the last three minutes |
 | +15, 2 min | **Contact warm-up** | Whole squad, straight before the tackling |
-| +17, 14 min | Four Corners — 2 v 2 | One team, two boxes; live tackle and ruck. The teams swap at +24 |
-| +17, 14 min | Continuous Attack — overload | The other team, attack two up; new ball after every rep. Swap at +24 |
-| +17, 14 min *(parallel pull-out)* | Scrum machine — front rows | Binding and feet on the set. Out of Four Corners in threes, five minutes each |
-| +31, 2 min | Water | Back into the two teams |
-| +33, 12 min | Set before the ball — 4 v 3 | Numbered, outside shoulder, feet right, then **Bang** |
+| +17, 13 min | Four Corners — 2 v 2 | One team, two boxes; live tackle and ruck |
+| +17, 13 min | Continuous Attack — overload | The other team, attack two up; new ball after every rep |
+| +17, 13 min *(parallel pull-out)* | Scrum machine — front rows | Binding and feet on the set. Out of Four Corners in threes, five minutes each |
+| +30, 2 min | Water | The teams swap |
+| +32, 13 min | Four Corners — 2 v 2 | Second team |
+| +32, 13 min | Continuous Attack — overload | First team |
+| +32, 13 min *(parallel pull-out)* | Scrum machine — front rows | The other team's front-rowers |
 | +45, 14 min | DSP game — scrum restarts | Springbok Presentation Touch, every restart a scrum to the attack |
 | +59, 2 min | Water | Swap ends |
 | +61, 24 min | DSP game — scrum restarts, pick-and-go on | The same game, with pick-and-go live at the ruck |
@@ -51,12 +53,11 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 **Coach allocation:**
 
 - **+5:** one on each passing set, one spot-coaching in pairs off the side.
-- **+17:** one per box, one feeding the Continuous Attack game, **forwards coach on the machine**. **A box without a coach does not run.**
-- **+33:** one per 4 v 3 channel.
+- **+17 and +32:** one per box, one feeding the Continuous Attack game, **forwards coach on the machine**. **A box without a coach does not run.**
 - **+45:** one referees the game, **one stands back and watches the defensive line set**.
 - **Whoever is coordinating does not referee.**
 
-*If we start late, take it out of the 4 v 3. Not out of the game.*
+*If we start late, take it out of both halves of the swap equally. Not out of the game.*
 
 ## Activities
 
@@ -106,7 +107,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Four Corners — 2 v 2 tackle and ruck
 
-**Groups:** one team at a time — two boxes, seven or eight in each. Swap with the Continuous Attack game at +24.
+**Groups:** one team at a time — two boxes, seven or eight in each. Swap with the Continuous Attack game at the water break, +30.
 
 **Coaching Points:** tackler **low, shoulder contact, squeeze**, head to the side, feet driving. **Support arrives before the second defender does** — one carries, one stays close. Carrier goes **forward**, presents long. Cleaner **low and through, past the ball**. Second defender: **only go for the ball if it is genuinely there** — otherwise stay on your feet and get back in the line.
 
@@ -119,7 +120,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 3. **Everyone is live from the call.** Attack runs at the far line; defence comes off its cones.
 4. **The carrier is tackled. The other two join the breakdown** — the second attacker to clear, the second defender to contest.
 5. **Attack wins by scoring. Defence wins by turning it over, or by the ball not being away on two.**
-6. **Rotate every rep** — attack becomes defence, two from outside come in. Seven minutes a team.
+6. **Rotate every rep** — attack becomes defence, two from outside come in. Thirteen minutes a team.
 
 **Progressions:**
 - **Mixed corners** — one attacker and one defender on each cone, so the read is diagonal.
@@ -136,7 +137,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Continuous Attack — overload
 
-**Groups:** one team at a time — attack two up, about 7 v 5. Swap attack and defence halfway through each team's seven minutes. Swap with Four Corners at +24.
+**Groups:** one team at a time — attack two up, about 7 v 5. Swap attack and defence every four minutes or so. Swap with Four Corners at the water break, +30.
 
 **Coaching Points:** **sprint back — don't walk.** **Number up and point** before the ball comes. **Nose on his outside shoulder.** Nobody goes until **Bang**.
 
@@ -162,32 +163,6 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - Attack never scoring: widen the pitch, or defence wins on the fourth touch.
 - Defence walking back: inject the ball sooner.
 - Front-rowers out at the machine: keep the attack the bigger side.
-
-### Set before the ball — 4 v 3
-
-**Groups:** the two teams, each halved — four channels across the pitch, seven or eight in each.
-
-**Coaching Points:** **number up and point** — "I've got 2." **Nose on his outside shoulder.** **Feet: left of the ruck, left foot forward; right of it, right foot forward.** Nobody goes until **Bang**. After the touch: **sprint back into the line — don't walk.**
-
-**Setup:** four channels across the width, 20m long. Touch. Coach or a waiting player at a cone as the ruck, feeding. Rotate attack and defence every three reps.
-
-**Description:**
-
-1. Four attackers set up wide of the ruck cone; three defenders set opposite.
-2. **Coach holds the ball until the defence is set** — numbered, pointing, outside shoulder, feet right. Not set: coach waits and says what's wrong, once.
-3. Ball out. **Bang** — up together, show the carrier back inside.
-4. On the touch, carrier presents. **Defence sprints back onside and re-sets** for one more phase off the same ruck.
-5. Two phases, then reset.
-
-**Progressions:**
-- **Coach feeds whenever he likes — the defence has to be set before he does.**
-- Overload the attack to 5 v 3.
-- Ruck moves: second phase comes off a new ruck where the touch was made.
-
-**Adaptations:**
-- Defence getting caught every rep: narrow the channel.
-- Line going up ragged: one named caller for **Bang**.
-- Walking back: the attack plays phase two as soon as the ball is presented.
 
 ### DSP game — scrum restarts
 
@@ -242,7 +217,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ## Notes
 
-- **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **and at least one front row each.** The Four Corners/Continuous Attack swap, the 4 v 3 and the game all use that split.
+- **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **and at least one front row each.** The Four Corners/Continuous Attack swap and the game both use that split.
 - **Contact is Four Corners only** — live tackle and ruck, one coach per box. Four days after Round 1, and some will have played schools rugby too. Anyone sore: caller only. Short reps, fast rotation — don't let a box turn into a wrestle.
 - **The machine needs the forwards coach.** No forwards coach out: drop the pull-out and keep the front rows in Four Corners.
 - **DSP is the one attacking message.** Every scrum to the attack in their half is DSP.

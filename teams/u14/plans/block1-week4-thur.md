@@ -26,7 +26,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 
 - **One big pitch** — **full width**, a cone in each corner and one either side at halfway. Its near try-line is the warm-up start.
 - **Crazy Passing** — **three cones in a line per group**, 5m apart. Two groups, so six cones, in the near end.
-- **Four Corners boxes** — **two**, four cones each, **10m square**, side by side in the far half, left side.
+- **Four Corners boxes** — **two**, **10m square**, side by side in the far half, left side. Six cones each — the corners, and both ends of the halfway line.
 - **Continuous Attack pitch** — **25m wide, 22m long**, in the far half, right side. A cone at each corner. **A pile of balls on the touchline at halfway.**
 - **Ruck shields** — at the near end, for the warm-up.
 - **Scrum machine** — where it lives. Nothing to move.
@@ -38,8 +38,8 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 | +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines, finishing on the pads (see `warmup.md`) |
 | +5, 10 min | Essential skills — passing (Crazy Passing) | Pass in front, hands up. Football in for the last three minutes |
 | +15, 2 min | **Contact warm-up** | Whole squad, straight before the tackling |
-| +17, 13 min | Four Corners — 2 v 2 | One team, two boxes; live tackle and ruck |
-| +17, 13 min | Continuous Attack — overload | The other team, attack two up; new ball after every rep |
+| +17, 13 min | Four Corners — 2 v 2 | One team, two boxes. Dominant tackle over halfway, then ruck speed |
+| +17, 13 min | Continuous Attack — overload | **Defence**: outside shoulder, line-speed, feet. The other team, attack two up |
 | +17, 13 min *(parallel pull-out)* | Scrum machine — front rows | Binding and feet on the set. Both teams' front rows, in threes, five minutes each |
 | +30, 2 min | Water | The teams swap |
 | +32, 13 min | Four Corners — 2 v 2 | Second team |
@@ -53,7 +53,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 **Coach allocation:**
 
 - **+5:** one on each passing set, one spot-coaching in pairs off the side.
-- **+17 and +32:** one per box, one feeding the Continuous Attack game, **forwards coach at the machine** — front rows at +17, back row at +32. **A box without a coach does not run.**
+- **+17 and +32:** one per box, one feeding the Continuous Attack game and coaching its defence, **forwards coach at the machine** — front rows at +17, back row at +32. **A box without a coach does not run.**
 - **+45:** one referees the game, **one stands back and watches the defensive line set**.
 - **Whoever is coordinating does not referee.**
 
@@ -109,9 +109,9 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Groups:** one team at a time — two boxes, seven or eight in each. Swap with the Continuous Attack game at the water break, +30.
 
-**Coaching Points:** tackler **low, shoulder contact, squeeze**, head to the side, feet driving. **Support arrives before the second defender does** — one carries, one stays close. Carrier goes **forward**, presents long. Cleaner **low and through, past the ball**. Second defender: **only go for the ball if it is genuinely there** — otherwise stay on your feet and get back in the line.
+**Coaching Points:** **dominant tackle — zoom, cruise, boom, and make it over the halfway line.** Zoom off the cone, cruise on your toes, boom through the tackle: **low, shoulder contact, squeeze**, head to the side, feet driving. **Then ruck speed:** support arrives before the second defender, cleaner **low and through, past the ball**, ball away on two.
 
-**Setup:** **a box per coach — a box without a coach does not run.** 10m square, four cones, two boxes side by side. **Attack takes the two near cones, defence the two far cones**; the line between the far pair is the **try line**. Everyone else waits outside the box. **A coach counts "one, two" out loud** from the tackle. Contact below the armpits, nobody plays the ball off their feet (see `laws.md`).
+**Setup:** **a box per coach — a box without a coach does not run.** 10m square, two boxes side by side. **A cone at each corner and one at each end of the halfway line.** **Attack takes the two near cones, defence the two far cones**; the line between the far pair is the **try line**. Everyone else waits outside the box. Contact below the armpits, nobody plays the ball off their feet (see `laws.md`).
 
 **Description:**
 
@@ -119,15 +119,17 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 2. **Someone outside the box shouts "Go"** — no warning, no countdown.
 3. **Everyone is live from the call.** Attack runs at the far line; defence comes off its cones.
 4. **The carrier is tackled. The other two join the breakdown** — the second attacker to clear, the second defender to contest.
-5. **Attack wins by scoring. Defence wins by turning it over, or by the ball not being away on two.**
-6. **Rotate every rep** — attack becomes defence, two from outside come in. Thirteen minutes a team.
+5. **First: the tackle.** Defence wins by making a dominant tackle **over the halfway line**. Attack wins by scoring or getting past halfway.
+6. **Then: ruck speed.** A coach counts **"one, two"** out loud from the tackle. Attack wins with the ball away on two; defence wins a turnover or a slow ball.
+7. **Rotate every rep** — attack becomes defence, two from outside come in. Thirteen minutes a team.
 
 **Progressions:**
+- **Add a 9** behind the attack to collect the ball from the ruck — a player, or a coach if needed. Ball away on two.
 - **Mixed corners** — one attacker and one defender on each cone, so the read is diagonal.
 - Call a name instead of "Go" — that player has to be the carrier.
-- Attack must make one pass after the call before contact.
 
 **Adaptations:**
+- Tackles all short of halfway: defence starts a metre further forward. All past it: move it back.
 - Attack scoring every rep: shorten the box. Defence winning everything: lengthen it.
 - Anyone sore from Sunday: outside the box as the caller.
 - Ground hard: make it a hold rather than a tackle.
@@ -137,9 +139,9 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Continuous Attack — overload
 
-**Groups:** one team at a time — attack two up, about 7 v 5. Swap attack and defence every four minutes or so. Swap with Four Corners at the water break, +30.
+**Groups:** one team at a time — attack two up, about 7 v 5. **A defence drill.** Swap attack and defence every four minutes or so. Swap with Four Corners at the water break, +30.
 
-**Coaching Points:** **sprint back — don't walk.** **Number up and point** before the ball comes. **Nose on his outside shoulder.** Nobody goes until **Bang**.
+**Coaching Points:** **coach the defence, not the attack — outside shoulder above all: if the overload beats you to the edge, you've lost it.** **Line-speed** — nobody goes until **Bang**, then up together. **Left side, left foot forward; right side, right foot forward.** Number up and point before the ball comes. Sprint back — don't walk.
 
 **Setup:** one pitch in the far half, right side — **25m wide, 22m long**. Attack's start line at one end, defence's try line at the other. **Coach on the touchline at halfway with a pile of balls.** Touch.
 
@@ -150,7 +152,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 3. **Defence wins on the third touch**, a dropped ball or a forward pass.
 4. **After every try or defensive win:** attack retreats behind its start line. Defence sprints back to its try line and sets.
 5. **Coach injects a new ball as soon as the attack is behind the line.** Defence that isn't set plays anyway.
-6. Keep it running — no stopping between reps.
+6. Keep it running — no stopping between reps. **Coaches watch the defence only.**
 
 **Progressions:**
 - **Coach injects the next ball the moment the rep ends** — attack plays from wherever it is.

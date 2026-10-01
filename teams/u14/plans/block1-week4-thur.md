@@ -2,7 +2,7 @@
 date: 2026-10-01
 start: "18:45"
 h1: Week 4 — Thursday
-sub: Work-ons from Round 1. Hands, the 1 v 1 tackle, a set defence, and DSP off every scrum.
+sub: Work-ons from Round 1. Hands, the tackle and ruck, a set defence, and DSP off every scrum.
 sub2: Thu 1 Oct 2026, 6.45–8.15pm
 crumb: Week 4 (Thu)
 card: "Run-sheet for the midweek session after Round 1: passing in front, Four Corners 2 v 2 opposite a 2 v 1 overlap drill, setting the defence, and a scrum-restart game with DSP."

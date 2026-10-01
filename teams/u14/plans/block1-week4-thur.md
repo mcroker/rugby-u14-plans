@@ -40,13 +40,12 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 | +15, 2 min | **Contact warm-up** | Whole squad, straight before the tackling |
 | +17, 13 min | Four Corners — 2 v 2 | One team, two boxes; live tackle and ruck |
 | +17, 13 min | Continuous Attack — overload | The other team, attack two up; new ball after every rep |
-| +17, 13 min *(parallel pull-out)* | Scrum machine — front rows | Binding and feet on the set. Out of Four Corners in threes, five minutes each |
+| +17, 13 min *(parallel pull-out)* | Scrum machine — front rows | Binding and feet on the set. Both teams' front rows, in threes, five minutes each |
 | +30, 2 min | Water | The teams swap |
 | +32, 13 min | Four Corners — 2 v 2 | Second team |
 | +32, 13 min | Continuous Attack — overload | First team |
-| +32, 13 min *(parallel pull-out)* | Scrum machine — front rows | The other team's front-rowers |
+| +32, 13 min *(parallel pull-out)* | Back-row breakout — 8, 9 and flanker | 8s on the rolling ball first, then 8, 9 and a flanker breaking. Five minutes at a pop |
 | +45, 14 min | DSP game — scrum restarts | Springbok Presentation Touch, every restart a scrum to the attack |
-| +45, 14 min *(parallel pull-out)* | Back-row breakout — 8, 9 and flanker | 8s on the rolling ball first, then 8, 9 and a flanker breaking. Five minutes at a pop |
 | +59, 2 min | Water | Swap ends. **Piggy** shown by two players |
 | +61, 24 min | DSP game — scrum restarts, Piggy on | The same game, with **Piggy** (pick and go) live at the ruck |
 | +85, 5 min | Close | Two things from tonight |
@@ -54,8 +53,8 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 **Coach allocation:**
 
 - **+5:** one on each passing set, one spot-coaching in pairs off the side.
-- **+17 and +32:** one per box, one feeding the Continuous Attack game, **forwards coach on the machine**. **A box without a coach does not run.**
-- **+45:** one referees the game, **forwards coach on the back-row breakout**, one stands back and watches the defensive line set.
+- **+17 and +32:** one per box, one feeding the Continuous Attack game, **forwards coach at the machine** — front rows at +17, back row at +32. **A box without a coach does not run.**
+- **+45:** one referees the game, **one stands back and watches the defensive line set**.
 - **+59:** whoever refs the game picks two players to show **Piggy**.
 - **Whoever is coordinating does not referee.**
 
@@ -195,11 +194,11 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Back-row breakout — 8, 9 and flanker
 
-**Groups:** out of the DSP game, five minutes at a pop. **8s first** — one from each team. Then **8, 9 and a flanker** from one team, then the other.
+**Groups:** out of Four Corners and Continuous Attack, five minutes at a pop. **8s first** — one from each team. Then **8, 9 and a flanker** from one team, then the other.
 
 **Coaching Points:** **8: stop it with the inside of the foot, keep it at the base.** Eyes on the ball, bind stays on. **9: call it, then take it.** **Flanker: stay bound until the ball is out, then break.**
 
-**Setup:** near the scrum machine. **Two ruck shields held upright side by side** by two waiting players — the locks. 8 binds between them. Coach in front with a ball, rolling it through the gap.
+**Setup:** at the scrum machine. **Two ruck shields held upright side by side** by two waiting players — the locks. 8 binds between them. Coach in front with a ball, rolling it through the gap.
 
 **Description:**
 
@@ -221,7 +220,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Scrum machine — front rows
 
-**Groups:** front-rowers in threes, out of Four Corners — five minutes each, back into the box, next three out.
+**Groups:** front-rowers in threes, one team's then the other's, out of whichever activity they are in — five minutes each, then back.
 
 **Coaching Points:** **loosehead binds on the pad (the tighthead's back), not under.** **Feet adjust on the set — then stay.** Flat back, hips below shoulders. Crouch — bind — set.
 
@@ -242,14 +241,12 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 **Adaptations:**
 - Feet sliding back: shorter set, check the feet before any push.
 - Fewer than three front-rowers out: a flanker fills in at hooker.
-- A front-rower's team is in the Continuous Attack game at the swap: he comes out of the game instead.
 
 ## Notes
 
 - **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **and at least one front row each.** The Four Corners/Continuous Attack swap and the game both use that split.
 - **Contact is Four Corners only** — live tackle and ruck, one coach per box. Four days after Round 1, and some will have played schools rugby too. Anyone sore: caller only. Short reps, fast rotation — don't let a box turn into a wrestle.
-- **The machine needs the forwards coach.** No forwards coach out: drop the pull-out and keep the front rows in Four Corners.
-- **The forwards coach then takes the back-row breakout at +45.** No forwards coach: drop it.
+- **The machine needs the forwards coach** — front rows at +17, back row at +32. No forwards coach out: drop both pull-outs.
 - **Piggy is pick and go from the ruck.** The No.8 pick-up from the scrum is still not a call — scrums are DSP.
 - **DSP is the one attacking message.** Every scrum to the attack in their half is DSP.
 - **Not covered tonight:** exit kicks and nominating the kickers. **Penalty reasons from Round 1 are still to come** — talk to Martin before Sunday.

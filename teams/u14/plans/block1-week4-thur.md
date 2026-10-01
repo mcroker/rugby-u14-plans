@@ -5,7 +5,7 @@ h1: Week 4 — Thursday
 sub: Work-ons from Round 1. Hands, the tackle and ruck, a set defence, and DSP off every scrum.
 sub2: Thu 1 Oct 2026, 6.45–8.15pm
 crumb: Week 4 (Thu)
-card: "Run-sheet for the midweek session after Round 1: passing in front, Four Corners 2 v 2 opposite an outside-shoulder 3 v 3, setting the defence, and a scrum-restart game with DSP."
+card: "Run-sheet for the midweek session after Round 1: passing in front, Four Corners 2 v 2 opposite a continuous-attack overload game, setting the defence, and a scrum-restart game with DSP."
 ---
 # Block 1, Week 4 — Thursday session
 
@@ -27,7 +27,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 - **One big pitch** — **full width**, a cone in each corner and one either side at halfway. Its near try-line is the warm-up start.
 - **Crazy Passing** — **three cones in a line per group**, 5m apart. Two groups, so six cones, in the near end.
 - **Four Corners boxes** — **two**, four cones each, **10m square**, side by side in the far half, left side.
-- **3 v 3 channels** — **two**, 15m wide by 20m long, side by side in the far half, right side. A cone at each corner, plus **four in two colours** along each try line for the chaos progression.
+- **Continuous Attack pitch** — **25m wide, 22m long**, in the far half, right side. A cone at each corner. **A pile of balls on the touchline at halfway.**
 - **Ruck shields** — at the near end, for the warm-up.
 - **Scrum machine** — where it lives. Nothing to move.
 
@@ -39,7 +39,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 | +5, 10 min | Essential skills — passing (Crazy Passing) | Pass in front, hands up. Football in for the last three minutes |
 | +15, 2 min | **Contact warm-up** | Whole squad, straight before the tackling |
 | +17, 14 min | Four Corners — 2 v 2 | One team, two boxes; live tackle and ruck. The teams swap at +24 |
-| +17, 14 min | Outside shoulder — 3 v 3 | The other team, two channels; swap at +24 |
+| +17, 14 min | Continuous Attack — overload | The other team, attack two up; new ball after every rep. Swap at +24 |
 | +17, 14 min *(parallel pull-out)* | Scrum machine — front rows | Binding and feet on the set. Out of Four Corners in threes, five minutes each |
 | +31, 2 min | Water | Back into the two teams |
 | +33, 12 min | Set before the ball — 4 v 3 | Numbered, outside shoulder, feet right, then **Bang** |
@@ -51,7 +51,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 **Coach allocation:**
 
 - **+5:** one on each passing set, one spot-coaching in pairs off the side.
-- **+17:** one per box, one on the 3 v 3 channels, **forwards coach on the machine**. **A box without a coach does not run.**
+- **+17:** one per box, one feeding the Continuous Attack game, **forwards coach on the machine**. **A box without a coach does not run.**
 - **+33:** one per 4 v 3 channel.
 - **+45:** one referees the game, **one stands back and watches the defensive line set**.
 - **Whoever is coordinating does not referee.**
@@ -90,7 +90,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 
 **Coaching Points:** in the pummel — chest up, back flat, **head to the side**, hips low, arms working continuously. In Wrist Wrestle — stay low, feet moving, win it with body position.
 
-**Setup:** everyone in pairs, **matched by size**. No equipment. Straight into the boxes and the 3 v 3 channels after it.
+**Setup:** everyone in pairs, **matched by size**. No equipment. Straight into the boxes and the Continuous Attack game after it.
 
 **Description:** the standard two minutes — demo not needed.
 
@@ -106,7 +106,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Four Corners — 2 v 2 tackle and ruck
 
-**Groups:** one team at a time — two boxes, seven or eight in each. Swap with the 3 v 3 at +24.
+**Groups:** one team at a time — two boxes, seven or eight in each. Swap with the Continuous Attack game at +24.
 
 **Coaching Points:** tackler **low, shoulder contact, squeeze**, head to the side, feet driving. **Support arrives before the second defender does** — one carries, one stays close. Carrier goes **forward**, presents long. Cleaner **low and through, past the ball**. Second defender: **only go for the ball if it is genuinely there** — otherwise stay on your feet and get back in the line.
 
@@ -134,33 +134,34 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - A coach short: one box, rotate every rep so nobody stands long.
 - **The caller is a job** — a different player each rotation, varying the delay.
 
-### Outside shoulder — 3 v 3
+### Continuous Attack — overload
 
-**Groups:** one team at a time — 3 v 3 in two channels, six to a channel, the spares feeding and rotating in. Swap with Four Corners at +24.
+**Groups:** one team at a time — attack two up, about 7 v 5. Swap attack and defence halfway through each team's seven minutes. Swap with Four Corners at +24.
 
-**Coaching Points:** **nose on his outside shoulder** — the one nearer the touchline. **Point and call your man.** **Back, back, up** — retreat together, touch the line together, come up together. Square, short steps. Close the space, then match his speed.
+**Coaching Points:** **sprint back — don't walk.** **Number up and point** before the ball comes. **Nose on his outside shoulder.** Nobody goes until **Bang**.
 
-**Setup:** two channels side by side, far half, right side — 15m wide, 20m long. The try line is the line the defence touches. Touch only — a touch ends the rep. **The feed comes from the left every rep**, from a waiting player. Seven minutes a team.
+**Setup:** one pitch in the far half, right side — **25m wide, 22m long**. Attack's start line at one end, defence's try line at the other. **Coach on the touchline at halfway with a pile of balls.** Touch.
 
 **Description:**
 
-1. **Defence starts ahead of its try line**, facing the attack.
-2. **Feeder passes in from the left.**
-3. **Back, back, up** — the defence retreats and **every defender touches the try line** before the line comes up. **Bang** on the way up.
-4. **Each defender takes the outside shoulder of his man.** Attack goes for the try line.
-5. **Swap attack and defence every four reps.**
-
-Walk the first reps, then jog, then full pace.
+1. Attack lines up on its start line. Coach passes a ball in. Attack goes for the try line.
+2. On a touch the carrier presents; support picks and plays.
+3. **Defence wins on the third touch**, a dropped ball or a forward pass.
+4. **After every try or defensive win:** attack retreats behind its start line. Defence sprints back to its try line and sets.
+5. **Coach injects a new ball as soon as the attack is behind the line.** Defence that isn't set plays anyway.
+6. Keep it running — no stopping between reps.
 
 **Progressions:**
-- **Feed from either side**, not just the left.
-- Defenders must point and call their man before **Bang**, or the rep is a try.
-- *If the defence is winning everything:* **chaos — the coach shouts a cone colour as he feeds**, and every defender touches a cone of that colour on the try line before coming up.
+- **Coach injects the next ball the moment the rep ends** — attack plays from wherever it is.
+- Feed from either touchline, coach's choice.
+- First receiver touched is a defensive win (Springbok).
+- Cut the overload to one.
 
 **Adaptations:**
-- Defenders overrunning their man: back to walking pace.
-- Attack scoring every rep: narrow the channel.
-- Defence ball-watching: attackers call a number, defenders shout it back.
+- Defence swamped every rep: cut the overload to one, or narrow the pitch.
+- Attack never scoring: widen the pitch, or defence wins on the fourth touch.
+- Defence walking back: inject the ball sooner.
+- Front-rowers out at the machine: keep the attack the bigger side.
 
 ### Set before the ball — 4 v 3
 
@@ -237,11 +238,11 @@ Walk the first reps, then jog, then full pace.
 **Adaptations:**
 - Feet sliding back: shorter set, check the feet before any push.
 - Fewer than three front-rowers out: a flanker fills in at hooker.
-- A front-rower's team is on the 3 v 3 at the swap: he comes out of the channels instead.
+- A front-rower's team is in the Continuous Attack game at the swap: he comes out of the game instead.
 
 ## Notes
 
-- **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **and at least one front row each.** The Four Corners/3 v 3 swap, the 4 v 3 and the game all use that split.
+- **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **and at least one front row each.** The Four Corners/Continuous Attack swap, the 4 v 3 and the game all use that split.
 - **Contact is Four Corners only** — live tackle and ruck, one coach per box. Four days after Round 1, and some will have played schools rugby too. Anyone sore: caller only. Short reps, fast rotation — don't let a box turn into a wrestle.
 - **The machine needs the forwards coach.** No forwards coach out: drop the pull-out and keep the front rows in Four Corners.
 - **DSP is the one attacking message.** Every scrum to the attack in their half is DSP.

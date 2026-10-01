@@ -129,7 +129,6 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - Call a name instead of "Go" — that player has to be the carrier.
 
 **Adaptations:**
-- Tackles all short of halfway: defence starts a metre further forward. All past it: move it back.
 - Attack scoring every rep: shorten the box. Defence winning everything: lengthen it.
 - Anyone sore from Sunday: outside the box as the caller.
 - Ground hard: make it a hold rather than a tackle.

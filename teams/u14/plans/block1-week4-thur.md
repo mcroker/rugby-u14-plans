@@ -15,7 +15,7 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 |---|---|
 | **Date/Time** | **Thu 1 Oct 2026.** Meet 18:35, on the pitch 18:45. Finish 20:15. 90 min. |
 | **Location** | The Training Area, St Marks. Floodlit. |
-| **Coaches** | *TBC — fill in on the night.* |
+| **Coaches** | **Jeff.** Others to confirm. *(Steve absent.)* |
 | **Attendance** | 27 attending, 7 unanswered, 10 declined. *(Actual — fill in on the night.)* |
 | **Session objective** | **Work-ons from Round 1.** **Pass in front of the receiver, hands up.** **The tackle and the two-second ruck.** **Set before the ball** — numbered, outside shoulder, feet right — and **sprint back into the line**. **DSP from every attacking scrum.** Touch throughout, apart from Four Corners. |
 | **Resources required** | Balls. **Two or three footballs.** **Bibs or headbands for one team.** Cones. Ruck shields. **Scrum machine.** |

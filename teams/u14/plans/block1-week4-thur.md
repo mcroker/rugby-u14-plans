@@ -44,10 +44,10 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 | +30, 2 min | Water | The teams swap |
 | +32, 13 min | Four Corners — 2 v 2 | Second team |
 | +32, 13 min | Continuous Attack — overload | First team |
-| +32, 13 min *(parallel pull-out)* | Back-row breakout — 8, 9 and flanker | 8s on the rolling ball first, then 8, 9 and a flanker breaking. Five minutes at a pop |
+| +32, 13 min *(parallel pull-out)* | Back-row breakout — 8, 9 and flanker | 8s on the rolling ball first, then 8, 9 and a flanker: DSP, then the 8 pick. Five minutes at a pop |
 | +45, 14 min | DSP game — scrum restarts | Springbok Presentation Touch, every restart a scrum to the attack |
-| +59, 2 min | Water | Swap ends. **Piggy** shown by two players |
-| +61, 24 min | DSP game — scrum restarts, Piggy on | The same game, with **Piggy** (pick and go) live at the ruck |
+| +59, 2 min | Water | Swap ends |
+| +61, 24 min | DSP game — scrum restarts, pick-and-go on | The same game, with pick and go live at the ruck |
 | +85, 5 min | Close | Two things from tonight |
 
 **Coach allocation:**
@@ -55,7 +55,6 @@ card: "Run-sheet for the midweek session after Round 1: passing in front, Four C
 - **+5:** one on each passing set, one spot-coaching in pairs off the side.
 - **+17 and +32:** one per box, one feeding the Continuous Attack game, **forwards coach at the machine** — front rows at +17, back row at +32. **A box without a coach does not run.**
 - **+45:** one referees the game, **one stands back and watches the defensive line set**.
-- **+59:** whoever refs the game picks two players to show **Piggy**.
 - **Whoever is coordinating does not referee.**
 
 *If we start late, take it out of both halves of the swap equally. Not out of the game.*
@@ -179,11 +178,10 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 2. **8 controls it at the base, 9 clears — DSP.** Backs play what's in front.
 3. Defence: **set before the feed**. The coach standing back calls what wasn't set, to one or two players, at the next scrum.
 4. Play to a score, a turnover, or dead ball. New scrum.
-5. **+59, at water:** two players show **Piggy** — support player picks from the ruck, low, two hands, straight forward; next man on his hip. Thirty seconds.
-6. **+61:** Piggy on — attack can pick and go from any ruck. **Defence puts a guard either side of the ruck.**
+5. **+61:** pick-and-go on — attack can pick and go from any ruck. **Defence puts a guard either side of the ruck.**
 
 **Progressions:**
-- **Piggy on** at the ruck — defence guards either side, and commits a second body only when it's coming round the same side.
+- **Pick-and-go on** at the ruck — defence guards either side, and commits a second body only when it's coming round the same side.
 - Two-second ruck count: any ruck over two seconds is a turnover.
 - A score off the first phase of a DSP is worth two.
 
@@ -196,7 +194,7 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 **Groups:** out of Four Corners and Continuous Attack, five minutes at a pop. **8s first** — one from each team. Then **8, 9 and a flanker** from one team, then the other.
 
-**Coaching Points:** **8: stop it with the inside of the foot, keep it at the base.** Eyes on the ball, bind stays on. **9: call it, then take it.** **Flanker: stay bound until the ball is out, then break.**
+**Coaching Points:** **8: stop it with the inside of the foot, keep it at the base.** Eyes on the ball, bind stays on. **9: call it, then take it.** **Flanker: stay bound until the ball is out, then break.** **8 pick: two hands, low, straight forward — flanker on his hip.**
 
 **Setup:** at the scrum machine. **Two ruck shields held upright side by side** by two waiting players — the locks. 8 binds between them. Coach in front with a ball, rolling it through the gap.
 
@@ -206,7 +204,8 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 2. **8, 9 and flanker:** flanker binds on the side of a shield. Coach rolls it through; 8 controls it.
 3. 9 calls, takes it, and clears — **DSP**.
 4. **Flanker breaks off as the ball leaves**, runs a line off 9's shoulder.
-5. Swap sides — flanker on the other shield.
+5. **8 pick:** 8 controls it, picks from the base and goes forward. Flanker breaks onto his hip; 9 follows.
+6. Swap sides — flanker on the other shield.
 
 **Progressions:**
 - 9 runs instead of passing; flanker breaks to support him.
@@ -247,7 +246,6 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **and at least one front row each.** The Four Corners/Continuous Attack swap and the game both use that split.
 - **Contact is Four Corners only** — live tackle and ruck, one coach per box. Four days after Round 1, and some will have played schools rugby too. Anyone sore: caller only. Short reps, fast rotation — don't let a box turn into a wrestle.
 - **The machine needs the forwards coach** — front rows at +17, back row at +32. No forwards coach out: drop both pull-outs.
-- **Piggy is pick and go from the ruck.** The No.8 pick-up from the scrum is still not a call — scrums are DSP.
 - **DSP is the one attacking message.** Every scrum to the attack in their half is DSP.
 - **Not covered tonight:** exit kicks and nominating the kickers. **Penalty reasons from Round 1 are still to come** — talk to Martin before Sunday.
 - **Sunday is a training Sunday (4 Oct)** — not yet confirmed on Spond.

@@ -8,3 +8,6 @@ node_modules/
 
 # Diagram source — lives in Drive, which versions it; too big for git
 Playbook Images.pptx
+
+# Match analysis: video stills and player names, coaches only. Lives in Drive, not git.
+teams/*/match-analysis/

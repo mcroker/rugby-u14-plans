@@ -39,6 +39,8 @@ A note for anyone re-reading these pages: the fixture list is rendered client-si
 
 `ref/` at the repo root holds `Lineout FAQ.pdf` (law/mechanics questions), plus `Autism in Rugby.pdf` and `ADHD in Rugby.pdf` — club guidance on coaching neurodiverse players, which matters for this squad (see `age-group.md`).
 
+`match-analysis/` holds the analyst's post-match decks (PDF), each with a markdown summary of the same name: the figures, how tries were scored and conceded, and the work-ons. **Read the summaries before planning a block or a session.** `match-analysis/README.md` lists the matches, the work-ons that come up in more than one match, and the metric glossary. Name new decks `YYYY-MM-DD-<blue|white>-v-<opponent>.pdf` and add a summary alongside. The build does not read this folder, so nothing in it is published. The whole folder is git-ignored and lives in Drive only, because the repo is public.
+
 ## Where these files live
 
 **Google Drive is the source of truth for this team's markdown.** The repo is a **U14 Rugby** folder in Drive (mcroker@gmail.com), synced locally — [https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU](https://drive.google.com/drive/folders/1tkv05JdlpY1RWNV2iPv3RFixzATYbnFU).

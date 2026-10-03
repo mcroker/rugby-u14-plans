@@ -38,7 +38,7 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 **Open items still to confirm:**
 
 - **Week 5 backs:** two specific approaches were discussed and both were liked, but the detail didn't survive a context reset on my end — the table below uses "receiving off the fold, playing width" as a placeholder pending the restatement.
-- **Sun 4 Oct:** this block schedules a full training session that day, but `calendar.md` has no entry for it at all. One of the two is wrong — confirm against Spond before a run-sheet is written for it.
+- **Sun 4 Oct:** confirmed by the club pitch allocation — U14M training, 10:45–12:30, Pitch 4 near-end. Not yet on Spond.
 - **Guiding principles** (`playbook.md`): agreed, except one — **width vs pods**. The principle says move it wide more often than setting up pods; the default attacking pattern is pod-first, and 5-man Rhino is two tight phases before width. Agree which leads.
 
 **Carried forward from Week 1 (Sun 6 Sep)** — see the session's review in `block1-week1-sun.md`:
@@ -81,15 +81,15 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 | 3 | Thu 24 Sep | Work-ons from the friendly + pre-match sharpen — **45 min only**, video session after | `block1-week3-thur.md` | Passing | **Blitz and line-speed**; ruck-defence introduced | *Dropped — no time in 45 min* | Line-speed in the game, whole squad — no separate split | — |
 | 4 | Sun 27 Sep | Match — Kent League R1 | — *(no plan; match day)* | — | — | — | — | — |
 | 4 | Thu 1 Oct | Training — work-ons from Round 1 | `block1-week4-thur.md` | Passing — in front of the receiver, hands up; Four Corners (2 v 2 tackle and ruck) | **Set before the ball** — numbered, outside shoulder, feet; realign at a sprint; pick-and-go ruck defence | Front rows on the machine — binding, feet on the set; back row — 8 controlling at the base, flanker breaking, **8 pick** shown | Continuous Attack overload — realign at a sprint, new ball every rep; **DSP from every attacking scrum** | 9 + hooker feed |
-| 5 | Sun 4 Oct | Training | **Needed** | Tackle — ruck (2v2) | All four pillars, full-team | Lineout — 8-man catch and drive | Receiving off the fold, playing width *(flagged above)* | — |
+| 5 | Sun 4 Oct | Training | `block1-week5-sun.md` | Tackle — ruck, 2 v 2 then 3 v 3 | Continuous Attack; Springbok Touch with Coach's Bag (CTC) | **Scrum, in three groups**: front row + 9s on the tap and feed; locks + back row on control at the base and **Hammer**. *(Catch and drive moves to Thu 8 Oct.)* | **Attack off the scrum** — timing of the runs, 10 reading the shoulders: 12, 13 or 15 out the back | Hooker + 9 feed |
 | 5 | Thu 8 Oct | Training | **Needed** | Passing — introduce pull-back pass (Hippo) | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
 | 6 | Sun 11 Oct | Match — Kent League R2 *(Blue, away)* | — *(no plan; match day)* | — | — | — | — | — |
 | 6 | Sun 11 Oct | Training — **White only**, half squad | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 | 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 
-**Run-sheets still to write.** This block has **ten training sessions**. Six have a detailed run-sheet in `plans/`; the other **four** do not, and are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **ten training sessions**. Seven have a detailed run-sheet in `plans/`; the other **three** do not, and are marked **Needed** in the table above. In date order:
 
-**Sun 4 Oct** · **Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
+**Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
 
 Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
 

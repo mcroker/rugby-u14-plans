@@ -267,17 +267,18 @@ Scrum moves from 6 players (U13) to a full 8-player contested scrum, and the No.
 | Call | Meaning |
 |---|---|
 | **DSP** | Default Scrum Play. Ball won at the base and played back to 9 as normal (not a No.8 pick-and-go). From there, play what's in front / call the next phase (e.g. Rhino, Bull) as normal. |
+| **Hammer** | No.8 picks from the base and carries **blind**. The blind-side flanker is on his hip and clears the ruck; 9 goes straight to a **second forwards carry, also blind**. |
 
 **The feed is on the hooker's tap.** The hooker taps when he is ready, and 9 feeds on the tap — no call. The hooker strikes on the feed.
 
-*(No.8 pick-and-go as an alternative to DSP is still to be defined as its own call, once the pack is comfortable with the bigger 8-man scrum shape.)*
+**Hammer** is the No.8 pick — the alternative to DSP.
 
 ## To be expanded
 
 Sections still to fill in as we build this out:
 
 - Defensive shape (defined above — pressure defence, the four pillars, **Bang** as the blitz trigger call, ruck-defence and lineout-defence rules; drift-vs-blitz still TBC)
-- Scrum calls / options (see above — default is **DSP**, ball to 9; No.8 pick-and-go call still TBC)
+- Scrum calls / options (see above — default is **DSP**, ball to 9; **Hammer** for the No.8 pick blind)
 - Lineout calls (defined above — B/W/G (Blue/White/Gold) front/middle/back system)
 - Lineout numbers (defined above — default 5-man, more for a driving maul)
 - Lineout default move (defined above — **5-man Rhino**: OTT to 9 → first ball to the forwards in front of 10, they + 12 set ruck 1 → pod races round and carries into ruck 2 for Rhino, or runs as a dummy for **Hippo** if 10 wants it early → backs edge attack; diagrams not yet redrawn to this shape. Progression saved for later: 10 as first receiver, pod out one)

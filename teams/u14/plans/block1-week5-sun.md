@@ -26,7 +26,7 @@ card: "Run-sheet for Week 5 Sunday: Four Corners opposite Continuous Attack, Spr
 
 The half runs from the try line to halfway. Working out from the try line:
 
-- **Ruck shields** — six, stacked on the try line, for the warm-up. Two go to the back-row mark at +49.
+- **Ruck shields** — six, stacked on the try line, for the warm-up. At +49: two to the back-row mark, three to the backs scrum mark.
 - **Crazy Passing** — **three cones in a line per group**, 5m apart. Two groups, so six cones, between the try line and the 22, middle of the pitch.
 - **Front-row mark** — one cone between the try line and the 22, left side, on the flattest ground.
 - **Back-row mark** — one cone 15m along from it, towards the middle.
@@ -51,7 +51,7 @@ The half runs from the try line to halfway. Working out from the try line:
 | +47, 2 min | Water | Split into three |
 | +49, 15 min *(front row + 9s)* | Scrum — front row and 9s | Jeff. Hooker taps, 9 feeds on the tap, hooker strikes |
 | +49, 15 min *(locks + back row)* | Scrum — back row and Hammer | Tiggy. 8 controls it at the base, flankers bound then break. **Hammer** |
-| +49, 15 min *(backs)* | Backs — attack off the scrum | Bev and Steve. Timing of the runs. 10 reads the shoulders, picks 12, 13 or 15 out the back |
+| +49, 15 min *(backs)* | Backs — attack off the scrum | Bev and Steve. Two-minute walk-through, then reps — coaches on shields, then a live defence. 10 reads the shoulders, picks 12, 13 or 15 out the back |
 | +64, 21 min | Main game — scrum restarts | First scrum each way walked through. Every restart a scrum to the attack. Pick-and-go on for the last seven minutes |
 | +85, 5 min | Close | Two things from today |
 
@@ -252,30 +252,31 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 
 ### Backs — attack off the scrum
 
-**Groups:** all backs — attack against a defence of four, swapping every few reps. **Bev with the attack, Steve with the defence.**
+**Groups:** all backs — **two attacking units**, one per team, going alternately. **Bev with the attack. Steve and two spare coaches on shields.**
 
 **Coaching Points:** **time the run — arrive at pace as 10 gets it, not before.** **10: read the defenders' shoulders, pick the runner who's free.** **12, 13 and 15 out the back — every line live, every rep.** Hands up, ball in front of the receiver.
 
-**Setup:** the backs scrum mark on the 22, right 15m line. A spare back at 9 with the balls. Attack lined up off the scrum, playing towards the left touchline. Defence starts 10m back. Touch.
+**Setup:** the backs scrum mark on the 22, right 15m line. A back at 9 with the balls. Attack lined up off the scrum, playing towards the left touchline. **Three coaches with ruck shields**, 10m back, opposite 10, 12 and 13. Touch.
 
 **Description:**
 
-1. 9 clears it to 10.
-2. **12 and 13 run hard lines, 15 runs out the back.** Wingers hold their width.
-3. **10 picks: 12, 13, or behind them to 15** — whoever the defence leaves.
-4. **Steve sets the defenders' shoulders before each rep**, quietly, so 10 gets a different picture.
-5. On a touch, the rep ends. Reset at the mark, next ball straight away.
-6. Swap attack and defence every four or five reps.
+1. **Walk-through — two minutes, no more.** 9 to 10, 12 and 13 on hard lines, 15 out the back. Once each way, then go.
+2. **Shield defence (~6 min).** The shield coaches **show a clear body position** before each feed — square, on the inside shoulder, or on the outside shoulder. 10 reads it and picks 12, 13 or 15.
+3. **Units alternate:** one goes as the other walks back. **Next ball as soon as the shields are set.**
+4. **Live defence (~7 min).** Four backs from the resting unit replace the shields. They pick their own shoulders. Swap every four reps.
+5. On a touch, the rep ends. Reset at the mark.
 
 **Progressions:**
-- Defence goes live on **Bang** — no set picture.
+- **Live defence up on Bang** — no set picture.
+- Shields disguise it — square until the ball reaches 10, then turn.
 - Defence of five.
-- Second phase — on a touch, present, 9 to it, go again.
 
 **Adaptations:**
 - Runners arriving early: start them deeper.
-- 10 always giving it to the same man: Steve sets the defence to take him away.
-- Attack scoring every rep: one more defender.
+- 10 missing the picture: shields exaggerate it, slow the feed.
+- 10 always giving it to the same man: the shields take him away.
+- Attack scoring every rep against the live defence: one more defender.
+- Only one spare coach: two shields, opposite 12 and 13.
 
 ### Main game — scrum restarts
 

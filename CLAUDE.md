@@ -121,6 +121,7 @@ The landing page at the root of the domain lists the teams, and each team's own 
    - **The page shows real clock times**, not `+7`. Set **`start`** in the plan's frontmatter to the time `+0` means (`"18:45"`). The markdown stays relative, so moving a session is one field, not a rewritten table. Without `start` the page falls back to showing `+7`.
    - **Rows sharing a start time are drawn side by side** as parallel blocks. That is how the page shows the squad splitting; nothing else marks it.
    - An italic parenthetical after the time — `+7, 13 min *(parallel pull-out)*` — becomes a tag on the block.
+   - **An empty third cell makes a title-only block** — no Groups, Setup, Call, Next or Details button. Used for the warm-ups, which are the same every session; their Activities entries still render below.
    - Only the **first** table in this section is read as the run sheet, so a coach allocation or any other table can follow it.
 4. **Activities** — a `### ` entry per activity. Each becomes a collapsed accordion **and** feeds its block on the timeline, so write them for a coach who is about to run the thing:
 

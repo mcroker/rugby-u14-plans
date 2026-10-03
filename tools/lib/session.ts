@@ -297,7 +297,9 @@ function timeline(
     );
     out.push(`  <div class="seg-tracks" style="--n:${group.length};--mins:${mins}">`);
     for (const g of group) {
-      const act = matchActivity(g.title, acts);
+      // An empty Focus cell asks for a title-only block: no run info, no Details.
+      const titleOnly = !g.focus;
+      const act = titleOnly ? null : matchActivity(g.title, acts);
       const tag = g.tag ? `<span class="track-tag">${inline(g.tag, ctx)}</span>` : "";
       const dur = g.mins !== mins ? `<span class="track-tag">${g.mins} min</span>` : "";
       // What you need to run it, not what it is: who is in it, how it is set
@@ -311,7 +313,7 @@ function timeline(
       // the next thing to reach for, not the whole list; the list is in Details.
       if (act?.progressions)
         run.push(`<div class="track-run"><b>Next</b> ${inline(firstProgression(act.progressions), ctx)}</div>`);
-      if (!run.length) run.push(`<div class="track-run">${inline(g.focus, ctx)}</div>`);
+      if (!run.length && !titleOnly) run.push(`<div class="track-run">${inline(g.focus, ctx)}</div>`);
       // The detail lives further down the same page.
       const details = act
         ? `<button class="track-details" type="button" data-target="${act.id}">Details</button>`

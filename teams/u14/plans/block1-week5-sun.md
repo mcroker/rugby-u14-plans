@@ -39,9 +39,9 @@ The half runs from the try line to halfway. Working out from the try line:
 
 | Start + duration | Activity | Focus |
 |---|---|---|
-| +0, 5 min | Player-led warm-up | The standard four-phase warm-up in lines off the try line, finishing on the pads (see `warmup.md`) |
-| +5, 8 min | Essential skills — passing (Crazy Passing) | Pass in front, hands up. Receivers on the move. Football in for the last three minutes |
-| +13, 2 min | **Contact warm-up** | Whole squad, straight before the tackling |
+| +0, 5 min | Player-led warm-up | |
+| +5, 8 min | Essential skills — passing (Crazy Passing) | **Focus: pass in front, hands up.** Receivers jog onto it. Football in for the last three minutes |
+| +13, 2 min | **Contact warm-up** | |
 | +15, 10 min | Four Corners — 2 v 2, then 3 v 3 | One team, two boxes. 2 v 2 for three minutes, then 3 v 3 from 3m back. Ball away on two |
 | +15, 10 min | Continuous Attack — overload | **Defence**: set, outside shoulder, **Bang**, sprint back facing. The other team, attack two up |
 | +25, 2 min | Water | The teams swap |
@@ -58,31 +58,6 @@ The half runs from the try line to halfway. Working out from the try line:
 *U12F are on this half until 10:30. If we start late, take it out of Four Corners and Continuous Attack equally. Not out of the scrum groups.*
 
 ## Activities
-
-### Essential skills — passing (Crazy Passing)
-
-**Groups:** two sets — three lines in each.
-
-**Coaching Points:** **pass in front of him, not at him.** **Hands up before the ball comes** — a target, fingers spread. Call for it.
-
-**Setup:** three cones in a line per group, 5m apart, two groups side by side between the try line and the 22. Split it however you like.
-
-**Description:**
-
-1. Ball zig-zags down the lines, each player following their pass to the back of the line they passed to.
-2. **Receivers jog onto it** — nobody catches standing still.
-3. Second ball in once the pattern is clean.
-4. **Last three minutes: a football in place of one ball.**
-
-**Progressions:**
-- Widen the spacing.
-- Football in place of both balls.
-- Pass off the weaker hand only.
-
-**Adaptations:**
-- Pattern breaking down: take the second ball out and rebuild.
-- Passes going at the chest: receiver stands still, passer aims a metre ahead of him.
-- Casual hands in two or three: a spare coach takes them off the side, in pairs, while the drill runs.
 
 ### Contact warm-up (whole squad)
 

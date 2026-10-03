@@ -5,7 +5,6 @@ h1: Week 5 — Sunday
 sub: The 2 v 2 ruck, Springbok Touch with eyes up, and attack off the scrum — the feed, the base, Hammer, and 10 picking the runner.
 sub2: Sun 4 Oct 2026, 10.45am–12.30pm
 crumb: Week 5 (Sun)
-draft: true
 card: "Run-sheet for Week 5 Sunday: Four Corners opposite Continuous Attack, Springbok Touch with Coach's Bag, then front row, back row and backs on attack off the scrum, and a scrum-restart game."
 ---
 # Block 1, Week 5 — Sunday session

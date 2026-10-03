@@ -15,7 +15,7 @@ card: "Run-sheet for Week 5 Sunday: Four Corners opposite Continuous Attack, Spr
 |---|---|
 | **Date/Time** | **Sun 4 Oct 2026, 10:45am – 12:30pm.** 90 min on the pitch. |
 | **Location** | Pitch 4, near-end, St Marks. Free from 10:30. |
-| **Coaches** | **Steve, Martin, Andy, Bev, Tiggy, Jeff and Jess** — seven out. **Tom from 11:15.** |
+| **Coaches** | **Steve, Martin, Andy, Bev, Tiggy and Jeff** — six out. **Tom from 11:15.** |
 | **Attendance** | 31 attending, 7 unanswered, 6 declined. *(Actual — fill in on the day.)* |
 | **Session objective** | **The 2 v 2 ruck — ball away on two.** **Defence — set, outside shoulder, up on Bang, first receiver.** **Eyes up — CTC.** **Attack off the scrum:** hooker taps, 9 feeds; back row controls it at the base; **Hammer**; **10 reads the shoulders and picks the runner — 12, 13, or 15 out the back.** |
 | **Resources required** | Balls. **Two or three footballs.** **Bibs or headbands for one team.** Cones. **Six ruck shields.** **A bag of items per coach for Coach's Bag** — the club's score-card numbers. |

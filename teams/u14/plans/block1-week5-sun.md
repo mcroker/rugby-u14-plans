@@ -53,18 +53,8 @@ The half runs from the try line to halfway. Working out from the try line:
 | +49, 15 min *(front row + 9s)* | Scrum — front row and 9s | Jeff. Hooker taps, 9 feeds on the tap, hooker strikes |
 | +49, 15 min *(locks + back row)* | Scrum — back row and Hammer | Tiggy. 8 controls it at the base, flankers bound then break. **Hammer** |
 | +49, 15 min *(backs)* | Backs — attack off the scrum | Bev and Steve. Timing of the runs. 10 reads the shoulders, picks 12, 13 or 15 out the back |
-| +64, 4 min | Scrum — join it up | One scrum per team, unopposed. 9 calls it |
-| +68, 17 min | Main game — scrum restarts | Every restart a scrum to the attack. Pick-and-go on for the last seven minutes |
+| +64, 21 min | Main game — scrum restarts | First scrum each way walked through. Every restart a scrum to the attack. Pick-and-go on for the last seven minutes |
 | +85, 5 min | Close | Two things from today |
-
-**Coach allocation:**
-
-- **+5:** one on each passing set, one spot-coaching in pairs off the side.
-- **+15 and +27:** one per box, one feeding the Continuous Attack game and coaching its defence. **The coordinator stays free** — spot-coaching, and watching the clock for the swap.
-- **+37:** one referees. **Four around the pitch with Coach's Bag**, spread out. Tom in as he arrives.
-- **+49:** **Jeff** — front row and 9s. **Tiggy** — locks and back row. **Bev and Steve** — backs. Andy, Martin and Tom — one coordinating, the others where they are needed.
-- **+68:** one referees the game, **one stands back and watches the defensive line set**, one on the touchline with the balls, the coordinator free.
-- **Whoever is coordinating does not referee.**
 
 *U12F are on this half until 10:30. If we start late, take it out of Four Corners and Continuous Attack equally. Not out of the scrum groups.*
 
@@ -288,39 +278,22 @@ Rules unchanged: pummelling is an arm battle — no lifting, no takedowns, no tw
 - 10 always giving it to the same man: Steve sets the defence to take him away.
 - Attack scoring every rep: one more defender.
 
-### Scrum — join it up
-
-**Groups:** the two teams in turn — two or three unopposed run-throughs each.
-
-**Coaching Points:** **backs set before the ball leaves the base.** 9 calls it before the feed.
-
-**Setup:** one scrum per team, unopposed, on the 22. Both packs and both backlines.
-
-**Description:** at pace, no walking it.
-
-1. Scrum set — crouch, bind, set. Hooker taps, 9 feeds.
-2. 8 controls it at the base.
-3. **9 calls it:** to the backs — **10 picks the runner** — or **Hammer**.
-4. One phase, then stop. Each team runs both.
-
-**Progressions:**
-- Straight into the game.
-
 ### Main game — scrum restarts
 
 **Groups:** the two teams, full half, 15 a side if the numbers allow.
 
-**Coaching Points:** **defence set before the feed** — numbered, outside shoulder, feet right. **Up on Bang.** **Every scrum to us: hooker taps, 9 calls it — backs or Hammer.**
+**Coaching Points:** **backs set before the ball leaves the base.** **Defence set before the feed** — numbered, outside shoulder, feet right. **Up on Bang.** **Every scrum to us: hooker taps, 9 calls it — backs or Hammer.**
 
 **Setup:** the full half. **Springbok Presentation Touch** — on a touch the carrier goes to ground and presents long; first receiver caught holding the ball is a turnover. Scrums **bound and set, no push**, ball to the attack.
 
 **Description:**
 
-1. **Every restart is a scrum to the attack** — after a try, a turnover or the ball going dead. Into touch: scrum on the 15m.
-2. Hooker taps, 9 feeds, **8 controls it at the base**. 9 calls it: **backs** or **Hammer**.
-3. Off the backs: **10 picks the runner** — 12, 13, or 15 out the back.
-4. Defence sets before the feed. The coach standing back calls what wasn't set, to one or two players, at the next scrum.
-5. **Last seven minutes:** pick-and-go on at the ruck. **Defence puts a guard either side.**
+1. **First scrum each way: walked through, unopposed** — 9 calls backs one way, Hammer the other. Then live.
+2. **Every restart is a scrum to the attack** — after a try, a turnover or the ball going dead. Into touch: scrum on the 15m.
+3. Hooker taps, 9 feeds, **8 controls it at the base**. 9 calls it: **backs** or **Hammer**.
+4. Off the backs: **10 picks the runner** — 12, 13, or 15 out the back.
+5. Defence sets before the feed. The coach standing back calls what wasn't set, to one or two players, at the next scrum.
+6. **Last seven minutes:** pick-and-go on at the ruck. **Defence puts a guard either side.**
 
 **Progressions:**
 - **Pick-and-go on** at the ruck — defence guards either side, and commits a second body only when it's coming round the same side.

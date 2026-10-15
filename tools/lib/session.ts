@@ -230,6 +230,8 @@ interface Slot {
   tag: string;
   title: string;
   focus: string;
+  /** Tagged *(brief)*: the Focus cell and a Details button, nothing lifted from the entry. */
+  brief: boolean;
 }
 
 /** "18:45" + 22 -> "19:07". */
@@ -265,12 +267,14 @@ function timeline(
       unparsed += 1;
       continue;
     }
+    const brief = (m[3] ?? "").trim().toLowerCase() === "brief";
     slots.push({
       start: Number(m[1]),
       mins: Number(m[2]),
-      tag: m[3] ?? "",
+      tag: brief ? "" : (m[3] ?? ""),
       title: c[1]!,
       focus: c[2]!,
+      brief,
     });
   }
 
@@ -297,15 +301,26 @@ function timeline(
     );
     out.push(`  <div class="seg-tracks" style="--n:${group.length};--mins:${mins}">`);
     for (const g of group) {
-      // An empty Focus cell asks for a title-only block: no run info, no Details.
-      const titleOnly = !g.focus;
-      const act = titleOnly ? null : matchActivity(g.title, acts);
+      const act = matchActivity(g.title, acts);
       const tag = g.tag ? `<span class="track-tag">${inline(g.tag, ctx)}</span>` : "";
       const dur = g.mins !== mins ? `<span class="track-tag">${g.mins} min</span>` : "";
       // What you need to run it, not what it is: who is in it, how it is set
       // up, then the cues. Groups leads because splitting the squad is the
       // first thing that has to happen and the slowest to fix if it is wrong.
       const run: string[] = [];
+      if (g.brief) {
+        // A routine activity: the title, Details on the same line, and only what
+        // the Focus cell says is different today.
+        const details = act
+          ? `<button class="track-details" type="button" data-target="${act.id}">Details</button>`
+          : "";
+        const focus = g.focus ? `<div class="track-run">${inline(g.focus, ctx)}</div>` : "";
+        out.push(
+          `    <div class="track"><div class="track-head"><div class="track-title">${inline(g.title, ctx)}</div>` +
+            `${details}</div>${tag}${dur}${focus}</div>`,
+        );
+        continue;
+      }
       if (act?.groups) run.push(`<div class="track-run"><b>Groups</b> ${inline(act.groups, ctx)}</div>`);
       if (act?.setup) run.push(`<div class="track-run"><b>Set up</b> ${inline(runInfo(act.setup), ctx)}</div>`);
       if (act?.points) run.push(`<div class="track-run"><b>Call</b> ${inline(runInfo(act.points), ctx)}</div>`);
@@ -313,7 +328,7 @@ function timeline(
       // the next thing to reach for, not the whole list; the list is in Details.
       if (act?.progressions)
         run.push(`<div class="track-run"><b>Next</b> ${inline(firstProgression(act.progressions), ctx)}</div>`);
-      if (!run.length && !titleOnly) run.push(`<div class="track-run">${inline(g.focus, ctx)}</div>`);
+      if (!run.length) run.push(`<div class="track-run">${inline(g.focus, ctx)}</div>`);
       // The detail lives further down the same page.
       const details = act
         ? `<button class="track-details" type="button" data-target="${act.id}">Details</button>`

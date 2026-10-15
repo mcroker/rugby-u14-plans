@@ -305,6 +305,7 @@ details.activity:target { border-color: var(--blue); box-shadow: 0 0 0 2px var(-
   border: 1px solid var(--rule); border-radius: 4px; padding: 4px 10px;
 }
 .track-details:hover { border-color: var(--blue); background: var(--blue-tint); }
+.track-head .track-details { margin-top: 0; flex: 0 0 auto; }
 
 dialog.detail {
   width: min(640px, calc(100vw - 32px)); max-height: 82vh; padding: 0;

@@ -36,14 +36,14 @@ card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous 
 | +0, 5 min *(brief)* | Player-led warm-up | |
 | +5, 10 min *(brief)* | Essential skills — passing (Crazy Passing) | **Hands up, catch early.** Last four minutes at pod distance, 2m |
 | +5, 10 min *(parallel pull-out)* | Hookers — lineout throw, 1 on 1 | Jeff and Tiggy. Same routine every throw |
-| +15, 10 min | Continuous Attack — rolling ball | Next ball the moment the rep ends. **Defence works back facing and sets.** Attack: ball away in two |
+| +15, 12 min | Continuous Attack — rolling ball | Next ball the moment the rep ends. **Defence works back facing and sets.** Attack: ball away in two |
 | +15, 10 min *(parallel pull-out)* | 9s — lineout ball on the run, 1 on 1 | Nick. Go as it leaves the jumper's hands. Pass on the first step |
-| +25, 2 min | Water | Halve each team |
-| +27, 16 min | Gain Line Touch — with Coach's Bag | Two games. **Over: attack point. Stopped: defence point.** Point only counts if the named player calls the last number. Sets of six |
-| +43, 2 min | Water | Back into the two teams |
-| +45, 12 min | Main game — lineout restarts | Full width. **5-man Rhino** off every restart, then keep it alive. Two-second ruck |
-| +57, 2 min | Water | Swap ends |
-| +59, 12 min | Main game — lineout restarts | The same game |
+| +27, 2 min | Water | Halve each team |
+| +29, 18 min | Gain Line Touch — with Coach's Bag | Two games. **Over: attack point. Stopped: defence point.** Point only counts if the named player calls the last number. Sets of six |
+| +47, 2 min | Water | Back into the two teams |
+| +49, 10 min | Main game — lineout restarts | Full width. **5-man Rhino** off every restart, then keep it alive. Two-second ruck |
+| +59, 2 min | Water | Swap ends |
+| +61, 10 min | Main game — lineout restarts | The same game |
 | +71, 4 min | Close | One thing from tonight |
 
 **Coach allocation:**
@@ -51,8 +51,8 @@ card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous 
 - **Martin coordinates** — no activity, no refereeing.
 - **+5:** **Jeff and Tiggy: hookers, one each.** Tom and Nick: one on each passing set. Martin spot-coaches in pairs off the side.
 - **+15:** **Nick: the 9s, lineout ball on the run.** Jeff and Tiggy: one per pitch, feeding and coaching the defence. Tom across both pitches, watching the defence work back.
-- **+27:** Jeff and Tiggy referee a game each — level with the ruck, calling Over or Stopped, counting the ruck, and naming the player for each point. **Tom and Nick on a touchline each — numbers up at every breakdown, and the score.**
-- **+45 and +59:** Tom referees and counts the ruck. **Jeff stands back and watches the defence working back.** Tiggy and Nick on a touchline each, coaching into the restarts.
+- **+29:** Jeff and Tiggy referee a game each — level with the ruck, calling Over or Stopped, counting the ruck, and naming the player for each point. **Tom and Nick on a touchline each — numbers up at every breakdown, and the score.**
+- **+49 and +61:** Tom referees and counts the ruck. **Jeff stands back and watches the defence working back.** Tiggy and Nick on a touchline each, coaching into the restarts.
 
 *If we start late, take it out of Continuous Attack. Not out of the games.*
 

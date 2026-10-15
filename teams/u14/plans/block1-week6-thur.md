@@ -2,7 +2,7 @@
 date: 2026-10-15
 start: "18:45"
 h1: Week 6 — Thursday
-sub: Passing, then games that run to several phases — ruck speed, working back, lineout restarts. One new game.
+sub: Defensive line-speed, and consolidating the lineout. One new game.
 sub2: Thu 15 Oct 2026, 6.45–8pm
 crumb: Week 6 (Thu)
 card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous Attack with a rolling ball, small-sided Gain Line Touch with Coach's Bag, and a lineout restart game. All touch."
@@ -17,7 +17,7 @@ card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous 
 | **Location** | The Training Area, St Marks. Floodlit. |
 | **Coaches** | Martin (coordinating), Jeff, Tiggy, Tom, Nick. |
 | **Attendance** | 28 on Spond. *Actual on the night.* |
-| **Session objective** | **Keep it going past the first phase.** **Hands up, catch it early — in the pods too.** **Ball away in two seconds.** **Defence: work back facing, set, up on Bang.** Touch throughout. |
+| **Session objective** | **Defensive line-speed: work back facing, set, up together on Bang — every phase.** **Consolidate the lineout: the throw, 9 onto it on the run, 5-man Rhino.** Touch throughout. |
 | **Resources required** | Balls. **Bibs or headbands for one team.** Cones. **The club's score-card numbers — a set per small pitch.** **Clickers — two per small pitch, one per team.** |
 
 ![The Training Area, below Pitch 4.](pitch:training)

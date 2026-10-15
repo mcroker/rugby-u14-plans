@@ -2,10 +2,10 @@
 date: 2026-10-15
 start: "18:45"
 h1: Week 6 — Thursday
-sub: Passing, then games that run to several phases — ruck speed, working back, set-piece restarts. One new game.
+sub: Passing, then games that run to several phases — ruck speed, working back, lineout restarts. One new game.
 sub2: Thu 15 Oct 2026, 6.45–8pm
 crumb: Week 6 (Thu)
-card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous Attack with a rolling ball, small-sided Gain Line Touch with Coach's Bag, and the set-piece restart game. All touch."
+card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous Attack with a rolling ball, small-sided Gain Line Touch with Coach's Bag, and a lineout restart game. All touch."
 ---
 # Block 1, Week 6 — Thursday session
 
@@ -41,9 +41,9 @@ card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous 
 | +25, 2 min | Water | Halve each team |
 | +27, 16 min | Gain Line Touch — with Coach's Bag | Two games. **Over: attack point. Stopped: defence point.** Point only counts if the named player calls the last number. Sets of six |
 | +43, 2 min | Water | Back into the two teams |
-| +45, 12 min | Main game — set-piece restarts | Full width. **DSP** and **5-man Rhino**, then keep it alive. Two-second ruck |
+| +45, 12 min | Main game — lineout restarts | Full width. **5-man Rhino** off every restart, then keep it alive. Two-second ruck |
 | +57, 2 min | Water | Swap ends |
-| +59, 12 min | Main game — set-piece restarts | The same game |
+| +59, 12 min | Main game — lineout restarts | The same game |
 | +71, 4 min | Close | One thing from tonight |
 
 **Coach allocation:**
@@ -187,37 +187,36 @@ card: "Run-sheet for Week 6 Thursday: Crazy Passing at pod distance, Continuous 
 - Nobody remembering the last number: name the current one instead.
 - Nobody seeing the numbers: hold them up longer, stand closer.
 
-### Main game — set-piece restarts
+### Main game — lineout restarts
 
 **Groups:** 14 v 14, full width.
 
-**Coaching Points:** **keep it alive past the set piece** — ball away in two, every ruck. **Defence: work back facing, set before the ball, up on Bang.** **Scrum to us: DSP. Lineout to us: 5-man Rhino.**
+**Coaching Points:** **keep it alive past the lineout** — ball away in two, every ruck. **Defence: work back facing, set before the ball, up on Bang.** **Lineout to us: 5-man Rhino.** 9 runs onto the ball off the top.
 
-**Setup:** the whole pitch, **Springbok Presentation Touch** — on a touch the carrier goes to ground and presents long; first receiver caught holding the ball is a turnover. **Ruck over two seconds is a turnover.** Scrums bound and set, **no push**, ball to the attack. Lineouts uncontested, five in the line.
+**Setup:** the whole pitch, **Springbok Presentation Touch** — on a touch the carrier goes to ground and presents long; first receiver caught holding the ball is a turnover. **Ruck over two seconds is a turnover.** Lineouts uncontested, five in the line.
 
 **Description:**
 
-1. **Every restart is a set piece to the attack** — after a try, a turnover or the ball going dead. **Alternate: scrum, then lineout.**
-2. Scrum: hooker taps, 9 feeds, **DSP**.
-3. Lineout: **5-man Rhino** — ruck 1, ruck 2, backs wide.
-4. **Defending the lineout:** four in our line, the spare stands deep opposite 10 and closes him on the pass.
-5. Defence sets before the feed or the throw. The coach standing back calls who didn't work back, to one or two players, at the next restart.
-6. Play to a score, a turnover or dead ball. Next set piece.
+1. **Every restart is a lineout to the attack** — after a try, a turnover or the ball going dead. Alternate the touchline.
+2. Lineout: **5-man Rhino** — ruck 1, ruck 2, backs wide.
+3. **Defending the lineout:** four in our line, the spare stands deep opposite 10 and closes him on the pass.
+4. Defence sets before the throw. The coach standing back calls who didn't work back, to one or two players, at the next restart.
+5. Play to a score, a turnover or dead ball. Next lineout.
 
 **Progressions:**
 - **A try after three or more rucks counts double.**
 - Stopped short on every phase: a point to the defence, as in Gain Line Touch.
 
 **Adaptations:**
-- Set pieces slowing it down: tap restarts for five minutes.
-- Defence not setting: referee holds the feed until it is, once.
+- Lineouts slowing it down: tap restarts for five minutes.
+- Defence not setting: referee holds the throw until it is, once.
 - Attack getting out too easily: bring the touchlines in.
 - Numbers under 22: narrow the pitch, three in the lineout.
 
 ## Notes
 
 - **Pick the two teams at the warm-up and bib one of them.** Each with a sensible number of forwards and backs — **a front row each** if we have them. Continuous Attack, the small-sided games and the main game all use that split.
-- **No contact tonight.** Everything is touch; scrums are not pushed.
+- **No contact tonight.** Everything is touch.
 - **Blue played at Vigo on Sunday.** Watch the load; drop the overload or shorten reps rather than add rest.
 - **One new game — Gain Line Touch.** Rules in 30 seconds; everything else is familiar. If something isn't working, simplify it rather than add to it.
 - **Sun 18 Oct:** Blue away at Tonbridge Juddians. White train.

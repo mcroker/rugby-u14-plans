@@ -145,6 +145,18 @@ Quick reference for picking a game to match the session's contact-level target (
 | Coaching Points | Rewards fast line-speed and pressure on the ball straight from source, rather than only rewarding tackles further out. |
 | Progressions | Combine with the Blitz Defence (4v3 shape drill) below once the group has the idea. |
 
+### Gain Line Touch
+
+**Focus:** Defence (working back, line-speed) and attack (ruck speed, carrying over the gain line)
+
+| | |
+|---|---|
+| Setup | Small pitch, 7 v 7, touch. The referee stands level with the ruck. |
+| Description | **1.** On a touch the carrier goes to ground and presents; support picks and plays.<br>**2.** The **gain line** runs across the pitch through the last ruck (first phase: through the coach's feed).<br>**3.** Every touch, the referee calls **"Over"** — touched past the gain line, a point to the attack — or **"Stopped"** — touched short of it, a point to the defence.<br>**4.** Defence must be onside before it comes up; offside is an automatic Over.<br>**5.** Sets of six touches, then the ball changes over. A try is worth three and ends the set. A ruck over two seconds, a dropped ball or a forward pass ends the set. |
+| Coaching Points | **Defence:** work back, get onside, set, up together on **Bang**. **Attack:** ball away in two, carry hard and straight. |
+| Progressions | - **With Coach's Bag:** a coach on the touchline holds up a number at every breakdown. A point only counts if the player the referee names, on the side that won it, calls the number from the previous breakdown. (Too hard: the current number.)<br>- A try after three rucks counts double.<br>- Stopped twice in a row ends the set. |
+| Adaptations | - Calls being argued: drop a cone at each ruck.<br>- Attack only going narrow: a try outside the last cone scores five.<br>- Attack over every time: a touch on the gain line counts as Stopped.<br>- Flagging: sets of four. |
+
 ### Coach's Bag (CTC scanning)
 
 **Focus:** Scanning (**CTC** — see `playbook.md`) and awareness, in or out of possession

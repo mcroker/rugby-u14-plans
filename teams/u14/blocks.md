@@ -1,10 +1,10 @@
 ---
 page: block1-overview.html
 h1: Block 1 — Session Plans
-sub: Weeks 1–6 — defence, plus introducing lineout and scrum.
-sub2: Sun 6 Sep – Thu 15 Oct 2026
+sub: Weeks 1–7 — defence, plus introducing lineout and scrum.
+sub2: Sun 6 Sep – Thu 22 Oct 2026
 crumb: Block 1 overview
-group: Block 1 · Weeks 1–6
+group: Block 1 · Weeks 1–7
 order: 0
 withPlans: true
 cardTitle: Block 1 — Overview
@@ -15,7 +15,7 @@ card: Theme, the full week-by-week session list, and outline plans for all six w
 
 Session-by-session plans, organised by 6-week block (see `coaching.md` for the block-based coaching model and game/skill-zone shapes, `age-group.md` for training days/facilities, squad structure, forwards/backs splits and contested-scrum and match-day rules, and `CLAUDE.md` for general session-planning mechanics — all of which apply across all blocks). Calls and shapes used in drills should match `playbook.md`; any law-specific coaching points should match `laws.md`; actual dates are tracked in `calendar.md`.
 
-## Block 1 (Weeks 1–6)
+## Block 1 (Weeks 1–7)
 
 ### Overview & objectives
 
@@ -27,7 +27,7 @@ Session-by-session plans, organised by 6-week block (see `coaching.md` for the b
 
 (Full detail on all calls and moves above is in `playbook.md`.) Per the **skills pyramid** (see `coaching.md`), Block 1 lives mostly at the individual- and small-group-skill layers, building toward team moves (5-man Rhino, DSP) by Weeks 5–6.
 
-**Block 1 runs Sunday 6 September – Thursday 15 October.** Weeks are grouped **Sunday, then the following Thursday** — e.g. Week 1 is Sun 6 Sep + Thu 10 Sep. *This extends the block one session beyond the previous 11 Oct end date for this doc — flagging for confirmation.*
+**Block 1 runs Sunday 6 September – Thursday 22 October.** Weeks are grouped **Sunday, then the following Thursday** — e.g. Week 1 is Sun 6 Sep + Thu 10 Sep. **Week 7 was added for defence**, pushing Block 2 back a week.
 
 Every training session carries the **defence** thread plus a forwards-skill focus (lineout or scrum, alternating by week rather than day). Where the forwards are tied up in a set-piece skill zone, the backs get their own parallel focus, kept in line with the block's theme rather than a separate attacking agenda.
 
@@ -82,14 +82,16 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 | 4 | Sun 27 Sep | Match — Kent League R1 | — *(no plan; match day)* | — | — | — | — | — |
 | 4 | Thu 1 Oct | Training — work-ons from Round 1 | `block1-week4-thur.md` | Passing — in front of the receiver, hands up; Four Corners (2 v 2 tackle and ruck) | **Set before the ball** — numbered, outside shoulder, feet; realign at a sprint; pick-and-go ruck defence | Front rows on the machine — binding, feet on the set; back row — 8 controlling at the base, flanker breaking, **8 pick** shown | Continuous Attack overload — realign at a sprint, new ball every rep; **DSP from every attacking scrum** | 9 + hooker feed |
 | 5 | Sun 4 Oct | Training | `block1-week5-sun.md` | Tackle — ruck, 2 v 2 then 3 v 3 | Continuous Attack; Springbok Touch with Coach's Bag (CTC) | **Scrum, in three groups**: front row + 9s on the tap and feed; locks + back row on control at the base and **Hammer**. *(Catch and drive moves to Thu 8 Oct.)* | **Attack off the scrum** — timing of the runs, 10 reading the shoulders: 12, 13 or 15 out the back | Hooker + 9 feed |
-| 5 | Thu 8 Oct | Training | **Needed** | Passing — introduce pull-back pass (Hippo) | All four pillars | Lineout — 8-man catch and drive | Receiving off the fold, playing width | — |
+| 5 | Thu 8 Oct | Training — **simple, nothing new** | `block1-week5-thur.md` | Passing (Crazy Passing) | Continuous Attack; Springbok Touch with Coach's Bag | Inside the restart game — DSP and 5-man Rhino, uncontested | — | — |
 | 6 | Sun 11 Oct | Match — Kent League R2 *(Blue, away)* | — *(no plan; match day)* | — | — | — | — | — |
-| 6 | Sun 11 Oct | Training — **White only**, half squad | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
-| 6 | Thu 15 Oct | Training — block wrap-up | **Needed** | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
+| 6 | Sun 11 Oct | Training — **White only**, half squad *(with Crowborough)* | — *(ran without one)* | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
+| 6 | Thu 15 Oct | Training | `block1-week6-thur.md` | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
+| 7 | Sun 18 Oct | Training — **White only**, half squad *(Blue away at Tonbridge Juddians, friendly)* | **Needed** | Tackle — 1 v 1 | **Defence** — working back, reset, multi-phase | — | — | — |
+| 7 | Thu 22 Oct | Training — **defence**, block wrap-up | **Needed** | Passing | **Defence** — line-speed, working back, multi-phase | — | — | — |
 
-**Run-sheets still to write.** This block has **ten training sessions**. Seven have a detailed run-sheet in `plans/`; the other **three** do not, and are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **twelve training sessions**. Nine have a detailed run-sheet in `plans/`, and Sun 11 Oct ran without one; the other **two** are marked **Needed** in the table above. In date order:
 
-**Thu 8 Oct** · **Sun 11 Oct** *(White only, half squad)* · **Thu 15 Oct** *(block wrap-up)*
+**Sun 18 Oct** *(White only, half squad)* · **Thu 22 Oct** *(defence, block wrap-up)*
 
 Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
 
@@ -141,13 +143,118 @@ Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (se
 
 **Backs-skill focus:** receiving cleanly off the lineout fold and playing with width. *(Two specific approaches to this were discussed and agreed — see the open item above; this is a placeholder pending that detail.)*
 
-#### Week 6 — Sun 11 Oct (Blue: Kent League R2 away; White: training) & Thu 15 Oct (block wrap-up)
+**Thursday 8 Oct was cut back to nothing new.** The squad were very tired after Week 4, and the week after Sunday's session was expected to be worse — so Thursday is familiar games only (Crazy Passing, Continuous Attack, Springbok Touch with Coach's Bag, a set-piece restart game), touch throughout. **Moved out, and still to place:** the pull-back pass (**Hippo**), the **8-man catch and drive**, and the backs receiving off the fold.
 
-**Sunday — a match day for Blue only, away at Vigo.** No session plan for them. The last fixture of the block — a live look at pressure defence, lineout, and scrum together, which should inform Block 2's planning (see `Future blocks` below — Block 2's intent is continuity).
+#### Week 6 — Sun 11 Oct (Blue: Kent League R2 away; White: training) & Thu 15 Oct
 
-**Sunday — White train, half squad, fewer coaches.** With Blue travelling to Vigo, White are the only team on the ground. Plan it as its own session rather than a shrunken whole-squad one: the block's material combined — passing, defence, set-piece, backs — and, with the block wrap-up four days later, a place to consolidate rather than introduce. White are the developmental side, so the extra room per player is the point of the session, not a constraint on it.
+**Sunday — a match day for Blue only, away at Vigo.** No session plan for them. The last fixture of the block — a live look at pressure defence, lineout, and scrum together, which should inform Block 2's planning (see Block 2 below — its theme is continuity).
 
-**Thursday — block wrap-up.** Passing as the core skill, with defence, set-piece, and backs all touched lightly in combination rather than introducing anything new — closing out the block before Block 2 begins.
+**Sunday — White train, half squad, fewer coaches.** With Blue travelling to Vigo, White are the only team on the ground. Plan it as its own session rather than a shrunken whole-squad one: the block's material combined — passing, defence, set-piece, backs — and a place to consolidate rather than introduce. White are the developmental side, so the extra room per player is the point of the session, not a constraint on it.
+
+**Carried forward from Sun 11 Oct (White, with Crowborough)** — the coaches' feedback. No run-sheet was written for the day.
+
+- **Good on first phase, all at sea after several phases** — in attack and in defence. This is Block 2's continuity theme.
+- **Passive at the ruck in the game**, after a good rucking drill. The drill isn't transferring; coach ruck speed inside the game.
+- **Hands on the pods** — a fair few knock-ons. Matches the handling-error work-on from Round 1.
+- **Fitness, and the desire to work back in defence.**
+- **Lineout defence worked:** matched with 4, and the spare went deep opposite 10 and closed him down on the pass.
+- **DSP off an attacking scrum — scored.**
+- Crowborough enjoyed it and want to do it again.
+
+**Thursday.** Passing as the core skill, with defence, set-piece, and backs all touched lightly in combination rather than introducing anything new. Run as Week 5 Thursday's games with Sunday's feedback as the conditions: Crazy Passing closing at pod distance (knock-ons in the pods), Continuous Attack with a rolling ball (working back), a two-second ruck turnover in every game (passive at the ruck), and **Gain Line Touch** (new) in place of Springbok Touch — a point to the attack for every carry over the gain line, a point to the defence for every one stopped short, so the defence has to work back and get up on every phase (lost after several phases, desire to work back). See `block1-week6-thur.md`.
+
+#### Week 7 — Sun 18 Oct (White: training; Blue: friendly away at Tonbridge Juddians) & Thu 22 Oct (defence, block wrap-up)
+
+**Added for defence.** White on 11 Oct were lost after several phases, in defence as well as attack, and short on the desire to work back. Both sessions put the block's defence into games that run to multiple phases.
+
+**Sunday — White train, half squad.** Blue are away at Tonbridge Juddians. 1 v 1 tackle technique (White's tackle success in Round 1 was 56%), then defence over several phases: working back after a phase, the **reset** (back in the line, onside, facing), and line-speed off every ruck, not just the first.
+
+**Thursday — defence, block wrap-up.** Whole squad. Line-speed off **Bang**, outside shoulder, working back and resetting, all inside a multi-phase game. Nothing new.
+
+## Between the blocks — Sun 25 Oct (silly session)
+
+**Start of half term, the day the clocks go back — a silly session on awareness and scanning (CTC — see `playbook.md`).** Games only, no drills, nothing new. Expect lower numbers. Halloween is the following Saturday. **Not on the calendar yet** — needs a slot on the pitch allocation and Spond.
+
+Ideas to build it from:
+
+- **Coach's Bag** (see `activities.md`) on top of every game — silly or Halloween items in the bags. A try only counts if the scorer names the last item.
+- **Crazy Passing with two or three balls.**
+- **Rainbow Passing** on colour calls, sped up.
+- **A touch game with two balls in play**, or a coach shouting a number that sends that player to the other team mid-phase.
+- **Everyone Shouts** to start or finish.
+
+**Thu 29 Oct, half-term week: TBC.** A second silly session, an early start on Block 2's Week 1, or off.
+
+## Block 2 (Weeks 1–7)
+
+### Overview & objectives
+
+**Theme: continuity.** Keep the ball alive — through the hands, through contact, and off the floor in two seconds. Three threads run through every session, each building week on week:
+
+- **Attacking micro-skills** — running lines (**hard line** and **trail line**) and the ball-carrier's decision: carry, pass, or pull back.
+- **Forwards — footwork into contact.** Don't just hit the pad. Footwork before contact, then **Tip**, the ball back inside (**Fox**), or a sidestep (see `playbook.md`). Includes **knowing when to concede in the tackle** — forwards fight on their feet too long, which slows the ball and risks the rip. Going to ground at the right moment, and staying active on the ground, is what keeps the ruck to two seconds.
+- **Offloads and support play** — the support runner's depth and timing, and the offload itself, through a ladder of touch games from 2 v 1 to Fiji Touch.
+
+**What White showed on Sun 11 Oct:** solid on first phase, lost after several — in attack and defence — and passive at the ruck despite a good rucking drill. Every thread should end in a game that runs to multiple phases, with ruck speed coached inside it.
+
+Tackle technique and passing stay a standing per-session requirement (see `coaching.md`). Handling errors and 1 v 1 tackling are the two work-ons both Round 1 analyses share.
+
+**Block 2 runs Sunday 1 November – Thursday 17 December**, seven weeks to Christmas: the board's six, then Christmas fun. Weeks are grouped Sunday, then the following Thursday, as in Block 1. **The last session before Christmas is Christmas fun.**
+
+### The weeks, by thread
+
+From the coaches' planning board. Readings marked *(?)* need confirming.
+
+| Week | Attack micro-skills | Footwork into contact | Offloads & support | Position pull-outs |
+|---|---|---|---|---|
+| 1 | **Crazy Passing** → **overs / unders** (running lines) | **Pad work** — ruck-ruck *(?)*; **Rondo** — comms: **carry**, **down**, **Tip** | **2 v 1 with contact** → offload | 9s · back row |
+| 2 | → **Fiji Touch** to apply it | **Three-direction** footwork | **Pop-off Touch** *(the same as Pop-up Touch?)* | Front row — scrum, Sun 8 Nov · kickers |
+| 3 | **Kick-out 4 v 3** | **Active on the ground**; 2-? ruck *(?)* | **1m / 1s Touch** *(?)*; **3-turnover Touch** | Front row — scrum, Sun 15 Nov · 9s |
+| 4 | **Pass — the pull-back pass (Hippo)** | **Tackle** (drill on the board) | **Fiji Touch** | Back row · kickers *(pre-Round 4)* |
+| 5 | — | *(tackle drill continues?)* | **Offload Touch** — hand-off. Progresses from 1m / 1s Touch. | 9s · back row |
+| 6 | — | — | **Skill zone: catch / round-the-body offloads** → **spin** | Kickers *(pre-Round 5)* · front row — hooker throw |
+| 7 | **Christmas fun** | | | |
+
+**Position pull-outs** — individual skills, in five-minute stints out of the main activity (see `activities.md`'s delivery ideas). Each group three times in the block:
+
+- **Front row** — scrum on the machine (Sundays at the club; the Thursday 4G has no machine from November); hookers on the lineout throw otherwise.
+- **Back row** — 8 controlling at the base, the **8 pick**, flankers breaking.
+- **9s** — passing off the floor, the feed on the hooker's tap.
+- **Kickers** — kicking from hand, exit kicks. The Round 1 analysis asks for nominated kickers for defensive kicking.
+
+**Already in `activities.md`:** Crazy Passing, Fiji Touch, Pop-up Touch, Turnover Touch (the continuity version), 2 vs 1 (with offload), Offload Technique.
+**New, need an entry before they are run:** overs / unders, pad work with footwork, three-direction footwork, Kick-out 4 v 3, Rondo, 1m / 1s Touch, Offload Touch (hand-off), the Week 4 tackle drill, and the spin.
+
+### Session list
+
+| Week | Date | Session | Run-sheet |
+|---|---|---|---|
+| 1 | Sun 1 Nov | Match — friendly v Canterbury, home *(both teams)* | — *(no plan; match day)* |
+| 1 | Thu 5 Nov | Training — work-ons from Canterbury | **Needed** |
+| 2 | Sun 8 Nov | Training — **White only**, half squad *(Blue away at Old Elthamians, friendly)* | **Needed** |
+| 2 | Thu 12 Nov | Training — White pre-Round 3 | **Needed** |
+| 3 | Sun 15 Nov | Training — **Blue only**, half squad *(White home v Beccehamian Gladiators, Round 3)* | **Needed** |
+| 3 | Thu 19 Nov | Training | **Needed** |
+| 4 | Sun 22 Nov | **Not on the calendar** | **TBC** |
+| 4 | Thu 26 Nov | Training — pre-Round 4 | **Needed** |
+| 5 | Sun 29 Nov | Match — Kent League Round 4 *(Blue home v Old Elthamians Gold; White away at Sevenoaks Yellow)* | — *(no plan; match day)* |
+| 5 | Thu 3 Dec | Training — work-ons from Round 4 | **Needed** |
+| 6 | Sun 6 Dec | **Not on the calendar** | **TBC** |
+| 6 | Thu 10 Dec | Training — pre-Round 5 | **Needed** |
+| 7 | Sun 13 Dec | Match — Kent League Round 5 *(Blue away at Sevenoaks Blue; White home v Canterbury Black)* — club on Officer of the Day duty | — *(no plan; match day)* |
+| 7 | Thu 17 Dec | **Christmas fun** — last session before Christmas | **Needed** |
+
+**Three half-squad Sundays** — White on 8 Nov, Blue on 15 Nov, plus White on 18 Oct at the end of Block 1. Plan each as its own session, not a shrunken whole-squad one; fewer coaches if they travel with the playing team.
+
+**Fixtures shape the Thursdays.** The squad is only together on a Sunday at the Canterbury friendly, so Thursdays carry the whole-squad work. Three Thursdays come straight after a match (work-ons) and three straight before one (sharpen). Week 4's tackle work lands on Thu 26 Nov, the sharpen before Round 4.
+
+### Open items
+
+- **The board.** Confirm the *(?)* readings above, and what the two drawn drills are — the tackle set-up in Week 4 and the crossing-runs diagram below it (hard line / trail line?).
+- **Thu 29 Oct** — see Between the blocks above.
+- **Sun 22 Nov, Sun 6 Dec and Sun 20 Dec** — none is on the calendar. Training, or off? If Sun 20 Dec is training, it becomes the Christmas-fun session. Thu 24 Dec is assumed off.
+- **Thursday venue.** The floodlight pitch runs to roughly the end of October (TBC). From then it is a third of the TWGSB 4G, no posts, no scrum machine — Week 5's front-row scrum pull-out needs the machine, so a Thursday on the 4G can't run it.
+- **Still unplaced from Block 1:** the **8-man catch and drive**, the backs receiving off the fold, defensive clearance kicks, and live scrum (Sunday only). The pull-back pass (**Hippo**) is now Week 4.
 
 ## Saved for later blocks
 
@@ -161,21 +268,3 @@ Ideas and skills that came up while planning Block 1 but aren't part of it — k
 - **Kick-defence scenarios, zone by zone** — the pendulum and the three zones are defined in `playbook.md`, but the set-ups to train them aren't. Build one scenario per zone (exit from our 22, counter from mid-pitch, attack off the catch in their 22), each starting with a kick and run live to a conclusion. Needs a kicker feeding it, so it wants a coach or 10/15 kicking accurately to order.
 - **Back three, catching volume** — the back three need repetitions on collecting kicks (high ball, rolling ball, diagonal into the corner) before the scenarios are worth running. A standing pull-out group, not a one-off session item.
 - **Forwards folding back onto the counter** — the pack's part in kick defence (turning as the kick goes up, folding across with the pendulum, first man as the shoulder). Train it with the backs, not separately; whole-squad scenario work is the only place it shows up.
-
-## Future blocks
-
-**Block 2 (intent):** focus on continuity.
-
-- **Knowing when to concede in the tackle.** Players — forwards especially — fight on their feet for too long: slower ball, and a risk of the rip. Seen in the Week 2 Sunday diamond and games. Part of continuity — going to ground at the right moment is what keeps the ruck to two seconds.
-
-**Two extra training Sundays to plan for.** We had assumed both teams played every Kent League round, so no session was planned for those dates. The RFU fixture lists (linked from `calendar.md`) show the two teams are in different groups, which frees a **half-squad Sunday** in each case — highlighted in `calendar.md`:
-
-| Date | Who trains | Who is playing |
-|---|---|---|
-| **Sun 15 Nov** | **Blue** | White, home v Beccehamian Gladiators (Round 3) |
-
-A single-team session with roughly half the usual numbers and, if the coaches split with the travelling team, fewer coaches — so plan it as its own thing rather than a shrunken whole-squad session.
-
-**The updated fixture list moved the other one out of Block 2 and into Block 1.** White's free round is now **11 Oct**, not 13 Dec; on 13 Dec White are at home to Canterbury and both teams are out. Block 2's half-squad Sundays are therefore **two White** (18 Oct and 8 Nov, when Blue have friendlies) and **one Blue** (15 Nov). White is the developmental side, and those two — plus 11 Oct at the end of Block 1 — are sessions at a group size the full squad never allows.
-
-*(Further detail to be added as the block is planned.)*

@@ -86,12 +86,12 @@ Note: three Sundays in this block are matches, not training — the **friendly a
 | 6 | Sun 11 Oct | Match — Kent League R2 *(Blue, away)* | — *(no plan; match day)* | — | — | — | — | — |
 | 6 | Sun 11 Oct | Training — **White only**, half squad *(with Crowborough)* | — *(ran without one)* | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
 | 6 | Thu 15 Oct | Training | `block1-week6-thur.md` | Passing | Defence, combined | Set-piece, combined | Backs, combined | — |
-| 7 | Sun 18 Oct | Training — **White only**, half squad *(Blue away at Tonbridge Juddians, friendly)* | **Needed** | Tackle — 1 v 1 | **Defence** — working back, reset, multi-phase | — | — | — |
+| 7 | Sun 18 Oct | Training — **White only**, half squad *(Blue away at Tonbridge Juddians, friendly)* | `block1-week7-sun.md` | Tackle — 1 v 1 | **Defence** — working back, reset, multi-phase | — | — | — |
 | 7 | Thu 22 Oct | Training — **defence**, block wrap-up | **Needed** | Passing | **Defence** — line-speed, working back, multi-phase | — | — | — |
 
-**Run-sheets still to write.** This block has **twelve training sessions**. Nine have a detailed run-sheet in `plans/`, and Sun 11 Oct ran without one; the other **two** are marked **Needed** in the table above. In date order:
+**Run-sheets still to write.** This block has **twelve training sessions**. Ten have a detailed run-sheet in `plans/`, and Sun 11 Oct ran without one; the other **one** is marked **Needed** in the table above:
 
-**Sun 18 Oct** *(White only, half squad)* · **Thu 22 Oct** *(defence, block wrap-up)*
+**Thu 22 Oct** *(defence, block wrap-up)*
 
 Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (see `age-group.md`). **Sun 11 Oct is a match day for Blue only**, so White need one. The outline for each week below is the starting point for writing one; adding a run-sheet means a file in `plans/`, after which it appears on the site by itself.
 

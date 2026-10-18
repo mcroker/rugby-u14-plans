@@ -19,7 +19,7 @@ card: "Run-sheet for Week 7 Sunday, White only: Crazy Passing, a set-up game, 1 
 | **Coaches** | **Jeff and Andy.** |
 | **Attendance** | 11 — White only. |
 | **Session objective** | **Set before the ball** — numbered up, pointing, outside shoulder, inside foot forward. **The 1 v 1 tackle.** **Work back at a sprint, reset, up on Bang — every phase.** |
-| **Resources required** | Balls. **Bibs for one team.** Cones. **Two ruck shields.** **The club's score-card numbers.** |
+| **Resources required** | Balls. **Bibs for one team.** Cones. **Two ruck shields.** |
 
 ![Pitch 4, on the club allocation map.](pitch:4b)
 
@@ -264,7 +264,6 @@ Pummelling: no lifting, no takedowns, no twisting a neck. Wrist Wrestle: **shoul
 **Progressions:**
 - **Stopped twice in a row ends the set.**
 - A try after three rucks counts double.
-- **Coach's Bag:** Jeff holds up a number at every breakdown. A point only counts if the named player calls the number from the previous breakdown.
 
 **Adaptations:**
 - Calls being argued: drop a cone at each ruck.

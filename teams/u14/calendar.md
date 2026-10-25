@@ -22,7 +22,7 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 
 ## Recurring training
 
-- **Thursday evenings** — weekly from September. **On the club's floodlight pitch from 10 Sep until roughly the end of October (TBC)**; **18:45–20:00 for the rest of October**; TWGSB 4G before and after that, where it is a third of a pitch (see `age-group.md`).
+- **Thursday evenings** — weekly from September. **On the club's floodlight pitch from 10 Sep until roughly the end of October (TBC)**; **18:45–20:00 for the rest of October**; TWGSB 4G before and after that, where it is a third of a pitch and **one hour** (see `age-group.md`).
 
 ## Fixtures & training dates
 
@@ -41,8 +41,8 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 | Sun 18 Oct 2026 | TBC | Tonbridge Juddians U14 – TWRFC U14s Blue | Friendly | Away | Blue only | Tonbridge Juddians U14 |
 | Sun 1 Nov 2026 | TBC | TWRFC U14s – Canterbury | Friendly | Home | Whole squad | Canterbury |
 | Sun 8 Nov 2026 | TBC | Old Elthamians RFC – TWRFC U14s | Friendly | Away | Blue only | Old Elthamians RFC |
-| Sun 15 Nov 2026 | TBC | Kent League Stage 1, Round 3 | League fixture | Home | White | Beccehamian U14 Gladiators |
-| %%Sun 15 Nov 2026 | TBC | **Training slot — no Blue fixture this round** | Training | — | Blue | — |
+| Sun 8 Nov 2026 | TBC | Kent League Stage 1, Round 3 *(moved from 15 Nov)* | League fixture | Home | White | Beccehamian U14 Gladiators |
+| %%Sun 15 Nov 2026 | TBC | **Training — no fixture for either team. Led by the 1st team** | Training | — | Whole squad | — |
 | Sun 29 Nov 2026 | TBC | Kent League Stage 1, Round 4 | League fixture | Home | Blue | Old Elthamians U14 Gold |
 | Sun 29 Nov 2026 | TBC | Kent League Stage 1, Round 4 | League fixture | Away | White | Sevenoaks Yellow |
 | Sun 13 Dec 2026 | TBC | Kent League Stage 1, Round 5 + OOD | League fixture | Away | Blue | Sevenoaks Blue — **club on Officer of the Day duty, needs parent helpers** |
@@ -52,7 +52,7 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 
 - "OOD" = Officer of the Day (club matchday duty rota).
 - **Opposition and home/away for all five league rounds come from the club's Kent waterfall spreadsheet** — `Kent U12 & U14 - Waterfall Groups & Fixtures.xlsx` in `ref/`, the *U14 Waterfall Fixtures* sheet, Round 1 section. It supersedes the earlier reading of the RFU fixture pages, which had several rounds wrong. **Kick-off times are still TBC** — the spreadsheet gives dates only, so check Spond nearer each date.
-- **Highlighted rows are training slots.** Both groups have **five teams across five rounds**, so every team sits one round out: **White are free on 11 Oct** (Round 2) and **Blue on 15 Nov** (Round 3). Each is a half-squad training session (see `blocks.md`).
+- **Highlighted rows are training slots.** Both groups have **five teams across five rounds**, so every team sits one round out: **White were free on 11 Oct** (Round 2) and **Blue on 15 Nov** (Round 3). **White's Round 3 has moved to Sun 8 Nov**, so **15 Nov is a whole-squad training session, led by the 1st team** (see `blocks.md`).
 - **The two teams are in different groups** — Blue in U14 Boys Stage 1 **Group 2**, White in **Group 7** — so they have different opponents, and a league Sunday is not automatically a fixture for both.
 - **Three of the five league Sundays are split** — 27 Sep (Blue home, White away at Sheppey), 29 Nov (Blue home, White away at Sevenoaks) and 13 Dec (Blue away at Sevenoaks, White home to Canterbury). Worth planning for early: the squad and the coaches are in two places on each.
 - **13 Dec is no longer a White training slot.** White play at home that day, so both teams are out — and the club is on Officer of the Day duty as well.

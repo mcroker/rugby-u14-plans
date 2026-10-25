@@ -18,14 +18,14 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 | **Coaches** | **Steve and Martin.** |
 | **Attendance** | 18. |
 | **Session objective** | **Continuity.** Go to ground and **present long**. Support **calls the pop**. **Active on the floor** — ball back in two seconds. |
-| **Resources required** | **Mixed balls** — different sizes and shapes. Rugby balls. **Bibs for one team on each pitch.** Cones. |
+| **Resources required** | **Mixed balls** — different sizes and shapes. Rugby balls. **Bibs for one team.** Cones. |
 
 ![Pitch 3, left, on the club allocation map.](pitch:3a)
 
 ## Initial setup
 
-- **Two game pitches** — **25m wide, 40m long**, side by side, a cone at each corner and on halfway.
-- **Crazy Passing** — **three cones in a line, 5m apart**, on the try line of each pitch.
+- **Game pitch** — **40m wide, 50m long**, a cone at each corner and on halfway.
+- **Crazy Passing** — **two sets of three cones in a line, 5m apart**, on one try line.
 - **Mixed balls** in a pile by each set of cones.
 
 ## Plan
@@ -34,21 +34,16 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 |---|---|---|
 | +0, 5 min *(brief)* | Player-led warm-up | |
 | +5, 10 min | Crazy Passing — mixed balls | Two groups of nine. **Hands up, catch early** — whatever the ball |
-| +15, 7 min | Presentation Touch | Two games, 5 v 4. **Turn, go down, present long** |
+| +15, 7 min | Presentation Touch | 9 v 9. **Turn, go down, present long** |
 | +22, 8 min | Pop-up Touch — call the pop | No pop until the support calls **"Pop!"** |
 | +30, 2 min | Water | |
 | +32, 2 min *(brief)* | **Contact warm-up** | |
 | +34, 12 min | Tug and Jackle | Pairs. Winner presents, loser jackles. **Keep the ball moving** |
 | +46, 2 min | Water | |
-| +48, 15 min | Ruckly-Touch | Two games. Rucks contested. **Two seconds** |
+| +48, 15 min | Ruckly-Touch | 9 v 9. Rucks contested. **Two seconds** |
 | +63, 2 min | Water | |
 | +65, 20 min | Full contact game | Same teams. Two in, ball back fast |
 | +85, 5 min | Close | One thing from today |
-
-**Coach allocation:**
-
-- **Steve:** left pitch — Crazy Passing group, Tug and Jackle group, refs the left game throughout.
-- **Martin:** right pitch — the same on the right.
 
 ## Activities
 
@@ -58,7 +53,7 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 
 **Coaching Points:** **hands up before the ball comes** — a target, fingers spread. **Watch it into the hands.** Pass in front of him, not at him.
 
-**Setup:** three cones in a line, 5m apart, on each try line. Mixed balls in a pile.
+**Setup:** two sets of three cones in a line, 5m apart. Mixed balls in a pile.
 
 **Description:**
 
@@ -79,11 +74,11 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 
 ### Presentation Touch
 
-**Groups:** two games — 5 v 4 on each pitch.
+**Groups:** one game — 9 v 9.
 
 **Coaching Points:** **turn as you go down** — back to the defence. **Present long** — both arms back towards your own team. Support calls early and picks eyes-up.
 
-**Setup:** the two game pitches. Touch.
+**Setup:** the game pitch. Touch.
 
 **Description:**
 
@@ -99,15 +94,15 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 
 **Adaptations:**
 - Sloppy presentations: walk it for three phases.
-- Attack scoring too easily: narrow to 20m.
+- Attack scoring too easily: narrow to 30m.
 
 ### Pop-up Touch — call the pop
 
-**Groups:** same games — 5 v 4.
+**Groups:** same game — 9 v 9.
 
 **Coaching Points:** **support calls "Pop!"** — loud, from close. **Carrier waits for the call**, then pops. Eye contact before the pop.
 
-**Setup:** same pitches. Touch.
+**Setup:** same pitch. Touch.
 
 **Description:**
 
@@ -143,7 +138,7 @@ Pummelling: no lifting, no takedowns, no twisting a neck. Wrist Wrestle: **shoul
 
 ### Tug and Jackle
 
-**Groups:** pairs matched by size — two groups, a coach each.
+**Groups:** pairs matched by size.
 
 **Coaching Points:** **winner: turn your back on him and present long** — ball placed, body between it and the jackler, keep moving. **Loser: up, feet behind the ball, hips low, hands on it.** Fast — both of you.
 
@@ -170,11 +165,11 @@ Pummelling: no lifting, no takedowns, no twisting a neck. Wrist Wrestle: **shoul
 
 ### Ruckly-Touch
 
-**Groups:** same two games — 5 v 4.
+**Groups:** same game — 9 v 9.
 
 **Coaching Points:** **present long, then support in fast** — two in, ball back. **Jackler: on your feet, through the gate.** Two seconds.
 
-**Setup:** same pitches. Touch, contested rucks.
+**Setup:** same pitch. Touch, contested rucks.
 
 **Description:**
 
@@ -194,11 +189,11 @@ Pummelling: no lifting, no takedowns, no twisting a neck. Wrist Wrestle: **shoul
 
 ### Full contact game
 
-**Groups:** same two games — 5 v 4. Swap a player across at each try.
+**Groups:** same game — 9 v 9.
 
 **Coaching Points:** **two to the ruck, fast.** Present long. Support **talks** before the contact.
 
-**Setup:** same pitches. Full contact to U14 laws.
+**Setup:** same pitch. Full contact to U14 laws.
 
 **Description:**
 
@@ -208,7 +203,6 @@ Pummelling: no lifting, no takedowns, no twisting a neck. Wrist Wrestle: **shoul
 
 **Progressions:**
 - A try after three rucks counts double.
-- Merge into one 9 v 9 game for the last ten minutes.
 
 **Adaptations:**
 - Ground hard or a mismatch: back to Ruckly-Touch.
@@ -220,7 +214,7 @@ Pummelling: no lifting, no takedowns, no twisting a neck. Wrist Wrestle: **shoul
 - **Clocks went back last night.**
 - **Contact is Tug and Jackle, Ruckly-Touch and the last game.** Everything before the contact warm-up is touch.
 - **1m / 1s is optional** — introduce it in Ruckly-Touch if presentations are good.
-- **Two coaches:** one pitch each. Keep the two games the same teams all session.
+- **One game, 9 v 9, same teams all session.**
 
 ## Review — what actually happened
 

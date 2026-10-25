@@ -171,21 +171,7 @@ Sun 20 Sep and Sun 27 Sep need no run-sheet — we don't train on match days (se
 
 **Thursday — defence, block wrap-up.** Whole squad. Line-speed off **Bang**, outside shoulder, working back and resetting, all inside a multi-phase game. Nothing new.
 
-## Between the blocks — Sun 25 Oct (silly session)
-
-**Start of half term, the day the clocks go back — a silly session on awareness and scanning (CTC — see `playbook.md`).** Games only, no drills, nothing new. Expect lower numbers. Halloween is the following Saturday. **Not on the calendar yet** — needs a slot on the pitch allocation and Spond.
-
-Ideas to build it from:
-
-- **Coach's Bag** (see `activities.md`) on top of every game — silly or Halloween items in the bags. A try only counts if the scorer names the last item.
-- **Crazy Passing with two or three balls.**
-- **Rainbow Passing** on colour calls, sped up.
-- **A touch game with two balls in play**, or a coach shouting a number that sends that player to the other team mid-phase.
-- **Everyone Shouts** to start or finish.
-
-**Thu 29 Oct, half-term week: TBC.** A second silly session, an early start on Block 2's Week 1, or off.
-
-## Block 2 (Weeks 1–7)
+## Block 2 (Weeks 1–8)
 
 ### Overview & objectives
 
@@ -199,7 +185,7 @@ Ideas to build it from:
 
 Tackle technique and passing stay a standing per-session requirement (see `coaching.md`). Handling errors and 1 v 1 tackling are the two work-ons both Round 1 analyses share.
 
-**Block 2 runs Sunday 1 November – Thursday 17 December**, seven weeks to Christmas: the board's six, then Christmas fun. Weeks are grouped Sunday, then the following Thursday, as in Block 1. **The last session before Christmas is Christmas fun.**
+**Block 2 runs Sunday 25 October – Thursday 17 December**, eight weeks to Christmas. It starts on Sun 25 Oct, the first day of half term, in place of the silly session pencilled in between the blocks. **The planning board's week numbers (below) predate that and have not been renumbered.** Weeks are grouped Sunday, then the following Thursday, as in Block 1. **The last session before Christmas is Christmas fun.**
 
 ### The weeks, by thread
 
@@ -229,20 +215,22 @@ From the coaches' planning board. Readings marked *(?)* need confirming.
 
 | Week | Date | Session | Run-sheet |
 |---|---|---|---|
-| 1 | Sun 1 Nov | Match — friendly v Canterbury, home *(both teams)* | — *(no plan; match day)* |
-| 1 | Thu 5 Nov | Training — work-ons from Canterbury | **Needed** |
-| 2 | Sun 8 Nov | Training — **White only**, half squad *(Blue away at Old Elthamians, friendly)* | **Needed** |
-| 2 | Thu 12 Nov | Training — White pre-Round 3 | **Needed** |
-| 3 | Sun 15 Nov | Training — **Blue only**, half squad *(White home v Beccehamian Gladiators, Round 3)* | **Needed** |
-| 3 | Thu 19 Nov | Training | **Needed** |
-| 4 | Sun 22 Nov | **Not on the calendar** | **TBC** |
-| 4 | Thu 26 Nov | Training — pre-Round 4 | **Needed** |
-| 5 | Sun 29 Nov | Match — Kent League Round 4 *(Blue home v Old Elthamians Gold; White away at Sevenoaks Yellow)* | — *(no plan; match day)* |
-| 5 | Thu 3 Dec | Training — work-ons from Round 4 | **Needed** |
-| 6 | Sun 6 Dec | **Not on the calendar** | **TBC** |
-| 6 | Thu 10 Dec | Training — pre-Round 5 | **Needed** |
-| 7 | Sun 13 Dec | Match — Kent League Round 5 *(Blue away at Sevenoaks Blue; White home v Canterbury Black)* — club on Officer of the Day duty | — *(no plan; match day)* |
-| 7 | Thu 17 Dec | **Christmas fun** — last session before Christmas | **Needed** |
+| 1 | Sun 25 Oct | Training — whole squad, start of half term. Presentation and Pop-up Touch, Tug and Jackle, Ruckly-Touch to full contact | `block2-week1-sun.md` |
+| 1 | Thu 29 Oct | Half-term week — **TBC** | **TBC** |
+| 2 | Sun 1 Nov | Match — friendly v Canterbury, home *(both teams)* | — *(no plan; match day)* |
+| 2 | Thu 5 Nov | Training — work-ons from Canterbury | **Needed** |
+| 3 | Sun 8 Nov | Training — **White only**, half squad *(Blue away at Old Elthamians, friendly)* | **Needed** |
+| 3 | Thu 12 Nov | Training — White pre-Round 3 | **Needed** |
+| 4 | Sun 15 Nov | Training — **Blue only**, half squad *(White home v Beccehamian Gladiators, Round 3)* | **Needed** |
+| 4 | Thu 19 Nov | Training | **Needed** |
+| 5 | Sun 22 Nov | **Not on the calendar** | **TBC** |
+| 5 | Thu 26 Nov | Training — pre-Round 4 | **Needed** |
+| 6 | Sun 29 Nov | Match — Kent League Round 4 *(Blue home v Old Elthamians Gold; White away at Sevenoaks Yellow)* | — *(no plan; match day)* |
+| 6 | Thu 3 Dec | Training — work-ons from Round 4 | **Needed** |
+| 7 | Sun 6 Dec | **Not on the calendar** | **TBC** |
+| 7 | Thu 10 Dec | Training — pre-Round 5 | **Needed** |
+| 8 | Sun 13 Dec | Match — Kent League Round 5 *(Blue away at Sevenoaks Blue; White home v Canterbury Black)* — club on Officer of the Day duty | — *(no plan; match day)* |
+| 8 | Thu 17 Dec | **Christmas fun** — last session before Christmas | **Needed** |
 
 **Three half-squad Sundays** — White on 8 Nov, Blue on 15 Nov, plus White on 18 Oct at the end of Block 1. Plan each as its own session, not a shrunken whole-squad one; fewer coaches if they travel with the playing team.
 
@@ -251,7 +239,7 @@ From the coaches' planning board. Readings marked *(?)* need confirming.
 ### Open items
 
 - **The board.** Confirm the *(?)* readings above, and what the two drawn drills are — the tackle set-up in Week 4 and the crossing-runs diagram below it (hard line / trail line?).
-- **Thu 29 Oct** — see Between the blocks above.
+- **Thu 29 Oct**, half-term week — training or off?
 - **Sun 22 Nov, Sun 6 Dec and Sun 20 Dec** — none is on the calendar. Training, or off? If Sun 20 Dec is training, it becomes the Christmas-fun session. Thu 24 Dec is assumed off.
 - **Thursday venue.** The floodlight pitch runs to roughly the end of October (TBC). From then it is a third of the TWGSB 4G, no posts, no scrum machine — Week 5's front-row scrum pull-out needs the machine, so a Thursday on the 4G can't run it.
 - **Still unplaced from Block 1:** the **8-man catch and drive**, the backs receiving off the fold, defensive clearance kicks, and live scrum (Sunday only). The pull-back pass (**Hippo**) is now Week 4.

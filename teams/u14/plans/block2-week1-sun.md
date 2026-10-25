@@ -3,7 +3,7 @@ date: 2026-10-25
 start: "10:45"
 h1: Week 1 — Sunday
 sub: Continuity — presentation and support in touch, active on the floor, then Ruckly-Touch to full contact.
-sub2: Sun 25 Oct 2026, 10.45am–12.15pm
+sub2: Sun 25 Oct 2026, 10.45am–12pm
 crumb: Week 1 (Sun)
 card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Presentation and Pop-up Touch, Tug and Jackle, and Ruckly-Touch building to full contact."
 ---
@@ -13,7 +13,7 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 
 | | |
 |---|---|
-| **Date/Time** | **Sun 25 Oct 2026, 10:45am – 12:15pm.** 90 min. |
+| **Date/Time** | **Sun 25 Oct 2026, 10:45am – 12:00pm.** 75 min. |
 | **Location** | Pitch 3, left. |
 | **Coaches** | **Steve and Martin.** |
 | **Attendance** | 18. |
@@ -33,17 +33,17 @@ card: "Run-sheet for Block 2's first session: Crazy Passing with mixed balls, Pr
 | Start + duration | Activity | Focus |
 |---|---|---|
 | +0, 5 min *(brief)* | Player-led warm-up | |
-| +5, 10 min | Crazy Passing — mixed balls | Two groups of nine. **Hands up, catch early** — whatever the ball |
-| +15, 7 min | Presentation Touch | 9 v 9. **Turn, go down, present long** |
-| +22, 8 min | Pop-up Touch — call the pop | No pop until the support calls **"Pop!"** |
-| +30, 2 min | Water | |
-| +32, 2 min *(brief)* | **Contact warm-up** | |
-| +34, 12 min | Tug and Jackle | Pairs. Winner presents, loser jackles. **Keep the ball moving** |
-| +46, 2 min | Water | |
-| +48, 15 min | Ruckly-Touch | 9 v 9. Rucks contested. **Two seconds** |
-| +63, 2 min | Water | |
-| +65, 20 min | Full contact game | Same teams. Two in, ball back fast |
-| +85, 5 min | Close | One thing from today |
+| +5, 8 min | Crazy Passing — mixed balls | Two groups of nine. **Hands up, catch early** — whatever the ball |
+| +13, 6 min | Presentation Touch | 9 v 9. **Turn, go down, present long** |
+| +19, 7 min | Pop-up Touch — call the pop | No pop until the support calls **"Pop!"** |
+| +26, 2 min | Water | |
+| +28, 2 min *(brief)* | **Contact warm-up** | |
+| +30, 10 min | Tug and Jackle | Pairs. Winner presents, loser jackles. **Keep the ball moving** |
+| +40, 2 min | Water | |
+| +42, 12 min | Ruckly-Touch | 9 v 9. Rucks contested. **Two seconds** |
+| +54, 2 min | Water | |
+| +56, 15 min | Full contact game | Same teams. Two in, ball back fast |
+| +71, 4 min | Close | One thing from today |
 
 ## Activities
 

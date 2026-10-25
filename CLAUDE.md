@@ -21,7 +21,7 @@ Each is resolved through the three layers below, so a team has all of these whet
 | **`activities.md`** | A bank of games and drills, tagged by skill focus, to draw on when building sessions. | Shared default |
 | **`playbook.md`** | The team's calls and shapes — a clean, players-shareable reference. No squad or coaching context in it. | Team's own, from a skeleton |
 | **`laws.md`** | RFU age-grade laws for that age group. Picked automatically from `content/laws/<ageGroup>.md` by the team's `ageGroup`. | Shared default |
-| **`blocks.md`** | Block themes and session-by-session plans. | Team's own |
+| **`blocks.md`**, **`block<N>.md`** | Block themes and session-by-session plans. Block 1 is `blocks.md`; each later block gets its own `block<N>.md`, so each has its own overview page and index group. | Team's own |
 | **`calendar.md`** | The season's fixtures and training dates. Keep it non-PII — no player, parent or guardian names, contacts or attendance data. | Team's own |
 | **`plans/`** | On-the-pitch run-sheets, one file per session (see Session plan mechanics). | Team's own |
 
@@ -173,7 +173,7 @@ Pages on the site:
 
 - **`index.html`** — the entry point, with cards linking to every page below. This is the one link to hand out for "a simple reference."
 - **`playbook.html`** — full HTML export of the team\'s `playbook.md`, including the diagrams. The master reference for how we play.
-- **`block1-overview.html`** — full HTML export of the team\'s `blocks.md`'s Block 1 section (session list, weekly outlines).
+- **`block<N>-overview.html`** — one per block: full HTML export of that block's doc (`blocks.md` for Block 1, `block<N>.md` after it) — session list, weekly outlines. Its index group lists that block's run-sheets: `withPlans: block<N>-` in the doc's frontmatter picks the plans whose filename starts with it (`withPlans: true` lists every plan).
 - **the Coaching Notes page** — `age-group.md` and `coaching.md` combined onto one page (two docs naming the same `page:` are concatenated in `order`). The instructions in the `CLAUDE.md` files are **not** part of the shared site.
 - **`activities.html`** — full HTML export of the team\'s `activities.md`.
 - **`calendar.html`** — full HTML export of the team\'s `calendar.md`.

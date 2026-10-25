@@ -18,7 +18,8 @@ Each of these overrides the shared default of the same name in `content/`, where
 | `activities.md` | Our bank of games and drills. | Yes |
 | `playbook.md` | Our calls and shapes. Players-shareable: no squad or coaching context in it. | Skeleton only |
 | `laws.md` | The U14 law changes. We keep our own copy rather than inheriting `content/laws/u14.md`, because ours carries the contact-load note for this squad and points at `age-group.md` and `coaching.md`. The law content itself is the same — **re-check it against the shared default when the season turns over.** | Overridden |
-| `blocks.md` | Block themes and the session-by-session plan. | No |
+| `blocks.md` | Block 1, and the ideas saved for later blocks. | No |
+| `block2.md` | Block 2 — themes, the weeks by thread, the session list. | No |
 | `calendar.md` | This season's fixtures and training dates (non-PII summary of the club calendar). | No |
 | `plans/` | On-the-pitch run-sheets, one file per session. | No |
 

@@ -53,7 +53,7 @@ card: …
 ---
 ```
 
-`group` puts its card on the team's index; `withPlans: true` lists the session run-sheets under that group. A doc with no `group` gets a page but no card.
+`group` puts its card on the team's index; `withPlans: true` lists the session run-sheets under that group. When a later block gets its own `block<N>.md`, give each block doc `withPlans: block<N>-` so its group lists only that block's run-sheets. A doc with no `group` gets a page but no card.
 
 ## 4. Check it builds
 

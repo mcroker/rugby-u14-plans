@@ -13,7 +13,7 @@ Ask if it isn't clear: which team, which block, which week, Sunday or Thursday.
 
 Then read, in this order:
 
-1. The team's **`blocks.md`** — the row for this session. It names the focus, the forwards/backs split, and anything carried forward from the last session's Review. **This is the brief.** If the row says "Needed", this is the session to write.
+1. The team's **block doc** — `blocks.md` for Block 1, `block<N>.md` for a later block — the row for this session. It names the focus, the forwards/backs split, and anything carried forward from the last session's Review. **This is the brief.** If the row says "Needed", this is the session to write.
 2. The team's **`age-group.md`** and **`coaching.md`** — squad, venue, how sessions are run.
 3. The team's **`calendar.md`** — confirm the date, and that it is a training session and not a match.
 
@@ -48,7 +48,7 @@ node tools/build_site.ts _site
 
 (Node 22.6–23.5 needs `--experimental-strip-types`.) It **exits non-zero on any warning**, so a clean exit means the frontmatter parsed, every activity matched its row, and every image and pitch zone resolved. Fix anything it reports before saying you're done.
 
-Then update the team's `blocks.md`: point the session's row at the new file and take it off the "still to write" list.
+Then update the block doc: point the session's row at the new file and take it off the "still to write" list.
 
 ## Don't
 

@@ -25,7 +25,7 @@ A Review that holds a lesson nobody will read again has half-failed. **Anything 
 |---|---|
 | How to coach or deliver — a format that worked, a way of splitting the group, an intervention style | the team's **`coaching.md`** |
 | How the team plays — a call, a shape, a principle | the team's **`playbook.md`** |
-| What the next weeks should now do differently | **`blocks.md`**, in the block's "carried forward" notes |
+| What the next weeks should now do differently | **the block doc** (`blocks.md` for Block 1, `block<N>.md` after), in the block's "carried forward" notes |
 | A drill worth keeping, or a variation of one | the team's **`activities.md`** |
 | What happened on the day | stays in the **Review** |
 

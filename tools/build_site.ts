@@ -192,11 +192,20 @@ interface DocMeta {
   cardTitle: string;
   card: string;
   badge: string;
-  /** Whether the session-plan cards are listed under this doc's group. */
-  withPlans: boolean;
+  /** Which session-plan cards are listed under this doc's group: `null` for
+   *  none, `""` for all, or a filename prefix (`block2-`) for one block's. */
+  withPlans: string | null;
   /** Drop the source H1 and the lead paragraph above the first section. */
   stripLead: boolean;
   body: string;
+}
+
+/** `withPlans` in a doc's frontmatter: `true` lists every run-sheet, a string
+ *  lists those whose filename starts with it, anything else none. */
+function plansFilter(v: unknown): string | null {
+  if (v === true || v === "true") return "";
+  if (typeof v === "string" && v !== "false" && v !== "") return v;
+  return null;
 }
 
 /** Markdown that is never a page: instructions for whoever works on the repo.
@@ -242,7 +251,7 @@ function loadDocs(team: Team): DocMeta[] {
       cardTitle: str(data, "cardTitle", label, ""),
       card: str(data, "card", label, ""),
       badge: str(data, "badge", label, ""),
-      withPlans: bool(data, "withPlans", false),
+      withPlans: plansFilter(data.withPlans),
       stripLead: bool(data, "stripLead", false),
       body,
     });
@@ -512,9 +521,11 @@ function buildTeam(b: TeamBuild, siteOut: string): Record<string, string> {
   }
 
   // ---- index
-  const planCards = [...plans]
-    .sort((a, b) => a.file.localeCompare(b.file))
-    .map((m) => card(m.file.slice(0, -3) + ".html", m.h1, m.card, m.badge, m.draft));
+  const planCards = (prefix: string) =>
+    [...plans]
+      .filter((m) => m.file.startsWith(prefix))
+      .sort((a, b) => a.file.localeCompare(b.file))
+      .map((m) => card(m.file.slice(0, -3) + ".html", m.h1, m.card, m.badge, m.draft));
   const nextCard = next
     ? [
         '  <h2 class="group">Next session</h2>',
@@ -555,7 +566,7 @@ function buildTeam(b: TeamBuild, siteOut: string): Record<string, string> {
       ...inGroup.map((d) =>
         card(d.page, txt(d.cardTitle || d.h1), txt(d.card), d.badge ? txt(d.badge) : undefined),
       ),
-      ...(inGroup.some((d) => d.withPlans) ? planCards : []),
+      ...inGroup.flatMap((d) => (d.withPlans === null ? [] : planCards(d.withPlans))),
       "  </div>",
       "",
     ];

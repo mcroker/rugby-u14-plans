@@ -17,7 +17,7 @@ card: "Run-sheet for Block 2's first Thursday: Crazy Passing, Presentation Touch
 | **Location** | TWGSB 3G, St John's Road, TN4 9XB. A third of the pitch. Floodlit. |
 | **Coaches** | **Martin (coordinating), Matt, Jeff.** |
 | **Attendance** | 25 on Spond, 4 unanswered. *Actual on the night.* |
-| **Session objective** | **Continuity.** Present long, **call the pop**, and **know who is supporting you.** All touch. |
+| **Session objective** | **Continuity.** Present long, **call the pop**, and **know who is supporting you.** **Defence in every game: right side, right foot — nobody behind the ruck; outside shoulder; scan.** All touch. |
 | **Resources required** | Balls. **Bibs for two of the four teams.** Cones. Everything carried in. |
 
 ## Initial setup
@@ -147,6 +147,7 @@ card: "Run-sheet for Block 2's first Thursday: Crazy Passing, Presentation Touch
 - **Same four teams all session.** Two games — keep the opponents for the first three games, swap at +38.
 - **Thursday: nothing new.** Besties Touch is a rule on a known game — rules in 20 seconds.
 - **No contact tonight.** Everything is touch.
+- **Defence, in every game:** right side, right foot — **nobody stood behind the ruck**. Every defender on the **outside shoulder** of his man. **Scan (CTC)** before setting. Referees call it at every breakdown. No line-speed work until this is right.
 - **Sun 1 Nov:** friendly v Canterbury, home — both teams.
 
 ## Review — what actually happened

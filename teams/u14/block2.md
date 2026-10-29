@@ -27,6 +27,8 @@ Same planning context as Block 1 — see `blocks.md`. Ideas not yet placed in a 
 
 **What White showed on Sun 11 Oct:** solid on first phase, lost after several — in attack and defence — and passive at the ruck despite a good rucking drill. Every thread should end in a game that runs to multiple phases, with ruck speed coached inside it.
 
+**What Blue showed at Tonbridge Juddians on Sun 18 Oct:** a poor defensive set-up — often four players stood behind the ruck, and little scanning. **Before line speed, the defensive basics go into every game, whatever the drill:** right side, right foot — nobody behind the ruck; every defender on the **outside shoulder** of his man; **scan (CTC)** before setting.
+
 **Thursdays are on the TWGSB 3G from Thu 29 Oct, 7–8pm — a third of a pitch, one hour, no posts, no scrum machine, everything carried in.** **Nothing new is introduced on a Thursday:** new skills and games come in on a Sunday; Thursday practises and consolidates them, inside games already known.
 
 Tackle technique and passing stay a standing per-session requirement (see `coaching.md`). Handling errors and 1 v 1 tackling are the two work-ons both Round 1 analyses share.

@@ -39,12 +39,6 @@ card: "Run-sheet for Block 2's first Thursday: Crazy Passing, Presentation Touch
 | +40, 15 min | 1m / 1s Touch | Same games. **Support within 1m inside 1s: offload. Otherwise down and present** |
 | +55, 5 min | Close | One thing from tonight |
 
-**Coach allocation:**
-
-- **Martin coordinates** — moves between both games, no refereeing.
-- **+5:** Matt and Jeff on a passing group each; Martin on the third.
-- **+13 onwards:** **Matt and Jeff referee a game each** — calling the touches, counting two seconds, and judging the name in Besties Touch.
-
 ## Activities
 
 ### Crazy Passing

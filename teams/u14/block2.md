@@ -27,7 +27,7 @@ Same planning context as Block 1 — see `blocks.md`. Ideas not yet placed in a 
 
 **What White showed on Sun 11 Oct:** solid on first phase, lost after several — in attack and defence — and passive at the ruck despite a good rucking drill. Every thread should end in a game that runs to multiple phases, with ruck speed coached inside it.
 
-**Thursdays are on the TWGSB 4G from November — a third of a pitch, one hour, no posts, no scrum machine, everything carried in.** **Nothing new is introduced on a Thursday:** new skills and games come in on a Sunday; Thursday practises and consolidates them, inside games already known.
+**Thursdays are on the TWGSB 3G from Thu 29 Oct, 7–8pm — a third of a pitch, one hour, no posts, no scrum machine, everything carried in.** **Nothing new is introduced on a Thursday:** new skills and games come in on a Sunday; Thursday practises and consolidates them, inside games already known.
 
 Tackle technique and passing stay a standing per-session requirement (see `coaching.md`). Handling errors and 1 v 1 tackling are the two work-ons both Round 1 analyses share.
 
@@ -49,12 +49,12 @@ From the coaches' planning board, except Week 1, which is the Sun 25 Oct run-she
 
 **Position pull-outs** — individual skills, in five-minute stints out of the main activity (see `activities.md`'s delivery ideas). Each group three times in the block. **Week 1 ran none**, so 9s and back row have two each on the board — add a third where a session has room:
 
-- **Front row** — scrum on the machine (Sundays at the club; the Thursday 4G has no machine from November); hookers on the lineout throw otherwise.
+- **Front row** — scrum on the machine (Sundays at the club; the Thursday 3G has no machine from November); hookers on the lineout throw otherwise.
 - **Back row** — 8 controlling at the base, the **8 pick**, flankers breaking.
 - **9s** — passing off the floor, the feed on the hooker's tap.
 - **Kickers** — kicking from hand, exit kicks. The Round 1 analysis asks for nominated kickers for defensive kicking.
 
-**Already in `activities.md`:** Crazy Passing, Fiji Touch, Presentation Touch, Pop-up Touch, Ruckly-Touch, Turnover Touch (the continuity version), 2 vs 1 (with offload), Offload Technique.
+**Already in `activities.md`:** Crazy Passing, Fiji Touch, Presentation Touch, Pop-up Touch, Ruckly-Touch, Turnover Touch (the continuity version), 2 vs 1 (with offload), Offload Technique, Offload Game (4 v 4, low scrag tackles — contact, so a Sunday first).
 **New, need an entry before they are run:** overs / unders, pad work with footwork, three-direction footwork, Kick-out 4 v 3, Rondo, 1m / 1s Touch, Offload Touch (hand-off), the Week 4 tackle drill, and the spin.
 
 ### Session list
@@ -62,7 +62,7 @@ From the coaches' planning board, except Week 1, which is the Sun 25 Oct run-she
 | Week | Date | Session | Run-sheet |
 |---|---|---|---|
 | 1 | Sun 25 Oct | Training — whole squad, start of half term. Presentation and Pop-up Touch, Tug and Jackle, Ruckly-Touch to full contact | `block2-week1-sun.md` |
-| 1 | Thu 29 Oct | Half-term week — **TBC** | **TBC** |
+| 1 | Thu 29 Oct | Training — on the 3G, one hour. Crazy Passing, Presentation into Pop-up Touch, Besties Touch, 1m / 1s Touch | `block2-week1-thur.md` |
 | 2 | Sun 1 Nov | Match — friendly v Canterbury, home *(both teams)* | — *(no plan; match day)* |
 | 2 | Thu 5 Nov | Training — work-ons from Canterbury; White pre-Round 3 | **Needed** |
 | 3 | Sun 8 Nov | Match — **Blue** friendly away at Old Elthamians; **White** home v Beccehamian Gladiators, Kent League Round 3 | — *(no plan; match day)* |
@@ -82,15 +82,14 @@ From the coaches' planning board, except Week 1, which is the Sun 25 Oct run-she
 
 **Sun 15 Nov is led by the 1st team.** We give them a theme; they write and run the session.
 
-**Fixtures shape the Thursdays.** Three Thursdays come straight after a match (work-ons) and three straight before one (sharpen). They are the only sessions with the whole squad together, but they are one hour on the 4G and introduce nothing new, so each new item on the board needs a Sunday first. Sun 25 Oct is the only whole-squad training Sunday we plan; Sun 15 Nov is whole squad on the 1st team's plan.
+**Fixtures shape the Thursdays.** Three Thursdays come straight after a match (work-ons) and three straight before one (sharpen). They are the only sessions with the whole squad together, but they are one hour on the 3G and introduce nothing new, so each new item on the board needs a Sunday first. Sun 25 Oct is the only whole-squad training Sunday we plan; Sun 15 Nov is whole squad on the 1st team's plan.
 
 ### Open items
 
 - **The board.** Confirm the *(?)* readings above, and what the two drawn drills are — the tackle set-up in Week 4 and the crossing-runs diagram below it (hard line / trail line?).
-- **Thu 29 Oct**, half-term week — training or off?
 - **Sun 22 Nov, Sun 6 Dec and Sun 20 Dec** — none is on the calendar. Training, or off? If Sun 20 Dec is training, it becomes the Christmas-fun session. Thu 24 Dec is assumed off.
 - **Where new items get introduced.** With nothing new on a Thursday, the board's new items (overs / unders, pad work, Rondo, three-direction footwork, Kick-out 4 v 3, Hippo, the Week 4 tackle drill, Offload Touch, the spin) all need a Sunday — and only Sun 15 Nov (1st-team led — only through the theme we give them) and the uncalendared Sundays (22 Nov, 6 Dec) are left. Use the theme for 15 Nov, use the uncalendared Sundays if they go ahead, or drop items from the board.
 - **Theme for the 1st team, Sun 15 Nov** — decide and send it to them. Ideally one of the board's new items, so the whole squad gets it on a Sunday.
 - **Week 4's tackle drill** was planned for Thu 26 Nov, the sharpen before Round 4. It is new, so it needs a Sunday before then.
-- **Front-row scrum pull-outs** are Sundays only — the 4G has no machine. Both board Sundays (8 and 15 Nov) are gone, so there is no scrum Sunday left unless 22 Nov or 6 Dec go ahead, or scrum is the 1st team's theme on 15 Nov.
+- **Front-row scrum pull-outs** are Sundays only — the 3G has no machine. Both board Sundays (8 and 15 Nov) are gone, so there is no scrum Sunday left unless 22 Nov or 6 Dec go ahead, or scrum is the 1st team's theme on 15 Nov.
 - **Still unplaced from Block 1:** the **8-man catch and drive**, the backs receiving off the fold, defensive clearance kicks, and live scrum (Sunday only). The pull-back pass (**Hippo**) is now Week 4.

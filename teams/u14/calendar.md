@@ -22,7 +22,7 @@ See also: `age-group.md` for squad/season context, `blocks.md` for how training 
 
 ## Recurring training
 
-- **Thursday evenings** — weekly from September. **On the club's floodlight pitch from 10 Sep until roughly the end of October (TBC)**; **18:45–20:00 for the rest of October**; TWGSB 4G before and after that, where it is a third of a pitch and **one hour** (see `age-group.md`).
+- **Thursday evenings** — weekly from September. **On the club's floodlight pitch from 10 Sep until roughly the end of October (TBC)**; **18:45–20:00 for the rest of October**; TWGSB 3G before and after that, where it is a third of a pitch and **one hour — 19:00–20:00 from Thu 29 Oct** (see `age-group.md`).
 
 ## Fixtures & training dates
 

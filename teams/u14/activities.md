@@ -34,6 +34,7 @@ Quick reference for picking a game to match the session's contact-level target (
 - **Line-break Touch** — extra steps allowed on a "LINEBREAK" call.
 - **Springbok Touch** — turnover if the first receiver is caught in contact.
 - **Coach's Bag** — a try only counts if the scorer can name the last item a coach held up (scanning).
+- **Besties Touch** — a try only counts if the scorer shouts the name of his nearest supporting player as he scores.
 
 ## Warm-up
 
@@ -220,6 +221,17 @@ Quick reference for picking a game to match the session's contact-level target (
 | Coaching Points | Eye contact and communication with the receiver. Hands free to give the offload (don't get caught one-armed). Lift the ball for your team-mate rather than leaving them to dig for it. If in doubt, keep the ball and stay active on the floor ("pencil") rather than forcing a risky offload. Avoid a double recycle. |
 | Progressions | - Offload with both hands, not just the stronger side.<br>- Introduce other offload types — cat-flap, and round-the-body. |
 | Video example | [Offload on Knees – Rugby Toolbox](https://www.rugbytoolbox.co.nz/training/technique/offload-on-knees-1) |
+
+### Offload Game
+
+**Focus:** Contact / offload — staying on your feet
+
+| | |
+|---|---|
+| Setup | A **5m x 15m** grid. 4 v 4. |
+| Description | Attack runs the length of the grid. **Scrag tackling — tackles must be low.** Attack evades and **keeps the ball moving through offloads — before, during and after contact** — staying on their feet as long as they can. |
+| Coaching Points | Footwork before contact. Ball in two hands, away from the tackler. Stay on your feet; offload to support arriving at depth. |
+| Adaptations | Attack getting out too easily: narrow the grid. Attack stuck in contact every time: widen it, or 4 v 3. |
 
 ### Tackle Diamond
 
